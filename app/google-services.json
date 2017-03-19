@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "421571790184",
+    "firebase_url": "https://masterok-b8498.firebaseio.com",
+    "project_id": "masterok-b8498",
+    "storage_bucket": "masterok-b8498.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421571790184:android:159c8c05a9587b86",
+        "android_client_info": {
+          "package_name": "com.lite.my.masterok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421571790184-otglsp0srgh2evlunp9t64sd6fvgfeqk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lite.my.masterok",
+            "certificate_hash": "ABABB65CDD0F62F8494050B422275EC374EC3E1A"
+          }
+        },
+        {
+          "client_id": "421571790184-51bc4bc0utptbl0f3rknotjjc739ddfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM9o48CodtjwEvlwnhR0r_CrR-64kXnjw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421571790184-51bc4bc0utptbl0f3rknotjjc739ddfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/menugroup1" >
+        <item
+            android:id="@+id/menu6"
+
+            android:title="Цемент + песок, S"/>
+        <item
+            android:id="@+id/menu7"
+
+            android:title="Цемент + песок, A-B"/>
+               <item
+            android:id="@+id/menu8"
+
+            android:title="Самовыравнивающаяся смесь, S"/>
+        <item
+            android:id="@+id/menu9"
+
+            android:title="Самовыравнивающаяся смесь, A-B"/>
+
+
+
+
+
+
+    </group>
+
+
+</menu>

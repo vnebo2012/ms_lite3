@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lite.my.masterok.Start_Activity"
+    android:background="@android:color/background_light"
+    android:gravity="center">
+
+
+    <TextView
+        android:text="D  a  s  t  o  r  y     S  t  u  d  i  o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/textView2"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorBlueGrey700"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/linearLayout4"
+        android:onClick="onClickSt1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/button212"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/colorPrimary47"
+            android:onClick="onClickFun8"
+            android:text="Армопояс"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/colorPrimary43"
+            android:onClick="onClickKirpish"
+            android:text="Кирпич"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/colorPrimary41"
+            android:onClick="onClickBloki"
+            android:text="Блоки"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="onClickPlitka"
+            android:text="Плитка"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button210"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/colorBlueGrey400"
+            android:onClick="onClickSt1"
+            android:text="Стяжка"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/colorBlueGrey100"
+            android:onClick="onClickSt1"
+            android:text="Шпаклевка"
+            android:textColor="?attr/colorControlNormal"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
