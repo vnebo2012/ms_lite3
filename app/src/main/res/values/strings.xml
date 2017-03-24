@@ -136,4 +136,8 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="my_tb_title_samo_a_b223">Наливной пол, A+B</string>
+    <string name="title_activity_st2212">Плита Прямоугольник</string>
+    <string name="title_activity_st22245">Плита Круг</string>
+    <string name="my_tb_title78">Плита Прямоугольная</string>
+    <string name="my_tb_title69">Плита Круглая</string>
 </resources>

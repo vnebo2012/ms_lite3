@@ -72,6 +72,19 @@
             android:name=".Shpaklevka_A_B_Activity"
             android:label="@string/title_activity_st222"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".Plita1Activity"
+            android:label="@string/title_activity_st2212"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Plita2Activity"
+            android:label="@string/title_activity_st22245"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>
