@@ -140,4 +140,14 @@
     <string name="title_activity_st22245">Плита Круг</string>
     <string name="my_tb_title78">Плита Прямоугольная</string>
     <string name="my_tb_title69">Плита Круглая</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="rbHtml">мой текст</string>
+    <string name="rbText">rbText</string>
+    <string name="btCopy">btCopy</string>
+    <string name="btPaste">btPaste</string>
+    <string name="tvIntentHtml">tvIntentHtml</string>
+    <string name="tvIntentText">tvIntentText</string>
+    <string name="tvIntentClipdataHtml">tvIntentClipdataHtml</string>
+    <string name="tvIntentClipdataText">tvIntentClipdataText</string>
+    <string name="tvHtml">U278975036654</string>
 </resources>

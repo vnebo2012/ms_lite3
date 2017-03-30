@@ -156,6 +156,9 @@ public class Start_Activity extends AppCompatActivity {
 
 
 
+
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -203,9 +206,9 @@ public class Start_Activity extends AppCompatActivity {
         } else if (id == R.id.action_settings4) {
 
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(Start_Activity.this);
-                builder.setTitle("Карта Приват Банка")
-                        .setMessage("4149 4978 0396 6805")
+               /* AlertDialog.Builder builder = new AlertDialog.Builder(Start_Activity.this);
+                builder.setTitle("WebMoney Кошелёк")
+                        .setMessage("U278975036654")
                         .setIcon(R.mipmap.ic_pogertva)
                         .setCancelable(false)
                         .setNegativeButton("Понятно",
@@ -215,7 +218,11 @@ public class Start_Activity extends AppCompatActivity {
                                     }
                                 });
                 AlertDialog alert = builder.create();
-                alert.show();
+                alert.show();*/
+
+            Intent a = new Intent(this,WebMoneyActivity.class);
+            a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(a);
 
 
 
@@ -232,6 +239,11 @@ public class Start_Activity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
+
+
 
 
 
@@ -300,6 +312,12 @@ public class Start_Activity extends AppCompatActivity {
                         }
                     }
                 });
+
+
+
+
+
+
 
         popupMenu.setOnDismissListener(new PopupMenu.OnDismissListener() {
 
