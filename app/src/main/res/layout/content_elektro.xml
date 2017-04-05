@@ -498,15 +498,15 @@
                                     android:textColor="@color/colorBlack" />
 
                                 <Button
+                                    android:id="@+id/button202"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="4"
-                                    android:id="@+id/button202"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="4"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <Button
                                     android:layout_width="70dp"
@@ -786,15 +786,15 @@
                             android:textColor="@color/colorTextMy" />
 
                         <TextView
+                            android:id="@+id/textViewWir5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="50"
-                            android:id="@+id/textViewWir5"
+                            android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
-                            android:textSize="16dp"
-                            android:textStyle="bold"
+                            android:text="10"
                             android:textColor="@color/colorTextMy"
-                            android:layout_gravity="center_vertical" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1065,16 +1065,16 @@
                             android:textColor="@color/colorTextMy" />
 
                         <TextView
+                            android:id="@+id/textViewWir6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="600"
-                            android:id="@+id/textViewWir6"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy"
                             android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp" />
+                            android:layout_marginRight="10dp"
+                            android:text="10"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1174,26 +1174,26 @@
                         android:layout_margin="3dp" >
 
                         <TextView
+                            android:id="@+id/textView17221"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Монтаж комутатационной коробки:"
-                            android:id="@+id/textView17221"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
+                            android:layout_margin="3dp"
+                            android:text="Монтаж комутатационной коробки:"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="13sp" />
 
                         <TextView
+                            android:id="@+id/textViewWir7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="2000"
-                            android:id="@+id/textViewWir7"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textStyle="bold"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:text="100"
                             android:textColor="@color/colorTextMy"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1294,14 +1294,14 @@
                         android:layout_margin="3dp" >
 
                         <TextView
+                            android:id="@+id/textView17"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Точка без коробки (бра, светильники):"
-                            android:id="@+id/textView17"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
+                            android:layout_margin="3dp"
+                            android:text="Точка без коробки (бра, светильники):"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="13sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1415,28 +1415,27 @@
                         android:layout_margin="3dp" >
 
                         <TextView
+                            android:id="@+id/textView170"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Стоимость монтажа одной точки:"
-                            android:id="@+id/textView170"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
-
+                            android:layout_margin="3dp"
+                            android:text="Стоимость монтажа одной точки:"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="13sp" />
 
 
                         <TextView
+                            android:id="@+id/textViewWir10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="0"
-                            android:id="@+id/textViewWir10"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy"
                             android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp" />
+                            android:layout_marginRight="10dp"
+                            android:text="25"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1561,7 +1560,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="(шт.)"
-                            android:id="@+id/textView8000"
+                            android:id="@+id/textView800000"
                             android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
                             android:textSize="16dp"
@@ -1721,15 +1720,15 @@
                                     android:textColor="@color/colorBlack" />
 
                                 <Button
+                                    android:id="@+id/button25"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="25"
-                                    android:id="@+id/button25"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="25"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
                                     android:orientation="horizontal"
@@ -1923,15 +1922,15 @@
                                     android:textColor="@color/colorBlack" />
 
                                 <Button
+                                    android:id="@+id/button71"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="80"
-                                    android:id="@+id/button71"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="80"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <Button
                                     android:layout_width="70dp"
@@ -2003,14 +2002,14 @@
                         android:layout_margin="3dp">
 
                         <TextView
+                            android:id="@+id/textView3621"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Собственный пункт x:"
-                            android:id="@+id/textView3621"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
+                            android:layout_margin="3dp"
+                            android:text="Дополнительные работы:"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="14sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -2022,15 +2021,16 @@
                             android:textSize="16dp"
                             android:textStyle="bold"
                             android:textColor="@color/colorTextMy" />
+
                         <TextView
+                            android:id="@+id/textView8006"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="(едениц)"
-                            android:id="@+id/textView8006"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
+                            android:layout_margin="3dp"
+                            android:text="(усл./едениц)"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="16dp" />
 
                     </LinearLayout>
 
@@ -2107,15 +2107,15 @@
                                     android:textColor="@color/colorBlack" />
 
                                 <Button
+                                    android:id="@+id/button242"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="120"
-                                    android:id="@+id/button242"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="120"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
                                     android:orientation="horizontal"
@@ -2143,14 +2143,14 @@
                         android:layout_margin="3dp">
 
                         <TextView
+                            android:id="@+id/textView36"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Стоимость по пункту x:"
-                            android:id="@+id/textView36"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
+                            android:layout_margin="3dp"
+                            android:text="Стоимость дополнительных работ:"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="13sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -2263,10 +2263,18 @@
                                     android:layout_width="75dp"
                                     android:layout_height="match_parent"></LinearLayout>
 
+
+
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/colorBlueGrey100"
+                    android:orientation="horizontal"></LinearLayout>
 
             </LinearLayout>
         </ScrollView>
@@ -2303,13 +2311,13 @@
             android:gravity="center">
 
             <LinearLayout
-                android:orientation="horizontal"
+                android:id="@+id/job"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="0dp"
+                android:layout_marginTop="5dp"
                 android:baselineAligned="true"
-                android:id="@+id/job"
-                android:layout_marginTop="5dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView12"
@@ -2317,27 +2325,26 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Сумма:"
+                    android:text="Стоимость всех виполненых работ:"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
-                    android:textStyle="bold|italic" />
-
+                    android:textStyle="bold" />
 
 
                 <TextView
+                    android:id="@+id/textView142"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView142"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
                     android:layout_marginLeft="3dp"
-                    android:textColor="#ffffff"
                     android:layout_weight="0"
-                    android:textSize="15sp" />
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
 
             </LinearLayout>
 
@@ -2356,50 +2363,25 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Выключатели (шт./цена):"
+                    android:text="Выключатели (цена/ за работу):"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
-                    android:textStyle="bold|italic" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView402"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:layout_marginLeft="3dp"
-                    android:textColor="#ffffff"
-                    android:layout_weight="0"
-                    android:textSize="14sp" />
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView81"
-                    android:text=" / "
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:textColor="#ffffff"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:id="@+id/textView201"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
-                    android:textColor="#ffffff"
                     android:layout_weight="0"
-                    android:textSize="15sp" />
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
 
             </LinearLayout>
 
@@ -2418,51 +2400,25 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Розетки (шт./цена):"
+                    android:text="Розетки (цена/ за работу):"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView403"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:layout_marginLeft="3dp"
-                    android:textColor="#ffffff"
-                    android:layout_weight="0"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView82"
-                    android:text=" / "
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:textColor="#ffffff"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:id="@+id/textView301"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
-                    android:textColor="#ffffff"
                     android:layout_weight="0"
-                    android:textSize="15sp" />
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
 
             </LinearLayout>
 
@@ -2481,50 +2437,25 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Подрезетники (шт./цена):"
+                    android:text="Подрезетники (цена/ за работу):"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textStyle="bold" />
+
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView401"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:layout_marginLeft="3dp"
-                    android:textColor="#ffffff"
-                    android:layout_weight="0"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView8"
-                    android:text=" / "
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:textColor="#ffffff"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:id="@+id/textView4"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="14sp" />
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
 
             </LinearLayout>
             <LinearLayout
@@ -2543,48 +2474,22 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="0.32"
                     android:autoText="false"
-                    android:text="Комутационные коробки (шт./цена):"
+                    android:text="Комутационные коробки (за работу):"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="12sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView404"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:layout_marginLeft="3dp"
-                    android:textColor="#ffffff"
-                    android:layout_weight="0"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView83"
-                    android:text=" / "
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:textColor="#ffffff"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="0.0"
                     android:id="@+id/textView242"
-                    android:textColor="@android:color/background_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:autoText="false"
-                    android:textStyle="bold"
-                    android:textSize="14sp" />
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -2604,52 +2509,26 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Точки без коробок (бра, светильники) шт./цена:"
+                    android:text="Точки без коробок (бра) цена за раб.:"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="12sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView405"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:layout_marginLeft="3dp"
-                    android:textColor="#ffffff"
-                    android:layout_weight="0"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView84"
-                    android:text=" / "
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:textColor="#ffffff"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:id="@+id/textView20"
-                    android:textColor="#ffffff"
-                    android:autoText="false"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
                     android:layout_weight="0"
-                    android:textSize="15sp" />
+                    android:autoText="false"
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
             </LinearLayout>
 
             <LinearLayout
@@ -2669,52 +2548,26 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Монтаж щитовых (шт./цена):"
+                    android:text="Монтаж щитовых (цена/ за раб.):"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView406"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:layout_marginLeft="3dp"
-                    android:textColor="#ffffff"
-                    android:layout_weight="0"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView85"
-                    android:text=" / "
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:textColor="#ffffff"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:id="@+id/textView208"
-                    android:textColor="#ffffff"
-                    android:autoText="false"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
                     android:layout_weight="0"
-                    android:textSize="15sp" />
+                    android:autoText="false"
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
             </LinearLayout>
 
             <LinearLayout
@@ -2733,49 +2586,62 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Укладка гофры (м/цена):"
+                    android:text="Укладка гофры (цена/ за работу):"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView407"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:layout_marginLeft="3dp"
-                    android:textColor="#ffffff"
-                    android:layout_weight="0"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView86"
-                    android:text=" / "
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
-                    android:textColor="#ffffff"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="0.0"
                     android:id="@+id/textView24"
-                    android:textColor="@android:color/background_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:autoText="false"
-                    android:textStyle="bold"
-                    android:textSize="15sp" />
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
             </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="0dp"
+                android:baselineAligned="true"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/textView229"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:text="Дополнительные работы (цена):"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView401"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0"
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
+
+            </LinearLayout>
+
 
 
 
