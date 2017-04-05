@@ -99,6 +99,15 @@ public class Start_Activity extends AppCompatActivity {
         super.onDestroy();
     }*/
 
+    public void onClickElektro(View view) {
+        Intent a = new Intent(this,Elektro_Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+    }
+
     public void onClickKirpish(View view) {
         Intent a = new Intent(this,MainActivity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

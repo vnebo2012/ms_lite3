@@ -77,9 +77,15 @@
             android:label="@string/title_activity_st2212"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Plita2Activity"
-            android:label="@string/title_activity_st22245"
+        android:name=".Plita2Activity"
+        android:label="@string/title_activity_st22245"
+        android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Elektro_Activity"
+            android:label="@string/title_activity_st222452"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".WebMoneyActivity"></activity>
     </application>
 

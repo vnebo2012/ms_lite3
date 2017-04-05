@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Мастерок</string>
-    <string name="action_settings">В разработке</string>
+
     <string name="title_activity_navi_fun">Тип фундамента</string>
     <string name="title_activity_fun1">Тип 1</string>
     <string name="action_nastroi">На главную</string>
@@ -102,8 +102,7 @@
     <string name="arm_m_kg_bes">Арматура (м/кг):</string>
     <string name="bet">Бетон</string>
     <string name="arm">Арматура</string>
-    <string name="navigation_drawer_open">123</string>
-    <string name="navigation_drawer_close">456</string>
+
     <string name="pro">Версия Pro</string>
     <string name="armr2">Вносить свои значения</string>
     <string name="armr1">для кнопок</string>
@@ -150,4 +149,6 @@
     <string name="tvIntentClipdataHtml">tvIntentClipdataHtml</string>
     <string name="tvIntentClipdataText">tvIntentClipdataText</string>
     <string name="tvHtml">U278975036654</string>
+    <string name="title_activity_st222452">Електромонтаж</string>
+    <string name="my_tb_title_elektro">Электромонтаж</string>
 </resources>
