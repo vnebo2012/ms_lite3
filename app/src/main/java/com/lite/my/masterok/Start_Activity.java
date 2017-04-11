@@ -65,7 +65,7 @@ public class Start_Activity extends AppCompatActivity {
         Button button2 = (Button) findViewById(R.id.button210);
         Button button3 = (Button) findViewById(R.id.button400);
         Button button4 = (Button) findViewById(R.id.button2412);
-        Button button5 = (Button) findViewById(R.id.button4010);
+       // Button button5 = (Button) findViewById(R.id.button4010);
         TextView textView = (TextView) findViewById(R.id.textView);
 
 
@@ -73,7 +73,7 @@ public class Start_Activity extends AppCompatActivity {
         button2.setOnClickListener(viewClickListener2);
         button3.setOnClickListener(viewClickListener3);
         button4.setOnClickListener(viewClickListener4);
-        button5.setOnClickListener(viewClickListener5);
+       // button5.setOnClickListener(viewClickListener5);
 //        textView.setOnClickListener(viewClickListener);
 
 
@@ -630,6 +630,12 @@ public class Start_Activity extends AppCompatActivity {
             }
         });
         popupMenu.show();
+    }
+
+    public void onClick2222(View view) {
+        Intent a = new Intent(this,Kraska_S_Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
     }
 
 

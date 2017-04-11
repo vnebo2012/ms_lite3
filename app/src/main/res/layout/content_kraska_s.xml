@@ -57,15 +57,15 @@
                             android:textColor="@color/colorTextMy" />
 
                         <TextView
+                            android:id="@+id/textViewWir2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="2"
-                            android:id="@+id/textViewWir2"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:text="1"
+                            android:textColor="@color/colorTextMy"
                             android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -107,15 +107,15 @@
                                     android:textColor="@color/colorBlack" />
 
                                 <Button
+                                    android:id="@+id/button98"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="4"
-                                    android:id="@+id/button98"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="4"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <Button
                                     android:layout_width="70dp"
@@ -258,21 +258,21 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
-                            android:text="Толщина слоя шпаклевки (мм):"
+                            android:text="Количество слоев:"
                             android:textColor="@color/colorTextMy"
                             android:textSize="16dp" />
 
                         <TextView
+                            android:id="@+id/textViewWir8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="2"
-                            android:id="@+id/textViewWir8"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy"
                             android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp" />
+                            android:layout_marginRight="10dp"
+                            android:text="1"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -296,7 +296,7 @@
                                 <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="5"
+                                    android:text="1"
                                     android:id="@+id/button26"
                                     android:textSize="25dp"
                                     android:background="@drawable/radius"
@@ -307,7 +307,7 @@
                                 <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="8"
+                                    android:text="2"
                                     android:id="@+id/button33"
                                     android:textSize="25dp"
                                     android:background="@drawable/radius"
@@ -318,19 +318,8 @@
                                 <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="10"
+                                    android:text="3"
                                     android:id="@+id/button34"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="15"
-                                    android:id="@+id/button35"
                                     android:textSize="25dp"
                                     android:background="@drawable/radius"
                                     android:layout_margin="7dp"
@@ -364,7 +353,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Цена шпаклевки (за мешок):"
+                            android:text="Цена краски (за 1 кг):"
                             android:id="@+id/textView362"
                             android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
@@ -496,19 +485,19 @@
                         android:layout_margin="3dp" >
 
                         <TextView
+                            android:id="@+id/textView170"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Расход на 1м2/1мм"
-                            android:id="@+id/textView170"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
+                            android:layout_margin="3dp"
+                            android:text="Расход краски (г/1м2)"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="16dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="2.0"
+                            android:text="300"
                             android:id="@+id/textViewWir10"
                             android:layout_gravity="center_vertical"
                             android:textSize="16dp"
@@ -516,16 +505,7 @@
                             android:textColor="@color/colorTextMy"
                             android:layout_marginLeft="15dp"
                             android:layout_marginRight="2dp" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="(кг)"
-                            android:id="@+id/textViewWir104"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy"
-                            android:layout_marginLeft="2dp"
-                            android:layout_marginRight="10dp" />
+
 
                     </LinearLayout>
 
@@ -549,7 +529,7 @@
                                 <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="1.5"
+                                    android:text="150"
                                     android:id="@+id/button230"
                                     android:background="@drawable/radius"
                                     android:layout_margin="7dp"
@@ -560,7 +540,7 @@
                                 <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="2.0"
+                                    android:text="200"
                                     android:id="@+id/button231"
                                     android:background="@drawable/radius"
                                     android:layout_margin="7dp"
@@ -645,7 +625,7 @@
 
                     <ImageView
                         android:id="@+id/imageView3"
-                        android:src="@drawable/st"
+                        android:src="@drawable/kraska_s"
                         android:layout_gravity="center_vertical"
                         android:onClick="onClick222"
                         android:background="@android:color/background_light"
@@ -673,32 +653,32 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
+                    android:id="@+id/textView1221"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Площадь поверхности (м2):"
-                    android:id="@+id/textView1221"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic"
-                    android:textColor="#ffffff"
+                    android:layout_margin="1dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:layout_margin="1dp" />
+                    android:text="Площадь поверхности (м2):"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
 
                 <TextView
+                    android:id="@+id/textView500"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView500"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
+                    android:layout_margin="1dp"
                     android:layout_marginLeft="3dp"
-                    android:textColor="#ffffff"
                     android:layout_weight="0"
-                    android:textSize="15sp"
-                    android:layout_margin="1dp" />
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
 
             </LinearLayout>
 
@@ -712,32 +692,32 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
+                    android:id="@+id/textView122"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Шпаклевка (мешков 25кг):"
-                    android:id="@+id/textView122"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic"
-                    android:textColor="#ffffff"
+                    android:layout_margin="1dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:layout_margin="1dp" />
+                    android:text="Количество краски (кг):"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
 
                 <TextView
+                    android:id="@+id/textView143"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView143"
-                    android:text="0.0"
-                    android:textStyle="bold"
-                    android:singleLine="false"
-                    android:theme="@style/AppTheme"
+                    android:layout_margin="1dp"
                     android:layout_marginLeft="3dp"
-                    android:textColor="#ffffff"
                     android:layout_weight="0"
-                    android:textSize="15sp"
-                    android:layout_margin="1dp" />
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
 
             </LinearLayout>
 
@@ -755,30 +735,30 @@
                 android:gravity="right">
 
                 <TextView
+                    android:id="@+id/textView222"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Цена:"
-                    android:id="@+id/textView222"
-                    android:textColor="@android:color/background_light"
-                    android:autoText="false"
+                    android:layout_margin="1dp"
                     android:layout_marginRight="3dp"
                     android:layout_weight="0.32"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic"
-                    android:layout_margin="1dp" />
+                    android:autoText="false"
+                    android:text="Цена:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
 
                 <TextView
+                    android:id="@+id/textView242"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="0.0"
-                    android:id="@+id/textView242"
-                    android:textColor="@android:color/background_light"
+                    android:layout_margin="1dp"
                     android:autoText="false"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:layout_margin="1dp" />
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
 
