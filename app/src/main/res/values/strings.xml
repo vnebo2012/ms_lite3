@@ -151,4 +151,10 @@
     <string name="tvHtml">U278975036654</string>
     <string name="title_activity_st222452">Електромонтаж</string>
     <string name="my_tb_title_elektro">Электромонтаж</string>
+    <string name="my_tb_title_samo_s278">Покраска</string>
+    <string name="title_activity_kr_s">Покраска</string>
+    <string name="my_tb_title_kr_long">Покраска А+В+С</string>
+    <string name="my_tb_title_kr_s">Покраска S</string>
+    <string name="title_activity_kr_l">Покраска А+B+C</string>
+    <string name="title_activity_kr_s2">Покраска S</string>
 </resources>

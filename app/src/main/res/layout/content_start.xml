@@ -27,16 +27,7 @@
         android:onClick="onClickSt1"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button212"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:background="@drawable/radius_armopojas"
-            android:onClick="onClickFun8"
-            android:text="Армопояс"
-            android:textColor="@android:color/background_light"
-            android:textSize="22sp" />
+
 
         <Button
             android:id="@+id/button2412"
@@ -46,6 +37,16 @@
             android:background="@drawable/radius_plita"
             android:onClick="onClickFun8"
             android:text="Плита перекрытия"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp" />
+        <Button
+            android:id="@+id/button212"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/radius_armopojas"
+            android:onClick="onClickFun8"
+            android:text="Армопояс"
             android:textColor="@android:color/background_light"
             android:textSize="22sp" />
 
@@ -94,6 +95,17 @@
             android:textSize="22sp" />
 
         <Button
+            android:id="@+id/button4010"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/radius_pokraska"
+            android:onClick="onClickSt1"
+            android:text="Покраска"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <Button
             android:id="@+id/button400"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,6 +115,8 @@
             android:text="Шпаклевка"
             android:textColor="?attr/colorControlNormal"
             android:textSize="22sp" />
+
+
 
         <Button
             android:id="@+id/button401"
