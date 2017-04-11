@@ -579,17 +579,17 @@
 
 
                 <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="1dp"
-                android:baselineAligned="true"
-                android:background="@color/colorBlueGrey50">
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:baselineAligned="true"
+                    android:background="@color/colorBlueGrey50">
 
 
 
 
-            </LinearLayout>
+                </LinearLayout>
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -785,3 +785,4 @@
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
+
