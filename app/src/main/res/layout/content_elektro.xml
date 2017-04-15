@@ -459,14 +459,14 @@
                             android:textColor="@color/colorTextMy" />
 
                         <TextView
+                            android:id="@+id/textView501"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="(м)"
-                            android:id="@+id/textView501"
+                            android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
-                            android:textSize="16dp"
+                            android:text="(шт.)"
                             android:textColor="@color/colorTextMy"
-                            android:layout_gravity="center_vertical" />
+                            android:textSize="16dp" />
                     </LinearLayout>
 
                     <LinearLayout

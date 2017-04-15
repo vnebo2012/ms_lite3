@@ -65,7 +65,7 @@ public class Start_Activity extends AppCompatActivity {
         Button button2 = (Button) findViewById(R.id.button210);
         Button button3 = (Button) findViewById(R.id.button400);
         Button button4 = (Button) findViewById(R.id.button2412);
-       // Button button5 = (Button) findViewById(R.id.button4010);
+        Button button5 = (Button) findViewById(R.id.button4010);
         TextView textView = (TextView) findViewById(R.id.textView);
 
 
@@ -73,7 +73,7 @@ public class Start_Activity extends AppCompatActivity {
         button2.setOnClickListener(viewClickListener2);
         button3.setOnClickListener(viewClickListener3);
         button4.setOnClickListener(viewClickListener4);
-       // button5.setOnClickListener(viewClickListener5);
+        button5.setOnClickListener(viewClickListener5);
 //        textView.setOnClickListener(viewClickListener);
 
 
@@ -596,7 +596,7 @@ public class Start_Activity extends AppCompatActivity {
 
                             case R.id.menu8:
                                 //пол
-                                Intent intent = new Intent(Start_Activity.this, Kraska_A_B_Activity.class);
+                                Intent intent = new Intent(Start_Activity.this, Kraska_S_Activity.class);
                                 startActivity(intent);
                                 long mills = 15L;
                                 Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
@@ -605,10 +605,10 @@ public class Start_Activity extends AppCompatActivity {
 
                             case R.id.menu9:
                                 //пол
-                                Intent intent2 = new Intent(Start_Activity.this, Kraska_S_Activity.class);
+                                Intent intent2 = new Intent(Start_Activity.this, Kraska_S_2_Activity.class);
                                 startActivity(intent2);
                                 long mills2 = 15L;
-                                Vibrator vibrator2 = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                               Vibrator vibrator2 = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                                 vibrator2.vibrate(mills2);
 
                                 return true;

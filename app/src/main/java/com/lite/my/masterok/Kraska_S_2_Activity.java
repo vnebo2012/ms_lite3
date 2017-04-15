@@ -24,7 +24,7 @@ import android.widget.Toast;
 
 import java.util.Locale;
 
-public class Kraska_S_Activity extends AppCompatActivity {
+public class Kraska_S_2_Activity extends AppCompatActivity {
 
 
     Button etText;
@@ -1040,12 +1040,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
      * Called when the activity is first created.
      */
 
-    final String MY_SETTINGS = "saved_text_sp_kr44";
+    final String MY_SETTINGS = "saved_text_sp_kr2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kraska_s);
+        setContentView(R.layout.activity_kraska_s_2);
 
         ImageView imageView2 = (ImageView) findViewById(R.id.imageView3);
         TextView textView = (TextView) findViewById(R.id.textView);
@@ -1061,7 +1061,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
         Toolbar my_toolbar = (Toolbar)findViewById(R.id.my_toolbar);
         setSupportActionBar(my_toolbar);
 
-        getSupportActionBar().setTitle(R.string.my_tb_title_kr_s33);
+        getSupportActionBar().setTitle(R.string.my_tb_title_kr_s331);
 
 
         my_toolbar.setNavigationIcon(R.mipmap.ic_dom);
@@ -1076,7 +1076,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
                 Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibrator.vibrate(mills);
 
-                Intent a = new Intent(Kraska_S_Activity.this,Start_Activity.class);
+                Intent a = new Intent(Kraska_S_2_Activity.this,Start_Activity.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(a);
             }
@@ -1090,7 +1090,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
         SharedPreferences sp = getSharedPreferences(MY_SETTINGS,
                 Context.MODE_PRIVATE);
         // проверяем, первый ли раз открывается программа
-        boolean hasVisited = sp.getBoolean("hasVisited_sp_kr44", false);
+        boolean hasVisited = sp.getBoolean("hasVisited_sp_kr2", false);
 
         if (!hasVisited) {
 
@@ -1245,12 +1245,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
                                     bill242.setText(0.0 + "");
                                     bill500.setText(0.0 + "");
 
-                                    bill230.setText(250 + "");
-                                    bill231.setText(600 + "");
+                                    bill230.setText(600 + "");
+                                    bill231.setText(700 + "");
 
                                     bill501.setText(1 + "");
-                                    bill502.setText(2.7 + "");
-                                    bill503.setText(5 + "");
+                                    bill502.setText(5 + "");
+                                    bill503.setText(10 + "");
 
                                     bill700.setText(0.0 + "");
 
@@ -1281,7 +1281,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
             // startActivity(intent);
 
             SharedPreferences.Editor e = sp.edit();
-            e.putBoolean("hasVisited_sp_kr44", true);
+            e.putBoolean("hasVisited_sp_kr2", true);
             e.commit(); // не забудьте подтвердить изменения
         }
 
@@ -4448,7 +4448,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                 {
                     float S = (num002);
-                    float kg = (float) (S * (num010*1.75)*0.001);
+                    float kg = (float) (S * (num010*1.85)*0.001);
                     //float M = (kg / 25);
                     float C = (kg*num015);
                     float Ban1 = (kg/num081);
@@ -4467,7 +4467,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
             {
                 float S = (num002);
-                float kg = (float) (S * (num010*2.2*0.001));
+                float kg = (float) (S * (num010*2.35*0.001));
                 //float M = (kg / 25);
                 float C = (kg*num015);
                 float Ban1 = (kg/num081);
@@ -5000,11 +5000,11 @@ public class Kraska_S_Activity extends AppCompatActivity {
     }
 
 
-    public void onClick2223(View view) {
-        Intent a = new Intent(this,Kraska_S_2_Activity.class);
+    public void onClick2224(View view) {
+        Intent a = new Intent(this,Kraska_S_Activity.class);
        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-       startActivity(a);
-   }
+      startActivity(a);
+    }
     @Override
     public void onBackPressed() {
         //do something on back.

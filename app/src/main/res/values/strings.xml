@@ -157,4 +157,7 @@
     <string name="my_tb_title_kr_s">Покраска S</string>
     <string name="title_activity_kr_l">Покраска А+B+C</string>
     <string name="title_activity_kr_s2">Покраска S</string>
+    <string name="my_tb_title_kr_s_2">Покраска S (л)</string>
+    <string name="my_tb_title_kr_s33">Покраска S (кг)</string>
+    <string name="my_tb_title_kr_s331">Покраска S (л)</string>
 </resources>

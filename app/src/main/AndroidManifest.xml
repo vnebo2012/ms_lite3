@@ -87,13 +87,13 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".Kraska_S_Activity"
-            android:label="@string/title_activity_kr_s2"
-            android:theme="@style/AppTheme.NoActionBar" />
+        android:name=".Kraska_S_Activity"
+        android:label="@string/title_activity_kr_s2"
+        android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".Kraska_A_B_Activity"
-            android:label="@string/title_activity_kr_l"
+            android:name=".Kraska_S_2_Activity"
+            android:label="@string/title_activity_kr_s2"
             android:theme="@style/AppTheme.NoActionBar" />
 
 

@@ -5,11 +5,11 @@
         <item
             android:id="@+id/menu8"
 
-            android:title="Покраска A+B+C"/>
+            android:title="Краска (кг)"/>
 
         <item
             android:id="@+id/menu9"
-            android:title="Покрска S"/>
+            android:title="Краска (л)"/>
 
 
 

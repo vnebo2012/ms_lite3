@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Kraska_A_B_Activity">
+    tools:context=".Shpaklevka_S_Activity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -21,8 +21,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_kraska_a_b" />
-
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -31,5 +29,7 @@
         android:layout_margin="@dimen/fab_margin"
         android:src="@mipmap/ic_dor"
         android:onClick="onEmailClick" />
+
+    <include layout="@layout/content_kraska_s_2" />
 
 </android.support.design.widget.CoordinatorLayout>
