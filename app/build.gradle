@@ -7,8 +7,8 @@ android {
         applicationId "com.lite.my.masterok"
         minSdkVersion 15
         targetSdkVersion 24
-        versionCode 34
-        versionName "1.95"
+        versionCode 35
+        versionName "1.96"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }

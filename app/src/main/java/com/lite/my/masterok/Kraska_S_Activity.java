@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.support.design.widget.FloatingActionButton;
@@ -193,7 +194,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
     TextView etText700;
 
 
-
     Button btnSave, btnLoad;
 
 
@@ -354,7 +354,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
     final String SAVED_TEXT503 = "saved_text503";
 
     final String SAVED_TEXT700 = "saved_text700";
-
 
 
     final Context context2 = this;
@@ -534,10 +533,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
     private Button btn503;
 
 
-
-
-
-
     //endregion
 
     //region секция private Button aetText1 - aetText51;
@@ -696,8 +691,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
     private Button aetText700;
 
 
-
-
 //endregion
 
 
@@ -853,9 +846,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
     Button button503;
 
 
-
-
-
     //endregion
 
     //region секция private TextView final_text - final_text51;
@@ -957,7 +947,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
     private TextView final_text82;
 
 
-
     private TextView final_text83;
     private TextView final_text84;
     private TextView final_text85;
@@ -1031,9 +1020,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
     ImageView imageView1;
 
 
-
-
-
     //endregion
 
     /**
@@ -1051,14 +1037,14 @@ public class Kraska_S_Activity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.textView);
 
 
-       // imageView2.setOnClickListener(viewClickListener);
+        // imageView2.setOnClickListener(viewClickListener);
 
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         imageView = (ImageView) findViewById(R.id.imageView23);
 
-        Toolbar my_toolbar = (Toolbar)findViewById(R.id.my_toolbar);
+        Toolbar my_toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(my_toolbar);
 
         getSupportActionBar().setTitle(R.string.my_tb_title_kr_s33);
@@ -1076,15 +1062,11 @@ public class Kraska_S_Activity extends AppCompatActivity {
                 Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibrator.vibrate(mills);
 
-                Intent a = new Intent(Kraska_S_Activity.this,Start_Activity.class);
+                Intent a = new Intent(Kraska_S_Activity.this, Start_Activity.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(a);
             }
         });
-
-
-
-
 
 
         SharedPreferences sp = getSharedPreferences(MY_SETTINGS,
@@ -1098,10 +1080,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
             View promptsView = li.inflate(R.layout.prompt2, null);
             AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
             mDialogBuilder.setView(promptsView);
-
-
-
-
 
 
             final TextView bill23 = (TextView) findViewById(R.id.button97);
@@ -1124,11 +1102,10 @@ public class Kraska_S_Activity extends AppCompatActivity {
             final TextView bill51 = (TextView) findViewById(R.id.button75);
 
 
-
             final TextView bill79 = (TextView) findViewById(R.id.button26);
             final TextView bill80 = (TextView) findViewById(R.id.button33);
             final TextView bill81 = (TextView) findViewById(R.id.button34);
-           // final TextView bill82 = (TextView) findViewById(R.id.button35);
+            // final TextView bill82 = (TextView) findViewById(R.id.button35);
 
 
             final TextView bill201 = (TextView) findViewById(R.id.button201);
@@ -1144,7 +1121,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
             final TextView bill211 = (TextView) findViewById(R.id.button211);
 
 
-
             final TextView bill230 = (TextView) findViewById(R.id.button230);
             final TextView bill231 = (TextView) findViewById(R.id.button231);
             final TextView bill232 = (TextView) findViewById(R.id.button232);
@@ -1153,7 +1129,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
             final TextView bill234 = (TextView) findViewById(R.id.button234);
             final TextView bill235 = (TextView) findViewById(R.id.button235);
             final TextView bill236 = (TextView) findViewById(R.id.button236);
-
 
 
             final TextView bill243 = (TextView) findViewById(R.id.button243);
@@ -1185,7 +1160,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
             etText83 = (TextView) findViewById(R.id.textView14);
             //etText84 = (TextView) findViewById(R.id.textView20);
             etText85 = (TextView) findViewById(R.id.textView143);
-         //   etText86 = (TextView) findViewById(R.id.textView24);
+            //   etText86 = (TextView) findViewById(R.id.textView24);
 
             etText301 = (TextView) findViewById(R.id.textView201);
             etText302 = (TextView) findViewById(R.id.textView301);
@@ -1198,13 +1173,11 @@ public class Kraska_S_Activity extends AppCompatActivity {
             //final TextView bill76 = (TextView) findViewById(R.id.button37);
 
 
-
-
             mDialogBuilder
                     .setCancelable(false)
                     .setPositiveButton("OK",
                             new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog,int id) {
+                                public void onClick(DialogInterface dialog, int id) {
 
 
                                     bill13.setText(0.0 + "");
@@ -1231,15 +1204,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
                                     bill79.setText(1 + "");
                                     bill80.setText(2 + "");
                                     bill81.setText(3 + "");
-                                //    bill82.setText(4 + "");
+                                    //    bill82.setText(4 + "");
 
-                                 //   bill12.setText(0.0 + "");
+                                    //   bill12.setText(0.0 + "");
 
-                               //     bill84.setText(0.0 + "");
-                              //      bill86.setText(0.0 + "");
-
-
-
+                                    //     bill84.setText(0.0 + "");
+                                    //      bill86.setText(0.0 + "");
 
 
                                     bill242.setText(0.0 + "");
@@ -1255,14 +1225,9 @@ public class Kraska_S_Activity extends AppCompatActivity {
                                     bill700.setText(0.0 + "");
 
 
-
-                                   // bill230.setText("1"+"/"+"2");
+                                    // bill230.setText("1"+"/"+"2");
                                     //bill231.setText("1"+"/"+"3");
-                                   // bill232.setText("1"+"/"+"4");
-
-
-
-
+                                    // bill232.setText("1"+"/"+"4");
 
 
                                 }
@@ -1365,7 +1330,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
         etText700 = (TextView) findViewById(R.id.textView700);
 
 
-
         loadText23();
         loadText24();
         loadText25();
@@ -1388,7 +1352,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
         loadText79();
         loadText80();
         loadText81();
-       // loadText82();
+        // loadText82();
 
 
         loadText85();
@@ -1407,23 +1371,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
         loadText700();
 
 
-
-
-
-
-       // loadText232();
-
-
-
-
-
-
+        // loadText232();
 
 
         //Ряды кнопок (по Алерт Диалогу)
 
         //region секция 1 (button101 = (Button) findViewById(R.id.button10);)
-
 
 
         //region секция 3
@@ -1448,13 +1401,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text23.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1492,13 +1444,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text24.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1536,13 +1487,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text25.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1580,13 +1530,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text26.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1624,13 +1573,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text27.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1668,13 +1616,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text28.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1712,13 +1659,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text29.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1756,13 +1702,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text30.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1800,12 +1745,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
+                                                                             dialog.cancel();
+                                                                         } else {
                                                                              final_text31.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1843,13 +1788,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text32.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1887,13 +1831,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text33.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1909,20 +1852,10 @@ public class Kraska_S_Activity extends AppCompatActivity {
         );
 
 
-
         //endregion
 
 
-
-
 //endregion
-
-
-
-
-
-
-
 
 
         button179 = (Button) findViewById(R.id.button26);
@@ -1946,13 +1879,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text79.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1990,13 +1922,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text80.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2034,13 +1965,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text81.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2058,13 +1988,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
         //endregion
 
 
-
-
-
-
-
-
-         button230 = (Button) findViewById(R.id.button230);
+        button230 = (Button) findViewById(R.id.button230);
         final_text230 = (TextView) findViewById(R.id.button230);
         button230.setOnLongClickListener(new View.OnLongClickListener() {
 
@@ -2085,13 +2009,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text230.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2106,7 +2029,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
                                          }
         );
 
-         button231 = (Button) findViewById(R.id.button231);
+        button231 = (Button) findViewById(R.id.button231);
         final_text231 = (TextView) findViewById(R.id.button231);
         button231.setOnLongClickListener(new View.OnLongClickListener() {
 
@@ -2127,13 +2050,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text231.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2168,13 +2090,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text46.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2212,13 +2133,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text47.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2256,13 +2176,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text48.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2300,13 +2219,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text49.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2344,13 +2262,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text50.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2388,13 +2305,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text51.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2430,13 +2346,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text501.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2450,7 +2365,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
                                              }
                                          }
         );
-
 
 
         button502 = (Button) findViewById(R.id.button502);
@@ -2474,13 +2388,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text502.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2516,13 +2429,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text503.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2538,20 +2450,10 @@ public class Kraska_S_Activity extends AppCompatActivity {
         );
 
 
-
-
-
-
-
-
         //endregion
 
 
-
-
         //endregion
-
-
 
 
 //endregion
@@ -2679,8 +2581,8 @@ public class Kraska_S_Activity extends AppCompatActivity {
         btn225 = (Button) findViewById(R.id.button225);
         //btn226 = (Button) findViewById(R.id.button226);
         //btn227 = (Button) findViewById(R.id.button227);
-       // btn228 = (Button) findViewById(R.id.button228);
-      //  btn229 = (Button) findViewById(R.id.button229);
+        // btn228 = (Button) findViewById(R.id.button228);
+        //  btn229 = (Button) findViewById(R.id.button229);
         btn230 = (Button) findViewById(R.id.button230);
         btn231 = (Button) findViewById(R.id.button231);
         btn232 = (Button) findViewById(R.id.button232);
@@ -2718,7 +2620,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
         wir_6 = (TextView) findViewById(R.id.textViewWir6);
         wir_7 = (TextView) findViewById(R.id.textViewWir7);
         wir_8 = (TextView) findViewById(R.id.textViewWir8);
-       // wir_9 = (TextView) findViewById(R.id.textViewWir9);
+        // wir_9 = (TextView) findViewById(R.id.textViewWir9);
         wir_10 = (TextView) findViewById(R.id.textViewWir10);
         wir_11 = (TextView) findViewById(R.id.textViewWir11);
         wir_12 = (TextView) findViewById(R.id.textViewWir12);
@@ -2728,8 +2630,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
         wir_16 = (TextView) findViewById(R.id.textViewWir16);
         wir_17 = (TextView) findViewById(R.id.textViewWir17);
         wir_81 = (TextView) findViewById(R.id.textViewWir81);
-
-
 
 
         //endregion
@@ -2897,7 +2797,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
                         break;
 
                     //endregion
-
 
 
                     //region секция 3.1
@@ -3102,8 +3001,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
                         textView039.setText(String.format(Locale.US, "%.2f", w39) + "");
                         break;
                         */
-
-
 
 
                     //endregion
@@ -3524,7 +3421,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
                         break;
 
 
-
                     //endregion
 
                     //region секция 11.1
@@ -3596,7 +3492,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
                         break;*/
 
 
-
                     //endregion
 
                     //region секция button 12.1 - 26. 33. 34. 35.
@@ -3639,9 +3534,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
                         final Button button57 = (Button) findViewById(R.id.button34);
                         button57.startAnimation(anim57);
                         break;
-
-
-
 
 
                     case R.id.button201:
@@ -4024,7 +3916,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
                         aetText231 = (Button) findViewById(R.id.button231);
                         float num231 = Float.parseFloat(aetText231.getText().toString());
                         float w231 = (float) num231;
-                        textView231.setText(String.format(Locale.US, "%.2f",w231 ) + "");
+                        textView231.setText(String.format(Locale.US, "%.2f", w231) + "");
                         Animation anim231 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button231 = (Button) findViewById(R.id.button231);
@@ -4033,12 +3925,11 @@ public class Kraska_S_Activity extends AppCompatActivity {
                         break;
 
 
-
                     case R.id.button232:
                         TextView textView232 = (TextView) findViewById(R.id.textViewWir10);
                         aetText232 = (Button) findViewById(R.id.button232);
                         //float num232 = Float.parseFloat(aetText232.getText().toString());
-                       // float w232 = (float) num232;
+                        // float w232 = (float) num232;
                         textView232.setText(String.format(Locale.US, "%.2f", 0.25) + "");
                         Animation anim232 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -4287,15 +4178,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
                         break;
 
 
-
-
-
-
-
-
-
                     //endregion
-
 
 
                     //&&&&&&
@@ -4307,7 +4190,6 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
         //region секция (btn1.setOnClickListener(btnClk);)
 //        btn1.setOnClickListener(btnClk);
-
 
 
         btn23.setOnClickListener(btnClk);
@@ -4330,14 +4212,10 @@ public class Kraska_S_Activity extends AppCompatActivity {
         btn51.setOnClickListener(btnClk);
 
 
-
         btn79.setOnClickListener(btnClk);
         btn80.setOnClickListener(btnClk);
         btn81.setOnClickListener(btnClk);
 //        btn82.setOnClickListener(btnClk);
-
-
-
 
 
         btn230.setOnClickListener(btnClk);
@@ -4349,139 +4227,130 @@ public class Kraska_S_Activity extends AppCompatActivity {
         //btn232.setOnClickListener(btnClk);
 
 
-
-
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         // setSupportActionBar(toolbar);
 
 
-
-
-
         FloatingActionButton fab2 = (FloatingActionButton) findViewById(R.id.fab);
         fab2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+                                    @Override
+                                    public void onClick(View view) {
 
-                long mills = 42L;
-                Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-                vibrator.vibrate(mills);
+                                        long mills = 42L;
+                                        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                                        vibrator.vibrate(mills);
 
-                Animation anim1 = AnimationUtils.loadAnimation(
-                        getApplicationContext(), R.anim.sms_anim2);
-                final FloatingActionButton button1111 = (FloatingActionButton) findViewById(R.id.fab);
-                button1111.startAnimation(anim1);
+                                        Animation anim1 = AnimationUtils.loadAnimation(
+                                                getApplicationContext(), R.anim.sms_anim2);
+                                        final FloatingActionButton button1111 = (FloatingActionButton) findViewById(R.id.fab);
+                                        button1111.startAnimation(anim1);
 
-                TextView aetText1;
-                TextView aetText2;
-                TextView aetText3;
-                TextView aetText4;
-                TextView aetText5;
-                TextView aetText6;
+                                        TextView aetText1;
+                                        TextView aetText2;
+                                        TextView aetText3;
+                                        TextView aetText4;
+                                        TextView aetText5;
+                                        TextView aetText6;
 
-                TextView aetText7;
-                TextView aetText8;
-                TextView aetText9;
-                TextView aetText10;
-                TextView aetText11;
-                TextView aetText12;
-                TextView aetText13;
-                TextView aetText14;
-                TextView aetText15;
-                TextView aetText16;
-                TextView aetText17;
-                TextView aetText81;
-                TextView aetText_bano;
-
-
+                                        TextView aetText7;
+                                        TextView aetText8;
+                                        TextView aetText9;
+                                        TextView aetText10;
+                                        TextView aetText11;
+                                        TextView aetText12;
+                                        TextView aetText13;
+                                        TextView aetText14;
+                                        TextView aetText15;
+                                        TextView aetText16;
+                                        TextView aetText17;
+                                        TextView aetText81;
+                                        TextView aetText_bano;
 
 
-                // Стороны:
+                                        // Стороны:
 
-                // A
+                                        // A
 
-                aetText2 = (TextView) findViewById(R.id.textViewWir2);
+                                        aetText2 = (TextView) findViewById(R.id.textViewWir2);
 
-                // B
-                aetText3 = (TextView) findViewById(R.id.textViewWir3);
+                                        // B
+                                        aetText3 = (TextView) findViewById(R.id.textViewWir3);
 
-                aetText8 = (TextView) findViewById(R.id.textViewWir8);
-                aetText10 = (TextView) findViewById(R.id.textViewWir10);
-                aetText15 = (TextView) findViewById(R.id.textViewWir15);
-                aetText81 = (TextView) findViewById(R.id.textViewWir81);
-
-
-
-                float num002 = Float.parseFloat(aetText2.getText().toString());
-                float num008 = Float.parseFloat(aetText8.getText().toString());
-                float num010 = Float.parseFloat(aetText10.getText().toString());
-                float num015 = Float.parseFloat(aetText15.getText().toString());
-                float num081 = Float.parseFloat(aetText81.getText().toString());
+                                        aetText8 = (TextView) findViewById(R.id.textViewWir8);
+                                        aetText10 = (TextView) findViewById(R.id.textViewWir10);
+                                        aetText15 = (TextView) findViewById(R.id.textViewWir15);
+                                        aetText81 = (TextView) findViewById(R.id.textViewWir81);
 
 
-                //количество
+                                        float num002 = Float.parseFloat(aetText2.getText().toString());
+                                        float num008 = Float.parseFloat(aetText8.getText().toString());
+                                        float num010 = Float.parseFloat(aetText10.getText().toString());
+                                        float num015 = Float.parseFloat(aetText15.getText().toString());
+                                        float num081 = Float.parseFloat(aetText81.getText().toString());
 
 
-
-                if (Float.parseFloat(aetText8.getText().toString()) == 1) {
-
-                    float S = (num002);
-                    float kg = (float) (S * (num010*0.001));
-                    //float M = (kg / 25);
-                    float C = (kg*num015);
-                    float Ban1 = (kg/num081);
-
-                    TextView textView143 = (TextView) findViewById(R.id.textView143);
-                    TextView textView242 = (TextView) findViewById(R.id.textView242);
-                    TextView textView500 = (TextView) findViewById(R.id.textView500);
-                    TextView textView700 = (TextView) findViewById(R.id.textView700);
-
-                    textView143.setText(String.format(Locale.US, "%.2f", kg) + "");
-                    textView242.setText(String.format(Locale.US, "%.2f", C) + "");
-                    textView500.setText(String.format(Locale.US, "%.2f", S) + "");
-                    textView700.setText(String.format(Locale.US, "%.1f", Ban1) + "");
+                                        //количество
 
 
+                                        if (Float.parseFloat(aetText8.getText().toString()) == 1) {
+
+                                            float S = (num002);
+                                            float kg = (float) (S * (num010 * 0.001));
+                                            //float M = (kg / 25);
+                                            float C = (kg * num015);
+                                            float Ban1 = (kg / num081);
+
+                                            TextView textView143 = (TextView) findViewById(R.id.textView143);
+                                            TextView textView242 = (TextView) findViewById(R.id.textView242);
+                                            TextView textView500 = (TextView) findViewById(R.id.textView500);
+                                            TextView textView700 = (TextView) findViewById(R.id.textView700);
+
+                                            textView143.setText(String.format(Locale.US, "%.2f", kg) + "");
+                                            textView242.setText(String.format(Locale.US, "%.2f", C) + "");
+                                            textView500.setText(String.format(Locale.US, "%.2f", S) + "");
+                                            textView700.setText(String.format(Locale.US, "%.1f", Ban1) + "");
 
 
-                } else if (Float.parseFloat(aetText8.getText().toString()) == 2)
+                                        } else if (Float.parseFloat(aetText8.getText().toString()) == 2)
 
-                {
-                    float S = (num002);
-                    float kg = (float) (S * (num010*1.75)*0.001);
-                    //float M = (kg / 25);
-                    float C = (kg*num015);
-                    float Ban1 = (kg/num081);
+                                        {
+                                            float S = (num002);
+                                            float kg = (float) (S * (num010 * 1.75) * 0.001);
+                                            //float M = (kg / 25);
+                                            float C = (kg * num015);
+                                            float Ban1 = (kg / num081);
 
-                    TextView textView143 = (TextView) findViewById(R.id.textView143);
-                    TextView textView242 = (TextView) findViewById(R.id.textView242);
-                    TextView textView500 = (TextView) findViewById(R.id.textView500);
-                    TextView textView700 = (TextView) findViewById(R.id.textView700);
+                                            TextView textView143 = (TextView) findViewById(R.id.textView143);
+                                            TextView textView242 = (TextView) findViewById(R.id.textView242);
+                                            TextView textView500 = (TextView) findViewById(R.id.textView500);
+                                            TextView textView700 = (TextView) findViewById(R.id.textView700);
 
-                    textView143.setText(String.format(Locale.US, "%.2f", kg) + "");
-                    textView242.setText(String.format(Locale.US, "%.2f", C) + "");
-                    textView500.setText(String.format(Locale.US, "%.2f", S) + "");
-                    textView700.setText(String.format(Locale.US, "%.1f", Ban1) + "");
+                                            textView143.setText(String.format(Locale.US, "%.2f", kg) + "");
+                                            textView242.setText(String.format(Locale.US, "%.2f", C) + "");
+                                            textView500.setText(String.format(Locale.US, "%.2f", S) + "");
+                                            textView700.setText(String.format(Locale.US, "%.1f", Ban1) + "");
 
-            } else if (Float.parseFloat(aetText8.getText().toString()) == 3)
+                                        } else if (Float.parseFloat(aetText8.getText().toString()) == 3)
 
-            {
-                float S = (num002);
-                float kg = (float) (S * (num010*2.2*0.001));
-                //float M = (kg / 25);
-                float C = (kg*num015);
-                float Ban1 = (kg/num081);
+                                        {
+                                            float S = (num002);
+                                            float kg = (float) (S * (num010 * 2.2 * 0.001));
+                                            //float M = (kg / 25);
+                                            float C = (kg * num015);
+                                            float Ban1 = (kg / num081);
 
-                TextView textView143 = (TextView) findViewById(R.id.textView143);
-                TextView textView242 = (TextView) findViewById(R.id.textView242);
-                TextView textView500 = (TextView) findViewById(R.id.textView500);
-                TextView textView700 = (TextView) findViewById(R.id.textView700);
+                                            TextView textView143 = (TextView) findViewById(R.id.textView143);
+                                            TextView textView242 = (TextView) findViewById(R.id.textView242);
+                                            TextView textView500 = (TextView) findViewById(R.id.textView500);
+                                            TextView textView700 = (TextView) findViewById(R.id.textView700);
 
-                textView143.setText(String.format(Locale.US, "%.2f", kg) + "");
-                textView242.setText(String.format(Locale.US, "%.2f", C) + "");
-                textView500.setText(String.format(Locale.US, "%.2f", S) + "");
-                textView700.setText(String.format(Locale.US, "%.1f", Ban1) + "");
-            }}}
+                                            textView143.setText(String.format(Locale.US, "%.2f", kg) + "");
+                                            textView242.setText(String.format(Locale.US, "%.2f", C) + "");
+                                            textView500.setText(String.format(Locale.US, "%.2f", S) + "");
+                                            textView700.setText(String.format(Locale.US, "%.1f", Ban1) + "");
+                                        }
+                                    }
+                                }
         );
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -4499,19 +4368,18 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
 
                 bill82.setText(00.00 + "");
-               // bill83.setText(00.00 + "");
-               // bill84.setText(00.00 + "");
+                // bill83.setText(00.00 + "");
+                // bill84.setText(00.00 + "");
                 bill85.setText(00.00 + "");
                 bill500.setText(00.00 + "");
                 bill700.setText(00.00 + "");
-             //   bill86.setText(00.00 + "");
-
+                //   bill86.setText(00.00 + "");
 
 
                 Toast toast = Toast.makeText(getApplicationContext(),
-                       "Сброс", Toast.LENGTH_SHORT);
+                        "Сброс", Toast.LENGTH_SHORT);
 
-               toast.show();
+                toast.show();
 
                 return true;
             }
@@ -4587,14 +4455,13 @@ public class Kraska_S_Activity extends AppCompatActivity {
     //region сохранение данных
 
 
-
-
     void saveText13() {
         sPref2 = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref2.edit();
         ed.putString(SAVED_TEXT13, etText13.getText().toString());
         ed.commit();
     }
+
     void loadText13() {
         sPref2 = getPreferences(MODE_PRIVATE);
         String savedText = sPref2.getString(SAVED_TEXT13, "");
@@ -4637,94 +4504,111 @@ public class Kraska_S_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT25, etText25.getText().toString());
         ed.commit();
     }
+
     void loadText25() {
         sPref3 = getPreferences(MODE_PRIVATE);
         String savedText = sPref3.getString(SAVED_TEXT25, "");
         etText25.setText(savedText);
     }
+
     void saveText26() {
         sPref3 = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref3.edit();
         ed.putString(SAVED_TEXT26, etText26.getText().toString());
         ed.commit();
     }
+
     void loadText26() {
         sPref3 = getPreferences(MODE_PRIVATE);
         String savedText = sPref3.getString(SAVED_TEXT26, "");
         etText26.setText(savedText);
     }
+
     void saveText27() {
         sPref3 = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref3.edit();
         ed.putString(SAVED_TEXT27, etText27.getText().toString());
         ed.commit();
     }
+
     void loadText27() {
         sPref3 = getPreferences(MODE_PRIVATE);
         String savedText = sPref3.getString(SAVED_TEXT27, "");
         etText27.setText(savedText);
     }
+
     void saveText28() {
         sPref3 = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref3.edit();
         ed.putString(SAVED_TEXT28, etText28.getText().toString());
         ed.commit();
     }
+
     void loadText28() {
         sPref3 = getPreferences(MODE_PRIVATE);
         String savedText = sPref3.getString(SAVED_TEXT28, "");
         etText28.setText(savedText);
     }
+
     void saveText29() {
         sPref3 = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref3.edit();
         ed.putString(SAVED_TEXT29, etText29.getText().toString());
         ed.commit();
     }
+
     void loadText29() {
         sPref3 = getPreferences(MODE_PRIVATE);
         String savedText = sPref3.getString(SAVED_TEXT29, "");
         etText29.setText(savedText);
     }
+
     void saveText30() {
         sPref3 = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref3.edit();
         ed.putString(SAVED_TEXT30, etText30.getText().toString());
         ed.commit();
     }
+
     void loadText30() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT30, "");
         etText30.setText(savedText);
     }
+
     void saveText31() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT31, etText31.getText().toString());
         ed.commit();
     }
+
     void loadText31() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT31, "");
         etText31.setText(savedText);
     }
+
     void saveText32() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT32, etText32.getText().toString());
         ed.commit();
     }
+
     void loadText32() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT32, "");
         etText32.setText(savedText);
     }
+
     void saveText33() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT33, etText33.getText().toString());
         ed.commit();
     }
+
     void loadText33() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT33, "");
@@ -4737,70 +4621,77 @@ public class Kraska_S_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT46, etText46.getText().toString());
         ed.commit();
     }
+
     void loadText46() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT46, "");
         etText46.setText(savedText);
     }
+
     void saveText47() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT47, etText47.getText().toString());
         ed.commit();
     }
+
     void loadText47() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT47, "");
         etText47.setText(savedText);
     }
+
     void saveText48() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT48, etText48.getText().toString());
         ed.commit();
     }
+
     void loadText48() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT48, "");
         etText48.setText(savedText);
     }
+
     void saveText49() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT49, etText49.getText().toString());
         ed.commit();
     }
+
     void loadText49() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT49, "");
         etText49.setText(savedText);
     }
+
     void saveText50() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT50, etText50.getText().toString());
         ed.commit();
     }
+
     void loadText50() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT50, "");
         etText50.setText(savedText);
     }
+
     void saveText51() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT51, etText51.getText().toString());
         ed.commit();
     }
+
     void loadText51() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT51, "");
         etText51.setText(savedText);
     }
-
-
-
-
 
 
     void saveText79() {
@@ -4809,34 +4700,38 @@ public class Kraska_S_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT79, etText79.getText().toString());
         ed.commit();
     }
+
     void loadText79() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT79, "");
         etText79.setText(savedText);
     }
+
     void saveText80() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT80, etText80.getText().toString());
         ed.commit();
     }
+
     void loadText80() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT80, "");
         etText80.setText(savedText);
     }
+
     void saveText81() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT81, etText81.getText().toString());
         ed.commit();
     }
+
     void loadText81() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT81, "");
         etText81.setText(savedText);
     }
-
 
 
     void saveText85() {
@@ -4845,6 +4740,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT85, etText85.getText().toString());
         ed.commit();
     }
+
     void loadText85() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT85, "");
@@ -4858,6 +4754,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT230, etText230.getText().toString());
         ed.commit();
     }
+
     void loadText230() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT230, "");
@@ -4871,6 +4768,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT231, etText231.getText().toString());
         ed.commit();
     }
+
     void loadText231() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT231, "");
@@ -4883,12 +4781,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT500, etText500.getText().toString());
         ed.commit();
     }
+
     void loadText500() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT500, "");
         etText500.setText(savedText);
     }
-
 
 
     void saveText501() {
@@ -4897,6 +4795,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT501, etText501.getText().toString());
         ed.commit();
     }
+
     void loadText501() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT501, "");
@@ -4910,17 +4809,20 @@ public class Kraska_S_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT502, etText502.getText().toString());
         ed.commit();
     }
+
     void loadText502() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT502, "");
         etText502.setText(savedText);
     }
+
     void saveText503() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT503, etText503.getText().toString());
         ed.commit();
     }
+
     void loadText503() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT503, "");
@@ -4933,14 +4835,12 @@ public class Kraska_S_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT700, etText700.getText().toString());
         ed.commit();
     }
+
     void loadText700() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT700, "");
         etText700.setText(savedText);
     }
-
-
-
 
 
     @Override
@@ -4969,7 +4869,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
         saveText79();
         saveText80();
         saveText81();
-     //   saveText82();
+        //   saveText82();
 
 
         saveText85();
@@ -4988,23 +4888,18 @@ public class Kraska_S_Activity extends AppCompatActivity {
         saveText700();
 
 
-
-
-
-
-
-       // saveText232();
-
+        // saveText232();
 
 
     }
 
 
     public void onClick2223(View view) {
-        Intent a = new Intent(this,Kraska_S_2_Activity.class);
-       a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-       startActivity(a);
-   }
+        Intent a = new Intent(this, Kraska_S_2_Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+    }
+
     @Override
     public void onBackPressed() {
         //do something on back.
@@ -5015,9 +4910,23 @@ public class Kraska_S_Activity extends AppCompatActivity {
 
     }
 
+    public void onClick_Ca(View view) {
+        Intent intent = getPackageManager().getLaunchIntentForPackage("com.google.android.calculator");
+        if (intent != null) {
+            // We found the activity now start the activity
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        } else {
+            // Bring user to the market or let them choose an app?
+            intent = new Intent(Intent.ACTION_VIEW);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setData(Uri.parse("market://details?id=" + "com.google.android.calculator"));
+            startActivity(intent);
+        }
 
+
+    }
 }
-
 
 
 
