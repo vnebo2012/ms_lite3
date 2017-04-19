@@ -1153,7 +1153,7 @@
                     android:autoText="false"
                     android:layout_marginRight="3dp"
                     android:layout_weight="0.32"
-                    android:textSize="15sp"
+                    android:textSize="13sp"
                     android:textStyle="bold|italic"
                     android:layout_margin="1dp" />
 

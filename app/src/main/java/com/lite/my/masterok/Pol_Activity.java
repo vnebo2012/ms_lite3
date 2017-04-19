@@ -1026,26 +1026,7 @@ public class Pol_Activity extends AppCompatActivity {
         Toolbar my_toolbar = (Toolbar)findViewById(R.id.my_toolbar);
         setSupportActionBar(my_toolbar);
 
-        getSupportActionBar().setTitle(R.string.my_tb_title23223);
 
-
-        my_toolbar.setNavigationIcon(R.mipmap.ic_dom);
-
-        my_toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-
-
-            @Override
-            public void onClick(View v) {
-
-                long mills = 15L;
-                Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-                vibrator.vibrate(mills);
-
-                Intent a = new Intent(Pol_Activity.this,Start_Activity.class);
-                a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(a);
-            }
-        });
 
 
 
@@ -6039,6 +6020,11 @@ public class Pol_Activity extends AppCompatActivity {
 
     }
     public void onClick_Ca(View view) {
+
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
         Intent intent = getPackageManager().getLaunchIntentForPackage("com.google.android.calculator");
         if (intent != null) {
             // We found the activity now start the activity
@@ -6051,8 +6037,17 @@ public class Pol_Activity extends AppCompatActivity {
             intent.setData(Uri.parse("market://details?id=" + "com.google.android.calculator"));
             startActivity(intent);
         }
+    }
 
+    public void onClick_dim(View view) {
 
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
+        Intent a = new Intent(this, Start_Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
     }
 
 

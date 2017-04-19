@@ -762,7 +762,7 @@
                     android:text="Площадь поверхности (м2):"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="16sp"
+                    android:textSize="13sp"
                     android:textStyle="bold|italic" />
 
                 <TextView
@@ -801,7 +801,7 @@
                     android:text="Краска (банок/кг):"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="14sp"
+                    android:textSize="13sp"
                     android:textStyle="bold|italic" />
                 <TextView
                     android:id="@+id/textView700"

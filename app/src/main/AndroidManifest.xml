@@ -16,7 +16,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Start_Activity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +29,9 @@
             android:label="@string/app_name2" />
         <activity
             android:name=".BlokiActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+
+            />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -77,27 +80,22 @@
             android:label="@string/title_activity_st2212"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-        android:name=".Plita2Activity"
-        android:label="@string/title_activity_st22245"
-        android:theme="@style/AppTheme.NoActionBar" />
-
+            android:name=".Plita2Activity"
+            android:label="@string/title_activity_st22245"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Elektro_Activity"
             android:label="@string/title_activity_st222452"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
-        android:name=".Kraska_S_Activity"
-        android:label="@string/title_activity_kr_s2"
-        android:theme="@style/AppTheme.NoActionBar" />
-
+            android:name=".Kraska_S_Activity"
+            android:label="@string/title_activity_kr_s2"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Kraska_S_2_Activity"
             android:label="@string/title_activity_kr_s2"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
-        <activity android:name=".WebMoneyActivity"></activity>
+        <activity android:name=".WebMoneyActivity" />
     </application>
 
 </manifest>

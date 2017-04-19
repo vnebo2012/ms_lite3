@@ -160,4 +160,9 @@
     <string name="my_tb_title_kr_s_2">Покраска S (л)</string>
     <string name="my_tb_title_kr_s33">Покраска S (кг)</string>
     <string name="my_tb_title_kr_s331">Покраска S (л)</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
