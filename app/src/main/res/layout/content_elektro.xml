@@ -2052,26 +2052,26 @@
                                 android:layout_height="match_parent" >
 
                                 <Button
-                                    android:id="@+id/button237"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
                                     android:text="0"
-                                    android:textColor="@color/colorBlack"
+                                    android:id="@+id/button237"
                                     android:textSize="25dp"
-                                    android:textStyle="italic" />
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
 
                                 <Button
-                                    android:id="@+id/button238"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
                                     android:text="80"
-                                    android:textColor="@color/colorBlack"
+                                    android:id="@+id/button238"
                                     android:textSize="25dp"
-                                    android:textStyle="italic" />
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
 
                                 <Button
                                     android:layout_width="70dp"
