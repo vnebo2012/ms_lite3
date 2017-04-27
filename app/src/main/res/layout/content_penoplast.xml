@@ -621,13 +621,15 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text=""
+                            android:text="0"
                             android:id="@+id/textViewWir4"
                             android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
                             android:textSize="16dp"
                             android:textStyle="bold"
                             android:textColor="@color/colorTextMy" />
+
+
 
                     </LinearLayout>
 
@@ -1903,6 +1905,110 @@
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:baselineAligned="false"
+                    android:background="@color/colorBlueGrey50" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radius2"
+                        android:baselineAligned="true"
+                        android:layout_margin="3dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Расход Короеда, кг/м2:"
+                            android:id="@+id/textView259"
+                            android:layout_margin="3dp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorTextMy" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:id="@+id/textViewWir14"
+                            android:layout_margin="3dp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTextMy" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent" >
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/horizontalScrollView49"
+                            android:layout_gravity="right"
+                            android:scrollbars="none" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="90"
+                                    android:id="@+id/button234"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="100"
+                                    android:id="@+id/button235"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="110"
+                                    android:id="@+id/button236"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="75dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
@@ -1938,16 +2044,6 @@
                             android:layout_gravity="center_vertical"
                             android:textSize="16dp"
                             android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="(цена)"
-                            android:id="@+id/textView8007"
-                            android:layout_margin="3dp"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
                             android:textColor="@color/colorTextMy" />
 
                     </LinearLayout>
@@ -2325,7 +2421,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Короед или бараник, ведер:"
+                    android:text="Короед или Баранык, ведер:"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
