@@ -36,9 +36,9 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginTop="3dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -52,7 +52,7 @@
                         android:onClick="onClickFun8"
                         android:text="Плита перекрытия"
                         android:textColor="@android:color/background_light"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <Button
                         android:id="@+id/button212"
@@ -63,7 +63,7 @@
                         android:onClick="onClickFun8"
                         android:text="Армопояс"
                         android:textColor="@android:color/background_light"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <Button
                         android:id="@+id/button4"
@@ -74,7 +74,7 @@
                         android:onClick="onClickKirpish"
                         android:text="Кирпич"
                         android:textColor="@android:color/background_light"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <Button
                         android:id="@+id/button9"
@@ -85,7 +85,7 @@
                         android:onClick="onClickBloki"
                         android:text="Блоки"
                         android:textColor="@android:color/background_light"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <Button
                         android:id="@+id/button21"
@@ -96,7 +96,7 @@
                         android:onClick="onClickPlitka"
                         android:text="Плитка"
                         android:textColor="@android:color/background_light"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <Button
                         android:id="@+id/button210"
@@ -107,7 +107,7 @@
                         android:onClick="onClickSt1"
                         android:text="Стяжка"
                         android:textColor="@android:color/background_light"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <Button
                         android:id="@+id/button4010"
@@ -117,7 +117,8 @@
                         android:background="@drawable/radius_pokraska"
                         android:text="Покраска"
                         android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
+
 
                     <Button
                         android:id="@+id/button400"
@@ -127,8 +128,19 @@
                         android:background="@drawable/radius_wpaklevka"
                         android:onClick="onClickSt1"
                         android:text="Шпаклевка"
-                        android:textColor="?attr/colorControlNormal"
-                        android:textSize="20sp" />
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button402121"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/radius_penoplast"
+                        android:onClick="onClickPen"
+                        android:text="Пенопласт"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
 
 
                     <Button
@@ -139,8 +151,9 @@
                         android:background="@drawable/radius_elektro"
                         android:onClick="onClickElektro"
                         android:text="Электромонтаж"
-                        android:textColor="?attr/colorControlNormal"
-                        android:textSize="20sp" />
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
