@@ -119,6 +119,17 @@
                         android:textColor="@android:color/white"
                         android:textSize="18sp" />
 
+                    <Button
+                        android:id="@+id/button402121"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/radius_penoplast"
+                        android:onClick="onClickPen"
+                        android:text="Пенопласт"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
 
                     <Button
                         android:id="@+id/button400"
@@ -131,16 +142,7 @@
                         android:textColor="@android:color/white"
                         android:textSize="18sp" />
 
-                    <Button
-                        android:id="@+id/button402121"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="3dp"
-                        android:background="@drawable/radius_penoplast"
-                        android:onClick="onClickPen"
-                        android:text="Пенопласт"
-                        android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+
 
 
                     <Button

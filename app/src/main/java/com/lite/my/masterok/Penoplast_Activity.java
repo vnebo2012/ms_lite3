@@ -191,6 +191,24 @@ public class Penoplast_Activity extends AppCompatActivity {
 
     TextView etText408;
 
+    TextView etText901;
+    TextView etText902;
+    TextView etText903;
+    TextView etText904;
+    TextView etText905;
+    TextView etText906;
+    TextView etText907;
+    TextView etText908;
+    TextView etText909;
+
+    TextView etText910;
+    TextView etText911;
+    TextView etText912;
+    TextView etText913;
+    TextView etText914;
+    TextView etText915;
+    TextView etText916;
+
 
 
     Button btnSave, btnLoad;
@@ -354,6 +372,25 @@ public class Penoplast_Activity extends AppCompatActivity {
 
     final String SAVED_TEXT408 = "saved_text408";
 
+    final String SAVED_TEXT901 = "saved_text901";
+    final String SAVED_TEXT902 = "saved_text902";
+    final String SAVED_TEXT903 = "saved_text903";
+    final String SAVED_TEXT904 = "saved_text904";
+    final String SAVED_TEXT905 = "saved_text905";
+    final String SAVED_TEXT906 = "saved_text906";
+    final String SAVED_TEXT907 = "saved_text907";
+    final String SAVED_TEXT908 = "saved_text908";
+    final String SAVED_TEXT909 = "saved_text909";
+
+    final String SAVED_TEXT910 = "saved_text910";
+    final String SAVED_TEXT911 = "saved_text911";
+    final String SAVED_TEXT912 = "saved_text912";
+    final String SAVED_TEXT913 = "saved_text913";
+    final String SAVED_TEXT914 = "saved_text914";
+    final String SAVED_TEXT915 = "saved_text915";
+    final String SAVED_TEXT916 = "saved_text916";
+
+
 
 
     final Context context2 = this;
@@ -380,6 +417,10 @@ public class Penoplast_Activity extends AppCompatActivity {
     private TextView wir_15;
     private TextView wir_16;
     private TextView wir_17;
+
+    private TextView wir_20;
+    private TextView wir_21;
+    private TextView wir_22;
 
 
     //region секция private Button btn1 - btn51;
@@ -530,6 +571,16 @@ public class Penoplast_Activity extends AppCompatActivity {
     private Button btn197;
     private Button btn277;
     private Button btn257;
+
+    private Button btn901;
+    private Button btn902;
+    private Button btn903;
+    private Button btn904;
+    private Button btn905;
+    private Button btn906;
+    private Button btn907;
+    private Button btn908;
+    private Button btn909;
 
 
 
@@ -690,6 +741,18 @@ public class Penoplast_Activity extends AppCompatActivity {
     private Button aetText197;
     private Button aetText277;
     private Button aetText257;
+
+    private Button aetText901;
+    private Button aetText902;
+    private Button aetText903;
+    private Button aetText904;
+    private Button aetText905;
+    private Button aetText906;
+    private Button aetText907;
+    private Button aetText908;
+    private Button aetText909;
+
+
     private TextView aetText18;
 
 
@@ -848,6 +911,16 @@ public class Penoplast_Activity extends AppCompatActivity {
     Button button197;
     Button button277;
     Button button257;
+
+    Button button901;
+    Button button902;
+    Button button903;
+    Button button904;
+    Button button905;
+    Button button906;
+    Button button907;
+    Button button908;
+    Button button909;
 
 
 
@@ -1020,6 +1093,25 @@ public class Penoplast_Activity extends AppCompatActivity {
     private TextView final_text197;
     private TextView final_text277;
     private TextView final_text257;
+
+    private TextView final_text901;
+    private TextView final_text902;
+    private TextView final_text903;
+    private TextView final_text904;
+
+    private TextView final_text905;
+    private TextView final_text906;
+    private TextView final_text907;
+    private TextView final_text908;
+    private TextView final_text909;
+
+    private TextView final_text910;
+    private TextView final_text911;
+    private TextView final_text912;
+    private TextView final_text913;
+    private TextView final_text914;
+    private TextView final_text915;
+    private TextView final_text916;
 
     ImageView imageView;
     ImageView imageView1;
@@ -1225,6 +1317,26 @@ public class Penoplast_Activity extends AppCompatActivity {
             final TextView bill277 = (TextView) findViewById(R.id.button277);
             final TextView bill257 = (TextView) findViewById(R.id.button257);
 
+            final TextView bill901 = (TextView) findViewById(R.id.button901);
+            final TextView bill902 = (TextView) findViewById(R.id.button902);
+            final TextView bill903 = (TextView) findViewById(R.id.button903);
+            final TextView bill904 = (TextView) findViewById(R.id.button904);
+            final TextView bill905 = (TextView) findViewById(R.id.button905);
+            final TextView bill906 = (TextView) findViewById(R.id.button906);
+            final TextView bill907 = (TextView) findViewById(R.id.button907);
+            final TextView bill908 = (TextView) findViewById(R.id.button908);
+            final TextView bill909 = (TextView) findViewById(R.id.button909);
+
+            final TextView bill910 = (TextView) findViewById(R.id.textView14200);
+            final TextView bill911 = (TextView) findViewById(R.id.textView20100);
+            final TextView bill912 = (TextView) findViewById(R.id.textView4000);
+            final TextView bill913 = (TextView) findViewById(R.id.textView30101);
+            final TextView bill914 = (TextView) findViewById(R.id.textView2421);
+            final TextView bill915 = (TextView) findViewById(R.id.textView2080);
+            final TextView bill916 = (TextView) findViewById(R.id.textView2000);
+
+
+
 
             final TextView bill301 = (TextView) findViewById(R.id.textView201);
             final TextView bill302 = (TextView) findViewById(R.id.textView301);
@@ -1244,6 +1356,13 @@ public class Penoplast_Activity extends AppCompatActivity {
             etText303 = (TextView) findViewById(R.id.textView401);
             etText304 = (TextView) findViewById(R.id.textView4);
 
+
+
+
+
+
+
+
             //  etText89 = (TextView) findViewById(R.id.textView28);
 
             //final TextView bill75 = (TextView) findViewById(R.id.button36);
@@ -1261,16 +1380,16 @@ public class Penoplast_Activity extends AppCompatActivity {
 
                                     //a
                                     bill1.setText(0 + "");
-                                    bill2.setText(2 + "");
-                                    bill3.setText(5 + "");
-                                    bill4.setText(10 + "");
-                                    bill5.setText(20 + "");
-                                    bill6.setText(30 + "");
-                                    bill7.setText(50 + "");
-                                    bill8.setText(100 + "");
-                                    bill9.setText(150 + "");
-                                    bill10.setText(200 + "");
-                                    bill11.setText(300 + "");
+                                    bill2.setText(50 + "");
+                                    bill3.setText(80 + "");
+                                    bill4.setText(100 + "");
+                                    bill5.setText(150 + "");
+                                    bill6.setText(180 + "");
+                                    bill7.setText(200 + "");
+                                    bill8.setText(250 + "");
+                                    bill9.setText(280 + "");
+                                    bill10.setText(300 + "");
+                                    bill11.setText(500 + "");
 
                                     bill12.setText(0.0 + "");
                                     bill13.setText(0.0 + "");
@@ -1278,15 +1397,15 @@ public class Penoplast_Activity extends AppCompatActivity {
 
                                     //b
                                     bill23.setText(0 + "");
-                                    bill24.setText(10 + "");
-                                    bill25.setText(20 + "");
-                                    bill26.setText(50 + "");
-                                    bill27.setText(80 + "");
-                                    bill28.setText(100 + "");
-                                    bill29.setText(150 + "");
-                                    bill30.setText(200 + "");
-                                    bill31.setText(250 + "");
-                                    bill32.setText(300 + "");
+                                    bill24.setText(1 + "");
+                                    bill25.setText(2 + "");
+                                    bill26.setText(5 + "");
+                                    bill27.setText(10 + "");
+                                    bill28.setText(20 + "");
+                                    bill29.setText(50 + "");
+                                    bill30.setText(100 + "");
+                                    bill31.setText(150 + "");
+                                    bill32.setText(200 + "");
                                     bill33.setText(350 + "");
 
 
@@ -1299,19 +1418,19 @@ public class Penoplast_Activity extends AppCompatActivity {
                                     bill45.setText(20 + "");
 
                                     bill46.setText(0 + "");
-                                    bill47.setText(100 + "");
-                                    bill48.setText(110 + "");
-                                    bill49.setText(115 + "");
-                                    bill50.setText(120 + "");
-                                    bill51.setText(140 + "");
+                                    bill47.setText(500 + "");
+                                    bill48.setText(710 + "");
+                                    bill49.setText(1115 + "");
+                                    bill50.setText(1200 + "");
+                                    bill51.setText(1400 + "");
 
 
-                                    bill52.setText(10 + "");
-                                    bill53.setText(25 + "");
-                                    bill54.setText(30 + "");
-                                    bill55.setText(40 + "");
-                                    bill73.setText(45 + "");
-                                    bill74.setText(60 + "");
+                                    bill52.setText(25 + "");
+                                    bill53.setText(50 + "");
+                                    bill54.setText(80 + "");
+                                    bill55.setText(100 + "");
+                                    bill73.setText(150 + "");
+                                    bill74.setText(200 + "");
 
 
 
@@ -1322,9 +1441,9 @@ public class Penoplast_Activity extends AppCompatActivity {
                                     bill64.setText(310 + "");
                                     bill65.setText(320 + "");*/
 
-                                    bill66.setText(50 + "");
-                                    bill67.setText(80 + "");
-                                    bill68.setText(100 + "");
+                                    bill66.setText(400 + "");
+                                    bill67.setText(600 + "");
+                                    bill68.setText(750 + "");
 
                                     //bill69.setText(1 + "");
                                     // bill72.setText(2 + "");
@@ -1335,10 +1454,10 @@ public class Penoplast_Activity extends AppCompatActivity {
 
 
 
-                                    bill79.setText(2 + "");
-                                    bill80.setText(5 + "");
-                                    bill81.setText(10 + "");
-                                    bill82.setText(50 + "");
+                                    bill79.setText(4 + "");
+                                    bill80.setText(5.5 + "");
+                                    bill81.setText(6 + "");
+                                    bill82.setText(10 + "");
 
 //                                    bill83.setText(00.00 + "");
                                     bill84.setText(00.00 + "");
@@ -1346,16 +1465,16 @@ public class Penoplast_Activity extends AppCompatActivity {
                                     bill86.setText(00.00 + "");
 
                                     bill201.setText(0 + "");
-                                    bill202.setText(1 + "");
-                                    bill203.setText(5 + "");
-                                    bill204.setText(10 + "");
-                                    bill205.setText(20 + "");
-                                    bill206.setText(50 + "");
-                                    bill207.setText(70 + "");
-                                    bill208.setText(80 + "");
-                                    bill209.setText(100 + "");
-                                    bill210.setText(150 + "");
-                                    bill211.setText(200 + "");
+                                    bill202.setText(500 + "");
+                                    bill203.setText(600 + "");
+                                    bill204.setText(800 + "");
+                                    bill205.setText(900 + "");
+                                    bill206.setText(1000 + "");
+                                    bill207.setText(1200 + "");
+                                    bill208.setText(1400 + "");
+                                    bill209.setText(2000 + "");
+                                    bill210.setText(2500 + "");
+                                    bill211.setText(3000 + "");
 
                                     bill212.setText(40 + "");
                                     bill213.setText(80 + "");
@@ -1364,54 +1483,74 @@ public class Penoplast_Activity extends AppCompatActivity {
                                     bill216.setText(110 + "");
                                     bill217.setText(120 + "");
 
-                                    bill218.setText(10 + "");
-                                    bill219.setText(20 + "");
-                                    bill220.setText(50+ "");
-                                    bill221.setText(100 + "");
+                                    bill218.setText(2 + "");
+                                    bill219.setText(4 + "");
+                                    bill220.setText(5 + "");
+                                    bill221.setText(6 + "");
 
-                                    bill222.setText(90 + "");
-                                    bill223.setText(100 + "");
-                                    bill224.setText(150 + "");
-                                    bill225.setText(200 + "");
+                                    bill222.setText(4 + "");
+                                    bill223.setText(5 + "");
+                                    bill224.setText(6 + "");
+                                    bill225.setText(10 + "");
 
                                     //bill226.setText(1.5 + "");
                                     //bill227.setText(2.0 + "");
                                   //  bill228.setText(4.0 + "");
                                   //  bill229.setText(5.0 + "");
 
-                                    bill230.setText(15 + "");
-                                    bill231.setText(30 + "");
-                                    bill232.setText(60 + "");
-                                    bill233.setText(80 + "");
+                                    bill230.setText(0 + "");
+                                    bill231.setText(1 + "");
+                                    bill232.setText(2 + "");
+                                    bill233.setText(3 + "");
 
-                                    bill234.setText(100 + "");
-                                    bill235.setText(110 + "");
-                                    bill236.setText(150 + "");
+                                    bill234.setText(3 + "");
+                                    bill235.setText(4 + "");
+                                    bill236.setText(5 + "");
 
-                                    bill237.setText(80 + "");
-                                    bill238.setText(90 + "");
-                                    bill239.setText(100 + "");
-                                    bill240.setText(110 + "");
-                                    bill241.setText(150 + "");
-                                    bill242.setText(160 + "");
+                                    bill237.setText(0 + "");
+                                    bill238.setText(1 + "");
+                                    bill239.setText(10 + "");
+                                    bill240.setText(20 + "");
+                                    bill241.setText(25 + "");
+                                    bill242.setText(40 + "");
 
                                     bill243.setText(50 + "");
                                     bill244.setText(80 + "");
                                     bill245.setText(90 + "");
                                     bill246.setText(150 + "");
                                     bill247.setText(200 + "");
-                                    bill248.setText(250 + "");
+                                    bill248.setText(450 + "");
 
                                     bill301.setText(0.0 + "");
                                     bill302.setText(0.0 + "");
                                     bill303.setText(0.0 + "");
                                     bill304.setText(0.0 + "");
 
-                                    bill197.setText(100 + "");
-                                    bill277.setText(150 + "");
-                                    bill257.setText(200 + "");
+                                    bill197.setText(1 + "");
+                                    bill277.setText(2 + "");
+                                    bill257.setText(3 + "");
 
                                     bill408.setText(00.00 + "");
+
+                                    bill901.setText(20 + "");
+                                    bill902.setText(80 + "");
+                                    bill903.setText(150 + "");
+
+                                    bill904.setText(5 + "");
+                                    bill905.setText(10 + "");
+                                    bill906.setText(20 + "");
+
+                                    bill907.setText(10 + "");
+                                    bill908.setText(20 + "");
+                                    bill909.setText(50 + "");
+
+                                    bill910.setText(00.00 + "");
+                                    bill911.setText(00.00 + "");
+                                    bill912.setText(00.00 + "");
+                                    bill913.setText(00.00 + "");
+                                    bill914.setText(00.00 + "");
+                                    bill915.setText(00.00 + "");
+                                    bill916.setText(00.00 + "");
 
 
 
@@ -1591,6 +1730,26 @@ public class Penoplast_Activity extends AppCompatActivity {
         etText277 = (Button) findViewById(R.id.button277);
         etText257 = (Button) findViewById(R.id.button257);
 
+        etText901 = (Button) findViewById(R.id.button901);
+        etText902 = (Button) findViewById(R.id.button902);
+        etText903 = (Button) findViewById(R.id.button903);
+        etText904 = (Button) findViewById(R.id.button904);
+        etText905 = (Button) findViewById(R.id.button905);
+        etText906 = (Button) findViewById(R.id.button906);
+        etText907 = (Button) findViewById(R.id.button907);
+        etText908 = (Button) findViewById(R.id.button908);
+        etText909 = (Button) findViewById(R.id.button909);
+
+
+
+        etText910 = (TextView) findViewById(R.id.textView14200);
+        etText911 = (TextView) findViewById(R.id.textView20100);
+        etText912 = (TextView) findViewById(R.id.textView4000);
+        etText913 = (TextView) findViewById(R.id.textView30101);
+        etText914 = (TextView) findViewById(R.id.textView2421);
+        etText915 = (TextView) findViewById(R.id.textView2080);
+        etText916 = (TextView) findViewById(R.id.textView2000);
+
         etText408 = (TextView) findViewById(R.id.textView208);
 
 
@@ -1742,6 +1901,24 @@ public class Penoplast_Activity extends AppCompatActivity {
         loadText277();
         loadText257();
         loadText408();
+
+        loadText901();
+        loadText902();
+        loadText903();
+        loadText904();
+        loadText905();
+        loadText906();
+        loadText907();
+        loadText908();
+        loadText909();
+
+        loadText910();
+        loadText911();
+        loadText912();
+        loadText913();
+        loadText914();
+        loadText915();
+        loadText916();
 
 
 
@@ -6303,6 +6480,391 @@ public class Penoplast_Activity extends AppCompatActivity {
         );
 
 
+        button901 = (Button) findViewById(R.id.button901);
+        final_text901 = (TextView) findViewById(R.id.button901);
+        button901.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text901.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        button902 = (Button) findViewById(R.id.button902);
+        final_text902 = (TextView) findViewById(R.id.button902);
+        button902.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text902.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+
+        button903 = (Button) findViewById(R.id.button903);
+        final_text903 = (TextView) findViewById(R.id.button903);
+        button903.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text903.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        button904 = (Button) findViewById(R.id.button904);
+        final_text904 = (TextView) findViewById(R.id.button904);
+        button904.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text904.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        button905 = (Button) findViewById(R.id.button905);
+        final_text905 = (TextView) findViewById(R.id.button905);
+        button905.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text905.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        button906 = (Button) findViewById(R.id.button906);
+        final_text906 = (TextView) findViewById(R.id.button906);
+        button906.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text906.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        button907 = (Button) findViewById(R.id.button907);
+        final_text907 = (TextView) findViewById(R.id.button907);
+        button907.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text907.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        button908 = (Button) findViewById(R.id.button908);
+        final_text908 = (TextView) findViewById(R.id.button908);
+        button908.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text908.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        button909 = (Button) findViewById(R.id.button909);
+        final_text909 = (TextView) findViewById(R.id.button909);
+        button909.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text909.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+
+
+
+
+
+
 
 
 
@@ -6468,6 +7030,16 @@ public class Penoplast_Activity extends AppCompatActivity {
         btn277 = (Button) findViewById(R.id.button277);
         btn257 = (Button) findViewById(R.id.button257);
 
+        btn901 = (Button) findViewById(R.id.button901);
+        btn902 = (Button) findViewById(R.id.button902);
+        btn903 = (Button) findViewById(R.id.button903);
+        btn904 = (Button) findViewById(R.id.button904);
+        btn905 = (Button) findViewById(R.id.button905);
+        btn906 = (Button) findViewById(R.id.button906);
+        btn907 = (Button) findViewById(R.id.button907);
+        btn908 = (Button) findViewById(R.id.button908);
+        btn909 = (Button) findViewById(R.id.button909);
+
 
         //endregion
 
@@ -6490,6 +7062,10 @@ public class Penoplast_Activity extends AppCompatActivity {
         wir_15 = (TextView) findViewById(R.id.textViewWir15);
         wir_16 = (TextView) findViewById(R.id.textViewWir16);
         wir_17 = (TextView) findViewById(R.id.textViewWir17);
+
+        wir_20 = (TextView) findViewById(R.id.textViewWir20);
+        wir_21 = (TextView) findViewById(R.id.textViewWir21);
+        wir_22 = (TextView) findViewById(R.id.textViewWir22);
 
 
 
@@ -8057,6 +8633,117 @@ public class Penoplast_Activity extends AppCompatActivity {
 
 
 
+                    case R.id.button901:
+                        TextView textView901 = (TextView) findViewById(R.id.textViewWir20);
+                        aetText901 = (Button) findViewById(R.id.button901);
+                        float num901 = Float.parseFloat(aetText901.getText().toString());
+                        float w901 = (float) num901;
+                        textView901.setText(String.format(Locale.US, "%.0f", w901) + "");
+                        Animation anim901 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button901 = (Button) findViewById(R.id.button901);
+                        button901.startAnimation(anim901);
+                        break;
+
+                    case R.id.button902:
+                        TextView textView902 = (TextView) findViewById(R.id.textViewWir20);
+                        aetText902 = (Button) findViewById(R.id.button902);
+                        float num902 = Float.parseFloat(aetText902.getText().toString());
+                        float w902 = (float) num902;
+                        textView902.setText(String.format(Locale.US, "%.0f", w902) + "");
+                        Animation anim902 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button902 = (Button) findViewById(R.id.button902);
+                        button902.startAnimation(anim902);
+                        break;
+
+                    case R.id.button903:
+                        TextView textView903 = (TextView) findViewById(R.id.textViewWir20);
+                        aetText903 = (Button) findViewById(R.id.button903);
+                        float num903 = Float.parseFloat(aetText903.getText().toString());
+                        float w903 = (float) num903;
+                        textView903.setText(String.format(Locale.US, "%.0f", w903) + "");
+                        Animation anim903 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button903 = (Button) findViewById(R.id.button903);
+                        button903.startAnimation(anim903);
+                        break;
+
+                    case R.id.button904:
+                        TextView textView904 = (TextView) findViewById(R.id.textViewWir21);
+                        aetText904 = (Button) findViewById(R.id.button904);
+                        float num904 = Float.parseFloat(aetText904.getText().toString());
+                        float w904 = (float) num904;
+                        textView904.setText(String.format(Locale.US, "%.0f", w904) + "");
+                        Animation anim904 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button904 = (Button) findViewById(R.id.button904);
+                        button904.startAnimation(anim904);
+                        break;
+
+                    case R.id.button905:
+                        TextView textView905 = (TextView) findViewById(R.id.textViewWir21);
+                        aetText905 = (Button) findViewById(R.id.button905);
+                        float num905 = Float.parseFloat(aetText905.getText().toString());
+                        float w905 = (float) num905;
+                        textView905.setText(String.format(Locale.US, "%.0f", w905) + "");
+                        Animation anim905 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button905 = (Button) findViewById(R.id.button905);
+                        button905.startAnimation(anim905);
+                        break;
+
+                    case R.id.button906:
+                        TextView textView906 = (TextView) findViewById(R.id.textViewWir21);
+                        aetText906 = (Button) findViewById(R.id.button906);
+                        float num906 = Float.parseFloat(aetText906.getText().toString());
+                        float w906 = (float) num906;
+                        textView906.setText(String.format(Locale.US, "%.0f", w906) + "");
+                        Animation anim906 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button906 = (Button) findViewById(R.id.button906);
+                        button906.startAnimation(anim906);
+                        break;
+
+                    case R.id.button907:
+                        TextView textView907 = (TextView) findViewById(R.id.textViewWir22);
+                        aetText907 = (Button) findViewById(R.id.button907);
+                        float num907 = Float.parseFloat(aetText907.getText().toString());
+                        float w907 = (float) num907;
+                        textView907.setText(String.format(Locale.US, "%.0f", w907) + "");
+                        Animation anim907 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button907 = (Button) findViewById(R.id.button907);
+                        button907.startAnimation(anim907);
+                        break;
+
+
+                    case R.id.button908:
+                        TextView textView908 = (TextView) findViewById(R.id.textViewWir22);
+                        aetText908 = (Button) findViewById(R.id.button908);
+                        float num908 = Float.parseFloat(aetText908.getText().toString());
+                        float w908 = (float) num908;
+                        textView908.setText(String.format(Locale.US, "%.0f", w908) + "");
+                        Animation anim908 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button908 = (Button) findViewById(R.id.button908);
+                        button908.startAnimation(anim908);
+                        break;
+
+                    case R.id.button909:
+                        TextView textView909 = (TextView) findViewById(R.id.textViewWir22);
+                        aetText909 = (Button) findViewById(R.id.button909);
+                        float num909 = Float.parseFloat(aetText909.getText().toString());
+                        float w909 = (float) num909;
+                        textView909.setText(String.format(Locale.US, "%.0f", w909) + "");
+                        Animation anim909 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button909 = (Button) findViewById(R.id.button909);
+                        button909.startAnimation(anim909);
+                        break;
+
+
+
 
 
                     //endregion
@@ -8210,6 +8897,17 @@ public class Penoplast_Activity extends AppCompatActivity {
         btn277.setOnClickListener(btnClk);
         btn257.setOnClickListener(btnClk);
 
+        btn901.setOnClickListener(btnClk);
+        btn902.setOnClickListener(btnClk);
+        btn903.setOnClickListener(btnClk);
+        btn904.setOnClickListener(btnClk);
+        btn905.setOnClickListener(btnClk);
+        btn906.setOnClickListener(btnClk);
+        btn907.setOnClickListener(btnClk);
+        btn908.setOnClickListener(btnClk);
+        btn909.setOnClickListener(btnClk);
+
+
 
 
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -8251,6 +8949,10 @@ public class Penoplast_Activity extends AppCompatActivity {
                 TextView aetText15;
                 TextView aetText16;
                 TextView aetText17;
+
+                TextView aetText20;
+                TextView aetText21;
+                TextView aetText22;
 
 
 
@@ -8294,6 +8996,10 @@ public class Penoplast_Activity extends AppCompatActivity {
                 aetText17 = (TextView) findViewById(R.id.textViewWir17);
                 aetText18 = (TextView) findViewById(R.id.textViewWir18);
 
+                aetText20 = (TextView) findViewById(R.id.textViewWir20);
+                aetText21 = (TextView) findViewById(R.id.textViewWir21);
+                aetText22 = (TextView) findViewById(R.id.textViewWir22);
+
                 float num001 = Float.parseFloat(aetText1.getText().toString());
                 float num002 = Float.parseFloat(aetText2.getText().toString());
                 float num003 = Float.parseFloat(aetText3.getText().toString());
@@ -8313,19 +9019,54 @@ public class Penoplast_Activity extends AppCompatActivity {
                 float num017 = Float.parseFloat(aetText17.getText().toString());
                 float num018 = Float.parseFloat(aetText18.getText().toString());
 
+                float num020 = Float.parseFloat(aetText20.getText().toString());
+                float num021 = Float.parseFloat(aetText21.getText().toString());
+                float num022 = Float.parseFloat(aetText22.getText().toString());
+
+
+                //float S1 = (float) ((float) (num001*num011*0.001)-((num002*num003*0.001)+(num004*num005*0.001)));
 
                 //количество необходимого кирпича
 
 
-                                float Viklushateli = (num001*num002);
-                                float Rozetki = (num003*num004);
-                                float Podrezetnik = (num005*num011);
-                                float Komut_korobki = (num006*num007);
-                                float Bez_korobki = (num008*num010);
-                                float Shiti = (num018*num013);
-                                float Gofra = (num014*num015);
-                                float X = (num016*num017);
-                                float Vsego = (Viklushateli+Rozetki+Podrezetnik+Komut_korobki+Bez_korobki+Shiti+Gofra+X);
+                if (Float.parseFloat(aetText2.getText().toString()) > num001)
+                { Toast toast = Toast.makeText(getApplicationContext(),
+                        "Ошибка!: Площадь проемов великовата ))!", Toast.LENGTH_LONG);
+
+                    toast.show();}
+                else {
+
+
+                               // float S = (float) ((num001*num011)-(((num002*num003)+(num004*num005))*0.00001));
+                            float V1 = ((float) (num001*num011*0.001));
+                            float V2 = ((float) (num002*num011*0.001));
+                            float V = V1-V2;
+                            float S = num001-num002;
+
+                                float Rabota = (num001*num017);
+                                float Vpen = (S*num011);
+                                float PenCena = num003*V;
+
+                                float KleyPrikley = (S*num007)/25;
+                                float KleyZatyagki = (S*num008*num010)/25;
+                                float KleyCenaVse = num004*(KleyPrikley+KleyZatyagki);
+                                float KleyCenaPri = num004*(KleyPrikley);
+                                float KleyCenaWpak = num004*(KleyZatyagki);
+
+                                float KgKor = (S*num014);
+                                float VederKor = KgKor/num016;
+                                float VederKorCena = num015*VederKor;
+
+                                float Dubelya = (S*num006)*2;
+                                float DubelyaCena = num005*Dubelya;
+
+                                float Setka = (float) (S*1.1);
+                                float SetkaCena = num022*Setka;
+
+                                float GrKg = (float) (S*num013*0.001)*num018;
+                                float Grunt = GrKg/num021;
+                                float GruntCena = num020*Grunt;
+                                float Summa = (PenCena+KleyCenaVse+DubelyaCena+SetkaCena+GruntCena+VederKorCena);
 
 
                                 TextView textView142 = (TextView) findViewById(R.id.textView142);
@@ -8339,24 +9080,40 @@ public class Penoplast_Activity extends AppCompatActivity {
                                 //TextView textView2017 = (TextView) findViewById(R.id.textView201);
                                 TextView textView208 = (TextView) findViewById(R.id.textView208);
 
+                                TextView textView14200 = (TextView) findViewById(R.id.textView14200);
+                                TextView textView20100 = (TextView) findViewById(R.id.textView20100);
+                                TextView textView4000 = (TextView) findViewById(R.id.textView4000);
+                                TextView textView30101 = (TextView) findViewById(R.id.textView30101);
+                                TextView textView2421 = (TextView) findViewById(R.id.textView2421);
+                                TextView textView2080 = (TextView) findViewById(R.id.textView2080);
+                                TextView textView2000 = (TextView) findViewById(R.id.textView2000);
 
-                                textView142.setText(String.format(Locale.US, "%.2f", Vsego) + "");
-                                textView1420.setText(String.format(Locale.US, "%.2f", Rozetki) + "");
-                                textView1421.setText(String.format(Locale.US, "%.2f", Viklushateli) + "");
-                                textView14212.setText(String.format(Locale.US, "%.2f", X) + "");
-                                textView14213.setText(String.format(Locale.US, "%.2f", Podrezetnik) + "");
-                                textView14214.setText(String.format(Locale.US, "%.2f", Bez_korobki) + "");
-                                textView14215.setText(String.format(Locale.US, "%.2f", Komut_korobki) + "");
-                                textView14216.setText(String.format(Locale.US, "%.2f", Gofra) + "");
+
+                                textView142.setText(String.format(Locale.US, "%.2f", V) + "");
+                                textView1420.setText(String.format(Locale.US, "%.2f", KleyZatyagki) + "");
+                                textView1421.setText(String.format(Locale.US, "%.2f", KleyPrikley) + "");
+                                textView14212.setText(String.format(Locale.US, "%.2f", Rabota) + "");
+                                textView14213.setText(String.format(Locale.US, "%.2f", Dubelya) + "");
+                                textView14214.setText(String.format(Locale.US, "%.2f", Grunt) + "");
+                                textView14215.setText(String.format(Locale.US, "%.2f", Setka) + "");
+                                textView14216.setText(String.format(Locale.US, "%.2f", Summa) + "");
                                // textView2017.setText(String.format(Locale.US, "%.2f", rabota) + "");
-                                textView208.setText(String.format(Locale.US, "%.2f", Shiti) + "");
+                                textView208.setText(String.format(Locale.US, "%.2f", VederKor) + "");
+
+                                textView14200.setText(String.format(Locale.US, "%.2f", PenCena) + "");
+                                textView20100.setText(String.format(Locale.US, "%.2f", KleyCenaPri) + "");
+                                textView4000.setText(String.format(Locale.US, "%.2f", DubelyaCena) + "");
+                                textView30101.setText(String.format(Locale.US, "%.2f", KleyCenaWpak) + "");
+                                textView2421.setText(String.format(Locale.US, "%.2f", SetkaCena) + "");
+                                textView2080.setText(String.format(Locale.US, "%.2f", VederKorCena) + "");
+                                textView2000.setText(String.format(Locale.US, "%.2f", GruntCena) + "");
 
 
                                 //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
                                 //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
                                 // .setAction("Action", null).show();
                             }
-                        });
+                        }});
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnLongClickListener(new View.OnLongClickListener() {
@@ -8373,6 +9130,22 @@ public class Penoplast_Activity extends AppCompatActivity {
                 final TextView bill90 = (TextView) findViewById(R.id.textView4);
                 final TextView bill208 = (TextView) findViewById(R.id.textView208);
 
+                final TextView bill2081 = (TextView) findViewById(R.id.textView14200);
+                final TextView bill2082 = (TextView) findViewById(R.id.textView20100);
+                final TextView bill2083 = (TextView) findViewById(R.id.textView4000);
+                final TextView bill2084 = (TextView) findViewById(R.id.textView30101);
+                final TextView bill2085 = (TextView) findViewById(R.id.textView2421);
+                final TextView bill2086 = (TextView) findViewById(R.id.textView2080);
+                final TextView bill2087 = (TextView) findViewById(R.id.textView2000);
+
+                TextView textView14200 = (TextView) findViewById(R.id.textView14200);
+                TextView textView20100 = (TextView) findViewById(R.id.textView20100);
+                TextView textView4000 = (TextView) findViewById(R.id.textView4000);
+                TextView textView30101 = (TextView) findViewById(R.id.textView30101);
+                TextView textView2421 = (TextView) findViewById(R.id.textView2421);
+                TextView textView2080 = (TextView) findViewById(R.id.textView2080);
+                TextView textView2000 = (TextView) findViewById(R.id.textView2000);
+
 
                 bill83.setText(00.00 + "");
                 bill84.setText(00.00 + "");
@@ -8383,6 +9156,15 @@ public class Penoplast_Activity extends AppCompatActivity {
                 bill89.setText(00.00 + "");
                 bill90.setText(00.00 + "");
                 bill208.setText(00.00 + "");
+
+
+                bill2081.setText(00.00 + "");
+                bill2082.setText(00.00 + "");
+                bill2083.setText(00.00 + "");
+                bill2084.setText(00.00 + "");
+                bill2085.setText(00.00 + "");
+                bill2086.setText(00.00 + "");
+                bill2087.setText(00.00 + "");
 
                Toast toast = Toast.makeText(getApplicationContext(),
                         "Сброс", Toast.LENGTH_SHORT);
@@ -9783,11 +10565,194 @@ public class Penoplast_Activity extends AppCompatActivity {
     }
 
 
+    void saveText901() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT901, etText901.getText().toString());
+        ed.commit();
+    }
+    void loadText901() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT901, "");
+        etText901.setText(savedText);
+    }
 
 
+    void saveText902() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT902, etText902.getText().toString());
+        ed.commit();
+    }
+    void loadText902() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT902, "");
+        etText902.setText(savedText);
+    }
+
+    void saveText903() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT903, etText903.getText().toString());
+        ed.commit();
+    }
+    void loadText903() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT903, "");
+        etText903.setText(savedText);
+    }
+
+    void saveText904() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT904, etText904.getText().toString());
+        ed.commit();
+    }
+    void loadText904() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT904, "");
+        etText904.setText(savedText);
+    }
+
+    void saveText905() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT905, etText905.getText().toString());
+        ed.commit();
+    }
+    void loadText905() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT905, "");
+        etText905.setText(savedText);
+    }
+
+    void saveText906() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT906, etText906.getText().toString());
+        ed.commit();
+    }
+    void loadText906() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT906, "");
+        etText906.setText(savedText);
+    }
+
+    void saveText907() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT907, etText907.getText().toString());
+        ed.commit();
+    }
+    void loadText907() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT907, "");
+        etText907.setText(savedText);
+    }
+
+    void saveText908() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT908, etText908.getText().toString());
+        ed.commit();
+    }
+    void loadText908() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT908, "");
+        etText908.setText(savedText);
+    }
 
 
+    void saveText909() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT909, etText909.getText().toString());
+        ed.commit();
+    }
+    void loadText909() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT909, "");
+        etText909.setText(savedText);
+    }
 
+    void saveText910() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT910, etText910.getText().toString());
+        ed.commit();
+    }
+    void loadText910() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT910, "");
+        etText910.setText(savedText);
+    }
+
+    void saveText911() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT911, etText911.getText().toString());
+        ed.commit();
+    }
+    void loadText911() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT911, "");
+        etText911.setText(savedText);
+    }
+    void saveText912() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT912, etText912.getText().toString());
+        ed.commit();
+    }
+    void loadText912() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT912, "");
+        etText912.setText(savedText);
+    }
+    void saveText913() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT913, etText913.getText().toString());
+        ed.commit();
+    }
+    void loadText913() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT913, "");
+        etText913.setText(savedText);
+    }
+    void saveText914() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT914, etText914.getText().toString());
+        ed.commit();
+    }
+    void loadText914() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT914, "");
+        etText914.setText(savedText);
+    }
+    void saveText915() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT915, etText915.getText().toString());
+        ed.commit();
+    }
+    void loadText915() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT915, "");
+        etText915.setText(savedText);
+    }
+    void saveText916() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT916, etText916.getText().toString());
+        ed.commit();
+    }
+    void loadText916() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT916, "");
+        etText916.setText(savedText);
+    }
 
 
 
@@ -9944,6 +10909,24 @@ public class Penoplast_Activity extends AppCompatActivity {
         saveText257();
 
         saveText408();
+
+        saveText901();
+        saveText902();
+        saveText903();
+        saveText904();
+        saveText905();
+        saveText906();
+        saveText907();
+        saveText908();
+        saveText909();
+
+        saveText910();
+        saveText911();
+        saveText912();
+        saveText913();
+        saveText914();
+        saveText915();
+        saveText916();
 
     }
 

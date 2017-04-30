@@ -53,15 +53,15 @@
                             android:textColor="@color/colorTextMy" />
 
                         <TextView
+                            android:id="@+id/textViewWir"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="100"
-                            android:id="@+id/textViewWir"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textStyle="bold"
                             android:layout_margin="3dp"
-                            android:textColor="@color/colorTextMy" />
+                            android:text="100"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
 
 
@@ -237,7 +237,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Количество оконных проем:"
+                            android:text="Площадь окон, дверей, м2:"
                             android:id="@+id/textView42"
                             android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
@@ -422,19 +422,19 @@
                         android:layout_margin="3dp">
 
                         <TextView
+                            android:id="@+id/textView500"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Средняя площадь оного окна, м2:"
-                            android:id="@+id/textView500"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
+                            android:layout_margin="3dp"
+                            android:text="Пенопласт (цена за м3):"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="16dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="2"
+                            android:text="500"
                             android:id="@+id/textViewWir3"
                             android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
@@ -614,9 +614,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
-                            android:text="Количество дверых проемов:"
+                            android:text="Клей (цена за мешок):"
                             android:textColor="@color/colorTextMy"
-                            android:textSize="14sp" />
+                            android:textSize="16sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -727,6 +727,249 @@
                     </LinearLayout>
                 </LinearLayout>
 
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:baselineAligned="true"
+                    android:background="@color/colorBlueGrey50" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radius2"
+                        android:baselineAligned="true"
+                        android:layout_margin="3dp" >
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:text="Толщина пенопласта, мм:"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textViewWir11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:text="100"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent" >
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/horizontalScrollView"
+                            android:layout_gravity="right"
+                            android:scrollbars="none" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <Button
+                                    android:id="@+id/button15"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="25"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button16"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="30"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="260"
+                                    android:id="@+id/button17"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="251"
+                                    android:id="@+id/button18"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="252"
+                                    android:id="@+id/button45"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="253"
+                                    android:id="@+id/button46"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="75dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:baselineAligned="true"
+                    android:background="@color/colorBlueGrey50" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radius2"
+                        android:baselineAligned="true"
+                        android:layout_margin="3dp" >
+
+                        <TextView
+                            android:id="@+id/textView1722"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:text="Дюбелей на один лист, шт.:"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textViewWir6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="2"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent" >
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/horizontalScrollView622"
+                            android:layout_gravity="right"
+                            android:scrollbars="none" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="2"
+                                    android:id="@+id/button218"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <Button
+                                    android:id="@+id/button219"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="4"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="5"
+                                    android:id="@+id/button220"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <Button
+                                    android:id="@+id/button221"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="6"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="75dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
@@ -744,14 +987,14 @@
                         android:layout_margin="3dp">
 
                         <TextView
+                            android:id="@+id/textView32"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Средняя площадь одного дверного проема:"
-                            android:id="@+id/textView32"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
-                            android:textSize="14sp"
-                            android:textColor="@color/colorTextMy" />
+                            android:layout_margin="3dp"
+                            android:text="Дюбеля (цена за шт.):"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="16sp" />
 
                         <TextView
                             android:id="@+id/textViewWir5"
@@ -858,247 +1101,7 @@
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="1dp"
-                    android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50" >
 
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
-                        android:baselineAligned="true"
-                        android:layout_margin="3dp" >
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView6"
-                            android:layout_margin="3dp"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16sp"
-                            android:textColor="@color/colorTextMy"
-                            android:text="Толщина пенопласт, мм:" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="45"
-                            android:id="@+id/textViewWir11"
-                            android:layout_margin="3dp"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
-
-                        <HorizontalScrollView
-                            android:layout_width="fill_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView"
-                            android:layout_gravity="right"
-                            android:scrollbars="none" >
-
-                            <LinearLayout
-                                android:orientation="horizontal"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="248"
-                                    android:id="@+id/button15"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="249"
-                                    android:id="@+id/button16"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="260"
-                                    android:id="@+id/button17"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="251"
-                                    android:id="@+id/button18"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="252"
-                                    android:id="@+id/button45"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="253"
-                                    android:id="@+id/button46"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <LinearLayout
-                                    android:orientation="horizontal"
-                                    android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
-                            </LinearLayout>
-                        </HorizontalScrollView>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="1dp"
-                    android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50" >
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
-                        android:baselineAligned="true"
-                        android:layout_margin="3dp" >
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Количество дюбелей на один лист, шт.:"
-                            android:id="@+id/textView1722"
-                            android:layout_margin="3dp"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
-
-                        <TextView
-                            android:id="@+id/textViewWir6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:text="4"
-                            android:textColor="@color/colorTextMy"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
-
-                        <HorizontalScrollView
-                            android:layout_width="fill_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView622"
-                            android:layout_gravity="right"
-                            android:scrollbars="none" >
-
-                            <LinearLayout
-                                android:orientation="horizontal"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="2"
-                                    android:id="@+id/button218"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:id="@+id/button219"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="4"
-                                    android:textColor="@color/colorBlack"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="5"
-                                    android:id="@+id/button220"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="90"
-                                    android:id="@+id/button221"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <LinearLayout
-                                    android:orientation="horizontal"
-                                    android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
-                            </LinearLayout>
-                        </HorizontalScrollView>
-                    </LinearLayout>
-                </LinearLayout>
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -1122,9 +1125,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
-                            android:text="Расход клея для приклеевания пенопласта, кг/м2:"
+                            android:text="Расход клея для приклейки, кг/м2:"
                             android:textColor="@color/colorTextMy"
-                            android:textSize="12sp" />
+                            android:textSize="16dp" />
 
                         <TextView
                             android:id="@+id/textViewWir7"
@@ -1133,7 +1136,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="3dp"
                             android:layout_marginRight="3dp"
-                            android:text="100"
+                            android:text="6"
                             android:textColor="@color/colorTextMy"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1158,48 +1161,48 @@
                                 android:layout_height="match_parent" >
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="1900"
                                     android:id="@+id/button222"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="2000"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="4"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button223"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="2050"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="5"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button224"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="2100"
-                                    android:id="@+id/button225"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="6"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button225"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="7"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
                                     android:orientation="horizontal"
@@ -1233,9 +1236,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
-                            android:text="Расход клея для затяжки сетки, кг/м2"
+                            android:text="Расход клея для затяжки, кг/м2"
                             android:textColor="@color/colorTextMy"
-                            android:textSize="13sp" />
+                            android:textSize="16dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1346,7 +1349,7 @@
                             android:layout_margin="3dp"
                             android:text="Количество слоев (для затягивания):"
                             android:textColor="@color/colorTextMy"
-                            android:textSize="13sp" />
+                            android:textSize="16dp" />
 
 
                         <TextView
@@ -1356,7 +1359,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
-                            android:text="25"
+                            android:text="2"
                             android:textColor="@color/colorTextMy"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1450,34 +1453,222 @@
                         android:layout_margin="3dp" >
 
                         <TextView
-                            android:id="@+id/textView257"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
+                            android:text="Грунтовка, цена за ведро:"
+                            android:id="@+id/textView901"
                             android:layout_margin="3dp"
-                            android:text="Количество слоев грунтования:"
-                            android:textColor="@color/colorTextMy"
-                            android:textSize="16dp" />
+                            android:layout_gravity="center_vertical"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorTextMy" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="3"
-                            android:id="@+id/textViewWir18"
+                            android:text="20"
+                            android:id="@+id/textViewWir20"
                             android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
                             android:textSize="16dp"
                             android:textStyle="bold"
                             android:textColor="@color/colorTextMy" />
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent" >
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/horizontalScrollView49934"
+                            android:layout_gravity="right"
+                            android:scrollbars="none" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="15"
+                                    android:id="@+id/button901"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="20"
+                                    android:id="@+id/button902"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <Button
+                                    android:id="@+id/button903"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="25"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="75dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:baselineAligned="false"
+                    android:background="@color/colorBlueGrey50" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radius2"
+                        android:baselineAligned="true"
+                        android:layout_margin="3dp" >
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="(шт.)"
-                            android:id="@+id/textView800000"
+                            android:text="Литров в ведре (грунт):"
+                            android:id="@+id/textView902"
                             android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
                             android:textSize="16dp"
+                            android:textColor="@color/colorTextMy" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:id="@+id/textViewWir21"
+                            android:layout_margin="3dp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTextMy" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent" >
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/horizontalScrollView499345"
+                            android:layout_gravity="right"
+                            android:scrollbars="none" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="15"
+                                    android:id="@+id/button904"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="20"
+                                    android:id="@+id/button905"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <Button
+                                    android:id="@+id/button906"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="25"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="75dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:baselineAligned="false"
+                    android:background="@color/colorBlueGrey50" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radius2"
+                        android:baselineAligned="true"
+                        android:layout_margin="3dp" >
+
+                        <TextView
+                            android:id="@+id/textView257"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:text="Грунтовка (количество слоев):"
+                            android:textColor="@color/colorTextMy"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:id="@+id/textViewWir18"
+                            android:layout_margin="3dp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
                             android:textColor="@color/colorTextMy" />
 
                     </LinearLayout>
@@ -1500,37 +1691,37 @@
                                 android:layout_height="match_parent" >
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="15"
                                     android:id="@+id/button197"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="20"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="1"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button277"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="25"
-                                    android:id="@+id/button257"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="2"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button257"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="3"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
                                     android:orientation="horizontal"
@@ -1574,7 +1765,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20"
+                            android:text="600"
                             android:id="@+id/textViewWir13"
                             android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
@@ -1592,7 +1783,7 @@
                         <HorizontalScrollView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView4"
+                            android:id="@+id/horizontalScrollView42345"
                             android:layout_gravity="right"
                             android:scrollbars="none" >
 
@@ -1643,6 +1834,106 @@
                     </LinearLayout>
                 </LinearLayout>
 
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:baselineAligned="false"
+                    android:background="@color/colorBlueGrey50" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radius2"
+                        android:baselineAligned="true"
+                        android:layout_margin="3dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Сетка, цена за м2:"
+                            android:id="@+id/textView2588"
+                            android:layout_margin="3dp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorTextMy" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20"
+                            android:id="@+id/textViewWir22"
+                            android:layout_margin="3dp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTextMy" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent" >
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/horizontalScrollView4"
+                            android:layout_gravity="right"
+                            android:scrollbars="none" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="15"
+                                    android:id="@+id/button907"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <Button
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:text="20"
+                                    android:id="@+id/button908"
+                                    android:textSize="25dp"
+                                    android:background="@drawable/radius"
+                                    android:layout_margin="7dp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorBlack" />
+
+                                <Button
+                                    android:id="@+id/button909"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="25"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="75dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
@@ -1672,7 +1963,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="50"
+                            android:text="500"
                             android:id="@+id/textViewWir15"
                             android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
@@ -1798,18 +2089,18 @@
                             android:layout_margin="3dp"
                             android:text="Количество в ведре, кг:"
                             android:textColor="@color/colorTextMy"
-                            android:textSize="14sp" />
+                            android:textSize="16dp" />
 
                         <TextView
+                            android:id="@+id/textViewWir16"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="0"
-                            android:id="@+id/textViewWir16"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:text="20"
+                            android:textColor="@color/colorTextMy"
                             android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -1937,7 +2228,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="100"
+                            android:text="3"
                             android:id="@+id/textViewWir14"
                             android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
@@ -2033,7 +2324,7 @@
                             android:layout_margin="3dp"
                             android:text="Стоимость работ, за м2:"
                             android:textColor="@color/colorTextMy"
-                            android:textSize="13sp" />
+                            android:textSize="16dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -2198,18 +2489,45 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Пенопласт, м3:"
+                    android:text="Пенопласт, ц/м3:"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView14200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0"
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
+
+                <TextView
+                    android:id="@+id/textView14201"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="0"
+                    android:singleLine="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
 
 
                 <TextView
                     android:id="@+id/textView142"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
                     android:layout_weight="0"
                     android:singleLine="false"
                     android:text="0.0"
@@ -2236,17 +2554,43 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Клей (для поклейки:), мешков:"
+                    android:text="Клей (для поклейки:), ц/мешков:"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView201"
+                    android:id="@+id/textView20100"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
+
+                <TextView
+                    android:id="@+id/textView20101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="0"
+                    android:singleLine="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
+
+                <TextView
+                    android:id="@+id/textView201"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="0"
                     android:singleLine="false"
                     android:text="0.0"
@@ -2273,17 +2617,44 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Клей (для затяжки), мешков:"
+                    android:text="Клей (для затяжки), ц/мешков:"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView301"
+                    android:id="@+id/textView30101"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
+                    android:layout_weight="0"
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
+
+                <TextView
+                    android:id="@+id/textView30100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="0"
+                    android:singleLine="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
+
+                <TextView
+                    android:id="@+id/textView301"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="0"
                     android:singleLine="false"
                     android:text="0.0"
@@ -2310,7 +2681,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Дюбеля, шт.:"
+                    android:text="Дюбеля, ц/шт.:"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -2318,7 +2689,7 @@
 
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/textView4000"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
@@ -2329,6 +2700,32 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
+
+                <TextView
+                    android:id="@+id/textView4001"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:singleLine="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
+
 
             </LinearLayout>
             <LinearLayout
@@ -2347,7 +2744,29 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="0.32"
                     android:autoText="false"
-                    android:text="Сетка, м2:"
+                    android:text="Сетка, ц/м2:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2421"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoText="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2422"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoText="false"
+                    android:text="/"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="15sp"
@@ -2382,17 +2801,47 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Грунтовка, л"
+                    android:text="Грунтовка, ц/ведер"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/textView2000"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
+                    android:layout_weight="0"
+                    android:autoText="false"
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
+
+                <TextView
+                    android:id="@+id/textView2001"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0"
+                    android:autoText="false"
+                    android:singleLine="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="0"
                     android:autoText="false"
                     android:singleLine="false"
@@ -2421,17 +2870,48 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Короед или Баранык, ведер:"
+                    android:text="Короед, ц/ведер:"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView208"
+                    android:id="@+id/textView2080"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
+                    android:layout_weight="0"
+                    android:autoText="false"
+                    android:singleLine="false"
+                    android:text="0.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
+
+
+                <TextView
+                    android:id="@+id/textView2081"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0"
+                    android:autoText="false"
+                    android:singleLine="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/AppTheme" />
+
+                <TextView
+                    android:id="@+id/textView208"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="0"
                     android:autoText="false"
                     android:singleLine="false"
