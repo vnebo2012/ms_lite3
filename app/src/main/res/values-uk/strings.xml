@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Мастерок</string>
+    <string name="arm">Арматура</string>
+    <string name="arm1">Арматуру заборонено</string>
+    <string name="arm2">в місцях максимального</string>
+    <string name="arm3">навантаження і зонах</string>
+    <string name="arm4">прикладення концентрованого навантаження</string>
+</resources>
