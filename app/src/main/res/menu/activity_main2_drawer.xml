@@ -9,7 +9,7 @@
             <item
                 android:id="@+id/you_tube"
                 android:title="You Tube"
-                android:icon="@drawable/you"
+                android:icon="@mipmap/ic_you_tube"
                 />
             <item
                 android:id="@+id/market"
