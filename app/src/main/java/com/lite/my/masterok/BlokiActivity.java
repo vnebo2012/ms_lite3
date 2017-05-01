@@ -5921,25 +5921,43 @@ public class BlokiActivity extends AppCompatActivity {
         startActivity(a);
 
     }
-    public void onClick_Ca(View view) {
 
+
+    public void onClick_Ca(View view) {
         long mills = 15L;
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(mills);
-
         Intent intent = getPackageManager().getLaunchIntentForPackage("com.google.android.calculator");
         if (intent != null) {
             // We found the activity now start the activity
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
+
         } else {
+
+            Intent intent2 = getPackageManager().getLaunchIntentForPackage("mobi.appplus.calculator.plus");
+            if (intent2 != null) {
+                // We found the activity now start the activity
+                intent2.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent2);
+            } else {
+
             // Bring user to the market or let them choose an app?
             intent = new Intent(Intent.ACTION_VIEW);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.setData(Uri.parse("market://details?id=" + "com.google.android.calculator"));
+            intent.setData(Uri.parse("market://details?id=" + "mobi.appplus.calculator.plus"));
             startActivity(intent);
         }
     }
+    }
+
+    //com.google.android.calculator
+
+
+
+
+
+
 
     public void onClick_dim(View view) {
 
