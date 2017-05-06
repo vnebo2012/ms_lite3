@@ -18,10 +18,7 @@
                 />
 
 
-            <item
-                android:id="@+id/pogertva"
-                android:icon="@mipmap/ic_many"
-                android:title="Пожертвовать разработчику" />
+
 
             <item
                 android:id="@+id/podelica"

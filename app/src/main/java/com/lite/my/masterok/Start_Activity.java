@@ -30,39 +30,43 @@ import com.google.android.gms.ads.AdView;
 
 public class Start_Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-   // private AdView mAdView;
+   private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar7);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        //FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        //fab.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+       //     public void onClick(View view) {
 
-                long mills = 15L;
-                Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-                vibrator.vibrate(mills);
-                final Intent intent = new Intent(Intent.ACTION_SEND);
-                intent.setType("text/plain");
-                String textToSend="https://play.google.com/store/apps/details?id=com.lite.my.masterok";
-                intent.putExtra(Intent.EXTRA_TEXT, textToSend);
-                try
-                {
-                    startActivity(Intent.createChooser(intent, "Поделится приложением"));
-                }
-                catch (android.content.ActivityNotFoundException ex)
-                {
-                    Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
-                }
+        //        long mills = 15L;
+       //         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+       //         vibrator.vibrate(mills);
+        //        final Intent intent = new Intent(Intent.ACTION_SEND);
+        //        intent.setType("text/plain");
+        //        String textToSend="https://play.google.com/store/apps/details?id=com.lite.my.masterok";
+         //       intent.putExtra(Intent.EXTRA_TEXT, textToSend);
+         //       try
+          //      {
+          //          startActivity(Intent.createChooser(intent, "Поделится приложением"));
+          //      }
+         //       catch (android.content.ActivityNotFoundException ex)
+          //      {
+          //          Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
+          //      }
 
-            }
-        });
+         //   }
+      //  });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
@@ -141,15 +145,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
             startActivity(intent);
 
 
-        } else if (id == R.id.pogertva) {
 
-            long mills = 15L;
-            Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-            vibrator.vibrate(mills);
-
-            Intent a = new Intent(this,WebMoneyActivity.class);
-            a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(a);
 
         } else if (id == R.id.podelica) {
 

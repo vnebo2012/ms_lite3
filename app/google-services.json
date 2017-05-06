@@ -15,11 +15,27 @@
       },
       "oauth_client": [
         {
+          "client_id": "421571790184-12aeb762akf67lcgbok8lr21g2h3jfqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lite.my.masterok",
+            "certificate_hash": "ee461dd1f24fbfd69564c9ea8f3f88e847a5d3f4"
+          }
+        },
+        {
+          "client_id": "421571790184-kbi0f8jipsu2f84gnb6stvt4mq83c1lp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lite.my.masterok",
+            "certificate_hash": "df7a44e906e1586ec6c778b1f664632d298b1d9a"
+          }
+        },
+        {
           "client_id": "421571790184-otglsp0srgh2evlunp9t64sd6fvgfeqk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.lite.my.masterok",
-            "certificate_hash": "ABABB65CDD0F62F8494050B422275EC374EC3E1A"
+            "certificate_hash": "ababb65cdd0f62f8494050b422275ec374ec3e1a"
           }
         },
         {
