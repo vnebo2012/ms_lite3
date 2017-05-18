@@ -1,20 +1,17 @@
 package com.lite.my.masterok;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.net.Uri;
+import android.os.Bundle;
 import android.os.Vibrator;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -24,49 +21,44 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-
 
 public class Start_Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-   private AdView mAdView;
+  // private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+     ///   mAdView = (AdView) findViewById(R.id.adView);
+     //   AdRequest adRequest = new AdRequest.Builder().build();
+     //   mAdView.loadAd(adRequest);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar7);
         setSupportActionBar(toolbar);
 
-        //FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        //fab.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-       //     public void onClick(View view) {
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+           public void onClick(View view) {
+                long mills = 15L;
+               Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                vibrator.vibrate(mills);final Intent intent = new Intent(Intent.ACTION_SEND);
+               intent.setType("text/plain");
+                String textToSend="https://play.google.com/store/apps/details?id=com.lite.my.masterok";
+                intent.putExtra(Intent.EXTRA_TEXT, textToSend);
+                try
+                {
+                    startActivity(Intent.createChooser(intent, "Поделится приложением"));
+                }
+                catch (android.content.ActivityNotFoundException ex)
+                {
+                    Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
+                }
 
-        //        long mills = 15L;
-       //         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-       //         vibrator.vibrate(mills);
-        //        final Intent intent = new Intent(Intent.ACTION_SEND);
-        //        intent.setType("text/plain");
-        //        String textToSend="https://play.google.com/store/apps/details?id=com.lite.my.masterok";
-         //       intent.putExtra(Intent.EXTRA_TEXT, textToSend);
-         //       try
-          //      {
-          //          startActivity(Intent.createChooser(intent, "Поделится приложением"));
-          //      }
-         //       catch (android.content.ActivityNotFoundException ex)
-          //      {
-          //          Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
-          //      }
-
-         //   }
-      //  });
+            }
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
@@ -91,6 +83,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         Button button3 = (Button) findViewById(R.id.button400);
         Button button4 = (Button) findViewById(R.id.button2412);
         Button button5 = (Button) findViewById(R.id.button4010);
+        Button button6 = (Button) findViewById(R.id.button407);
         TextView textView = (TextView) findViewById(R.id.textView);
 
 
@@ -99,6 +92,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         button3.setOnClickListener(viewClickListener3);
         button4.setOnClickListener(viewClickListener4);
         button5.setOnClickListener(viewClickListener5);
+        button6.setOnClickListener(viewClickListener6);
 //        textView.setOnClickListener(viewClickListener);
 
 
@@ -123,18 +117,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.you_tube) {
-
-            long mills = 15L;
-            Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-            vibrator.vibrate(mills);
-
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("https://www.youtube.com/channel/UCevOw6a0SiaFm-TGHcogQEg"));
-            startActivity(intent);
-
-
-        } else if (id == R.id.market) {
+         if (id == R.id.market) {
 
             long mills = 15L;
             Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
@@ -201,6 +184,16 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(mills);
     }
+
+    public void onClickGipsokarton_213(View view) {
+        Intent a = new Intent(this,Gipsokarton_P_213_Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+    }
+
 
     public void onClickPen(View view) {
         Intent a = new Intent(this,Penoplast_Activity.class);
@@ -657,6 +650,73 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
                                 startActivity(intent2);
                                 long mills2 = 15L;
                                Vibrator vibrator2 = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                                vibrator2.vibrate(mills2);
+
+                                return true;
+
+
+
+                            default:
+                                return false;
+                        }
+                    }
+                });
+
+        popupMenu.setOnDismissListener(new PopupMenu.OnDismissListener() {
+
+            @Override
+            public void onDismiss(PopupMenu menu) {
+                //Toast.makeText(getApplicationContext(), "onDismiss",
+                // Toast.LENGTH_SHORT).show();
+            }
+        });
+        popupMenu.show();
+    }
+
+    View.OnClickListener viewClickListener6 = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            long mills = 15L;
+            Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+            vibrator.vibrate(mills);
+
+
+            showPopupMenu6(v);
+        }
+    };
+
+    private void showPopupMenu6(View v2) {
+        PopupMenu popupMenu = new PopupMenu(this, v2);
+        popupMenu.inflate(R.menu.popupmenu7); // Для Android 4.0
+        // для версии Android 3.0 нужно использовать длинный вариант
+        // popupMenu.getMenuInflater().inflate(R.menu.popupmenu,
+        // popupMenu.getMenu());
+
+        popupMenu
+                .setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        // Toast.makeText(PopupMenuDemoActivity.this,
+                        // item.toString(), Toast.LENGTH_LONG).show();
+                        // return true;
+                        switch (item.getItemId()) {
+
+                            case R.id.menu10:
+                                //пол
+                                Intent intent = new Intent(Start_Activity.this, Gipsokarton_P_213_Activity.class);
+                                startActivity(intent);
+                                long mills = 15L;
+                                Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                                vibrator.vibrate(mills);
+                                return true;
+
+                            case R.id.menu11:
+                                //пол
+                                Intent intent2 = new Intent(Start_Activity.this, Gipsokarton_lite_Activity.class);
+                                startActivity(intent2);
+                                long mills2 = 15L;
+                                Vibrator vibrator2 = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                                 vibrator2.vibrate(mills2);
 
                                 return true;

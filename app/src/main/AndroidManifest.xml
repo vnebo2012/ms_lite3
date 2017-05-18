@@ -7,6 +7,11 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+
+
 
     <application
         android:allowBackup="true"
@@ -99,6 +104,15 @@
             android:name=".Penoplast_Activity"
             android:label="@string/title_activity_kr_s29"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Gipsokarton_P_213_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Gipsokarton_lite_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
         <activity android:name=".WebMoneyActivity" />
     </application>
 

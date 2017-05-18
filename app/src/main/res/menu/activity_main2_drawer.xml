@@ -6,11 +6,7 @@
 
 
 
-            <item
-                android:id="@+id/you_tube"
-                android:title="You Tube"
-                android:icon="@mipmap/ic_you_tube"
-                />
+
             <item
                 android:id="@+id/market"
                 android:title="Еще приложения"

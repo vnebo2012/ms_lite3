@@ -47,7 +47,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="3dp"
-                        android:onClick="onClickDom"
+                        android:onClick="onClick222"
                         android:src="@drawable/plita1" />
                 </LinearLayout>
 

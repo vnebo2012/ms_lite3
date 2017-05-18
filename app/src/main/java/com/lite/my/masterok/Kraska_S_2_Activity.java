@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -18,10 +19,15 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Locale;
 
@@ -1031,6 +1037,9 @@ public class Kraska_S_2_Activity extends AppCompatActivity {
     ImageView imageView;
     ImageView imageView1;
 
+    InterstitialAd mInterstitialAd;
+    ImageButton mNewGameButton;
+
 
 
 
@@ -1047,6 +1056,52 @@ public class Kraska_S_2_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kraska_s_2);
+
+
+        mNewGameButton = (ImageButton) findViewById(R.id.dom);
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/5029587751");
+
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                //requestNewInterstitial();
+                // beginPlayingGame();
+
+                Intent a = new Intent(Kraska_S_2_Activity.this, Start_Activity.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(a);
+
+            }
+        });
+
+        requestNewInterstitial();
+
+        mNewGameButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+
+                ConnectivityManager icheck = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+                boolean mob = icheck.getActiveNetworkInfo() != null;
+                if(mob) {
+
+                    if (mInterstitialAd.isLoaded()) {
+                        mInterstitialAd.show();
+
+                    } else {
+                        beginPlayingGame();
+                    }
+
+                } else {
+                    Intent a = new Intent(Kraska_S_2_Activity.this, Start_Activity.class);
+                    a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(a);
+                }
+
+
+            }
+        });
 
         ImageView imageView2 = (ImageView) findViewById(R.id.imageView3);
         TextView textView = (TextView) findViewById(R.id.textView);
@@ -4989,13 +5044,26 @@ public class Kraska_S_2_Activity extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        //do something on back.
 
-        Intent a = new Intent(this, Start_Activity.class);
-        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(a);
+        ConnectivityManager icheck = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 
+        boolean mob = icheck.getActiveNetworkInfo() != null;
+        if(mob) {
+
+            if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+
+            } else {
+                beginPlayingGame();
+            }
+
+        } else {
+            Intent a = new Intent(this, Start_Activity.class);
+            a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(a);
+        }
     }
+    //do something on back.
     public void onClick_Ca(View view) {
         long mills = 15L;
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
@@ -5035,7 +5103,18 @@ public class Kraska_S_2_Activity extends AppCompatActivity {
         startActivity(a);
     }
 
+    private void requestNewInterstitial() {
 
+        AdRequest adRequest = new AdRequest.Builder()
+
+                .addTestDevice("SEE_YOUR_LOGCAT_TO_GET_YOUR_DEVICE_ID")
+
+                .build();
+        mInterstitialAd.loadAd(adRequest);
+    }
+    private void beginPlayingGame() {
+        // Play for a while, then display the New Game Button
+    }
 }
 
 

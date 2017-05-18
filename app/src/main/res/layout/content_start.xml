@@ -132,13 +132,24 @@
 
 
                     <Button
-                        android:id="@+id/button400"
+                    android:id="@+id/button400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/radius_wpaklevka"
+                    android:onClick="onClickSt1"
+                    android:text="Шпаклевка"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button407"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="3dp"
-                        android:background="@drawable/radius_wpaklevka"
-                        android:onClick="onClickSt1"
-                        android:text="Шпаклевка"
+                        android:background="@drawable/radius_gipsokarton"
+                        android:onClick="onClickGipsokarton_213"
+                        android:text="Гипсокартон"
                         android:textColor="@android:color/white"
                         android:textSize="18sp" />
 
