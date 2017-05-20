@@ -4,49 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWite"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Gipsokarton_P_213_Activity"
-    tools:showIn="@layout/activity_gipsokarton_a_b"
-    android:background="@color/colorBlueGrey500">
+    tools:showIn="@layout/activity_gipsokarton_a_b">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/linearLayout2"
-        android:weightSum="1"
-        android:layout_marginTop="1dp">
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <ScrollView
+            android:id="@+id/scrollView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/scrollView2">
+            android:layout_height="match_parent">
 
             <LinearLayout
-                android:orientation="vertical"
+                android:id="@+id/linner"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/linner">
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="false"
-                    android:background="@color/colorBlueGrey50">
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView1112"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView1112"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -146,14 +146,13 @@
                 </LinearLayout>
 
 
-
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="false"
-                    android:background="@color/colorBlueGrey50">
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -168,8 +167,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="A - длина потолка, м:"
-                            android:textColor="@color/colorBlack"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
                         <TextView
@@ -178,29 +178,30 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
-                            android:text="4"
-                            android:textColor="@color/colorBlack"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="4.00"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView11"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView11"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
                                     android:id="@+id/button97"
@@ -324,21 +325,21 @@
                                     android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="false"
-                    android:background="@color/colorBlueGrey50">
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -353,8 +354,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="B - ширина потолка, м:"
-                            android:textColor="@color/colorBlack"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
                         <TextView
@@ -363,29 +365,30 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
-                            android:text="3"
-                            android:textColor="@color/colorBlack"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="3.00"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView111"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView111"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
                                     android:id="@+id/button201"
@@ -509,32 +512,22 @@
                                     android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
 
 
-
-
-
-
-
-
-
-
-
-
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50" >
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -550,8 +543,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Расстояние между осями несущих профилей, м:"
-                            android:textColor="@color/colorBlack"
+                            android:textColor="@color/colorWite"
                             android:textSize="13sp" />
 
                         <TextView
@@ -561,17 +555,18 @@
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
-                            android:text="0.5"
-                            android:textColor="@color/colorBlack"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="0.50"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
                             android:id="@+id/horizontalScrollView6"
@@ -637,21 +632,21 @@
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50">
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp">
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView362"
@@ -659,110 +654,112 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Расстояние между осями основных профилей, мм:"
-                            android:textColor="@color/colorTextMy"
-                            android:textSize="13sp" />
+                            android:textColor="@color/colorWite"
+                            android:textSize="12sp" />
 
                         <TextView
+                            android:id="@+id/textViewWir15"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="1.0"
-                            android:id="@+id/textViewWir15"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="1.00"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView8"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView8"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="0"
                                     android:id="@+id/button70"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack"
-                                    android:textSize="22sp" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="80"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="22sp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button71"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack"
-                                    android:textSize="22sp" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="90"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="80"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="22sp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button72"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack"
-                                    android:textSize="22sp" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="100"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="90"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="22sp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button73"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack"
-                                    android:textSize="22sp" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="110"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="100"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="22sp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button74"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack"
-                                    android:textSize="22sp" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="120"
-                                    android:id="@+id/button75"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack"
-                                    android:textSize="22sp" />
+                                    android:background="@drawable/radius"
+                                    android:text="110"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="22sp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button75"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="120"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="22sp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent"></LinearLayout>
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"></LinearLayout>
 
                             </LinearLayout>
                         </HorizontalScrollView>
@@ -770,90 +767,90 @@
                 </LinearLayout>
 
 
-
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50" >
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp" >
+                        android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Количество подвесов на м2, шт.:"
                             android:id="@+id/textView170"
-                            android:layout_margin="3dp"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
-
-                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="0.7"
-                            android:id="@+id/textViewWir10"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy"
+                            android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Количество подвесов на м2, шт.:"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textViewWir10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
                             android:layout_marginLeft="15dp"
-                            android:layout_marginRight="2dp" />
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="0.70"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView60"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView60"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="1.5"
                                     android:id="@+id/button230"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack"
-                                    android:textSize="25sp" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="2.0"
-                                    android:id="@+id/button231"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack"
-                                    android:textSize="25sp" />
+                                    android:background="@drawable/radius"
+                                    android:text="1.5"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25sp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button231"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="2.0"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25sp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
 
@@ -863,17 +860,15 @@
 
 
                 <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="1dp"
-                android:baselineAligned="true"
-                android:background="@color/colorBlueGrey50">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
+                    android:baselineAligned="true"
+                    android:orientation="vertical">
 
 
-
-
-            </LinearLayout>
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -906,7 +901,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_gravity="center_horizontal"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimary2"
         android:baselineAligned="false"
         android:gravity="center"
         android:orientation="horizontal">
@@ -950,7 +945,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -989,7 +984,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -1028,7 +1023,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1052,7 +1047,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -1089,7 +1084,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -1125,7 +1120,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -1162,7 +1157,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -1198,7 +1193,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -1235,7 +1230,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -1271,7 +1266,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 

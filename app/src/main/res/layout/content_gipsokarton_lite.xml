@@ -134,7 +134,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/colorPrimary"
                         android:baselineAligned="true"
                         android:orientation="horizontal">
 
@@ -144,6 +143,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="A - длина потолка, м:"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
@@ -154,9 +154,10 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
-                            android:text="4"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="4.00"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -320,7 +321,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/colorPrimary"
                         android:baselineAligned="true"
                         android:orientation="horizontal">
 
@@ -330,6 +330,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="B - ширина потолка, м:"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
@@ -340,9 +341,10 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
-                            android:text="3"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="3.00"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -507,7 +509,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/colorPrimary"
                         android:baselineAligned="true"
                         android:orientation="horizontal">
 
@@ -518,9 +519,10 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Расстояние между осями несущих профилей, м:"
                             android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/textViewWir8"
@@ -529,9 +531,10 @@
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
-                            android:text="0.5"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="0.50"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -618,7 +621,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/colorPrimary"
                         android:baselineAligned="true"
                         android:orientation="horizontal">
 
@@ -628,6 +630,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Растояние между пластинами (вдоль профиля), м:"
                             android:textColor="@color/colorWite"
                             android:textSize="12sp" />
@@ -638,9 +641,10 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
-                            android:text="0.5"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="0.50"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -751,7 +755,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@color/colorPrimary"
                         android:baselineAligned="true"
                         android:orientation="horizontal">
 
@@ -761,6 +764,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Количество дюбелей на м/п (тип К6/35):"
                             android:textColor="@color/colorWite"
                             android:textSize="13dp" />
@@ -772,9 +776,10 @@
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="15dp"
                             android:layout_marginRight="2dp"
-                            android:text="2"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="2.00"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -872,7 +877,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_gravity="center_horizontal"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimary2"
         android:baselineAligned="false"
         android:gravity="center"
         android:orientation="horizontal">
@@ -925,7 +930,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -964,7 +969,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -1003,7 +1008,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1027,7 +1032,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -1064,7 +1069,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -1101,7 +1106,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -1137,7 +1142,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -1174,7 +1179,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -1210,7 +1215,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
 

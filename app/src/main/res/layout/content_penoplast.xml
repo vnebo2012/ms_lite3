@@ -4,53 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWite"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Penoplast_Activity"
-    tools:showIn="@layout/activity_penoplast"
-    android:background="@color/colorBlueGrey500">
+    tools:showIn="@layout/activity_penoplast">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/linearLayout2"
-        android:weightSum="1"
-        android:layout_marginTop="1dp">
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <ScrollView
+            android:id="@+id/scrollView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/scrollView2">
+            android:layout_height="match_parent">
 
             <LinearLayout
-                android:orientation="vertical"
+                android:id="@+id/linner"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/linner">
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50">
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
-                        android:layout_margin="3dp">
+                        android:layout_margin="3dp"
+                        android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/textView38"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Площадь стен дома, м2:"
-                            android:id="@+id/textView38"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
                             android:layout_margin="3dp"
-                            android:textColor="@color/colorTextMy" />
+                            android:background="@color/colorPrimary"
+                            android:text="Площадь стен дома, м2:"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp" />
 
                         <TextView
                             android:id="@+id/textViewWir"
@@ -58,368 +58,368 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
                             android:text="100"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
 
 
-
                         <LinearLayout
-                            android:orientation="horizontal"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"></LinearLayout>
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"></LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
-                            android:layout_width="fill_parent"
-                            android:layout_height="match_parent"
                             android:id="@+id/horizontalScrollView9"
-                            android:layout_gravity="right"
-                            android:scrollbars="none" >
-
-                            <LinearLayout
-                                android:orientation="horizontal"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="0"
-                                    android:id="@+id/button10"
-                                    android:textSize="25dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="4"
-                                    android:id="@+id/button2"
-                                    android:textSize="25dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="5"
-                                    android:id="@+id/button"
-                                    android:textSize="25dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="6"
-                                    android:id="@+id/button3"
-                                    android:textSize="25dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="7"
-                                    android:id="@+id/button5"
-                                    android:textSize="25dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="8"
-                                    android:id="@+id/button6"
-                                    android:textSize="25dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="9"
-                                    android:id="@+id/button7"
-                                    android:textSize="25dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="10"
-                                    android:id="@+id/button38"
-                                    android:textSize="25dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="11"
-                                    android:id="@+id/button40"
-                                    android:textSize="25dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="12"
-                                    android:id="@+id/button39"
-                                    android:textSize="25dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="14"
-                                    android:id="@+id/button8"
-                                    android:textSize="25dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <LinearLayout
-                                    android:orientation="horizontal"
-                                    android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
-                            </LinearLayout>
-                        </HorizontalScrollView>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="1dp"
-                    android:baselineAligned="false"
-                    android:background="@color/colorBlueGrey50">
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
-                        android:baselineAligned="true"
-                        android:layout_margin="3dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Площадь окон, дверей, м2:"
-                            android:id="@+id/textView42"
-                            android:layout_margin="3dp"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0"
-                            android:id="@+id/textViewWir2"
-                            android:layout_margin="3dp"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
-
-                        <HorizontalScrollView
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView11"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
+                                    android:id="@+id/button10"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
                                     android:text="0"
-                                    android:id="@+id/button97"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:textStyle="italic" />
 
                                 <Button
+                                    android:id="@+id/button2"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
                                     android:text="4"
-                                    android:id="@+id/button98"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:textStyle="italic" />
 
                                 <Button
+                                    android:id="@+id/button"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
                                     android:text="5"
-                                    android:id="@+id/button99"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:textStyle="italic" />
 
                                 <Button
+                                    android:id="@+id/button3"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
                                     android:text="6"
-                                    android:id="@+id/button100"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:textStyle="italic" />
 
                                 <Button
+                                    android:id="@+id/button5"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
                                     android:text="7"
-                                    android:id="@+id/button101"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:textStyle="italic" />
 
                                 <Button
+                                    android:id="@+id/button6"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
                                     android:text="8"
-                                    android:id="@+id/button102"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:textStyle="italic" />
 
                                 <Button
+                                    android:id="@+id/button7"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
                                     android:text="9"
-                                    android:id="@+id/button103"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:textStyle="italic" />
 
                                 <Button
+                                    android:id="@+id/button38"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
                                     android:text="10"
-                                    android:id="@+id/button104"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:textStyle="italic" />
 
                                 <Button
+                                    android:id="@+id/button40"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
                                     android:text="11"
-                                    android:id="@+id/button105"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:textStyle="italic" />
 
                                 <Button
+                                    android:id="@+id/button39"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
                                     android:text="12"
-                                    android:id="@+id/button11"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:textStyle="italic" />
 
                                 <Button
+                                    android:id="@+id/button8"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="14"
-                                    android:id="@+id/button12"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="14"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="false"
-                    android:background="@color/colorBlueGrey50">
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp">
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Площадь окон, дверей, м2:"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textViewWir2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="0"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView11"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/button97"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button98"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="4"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button99"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="5"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button100"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="6"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button101"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="7"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button102"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="8"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button103"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="9"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button104"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="10"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button105"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="11"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button11"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="12"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button12"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="14"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
+                    android:baselineAligned="false"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:baselineAligned="true"
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView500"
@@ -427,51 +427,53 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Пенопласт (цена за м3):"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
                         <TextView
+                            android:id="@+id/textViewWir3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="500"
-                            android:id="@+id/textViewWir3"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="500"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView111"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView111"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
+                                    android:id="@+id/button201"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="0"
-                                    android:id="@+id/button201"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button202"
@@ -480,133 +482,132 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="4"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="5"
                                     android:id="@+id/button203"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="6"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="5"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button204"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="7"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="6"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button205"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="8"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="7"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button206"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="9"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="8"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button207"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="10"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="9"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button208"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="11"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="10"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button209"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="12"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="11"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button210"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="14"
-                                    android:id="@+id/button211"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="12"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button211"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="14"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="false"
-                    android:background="@color/colorBlueGrey50">
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp">
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView600"
@@ -614,114 +615,114 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Клей (цена за мешок):"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
                         <TextView
+                            android:id="@+id/textViewWir4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="0"
-                            android:id="@+id/textViewWir4"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="0"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
-
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView1111"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView1111"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="0"
                                     android:id="@+id/button212"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="4"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button213"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="5"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="4"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button214"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="6"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="5"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button215"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="7"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="6"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button216"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="8"
-                                    android:id="@+id/button217"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="7"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
+                                <Button
+                                    android:id="@+id/button217"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="8"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
@@ -729,20 +730,19 @@
 
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50" >
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp" >
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView6"
@@ -750,8 +750,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Толщина пенопласта, мм:"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
                         <TextView
@@ -760,29 +761,30 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
                             android:text="100"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
                                     android:id="@+id/button15"
@@ -791,7 +793,7 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="25"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
@@ -802,78 +804,77 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="30"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="260"
                                     android:id="@+id/button17"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="251"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="260"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button18"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="252"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="251"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button45"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="253"
-                                    android:id="@+id/button46"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="252"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button46"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="253"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50" >
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp" >
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView1722"
@@ -881,8 +882,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Дюбелей на один лист, шт.:"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
                         <TextView
@@ -892,8 +894,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
+                            android:background="@drawable/radius_kirpish"
                             android:text="2"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
 
@@ -901,32 +904,32 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView622"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView622"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
+                                    android:id="@+id/button218"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="2"
-                                    android:id="@+id/button218"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="2"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button219"
@@ -935,20 +938,20 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="4"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
                                 <Button
+                                    android:id="@+id/button220"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="5"
-                                    android:id="@+id/button220"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="5"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button221"
@@ -957,34 +960,33 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="6"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50">
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp">
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView32"
@@ -992,8 +994,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Дюбеля (цена за шт.):"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
                         <TextView
@@ -1002,100 +1005,101 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
                             android:text="10"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView7"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView7"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="0"
                                     android:id="@+id/button61"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="50"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button62"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="60"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="50"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button63"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="70"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="60"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button64"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="80"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="70"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button65"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="90"
-                                    android:id="@+id/button66"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="80"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button66"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="90"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
 
                             </LinearLayout>
                         </HorizontalScrollView>
@@ -1104,20 +1108,19 @@
 
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50" >
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp" >
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView17221"
@@ -1125,8 +1128,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Расход клея для приклейки, кг/м2:"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
                         <TextView
@@ -1136,29 +1140,30 @@
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="3dp"
                             android:layout_marginRight="3dp"
+                            android:background="@drawable/radius_kirpish"
                             android:text="6"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView6221"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView6221"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
                                     android:id="@+id/button222"
@@ -1167,7 +1172,7 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="4"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
@@ -1178,7 +1183,7 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="5"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
@@ -1189,7 +1194,7 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="6"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
@@ -1200,14 +1205,14 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="7"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
@@ -1215,20 +1220,19 @@
 
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50" >
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp" >
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView17"
@@ -1236,89 +1240,91 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Расход клея для затяжки, кг/м2"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
                         <TextView
+                            android:id="@+id/textViewWir8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="6"
-                            android:id="@+id/textViewWir8"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy"
                             android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp" />
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="6"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView6"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView6"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="5"
                                     android:id="@+id/button26"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="8"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="5"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button33"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="10"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="8"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button34"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="15"
-                                    android:id="@+id/button35"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="10"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button35"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="15"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
@@ -1326,20 +1332,19 @@
 
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50" >
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp" >
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView170"
@@ -1347,8 +1352,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Количество слоев (для затягивания):"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
 
@@ -1359,160 +1365,162 @@
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
+                            android:background="@drawable/radius_kirpish"
                             android:text="2"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView60"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView60"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="1"
                                     android:id="@+id/button230"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="2"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="1"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button231"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="5"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="2"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button232"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="10"
-                                    android:id="@+id/button233"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="5"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button233"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="10"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="false"
-                    android:background="@color/colorBlueGrey50" >
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp" >
+                        android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Грунтовка, цена за ведро:"
                             android:id="@+id/textView901"
-                            android:layout_margin="3dp"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
-
-                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20"
-                            android:id="@+id/textViewWir20"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Грунтовка, цена за ведро:"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textViewWir20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="20"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView49934"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView49934"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="15"
                                     android:id="@+id/button901"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="20"
-                                    android:id="@+id/button902"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="15"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button902"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="20"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button903"
@@ -1521,96 +1529,97 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="25"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="false"
-                    android:background="@color/colorBlueGrey50" >
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp" >
+                        android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Литров в ведре (грунт):"
                             android:id="@+id/textView902"
-                            android:layout_margin="3dp"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
-
-                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="10"
-                            android:id="@+id/textViewWir21"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Литров в ведре (грунт):"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textViewWir21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="10"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView499345"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView499345"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="15"
                                     android:id="@+id/button904"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="20"
-                                    android:id="@+id/button905"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="15"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button905"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="20"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button906"
@@ -1619,36 +1628,34 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="25"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
 
 
-
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="false"
-                    android:background="@color/colorBlueGrey50" >
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp" >
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView257"
@@ -1656,39 +1663,41 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Грунтовка (количество слоев):"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
                         <TextView
+                            android:id="@+id/textViewWir18"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="1"
-                            android:id="@+id/textViewWir18"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="1"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView47"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView47"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
                                     android:id="@+id/button197"
@@ -1697,7 +1706,7 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="1"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
@@ -1708,7 +1717,7 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="2"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
@@ -1719,100 +1728,98 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="3"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
 
 
-
-
-
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="false"
-                    android:background="@color/colorBlueGrey50" >
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp" >
+                        android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Расход грунтовки, мл/м2:"
                             android:id="@+id/textView25"
-                            android:layout_margin="3dp"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
-
-                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="600"
-                            android:id="@+id/textViewWir13"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Расход грунтовки, мл/м2:"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textViewWir13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="600"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView42345"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView42345"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="15"
                                     android:id="@+id/button19"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="20"
-                                    android:id="@+id/button20"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="15"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button20"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="20"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button25"
@@ -1821,14 +1828,14 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="25"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
@@ -1836,82 +1843,83 @@
 
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="false"
-                    android:background="@color/colorBlueGrey50" >
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp" >
+                        android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Сетка, цена за м2:"
                             android:id="@+id/textView2588"
-                            android:layout_margin="3dp"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
-
-                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20"
-                            android:id="@+id/textViewWir22"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Сетка, цена за м2:"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textViewWir22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="20"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView4"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView4"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="15"
                                     android:id="@+id/button907"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="20"
-                                    android:id="@+id/button908"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="15"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button908"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="20"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button909"
@@ -1920,14 +1928,14 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="25"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
@@ -1935,71 +1943,72 @@
 
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50">
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp">
+                        android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Стоимость ведра Короеда:"
                             android:id="@+id/textView362"
-                            android:layout_margin="3dp"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
-
-                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="500"
-                            android:id="@+id/textViewWir15"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Стоимость ведра Короеда:"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textViewWir15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="500"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView8"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView8"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
+                                    android:id="@+id/button70"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="0"
-                                    android:id="@+id/button70"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button71"
@@ -2008,78 +2017,78 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="80"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="90"
                                     android:id="@+id/button72"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="100"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="90"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button73"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="110"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="100"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button74"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="120"
-                                    android:id="@+id/button75"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="110"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button75"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="120"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent"></LinearLayout>
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"></LinearLayout>
 
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50">
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp">
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView3621"
@@ -2087,8 +2096,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Количество в ведре, кг:"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
                         <TextView
@@ -2097,84 +2107,85 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
                             android:text="20"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView81"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView81"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="0"
                                     android:id="@+id/button237"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="80"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button238"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="90"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="80"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button239"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="100"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="90"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button240"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="110"
-                                    android:id="@+id/button241"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="100"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button241"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="110"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button242"
@@ -2183,14 +2194,14 @@
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="120"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/colorPrimary43"
                                     android:textSize="25dp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent"></LinearLayout>
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"></LinearLayout>
 
                             </LinearLayout>
                         </HorizontalScrollView>
@@ -2198,123 +2209,120 @@
                 </LinearLayout>
 
 
-
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="false"
-                    android:background="@color/colorBlueGrey50" >
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp" >
+                        android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Расход Короеда, кг/м2:"
                             android:id="@+id/textView259"
-                            android:layout_margin="3dp"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="16dp"
-                            android:textColor="@color/colorTextMy" />
-
-                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="3"
-                            android:id="@+id/textViewWir14"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Расход Короеда, кг/м2:"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textViewWir14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="3"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView49"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView49"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="90"
                                     android:id="@+id/button234"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="100"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="90"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button235"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="110"
-                                    android:id="@+id/button236"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="100"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button236"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="110"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
 
 
-
-
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
-                    android:background="@color/colorBlueGrey50">
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/radius2"
+                        android:layout_margin="3dp"
                         android:baselineAligned="true"
-                        android:layout_margin="3dp">
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView36"
@@ -2322,111 +2330,112 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
                             android:text="Стоимость работ, за м2:"
-                            android:textColor="@color/colorTextMy"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
                         <TextView
+                            android:id="@+id/textViewWir17"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="110"
-                            android:id="@+id/textViewWir17"
-                            android:layout_margin="3dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="110"
+                            android:textColor="@color/colorWite"
                             android:textSize="16dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTextMy" />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView812"
                             android:layout_width="fill_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/horizontalScrollView812"
                             android:layout_gravity="right"
-                            android:scrollbars="none" >
+                            android:scrollbars="none">
 
                             <LinearLayout
-                                android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent" >
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
                                 <Button
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:text="0"
                                     android:id="@+id/button243"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="80"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button244"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="90"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="80"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button245"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="100"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="90"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button246"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="110"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="100"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
                                     android:id="@+id/button247"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
-                                    android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
-
-                                <Button
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:text="120"
-                                    android:id="@+id/button248"
-                                    android:textSize="25dp"
-                                    android:background="@drawable/radius"
                                     android:layout_margin="7dp"
-                                    android:textStyle="italic"
-                                    android:textColor="@color/colorBlack" />
+                                    android:background="@drawable/radius"
+                                    android:text="110"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button248"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="120"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
                                     android:layout_width="75dp"
-                                    android:layout_height="match_parent"></LinearLayout>
-
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"></LinearLayout>
 
 
                             </LinearLayout>
@@ -2437,7 +2446,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:background="@color/colorBlueGrey100"
+                    android:background="@color/colorBlueGrey50"
                     android:orientation="horizontal"></LinearLayout>
 
             </LinearLayout>
@@ -2447,32 +2456,32 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:id="@+id/linearLayout2"
-        android:baselineAligned="false"
-        android:background="@color/colorPrimaryDark"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/job"
@@ -2540,13 +2549,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
+                android:id="@+id/verx"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="0dp"
+                android:layout_marginTop="5dp"
                 android:baselineAligned="true"
-                android:id="@+id/verx"
-                android:layout_marginTop="5dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView200"
@@ -2603,13 +2612,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
+                android:id="@+id/niz"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="0dp"
+                android:layout_marginTop="5dp"
                 android:baselineAligned="true"
-                android:id="@+id/niz"
-                android:layout_marginTop="5dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView300"
@@ -2667,13 +2676,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
+                android:id="@+id/freza"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="0dp"
+                android:layout_marginTop="5dp"
                 android:baselineAligned="true"
-                android:id="@+id/freza"
-                android:layout_marginTop="5dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView400"
@@ -2728,14 +2737,15 @@
 
 
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="0dp"
                 android:baselineAligned="true"
-                android:gravity="right">
+                android:gravity="right"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView222"
@@ -2785,14 +2795,14 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="0dp"
+                android:layout_marginTop="5dp"
                 android:baselineAligned="true"
                 android:gravity="right"
-                android:layout_marginTop="5dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView18"
@@ -2854,14 +2864,14 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="0dp"
+                android:layout_marginTop="5dp"
                 android:baselineAligned="true"
                 android:gravity="right"
-                android:layout_marginTop="5dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView188"
@@ -2924,13 +2934,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="0dp"
                 android:baselineAligned="true"
-                android:gravity="right">
+                android:gravity="right"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView22"
@@ -2958,13 +2968,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="0dp"
                 android:baselineAligned="true"
-                android:gravity="right">
+                android:gravity="right"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView229"
@@ -2994,9 +3004,6 @@
                     android:theme="@style/AppTheme" />
 
             </LinearLayout>
-
-
-
 
 
         </LinearLayout>
