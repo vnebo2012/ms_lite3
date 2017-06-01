@@ -2,11 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
+    <item
+        android:id="@+id/infi"
+        android:icon="@drawable/ic_info"
+        android:title="Инструкция" />
 
-
-
-
-
+i
             <item
                 android:id="@+id/market"
                 android:title="Еще приложения"
@@ -20,6 +21,17 @@
                 android:id="@+id/podelica"
                 android:icon="@drawable/ic_menu_share"
                 android:title="Поделится" />
+
+    <item
+        android:id="@+id/napisat"
+        android:icon="@mipmap/ic_pismo"
+        android:title="Написать нам" />
+
+    <item
+        android:id="@+id/pro"
+        android:icon="@drawable/ic_pro"
+        android:title="Версия без рекламы" />
+
 
 
 

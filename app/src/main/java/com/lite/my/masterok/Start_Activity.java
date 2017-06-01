@@ -31,6 +31,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+
      ///   mAdView = (AdView) findViewById(R.id.adView);
      //   AdRequest adRequest = new AdRequest.Builder().build();
      //   mAdView.loadAd(adRequest);
@@ -146,9 +147,27 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
             catch (android.content.ActivityNotFoundException ex)
             {
                 Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
-            }
 
-        }
+
+         } } else if (id == R.id.napisat){
+
+             Intent a = new Intent(this,PlusActivity.class);
+             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+             startActivity(a);
+
+         } else if (id == R.id.pro){
+
+             Intent intent = new Intent(Intent.ACTION_VIEW);
+             intent.setData(Uri.parse("market://details?id=com.my.masterok.masterokpro"));
+             startActivity(intent);
+
+         } else if (id == R.id.infi){
+
+             Intent a = new Intent(this,HellpActivity.class);
+             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+             startActivity(a);
+
+    }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -248,6 +267,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(mills);
     }
+
 
     public void onClick_M(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -720,6 +740,8 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
                                 vibrator2.vibrate(mills2);
 
                                 return true;
+
+
 
 
 

@@ -9,10 +9,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
-
-
-
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -34,9 +30,7 @@
             android:label="@string/app_name2" />
         <activity
             android:name=".BlokiActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -107,12 +101,15 @@
         <activity
             android:name=".Gipsokarton_P_213_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Gipsokarton_lite_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
+        <activity
+            android:name=".Gipsokarton_lite_2_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PlusActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".WebMoneyActivity" />
     </application>
 

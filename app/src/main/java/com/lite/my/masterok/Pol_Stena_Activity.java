@@ -1399,6 +1399,274 @@ public class Pol_Stena_Activity extends AppCompatActivity {
             e.commit(); // не забудьте подтвердить изменения
         }
 
+        ImageButton fa = (ImageButton) findViewById(R.id.res);
+        fa.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Востановление...", Toast.LENGTH_SHORT);
+                toast.show();
+
+
+                final TextView bill1 = (TextView) findViewById(R.id.button10);
+                final TextView bill2 = (TextView) findViewById(R.id.button2);
+                final TextView bill3 = (TextView) findViewById(R.id.button);
+                final TextView bill4 = (TextView) findViewById(R.id.button3);
+                final TextView bill5 = (TextView) findViewById(R.id.button5);
+                final TextView bill6 = (TextView) findViewById(R.id.button6);
+                final TextView bill7 = (TextView) findViewById(R.id.button7);
+                final TextView bill8 = (TextView) findViewById(R.id.button38);
+                final TextView bill9 = (TextView) findViewById(R.id.button40);
+                final TextView bill10 = (TextView) findViewById(R.id.button39);
+                final TextView bill11 = (TextView) findViewById(R.id.button8);
+
+                final TextView bill12 = (TextView) findViewById(R.id.textView142);
+                final TextView bill13 = (TextView) findViewById(R.id.textView242);
+
+
+
+                final TextView bill23 = (TextView) findViewById(R.id.button97);
+                final TextView bill24 = (TextView) findViewById(R.id.button98);
+                final TextView bill25 = (TextView) findViewById(R.id.button99);
+                final TextView bill26 = (TextView) findViewById(R.id.button100);
+                final TextView bill27 = (TextView) findViewById(R.id.button101);
+                final TextView bill28 = (TextView) findViewById(R.id.button102);
+                final TextView bill29 = (TextView) findViewById(R.id.button103);
+                final TextView bill30 = (TextView) findViewById(R.id.button104);
+                final TextView bill31 = (TextView) findViewById(R.id.button105);
+                final TextView bill32 = (TextView) findViewById(R.id.button11);
+                final TextView bill33 = (TextView) findViewById(R.id.button12);
+
+
+
+
+
+                final TextView bill46 = (TextView) findViewById(R.id.button70);
+                final TextView bill47 = (TextView) findViewById(R.id.button71);
+                final TextView bill48 = (TextView) findViewById(R.id.button72);
+                final TextView bill49 = (TextView) findViewById(R.id.button73);
+                final TextView bill50 = (TextView) findViewById(R.id.button74);
+                final TextView bill51 = (TextView) findViewById(R.id.button75);
+
+
+
+
+
+
+                final TextView bill79 = (TextView) findViewById(R.id.button26);
+                final TextView bill80 = (TextView) findViewById(R.id.button33);
+                final TextView bill81 = (TextView) findViewById(R.id.button34);
+                final TextView bill82 = (TextView) findViewById(R.id.button35);
+
+                final TextView bill83 = (TextView) findViewById(R.id.textView14);
+                final TextView bill84 = (TextView) findViewById(R.id.textView20);
+                //final TextView bill85 = (TextView) findViewById(R.id.textView43);
+                final TextView bill86 = (TextView) findViewById(R.id.textView24);
+                // final TextView bill87 = (TextView) findViewById(R.id.textView39);
+                // final TextView bill88 = (TextView) findViewById(R.id.textView37);
+                //final TextView bill89 = (TextView) findViewById(R.id.textView28);
+
+                final TextView bill201 = (TextView) findViewById(R.id.button201);
+                final TextView bill202 = (TextView) findViewById(R.id.button202);
+                final TextView bill203 = (TextView) findViewById(R.id.button203);
+                final TextView bill204 = (TextView) findViewById(R.id.button204);
+                final TextView bill205 = (TextView) findViewById(R.id.button205);
+                final TextView bill206 = (TextView) findViewById(R.id.button206);
+                final TextView bill207 = (TextView) findViewById(R.id.button207);
+                final TextView bill208 = (TextView) findViewById(R.id.button208);
+                final TextView bill209 = (TextView) findViewById(R.id.button209);
+                final TextView bill210 = (TextView) findViewById(R.id.button210);
+                final TextView bill211 = (TextView) findViewById(R.id.button211);
+
+
+
+                final TextView bill218 = (TextView) findViewById(R.id.button218);
+                final TextView bill219 = (TextView) findViewById(R.id.button219);
+                final TextView bill220 = (TextView) findViewById(R.id.button220);
+                final TextView bill221 = (TextView) findViewById(R.id.button221);
+
+                final TextView bill222 = (TextView) findViewById(R.id.button222);
+                final TextView bill223 = (TextView) findViewById(R.id.button223);
+                final TextView bill224 = (TextView) findViewById(R.id.button224);
+                final TextView bill225 = (TextView) findViewById(R.id.button225);
+
+                // final TextView bill226 = (TextView) findViewById(R.id.button226);
+                // final TextView bill227 = (TextView) findViewById(R.id.button227);
+                //final TextView bill228 = (TextView) findViewById(R.id.button228);
+                // final TextView bill229 = (TextView) findViewById(R.id.button229);
+
+                final TextView bill230 = (TextView) findViewById(R.id.button230);
+                final TextView bill231 = (TextView) findViewById(R.id.button231);
+                final TextView bill232 = (TextView) findViewById(R.id.button232);
+                final TextView bill233 = (TextView) findViewById(R.id.button233);
+
+                final TextView bill234 = (TextView) findViewById(R.id.button234);
+                final TextView bill235 = (TextView) findViewById(R.id.button235);
+                final TextView bill236 = (TextView) findViewById(R.id.button236);
+
+                final TextView bill237 = (TextView) findViewById(R.id.button237);
+                final TextView bill238 = (TextView) findViewById(R.id.button238);
+                final TextView bill239 = (TextView) findViewById(R.id.button239);
+                final TextView bill240 = (TextView) findViewById(R.id.button240);
+                final TextView bill241 = (TextView) findViewById(R.id.button241);
+                final TextView bill242 = (TextView) findViewById(R.id.button242);
+
+                final TextView bill243 = (TextView) findViewById(R.id.button243);
+                final TextView bill244 = (TextView) findViewById(R.id.button244);
+                final TextView bill245 = (TextView) findViewById(R.id.button245);
+                final TextView bill246 = (TextView) findViewById(R.id.button246);
+                final TextView bill247 = (TextView) findViewById(R.id.button247);
+                final TextView bill248 = (TextView) findViewById(R.id.button248);
+
+                final TextView bill301 = (TextView) findViewById(R.id.textView201);
+                //final TextView bill302 = (TextView) findViewById(R.id.textView301);
+                final TextView bill303 = (TextView) findViewById(R.id.textView401);
+                final TextView bill304 = (TextView) findViewById(R.id.textView4);
+
+                final TextView bill197 = (TextView) findViewById(R.id.button197);
+                final TextView bill277 = (TextView) findViewById(R.id.button277);
+                final TextView bill257 = (TextView) findViewById(R.id.button257);
+
+                final TextView bill408 = (TextView) findViewById(R.id.textView208);
+
+
+                etText83 = (TextView) findViewById(R.id.textView14);
+                etText84 = (TextView) findViewById(R.id.textView20);
+                // etText85 = (TextView) findViewById(R.id.textView43);
+                etText86 = (TextView) findViewById(R.id.textView24);
+
+                etText301 = (TextView) findViewById(R.id.textView201);
+                // etText302 = (TextView) findViewById(R.id.textView301);
+                etText303 = (TextView) findViewById(R.id.textView401);
+                etText304 = (TextView) findViewById(R.id.textView4);
+
+                //  etText89 = (TextView) findViewById(R.id.textView28);
+
+                //final TextView bill75 = (TextView) findViewById(R.id.button36);
+                //final TextView bill76 = (TextView) findViewById(R.id.button37);
+
+
+
+
+
+
+
+                                        //a
+                                        bill1.setText(0 + "");
+                                        bill2.setText(0.5 + "");
+                                        bill3.setText(0.8 + "");
+                                        bill4.setText(1 + "");
+                                        bill5.setText(2 + "");
+                                        bill6.setText(3 + "");
+                                        bill7.setText(5 + "");
+                                        bill8.setText(10 + "");
+                                        bill9.setText(15 + "");
+                                        bill10.setText(20 + "");
+                                        bill11.setText(30 + "");
+
+                                        bill12.setText(0.0 + "");
+                                        bill13.setText(0.0 + "");
+
+
+                                        //b
+                                        bill23.setText(0 + "");
+                                        bill24.setText(0.5 + "");
+                                        bill25.setText(0.8 + "");
+                                        bill26.setText(1 + "");
+                                        bill27.setText(2 + "");
+                                        bill28.setText(3 + "");
+                                        bill29.setText(5 + "");
+                                        bill30.setText(10 + "");
+                                        bill31.setText(15 + "");
+                                        bill32.setText(20 + "");
+                                        bill33.setText(30 + "");
+
+
+
+
+
+                                        bill46.setText(0 + "");
+                                        bill47.setText(100 + "");
+                                        bill48.setText(110 + "");
+                                        bill49.setText(115 + "");
+                                        bill50.setText(120 + "");
+                                        bill51.setText(140 + "");
+
+
+
+
+
+
+
+
+
+                                        bill79.setText(2 + "");
+                                        bill80.setText(3 + "");
+                                        bill81.setText(5 + "");
+                                        bill82.setText(12 + "");
+
+//                                    bill83.setText(00.00 + "");
+                                        bill84.setText(00.00 + "");
+                                        //bill85.setText(00.00 + "");
+                                        bill86.setText(00.00 + "");
+
+                                        bill201.setText(0.50 + "");
+                                        bill202.setText(0.80 + "");
+                                        bill203.setText(0.90 + "");
+                                        bill204.setText(1.00 + "");
+                                        bill205.setText(1.20 + "");
+                                        bill206.setText(1.50 + "");
+                                        bill207.setText(1.70 + "");
+                                        bill208.setText(2.00 + "");
+                                        bill209.setText(2.50 + "");
+                                        bill210.setText(3.00 + "");
+                                        bill211.setText(4.00 + "");
+
+
+                                        bill218.setText(600 + "");
+                                        bill219.setText(700 + "");
+                                        bill220.setText(800+ "");
+                                        bill221.setText(900 + "");
+
+                                        bill222.setText(1950 + "");
+                                        bill223.setText(2000 + "");
+                                        bill224.setText(2100 + "");
+                                        bill225.setText(2150 + "");
+
+
+
+                                        bill230.setText(0.5 + "");
+                                        bill231.setText(1.0 + "");
+                                        bill232.setText(3.0 + "");
+                                        bill233.setText(5.0 + "");
+
+                                        bill234.setText(100 + "");
+                                        bill235.setText(110 + "");
+                                        bill236.setText(150 + "");
+
+
+
+                                        bill243.setText(50 + "");
+                                        bill244.setText(80 + "");
+                                        bill245.setText(90 + "");
+                                        bill246.setText(150 + "");
+                                        bill247.setText(200 + "");
+                                        bill248.setText(250 + "");
+
+                                        bill301.setText(0.0 + "");
+
+                                        bill197.setText(100 + "");
+                                        bill277.setText(150 + "");
+                                        bill257.setText(200 + "");
+
+                                        bill408.setText(00.00 + "");
+
+
+
+                return false;
+            }
+        });
+
 
         etText = (Button) findViewById(R.id.button10);
         etText2 = (Button) findViewById(R.id.button2);
