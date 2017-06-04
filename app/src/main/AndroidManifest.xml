@@ -107,10 +107,16 @@
         <activity
             android:name=".Gipsokarton_lite_2_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".PlusActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".WebMoneyActivity" />
+
+        <activity
+            android:name=".Ob_Septik_Activity"
+            android:label="@string/title_activity_st222452"
+            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>

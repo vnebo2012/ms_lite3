@@ -268,6 +268,15 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         vibrator.vibrate(mills);
     }
 
+    public void onClickObSepik(View view) {
+        Intent a = new Intent(this,Ob_Septik_Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+    }
+
 
     public void onClick_M(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW);

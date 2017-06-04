@@ -155,6 +155,17 @@
                         android:textColor="@android:color/white"
                         android:textSize="18sp" />
 
+                    <Button
+                        android:id="@+id/button4071"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/radius_ob_septika"
+                        android:onClick="onClickObSepik"
+                        android:text="Объем септика"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
 
 
 

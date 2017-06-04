@@ -13,13 +13,13 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
 
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="D a s t o r y   S t u d i o"
+        android:text="1Кор 3:10 ...но каждый смотри, как строит.."
         android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        android:textSize="14sp"
+        android:textStyle="italic" />
 
 </LinearLayout>
