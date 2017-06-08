@@ -278,7 +278,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
     }
 
     public void onClickKr1(View view) {
-        Intent a = new Intent(this,Krovlya_Dvuskat_Activity.class);
+        Intent a = new Intent(this,Dvuskat_Activity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
         long mills = 15L;

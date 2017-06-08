@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/colorWite"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Krovlya_Dvuskat_Activity"
-    tools:showIn="@layout/activity_krovlya_dvuskat">
+    tools:context=".Dvuskat_Activity"
+    tools:showIn="@layout/activity_dvuskat">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,6 +15,244 @@
         android:layout_below="@+id/linearLayout"
         android:orientation="vertical"
         android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/job"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Расчетный объем, м3:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView142"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/verx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Залповый сброс, л:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView201"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/niz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView300"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Производительность в сутки, л:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView301"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/freza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView400"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Количество проживаемых, чел.:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
 
         <ScrollView
             android:id="@+id/scrollView2"
@@ -28,603 +266,23 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/linearLayout2"
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@color/colorPrimaryDark"
-                    android:baselineAligned="false"
+                    android:background="@color/colorBlueGrey50"
                     android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
                         android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        app:srcCompat="@drawable/kriwa2" />
 
-                        <LinearLayout
-                            android:id="@+id/job2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/colorPrimary"
-                            android:baselineAligned="true"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView121"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:background="@color/colorPrimary"
-                                android:text="Площадь кровли, м2:"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="13sp"
-                                android:textStyle="bold" />
-
-
-                            <TextView
-                                android:id="@+id/textView1421"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:background="@color/colorPrimary"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/job"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/colorPrimary"
-                            android:baselineAligned="true"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView12"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:background="@color/colorPrimary"
-                                android:text="Стропила - количество, шт.:"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="13sp"
-                                android:textStyle="bold" />
-
-
-                            <TextView
-                                android:id="@+id/textView142"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:background="@color/colorPrimary"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/verx"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/colorPrimary"
-                            android:baselineAligned="true"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView200"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:text="длина/высота/толщина, мм:"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="13sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView2013"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView2014"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="/"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView2012"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView2011"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="/"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView201"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/niz"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView300"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:text="Ригель - количество, шт:"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="13sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView301"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/freza"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView400"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:text="длина/высота/толщина, мм:"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="13sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView44"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-                            <TextView
-                                android:id="@+id/textView43"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:singleLine="false"
-                                android:text="/"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-                            <TextView
-                                android:id="@+id/textView42"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView41"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:singleLine="false"
-                                android:text="/"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-
-                            <TextView
-                                android:id="@+id/textView4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:background="@color/colorPrimary"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView222"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="3dp"
-                                android:layout_weight="0.32"
-                                android:autoText="false"
-                                android:text="Мауэрлат (150х150), м/п /м3:"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="13sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView2422"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:autoText="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView2421"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_marginRight="3dp"
-                                android:autoText="false"
-                                android:text="/"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView242"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:autoText="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView18"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:autoText="false"
-                                android:text="Шпильки для мауэрлата, м:"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="13sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView20"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:autoText="false"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/colorPrimary"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView188"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:autoText="false"
-                                android:text="Скобы или пластины для стропил, шт.:"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="13sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView208"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:autoText="false"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView22"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="3dp"
-                                android:layout_weight="1"
-                                android:autoText="false"
-                                android:text="Контробрешетка вертикальная, м:"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="13sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:autoText="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:background="@color/colorPrimary"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView229"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="3dp"
-                                android:layout_weight="1"
-                                android:autoText="false"
-                                android:text="Контробрешетка горизонтальная, м:"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="13sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView401"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:background="@color/colorPrimary"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView2291"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="3dp"
-                                android:layout_weight="1"
-                                android:autoText="false"
-                                android:text="Гидробарьер, м2:"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="13sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView4011"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-
-
-                    </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="1dp"
-                    android:background="@color/colorBlueGrey50"
-                    android:baselineAligned="false"
-                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/imageView6"
-                            android:layout_width="300dp"
-                            android:layout_height="200dp"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/white"
-                            app:srcCompat="@drawable/kriwa2" />
-
-                    </LinearLayout>
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -636,8 +294,7 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="3dp"
-                        android:orientation="horizontal">
+                        android:layout_margin="3dp">
 
                         <TextView
                             android:id="@+id/textView38"
@@ -646,7 +303,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="A - ширина дома, м:"
+                            android:text="Количество проживаемых, чел.:"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -657,7 +314,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="9"
+                            android:text="1"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -840,13 +497,13 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView421"
+                            android:id="@+id/textView42"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="B - длина дома, м:"
+                            android:text="Ванная, шт.:"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -857,7 +514,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="10"
+                            android:text="1"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1033,7 +690,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="c - виступ кровли, мм:"
+                            android:text="Угловая ванна, шт.:"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1044,7 +701,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="500"
+                            android:text="1"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1220,9 +877,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="d - выступ кровли, мм:"
+                            android:text="Душ, шт.:"
                             android:textColor="@color/colorWite"
-                            android:textSize="14sp" />
+                            android:textSize="16sp" />
 
                         <TextView
                             android:id="@+id/textViewWir4"
@@ -1231,7 +888,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="500"
+                            android:text="1"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1353,9 +1010,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="h - высота до конька, м:"
+                            android:text="Стиральная машина, шт.:"
                             android:textColor="@color/colorWite"
-                            android:textSize="14sp" />
+                            android:textSize="16sp" />
 
                         <TextView
                             android:id="@+id/textViewWir5"
@@ -1364,7 +1021,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="4.5"
+                            android:text="1"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1486,7 +1143,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="h2 - высота до ригеля:"
+                            android:text="Посудомоечная машина, шт.:"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1497,7 +1154,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="45"
+                            android:text="1"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1618,7 +1275,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Комутационные коробки, шт.:"
+                            android:text="Унитаз, шт.:"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1630,7 +1287,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="10"
+                            android:text="1"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1729,9 +1386,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Монтаж комутатационной коробки, цена:"
+                            android:text="Биде, шт.:"
                             android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
+                            android:textSize="16sp" />
 
                         <TextView
                             android:id="@+id/textViewWir7"
@@ -1741,7 +1398,7 @@
                             android:layout_marginLeft="3dp"
                             android:layout_marginRight="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="100"
+                            android:text="1"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1841,9 +1498,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Точка без коробки (бра, светильники), шт.:"
+                            android:text="Раковина, шт.:"
                             android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
+                            android:textSize="16sp" />
 
                         <TextView
                             android:id="@+id/textViewWir8"
@@ -1853,7 +1510,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="6"
+                            android:text="1"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1953,9 +1610,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Стоимость монтажа одной точки, цена:"
+                            android:text="Расчетный коефициент объема:"
                             android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
+                            android:textSize="16sp" />
 
 
                         <TextView
@@ -1966,7 +1623,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="25"
+                            android:text="3"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -2043,712 +1700,6 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="1dp"
-                    android:background="@color/colorBlueGrey50"
-                    android:baselineAligned="false"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="3dp"
-                        android:baselineAligned="true"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView257"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:background="@color/colorPrimary"
-                            android:text="Количество щотовых, шт.:"
-                            android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:id="@+id/textViewWir18"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:background="@drawable/radius_kirpish"
-                            android:text="3"
-                            android:textColor="@color/colorWite"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <HorizontalScrollView
-                            android:id="@+id/horizontalScrollView47"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="right"
-                            android:scrollbars="none">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal">
-
-                                <Button
-                                    android:id="@+id/button197"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="15"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button277"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="20"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button257"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="25"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <LinearLayout
-                                    android:layout_width="75dp"
-                                    android:layout_height="match_parent"
-                                    android:orientation="horizontal" />
-                            </LinearLayout>
-                        </HorizontalScrollView>
-                    </LinearLayout>
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="1dp"
-                    android:background="@color/colorBlueGrey50"
-                    android:baselineAligned="false"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="3dp"
-                        android:baselineAligned="true"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView25"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:background="@color/colorPrimary"
-                            android:text="Стоимость монтажа щита, цена:"
-                            android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:id="@+id/textViewWir13"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:background="@drawable/radius_kirpish"
-                            android:text="20"
-                            android:textColor="@color/colorWite"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <HorizontalScrollView
-                            android:id="@+id/horizontalScrollView4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="right"
-                            android:scrollbars="none">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal">
-
-                                <Button
-                                    android:id="@+id/button19"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="15"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button20"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="20"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button25"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="25"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <LinearLayout
-                                    android:layout_width="75dp"
-                                    android:layout_height="match_parent"
-                                    android:orientation="horizontal" />
-                            </LinearLayout>
-                        </HorizontalScrollView>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="1dp"
-                    android:background="@color/colorBlueGrey50"
-                    android:baselineAligned="false"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="3dp"
-                        android:baselineAligned="true"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView259"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:background="@color/colorPrimary"
-                            android:text="Гофра, м:"
-                            android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:id="@+id/textViewWir14"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:background="@drawable/radius_kirpish"
-                            android:text="100"
-                            android:textColor="@color/colorWite"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <HorizontalScrollView
-                            android:id="@+id/horizontalScrollView49"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="right"
-                            android:scrollbars="none">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal">
-
-                                <Button
-                                    android:id="@+id/button234"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="90"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button235"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="100"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button236"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="110"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <LinearLayout
-                                    android:layout_width="75dp"
-                                    android:layout_height="match_parent"
-                                    android:orientation="horizontal" />
-                            </LinearLayout>
-                        </HorizontalScrollView>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="1dp"
-                    android:background="@color/colorBlueGrey50"
-                    android:baselineAligned="true"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="3dp"
-                        android:baselineAligned="true"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView362"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:background="@color/colorPrimary"
-                            android:text="Укладки гофры, цена за 1м.п.:"
-                            android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:id="@+id/textViewWir15"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:background="@drawable/radius_kirpish"
-                            android:text="50"
-                            android:textColor="@color/colorWite"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <HorizontalScrollView
-                            android:id="@+id/horizontalScrollView8"
-                            android:layout_width="fill_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="right"
-                            android:scrollbars="none">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal">
-
-                                <Button
-                                    android:id="@+id/button70"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="0"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button71"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="80"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button72"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="90"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button73"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="100"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button74"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="110"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button75"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="120"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <LinearLayout
-                                    android:layout_width="75dp"
-                                    android:layout_height="match_parent"
-                                    android:orientation="horizontal"></LinearLayout>
-
-                            </LinearLayout>
-                        </HorizontalScrollView>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="1dp"
-                    android:background="@color/colorBlueGrey50"
-                    android:baselineAligned="true"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="3dp"
-                        android:baselineAligned="true"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView3621"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:background="@color/colorPrimary"
-                            android:text="Дополнительные работы, усл./едениц:"
-                            android:textColor="@color/colorWite"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:id="@+id/textViewWir16"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:background="@drawable/radius_kirpish"
-                            android:text="0"
-                            android:textColor="@color/colorWite"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView8006"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:textColor="@color/colorTextMy"
-                            android:textSize="16dp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <HorizontalScrollView
-                            android:id="@+id/horizontalScrollView81"
-                            android:layout_width="fill_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="right"
-                            android:scrollbars="none">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal">
-
-                                <Button
-                                    android:id="@+id/button237"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="0"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button238"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="80"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button239"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="90"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button240"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="100"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button241"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="110"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button242"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="120"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <LinearLayout
-                                    android:layout_width="75dp"
-                                    android:layout_height="match_parent"
-                                    android:orientation="horizontal"></LinearLayout>
-
-                            </LinearLayout>
-                        </HorizontalScrollView>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="1dp"
-                    android:background="@color/colorBlueGrey50"
-                    android:baselineAligned="true"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="3dp"
-                        android:baselineAligned="true"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:background="@color/colorPrimary"
-                            android:text="Стоимость дополнительных работ, цена:"
-                            android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
-
-                        <TextView
-                            android:id="@+id/textViewWir17"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:background="@drawable/radius_kirpish"
-                            android:text="110"
-                            android:textColor="@color/colorWite"
-                            android:textSize="16dp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <HorizontalScrollView
-                            android:id="@+id/horizontalScrollView812"
-                            android:layout_width="fill_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="right"
-                            android:scrollbars="none">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal">
-
-                                <Button
-                                    android:id="@+id/button243"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="0"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button244"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="80"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button245"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="90"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button246"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="100"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button247"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="110"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <Button
-                                    android:id="@+id/button248"
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
-                                    android:layout_margin="7dp"
-                                    android:background="@drawable/radius"
-                                    android:text="120"
-                                    android:textColor="@color/colorPrimary43"
-                                    android:textSize="25dp"
-                                    android:textStyle="italic" />
-
-                                <LinearLayout
-                                    android:layout_width="75dp"
-                                    android:layout_height="match_parent"
-                                    android:orientation="horizontal"></LinearLayout>
-
-
-                            </LinearLayout>
-                        </HorizontalScrollView>
-                    </LinearLayout>
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"

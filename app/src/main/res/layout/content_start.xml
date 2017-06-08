@@ -87,6 +87,17 @@
                         android:textColor="@android:color/background_light"
                         android:textSize="18sp" />
 
+                    <Button
+                        android:id="@+id/button211"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/radius_kr1"
+                        android:onClick="onClickKr1"
+                        android:text="Крыша"
+                        android:textColor="@color/colorWite"
+                        android:textSize="18sp" />
+
 
                     <Button
                         android:id="@+id/button21"

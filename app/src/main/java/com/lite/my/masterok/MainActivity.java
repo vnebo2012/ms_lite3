@@ -3778,7 +3778,7 @@ public class MainActivity extends AppCompatActivity {
                 Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibrator.vibrate(mills);
 
-                final TextView bill = (TextView) findViewById(R.id.textView14);
+                final TextView bill = (TextView) findViewById(R.id.button8);
                 if (bill.getText().length() == 0)
                 {
                     Toast toast = Toast.makeText(getApplicationContext(),

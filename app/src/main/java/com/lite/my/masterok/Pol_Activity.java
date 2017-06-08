@@ -3580,7 +3580,7 @@ public class Pol_Activity extends AppCompatActivity {
                 Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibrator.vibrate(mills);
 
-                final TextView bill = (TextView) findViewById(R.id.textView142);
+                final TextView bill = (TextView) findViewById(R.id.button12);
                 if (bill.getText().length() == 0)
                 {
                     Toast toast = Toast.makeText(getApplicationContext(),

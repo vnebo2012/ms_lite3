@@ -31,7 +31,7 @@ import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Locale;
 
-public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
+public class Dvuskat_Activity extends AppCompatActivity {
 
 
     Button etText;
@@ -1043,12 +1043,12 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
      * Called when the activity is first created.
      */
 
-    final String MY_SETTINGS = "saved_text_vse299121";
+    final String MY_SETTINGS = "saved_text_vse2994412";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_krovlya_dvuskat);
+        setContentView(R.layout.activity_dvuskat);
 
 
         mNewGameButton = (ImageButton) findViewById(R.id.dom);
@@ -1061,7 +1061,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                 //requestNewInterstitial();
                 // beginPlayingGame();
 
-                Intent a = new Intent(Krovlya_Dvuskat_Activity.this, Start_Activity.class);
+                Intent a = new Intent(Dvuskat_Activity.this, Start_Activity.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(a);
 
@@ -1087,7 +1087,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                     }
 
                 } else {
-                    Intent a = new Intent(Krovlya_Dvuskat_Activity.this, Start_Activity.class);
+                    Intent a = new Intent(Dvuskat_Activity.this, Start_Activity.class);
                     a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(a);
                 }
@@ -1121,7 +1121,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         SharedPreferences sp = getSharedPreferences(MY_SETTINGS,
                 Context.MODE_PRIVATE);
         // проверяем, первый ли раз открывается программа
-        boolean hasVisited = sp.getBoolean("hasVisited_vse299121", false);
+        boolean hasVisited = sp.getBoolean("hasVisited_vse2994412", false);
 
         if (!hasVisited) {
 
@@ -1144,9 +1144,6 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
             final TextView bill11 = (TextView) findViewById(R.id.button8);
 
             final TextView bill12 = (TextView) findViewById(R.id.textView142);
-            final TextView bill13 = (TextView) findViewById(R.id.textView242);
-
-
 
             final TextView bill23 = (TextView) findViewById(R.id.button97);
             final TextView bill24 = (TextView) findViewById(R.id.button98);
@@ -1160,8 +1157,6 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
             final TextView bill32 = (TextView) findViewById(R.id.button11);
             final TextView bill33 = (TextView) findViewById(R.id.button12);
 
-
-
             final TextView bill40 = (TextView) findViewById(R.id.button61);
             final TextView bill41 = (TextView) findViewById(R.id.button62);
             final TextView bill42 = (TextView) findViewById(R.id.button63);
@@ -1169,39 +1164,10 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
             final TextView bill44 = (TextView) findViewById(R.id.button65);
             final TextView bill45 = (TextView) findViewById(R.id.button66);
 
-            final TextView bill46 = (TextView) findViewById(R.id.button70);
-            final TextView bill47 = (TextView) findViewById(R.id.button71);
-            final TextView bill48 = (TextView) findViewById(R.id.button72);
-            final TextView bill49 = (TextView) findViewById(R.id.button73);
-            final TextView bill50 = (TextView) findViewById(R.id.button74);
-            final TextView bill51 = (TextView) findViewById(R.id.button75);
-
-
             final TextView bill52 = (TextView) findViewById(R.id.button15);
             final TextView bill53 = (TextView) findViewById(R.id.button16);
             final TextView bill54 = (TextView) findViewById(R.id.button17);
             final TextView bill55 = (TextView) findViewById(R.id.button18);
-
-            //final TextView bill56 = (TextView) findViewById(R.id.button21);
-            //final TextView bill57 = (TextView) findViewById(R.id.button22);
-            // final TextView bill58 = (TextView) findViewById(R.id.button23);
-            // final TextView bill59 = (TextView) findViewById(R.id.button24);
-
-            /*final TextView bill60 = (TextView) findViewById(R.id.button27);
-            final TextView bill61 = (TextView) findViewById(R.id.button28);
-            final TextView bill62 = (TextView) findViewById(R.id.button29);
-            final TextView bill63 = (TextView) findViewById(R.id.button30);
-            final TextView bill64 = (TextView) findViewById(R.id.button31);
-            final TextView bill65 = (TextView) findViewById(R.id.button32);*/
-
-            final TextView bill66 = (TextView) findViewById(R.id.button19);
-            final TextView bill67 = (TextView) findViewById(R.id.button20);
-            final TextView bill68 = (TextView) findViewById(R.id.button25);
-
-            // final TextView bill69 = (TextView) findViewById(R.id.button41);
-            // final TextView bill70 = (TextView) findViewById(R.id.button42);
-            // final TextView bill71 = (TextView) findViewById(R.id.button43);
-            //  final TextView bill72 = (TextView) findViewById(R.id.button44);
 
             final TextView bill73 = (TextView) findViewById(R.id.button45);
             final TextView bill74 = (TextView) findViewById(R.id.button46);
@@ -1212,12 +1178,6 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
             final TextView bill82 = (TextView) findViewById(R.id.button35);
 
             final TextView bill83 = (TextView) findViewById(R.id.textView14);
-            final TextView bill84 = (TextView) findViewById(R.id.textView20);
-            //final TextView bill85 = (TextView) findViewById(R.id.textView43);
-            final TextView bill86 = (TextView) findViewById(R.id.textView24);
-            // final TextView bill87 = (TextView) findViewById(R.id.textView39);
-            // final TextView bill88 = (TextView) findViewById(R.id.textView37);
-            //final TextView bill89 = (TextView) findViewById(R.id.textView28);
 
             final TextView bill201 = (TextView) findViewById(R.id.button201);
             final TextView bill202 = (TextView) findViewById(R.id.button202);
@@ -1248,65 +1208,22 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
             final TextView bill224 = (TextView) findViewById(R.id.button224);
             final TextView bill225 = (TextView) findViewById(R.id.button225);
 
-           // final TextView bill226 = (TextView) findViewById(R.id.button226);
-           // final TextView bill227 = (TextView) findViewById(R.id.button227);
-            //final TextView bill228 = (TextView) findViewById(R.id.button228);
-           // final TextView bill229 = (TextView) findViewById(R.id.button229);
-
             final TextView bill230 = (TextView) findViewById(R.id.button230);
             final TextView bill231 = (TextView) findViewById(R.id.button231);
             final TextView bill232 = (TextView) findViewById(R.id.button232);
             final TextView bill233 = (TextView) findViewById(R.id.button233);
 
-            final TextView bill234 = (TextView) findViewById(R.id.button234);
-            final TextView bill235 = (TextView) findViewById(R.id.button235);
-            final TextView bill236 = (TextView) findViewById(R.id.button236);
-
-            final TextView bill237 = (TextView) findViewById(R.id.button237);
-            final TextView bill238 = (TextView) findViewById(R.id.button238);
-            final TextView bill239 = (TextView) findViewById(R.id.button239);
-            final TextView bill240 = (TextView) findViewById(R.id.button240);
-            final TextView bill241 = (TextView) findViewById(R.id.button241);
-            final TextView bill242 = (TextView) findViewById(R.id.button242);
-
-            final TextView bill243 = (TextView) findViewById(R.id.button243);
-            final TextView bill244 = (TextView) findViewById(R.id.button244);
-            final TextView bill245 = (TextView) findViewById(R.id.button245);
-            final TextView bill246 = (TextView) findViewById(R.id.button246);
-            final TextView bill247 = (TextView) findViewById(R.id.button247);
-            final TextView bill248 = (TextView) findViewById(R.id.button248);
-
-
-            final TextView bill197 = (TextView) findViewById(R.id.button197);
-            final TextView bill277 = (TextView) findViewById(R.id.button277);
-            final TextView bill257 = (TextView) findViewById(R.id.button257);
-
-
             final TextView bill301 = (TextView) findViewById(R.id.textView201);
             final TextView bill302 = (TextView) findViewById(R.id.textView301);
-            final TextView bill303 = (TextView) findViewById(R.id.textView401);
             final TextView bill304 = (TextView) findViewById(R.id.textView4);
-
-            final TextView bill408 = (TextView) findViewById(R.id.textView208);
-
 
             etText83 = (TextView) findViewById(R.id.textView14);
             etText84 = (TextView) findViewById(R.id.textView20);
-            // etText85 = (TextView) findViewById(R.id.textView43);
             etText86 = (TextView) findViewById(R.id.textView24);
-
             etText301 = (TextView) findViewById(R.id.textView201);
             etText302 = (TextView) findViewById(R.id.textView301);
             etText303 = (TextView) findViewById(R.id.textView401);
             etText304 = (TextView) findViewById(R.id.textView4);
-
-            //  etText89 = (TextView) findViewById(R.id.textView28);
-
-            //final TextView bill75 = (TextView) findViewById(R.id.button36);
-            //final TextView bill76 = (TextView) findViewById(R.id.button37);
-
-
-
 
             mDialogBuilder
                     .setCancelable(false)
@@ -1317,157 +1234,102 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
 
                                     //a
                                     bill1.setText(0 + "");
-                                    bill2.setText(2 + "");
-                                    bill3.setText(5 + "");
-                                    bill4.setText(10 + "");
-                                    bill5.setText(20 + "");
-                                    bill6.setText(30 + "");
-                                    bill7.setText(50 + "");
-                                    bill8.setText(100 + "");
-                                    bill9.setText(150 + "");
-                                    bill10.setText(200 + "");
-                                    bill11.setText(300 + "");
+                                    bill2.setText(1 + "");
+                                    bill3.setText(2 + "");
+                                    bill4.setText(3 + "");
+                                    bill5.setText(4 + "");
+                                    bill6.setText(5 + "");
+                                    bill7.setText(6 + "");
+                                    bill8.setText(7 + "");
+                                    bill9.setText(8 + "");
+                                    bill10.setText(9 + "");
+                                    bill11.setText(10 + "");
 
                                     bill12.setText(0.0 + "");
-                                    bill13.setText(0.0 + "");
 
-
-                                    //b
                                     bill23.setText(0 + "");
-                                    bill24.setText(10 + "");
-                                    bill25.setText(20 + "");
-                                    bill26.setText(50 + "");
-                                    bill27.setText(80 + "");
-                                    bill28.setText(100 + "");
-                                    bill29.setText(150 + "");
-                                    bill30.setText(200 + "");
-                                    bill31.setText(250 + "");
-                                    bill32.setText(300 + "");
-                                    bill33.setText(350 + "");
+                                    bill24.setText(1 + "");
+                                    bill25.setText(2 + "");
+                                    bill26.setText(3 + "");
+                                    bill27.setText(4 + "");
+                                    bill28.setText(5 + "");
+                                    bill29.setText(6 + "");
+                                    bill30.setText(7 + "");
+                                    bill31.setText(8 + "");
+                                    bill32.setText(9 + "");
+                                    bill33.setText(10 + "");
 
 
 
                                     bill40.setText(0 + "");
-                                    bill41.setText(10 + "");
-                                    bill42.setText(12 + "");
-                                    bill43.setText(15 + "");
-                                    bill44.setText(18 + "");
-                                    bill45.setText(20 + "");
+                                    bill41.setText(1 + "");
+                                    bill42.setText(2 + "");
+                                    bill43.setText(3 + "");
+                                    bill44.setText(4 + "");
+                                    bill45.setText(5 + "");
 
-                                    bill46.setText(0 + "");
-                                    bill47.setText(100 + "");
-                                    bill48.setText(110 + "");
-                                    bill49.setText(115 + "");
-                                    bill50.setText(120 + "");
-                                    bill51.setText(140 + "");
+                                    bill52.setText(0 + "");
+                                    bill53.setText(1 + "");
+                                    bill54.setText(2 + "");
+                                    bill55.setText(3 + "");
 
-
-                                    bill52.setText(10 + "");
-                                    bill53.setText(25 + "");
-                                    bill54.setText(30 + "");
-                                    bill55.setText(40 + "");
                                     bill73.setText(45 + "");
                                     bill74.setText(60 + "");
 
 
 
-                                    /*bill60.setText(295 + "");
-                                    bill61.setText(296 + "");
-                                    bill62.setText(298 + "");
-                                    bill63.setText(300 + "");
-                                    bill64.setText(310 + "");
-                                    bill65.setText(320 + "");*/
 
-                                    bill66.setText(50 + "");
-                                    bill67.setText(80 + "");
-                                    bill68.setText(100 + "");
-
-                                    //bill69.setText(1 + "");
-                                    // bill72.setText(2 + "");
-                                    // bill70.setText(3 + "");
+                                    bill79.setText(0 + "");
+                                    bill80.setText(1 + "");
+                                    bill81.setText(2 + "");
+                                    bill82.setText(3 + "");
 
 
-
-
-
-
-                                    bill79.setText(2 + "");
-                                    bill80.setText(5 + "");
-                                    bill81.setText(10 + "");
-                                    bill82.setText(50 + "");
-
-//                                    bill83.setText(00.00 + "");
-                                    bill84.setText(00.00 + "");
-                                    //bill85.setText(00.00 + "");
-                                    bill86.setText(00.00 + "");
 
                                     bill201.setText(0 + "");
                                     bill202.setText(1 + "");
-                                    bill203.setText(5 + "");
-                                    bill204.setText(10 + "");
-                                    bill205.setText(20 + "");
-                                    bill206.setText(50 + "");
-                                    bill207.setText(70 + "");
-                                    bill208.setText(80 + "");
-                                    bill209.setText(100 + "");
-                                    bill210.setText(150 + "");
-                                    bill211.setText(200 + "");
+                                    bill203.setText(2 + "");
+                                    bill204.setText(3 + "");
+                                    bill205.setText(4 + "");
+                                    bill206.setText(5 + "");
+                                    bill207.setText(6 + "");
+                                    bill208.setText(7 + "");
+                                    bill209.setText(8 + "");
+                                    bill210.setText(9 + "");
+                                    bill211.setText(10 + "");
 
-                                    bill212.setText(40 + "");
-                                    bill213.setText(80 + "");
-                                    bill214.setText(90 + "");
-                                    bill215.setText(100 + "");
-                                    bill216.setText(110 + "");
-                                    bill217.setText(120 + "");
+                                    bill212.setText(0 + "");
+                                    bill213.setText(1 + "");
+                                    bill214.setText(2 + "");
+                                    bill215.setText(3 + "");
+                                    bill216.setText(4 + "");
+                                    bill217.setText(5 + "");
 
-                                    bill218.setText(10 + "");
-                                    bill219.setText(20 + "");
-                                    bill220.setText(50+ "");
-                                    bill221.setText(100 + "");
+                                    bill218.setText(0 + "");
+                                    bill219.setText(1 + "");
+                                    bill220.setText(2 + "");
+                                    bill221.setText(3 + "");
 
-                                    bill222.setText(90 + "");
-                                    bill223.setText(100 + "");
-                                    bill224.setText(150 + "");
-                                    bill225.setText(200 + "");
+                                    bill222.setText(0 + "");
+                                    bill223.setText(1 + "");
+                                    bill224.setText(2 + "");
+                                    bill225.setText(3 + "");
 
-                                    //bill226.setText(1.5 + "");
-                                    //bill227.setText(2.0 + "");
-                                  //  bill228.setText(4.0 + "");
-                                  //  bill229.setText(5.0 + "");
 
-                                    bill230.setText(15 + "");
-                                    bill231.setText(30 + "");
-                                    bill232.setText(60 + "");
-                                    bill233.setText(80 + "");
+                                    bill230.setText(0 + "");
+                                    bill231.setText(1 + "");
+                                    bill232.setText(2.5 + "");
+                                    bill233.setText(3 + "");
 
-                                    bill234.setText(100 + "");
-                                    bill235.setText(110 + "");
-                                    bill236.setText(150 + "");
 
-                                    bill237.setText(80 + "");
-                                    bill238.setText(90 + "");
-                                    bill239.setText(100 + "");
-                                    bill240.setText(110 + "");
-                                    bill241.setText(150 + "");
-                                    bill242.setText(160 + "");
-
-                                    bill243.setText(50 + "");
-                                    bill244.setText(80 + "");
-                                    bill245.setText(90 + "");
-                                    bill246.setText(150 + "");
-                                    bill247.setText(200 + "");
-                                    bill248.setText(250 + "");
 
                                     bill301.setText(0.0 + "");
                                     bill302.setText(0.0 + "");
-                                    bill303.setText(0.0 + "");
                                     bill304.setText(0.0 + "");
 
-                                    bill197.setText(100 + "");
-                                    bill277.setText(150 + "");
-                                    bill257.setText(200 + "");
 
-                                    bill408.setText(00.00 + "");
+
+
 
 
 
@@ -1487,359 +1349,11 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
             // startActivity(intent);
 
             SharedPreferences.Editor e = sp.edit();
-            e.putBoolean("hasVisited_vse299121", true);
+            e.putBoolean("hasVisited_vse2994412", true);
             e.commit(); // не забудьте подтвердить изменения
         }
 
-        ImageButton fa = (ImageButton) findViewById(R.id.res);
-        fa.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Востановление...", Toast.LENGTH_SHORT);
-                toast.show();
 
-
-
-                final TextView bill1 = (TextView) findViewById(R.id.button10);
-                final TextView bill2 = (TextView) findViewById(R.id.button2);
-                final TextView bill3 = (TextView) findViewById(R.id.button);
-                final TextView bill4 = (TextView) findViewById(R.id.button3);
-                final TextView bill5 = (TextView) findViewById(R.id.button5);
-                final TextView bill6 = (TextView) findViewById(R.id.button6);
-                final TextView bill7 = (TextView) findViewById(R.id.button7);
-                final TextView bill8 = (TextView) findViewById(R.id.button38);
-                final TextView bill9 = (TextView) findViewById(R.id.button40);
-                final TextView bill10 = (TextView) findViewById(R.id.button39);
-                final TextView bill11 = (TextView) findViewById(R.id.button8);
-
-                final TextView bill12 = (TextView) findViewById(R.id.textView142);
-                final TextView bill13 = (TextView) findViewById(R.id.textView242);
-
-
-
-                final TextView bill23 = (TextView) findViewById(R.id.button97);
-                final TextView bill24 = (TextView) findViewById(R.id.button98);
-                final TextView bill25 = (TextView) findViewById(R.id.button99);
-                final TextView bill26 = (TextView) findViewById(R.id.button100);
-                final TextView bill27 = (TextView) findViewById(R.id.button101);
-                final TextView bill28 = (TextView) findViewById(R.id.button102);
-                final TextView bill29 = (TextView) findViewById(R.id.button103);
-                final TextView bill30 = (TextView) findViewById(R.id.button104);
-                final TextView bill31 = (TextView) findViewById(R.id.button105);
-                final TextView bill32 = (TextView) findViewById(R.id.button11);
-                final TextView bill33 = (TextView) findViewById(R.id.button12);
-
-
-
-                final TextView bill40 = (TextView) findViewById(R.id.button61);
-                final TextView bill41 = (TextView) findViewById(R.id.button62);
-                final TextView bill42 = (TextView) findViewById(R.id.button63);
-                final TextView bill43 = (TextView) findViewById(R.id.button64);
-                final TextView bill44 = (TextView) findViewById(R.id.button65);
-                final TextView bill45 = (TextView) findViewById(R.id.button66);
-
-                final TextView bill46 = (TextView) findViewById(R.id.button70);
-                final TextView bill47 = (TextView) findViewById(R.id.button71);
-                final TextView bill48 = (TextView) findViewById(R.id.button72);
-                final TextView bill49 = (TextView) findViewById(R.id.button73);
-                final TextView bill50 = (TextView) findViewById(R.id.button74);
-                final TextView bill51 = (TextView) findViewById(R.id.button75);
-
-
-                final TextView bill52 = (TextView) findViewById(R.id.button15);
-                final TextView bill53 = (TextView) findViewById(R.id.button16);
-                final TextView bill54 = (TextView) findViewById(R.id.button17);
-                final TextView bill55 = (TextView) findViewById(R.id.button18);
-
-                //final TextView bill56 = (TextView) findViewById(R.id.button21);
-                //final TextView bill57 = (TextView) findViewById(R.id.button22);
-                // final TextView bill58 = (TextView) findViewById(R.id.button23);
-                // final TextView bill59 = (TextView) findViewById(R.id.button24);
-
-            /*final TextView bill60 = (TextView) findViewById(R.id.button27);
-            final TextView bill61 = (TextView) findViewById(R.id.button28);
-            final TextView bill62 = (TextView) findViewById(R.id.button29);
-            final TextView bill63 = (TextView) findViewById(R.id.button30);
-            final TextView bill64 = (TextView) findViewById(R.id.button31);
-            final TextView bill65 = (TextView) findViewById(R.id.button32);*/
-
-                final TextView bill66 = (TextView) findViewById(R.id.button19);
-                final TextView bill67 = (TextView) findViewById(R.id.button20);
-                final TextView bill68 = (TextView) findViewById(R.id.button25);
-
-                // final TextView bill69 = (TextView) findViewById(R.id.button41);
-                // final TextView bill70 = (TextView) findViewById(R.id.button42);
-                // final TextView bill71 = (TextView) findViewById(R.id.button43);
-                //  final TextView bill72 = (TextView) findViewById(R.id.button44);
-
-                final TextView bill73 = (TextView) findViewById(R.id.button45);
-                final TextView bill74 = (TextView) findViewById(R.id.button46);
-
-                final TextView bill79 = (TextView) findViewById(R.id.button26);
-                final TextView bill80 = (TextView) findViewById(R.id.button33);
-                final TextView bill81 = (TextView) findViewById(R.id.button34);
-                final TextView bill82 = (TextView) findViewById(R.id.button35);
-
-                final TextView bill83 = (TextView) findViewById(R.id.textView14);
-                final TextView bill84 = (TextView) findViewById(R.id.textView20);
-                //final TextView bill85 = (TextView) findViewById(R.id.textView43);
-                final TextView bill86 = (TextView) findViewById(R.id.textView24);
-                // final TextView bill87 = (TextView) findViewById(R.id.textView39);
-                // final TextView bill88 = (TextView) findViewById(R.id.textView37);
-                //final TextView bill89 = (TextView) findViewById(R.id.textView28);
-
-                final TextView bill201 = (TextView) findViewById(R.id.button201);
-                final TextView bill202 = (TextView) findViewById(R.id.button202);
-                final TextView bill203 = (TextView) findViewById(R.id.button203);
-                final TextView bill204 = (TextView) findViewById(R.id.button204);
-                final TextView bill205 = (TextView) findViewById(R.id.button205);
-                final TextView bill206 = (TextView) findViewById(R.id.button206);
-                final TextView bill207 = (TextView) findViewById(R.id.button207);
-                final TextView bill208 = (TextView) findViewById(R.id.button208);
-                final TextView bill209 = (TextView) findViewById(R.id.button209);
-                final TextView bill210 = (TextView) findViewById(R.id.button210);
-                final TextView bill211 = (TextView) findViewById(R.id.button211);
-
-                final TextView bill212 = (TextView) findViewById(R.id.button212);
-                final TextView bill213 = (TextView) findViewById(R.id.button213);
-                final TextView bill214 = (TextView) findViewById(R.id.button214);
-                final TextView bill215 = (TextView) findViewById(R.id.button215);
-                final TextView bill216 = (TextView) findViewById(R.id.button216);
-                final TextView bill217 = (TextView) findViewById(R.id.button217);
-
-                final TextView bill218 = (TextView) findViewById(R.id.button218);
-                final TextView bill219 = (TextView) findViewById(R.id.button219);
-                final TextView bill220 = (TextView) findViewById(R.id.button220);
-                final TextView bill221 = (TextView) findViewById(R.id.button221);
-
-                final TextView bill222 = (TextView) findViewById(R.id.button222);
-                final TextView bill223 = (TextView) findViewById(R.id.button223);
-                final TextView bill224 = (TextView) findViewById(R.id.button224);
-                final TextView bill225 = (TextView) findViewById(R.id.button225);
-
-                // final TextView bill226 = (TextView) findViewById(R.id.button226);
-                // final TextView bill227 = (TextView) findViewById(R.id.button227);
-                //final TextView bill228 = (TextView) findViewById(R.id.button228);
-                // final TextView bill229 = (TextView) findViewById(R.id.button229);
-
-                final TextView bill230 = (TextView) findViewById(R.id.button230);
-                final TextView bill231 = (TextView) findViewById(R.id.button231);
-                final TextView bill232 = (TextView) findViewById(R.id.button232);
-                final TextView bill233 = (TextView) findViewById(R.id.button233);
-
-                final TextView bill234 = (TextView) findViewById(R.id.button234);
-                final TextView bill235 = (TextView) findViewById(R.id.button235);
-                final TextView bill236 = (TextView) findViewById(R.id.button236);
-
-                final TextView bill237 = (TextView) findViewById(R.id.button237);
-                final TextView bill238 = (TextView) findViewById(R.id.button238);
-                final TextView bill239 = (TextView) findViewById(R.id.button239);
-                final TextView bill240 = (TextView) findViewById(R.id.button240);
-                final TextView bill241 = (TextView) findViewById(R.id.button241);
-                final TextView bill242 = (TextView) findViewById(R.id.button242);
-
-                final TextView bill243 = (TextView) findViewById(R.id.button243);
-                final TextView bill244 = (TextView) findViewById(R.id.button244);
-                final TextView bill245 = (TextView) findViewById(R.id.button245);
-                final TextView bill246 = (TextView) findViewById(R.id.button246);
-                final TextView bill247 = (TextView) findViewById(R.id.button247);
-                final TextView bill248 = (TextView) findViewById(R.id.button248);
-
-
-                final TextView bill197 = (TextView) findViewById(R.id.button197);
-                final TextView bill277 = (TextView) findViewById(R.id.button277);
-                final TextView bill257 = (TextView) findViewById(R.id.button257);
-
-
-                final TextView bill301 = (TextView) findViewById(R.id.textView201);
-                final TextView bill302 = (TextView) findViewById(R.id.textView301);
-                final TextView bill303 = (TextView) findViewById(R.id.textView401);
-                final TextView bill304 = (TextView) findViewById(R.id.textView4);
-
-                final TextView bill408 = (TextView) findViewById(R.id.textView208);
-
-
-                etText83 = (TextView) findViewById(R.id.textView14);
-                etText84 = (TextView) findViewById(R.id.textView20);
-                // etText85 = (TextView) findViewById(R.id.textView43);
-                etText86 = (TextView) findViewById(R.id.textView24);
-
-                etText301 = (TextView) findViewById(R.id.textView201);
-                etText302 = (TextView) findViewById(R.id.textView301);
-                etText303 = (TextView) findViewById(R.id.textView401);
-                etText304 = (TextView) findViewById(R.id.textView4);
-
-                //  etText89 = (TextView) findViewById(R.id.textView28);
-
-                //final TextView bill75 = (TextView) findViewById(R.id.button36);
-                //final TextView bill76 = (TextView) findViewById(R.id.button37);
-
-
-
-
-
-                                        //a
-                                        bill1.setText(0 + "");
-                                        bill2.setText(2 + "");
-                                        bill3.setText(5 + "");
-                                        bill4.setText(10 + "");
-                                        bill5.setText(20 + "");
-                                        bill6.setText(30 + "");
-                                        bill7.setText(50 + "");
-                                        bill8.setText(100 + "");
-                                        bill9.setText(150 + "");
-                                        bill10.setText(200 + "");
-                                        bill11.setText(300 + "");
-
-                                        bill12.setText(0.0 + "");
-                                        bill13.setText(0.0 + "");
-
-
-                                        //b
-                                        bill23.setText(0 + "");
-                                        bill24.setText(10 + "");
-                                        bill25.setText(20 + "");
-                                        bill26.setText(50 + "");
-                                        bill27.setText(80 + "");
-                                        bill28.setText(100 + "");
-                                        bill29.setText(150 + "");
-                                        bill30.setText(200 + "");
-                                        bill31.setText(250 + "");
-                                        bill32.setText(300 + "");
-                                        bill33.setText(350 + "");
-
-
-
-                                        bill40.setText(0 + "");
-                                        bill41.setText(10 + "");
-                                        bill42.setText(12 + "");
-                                        bill43.setText(15 + "");
-                                        bill44.setText(18 + "");
-                                        bill45.setText(20 + "");
-
-                                        bill46.setText(0 + "");
-                                        bill47.setText(100 + "");
-                                        bill48.setText(110 + "");
-                                        bill49.setText(115 + "");
-                                        bill50.setText(120 + "");
-                                        bill51.setText(140 + "");
-
-
-                                        bill52.setText(10 + "");
-                                        bill53.setText(25 + "");
-                                        bill54.setText(30 + "");
-                                        bill55.setText(40 + "");
-                                        bill73.setText(45 + "");
-                                        bill74.setText(60 + "");
-
-
-
-                                    /*bill60.setText(295 + "");
-                                    bill61.setText(296 + "");
-                                    bill62.setText(298 + "");
-                                    bill63.setText(300 + "");
-                                    bill64.setText(310 + "");
-                                    bill65.setText(320 + "");*/
-
-                                        bill66.setText(50 + "");
-                                        bill67.setText(80 + "");
-                                        bill68.setText(100 + "");
-
-                                        //bill69.setText(1 + "");
-                                        // bill72.setText(2 + "");
-                                        // bill70.setText(3 + "");
-
-
-
-
-
-
-                                        bill79.setText(2 + "");
-                                        bill80.setText(5 + "");
-                                        bill81.setText(10 + "");
-                                        bill82.setText(50 + "");
-
-//                                    bill83.setText(00.00 + "");
-                                        bill84.setText(00.00 + "");
-                                        //bill85.setText(00.00 + "");
-                                        bill86.setText(00.00 + "");
-
-                                        bill201.setText(0 + "");
-                                        bill202.setText(1 + "");
-                                        bill203.setText(5 + "");
-                                        bill204.setText(10 + "");
-                                        bill205.setText(20 + "");
-                                        bill206.setText(50 + "");
-                                        bill207.setText(70 + "");
-                                        bill208.setText(80 + "");
-                                        bill209.setText(100 + "");
-                                        bill210.setText(150 + "");
-                                        bill211.setText(200 + "");
-
-                                        bill212.setText(40 + "");
-                                        bill213.setText(80 + "");
-                                        bill214.setText(90 + "");
-                                        bill215.setText(100 + "");
-                                        bill216.setText(110 + "");
-                                        bill217.setText(120 + "");
-
-                                        bill218.setText(10 + "");
-                                        bill219.setText(20 + "");
-                                        bill220.setText(50+ "");
-                                        bill221.setText(100 + "");
-
-                                        bill222.setText(90 + "");
-                                        bill223.setText(100 + "");
-                                        bill224.setText(150 + "");
-                                        bill225.setText(200 + "");
-
-                                        //bill226.setText(1.5 + "");
-                                        //bill227.setText(2.0 + "");
-                                        //  bill228.setText(4.0 + "");
-                                        //  bill229.setText(5.0 + "");
-
-                                        bill230.setText(15 + "");
-                                        bill231.setText(30 + "");
-                                        bill232.setText(60 + "");
-                                        bill233.setText(80 + "");
-
-                                        bill234.setText(100 + "");
-                                        bill235.setText(110 + "");
-                                        bill236.setText(150 + "");
-
-                                        bill237.setText(80 + "");
-                                        bill238.setText(90 + "");
-                                        bill239.setText(100 + "");
-                                        bill240.setText(110 + "");
-                                        bill241.setText(150 + "");
-                                        bill242.setText(160 + "");
-
-                                        bill243.setText(50 + "");
-                                        bill244.setText(80 + "");
-                                        bill245.setText(90 + "");
-                                        bill246.setText(150 + "");
-                                        bill247.setText(200 + "");
-                                        bill248.setText(250 + "");
-
-                                        bill301.setText(0.0 + "");
-                                        bill302.setText(0.0 + "");
-                                        bill303.setText(0.0 + "");
-                                        bill304.setText(0.0 + "");
-
-                                        bill197.setText(100 + "");
-                                        bill277.setText(150 + "");
-                                        bill257.setText(200 + "");
-
-                                        bill408.setText(00.00 + "");
-
-
-
-
-
-                return false;
-            }
-        });
 
 
         etText = (Button) findViewById(R.id.button10);
@@ -1878,12 +1392,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         etText44 = (Button) findViewById(R.id.button65);
         etText45 = (Button) findViewById(R.id.button66);
 
-        etText46 = (Button) findViewById(R.id.button70);
-        etText47 = (Button) findViewById(R.id.button71);
-        etText48 = (Button) findViewById(R.id.button72);
-        etText49 = (Button) findViewById(R.id.button73);
-        etText50 = (Button) findViewById(R.id.button74);
-        etText51 = (Button) findViewById(R.id.button75);
+
 
 
         etText52 = (Button) findViewById(R.id.button15);
@@ -1893,17 +1402,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
 
 
 
-       /* etText60 = (Button) findViewById(R.id.button27);
-        etText61 = (Button) findViewById(R.id.button28);
 
-        etText62 = (Button) findViewById(R.id.button29);
-        etText63 = (Button) findViewById(R.id.button30);
-        etText64 = (Button) findViewById(R.id.button31);
-        etText65 = (Button) findViewById(R.id.button32);*/
-
-        etText66 = (Button) findViewById(R.id.button19);
-        etText67 = (Button) findViewById(R.id.button20);
-        etText68 = (Button) findViewById(R.id.button25);
 
         etText69 = (Button) findViewById(R.id.button41);
         etText70 = (Button) findViewById(R.id.button42);
@@ -1922,16 +1421,16 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         etText82 = (Button) findViewById(R.id.button35);
 
         etText83 = (TextView) findViewById(R.id.textView14);
-        etText84 = (TextView) findViewById(R.id.textView20);
+        ////etText84 = (TextView) findViewById(R.id.textView20);
         // etText85 = (TextView) findViewById(R.id.textView43);
-        etText86 = (TextView) findViewById(R.id.textView24);
+      ////  etText86 = (TextView) findViewById(R.id.textView24);
 
         etText12 = (TextView) findViewById(R.id.textView142);
-        etText13 = (TextView) findViewById(R.id.textView242);
+       ///// etText13 = (TextView) findViewById(R.id.textView242);
 
         etText301 = (TextView) findViewById(R.id.textView201);
         etText302 = (TextView) findViewById(R.id.textView301);
-        etText303 = (TextView) findViewById(R.id.textView401);
+      ///////  etText303 = (TextView) findViewById(R.id.textView401);
         etText304 = (TextView) findViewById(R.id.textView4);
 
         // etText89 = (TextView) findViewById(R.id.textView28);
@@ -1965,39 +1464,15 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         etText224 = (Button) findViewById(R.id.button224);
         etText225 = (Button) findViewById(R.id.button225);
 
-        //etText226 = (Button) findViewById(R.id.button226);
-      //  etText227 = (Button) findViewById(R.id.button227);
-      //  etText228 = (Button) findViewById(R.id.button228);
-      //  etText229 = (Button) findViewById(R.id.button229);
-
         etText230 = (Button) findViewById(R.id.button230);
         etText231 = (Button) findViewById(R.id.button231);
         etText232 = (Button) findViewById(R.id.button232);
         etText233 = (Button) findViewById(R.id.button233);
 
-        etText234 = (Button) findViewById(R.id.button234);
-        etText235 = (Button) findViewById(R.id.button235);
-        etText236 = (Button) findViewById(R.id.button236);
 
-        etText237 = (Button) findViewById(R.id.button237);
-        etText238 = (Button) findViewById(R.id.button238);
-        etText239 = (Button) findViewById(R.id.button239);
-        etText240 = (Button) findViewById(R.id.button240);
-        etText241 = (Button) findViewById(R.id.button241);
-        etText242 = (Button) findViewById(R.id.button242);
 
-        etText243 = (Button) findViewById(R.id.button243);
-        etText244 = (Button) findViewById(R.id.button244);
-        etText245 = (Button) findViewById(R.id.button245);
-        etText246 = (Button) findViewById(R.id.button246);
-        etText247 = (Button) findViewById(R.id.button247);
-        etText248 = (Button) findViewById(R.id.button248);
 
-        etText197 = (Button) findViewById(R.id.button197);
-        etText277 = (Button) findViewById(R.id.button277);
-        etText257 = (Button) findViewById(R.id.button257);
 
-        etText408 = (TextView) findViewById(R.id.textView208);
 
 
 
@@ -2016,7 +1491,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         loadText11();
 
         loadText12();
-        loadText13();
+     /////////   loadText13();
 
 
 
@@ -2044,12 +1519,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         loadText43();
         loadText44();
         loadText45();
-        loadText46();
-        loadText47();
-        loadText48();
-        loadText49();
-        loadText50();
-        loadText51();
+
 
 
         loadText52();
@@ -2058,18 +1528,6 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         loadText55();
 
 
-
-        //loadText60();
-//        loadText61();
-
-        //loadText62();
-      //  loadText63();
-       // loadText64();
-      //  loadText65();
-
-        loadText66();
-        loadText67();
-        loadText68();
 
 
 
@@ -2083,12 +1541,6 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         loadText81();
         loadText82();
 
-//        loadText83();
-        loadText84();
-        //loadText85();
-        loadText86();
-
-        // loadText89();
 
         loadText201();
         loadText202();
@@ -2123,31 +1575,14 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         loadText231();
         loadText232();
         loadText233();
-        loadText234();
-        loadText235();
-        loadText236();
-        loadText237();
-        loadText238();
-        loadText239();
-        loadText240();
-        loadText241();
-        loadText242();
-        loadText243();
-        loadText244();
-        loadText245();
-        loadText246();
-        loadText247();
-        loadText248();
+
 
         loadText301();
         loadText302();
-        loadText303();
+   ///////////     loadText303();
         loadText304();
 
-        loadText197();
-        loadText277();
-        loadText257();
-        loadText408();
+
 
 
 
@@ -3371,268 +2806,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
 
         //endregion
 
-        //region секция 6
-        button146 = (Button) findViewById(R.id.button70);
-        final_text46 = (TextView) findViewById(R.id.button70);
-        button146.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button123
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
 
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text46.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button147 = (Button) findViewById(R.id.button71);
-        final_text47 = (TextView) findViewById(R.id.button71);
-        button147.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button124
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text47.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button148 = (Button) findViewById(R.id.button72);
-        final_text48 = (TextView) findViewById(R.id.button72);
-        button148.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button114
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text48.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button149 = (Button) findViewById(R.id.button73);
-        final_text49 = (TextView) findViewById(R.id.button73);
-        button149.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button126
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text49.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button150 = (Button) findViewById(R.id.button74);
-        final_text50 = (TextView) findViewById(R.id.button74);
-        button150.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button127
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text50.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button151 = (Button) findViewById(R.id.button75);
-        final_text51 = (TextView) findViewById(R.id.button75);
-        button151.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button128
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text51.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
 
         //endregion
 
@@ -4101,135 +3275,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
 
         //endregion
 
-        button166 = (Button) findViewById(R.id.button19);
-        final_text66 = (TextView) findViewById(R.id.button19);
-        button166.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button114
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
 
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text66.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button167 = (Button) findViewById(R.id.button20);
-        final_text67 = (TextView) findViewById(R.id.button20);
-        button167.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button126
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text67.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button168 = (Button) findViewById(R.id.button25);
-        final_text68 = (TextView) findViewById(R.id.button25);
-        button168.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button127
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text68.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
 
         //endregion
 
@@ -5952,761 +4998,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                                          }
         );
 
-         button234 = (Button) findViewById(R.id.button234);
-        final_text234 = (TextView) findViewById(R.id.button234);
-        button234.setOnLongClickListener(new View.OnLongClickListener() {
 
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text234.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button235 = (Button) findViewById(R.id.button235);
-        final_text235 = (TextView) findViewById(R.id.button235);
-        button235.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text235.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button236 = (Button) findViewById(R.id.button236);
-        final_text236 = (TextView) findViewById(R.id.button236);
-        button236.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text236.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button237 = (Button) findViewById(R.id.button237);
-        final_text237 = (TextView) findViewById(R.id.button237);
-        button237.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text237.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button238 = (Button) findViewById(R.id.button238);
-        final_text238 = (TextView) findViewById(R.id.button238);
-        button238.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text238.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button239 = (Button) findViewById(R.id.button239);
-        final_text239 = (TextView) findViewById(R.id.button239);
-        button239.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text239.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button240 = (Button) findViewById(R.id.button240);
-        final_text240 = (TextView) findViewById(R.id.button240);
-        button240.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text240.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button241 = (Button) findViewById(R.id.button241);
-        final_text241 = (TextView) findViewById(R.id.button241);
-        button241.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text241.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button242 = (Button) findViewById(R.id.button242);
-        final_text242 = (TextView) findViewById(R.id.button242);
-        button242.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text242.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button243 = (Button) findViewById(R.id.button243);
-        final_text243 = (TextView) findViewById(R.id.button243);
-        button243.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text243.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button244 = (Button) findViewById(R.id.button244);
-        final_text244 = (TextView) findViewById(R.id.button244);
-        button244.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text244.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button245 = (Button) findViewById(R.id.button245);
-        final_text245 = (TextView) findViewById(R.id.button245);
-        button245.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text245.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button246 = (Button) findViewById(R.id.button246);
-        final_text246 = (TextView) findViewById(R.id.button246);
-        button246.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text246.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button247 = (Button) findViewById(R.id.button247);
-        final_text247 = (TextView) findViewById(R.id.button247);
-        button247.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text247.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-         button248 = (Button) findViewById(R.id.button248);
-        final_text248 = (TextView) findViewById(R.id.button248);
-        button248.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text248.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        button197 = (Button) findViewById(R.id.button197);
-        final_text197 = (TextView) findViewById(R.id.button197);
-        button197.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text197.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        button277 = (Button) findViewById(R.id.button277);
-        final_text277 = (TextView) findViewById(R.id.button277);
-        button277.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text277.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        button257 = (Button) findViewById(R.id.button257);
-        final_text257 = (TextView) findViewById(R.id.button257);
-        button257.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text257.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
 
 
 
@@ -6912,6 +5204,212 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                 Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibrator.vibrate(mills);
 
+                final TextView bill = (TextView) findViewById(R.id.button8);
+                if (bill.getText().length() == 0)
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Заполнение пустых ячеек", Toast.LENGTH_LONG);
+
+                    toast.show();
+
+                    final TextView bill1 = (TextView) findViewById(R.id.button10);
+                    final TextView bill2 = (TextView) findViewById(R.id.button2);
+                    final TextView bill3 = (TextView) findViewById(R.id.button);
+                    final TextView bill4 = (TextView) findViewById(R.id.button3);
+                    final TextView bill5 = (TextView) findViewById(R.id.button5);
+                    final TextView bill6 = (TextView) findViewById(R.id.button6);
+                    final TextView bill7 = (TextView) findViewById(R.id.button7);
+                    final TextView bill8 = (TextView) findViewById(R.id.button38);
+                    final TextView bill9 = (TextView) findViewById(R.id.button40);
+                    final TextView bill10 = (TextView) findViewById(R.id.button39);
+                    final TextView bill11 = (TextView) findViewById(R.id.button8);
+
+                    final TextView bill12 = (TextView) findViewById(R.id.textView142);
+
+                    final TextView bill23 = (TextView) findViewById(R.id.button97);
+                    final TextView bill24 = (TextView) findViewById(R.id.button98);
+                    final TextView bill25 = (TextView) findViewById(R.id.button99);
+                    final TextView bill26 = (TextView) findViewById(R.id.button100);
+                    final TextView bill27 = (TextView) findViewById(R.id.button101);
+                    final TextView bill28 = (TextView) findViewById(R.id.button102);
+                    final TextView bill29 = (TextView) findViewById(R.id.button103);
+                    final TextView bill30 = (TextView) findViewById(R.id.button104);
+                    final TextView bill31 = (TextView) findViewById(R.id.button105);
+                    final TextView bill32 = (TextView) findViewById(R.id.button11);
+                    final TextView bill33 = (TextView) findViewById(R.id.button12);
+
+                    final TextView bill40 = (TextView) findViewById(R.id.button61);
+                    final TextView bill41 = (TextView) findViewById(R.id.button62);
+                    final TextView bill42 = (TextView) findViewById(R.id.button63);
+                    final TextView bill43 = (TextView) findViewById(R.id.button64);
+                    final TextView bill44 = (TextView) findViewById(R.id.button65);
+                    final TextView bill45 = (TextView) findViewById(R.id.button66);
+
+                    final TextView bill52 = (TextView) findViewById(R.id.button15);
+                    final TextView bill53 = (TextView) findViewById(R.id.button16);
+                    final TextView bill54 = (TextView) findViewById(R.id.button17);
+                    final TextView bill55 = (TextView) findViewById(R.id.button18);
+
+                    final TextView bill73 = (TextView) findViewById(R.id.button45);
+                    final TextView bill74 = (TextView) findViewById(R.id.button46);
+
+                    final TextView bill79 = (TextView) findViewById(R.id.button26);
+                    final TextView bill80 = (TextView) findViewById(R.id.button33);
+                    final TextView bill81 = (TextView) findViewById(R.id.button34);
+                    final TextView bill82 = (TextView) findViewById(R.id.button35);
+
+                    final TextView bill83 = (TextView) findViewById(R.id.textView14);
+
+                    final TextView bill201 = (TextView) findViewById(R.id.button201);
+                    final TextView bill202 = (TextView) findViewById(R.id.button202);
+                    final TextView bill203 = (TextView) findViewById(R.id.button203);
+                    final TextView bill204 = (TextView) findViewById(R.id.button204);
+                    final TextView bill205 = (TextView) findViewById(R.id.button205);
+                    final TextView bill206 = (TextView) findViewById(R.id.button206);
+                    final TextView bill207 = (TextView) findViewById(R.id.button207);
+                    final TextView bill208 = (TextView) findViewById(R.id.button208);
+                    final TextView bill209 = (TextView) findViewById(R.id.button209);
+                    final TextView bill210 = (TextView) findViewById(R.id.button210);
+                    final TextView bill211 = (TextView) findViewById(R.id.button211);
+
+                    final TextView bill212 = (TextView) findViewById(R.id.button212);
+                    final TextView bill213 = (TextView) findViewById(R.id.button213);
+                    final TextView bill214 = (TextView) findViewById(R.id.button214);
+                    final TextView bill215 = (TextView) findViewById(R.id.button215);
+                    final TextView bill216 = (TextView) findViewById(R.id.button216);
+                    final TextView bill217 = (TextView) findViewById(R.id.button217);
+
+                    final TextView bill218 = (TextView) findViewById(R.id.button218);
+                    final TextView bill219 = (TextView) findViewById(R.id.button219);
+                    final TextView bill220 = (TextView) findViewById(R.id.button220);
+                    final TextView bill221 = (TextView) findViewById(R.id.button221);
+
+                    final TextView bill222 = (TextView) findViewById(R.id.button222);
+                    final TextView bill223 = (TextView) findViewById(R.id.button223);
+                    final TextView bill224 = (TextView) findViewById(R.id.button224);
+                    final TextView bill225 = (TextView) findViewById(R.id.button225);
+
+                    final TextView bill230 = (TextView) findViewById(R.id.button230);
+                    final TextView bill231 = (TextView) findViewById(R.id.button231);
+                    final TextView bill232 = (TextView) findViewById(R.id.button232);
+                    final TextView bill233 = (TextView) findViewById(R.id.button233);
+
+                    final TextView bill301 = (TextView) findViewById(R.id.textView201);
+                    final TextView bill302 = (TextView) findViewById(R.id.textView301);
+                    final TextView bill304 = (TextView) findViewById(R.id.textView4);
+
+                    etText83 = (TextView) findViewById(R.id.textView14);
+                    etText84 = (TextView) findViewById(R.id.textView20);
+                    etText86 = (TextView) findViewById(R.id.textView24);
+                    etText301 = (TextView) findViewById(R.id.textView201);
+                    etText302 = (TextView) findViewById(R.id.textView301);
+                    etText303 = (TextView) findViewById(R.id.textView401);
+                    etText304 = (TextView) findViewById(R.id.textView4);
+
+
+
+
+                    //a
+                    bill1.setText(0 + "");
+                    bill2.setText(1 + "");
+                    bill3.setText(2 + "");
+                    bill4.setText(3 + "");
+                    bill5.setText(4 + "");
+                    bill6.setText(5 + "");
+                    bill7.setText(6 + "");
+                    bill8.setText(7 + "");
+                    bill9.setText(8 + "");
+                    bill10.setText(9 + "");
+                    bill11.setText(10 + "");
+
+                    bill12.setText(0.0 + "");
+
+                    bill23.setText(0 + "");
+                    bill24.setText(1 + "");
+                    bill25.setText(2 + "");
+                    bill26.setText(3 + "");
+                    bill27.setText(4 + "");
+                    bill28.setText(5 + "");
+                    bill29.setText(6 + "");
+                    bill30.setText(7 + "");
+                    bill31.setText(8 + "");
+                    bill32.setText(9 + "");
+                    bill33.setText(10 + "");
+
+
+
+                    bill40.setText(0 + "");
+                    bill41.setText(1 + "");
+                    bill42.setText(2 + "");
+                    bill43.setText(3 + "");
+                    bill44.setText(4 + "");
+                    bill45.setText(5 + "");
+
+                    bill52.setText(0 + "");
+                    bill53.setText(1 + "");
+                    bill54.setText(2 + "");
+                    bill55.setText(3 + "");
+
+                    bill73.setText(45 + "");
+                    bill74.setText(60 + "");
+
+
+
+
+                    bill79.setText(0 + "");
+                    bill80.setText(1 + "");
+                    bill81.setText(2 + "");
+                    bill82.setText(3 + "");
+
+
+
+                    bill201.setText(0 + "");
+                    bill202.setText(1 + "");
+                    bill203.setText(2 + "");
+                    bill204.setText(3 + "");
+                    bill205.setText(4 + "");
+                    bill206.setText(5 + "");
+                    bill207.setText(6 + "");
+                    bill208.setText(7 + "");
+                    bill209.setText(8 + "");
+                    bill210.setText(9 + "");
+                    bill211.setText(10 + "");
+
+                    bill212.setText(0 + "");
+                    bill213.setText(1 + "");
+                    bill214.setText(2 + "");
+                    bill215.setText(3 + "");
+                    bill216.setText(4 + "");
+                    bill217.setText(5 + "");
+
+                    bill218.setText(0 + "");
+                    bill219.setText(1 + "");
+                    bill220.setText(2 + "");
+                    bill221.setText(3 + "");
+
+                    bill222.setText(0 + "");
+                    bill223.setText(1 + "");
+                    bill224.setText(2 + "");
+                    bill225.setText(3 + "");
+
+
+                    bill230.setText(0 + "");
+                    bill231.setText(1 + "");
+                    bill232.setText(2.5 + "");
+                    bill233.setText(3 + "");
+
+
+
+                    bill301.setText(0.0 + "");
+                    bill302.setText(0.0 + "");
+                    bill304.setText(0.0 + "");
+
+
+
+
+                }else
+                {
+
                 switch (v.getId()) {
 
 
@@ -7074,7 +5572,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText23 = (Button) findViewById(R.id.button97);
                         float num023 = Float.parseFloat(aetText23.getText().toString());
                         float w23 = (float) num023;
-                        textView023.setText(String.format(Locale.US, "%.2f", w23) + "");
+                        textView023.setText(String.format(Locale.US, "%.0f", w23) + "");
                         Animation anim12 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button12 = (Button) findViewById(R.id.button97);
@@ -7086,7 +5584,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText24 = (Button) findViewById(R.id.button98);
                         float num024 = Float.parseFloat(aetText24.getText().toString());
                         float w24 = (float) num024;
-                        textView024.setText(String.format(Locale.US, "%.2f", w24) + "");
+                        textView024.setText(String.format(Locale.US, "%.0f", w24) + "");
                         Animation anim13 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button13 = (Button) findViewById(R.id.button98);
@@ -7098,7 +5596,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText25 = (Button) findViewById(R.id.button99);
                         float num025 = Float.parseFloat(aetText25.getText().toString());
                         float w25 = (float) num025;
-                        textView025.setText(String.format(Locale.US, "%.2f", w25) + "");
+                        textView025.setText(String.format(Locale.US, "%.0f", w25) + "");
                         Animation anim14 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button14 = (Button) findViewById(R.id.button99);
@@ -7111,7 +5609,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText26 = (Button) findViewById(R.id.button100);
                         float num026 = Float.parseFloat(aetText26.getText().toString());
                         float w26 = (float) num026;
-                        textView026.setText(String.format(Locale.US, "%.2f", w26) + "");
+                        textView026.setText(String.format(Locale.US, "%.0f", w26) + "");
 
                         Animation anim15 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7125,7 +5623,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText27 = (Button) findViewById(R.id.button101);
                         float num027 = Float.parseFloat(aetText27.getText().toString());
                         float w27 = (float) num027;
-                        textView027.setText(String.format(Locale.US, "%.2f", w27) + "");
+                        textView027.setText(String.format(Locale.US, "%.0f", w27) + "");
 
                         Animation anim16 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7139,7 +5637,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText28 = (Button) findViewById(R.id.button102);
                         float num028 = Float.parseFloat(aetText28.getText().toString());
                         float w28 = (float) num028;
-                        textView028.setText(String.format(Locale.US, "%.2f", w28) + "");
+                        textView028.setText(String.format(Locale.US, "%.0f", w28) + "");
 
                         Animation anim17 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7153,7 +5651,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText29 = (Button) findViewById(R.id.button103);
                         float num029 = Float.parseFloat(aetText29.getText().toString());
                         float w29 = (float) num029;
-                        textView029.setText(String.format(Locale.US, "%.2f", w29) + "");
+                        textView029.setText(String.format(Locale.US, "%.0f", w29) + "");
 
                         Animation anim18 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7167,7 +5665,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText30 = (Button) findViewById(R.id.button104);
                         float num030 = Float.parseFloat(aetText30.getText().toString());
                         float w30 = (float) num030;
-                        textView030.setText(String.format(Locale.US, "%.2f", w30) + "");
+                        textView030.setText(String.format(Locale.US, "%.0f", w30) + "");
                         Animation anim19 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button19 = (Button) findViewById(R.id.button104);
@@ -7180,7 +5678,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText31 = (Button) findViewById(R.id.button105);
                         float num031 = Float.parseFloat(aetText31.getText().toString());
                         float w31 = (float) num031;
-                        textView031.setText(String.format(Locale.US, "%.2f", w31) + "");
+                        textView031.setText(String.format(Locale.US, "%.0f", w31) + "");
                         Animation anim20 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button20 = (Button) findViewById(R.id.button105);
@@ -7193,7 +5691,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText32 = (Button) findViewById(R.id.button11);
                         float num032 = Float.parseFloat(aetText32.getText().toString());
                         float w32 = (float) num032;
-                        textView032.setText(String.format(Locale.US, "%.2f", w32) + "");
+                        textView032.setText(String.format(Locale.US, "%.0f", w32) + "");
 
                         Animation anim21 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7206,7 +5704,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText33 = (Button) findViewById(R.id.button12);
                         float num033 = Float.parseFloat(aetText33.getText().toString());
                         float w33 = (float) num033;
-                        textView033.setText(String.format(Locale.US, "%.2f", w33) + "");
+                        textView033.setText(String.format(Locale.US, "%.0f", w33) + "");
 
                         Animation anim22 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7308,7 +5806,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText42 = (Button) findViewById(R.id.button63);
                         float num042 = Float.parseFloat(aetText42.getText().toString());
                         float w42 = (float) num042;
-                        textView042.setText(String.format(Locale.US, "%.2f", w42) + "");
+                        textView042.setText(String.format(Locale.US, "%.0f", w42) + "");
 
                         Animation anim25 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7366,7 +5864,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText46 = (Button) findViewById(R.id.button70);
                         float num046 = Float.parseFloat(aetText46.getText().toString());
                         float w46 = (float) num046;
-                        textView046.setText(String.format(Locale.US, "%.2f", w46) + "");
+                        textView046.setText(String.format(Locale.US, "%.0f", w46) + "");
 
                         Animation anim29 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7379,7 +5877,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText47 = (Button) findViewById(R.id.button71);
                         float num047 = Float.parseFloat(aetText47.getText().toString());
                         float w47 = (float) num047;
-                        textView047.setText(String.format(Locale.US, "%.2f", w47) + "");
+                        textView047.setText(String.format(Locale.US, "%.0f", w47) + "");
 
                         Animation anim30 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7392,7 +5890,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText48 = (Button) findViewById(R.id.button72);
                         float num048 = Float.parseFloat(aetText48.getText().toString());
                         float w48 = (float) num048;
-                        textView048.setText(String.format(Locale.US, "%.2f", w48) + "");
+                        textView048.setText(String.format(Locale.US, "%.0f", w48) + "");
 
                         Animation anim31 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7406,7 +5904,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText49 = (Button) findViewById(R.id.button73);
                         float num049 = Float.parseFloat(aetText49.getText().toString());
                         float w49 = (float) num049;
-                        textView049.setText(String.format(Locale.US, "%.2f", w49) + "");
+                        textView049.setText(String.format(Locale.US, "%.0f", w49) + "");
 
                         Animation anim32 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7420,7 +5918,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText50 = (Button) findViewById(R.id.button74);
                         float num050 = Float.parseFloat(aetText50.getText().toString());
                         float w50 = (float) num050;
-                        textView050.setText(String.format(Locale.US, "%.2f", w50) + "");
+                        textView050.setText(String.format(Locale.US, "%.0f", w50) + "");
 
                         Animation anim33 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7434,7 +5932,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText51 = (Button) findViewById(R.id.button75);
                         float num051 = Float.parseFloat(aetText51.getText().toString());
                         float w51 = (float) num051;
-                        textView051.setText(String.format(Locale.US, "%.2f", w51) + "");
+                        textView051.setText(String.format(Locale.US, "%.0f", w51) + "");
 
                         Animation anim34 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7450,7 +5948,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText52 = (Button) findViewById(R.id.button15);
                         float num052 = Float.parseFloat(aetText52.getText().toString());
                         float w52 = (float) num052;
-                        textView052.setText(String.format(Locale.US, "%.2f", w52) + "");
+                        textView052.setText(String.format(Locale.US, "%.0f", w52) + "");
 
                         Animation anim35 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7463,7 +5961,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText53 = (Button) findViewById(R.id.button16);
                         float num053 = Float.parseFloat(aetText53.getText().toString());
                         float w53 = (float) num053;
-                        textView053.setText(String.format(Locale.US, "%.2f", w53) + "");
+                        textView053.setText(String.format(Locale.US, "%.0f", w53) + "");
 
                         Animation anim36 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7476,7 +5974,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText54 = (Button) findViewById(R.id.button17);
                         float num054 = Float.parseFloat(aetText54.getText().toString());
                         float w54 = (float) num054;
-                        textView054.setText(String.format(Locale.US, "%.2f", w54) + "");
+                        textView054.setText(String.format(Locale.US, "%.0f", w54) + "");
 
                         Animation anim37 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7490,7 +5988,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText55 = (Button) findViewById(R.id.button18);
                         float num055 = Float.parseFloat(aetText55.getText().toString());
                         float w55 = (float) num055;
-                        textView055.setText(String.format(Locale.US, "%.2f", w55) + "");
+                        textView055.setText(String.format(Locale.US, "%.0f", w55) + "");
 
                         Animation anim38 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7503,7 +6001,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         Button aetText156 = (Button) findViewById(R.id.button45);
                         float num1073 = Float.parseFloat(aetText156.getText().toString());
                         float w173 = (float) num1073;
-                        textView1073.setText(String.format(Locale.US, "%.2f", w173) + "");
+                        textView1073.setText(String.format(Locale.US, "%.0f", w173) + "");
 
                         Animation anim73 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7517,7 +6015,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText157 = (Button) findViewById(R.id.button46);
                         float num1074 = Float.parseFloat(aetText157.getText().toString());
                         float w174 = (float) num1074;
-                        textView1074.setText(String.format(Locale.US, "%.2f", w174) + "");
+                        textView1074.setText(String.format(Locale.US, "%.0f", w174) + "");
 
                         Animation anim74 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7657,7 +6155,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText66 = (Button) findViewById(R.id.button19);
                         float num066 = Float.parseFloat(aetText66.getText().toString());
                         float w66 = (float) num066;
-                        textView066.setText(String.format(Locale.US, "%.2f", w66) + "");
+                        textView066.setText(String.format(Locale.US, "%.0f", w66) + "");
 
                         Animation anim45 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7670,7 +6168,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText67 = (Button) findViewById(R.id.button20);
                         float num067 = Float.parseFloat(aetText67.getText().toString());
                         float w67 = (float) num067;
-                        textView067.setText(String.format(Locale.US, "%.2f", w67) + "");
+                        textView067.setText(String.format(Locale.US, "%.0f", w67) + "");
 
                         Animation anim46 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7683,7 +6181,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText68 = (Button) findViewById(R.id.button25);
                         float num068 = Float.parseFloat(aetText68.getText().toString());
                         float w68 = (float) num068;
-                        textView068.setText(String.format(Locale.US, "%.2f", w68) + "");
+                        textView068.setText(String.format(Locale.US, "%.0f", w68) + "");
 
                         Animation anim47 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7962,7 +6460,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText212 = (Button) findViewById(R.id.button212);
                         float num212 = Float.parseFloat(aetText212.getText().toString());
                         float w212 = (float) num212;
-                        textView212.setText(String.format(Locale.US, "%.2f", w212) + "");
+                        textView212.setText(String.format(Locale.US, "%.0f", w212) + "");
                         Animation anim212 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button212 = (Button) findViewById(R.id.button212);
@@ -7974,7 +6472,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText213 = (Button) findViewById(R.id.button213);
                         float num213 = Float.parseFloat(aetText213.getText().toString());
                         float w213 = (float) num213;
-                        textView213.setText(String.format(Locale.US, "%.2f", w213) + "");
+                        textView213.setText(String.format(Locale.US, "%.0f", w213) + "");
                         Animation anim213 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button213 = (Button) findViewById(R.id.button213);
@@ -7986,7 +6484,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText214 = (Button) findViewById(R.id.button214);
                         float num214 = Float.parseFloat(aetText214.getText().toString());
                         float w214 = (float) num214;
-                        textView214.setText(String.format(Locale.US, "%.2f", w214) + "");
+                        textView214.setText(String.format(Locale.US, "%.0f", w214) + "");
                         Animation anim214 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button214 = (Button) findViewById(R.id.button214);
@@ -7998,7 +6496,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText215 = (Button) findViewById(R.id.button215);
                         float num215 = Float.parseFloat(aetText215.getText().toString());
                         float w215 = (float) num215;
-                        textView215.setText(String.format(Locale.US, "%.2f", w215) + "");
+                        textView215.setText(String.format(Locale.US, "%.0f", w215) + "");
                         Animation anim215 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button215 = (Button) findViewById(R.id.button215);
@@ -8010,7 +6508,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText216 = (Button) findViewById(R.id.button216);
                         float num216 = Float.parseFloat(aetText216.getText().toString());
                         float w216 = (float) num216;
-                        textView216.setText(String.format(Locale.US, "%.2f", w216) + "");
+                        textView216.setText(String.format(Locale.US, "%.0f", w216) + "");
                         Animation anim216 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button216 = (Button) findViewById(R.id.button216);
@@ -8022,7 +6520,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText217 = (Button) findViewById(R.id.button217);
                         float num217 = Float.parseFloat(aetText217.getText().toString());
                         float w217 = (float) num217;
-                        textView217.setText(String.format(Locale.US, "%.2f", w217) + "");
+                        textView217.setText(String.format(Locale.US, "%.0f", w217) + "");
                         Animation anim217 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button217 = (Button) findViewById(R.id.button217);
@@ -8087,7 +6585,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText222 = (Button) findViewById(R.id.button222);
                         float num222 = Float.parseFloat(aetText222.getText().toString());
                         float w222 = (float) num222;
-                        textView222.setText(String.format(Locale.US, "%.2f", w222) + "");
+                        textView222.setText(String.format(Locale.US, "%.0f", w222) + "");
                         Animation anim222 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button222 = (Button) findViewById(R.id.button222);
@@ -8100,7 +6598,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText223 = (Button) findViewById(R.id.button223);
                         float num223 = Float.parseFloat(aetText223.getText().toString());
                         float w223 = (float) num223;
-                        textView223.setText(String.format(Locale.US, "%.2f", w223) + "");
+                        textView223.setText(String.format(Locale.US, "%.0f", w223) + "");
                         Animation anim223 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button223 = (Button) findViewById(R.id.button223);
@@ -8113,7 +6611,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText224 = (Button) findViewById(R.id.button224);
                         float num224 = Float.parseFloat(aetText224.getText().toString());
                         float w224 = (float) num224;
-                        textView224.setText(String.format(Locale.US, "%.2f", w224) + "");
+                        textView224.setText(String.format(Locale.US, "%.0f", w224) + "");
                         Animation anim224 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button224 = (Button) findViewById(R.id.button224);
@@ -8126,7 +6624,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                         aetText225 = (Button) findViewById(R.id.button225);
                         float num225 = Float.parseFloat(aetText225.getText().toString());
                         float w225 = (float) num225;
-                        textView225.setText(String.format(Locale.US, "%.2f", w225) + "");
+                        textView225.setText(String.format(Locale.US, "%.0f", w225) + "");
                         Animation anim225 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button225 = (Button) findViewById(R.id.button225);
@@ -8473,7 +6971,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
 
                     default:
                 }
-            }
+            }}
         };
 
         //region секция (btn1.setOnClickListener(btnClk);)
@@ -8489,8 +6987,6 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         btn10.setOnClickListener(btnClk);
         btn11.setOnClickListener(btnClk);
 
-
-
         btn23.setOnClickListener(btnClk);
         btn24.setOnClickListener(btnClk);
         btn25.setOnClickListener(btnClk);
@@ -8503,8 +6999,6 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         btn32.setOnClickListener(btnClk);
         btn33.setOnClickListener(btnClk);
 
-
-
         btn40.setOnClickListener(btnClk);
         btn41.setOnClickListener(btnClk);
         btn42.setOnClickListener(btnClk);
@@ -8512,53 +7006,15 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         btn44.setOnClickListener(btnClk);
         btn45.setOnClickListener(btnClk);
 
-        btn46.setOnClickListener(btnClk);
-        btn47.setOnClickListener(btnClk);
-        btn48.setOnClickListener(btnClk);
-        btn49.setOnClickListener(btnClk);
-        btn50.setOnClickListener(btnClk);
-        btn51.setOnClickListener(btnClk);
-
-
         btn52.setOnClickListener(btnClk);
         btn53.setOnClickListener(btnClk);
         btn54.setOnClickListener(btnClk);
         btn55.setOnClickListener(btnClk);
 
-
-
-/*        btn60.setOnClickListener(btnClk);
-        btn61.setOnClickListener(btnClk);
-        btn62.setOnClickListener(btnClk);
-        btn63.setOnClickListener(btnClk);
-        btn64.setOnClickListener(btnClk);
-        btn65.setOnClickListener(btnClk);*/
-
-        btn66.setOnClickListener(btnClk);
-        btn67.setOnClickListener(btnClk);
-        btn68.setOnClickListener(btnClk);
-
-//        btn69.setOnClickListener(btnClk);
-//        btn70.setOnClickListener(btnClk);
-//        btn71.setOnClickListener(btnClk);
-
-//        btn72.setOnClickListener(btnClk);
-
-
-//        btn73.setOnClickListener(btnClk);
-//        btn74.setOnClickListener(btnClk);
-
-//        btn75.setOnClickListener(btnClk);
-        // btn76.setOnClickListener(btnClk);
-
-
-
-
         btn79.setOnClickListener(btnClk);
         btn80.setOnClickListener(btnClk);
         btn81.setOnClickListener(btnClk);
         btn82.setOnClickListener(btnClk);
-
 
         btn83.setOnClickListener(btnClk);
         btn84.setOnClickListener(btnClk);
@@ -8588,33 +7044,12 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         btn223.setOnClickListener(btnClk);
         btn224.setOnClickListener(btnClk);
         btn225.setOnClickListener(btnClk);
-//        btn226.setOnClickListener(btnClk);
-     //   btn227.setOnClickListener(btnClk);
-     //   btn228.setOnClickListener(btnClk);
-    //    btn229.setOnClickListener(btnClk);
+
         btn230.setOnClickListener(btnClk);
         btn231.setOnClickListener(btnClk);
         btn232.setOnClickListener(btnClk);
         btn233.setOnClickListener(btnClk);
-        btn234.setOnClickListener(btnClk);
-        btn235.setOnClickListener(btnClk);
-        btn236.setOnClickListener(btnClk);
-        btn237.setOnClickListener(btnClk);
-        btn238.setOnClickListener(btnClk);
-        btn239.setOnClickListener(btnClk);
-        btn240.setOnClickListener(btnClk);
-        btn241.setOnClickListener(btnClk);
-        btn242.setOnClickListener(btnClk);
-        btn243.setOnClickListener(btnClk);
-        btn244.setOnClickListener(btnClk);
-        btn245.setOnClickListener(btnClk);
-        btn246.setOnClickListener(btnClk);
-        btn247.setOnClickListener(btnClk);
-        btn248.setOnClickListener(btnClk);
 
-        btn197.setOnClickListener(btnClk);
-        btn277.setOnClickListener(btnClk);
-        btn257.setOnClickListener(btnClk);
 
 
 
@@ -8708,59 +7143,37 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
                 float num006 = Float.parseFloat(aetText6.getText().toString());
                 float num007 = Float.parseFloat(aetText7.getText().toString());
                 float num008 = Float.parseFloat(aetText8.getText().toString());
-//                float num009 = Float.parseFloat(aetText9.getText().toString());
                 float num010 = Float.parseFloat(aetText10.getText().toString());
                 float num011 = Float.parseFloat(aetText11.getText().toString());
-//                float num012 = Float.parseFloat(aetText12.getText().toString());
-                float num013 = Float.parseFloat(aetText13.getText().toString());
-                float num014 = Float.parseFloat(aetText14.getText().toString());
-                float num015 = Float.parseFloat(aetText15.getText().toString());
-                float num016 = Float.parseFloat(aetText16.getText().toString());
-                float num017 = Float.parseFloat(aetText17.getText().toString());
-                float num018 = Float.parseFloat(aetText18.getText().toString());
 
 
-                //количество необходимого кирпича
 
+                float Chelovek = (num001);
+                float Vanna = (num002*200);
+                float Uglova_vanna = (num003*400);
+                float Duw = (num004*100);
+                float Stiralka = (num005*50);
+                float Posudomoyka = (num011*50);
+                float Unitaz = (num006*20);
+                float Bide = (num011*10);
+                float Rakovina = (num008*20);
 
-                                float Viklushateli = (num001*num002);
-                                float Rozetki = (num003*num004);
-                                float Podrezetnik = (num005*num011);
-                                float Komut_korobki = (num006*num007);
-                                float Bez_korobki = (num008*num010);
-                                float Shiti = (num018*num013);
-                                float Gofra = (num014*num015);
-                                float X = (num016*num017);
-                                float Vsego = (Viklushateli+Rozetki+Podrezetnik+Komut_korobki+Bez_korobki+Shiti+Gofra+X);
+                float Koeficient = (num010);
 
+                float Zalp = (Vanna+Uglova_vanna+Duw+Stiralka+Posudomoyka+Unitaz+Bide+Rakovina);
+                float Proizvoditelnost = Zalp*Chelovek;
+                float Obyom_septika = (float) (Koeficient*Proizvoditelnost*0.001);
 
                                 TextView textView142 = (TextView) findViewById(R.id.textView142);
                                 TextView textView1420 = (TextView) findViewById(R.id.textView301);
                                 TextView textView1421 = (TextView) findViewById(R.id.textView201);
-                                TextView textView14212 = (TextView) findViewById(R.id.textView401);
                                 TextView textView14213 = (TextView) findViewById(R.id.textView4);
-                                TextView textView14214 = (TextView) findViewById(R.id.textView20);
-                                TextView textView14215 = (TextView) findViewById(R.id.textView242);
-                                TextView textView14216 = (TextView) findViewById(R.id.textView24);
-                                //TextView textView2017 = (TextView) findViewById(R.id.textView201);
-                                TextView textView208 = (TextView) findViewById(R.id.textView208);
 
+                                textView142.setText(String.format(Locale.US, "%.2f", Obyom_septika) + "");
+                                textView1420.setText(String.format(Locale.US, "%.2f", Proizvoditelnost) + "");
+                                textView1421.setText(String.format(Locale.US, "%.2f", Zalp) + "");
+                                textView14213.setText(String.format(Locale.US, "%.0f", Chelovek) + "");
 
-                                textView142.setText(String.format(Locale.US, "%.2f", Vsego) + "");
-                                textView1420.setText(String.format(Locale.US, "%.2f", Rozetki) + "");
-                                textView1421.setText(String.format(Locale.US, "%.2f", Viklushateli) + "");
-                                textView14212.setText(String.format(Locale.US, "%.2f", X) + "");
-                                textView14213.setText(String.format(Locale.US, "%.2f", Podrezetnik) + "");
-                                textView14214.setText(String.format(Locale.US, "%.2f", Bez_korobki) + "");
-                                textView14215.setText(String.format(Locale.US, "%.2f", Komut_korobki) + "");
-                                textView14216.setText(String.format(Locale.US, "%.2f", Gofra) + "");
-                               // textView2017.setText(String.format(Locale.US, "%.2f", rabota) + "");
-                                textView208.setText(String.format(Locale.US, "%.2f", Shiti) + "");
-
-
-                                //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
-                                //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
-                                // .setAction("Action", null).show();
                             }
                         });
 
@@ -8771,24 +7184,24 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
 
                 final TextView bill83 = (TextView) findViewById(R.id.textView142);
                 final TextView bill84 = (TextView) findViewById(R.id.textView201);
-                final TextView bill85 = (TextView) findViewById(R.id.textView242);
-                final TextView bill86 = (TextView) findViewById(R.id.textView20);
-                final TextView bill87 = (TextView) findViewById(R.id.textView24);
+                /////final TextView bill85 = (TextView) findViewById(R.id.textView242);
+              /////  final TextView bill86 = (TextView) findViewById(R.id.textView20);
+              ///////  final TextView bill87 = (TextView) findViewById(R.id.textView24);
                 final TextView bill88 = (TextView) findViewById(R.id.textView301);
-                final TextView bill89 = (TextView) findViewById(R.id.textView401);
+               ////// final TextView bill89 = (TextView) findViewById(R.id.textView401);
                 final TextView bill90 = (TextView) findViewById(R.id.textView4);
-                final TextView bill208 = (TextView) findViewById(R.id.textView208);
+               ////// final TextView bill208 = (TextView) findViewById(R.id.textView208);
 
 
                 bill83.setText(00.00 + "");
                 bill84.setText(00.00 + "");
-                bill85.setText(00.00 + "");
-                bill86.setText(00.00 + "");
-                bill87.setText(00.00 + "");
+               //////// bill85.setText(00.00 + "");
+        /////////        bill86.setText(00.00 + "");
+       ////////         bill87.setText(00.00 + "");
                 bill88.setText(00.00 + "");
-                bill89.setText(00.00 + "");
+        //////////        bill89.setText(00.00 + "");
                 bill90.setText(00.00 + "");
-                bill208.setText(00.00 + "");
+      ////////          bill208.setText(00.00 + "");
 
                Toast toast = Toast.makeText(getApplicationContext(),
                         "Сброс", Toast.LENGTH_SHORT);
@@ -9005,17 +7418,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         String savedText = sPref2.getString(SAVED_TEXT12, "");
         etText12.setText(savedText);
     }
-    void saveText13() {
-        sPref2 = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref2.edit();
-        ed.putString(SAVED_TEXT13, etText13.getText().toString());
-        ed.commit();
-    }
-    void loadText13() {
-        sPref2 = getPreferences(MODE_PRIVATE);
-        String savedText = sPref2.getString(SAVED_TEXT13, "");
-        etText13.setText(savedText);
-    }
+
 
 
     void saveText23() {
@@ -9214,72 +7617,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         String savedText = sPref.getString(SAVED_TEXT45, "");
         etText45.setText(savedText);
     }
-    void saveText46() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT46, etText46.getText().toString());
-        ed.commit();
-    }
-    void loadText46() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT46, "");
-        etText46.setText(savedText);
-    }
-    void saveText47() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT47, etText47.getText().toString());
-        ed.commit();
-    }
-    void loadText47() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT47, "");
-        etText47.setText(savedText);
-    }
-    void saveText48() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT48, etText48.getText().toString());
-        ed.commit();
-    }
-    void loadText48() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT48, "");
-        etText48.setText(savedText);
-    }
-    void saveText49() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT49, etText49.getText().toString());
-        ed.commit();
-    }
-    void loadText49() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT49, "");
-        etText49.setText(savedText);
-    }
-    void saveText50() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT50, etText50.getText().toString());
-        ed.commit();
-    }
-    void loadText50() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT50, "");
-        etText50.setText(savedText);
-    }
-    void saveText51() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT51, etText51.getText().toString());
-        ed.commit();
-    }
-    void loadText51() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT51, "");
-        etText51.setText(savedText);
-    }
+
 
     //endregion
 
@@ -9396,39 +7734,6 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         String savedText = sPref.getString(SAVED_TEXT65, "");
         etText65.setText(savedText);
     }*/
-    void saveText66() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT66, etText66.getText().toString());
-        ed.commit();
-    }
-    void loadText66() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT66, "");
-        etText66.setText(savedText);
-    }
-    void saveText67() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT67, etText67.getText().toString());
-        ed.commit();
-    }
-    void loadText67() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT67, "");
-        etText67.setText(savedText);
-    }
-    void saveText68() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT68, etText68.getText().toString());
-        ed.commit();
-    }
-    void loadText68() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT68, "");
-        etText68.setText(savedText);
-    }
 
 
     void saveText69() {
@@ -9522,29 +7827,9 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         String savedText = sPref.getString(SAVED_TEXT83, "");
         etText83.setText(savedText);
     }*/
-    void saveText84() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT84, etText84.getText().toString());
-        ed.commit();
-    }
-    void loadText84() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT84, "");
-        etText84.setText(savedText);
-    }
 
-    void saveText86() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT86, etText86.getText().toString());
-        ed.commit();
-    }
-    void loadText86() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT86, "");
-        etText86.setText(savedText);
-    }
+
+
 
 
     void saveText201() {
@@ -9928,171 +8213,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         String savedText = sPref.getString(SAVED_TEXT233, "");
         etText233.setText(savedText);
     }
-    void saveText234() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT234, etText234.getText().toString());
-        ed.commit();
-    }
-    void loadText234() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT234, "");
-        etText234.setText(savedText);
-    }
-    void saveText235() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT235, etText235.getText().toString());
-        ed.commit();
-    }
-    void loadText235() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT235, "");
-        etText235.setText(savedText);
-    }
-    void saveText236() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT236, etText236.getText().toString());
-        ed.commit();
-    }
-    void loadText236() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT236, "");
-        etText236.setText(savedText);
-    }
-    void saveText237() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT237, etText237.getText().toString());
-        ed.commit();
-    }
-    void loadText237() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT237, "");
-        etText237.setText(savedText);
-    }
-    void saveText238() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT238, etText238.getText().toString());
-        ed.commit();
-    }
-    void loadText238() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT238, "");
-        etText238.setText(savedText);
-    }
-    void saveText239() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT239, etText239.getText().toString());
-        ed.commit();
-    }
-    void loadText239() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT239, "");
-        etText239.setText(savedText);
-    }
-    void saveText240() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT240, etText240.getText().toString());
-        ed.commit();
-    }
-    void loadText240() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT240, "");
-        etText240.setText(savedText);
-    }
-    void saveText241() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT241, etText241.getText().toString());
-        ed.commit();
-    }
-    void loadText241() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT241, "");
-        etText241.setText(savedText);
-    }
-    void saveText242() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT242, etText242.getText().toString());
-        ed.commit();
-    }
-    void loadText242() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT242, "");
-        etText242.setText(savedText);
-    }
-    void saveText243() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT243, etText243.getText().toString());
-        ed.commit();
-    }
-    void loadText243() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT243, "");
-        etText243.setText(savedText);
-    }
-    void saveText244() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT244, etText244.getText().toString());
-        ed.commit();
-    }
-    void loadText244() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT244, "");
-        etText244.setText(savedText);
-    }
-    void saveText245() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT245, etText245.getText().toString());
-        ed.commit();
-    }
-    void loadText245() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT245, "");
-        etText245.setText(savedText);
-    }
-    void saveText246() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT246, etText246.getText().toString());
-        ed.commit();
-    }
-    void loadText246() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT246, "");
-        etText246.setText(savedText);
-    }
-    void saveText247() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT247, etText247.getText().toString());
-        ed.commit();
-    }
-    void loadText247() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT247, "");
-        etText247.setText(savedText);
-    }
-    void saveText248() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT248, etText248.getText().toString());
-        ed.commit();
-    }
-    void loadText248() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT248, "");
-        etText248.setText(savedText);
-    }
+
 
 
     void saveText301() {
@@ -10118,17 +8239,6 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         etText302.setText(savedText);
     }
 
-    void saveText303() {
-        sPref3 = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref3.edit();
-        ed.putString(SAVED_TEXT303, etText303.getText().toString());
-        ed.commit();
-    }
-    void loadText303() {
-        sPref3 = getPreferences(MODE_PRIVATE);
-        String savedText = sPref3.getString(SAVED_TEXT303, "");
-        etText303.setText(savedText);
-    }
 
     void saveText304() {
         sPref3 = getPreferences(MODE_PRIVATE);
@@ -10142,51 +8252,9 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         etText304.setText(savedText);
     }
 
-    void saveText197() {
-        sPref3 = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref3.edit();
-        ed.putString(SAVED_TEXT197, etText197.getText().toString());
-        ed.commit();
-    }
-    void loadText197() {
-        sPref3 = getPreferences(MODE_PRIVATE);
-        String savedText = sPref3.getString(SAVED_TEXT197, "");
-        etText197.setText(savedText);
-    }
-    void saveText277() {
-        sPref3 = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref3.edit();
-        ed.putString(SAVED_TEXT277, etText277.getText().toString());
-        ed.commit();
-    }
-    void loadText277() {
-        sPref3 = getPreferences(MODE_PRIVATE);
-        String savedText = sPref3.getString(SAVED_TEXT277, "");
-        etText277.setText(savedText);
-    }
-    void saveText257() {
-        sPref3 = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref3.edit();
-        ed.putString(SAVED_TEXT257, etText257.getText().toString());
-        ed.commit();
-    }
-    void loadText257() {
-        sPref3 = getPreferences(MODE_PRIVATE);
-        String savedText = sPref3.getString(SAVED_TEXT257, "");
-        etText257.setText(savedText);
-    }
 
-    void saveText408() {
-        sPref3 = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref3.edit();
-        ed.putString(SAVED_TEXT408, etText408.getText().toString());
-        ed.commit();
-    }
-    void loadText408() {
-        sPref3 = getPreferences(MODE_PRIVATE);
-        String savedText = sPref3.getString(SAVED_TEXT408, "");
-        etText408.setText(savedText);
-    }
+
+
 
 
 
@@ -10217,16 +8285,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         saveText10();
         saveText11();
         saveText12();
-        saveText13();
-        //saveText14();
-        //saveText15();
-        //saveText16();
-        //saveText17();
-        // saveText18();
-        //  saveText19();
-        //  saveText20();
-        //  saveText21();
-        //  saveText22();
+
 
         saveText23();
         saveText24();
@@ -10246,12 +8305,6 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         saveText43();
         saveText44();
         saveText45();
-        saveText46();
-        saveText47();
-        saveText48();
-        saveText49();
-        saveText50();
-        saveText51();
 
         saveText52();
         saveText53();
@@ -10260,17 +8313,7 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
 
 
 
-       // saveText60();
-       // saveText61();
 
-        //saveText62();
-      //  saveText63();
-      //  saveText64();
-      //  saveText65();
-
-        saveText66();
-        saveText67();
-        saveText68();
 
 
 
@@ -10285,9 +8328,9 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         saveText82();
 
         //saveText83();
-        saveText84();
+    ///////////    saveText84();
         //saveText85();
-        saveText86();
+    ////////////    saveText86();
 
         //saveText89();
 
@@ -10316,40 +8359,18 @@ public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
         saveText223();
         saveText224();
         saveText225();
-       // saveText226();
-        //saveText227();
-      //  saveText228();
-      //  saveText229();
+
         saveText230();
         saveText231();
         saveText232();
         saveText233();
-        saveText234();
-        saveText235();
-        saveText236();
-        saveText237();
-        saveText238();
-        saveText239();
-        saveText240();
-        saveText241();
-        saveText242();
-        saveText243();
-        saveText244();
-        saveText245();
-        saveText246();
-        saveText247();
-        saveText248();
+
 
         saveText301();
         saveText302();
-        saveText303();
+      //////////  saveText303();
         saveText304();
 
-        saveText197();
-        saveText277();
-        saveText257();
-
-        saveText408();
 
     }
 

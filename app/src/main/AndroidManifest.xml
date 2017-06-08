@@ -102,15 +102,15 @@
             android:name=".Gipsokarton_P_213_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Gipsokarton_lite_Activity"
+        android:name=".Gipsokarton_lite_Activity"
+        android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Dvuskat_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name=".PlusActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity
-            android:name=".Krovlya_Dvuskat_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
