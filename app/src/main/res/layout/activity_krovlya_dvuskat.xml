@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".G">
+    tools:context=".Krovlya_Dvuskat_Activity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -42,10 +42,19 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="Гипсокартон Стандарт"
+                    android:text="Двускатная крыша"
                     android:textColor="@android:color/white"
                     android:textSize="18dp"
                     android:textStyle="bold|italic" />
+
+                <ImageButton
+                    android:id="@+id/res"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:longClickable="false"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_res2" />
 
                 <ImageButton
                     android:id="@+id/calk"
@@ -62,7 +71,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_gipsokarton_lite2" />
+    <include layout="@layout/content_krovlya_dvuskat" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

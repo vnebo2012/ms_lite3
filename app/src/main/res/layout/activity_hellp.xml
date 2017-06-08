@@ -103,7 +103,7 @@ tools:context=".HellpActivity"
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Удерживайте иконку"
+                android:text="Нажмите любую кнопку"
                 android:id="@+id/textView821"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#ffffff" />
@@ -166,50 +166,6 @@ tools:context=".HellpActivity"
                 android:textStyle="italic" />
 
 
-
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/button141"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_alignLeft="@+id/linearLayout"
-                android:layout_alignStart="@+id/linearLayout"
-                android:layout_below="@+id/linearLayout"
-                android:layout_margin="5dp"
-                android:background="@mipmap/ic_res2"
-                android:text="0.8"
-                android:textColor="@color/colorBlack"
-                android:textSize="30dp"
-                android:textStyle="italic" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView41"
-                android:src="@android:drawable/ic_media_play" />
-
-            <Button
-                android:id="@+id/button131"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_alignEnd="@+id/linearLayout"
-                android:layout_alignRight="@+id/linearLayout"
-                android:layout_below="@+id/linearLayout"
-                android:layout_margin="5dp"
-                android:background="@drawable/radius"
-                android:text="0.8"
-                android:textColor="@color/colorBlack"
-                android:textSize="30dp"
-                android:textStyle="italic" />
 
 
 

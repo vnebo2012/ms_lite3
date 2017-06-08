@@ -31,7 +31,7 @@ import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Locale;
 
-public class Pol_Freza_stena_Activity extends AppCompatActivity {
+public class Krovlya_Dvuskat_Activity extends AppCompatActivity {
 
 
     Button etText;
@@ -1043,12 +1043,14 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
      * Called when the activity is first created.
      */
 
-    final String MY_SETTINGS = "saved_text_vse2";
+    final String MY_SETTINGS = "saved_text_vse299121";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_plitka);
+        setContentView(R.layout.activity_krovlya_dvuskat);
+
+
         mNewGameButton = (ImageButton) findViewById(R.id.dom);
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/5029587751");
@@ -1059,7 +1061,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                 //requestNewInterstitial();
                 // beginPlayingGame();
 
-                Intent a = new Intent(Pol_Freza_stena_Activity.this, Start_Activity.class);
+                Intent a = new Intent(Krovlya_Dvuskat_Activity.this, Start_Activity.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(a);
 
@@ -1085,7 +1087,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                     }
 
                 } else {
-                    Intent a = new Intent(Pol_Freza_stena_Activity.this, Start_Activity.class);
+                    Intent a = new Intent(Krovlya_Dvuskat_Activity.this, Start_Activity.class);
                     a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(a);
                 }
@@ -1093,6 +1095,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
 
             }
         });
+
 
         //ImageView imageView2 = (ImageView) findViewById(R.id.imageView3);
         TextView textView = (TextView) findViewById(R.id.textView);
@@ -1118,7 +1121,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
         SharedPreferences sp = getSharedPreferences(MY_SETTINGS,
                 Context.MODE_PRIVATE);
         // проверяем, первый ли раз открывается программа
-        boolean hasVisited = sp.getBoolean("hasVisited_vse2", false);
+        boolean hasVisited = sp.getBoolean("hasVisited_vse299121", false);
 
         if (!hasVisited) {
 
@@ -1314,16 +1317,16 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
 
                                     //a
                                     bill1.setText(0 + "");
-                                    bill2.setText(0.5 + "");
-                                    bill3.setText(0.8 + "");
-                                    bill4.setText(1 + "");
-                                    bill5.setText(2 + "");
-                                    bill6.setText(3 + "");
-                                    bill7.setText(5 + "");
-                                    bill8.setText(10 + "");
-                                    bill9.setText(15 + "");
-                                    bill10.setText(20 + "");
-                                    bill11.setText(30 + "");
+                                    bill2.setText(2 + "");
+                                    bill3.setText(5 + "");
+                                    bill4.setText(10 + "");
+                                    bill5.setText(20 + "");
+                                    bill6.setText(30 + "");
+                                    bill7.setText(50 + "");
+                                    bill8.setText(100 + "");
+                                    bill9.setText(150 + "");
+                                    bill10.setText(200 + "");
+                                    bill11.setText(300 + "");
 
                                     bill12.setText(0.0 + "");
                                     bill13.setText(0.0 + "");
@@ -1331,16 +1334,16 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
 
                                     //b
                                     bill23.setText(0 + "");
-                                    bill24.setText(0.5 + "");
-                                    bill25.setText(0.8 + "");
-                                    bill26.setText(1 + "");
-                                    bill27.setText(2 + "");
-                                    bill28.setText(3 + "");
-                                    bill29.setText(5 + "");
-                                    bill30.setText(10 + "");
-                                    bill31.setText(15 + "");
-                                    bill32.setText(20 + "");
-                                    bill33.setText(30 + "");
+                                    bill24.setText(10 + "");
+                                    bill25.setText(20 + "");
+                                    bill26.setText(50 + "");
+                                    bill27.setText(80 + "");
+                                    bill28.setText(100 + "");
+                                    bill29.setText(150 + "");
+                                    bill30.setText(200 + "");
+                                    bill31.setText(250 + "");
+                                    bill32.setText(300 + "");
+                                    bill33.setText(350 + "");
 
 
 
@@ -1359,12 +1362,12 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                                     bill51.setText(140 + "");
 
 
-                                    bill52.setText(200 + "");
-                                    bill53.setText(250 + "");
-                                    bill54.setText(300 + "");
-                                    bill55.setText(400 + "");
-                                    bill73.setText(450 + "");
-                                    bill74.setText(600 + "");
+                                    bill52.setText(10 + "");
+                                    bill53.setText(25 + "");
+                                    bill54.setText(30 + "");
+                                    bill55.setText(40 + "");
+                                    bill73.setText(45 + "");
+                                    bill74.setText(60 + "");
 
 
 
@@ -1389,53 +1392,53 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
 
 
                                     bill79.setText(2 + "");
-                                    bill80.setText(3 + "");
-                                    bill81.setText(5 + "");
-                                    bill82.setText(12 + "");
+                                    bill80.setText(5 + "");
+                                    bill81.setText(10 + "");
+                                    bill82.setText(50 + "");
 
 //                                    bill83.setText(00.00 + "");
                                     bill84.setText(00.00 + "");
                                     //bill85.setText(00.00 + "");
                                     bill86.setText(00.00 + "");
 
-                                    bill201.setText(0.50 + "");
-                                    bill202.setText(0.80 + "");
-                                    bill203.setText(0.90 + "");
-                                    bill204.setText(1.00 + "");
-                                    bill205.setText(1.20 + "");
-                                    bill206.setText(1.50 + "");
-                                    bill207.setText(1.70 + "");
-                                    bill208.setText(2.00 + "");
-                                    bill209.setText(2.50 + "");
-                                    bill210.setText(3.00 + "");
-                                    bill211.setText(4.00 + "");
+                                    bill201.setText(0 + "");
+                                    bill202.setText(1 + "");
+                                    bill203.setText(5 + "");
+                                    bill204.setText(10 + "");
+                                    bill205.setText(20 + "");
+                                    bill206.setText(50 + "");
+                                    bill207.setText(70 + "");
+                                    bill208.setText(80 + "");
+                                    bill209.setText(100 + "");
+                                    bill210.setText(150 + "");
+                                    bill211.setText(200 + "");
 
-                                    bill212.setText(0.40 + "");
-                                    bill213.setText(0.80 + "");
-                                    bill214.setText(0.90 + "");
-                                    bill215.setText(1.20 + "");
-                                    bill216.setText(1.60 + "");
-                                    bill217.setText(2.00 + "");
+                                    bill212.setText(40 + "");
+                                    bill213.setText(80 + "");
+                                    bill214.setText(90 + "");
+                                    bill215.setText(100 + "");
+                                    bill216.setText(110 + "");
+                                    bill217.setText(120 + "");
 
-                                    bill218.setText(600 + "");
-                                    bill219.setText(700 + "");
-                                    bill220.setText(800+ "");
-                                    bill221.setText(900 + "");
+                                    bill218.setText(10 + "");
+                                    bill219.setText(20 + "");
+                                    bill220.setText(50+ "");
+                                    bill221.setText(100 + "");
 
-                                    bill222.setText(1950 + "");
-                                    bill223.setText(2000 + "");
-                                    bill224.setText(2100 + "");
-                                    bill225.setText(2150 + "");
+                                    bill222.setText(90 + "");
+                                    bill223.setText(100 + "");
+                                    bill224.setText(150 + "");
+                                    bill225.setText(200 + "");
 
                                     //bill226.setText(1.5 + "");
                                     //bill227.setText(2.0 + "");
                                   //  bill228.setText(4.0 + "");
                                   //  bill229.setText(5.0 + "");
 
-                                    bill230.setText(0.5 + "");
-                                    bill231.setText(1.0 + "");
-                                    bill232.setText(3.0 + "");
-                                    bill233.setText(5.0 + "");
+                                    bill230.setText(15 + "");
+                                    bill231.setText(30 + "");
+                                    bill232.setText(60 + "");
+                                    bill233.setText(80 + "");
 
                                     bill234.setText(100 + "");
                                     bill235.setText(110 + "");
@@ -1484,11 +1487,359 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
             // startActivity(intent);
 
             SharedPreferences.Editor e = sp.edit();
-            e.putBoolean("hasVisited_vse2", true);
+            e.putBoolean("hasVisited_vse299121", true);
             e.commit(); // не забудьте подтвердить изменения
         }
 
+        ImageButton fa = (ImageButton) findViewById(R.id.res);
+        fa.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Востановление...", Toast.LENGTH_SHORT);
+                toast.show();
 
+
+
+                final TextView bill1 = (TextView) findViewById(R.id.button10);
+                final TextView bill2 = (TextView) findViewById(R.id.button2);
+                final TextView bill3 = (TextView) findViewById(R.id.button);
+                final TextView bill4 = (TextView) findViewById(R.id.button3);
+                final TextView bill5 = (TextView) findViewById(R.id.button5);
+                final TextView bill6 = (TextView) findViewById(R.id.button6);
+                final TextView bill7 = (TextView) findViewById(R.id.button7);
+                final TextView bill8 = (TextView) findViewById(R.id.button38);
+                final TextView bill9 = (TextView) findViewById(R.id.button40);
+                final TextView bill10 = (TextView) findViewById(R.id.button39);
+                final TextView bill11 = (TextView) findViewById(R.id.button8);
+
+                final TextView bill12 = (TextView) findViewById(R.id.textView142);
+                final TextView bill13 = (TextView) findViewById(R.id.textView242);
+
+
+
+                final TextView bill23 = (TextView) findViewById(R.id.button97);
+                final TextView bill24 = (TextView) findViewById(R.id.button98);
+                final TextView bill25 = (TextView) findViewById(R.id.button99);
+                final TextView bill26 = (TextView) findViewById(R.id.button100);
+                final TextView bill27 = (TextView) findViewById(R.id.button101);
+                final TextView bill28 = (TextView) findViewById(R.id.button102);
+                final TextView bill29 = (TextView) findViewById(R.id.button103);
+                final TextView bill30 = (TextView) findViewById(R.id.button104);
+                final TextView bill31 = (TextView) findViewById(R.id.button105);
+                final TextView bill32 = (TextView) findViewById(R.id.button11);
+                final TextView bill33 = (TextView) findViewById(R.id.button12);
+
+
+
+                final TextView bill40 = (TextView) findViewById(R.id.button61);
+                final TextView bill41 = (TextView) findViewById(R.id.button62);
+                final TextView bill42 = (TextView) findViewById(R.id.button63);
+                final TextView bill43 = (TextView) findViewById(R.id.button64);
+                final TextView bill44 = (TextView) findViewById(R.id.button65);
+                final TextView bill45 = (TextView) findViewById(R.id.button66);
+
+                final TextView bill46 = (TextView) findViewById(R.id.button70);
+                final TextView bill47 = (TextView) findViewById(R.id.button71);
+                final TextView bill48 = (TextView) findViewById(R.id.button72);
+                final TextView bill49 = (TextView) findViewById(R.id.button73);
+                final TextView bill50 = (TextView) findViewById(R.id.button74);
+                final TextView bill51 = (TextView) findViewById(R.id.button75);
+
+
+                final TextView bill52 = (TextView) findViewById(R.id.button15);
+                final TextView bill53 = (TextView) findViewById(R.id.button16);
+                final TextView bill54 = (TextView) findViewById(R.id.button17);
+                final TextView bill55 = (TextView) findViewById(R.id.button18);
+
+                //final TextView bill56 = (TextView) findViewById(R.id.button21);
+                //final TextView bill57 = (TextView) findViewById(R.id.button22);
+                // final TextView bill58 = (TextView) findViewById(R.id.button23);
+                // final TextView bill59 = (TextView) findViewById(R.id.button24);
+
+            /*final TextView bill60 = (TextView) findViewById(R.id.button27);
+            final TextView bill61 = (TextView) findViewById(R.id.button28);
+            final TextView bill62 = (TextView) findViewById(R.id.button29);
+            final TextView bill63 = (TextView) findViewById(R.id.button30);
+            final TextView bill64 = (TextView) findViewById(R.id.button31);
+            final TextView bill65 = (TextView) findViewById(R.id.button32);*/
+
+                final TextView bill66 = (TextView) findViewById(R.id.button19);
+                final TextView bill67 = (TextView) findViewById(R.id.button20);
+                final TextView bill68 = (TextView) findViewById(R.id.button25);
+
+                // final TextView bill69 = (TextView) findViewById(R.id.button41);
+                // final TextView bill70 = (TextView) findViewById(R.id.button42);
+                // final TextView bill71 = (TextView) findViewById(R.id.button43);
+                //  final TextView bill72 = (TextView) findViewById(R.id.button44);
+
+                final TextView bill73 = (TextView) findViewById(R.id.button45);
+                final TextView bill74 = (TextView) findViewById(R.id.button46);
+
+                final TextView bill79 = (TextView) findViewById(R.id.button26);
+                final TextView bill80 = (TextView) findViewById(R.id.button33);
+                final TextView bill81 = (TextView) findViewById(R.id.button34);
+                final TextView bill82 = (TextView) findViewById(R.id.button35);
+
+                final TextView bill83 = (TextView) findViewById(R.id.textView14);
+                final TextView bill84 = (TextView) findViewById(R.id.textView20);
+                //final TextView bill85 = (TextView) findViewById(R.id.textView43);
+                final TextView bill86 = (TextView) findViewById(R.id.textView24);
+                // final TextView bill87 = (TextView) findViewById(R.id.textView39);
+                // final TextView bill88 = (TextView) findViewById(R.id.textView37);
+                //final TextView bill89 = (TextView) findViewById(R.id.textView28);
+
+                final TextView bill201 = (TextView) findViewById(R.id.button201);
+                final TextView bill202 = (TextView) findViewById(R.id.button202);
+                final TextView bill203 = (TextView) findViewById(R.id.button203);
+                final TextView bill204 = (TextView) findViewById(R.id.button204);
+                final TextView bill205 = (TextView) findViewById(R.id.button205);
+                final TextView bill206 = (TextView) findViewById(R.id.button206);
+                final TextView bill207 = (TextView) findViewById(R.id.button207);
+                final TextView bill208 = (TextView) findViewById(R.id.button208);
+                final TextView bill209 = (TextView) findViewById(R.id.button209);
+                final TextView bill210 = (TextView) findViewById(R.id.button210);
+                final TextView bill211 = (TextView) findViewById(R.id.button211);
+
+                final TextView bill212 = (TextView) findViewById(R.id.button212);
+                final TextView bill213 = (TextView) findViewById(R.id.button213);
+                final TextView bill214 = (TextView) findViewById(R.id.button214);
+                final TextView bill215 = (TextView) findViewById(R.id.button215);
+                final TextView bill216 = (TextView) findViewById(R.id.button216);
+                final TextView bill217 = (TextView) findViewById(R.id.button217);
+
+                final TextView bill218 = (TextView) findViewById(R.id.button218);
+                final TextView bill219 = (TextView) findViewById(R.id.button219);
+                final TextView bill220 = (TextView) findViewById(R.id.button220);
+                final TextView bill221 = (TextView) findViewById(R.id.button221);
+
+                final TextView bill222 = (TextView) findViewById(R.id.button222);
+                final TextView bill223 = (TextView) findViewById(R.id.button223);
+                final TextView bill224 = (TextView) findViewById(R.id.button224);
+                final TextView bill225 = (TextView) findViewById(R.id.button225);
+
+                // final TextView bill226 = (TextView) findViewById(R.id.button226);
+                // final TextView bill227 = (TextView) findViewById(R.id.button227);
+                //final TextView bill228 = (TextView) findViewById(R.id.button228);
+                // final TextView bill229 = (TextView) findViewById(R.id.button229);
+
+                final TextView bill230 = (TextView) findViewById(R.id.button230);
+                final TextView bill231 = (TextView) findViewById(R.id.button231);
+                final TextView bill232 = (TextView) findViewById(R.id.button232);
+                final TextView bill233 = (TextView) findViewById(R.id.button233);
+
+                final TextView bill234 = (TextView) findViewById(R.id.button234);
+                final TextView bill235 = (TextView) findViewById(R.id.button235);
+                final TextView bill236 = (TextView) findViewById(R.id.button236);
+
+                final TextView bill237 = (TextView) findViewById(R.id.button237);
+                final TextView bill238 = (TextView) findViewById(R.id.button238);
+                final TextView bill239 = (TextView) findViewById(R.id.button239);
+                final TextView bill240 = (TextView) findViewById(R.id.button240);
+                final TextView bill241 = (TextView) findViewById(R.id.button241);
+                final TextView bill242 = (TextView) findViewById(R.id.button242);
+
+                final TextView bill243 = (TextView) findViewById(R.id.button243);
+                final TextView bill244 = (TextView) findViewById(R.id.button244);
+                final TextView bill245 = (TextView) findViewById(R.id.button245);
+                final TextView bill246 = (TextView) findViewById(R.id.button246);
+                final TextView bill247 = (TextView) findViewById(R.id.button247);
+                final TextView bill248 = (TextView) findViewById(R.id.button248);
+
+
+                final TextView bill197 = (TextView) findViewById(R.id.button197);
+                final TextView bill277 = (TextView) findViewById(R.id.button277);
+                final TextView bill257 = (TextView) findViewById(R.id.button257);
+
+
+                final TextView bill301 = (TextView) findViewById(R.id.textView201);
+                final TextView bill302 = (TextView) findViewById(R.id.textView301);
+                final TextView bill303 = (TextView) findViewById(R.id.textView401);
+                final TextView bill304 = (TextView) findViewById(R.id.textView4);
+
+                final TextView bill408 = (TextView) findViewById(R.id.textView208);
+
+
+                etText83 = (TextView) findViewById(R.id.textView14);
+                etText84 = (TextView) findViewById(R.id.textView20);
+                // etText85 = (TextView) findViewById(R.id.textView43);
+                etText86 = (TextView) findViewById(R.id.textView24);
+
+                etText301 = (TextView) findViewById(R.id.textView201);
+                etText302 = (TextView) findViewById(R.id.textView301);
+                etText303 = (TextView) findViewById(R.id.textView401);
+                etText304 = (TextView) findViewById(R.id.textView4);
+
+                //  etText89 = (TextView) findViewById(R.id.textView28);
+
+                //final TextView bill75 = (TextView) findViewById(R.id.button36);
+                //final TextView bill76 = (TextView) findViewById(R.id.button37);
+
+
+
+
+
+                                        //a
+                                        bill1.setText(0 + "");
+                                        bill2.setText(2 + "");
+                                        bill3.setText(5 + "");
+                                        bill4.setText(10 + "");
+                                        bill5.setText(20 + "");
+                                        bill6.setText(30 + "");
+                                        bill7.setText(50 + "");
+                                        bill8.setText(100 + "");
+                                        bill9.setText(150 + "");
+                                        bill10.setText(200 + "");
+                                        bill11.setText(300 + "");
+
+                                        bill12.setText(0.0 + "");
+                                        bill13.setText(0.0 + "");
+
+
+                                        //b
+                                        bill23.setText(0 + "");
+                                        bill24.setText(10 + "");
+                                        bill25.setText(20 + "");
+                                        bill26.setText(50 + "");
+                                        bill27.setText(80 + "");
+                                        bill28.setText(100 + "");
+                                        bill29.setText(150 + "");
+                                        bill30.setText(200 + "");
+                                        bill31.setText(250 + "");
+                                        bill32.setText(300 + "");
+                                        bill33.setText(350 + "");
+
+
+
+                                        bill40.setText(0 + "");
+                                        bill41.setText(10 + "");
+                                        bill42.setText(12 + "");
+                                        bill43.setText(15 + "");
+                                        bill44.setText(18 + "");
+                                        bill45.setText(20 + "");
+
+                                        bill46.setText(0 + "");
+                                        bill47.setText(100 + "");
+                                        bill48.setText(110 + "");
+                                        bill49.setText(115 + "");
+                                        bill50.setText(120 + "");
+                                        bill51.setText(140 + "");
+
+
+                                        bill52.setText(10 + "");
+                                        bill53.setText(25 + "");
+                                        bill54.setText(30 + "");
+                                        bill55.setText(40 + "");
+                                        bill73.setText(45 + "");
+                                        bill74.setText(60 + "");
+
+
+
+                                    /*bill60.setText(295 + "");
+                                    bill61.setText(296 + "");
+                                    bill62.setText(298 + "");
+                                    bill63.setText(300 + "");
+                                    bill64.setText(310 + "");
+                                    bill65.setText(320 + "");*/
+
+                                        bill66.setText(50 + "");
+                                        bill67.setText(80 + "");
+                                        bill68.setText(100 + "");
+
+                                        //bill69.setText(1 + "");
+                                        // bill72.setText(2 + "");
+                                        // bill70.setText(3 + "");
+
+
+
+
+
+
+                                        bill79.setText(2 + "");
+                                        bill80.setText(5 + "");
+                                        bill81.setText(10 + "");
+                                        bill82.setText(50 + "");
+
+//                                    bill83.setText(00.00 + "");
+                                        bill84.setText(00.00 + "");
+                                        //bill85.setText(00.00 + "");
+                                        bill86.setText(00.00 + "");
+
+                                        bill201.setText(0 + "");
+                                        bill202.setText(1 + "");
+                                        bill203.setText(5 + "");
+                                        bill204.setText(10 + "");
+                                        bill205.setText(20 + "");
+                                        bill206.setText(50 + "");
+                                        bill207.setText(70 + "");
+                                        bill208.setText(80 + "");
+                                        bill209.setText(100 + "");
+                                        bill210.setText(150 + "");
+                                        bill211.setText(200 + "");
+
+                                        bill212.setText(40 + "");
+                                        bill213.setText(80 + "");
+                                        bill214.setText(90 + "");
+                                        bill215.setText(100 + "");
+                                        bill216.setText(110 + "");
+                                        bill217.setText(120 + "");
+
+                                        bill218.setText(10 + "");
+                                        bill219.setText(20 + "");
+                                        bill220.setText(50+ "");
+                                        bill221.setText(100 + "");
+
+                                        bill222.setText(90 + "");
+                                        bill223.setText(100 + "");
+                                        bill224.setText(150 + "");
+                                        bill225.setText(200 + "");
+
+                                        //bill226.setText(1.5 + "");
+                                        //bill227.setText(2.0 + "");
+                                        //  bill228.setText(4.0 + "");
+                                        //  bill229.setText(5.0 + "");
+
+                                        bill230.setText(15 + "");
+                                        bill231.setText(30 + "");
+                                        bill232.setText(60 + "");
+                                        bill233.setText(80 + "");
+
+                                        bill234.setText(100 + "");
+                                        bill235.setText(110 + "");
+                                        bill236.setText(150 + "");
+
+                                        bill237.setText(80 + "");
+                                        bill238.setText(90 + "");
+                                        bill239.setText(100 + "");
+                                        bill240.setText(110 + "");
+                                        bill241.setText(150 + "");
+                                        bill242.setText(160 + "");
+
+                                        bill243.setText(50 + "");
+                                        bill244.setText(80 + "");
+                                        bill245.setText(90 + "");
+                                        bill246.setText(150 + "");
+                                        bill247.setText(200 + "");
+                                        bill248.setText(250 + "");
+
+                                        bill301.setText(0.0 + "");
+                                        bill302.setText(0.0 + "");
+                                        bill303.setText(0.0 + "");
+                                        bill304.setText(0.0 + "");
+
+                                        bill197.setText(100 + "");
+                                        bill277.setText(150 + "");
+                                        bill257.setText(200 + "");
+
+                                        bill408.setText(00.00 + "");
+
+
+
+
+
+                return false;
+            }
+        });
 
 
         etText = (Button) findViewById(R.id.button10);
@@ -4006,18 +4357,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
 
 
 
-        imageView1 = (ImageView) findViewById(R.id.imageView24);
-        imageView1.setOnClickListener(new View.OnClickListener() {
-                                          //region button124
-                                          @Override
-                                          public void onClick(View arg0) {
-                                              Toast toast = Toast.makeText(getApplicationContext(),
-                                                      "Оптимальный слой 2 - 8 мм", Toast.LENGTH_LONG);
 
-                                              toast.show();
-                                          }
-                                      }
-        );
         //endregion
 
 
@@ -6572,355 +6912,6 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                 Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibrator.vibrate(mills);
 
-                final TextView bill = (TextView) findViewById(R.id.textView142);
-                if (bill.getText().length() == 0)
-                {
-                    Toast toast = Toast.makeText(getApplicationContext(),
-                            "Заполнение пустых ячеек", Toast.LENGTH_LONG);
-
-                    toast.show();
-
-
-                    final TextView bill1 = (TextView) findViewById(R.id.button10);
-                    final TextView bill2 = (TextView) findViewById(R.id.button2);
-                    final TextView bill3 = (TextView) findViewById(R.id.button);
-                    final TextView bill4 = (TextView) findViewById(R.id.button3);
-                    final TextView bill5 = (TextView) findViewById(R.id.button5);
-                    final TextView bill6 = (TextView) findViewById(R.id.button6);
-                    final TextView bill7 = (TextView) findViewById(R.id.button7);
-                    final TextView bill8 = (TextView) findViewById(R.id.button38);
-                    final TextView bill9 = (TextView) findViewById(R.id.button40);
-                    final TextView bill10 = (TextView) findViewById(R.id.button39);
-                    final TextView bill11 = (TextView) findViewById(R.id.button8);
-
-                    final TextView bill12 = (TextView) findViewById(R.id.textView142);
-                    final TextView bill13 = (TextView) findViewById(R.id.textView242);
-
-
-
-                    final TextView bill23 = (TextView) findViewById(R.id.button97);
-                    final TextView bill24 = (TextView) findViewById(R.id.button98);
-                    final TextView bill25 = (TextView) findViewById(R.id.button99);
-                    final TextView bill26 = (TextView) findViewById(R.id.button100);
-                    final TextView bill27 = (TextView) findViewById(R.id.button101);
-                    final TextView bill28 = (TextView) findViewById(R.id.button102);
-                    final TextView bill29 = (TextView) findViewById(R.id.button103);
-                    final TextView bill30 = (TextView) findViewById(R.id.button104);
-                    final TextView bill31 = (TextView) findViewById(R.id.button105);
-                    final TextView bill32 = (TextView) findViewById(R.id.button11);
-                    final TextView bill33 = (TextView) findViewById(R.id.button12);
-
-
-
-                    final TextView bill40 = (TextView) findViewById(R.id.button61);
-                    final TextView bill41 = (TextView) findViewById(R.id.button62);
-                    final TextView bill42 = (TextView) findViewById(R.id.button63);
-                    final TextView bill43 = (TextView) findViewById(R.id.button64);
-                    final TextView bill44 = (TextView) findViewById(R.id.button65);
-                    final TextView bill45 = (TextView) findViewById(R.id.button66);
-
-                    final TextView bill46 = (TextView) findViewById(R.id.button70);
-                    final TextView bill47 = (TextView) findViewById(R.id.button71);
-                    final TextView bill48 = (TextView) findViewById(R.id.button72);
-                    final TextView bill49 = (TextView) findViewById(R.id.button73);
-                    final TextView bill50 = (TextView) findViewById(R.id.button74);
-                    final TextView bill51 = (TextView) findViewById(R.id.button75);
-
-
-                    final TextView bill52 = (TextView) findViewById(R.id.button15);
-                    final TextView bill53 = (TextView) findViewById(R.id.button16);
-                    final TextView bill54 = (TextView) findViewById(R.id.button17);
-                    final TextView bill55 = (TextView) findViewById(R.id.button18);
-
-                    //final TextView bill56 = (TextView) findViewById(R.id.button21);
-                    //final TextView bill57 = (TextView) findViewById(R.id.button22);
-                    // final TextView bill58 = (TextView) findViewById(R.id.button23);
-                    // final TextView bill59 = (TextView) findViewById(R.id.button24);
-
-            /*final TextView bill60 = (TextView) findViewById(R.id.button27);
-            final TextView bill61 = (TextView) findViewById(R.id.button28);
-            final TextView bill62 = (TextView) findViewById(R.id.button29);
-            final TextView bill63 = (TextView) findViewById(R.id.button30);
-            final TextView bill64 = (TextView) findViewById(R.id.button31);
-            final TextView bill65 = (TextView) findViewById(R.id.button32);*/
-
-                    final TextView bill66 = (TextView) findViewById(R.id.button19);
-                    final TextView bill67 = (TextView) findViewById(R.id.button20);
-                    final TextView bill68 = (TextView) findViewById(R.id.button25);
-
-                    // final TextView bill69 = (TextView) findViewById(R.id.button41);
-                    // final TextView bill70 = (TextView) findViewById(R.id.button42);
-                    // final TextView bill71 = (TextView) findViewById(R.id.button43);
-                    //  final TextView bill72 = (TextView) findViewById(R.id.button44);
-
-                    final TextView bill73 = (TextView) findViewById(R.id.button45);
-                    final TextView bill74 = (TextView) findViewById(R.id.button46);
-
-                    final TextView bill79 = (TextView) findViewById(R.id.button26);
-                    final TextView bill80 = (TextView) findViewById(R.id.button33);
-                    final TextView bill81 = (TextView) findViewById(R.id.button34);
-                    final TextView bill82 = (TextView) findViewById(R.id.button35);
-
-                    final TextView bill83 = (TextView) findViewById(R.id.textView14);
-                    final TextView bill84 = (TextView) findViewById(R.id.textView20);
-                    //final TextView bill85 = (TextView) findViewById(R.id.textView43);
-                    final TextView bill86 = (TextView) findViewById(R.id.textView24);
-                    // final TextView bill87 = (TextView) findViewById(R.id.textView39);
-                    // final TextView bill88 = (TextView) findViewById(R.id.textView37);
-                    //final TextView bill89 = (TextView) findViewById(R.id.textView28);
-
-                    final TextView bill201 = (TextView) findViewById(R.id.button201);
-                    final TextView bill202 = (TextView) findViewById(R.id.button202);
-                    final TextView bill203 = (TextView) findViewById(R.id.button203);
-                    final TextView bill204 = (TextView) findViewById(R.id.button204);
-                    final TextView bill205 = (TextView) findViewById(R.id.button205);
-                    final TextView bill206 = (TextView) findViewById(R.id.button206);
-                    final TextView bill207 = (TextView) findViewById(R.id.button207);
-                    final TextView bill208 = (TextView) findViewById(R.id.button208);
-                    final TextView bill209 = (TextView) findViewById(R.id.button209);
-                    final TextView bill210 = (TextView) findViewById(R.id.button210);
-                    final TextView bill211 = (TextView) findViewById(R.id.button211);
-
-                    final TextView bill212 = (TextView) findViewById(R.id.button212);
-                    final TextView bill213 = (TextView) findViewById(R.id.button213);
-                    final TextView bill214 = (TextView) findViewById(R.id.button214);
-                    final TextView bill215 = (TextView) findViewById(R.id.button215);
-                    final TextView bill216 = (TextView) findViewById(R.id.button216);
-                    final TextView bill217 = (TextView) findViewById(R.id.button217);
-
-                    final TextView bill218 = (TextView) findViewById(R.id.button218);
-                    final TextView bill219 = (TextView) findViewById(R.id.button219);
-                    final TextView bill220 = (TextView) findViewById(R.id.button220);
-                    final TextView bill221 = (TextView) findViewById(R.id.button221);
-
-                    final TextView bill222 = (TextView) findViewById(R.id.button222);
-                    final TextView bill223 = (TextView) findViewById(R.id.button223);
-                    final TextView bill224 = (TextView) findViewById(R.id.button224);
-                    final TextView bill225 = (TextView) findViewById(R.id.button225);
-
-                    // final TextView bill226 = (TextView) findViewById(R.id.button226);
-                    // final TextView bill227 = (TextView) findViewById(R.id.button227);
-                    //final TextView bill228 = (TextView) findViewById(R.id.button228);
-                    // final TextView bill229 = (TextView) findViewById(R.id.button229);
-
-                    final TextView bill230 = (TextView) findViewById(R.id.button230);
-                    final TextView bill231 = (TextView) findViewById(R.id.button231);
-                    final TextView bill232 = (TextView) findViewById(R.id.button232);
-                    final TextView bill233 = (TextView) findViewById(R.id.button233);
-
-                    final TextView bill234 = (TextView) findViewById(R.id.button234);
-                    final TextView bill235 = (TextView) findViewById(R.id.button235);
-                    final TextView bill236 = (TextView) findViewById(R.id.button236);
-
-                    final TextView bill237 = (TextView) findViewById(R.id.button237);
-                    final TextView bill238 = (TextView) findViewById(R.id.button238);
-                    final TextView bill239 = (TextView) findViewById(R.id.button239);
-                    final TextView bill240 = (TextView) findViewById(R.id.button240);
-                    final TextView bill241 = (TextView) findViewById(R.id.button241);
-                    final TextView bill242 = (TextView) findViewById(R.id.button242);
-
-                    final TextView bill243 = (TextView) findViewById(R.id.button243);
-                    final TextView bill244 = (TextView) findViewById(R.id.button244);
-                    final TextView bill245 = (TextView) findViewById(R.id.button245);
-                    final TextView bill246 = (TextView) findViewById(R.id.button246);
-                    final TextView bill247 = (TextView) findViewById(R.id.button247);
-                    final TextView bill248 = (TextView) findViewById(R.id.button248);
-
-
-                    final TextView bill197 = (TextView) findViewById(R.id.button197);
-                    final TextView bill277 = (TextView) findViewById(R.id.button277);
-                    final TextView bill257 = (TextView) findViewById(R.id.button257);
-
-
-                    final TextView bill301 = (TextView) findViewById(R.id.textView201);
-                    final TextView bill302 = (TextView) findViewById(R.id.textView301);
-                    final TextView bill303 = (TextView) findViewById(R.id.textView401);
-                    final TextView bill304 = (TextView) findViewById(R.id.textView4);
-
-                    final TextView bill408 = (TextView) findViewById(R.id.textView208);
-
-
-                    etText83 = (TextView) findViewById(R.id.textView14);
-                    etText84 = (TextView) findViewById(R.id.textView20);
-                    // etText85 = (TextView) findViewById(R.id.textView43);
-                    etText86 = (TextView) findViewById(R.id.textView24);
-
-                    etText301 = (TextView) findViewById(R.id.textView201);
-                    etText302 = (TextView) findViewById(R.id.textView301);
-                    etText303 = (TextView) findViewById(R.id.textView401);
-                    etText304 = (TextView) findViewById(R.id.textView4);
-
-                    //  etText89 = (TextView) findViewById(R.id.textView28);
-
-                    //final TextView bill75 = (TextView) findViewById(R.id.button36);
-                    //final TextView bill76 = (TextView) findViewById(R.id.button37);
-
-
-
-
-
-
-
-                    //a
-                    bill1.setText(0 + "");
-                    bill2.setText(0.5 + "");
-                    bill3.setText(0.8 + "");
-                    bill4.setText(1 + "");
-                    bill5.setText(2 + "");
-                    bill6.setText(3 + "");
-                    bill7.setText(5 + "");
-                    bill8.setText(10 + "");
-                    bill9.setText(15 + "");
-                    bill10.setText(20 + "");
-                    bill11.setText(30 + "");
-
-                    bill12.setText(0.0 + "");
-                    bill13.setText(0.0 + "");
-
-
-                    //b
-                    bill23.setText(0 + "");
-                    bill24.setText(0.5 + "");
-                    bill25.setText(0.8 + "");
-                    bill26.setText(1 + "");
-                    bill27.setText(2 + "");
-                    bill28.setText(3 + "");
-                    bill29.setText(5 + "");
-                    bill30.setText(10 + "");
-                    bill31.setText(15 + "");
-                    bill32.setText(20 + "");
-                    bill33.setText(30 + "");
-
-
-
-                    bill40.setText(0 + "");
-                    bill41.setText(10 + "");
-                    bill42.setText(12 + "");
-                    bill43.setText(15 + "");
-                    bill44.setText(18 + "");
-                    bill45.setText(20 + "");
-
-                    bill46.setText(0 + "");
-                    bill47.setText(100 + "");
-                    bill48.setText(110 + "");
-                    bill49.setText(115 + "");
-                    bill50.setText(120 + "");
-                    bill51.setText(140 + "");
-
-
-                    bill52.setText(200 + "");
-                    bill53.setText(250 + "");
-                    bill54.setText(300 + "");
-                    bill55.setText(400 + "");
-                    bill73.setText(450 + "");
-                    bill74.setText(600 + "");
-
-
-
-                                    /*bill60.setText(295 + "");
-                                    bill61.setText(296 + "");
-                                    bill62.setText(298 + "");
-                                    bill63.setText(300 + "");
-                                    bill64.setText(310 + "");
-                                    bill65.setText(320 + "");*/
-
-                    bill66.setText(50 + "");
-                    bill67.setText(80 + "");
-                    bill68.setText(100 + "");
-
-                    //bill69.setText(1 + "");
-                    // bill72.setText(2 + "");
-                    // bill70.setText(3 + "");
-
-
-
-
-
-
-                    bill79.setText(2 + "");
-                    bill80.setText(3 + "");
-                    bill81.setText(5 + "");
-                    bill82.setText(12 + "");
-
-//                                    bill83.setText(00.00 + "");
-                    bill84.setText(00.00 + "");
-                    //bill85.setText(00.00 + "");
-                    bill86.setText(00.00 + "");
-
-                    bill201.setText(0.50 + "");
-                    bill202.setText(0.80 + "");
-                    bill203.setText(0.90 + "");
-                    bill204.setText(1.00 + "");
-                    bill205.setText(1.20 + "");
-                    bill206.setText(1.50 + "");
-                    bill207.setText(1.70 + "");
-                    bill208.setText(2.00 + "");
-                    bill209.setText(2.50 + "");
-                    bill210.setText(3.00 + "");
-                    bill211.setText(4.00 + "");
-
-                    bill212.setText(0.40 + "");
-                    bill213.setText(0.80 + "");
-                    bill214.setText(0.90 + "");
-                    bill215.setText(1.20 + "");
-                    bill216.setText(1.60 + "");
-                    bill217.setText(2.00 + "");
-
-                    bill218.setText(600 + "");
-                    bill219.setText(700 + "");
-                    bill220.setText(800+ "");
-                    bill221.setText(900 + "");
-
-                    bill222.setText(1950 + "");
-                    bill223.setText(2000 + "");
-                    bill224.setText(2100 + "");
-                    bill225.setText(2150 + "");
-
-                    //bill226.setText(1.5 + "");
-                    //bill227.setText(2.0 + "");
-                    //  bill228.setText(4.0 + "");
-                    //  bill229.setText(5.0 + "");
-
-                    bill230.setText(0.5 + "");
-                    bill231.setText(1.0 + "");
-                    bill232.setText(3.0 + "");
-                    bill233.setText(5.0 + "");
-
-                    bill234.setText(100 + "");
-                    bill235.setText(110 + "");
-                    bill236.setText(150 + "");
-
-                    bill237.setText(80 + "");
-                    bill238.setText(90 + "");
-                    bill239.setText(100 + "");
-                    bill240.setText(110 + "");
-                    bill241.setText(150 + "");
-                    bill242.setText(160 + "");
-
-                    bill243.setText(50 + "");
-                    bill244.setText(80 + "");
-                    bill245.setText(90 + "");
-                    bill246.setText(150 + "");
-                    bill247.setText(200 + "");
-                    bill248.setText(250 + "");
-
-                    bill301.setText(0.0 + "");
-                    bill302.setText(0.0 + "");
-                    bill303.setText(0.0 + "");
-                    bill304.setText(0.0 + "");
-
-                    bill197.setText(100 + "");
-                    bill277.setText(150 + "");
-                    bill257.setText(200 + "");
-
-                    bill408.setText(00.00 + "");
-
-
-
-
-                }else
-                {
-
                 switch (v.getId()) {
 
 
@@ -6930,7 +6921,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText1 = (Button) findViewById(R.id.button10);
                         float num001 = Float.parseFloat(aetText1.getText().toString());
                         float w = (float) num001;
-                        textView001.setText(String.format(Locale.US, "%.2f", w) + "");
+                        textView001.setText(String.format(Locale.US, "%.0f", w) + "");
 
                         Animation anim1 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -6945,7 +6936,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText2 = (Button) findViewById(R.id.button2);
                         float num002 = Float.parseFloat(aetText2.getText().toString());
                         float w2 = (float) num002;
-                        textView002.setText(String.format(Locale.US, "%.2f", w2) + "");
+                        textView002.setText(String.format(Locale.US, "%.0f", w2) + "");
                         Animation anim2 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button2 = (Button) findViewById(R.id.button2);
@@ -6958,7 +6949,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText3 = (Button) findViewById(R.id.button);
                         float num003 = Float.parseFloat(aetText3.getText().toString());
                         float w3 = (float) num003;
-                        textView003.setText(String.format(Locale.US, "%.2f", w3) + "");
+                        textView003.setText(String.format(Locale.US, "%.0f", w3) + "");
                         Animation anim3 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button3 = (Button) findViewById(R.id.button);
@@ -6973,7 +6964,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText4 = (Button) findViewById(R.id.button3);
                         float num004 = Float.parseFloat(aetText4.getText().toString());
                         float w4 = (float) num004;
-                        textView004.setText(String.format(Locale.US, "%.2f", w4) + "");
+                        textView004.setText(String.format(Locale.US, "%.0f", w4) + "");
                         Animation anim4 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button4 = (Button) findViewById(R.id.button3);
@@ -6987,7 +6978,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText5 = (Button) findViewById(R.id.button5);
                         float num005 = Float.parseFloat(aetText5.getText().toString());
                         float w5 = (float) num005;
-                        textView005.setText(String.format(Locale.US, "%.2f", w5) + "");
+                        textView005.setText(String.format(Locale.US, "%.0f", w5) + "");
 
                         Animation anim5 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7002,7 +6993,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText6 = (Button) findViewById(R.id.button6);
                         float num006 = Float.parseFloat(aetText6.getText().toString());
                         float w6 = (float) num006;
-                        textView006.setText(String.format(Locale.US, "%.2f", w6) + "");
+                        textView006.setText(String.format(Locale.US, "%.0f", w6) + "");
                         Animation anim6 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button6 = (Button) findViewById(R.id.button6);
@@ -7015,7 +7006,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText7 = (Button) findViewById(R.id.button7);
                         float num007 = Float.parseFloat(aetText7.getText().toString());
                         float w7 = (float) num007;
-                        textView007.setText(String.format(Locale.US, "%.2f", w7) + "");
+                        textView007.setText(String.format(Locale.US, "%.0f", w7) + "");
                         Animation anim7 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button7 = (Button) findViewById(R.id.button7);
@@ -7028,7 +7019,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText8 = (Button) findViewById(R.id.button38);
                         float num008 = Float.parseFloat(aetText8.getText().toString());
                         float w8 = (float) num008;
-                        textView008.setText(String.format(Locale.US, "%.2f", w8) + "");
+                        textView008.setText(String.format(Locale.US, "%.0f", w8) + "");
                         Animation anim8 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button8 = (Button) findViewById(R.id.button38);
@@ -7041,7 +7032,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText9 = (Button) findViewById(R.id.button40);
                         float num009 = Float.parseFloat(aetText9.getText().toString());
                         float w9 = (float) num009;
-                        textView009.setText(String.format(Locale.US, "%.2f", w9) + "");
+                        textView009.setText(String.format(Locale.US, "%.0f", w9) + "");
                         Animation anim9 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button9 = (Button) findViewById(R.id.button40);
@@ -7054,7 +7045,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText10 = (Button) findViewById(R.id.button39);
                         float num010 = Float.parseFloat(aetText10.getText().toString());
                         float w10 = (float) num010;
-                        textView010.setText(String.format(Locale.US, "%.2f", w10) + "");
+                        textView010.setText(String.format(Locale.US, "%.0f", w10) + "");
                         Animation anim10 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button10 = (Button) findViewById(R.id.button39);
@@ -7066,7 +7057,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText11 = (Button) findViewById(R.id.button8);
                         float num011 = Float.parseFloat(aetText11.getText().toString());
                         float w11 = (float) num011;
-                        textView011.setText(String.format(Locale.US, "%.2f", w11) + "");
+                        textView011.setText(String.format(Locale.US, "%.0f", w11) + "");
                         Animation anim11 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button11 = (Button) findViewById(R.id.button8);
@@ -7291,7 +7282,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText40 = (Button) findViewById(R.id.button61);
                         float num040 = Float.parseFloat(aetText40.getText().toString());
                         float w40 = (float) num040;
-                        textView040.setText(String.format(Locale.US, "%.2f", w40) + "");
+                        textView040.setText(String.format(Locale.US, "%.0f", w40) + "");
 
                         Animation anim23 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7304,7 +7295,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText41 = (Button) findViewById(R.id.button62);
                         float num041 = Float.parseFloat(aetText41.getText().toString());
                         float w41 = (float) num041;
-                        textView041.setText(String.format(Locale.US, "%.2f", w41) + "");
+                        textView041.setText(String.format(Locale.US, "%.0f", w41) + "");
 
                         Animation anim24 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7331,7 +7322,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText43 = (Button) findViewById(R.id.button64);
                         float num043 = Float.parseFloat(aetText43.getText().toString());
                         float w43 = (float) num043;
-                        textView043.setText(String.format(Locale.US, "%.2f", w43) + "");
+                        textView043.setText(String.format(Locale.US, "%.0f", w43) + "");
 
                         Animation anim26 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7345,7 +7336,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText44 = (Button) findViewById(R.id.button65);
                         float num044 = Float.parseFloat(aetText44.getText().toString());
                         float w44 = (float) num044;
-                        textView044.setText(String.format(Locale.US, "%.2f", w44) + "");
+                        textView044.setText(String.format(Locale.US, "%.0f", w44) + "");
 
                         Animation anim27 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7359,7 +7350,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText45 = (Button) findViewById(R.id.button66);
                         float num045 = Float.parseFloat(aetText45.getText().toString());
                         float w45 = (float) num045;
-                        textView045.setText(String.format(Locale.US, "%.2f", w45) + "");
+                        textView045.setText(String.format(Locale.US, "%.0f", w45) + "");
 
                         Animation anim28 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7459,7 +7450,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText52 = (Button) findViewById(R.id.button15);
                         float num052 = Float.parseFloat(aetText52.getText().toString());
                         float w52 = (float) num052;
-                        textView052.setText(String.format(Locale.US, "%.0f", w52) + "");
+                        textView052.setText(String.format(Locale.US, "%.2f", w52) + "");
 
                         Animation anim35 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7472,7 +7463,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText53 = (Button) findViewById(R.id.button16);
                         float num053 = Float.parseFloat(aetText53.getText().toString());
                         float w53 = (float) num053;
-                        textView053.setText(String.format(Locale.US, "%.0f", w53) + "");
+                        textView053.setText(String.format(Locale.US, "%.2f", w53) + "");
 
                         Animation anim36 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7485,7 +7476,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText54 = (Button) findViewById(R.id.button17);
                         float num054 = Float.parseFloat(aetText54.getText().toString());
                         float w54 = (float) num054;
-                        textView054.setText(String.format(Locale.US, "%.0f", w54) + "");
+                        textView054.setText(String.format(Locale.US, "%.2f", w54) + "");
 
                         Animation anim37 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7499,7 +7490,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText55 = (Button) findViewById(R.id.button18);
                         float num055 = Float.parseFloat(aetText55.getText().toString());
                         float w55 = (float) num055;
-                        textView055.setText(String.format(Locale.US, "%.0f", w55) + "");
+                        textView055.setText(String.format(Locale.US, "%.2f", w55) + "");
 
                         Animation anim38 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7512,7 +7503,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         Button aetText156 = (Button) findViewById(R.id.button45);
                         float num1073 = Float.parseFloat(aetText156.getText().toString());
                         float w173 = (float) num1073;
-                        textView1073.setText(String.format(Locale.US, "%.0f", w173) + "");
+                        textView1073.setText(String.format(Locale.US, "%.2f", w173) + "");
 
                         Animation anim73 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7526,7 +7517,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText157 = (Button) findViewById(R.id.button46);
                         float num1074 = Float.parseFloat(aetText157.getText().toString());
                         float w174 = (float) num1074;
-                        textView1074.setText(String.format(Locale.US, "%.0f", w174) + "");
+                        textView1074.setText(String.format(Locale.US, "%.2f", w174) + "");
 
                         Animation anim74 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7838,7 +7829,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText201 = (Button) findViewById(R.id.button201);
                         float num201 = Float.parseFloat(aetText201.getText().toString());
                         float w201 = (float) num201;
-                        textView201.setText(String.format(Locale.US, "%.2f", w201) + "");
+                        textView201.setText(String.format(Locale.US, "%.0f", w201) + "");
                         Animation anim201 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button201 = (Button) findViewById(R.id.button201);
@@ -7850,7 +7841,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText202 = (Button) findViewById(R.id.button202);
                         float num202 = Float.parseFloat(aetText202.getText().toString());
                         float w202 = (float) num202;
-                        textView202.setText(String.format(Locale.US, "%.2f", w202) + "");
+                        textView202.setText(String.format(Locale.US, "%.0f", w202) + "");
                         Animation anim202 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button202 = (Button) findViewById(R.id.button202);
@@ -7862,7 +7853,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText203 = (Button) findViewById(R.id.button203);
                         float num203 = Float.parseFloat(aetText203.getText().toString());
                         float w203 = (float) num203;
-                        textView203.setText(String.format(Locale.US, "%.2f", w203) + "");
+                        textView203.setText(String.format(Locale.US, "%.0f", w203) + "");
                         Animation anim203 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button203 = (Button) findViewById(R.id.button203);
@@ -7874,7 +7865,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText204 = (Button) findViewById(R.id.button204);
                         float num204 = Float.parseFloat(aetText204.getText().toString());
                         float w204 = (float) num204;
-                        textView204.setText(String.format(Locale.US, "%.2f", w204) + "");
+                        textView204.setText(String.format(Locale.US, "%.0f", w204) + "");
                         Animation anim204 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button204 = (Button) findViewById(R.id.button204);
@@ -7886,7 +7877,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText205 = (Button) findViewById(R.id.button205);
                         float num205 = Float.parseFloat(aetText205.getText().toString());
                         float w205 = (float) num205;
-                        textView205.setText(String.format(Locale.US, "%.2f", w205) + "");
+                        textView205.setText(String.format(Locale.US, "%.0f", w205) + "");
                         Animation anim205 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button205 = (Button) findViewById(R.id.button205);
@@ -7898,7 +7889,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText206 = (Button) findViewById(R.id.button206);
                         float num206 = Float.parseFloat(aetText206.getText().toString());
                         float w206 = (float) num206;
-                        textView206.setText(String.format(Locale.US, "%.2f", w206) + "");
+                        textView206.setText(String.format(Locale.US, "%.0f", w206) + "");
                         Animation anim206 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button206 = (Button) findViewById(R.id.button206);
@@ -7910,7 +7901,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText207 = (Button) findViewById(R.id.button207);
                         float num207 = Float.parseFloat(aetText207.getText().toString());
                         float w207 = (float) num207;
-                        textView207.setText(String.format(Locale.US, "%.2f", w207) + "");
+                        textView207.setText(String.format(Locale.US, "%.0f", w207) + "");
                         Animation anim207 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button207 = (Button) findViewById(R.id.button207);
@@ -7922,7 +7913,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText208 = (Button) findViewById(R.id.button208);
                         float num208 = Float.parseFloat(aetText208.getText().toString());
                         float w208 = (float) num208;
-                        textView208.setText(String.format(Locale.US, "%.2f", w208) + "");
+                        textView208.setText(String.format(Locale.US, "%.0f", w208) + "");
                         Animation anim208 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button208 = (Button) findViewById(R.id.button208);
@@ -7934,7 +7925,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText209 = (Button) findViewById(R.id.button209);
                         float num209 = Float.parseFloat(aetText209.getText().toString());
                         float w209 = (float) num209;
-                        textView209.setText(String.format(Locale.US, "%.2f", w209) + "");
+                        textView209.setText(String.format(Locale.US, "%.0f", w209) + "");
                         Animation anim209 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button209 = (Button) findViewById(R.id.button209);
@@ -7946,7 +7937,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText210 = (Button) findViewById(R.id.button210);
                         float num210 = Float.parseFloat(aetText210.getText().toString());
                         float w210 = (float) num210;
-                        textView210.setText(String.format(Locale.US, "%.2f", w210) + "");
+                        textView210.setText(String.format(Locale.US, "%.0f", w210) + "");
                         Animation anim210 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button210 = (Button) findViewById(R.id.button210);
@@ -7958,12 +7949,13 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText211 = (Button) findViewById(R.id.button211);
                         float num211 = Float.parseFloat(aetText211.getText().toString());
                         float w211 = (float) num211;
-                        textView211.setText(String.format(Locale.US, "%.2f", w211) + "");
+                        textView211.setText(String.format(Locale.US, "%.0f", w211) + "");
                         Animation anim211 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button211 = (Button) findViewById(R.id.button211);
                         button211.startAnimation(anim211);
                         break;
+
 
                     case R.id.button212:
                         TextView textView212 = (TextView) findViewById(R.id.textViewWir4);
@@ -8095,7 +8087,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText222 = (Button) findViewById(R.id.button222);
                         float num222 = Float.parseFloat(aetText222.getText().toString());
                         float w222 = (float) num222;
-                        textView222.setText(String.format(Locale.US, "%.0f", w222) + "");
+                        textView222.setText(String.format(Locale.US, "%.2f", w222) + "");
                         Animation anim222 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button222 = (Button) findViewById(R.id.button222);
@@ -8108,7 +8100,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText223 = (Button) findViewById(R.id.button223);
                         float num223 = Float.parseFloat(aetText223.getText().toString());
                         float w223 = (float) num223;
-                        textView223.setText(String.format(Locale.US, "%.0f", w223) + "");
+                        textView223.setText(String.format(Locale.US, "%.2f", w223) + "");
                         Animation anim223 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button223 = (Button) findViewById(R.id.button223);
@@ -8121,7 +8113,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText224 = (Button) findViewById(R.id.button224);
                         float num224 = Float.parseFloat(aetText224.getText().toString());
                         float w224 = (float) num224;
-                        textView224.setText(String.format(Locale.US, "%.0f", w224) + "");
+                        textView224.setText(String.format(Locale.US, "%.2f", w224) + "");
                         Animation anim224 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button224 = (Button) findViewById(R.id.button224);
@@ -8134,7 +8126,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText225 = (Button) findViewById(R.id.button225);
                         float num225 = Float.parseFloat(aetText225.getText().toString());
                         float w225 = (float) num225;
-                        textView225.setText(String.format(Locale.US, "%.0f", w225) + "");
+                        textView225.setText(String.format(Locale.US, "%.2f", w225) + "");
                         Animation anim225 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button225 = (Button) findViewById(R.id.button225);
@@ -8200,7 +8192,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText230 = (Button) findViewById(R.id.button230);
                         float num230 = Float.parseFloat(aetText230.getText().toString());
                         float w230 = (float) num230;
-                        textView230.setText(String.format(Locale.US, "%.0f", w230) + "");
+                        textView230.setText(String.format(Locale.US, "%.2f", w230) + "");
                         Animation anim230 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button230 = (Button) findViewById(R.id.button230);
@@ -8212,7 +8204,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText231 = (Button) findViewById(R.id.button231);
                         float num231 = Float.parseFloat(aetText231.getText().toString());
                         float w231 = (float) num231;
-                        textView231.setText(String.format(Locale.US, "%.0f", w231) + "");
+                        textView231.setText(String.format(Locale.US, "%.2f", w231) + "");
                         Animation anim231 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button231 = (Button) findViewById(R.id.button231);
@@ -8226,7 +8218,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText232 = (Button) findViewById(R.id.button232);
                         float num232 = Float.parseFloat(aetText232.getText().toString());
                         float w232 = (float) num232;
-                        textView232.setText(String.format(Locale.US, "%.0f", w232) + "");
+                        textView232.setText(String.format(Locale.US, "%.2f", w232) + "");
                         Animation anim232 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button232 = (Button) findViewById(R.id.button232);
@@ -8239,7 +8231,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText233 = (Button) findViewById(R.id.button233);
                         float num233 = Float.parseFloat(aetText233.getText().toString());
                         float w233 = (float) num233;
-                        textView233.setText(String.format(Locale.US, "%.0f", w233) + "");
+                        textView233.setText(String.format(Locale.US, "%.2f", w233) + "");
                         Animation anim233 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button233 = (Button) findViewById(R.id.button233);
@@ -8366,7 +8358,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText243 = (Button) findViewById(R.id.button243);
                         float num243 = Float.parseFloat(aetText243.getText().toString());
                         float w243 = (float) num243;
-                        textView243.setText(String.format(Locale.US, "%.0f", w243) + "");
+                        textView243.setText(String.format(Locale.US, "%.2f", w243) + "");
                         Animation anim243 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button243 = (Button) findViewById(R.id.button243);
@@ -8378,7 +8370,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText244 = (Button) findViewById(R.id.button244);
                         float num244 = Float.parseFloat(aetText244.getText().toString());
                         float w244 = (float) num244;
-                        textView244.setText(String.format(Locale.US, "%.0f", w244) + "");
+                        textView244.setText(String.format(Locale.US, "%.2f", w244) + "");
                         Animation anim244 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button244 = (Button) findViewById(R.id.button244);
@@ -8390,7 +8382,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText245 = (Button) findViewById(R.id.button245);
                         float num245 = Float.parseFloat(aetText245.getText().toString());
                         float w245 = (float) num245;
-                        textView245.setText(String.format(Locale.US, "%.0f", w245) + "");
+                        textView245.setText(String.format(Locale.US, "%.2f", w245) + "");
                         Animation anim245 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button245 = (Button) findViewById(R.id.button245);
@@ -8402,7 +8394,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText246 = (Button) findViewById(R.id.button246);
                         float num246 = Float.parseFloat(aetText246.getText().toString());
                         float w246 = (float) num246;
-                        textView246.setText(String.format(Locale.US, "%.0f", w246) + "");
+                        textView246.setText(String.format(Locale.US, "%.2f", w246) + "");
                         Animation anim246 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button246 = (Button) findViewById(R.id.button246);
@@ -8414,7 +8406,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText247 = (Button) findViewById(R.id.button247);
                         float num247 = Float.parseFloat(aetText247.getText().toString());
                         float w247 = (float) num247;
-                        textView247.setText(String.format(Locale.US, "%.0f", w247) + "");
+                        textView247.setText(String.format(Locale.US, "%.2f", w247) + "");
                         Animation anim247 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button247 = (Button) findViewById(R.id.button247);
@@ -8426,7 +8418,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText248 = (Button) findViewById(R.id.button240);
                         float num248 = Float.parseFloat(aetText248.getText().toString());
                         float w248 = (float) num248;
-                        textView248.setText(String.format(Locale.US, "%.0f", w248) + "");
+                        textView248.setText(String.format(Locale.US, "%.2f", w248) + "");
                         Animation anim248 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button248 = (Button) findViewById(R.id.button248);
@@ -8481,7 +8473,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
 
                     default:
                 }
-            }}
+            }
         };
 
         //region секция (btn1.setOnClickListener(btnClk);)
@@ -8731,78 +8723,15 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                 //количество необходимого кирпича
 
 
-
-
-                        float h = num001;
-                        float A = num002;
-                        float B = num003;
-                        float n = num004;
-                        float f = num005;
-                        float w_dv = num006;
-                        float v_dv = num007;
-                        float sloy = num008;
-                        //float krestik = num009;
-                        float zip_pl = num010;
-                        float dl_pl = num011;
-                      //  float w_pl = num012;
-                        float cena_fr = num013;
-                        float cena_npl = num014;
-                        float cena_niz = num015;
-                        float cena_verx = num016;
-                        float cena_ra = num017;
-
-
-                if (Float.parseFloat(aetText5.getText().toString()) > 600)
-                { Toast toast = Toast.makeText(getApplicationContext(),
-                        "Ошибка!: Максимальная высота фрезы 600 мм!", Toast.LENGTH_LONG);
-
-                    toast.show();}
-                else {
-                    if (Float.parseFloat(aetText4.getText().toString()) > num001) {
-                        Toast toast = Toast.makeText(getApplicationContext(),
-                                "Ошибка!: Нижняя плитка выше потолка!? :)", Toast.LENGTH_LONG);
-
-                        toast.show();
-                    } else {
-                        if (Float.parseFloat(aetText7.getText().toString()) > num001*1000) {
-                            Toast toast = Toast.makeText(getApplicationContext(),
-                                    "Ошибка!: Двери выше потолка!? :)", Toast.LENGTH_LONG);
-
-                            toast.show();
-                        } else {
-                            if (Float.parseFloat(aetText6.getText().toString()) > 1000) {
-                                Toast toast = Toast.makeText(getApplicationContext(),
-                                        "Ошибка!: двери слишком широкие!? :)", Toast.LENGTH_LONG);
-
-                                toast.show();
-                            } else {
-
-
-                                float Sna = (A * B);
-                                float Snap = (Sna + (Sna * (num010) / 100));
-
-                                float Sni = (float) ((((A * 2) + (B * 2)) - (num006 * 0.001)) * n);
-                                float Sniz = (Sni + (Sni * (num010) / 100));
-
-
-                                float Sverx_nad_dvirima = (float) ((num006 * 0.001) * (h - (num007 * 0.001)));
-                                float Sver = ((float) ((((A * 2) - (num006 * 0.001)) + (B * 2)) * (h - ((f * 0.001) + n)))) + Sverx_nad_dvirima;
-                                float Sverx = (Sver + (Sver * (num010) / 100));
-
-
-                                float Fre = ((float) ((((A * 2) - (num006 * 0.001)) + (B * 2)) / (num011 * 0.001)));
-                                float Frez = (Fre + (Fre * (num010) / 100));
-
-                                float Frez_cena = (Frez * num013);
-
-                                float Vsya_plitka_cena = (Snap * num014) + (Sniz * num016) + (Sverx * num015);
-
-
-                                float S = (Snap) + (Sniz) + (Sverx);
-                                float kg = S * (num008*2);
-                                float meshkov = (kg / 25);
-                                float rabota = (S * num017);
-                                float c_mewkov = (meshkov*num018);
+                                float Viklushateli = (num001*num002);
+                                float Rozetki = (num003*num004);
+                                float Podrezetnik = (num005*num011);
+                                float Komut_korobki = (num006*num007);
+                                float Bez_korobki = (num008*num010);
+                                float Shiti = (num018*num013);
+                                float Gofra = (num014*num015);
+                                float X = (num016*num017);
+                                float Vsego = (Viklushateli+Rozetki+Podrezetnik+Komut_korobki+Bez_korobki+Shiti+Gofra+X);
 
 
                                 TextView textView142 = (TextView) findViewById(R.id.textView142);
@@ -8813,29 +8742,27 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                                 TextView textView14214 = (TextView) findViewById(R.id.textView20);
                                 TextView textView14215 = (TextView) findViewById(R.id.textView242);
                                 TextView textView14216 = (TextView) findViewById(R.id.textView24);
-                                TextView textView2017 = (TextView) findViewById(R.id.textView201);
+                                //TextView textView2017 = (TextView) findViewById(R.id.textView201);
                                 TextView textView208 = (TextView) findViewById(R.id.textView208);
 
 
-
-
-                                textView142.setText(String.format(Locale.US, "%.2f", Snap) + "");
-                                textView1420.setText(String.format(Locale.US, "%.2f", Sniz) + "");
-                                textView1421.setText(String.format(Locale.US, "%.2f", Sverx) + "");
-                                textView14212.setText(String.format(Locale.US, "%.0f", Frez) + "");
-                                textView14213.setText(String.format(Locale.US, "%.1f", Frez_cena) + "");
-                                textView14214.setText(String.format(Locale.US, "%.2f", Vsya_plitka_cena) + "");
-                                textView14215.setText(String.format(Locale.US, "%.2f", meshkov) + "");
-                                textView14216.setText(String.format(Locale.US, "%.2f", rabota) + "");
+                                textView142.setText(String.format(Locale.US, "%.2f", Vsego) + "");
+                                textView1420.setText(String.format(Locale.US, "%.2f", Rozetki) + "");
+                                textView1421.setText(String.format(Locale.US, "%.2f", Viklushateli) + "");
+                                textView14212.setText(String.format(Locale.US, "%.2f", X) + "");
+                                textView14213.setText(String.format(Locale.US, "%.2f", Podrezetnik) + "");
+                                textView14214.setText(String.format(Locale.US, "%.2f", Bez_korobki) + "");
+                                textView14215.setText(String.format(Locale.US, "%.2f", Komut_korobki) + "");
+                                textView14216.setText(String.format(Locale.US, "%.2f", Gofra) + "");
                                // textView2017.setText(String.format(Locale.US, "%.2f", rabota) + "");
-                                textView208.setText(String.format(Locale.US, "%.2f", c_mewkov) + "");
+                                textView208.setText(String.format(Locale.US, "%.2f", Shiti) + "");
 
 
                                 //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
                                 //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
                                 // .setAction("Action", null).show();
                             }
-                        }}}}});
+                        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnLongClickListener(new View.OnLongClickListener() {
@@ -10492,6 +10419,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
     }
+
     private void requestNewInterstitial() {
 
         AdRequest adRequest = new AdRequest.Builder()
@@ -10504,9 +10432,14 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
     private void beginPlayingGame() {
         // Play for a while, then display the New Game Button
     }
-
-
 }
+
+
+
+
+
+
+
 
 
 
