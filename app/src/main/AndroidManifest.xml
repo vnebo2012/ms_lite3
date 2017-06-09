@@ -108,7 +108,6 @@
         <activity
             android:name=".Dvuskat_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".PlusActivity"
             android:theme="@style/AppTheme.NoActionBar" />

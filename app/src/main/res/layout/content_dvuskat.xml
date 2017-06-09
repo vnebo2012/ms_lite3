@@ -59,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Расчетный объем, м3:"
+                        android:text="Площадь крыши, м2:"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="17sp"
@@ -97,11 +97,65 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Залповый сброс, л:"
+                        android:text="Стропило, м-пог./шт./м3:"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="17sp"
                         android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/textView2014"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView2013"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+                    <TextView
+                        android:id="@+id/textView2012"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView2011"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
 
                     <TextView
                         android:id="@+id/textView201"
@@ -134,11 +188,64 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Производительность в сутки, л:"
+                        android:text="Ригель, м-пог./шт./м3:"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="17sp"
                         android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/textView3014"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+                    <TextView
+                        android:id="@+id/textView3013"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView3012"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+                    <TextView
+                        android:id="@+id/textView3011"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
 
                     <TextView
                         android:id="@+id/textView301"
@@ -171,11 +278,37 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Количество проживаемых, чел.:"
+                        android:text="Обрешетка, м-пог./м3:"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="17sp"
                         android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:singleLine="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
 
 
                     <TextView
@@ -194,59 +327,111 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/freza3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_margin="0dp"
-                    android:baselineAligned="true"
-                    android:gravity="right"
-                    android:orientation="horizontal">
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
                     android:layout_margin="0dp"
                     android:layout_marginTop="5dp"
                     android:baselineAligned="true"
-                    android:gravity="right"
                     android:orientation="horizontal">
 
-                </LinearLayout>
+                    <TextView
+                        android:id="@+id/textView4007"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Стоимость леса:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
 
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/freza4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
                     android:layout_margin="0dp"
                     android:layout_marginTop="5dp"
                     android:baselineAligned="true"
-                    android:gravity="right"
                     android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView4008"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Стоимость кровельного материала:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView441"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
 
                 </LinearLayout>
-
                 <LinearLayout
+                    android:id="@+id/freza5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
                     android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
                     android:baselineAligned="true"
-                    android:gravity="right"
                     android:orientation="horizontal">
 
-                </LinearLayout>
+                    <TextView
+                        android:id="@+id/textView4009"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Стоимость работ:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_margin="0dp"
-                    android:baselineAligned="true"
-                    android:gravity="right"
-                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView442"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
 
                 </LinearLayout>
 
@@ -303,7 +488,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Количество проживаемых, чел.:"
+                            android:text="A - ширина дома, м:"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -314,7 +499,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="1"
+                            android:text="9"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -503,7 +688,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Ванная, шт.:"
+                            android:text="B - длина дома, м:"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -514,7 +699,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="1"
+                            android:text="10"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -690,7 +875,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Угловая ванна, шт.:"
+                            android:text="c - свес ската, м"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -877,7 +1062,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Душ, шт.:"
+                            android:text="d - выступ крыши, м:"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -888,7 +1073,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="1"
+                            android:text="0.5"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1010,7 +1195,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Стиральная машина, шт.:"
+                            android:text="h - высота до конька, м:"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1021,7 +1206,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="1"
+                            android:text="4.5"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1143,7 +1328,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Посудомоечная машина, шт.:"
+                            android:text="h2 - высота до ригеля, м:"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1154,7 +1339,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="1"
+                            android:text="2.5"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1275,7 +1460,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Унитаз, шт.:"
+                            android:text="k - шаг между стропилами, м:"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1287,7 +1472,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="1"
+                            android:text="0.6"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1386,7 +1571,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Биде, шт.:"
+                            android:text="Высота стропила, мм:"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1398,7 +1583,7 @@
                             android:layout_marginLeft="3dp"
                             android:layout_marginRight="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="1"
+                            android:text="160"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1498,7 +1683,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Раковина, шт.:"
+                            android:text="Ширина стропила, мм:"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1510,7 +1695,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="1"
+                            android:text="70"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1610,7 +1795,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Расчетный коефициент объема:"
+                            android:text="Ширина доски обрешетки:"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1623,7 +1808,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="3"
+                            android:text="70"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1699,6 +1884,232 @@
                         </HorizontalScrollView>
                     </LinearLayout>
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
+                    android:baselineAligned="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:baselineAligned="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView700"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Толщина доски обрешетки:"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/textViewWir19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="70"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView600"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/button701"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="1"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button702"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="2"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button703"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="5"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button704"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="10"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
+                    android:baselineAligned="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:baselineAligned="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView701"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Толщина доски обрешетки:"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/textViewWir20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="70"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView601"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/button705"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="1"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button706"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="2"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button707"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="5"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button708"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="10"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
 
 
                 <LinearLayout
