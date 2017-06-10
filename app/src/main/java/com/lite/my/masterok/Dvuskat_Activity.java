@@ -197,6 +197,18 @@ public class Dvuskat_Activity extends AppCompatActivity {
 
     TextView etText408;
 
+    TextView etText801;
+    TextView etText802;
+    TextView etText2423;
+    TextView etText4012;
+    TextView etText401;
+    TextView etText2000;
+    TextView etText1426;
+    TextView etText142;
+    TextView etText710;
+    TextView etText4444;
+    TextView etText4242;
+
 
 
     Button btnSave, btnLoad;
@@ -359,6 +371,19 @@ public class Dvuskat_Activity extends AppCompatActivity {
     final String SAVED_TEXT304 = "saved_text304";
 
     final String SAVED_TEXT408 = "saved_text408";
+
+    final String SAVED_TEXT801 = "saved_text801";
+    final String SAVED_TEXT802 = "saved_text802";
+    final String SAVED_TEXT2423 = "saved_text2423";
+    final String SAVED_TEXT4012 = "saved_text4012";
+    final String SAVED_TEXT401 = "saved_text401";
+    final String SAVED_TEXT2000 = "saved_text2000";
+    final String SAVED_TEXT1426 = "saved_text1426";
+    final String SAVED_TEXT142 = "saved_text142";
+    final String SAVED_TEXT710 = "saved_text710";
+    final String SAVED_TEXT4444 = "saved_text4444";
+    final String SAVED_TEXT4242 = "saved_text4242";
+
 
 
 
@@ -698,6 +723,16 @@ public class Dvuskat_Activity extends AppCompatActivity {
     private Button aetText257;
     private TextView aetText18;
 
+    private TextView aetText801;
+    private TextView aetText802;
+    private TextView aetText2423;
+    private TextView aetText4012;
+    private TextView aetText401;
+    private TextView aetText2000;
+    private TextView aetText1426;
+    private TextView aetText142;
+    private TextView aetText710;
+
 
 
 
@@ -1027,6 +1062,16 @@ public class Dvuskat_Activity extends AppCompatActivity {
     private TextView final_text277;
     private TextView final_text257;
 
+    private TextView final_text801;
+    private TextView final_text802;
+    private TextView final_text2423;
+    private TextView final_text4012;
+    private TextView final_text401;
+    private TextView final_text2000;
+    private TextView final_text1426;
+    private TextView final_text142;
+    private TextView final_text710;
+
     ImageView imageView;
     ImageView imageView1;
 
@@ -1290,6 +1335,21 @@ public class Dvuskat_Activity extends AppCompatActivity {
             final TextView bill408 = (TextView) findViewById(R.id.textView208);
 
 
+            final TextView bill801 = (TextView) findViewById(R.id.textView801);
+            final TextView bill802 = (TextView) findViewById(R.id.textView802);
+            final TextView bill2423 = (TextView) findViewById(R.id.textView2423);
+            final TextView bill4012 = (TextView) findViewById(R.id.textView4012);
+            final TextView bill401 = (TextView) findViewById(R.id.textView401);
+            final TextView bill20 = (TextView) findViewById(R.id.textView20);
+            final TextView bill1426 = (TextView) findViewById(R.id.textView1426);
+            final TextView bill142 = (TextView) findViewById(R.id.textView142);
+            final TextView bill710 = (TextView) findViewById(R.id.textView710);
+
+            final TextView bill4444 = (TextView) findViewById(R.id.textView44);
+            final TextView bill4242 = (TextView) findViewById(R.id.textView42);
+
+
+
             etText83 = (TextView) findViewById(R.id.textView14);
             etText84 = (TextView) findViewById(R.id.textView20);
             // etText85 = (TextView) findViewById(R.id.textView43);
@@ -1362,12 +1422,12 @@ public class Dvuskat_Activity extends AppCompatActivity {
                                     bill51.setText(3500 + "");
 
 
-                                    bill52.setText(1.0 + "");
-                                    bill53.setText(1.5 + "");
-                                    bill54.setText(2.0 + "");
-                                    bill55.setText(2.5 + "");
-                                    bill73.setText(3.0 + "");
-                                    bill74.setText(3.5 + "");
+                                    bill52.setText(3 + "");
+                                    bill53.setText(3.5 + "");
+                                    bill54.setText(4.0 + "");
+                                    bill55.setText(4.5 + "");
+                                    bill73.setText(5.0 + "");
+                                    bill74.setText(6.5 + "");
 
 
 
@@ -1468,6 +1528,21 @@ public class Dvuskat_Activity extends AppCompatActivity {
                                     bill257.setText(50 + "");
 
                                     bill408.setText(00.00 + "");
+
+
+                                    bill801.setText(00.00 + "");
+                                    bill802.setText(00.00 + "");
+                                    bill2423.setText(00.00 + "");
+                                    bill4012.setText(00.00 + "");
+                                    bill401.setText(00.00 + "");
+                                    bill20.setText(00.00 + "");
+                                    bill1426.setText(00.00 + "");
+                                    bill142.setText(00.00 + "");
+                                    bill710.setText(00.00 + "");
+
+                                    bill4444.setText(00.00 + "");
+                                    bill4242.setText(00.00 + "");
+
 
 
 
@@ -1584,6 +1659,20 @@ public class Dvuskat_Activity extends AppCompatActivity {
         etText302 = (TextView) findViewById(R.id.textView301);
         etText303 = (TextView) findViewById(R.id.textView401);
         etText304 = (TextView) findViewById(R.id.textView4);
+
+        etText801 = (TextView) findViewById(R.id.textView801);
+        etText802 = (TextView) findViewById(R.id.textView802);
+        etText2423 = (TextView) findViewById(R.id.textView2423);
+        etText4012 = (TextView) findViewById(R.id.textView4012);
+        etText401 = (TextView) findViewById(R.id.textView401);
+        etText2000 = (TextView) findViewById(R.id.textView20);
+        etText1426 = (TextView) findViewById(R.id.textView1426);
+        etText142 = (TextView) findViewById(R.id.textView142);
+        etText710 = (TextView) findViewById(R.id.textView710);
+
+        etText4444 = (TextView) findViewById(R.id.textView44);
+        etText4242 = (TextView) findViewById(R.id.textView42);
+
 
         // etText89 = (TextView) findViewById(R.id.textView28);
 
@@ -1799,6 +1888,19 @@ public class Dvuskat_Activity extends AppCompatActivity {
         loadText277();
         loadText257();
         loadText408();
+
+        loadText801();
+        loadText802();
+        loadText2423();
+        loadText4012();
+        loadText401();
+        loadText2000();
+        loadText1426();
+        loadText142();
+        loadText710();
+
+        loadText4444();
+        loadText4242();
 
 
 
@@ -6731,6 +6833,21 @@ public class Dvuskat_Activity extends AppCompatActivity {
                     final TextView bill408 = (TextView) findViewById(R.id.textView208);
 
 
+                    final TextView bill801 = (TextView) findViewById(R.id.textView801);
+                    final TextView bill802 = (TextView) findViewById(R.id.textView802);
+                    final TextView bill2423 = (TextView) findViewById(R.id.textView2423);
+                    final TextView bill4012 = (TextView) findViewById(R.id.textView4012);
+                    final TextView bill401 = (TextView) findViewById(R.id.textView401);
+                    final TextView bill20 = (TextView) findViewById(R.id.textView20);
+                    final TextView bill1426 = (TextView) findViewById(R.id.textView1426);
+                    final TextView bill142 = (TextView) findViewById(R.id.textView142);
+                    final TextView bill710 = (TextView) findViewById(R.id.textView710);
+
+                    final TextView bill4444 = (TextView) findViewById(R.id.textView44);
+                    final TextView bill4242 = (TextView) findViewById(R.id.textView42);
+
+
+
                     etText83 = (TextView) findViewById(R.id.textView14);
                     etText84 = (TextView) findViewById(R.id.textView20);
                     // etText85 = (TextView) findViewById(R.id.textView43);
@@ -6777,11 +6894,11 @@ public class Dvuskat_Activity extends AppCompatActivity {
 
 
                                             bill40.setText(0 + "");
-                                            bill41.setText(10 + "");
-                                            bill42.setText(12 + "");
-                                            bill43.setText(15 + "");
-                                            bill44.setText(18 + "");
-                                            bill45.setText(20 + "");
+                                            bill41.setText(3 + "");
+                                            bill42.setText(3.5 + "");
+                                            bill43.setText(4.0 + "");
+                                            bill44.setText(4.5 + "");
+                                            bill45.setText(5.0 + "");
 
                                             bill46.setText(0 + "");
                                             bill47.setText(2000 + "");
@@ -6791,12 +6908,12 @@ public class Dvuskat_Activity extends AppCompatActivity {
                                             bill51.setText(3500 + "");
 
 
-                                            bill52.setText(1.0 + "");
-                                            bill53.setText(1.5 + "");
-                                            bill54.setText(2.0 + "");
-                                            bill55.setText(2.5 + "");
-                                            bill73.setText(3.0 + "");
-                                            bill74.setText(3.5 + "");
+                                            bill52.setText(3 + "");
+                                            bill53.setText(3.5 + "");
+                                            bill54.setText(4.0 + "");
+                                            bill55.setText(4.5 + "");
+                                            bill73.setText(5.0 + "");
+                                            bill74.setText(6.5 + "");
 
 
 
@@ -6897,6 +7014,20 @@ public class Dvuskat_Activity extends AppCompatActivity {
                                             bill257.setText(50 + "");
 
                                             bill408.setText(00.00 + "");
+
+
+                                            bill801.setText(00.00 + "");
+                                            bill802.setText(00.00 + "");
+                                            bill2423.setText(00.00 + "");
+                                            bill4012.setText(00.00 + "");
+                                            bill401.setText(00.00 + "");
+                                            bill20.setText(00.00 + "");
+                                            bill1426.setText(00.00 + "");
+                                            bill142.setText(00.00 + "");
+                                            bill710.setText(00.00 + "");
+
+                                            bill4444.setText(00.00 + "");
+                                            bill4242.setText(00.00 + "");
 
 
 
@@ -8719,29 +8850,31 @@ public class Dvuskat_Activity extends AppCompatActivity {
                 float Wirina_kriwi = (float) (((0.001*num004)*2)+num002);
                 float S_kriwi = (Stropilo*2)*(Wirina_kriwi);
                 float Stropilo_m = (Stropilo);
-
-
-
                 float wtuk_na_skati = (float) Math.round((Wirina_kriwi/(num006*0.001)));
-
-
                 float Stropil_wtuk = (wtuk_na_skati*2);
                 float Dlina_vsex_stropil = (Stropil_wtuk*Stropilo_m);
                 float Stropil_V = (float) (Dlina_vsex_stropil*(num007*0.001)*(num008*0.001));
 
-                                float Rigel_m = (1);
-                                float Rigel_wtuk = (1);
-                                float Rigel_V = (1);
-                                float Kontra_vertikal_m_pogonnix = (1);
-                                float Kontra_vertikal_V = (1);
-                                float Kontra_gorizontal_m_pogonnix = (1);
-                                float Kontra_gorizontal_V = (1);
-                                float Mauerlat_m_pogonnix = (1);
-                                float Mauerlat_V = (1);
-                                float Les_V = (1);
-                                float Les_cena = (1);
-                                float Blyaxa_cena = (1);
-                                float Rabota = (1);
+                                float Rigel_m = (num011);
+                                float Rigel_wtuk = (wtuk_na_skati-2);
+                                float Rigel_m_pogonnix = (Rigel_wtuk*Rigel_m);
+                                float Rigel_V = (float) (Rigel_m_pogonnix*(num007*0.001)*(num008*0.001));
+
+
+                float Kontra_vertikal_m_pogonnix = (Dlina_vsex_stropil);
+                float Kontra_vertikal_V = (float) (Dlina_vsex_stropil*(num010*0.001)*(num018*0.001));
+
+                                float Kontra_gorizontal_radov = (float) ((Stropilo*2)/0.35);
+                                float Kontra_gorizontal_m_pogonnix = (Kontra_gorizontal_radov*Wirina_kriwi);
+                                float Kontra_gorizontal_V = (float) (Kontra_gorizontal_m_pogonnix*(num013*0.001)*(num014*0.001));
+
+                                float Mauerlat_m_pogonnix = (num002*2);
+                                float Mauerlat_V = (float) (Mauerlat_m_pogonnix*0.150*0.150);
+
+                                float Les_V = (Stropil_V+Rigel_V+Kontra_vertikal_V+Kontra_gorizontal_V+Mauerlat_V);
+                                float Les_cena = (num015*Les_V);
+                                float Blyaxa_cena = (num016*S_kriwi);
+                                float Rabota = (num017*S_kriwi);
 
                 TextView textView801 = (TextView) findViewById(R.id.textView801);
                 TextView textView802 = (TextView) findViewById(R.id.textView802);
@@ -8768,16 +8901,16 @@ public class Dvuskat_Activity extends AppCompatActivity {
                                 textView44.setText(String.format(Locale.US, "%.2f", Rigel_m) + "");
                                 textView42.setText(String.format(Locale.US, "%.0f", Rigel_wtuk) + "");
                                 textView4.setText(String.format(Locale.US, "%.2f", Rigel_V) + "");
-                                textView2423.setText(String.format(Locale.US, "%.2f", Kontra_vertikal_m_pogonnix) + "");
+                                textView2423.setText(String.format(Locale.US, "%.0f", Kontra_vertikal_m_pogonnix) + "");
                                 textView24.setText(String.format(Locale.US, "%.2f", Kontra_vertikal_V) + "");
-                                textView4012.setText(String.format(Locale.US, "%.2f", Kontra_gorizontal_m_pogonnix) + "");
+                                textView4012.setText(String.format(Locale.US, "%.0f", Kontra_gorizontal_m_pogonnix) + "");
                                 textView401.setText(String.format(Locale.US, "%.2f", Kontra_gorizontal_V) + "");
                                 textView20.setText(String.format(Locale.US, "%.2f", Mauerlat_m_pogonnix) + "");
                                 textView242.setText(String.format(Locale.US, "%.2f", Mauerlat_V) + "");
                                 textView1426.setText(String.format(Locale.US, "%.2f", Les_V) + "");
-                                textView142.setText(String.format(Locale.US, "%.2f", Les_cena) + "");
-                                textView710.setText(String.format(Locale.US, "%.2f", Blyaxa_cena) + "");
-                                textView301.setText(String.format(Locale.US, "%.2f", Rabota) + "");
+                                textView142.setText(String.format(Locale.US, "%.0f", Les_cena) + "");
+                                textView710.setText(String.format(Locale.US, "%.0f", Blyaxa_cena) + "");
+                                textView301.setText(String.format(Locale.US, "%.0f", Rabota) + "");
 
 
 
@@ -8789,26 +8922,44 @@ public class Dvuskat_Activity extends AppCompatActivity {
             @Override
             public boolean onLongClick(View v) {
 
-                final TextView bill83 = (TextView) findViewById(R.id.textView142);
-                final TextView bill84 = (TextView) findViewById(R.id.textView201);
-                final TextView bill85 = (TextView) findViewById(R.id.textView242);
-                final TextView bill86 = (TextView) findViewById(R.id.textView20);
-                final TextView bill87 = (TextView) findViewById(R.id.textView24);
-                final TextView bill88 = (TextView) findViewById(R.id.textView301);
-                final TextView bill89 = (TextView) findViewById(R.id.textView401);
-                final TextView bill90 = (TextView) findViewById(R.id.textView4);
+                final TextView bill801 = (TextView) findViewById(R.id.textView801);
+                final TextView bill802 = (TextView) findViewById(R.id.textView802);
                 final TextView bill208 = (TextView) findViewById(R.id.textView208);
+                final TextView bill201 = (TextView) findViewById(R.id.textView201);
+                final TextView bill44 = (TextView) findViewById(R.id.textView44);
+                final TextView bill42 = (TextView) findViewById(R.id.textView42);
+                final TextView bill4 = (TextView) findViewById(R.id.textView4);
+                final TextView bill2423 = (TextView) findViewById(R.id.textView2423);
+                final TextView bill24 = (TextView) findViewById(R.id.textView24);
+                final TextView bill4012 = (TextView) findViewById(R.id.textView4012);
+                final TextView bill401 = (TextView) findViewById(R.id.textView401);
+                final TextView bill20 = (TextView) findViewById(R.id.textView20);
+                final TextView bill242 = (TextView) findViewById(R.id.textView242);
+                final TextView bill1426 = (TextView) findViewById(R.id.textView1426);
+                final TextView bill142 = (TextView) findViewById(R.id.textView142);
+                final TextView bill710 = (TextView) findViewById(R.id.textView710);
+                final TextView bill301 = (TextView) findViewById(R.id.textView301);
 
 
-                bill83.setText(00.00 + "");
-                bill84.setText(00.00 + "");
-                bill85.setText(00.00 + "");
-                bill86.setText(00.00 + "");
-                bill87.setText(00.00 + "");
-                bill88.setText(00.00 + "");
-                bill89.setText(00.00 + "");
-                bill90.setText(00.00 + "");
+
+                bill801.setText(00.00 + "");
+                bill802.setText(00.00 + "");
                 bill208.setText(00.00 + "");
+                bill201.setText(00.00 + "");
+                bill44.setText(00.00 + "");
+                bill42.setText(00.00 + "");
+                bill4.setText(00.00 + "");
+                bill2423.setText(00.00 + "");
+                bill24.setText(00.00 + "");
+                bill4012.setText(00.00 + "");
+                bill401.setText(00.00 + "");
+                bill20.setText(00.00 + "");
+                bill242.setText(00.00 + "");
+                bill1426.setText(00.00 + "");
+                bill142.setText(00.00 + "");
+                bill710.setText(00.00 + "");
+                bill301.setText(00.00 + "");
+
 
                Toast toast = Toast.makeText(getApplicationContext(),
                         "Сброс", Toast.LENGTH_SHORT);
@@ -10207,6 +10358,130 @@ public class Dvuskat_Activity extends AppCompatActivity {
         String savedText = sPref3.getString(SAVED_TEXT408, "");
         etText408.setText(savedText);
     }
+    void saveText801() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT801, etText801.getText().toString());
+        ed.commit();
+    }
+    void loadText801() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT801, "");
+        etText801.setText(savedText);
+    }
+    void saveText802() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT802, etText802.getText().toString());
+        ed.commit();
+    }
+    void loadText802() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT802, "");
+        etText802.setText(savedText);
+    }
+    void saveText2423() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT2423, etText2423.getText().toString());
+        ed.commit();
+    }
+    void loadText2423() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT2423, "");
+        etText2423.setText(savedText);
+    }
+
+    void saveText4012() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT4012, etText4012.getText().toString());
+        ed.commit();
+    }
+    void loadText4012() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT4012, "");
+        etText4012.setText(savedText);
+    }
+    void saveText401() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT401, etText401.getText().toString());
+        ed.commit();
+    }
+    void loadText401() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT401, "");
+        etText401.setText(savedText);
+    }
+    void saveText2000() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT2000, etText2000.getText().toString());
+        ed.commit();
+    }
+    void loadText2000() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT2000, "");
+        etText2000.setText(savedText);
+    }
+    void saveText1426() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT1426, etText1426.getText().toString());
+        ed.commit();
+    }
+    void loadText1426() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT1426, "");
+        etText1426.setText(savedText);
+    }
+    void saveText142() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT142, etText142.getText().toString());
+        ed.commit();
+    }
+    void loadText142() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT142, "");
+        etText142.setText(savedText);
+    }
+    void saveText710() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT710, etText710.getText().toString());
+        ed.commit();
+    }
+    void loadText710() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT710, "");
+        etText710.setText(savedText);
+    }
+    void saveText4444() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT4444, etText4444.getText().toString());
+        ed.commit();
+    }
+    void loadText4444() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT4444, "");
+        etText4444.setText(savedText);
+    }
+    void saveText4242() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT4242, etText4242.getText().toString());
+        ed.commit();
+    }
+    void loadText4242() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT4242, "");
+        etText4242.setText(savedText);
+    }
+
+
 
 
 
@@ -10370,6 +10645,18 @@ public class Dvuskat_Activity extends AppCompatActivity {
         saveText257();
 
         saveText408();
+
+        saveText801();
+        saveText802();
+        saveText2423();
+        saveText4012();
+        saveText401();
+        saveText2000();
+        saveText1426();
+        saveText142();
+        saveText710();
+        saveText4444();
+        saveText4242();
 
     }
 
