@@ -926,7 +926,7 @@
                             android:background="@color/colorPrimary"
                             android:text="Расстояние между осями несущих профилей, м:"
                             android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/textViewWir8"
