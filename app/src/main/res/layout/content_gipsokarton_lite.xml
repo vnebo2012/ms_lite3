@@ -1201,7 +1201,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
+                    android:layout_height="wrap_content"
                     android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
                     android:gravity="left"
@@ -1210,8 +1210,10 @@
 
                     <ImageView
                         android:id="@+id/imageView1423"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:scaleType="fitXY"
                         app:srcCompat="@drawable/potolok2" />
 
                 </LinearLayout>

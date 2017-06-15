@@ -175,7 +175,7 @@
                         android:layout_margin="3dp"
                         android:background="@drawable/radius_ob_septika"
                         android:onClick="onClickObSepik"
-                        android:text="Объем септика"
+                        android:text="Септик"
                         android:textColor="@android:color/white"
                         android:textSize="18sp" />
 

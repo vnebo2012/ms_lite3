@@ -15,6 +15,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -29,7 +31,7 @@ import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Locale;
 
-public class Plita2Activity extends AppCompatActivity {
+public class Septik_krug_kirpish_Activity extends AppCompatActivity {
 
 
     Button etText;
@@ -135,6 +137,9 @@ public class Plita2Activity extends AppCompatActivity {
     TextView etText88;
     TextView etText89;
 
+    TextView etText245;
+    TextView etText143;
+
 
 
     Button btnSave, btnLoad;
@@ -235,6 +240,9 @@ public class Plita2Activity extends AppCompatActivity {
     final String SAVED_TEXT86 = "saved_text86";
 
     final String SAVED_TEXT89 = "saved_text89";
+
+    final String SAVED_TEXT245 = "saved_text245";
+    final String SAVED_TEXT143 = "saved_text143";
 
 
 
@@ -344,6 +352,7 @@ public class Plita2Activity extends AppCompatActivity {
 
     private Button btn73;
     private Button btn74;
+    private Button btn75;
 
     private Button btn77;
     private Button btn78;
@@ -454,6 +463,9 @@ public class Plita2Activity extends AppCompatActivity {
     private Button aetText80;
     private Button aetText81;
     private Button aetText82;
+
+    private Button aetText245;
+    private Button aetText143;
 
 
 
@@ -673,8 +685,12 @@ public class Plita2Activity extends AppCompatActivity {
     private TextView final_text88;
     private TextView final_text89;
 
+    private TextView final_text245;
+    private TextView final_text143;
+
     ImageView imageView;
     ImageView imageView1;
+
     InterstitialAd mInterstitialAd;
     ImageButton mNewGameButton;
 
@@ -688,12 +704,12 @@ public class Plita2Activity extends AppCompatActivity {
      * Called when the activity is first created.
      */
 
-    final String MY_SETTINGS = "saved_text_plita2";
+    final String MY_SETTINGS = "saved_text_sept2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_plita2);
+        setContentView(R.layout.activity_septik_krug_kirpish);
 
         mNewGameButton = (ImageButton) findViewById(R.id.dom);
         mInterstitialAd = new InterstitialAd(this);
@@ -705,7 +721,7 @@ public class Plita2Activity extends AppCompatActivity {
                 //requestNewInterstitial();
                 // beginPlayingGame();
 
-                Intent a = new Intent(Plita2Activity.this, Start_Activity.class);
+                Intent a = new Intent(Septik_krug_kirpish_Activity.this, Start_Activity.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(a);
 
@@ -731,7 +747,7 @@ public class Plita2Activity extends AppCompatActivity {
                     }
 
                 } else {
-                    Intent a = new Intent(Plita2Activity.this, Start_Activity.class);
+                    Intent a = new Intent(Septik_krug_kirpish_Activity.this, Start_Activity.class);
                     a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(a);
                 }
@@ -754,10 +770,11 @@ public class Plita2Activity extends AppCompatActivity {
 
 
 
+
         SharedPreferences sp = getSharedPreferences(MY_SETTINGS,
                 Context.MODE_PRIVATE);
         // проверяем, первый ли раз открывается программа
-        boolean hasVisited = sp.getBoolean("hasVisited_stg2", false);
+        boolean hasVisited = sp.getBoolean("saved_text_sept2", false);
 
         if (!hasVisited) {
 
@@ -781,7 +798,17 @@ public class Plita2Activity extends AppCompatActivity {
 
 
 
-
+            final TextView bill23 = (TextView) findViewById(R.id.button97);
+            final TextView bill24 = (TextView) findViewById(R.id.button98);
+            final TextView bill25 = (TextView) findViewById(R.id.button99);
+            final TextView bill26 = (TextView) findViewById(R.id.button100);
+            final TextView bill27 = (TextView) findViewById(R.id.button101);
+            final TextView bill28 = (TextView) findViewById(R.id.button102);
+            final TextView bill29 = (TextView) findViewById(R.id.button103);
+            final TextView bill30 = (TextView) findViewById(R.id.button104);
+            final TextView bill31 = (TextView) findViewById(R.id.button105);
+            final TextView bill32 = (TextView) findViewById(R.id.button11);
+            final TextView bill33 = (TextView) findViewById(R.id.button12);
 
 
 
@@ -805,10 +832,10 @@ public class Plita2Activity extends AppCompatActivity {
             final TextView bill54 = (TextView) findViewById(R.id.button17);
             final TextView bill55 = (TextView) findViewById(R.id.button18);
 
-            final TextView bill56 = (TextView) findViewById(R.id.button21);
-            final TextView bill57 = (TextView) findViewById(R.id.button22);
-            final TextView bill58 = (TextView) findViewById(R.id.button23);
-            final TextView bill59 = (TextView) findViewById(R.id.button24);
+            //final TextView bill56 = (TextView) findViewById(R.id.button21);
+            //final TextView bill57 = (TextView) findViewById(R.id.button22);
+           // final TextView bill58 = (TextView) findViewById(R.id.button23);
+           // final TextView bill59 = (TextView) findViewById(R.id.button24);
 
             final TextView bill60 = (TextView) findViewById(R.id.button27);
             final TextView bill61 = (TextView) findViewById(R.id.button28);
@@ -821,10 +848,10 @@ public class Plita2Activity extends AppCompatActivity {
             final TextView bill67 = (TextView) findViewById(R.id.button20);
             final TextView bill68 = (TextView) findViewById(R.id.button25);
 
-            final TextView bill69 = (TextView) findViewById(R.id.button41);
-            final TextView bill70 = (TextView) findViewById(R.id.button42);
-            final TextView bill71 = (TextView) findViewById(R.id.button43);
-            final TextView bill72 = (TextView) findViewById(R.id.button44);
+            // final TextView bill69 = (TextView) findViewById(R.id.button41);
+            // final TextView bill70 = (TextView) findViewById(R.id.button42);
+            // final TextView bill71 = (TextView) findViewById(R.id.button43);
+            //  final TextView bill72 = (TextView) findViewById(R.id.button44);
 
             final TextView bill73 = (TextView) findViewById(R.id.button45);
             final TextView bill74 = (TextView) findViewById(R.id.button46);
@@ -836,18 +863,20 @@ public class Plita2Activity extends AppCompatActivity {
 
             final TextView bill83 = (TextView) findViewById(R.id.textView14);
             final TextView bill84 = (TextView) findViewById(R.id.textView20);
-            final TextView bill85 = (TextView) findViewById(R.id.textView43);
+            //final TextView bill85 = (TextView) findViewById(R.id.textView43);
             final TextView bill86 = (TextView) findViewById(R.id.textView24);
-            final TextView bill87 = (TextView) findViewById(R.id.textView39);
-            final TextView bill88 = (TextView) findViewById(R.id.textView37);
-            final TextView bill89 = (TextView) findViewById(R.id.textView28);
+            final TextView bill245 = (TextView) findViewById(R.id.textView245);
+            final TextView bill143 = (TextView) findViewById(R.id.textView143);
+           // final TextView bill87 = (TextView) findViewById(R.id.textView39);
+           // final TextView bill88 = (TextView) findViewById(R.id.textView37);
+            //final TextView bill89 = (TextView) findViewById(R.id.textView28);
 
             etText83 = (TextView) findViewById(R.id.textView14);
             etText84 = (TextView) findViewById(R.id.textView20);
-            etText85 = (TextView) findViewById(R.id.textView43);
+           // etText85 = (TextView) findViewById(R.id.textView43);
             etText86 = (TextView) findViewById(R.id.textView24);
 
-            etText89 = (TextView) findViewById(R.id.textView28);
+          //  etText89 = (TextView) findViewById(R.id.textView28);
 
             //final TextView bill75 = (TextView) findViewById(R.id.button36);
             //final TextView bill76 = (TextView) findViewById(R.id.button37);
@@ -864,79 +893,90 @@ public class Plita2Activity extends AppCompatActivity {
 
                                     //a
                                     bill1.setText(0 + "");
-                                    bill2.setText(1 + "");
-                                    bill3.setText(1.5 + "");
-                                    bill4.setText(2 + "");
-                                    bill5.setText(2.5 + "");
+                                    bill2.setText(0.5 + "");
+                                    bill3.setText(0.8 + "");
+                                    bill4.setText(1 + "");
+                                    bill5.setText(2 + "");
                                     bill6.setText(3 + "");
-                                    bill7.setText(4 + "");
-                                    bill8.setText(5 + "");
-                                    bill9.setText(6 + "");
-                                    bill10.setText(10 + "");
-                                    bill11.setText(15 + "");
+                                    bill7.setText(5 + "");
+                                    bill8.setText(10 + "");
+                                    bill9.setText(15 + "");
+                                    bill10.setText(20 + "");
+                                    bill11.setText(30 + "");
 
 
                                     //b
-                                    //bill23.setText(0 + "");
+                                    bill23.setText(0 + "");
+                                    bill24.setText(0.5 + "");
+                                    bill25.setText(0.8 + "");
+                                    bill26.setText(1 + "");
+                                    bill27.setText(2 + "");
+                                    bill28.setText(3 + "");
+                                    bill29.setText(5 + "");
+                                    bill30.setText(10 + "");
+                                    bill31.setText(15 + "");
+                                    bill32.setText(20 + "");
+                                    bill33.setText(30 + "");
 
-                                    //bill33.setText(13 + "");
 
 
-
-                                    bill40.setText(8 + "");
-                                    bill41.setText(10 + "");
-                                    bill42.setText(15 + "");
-                                    bill43.setText(20 + "");
-                                    bill44.setText(25 + "");
-                                    bill45.setText(30 + "");
+                                    bill40.setText(0 + "");
+                                    bill41.setText(0.50 + "");
+                                    bill42.setText(0.60 + "");
+                                    bill43.setText(0.80 + "");
+                                    bill44.setText(1.20 + "");
+                                    bill45.setText(1.50 + "");
 
                                     bill46.setText(0 + "");
-                                    bill47.setText(400 + "");
-                                    bill48.setText(500 + "");
-                                    bill49.setText(550 + "");
-                                    bill50.setText(600 + "");
-                                    bill51.setText(700 + "");
+                                    bill47.setText(1000 + "");
+                                    bill48.setText(1100 + "");
+                                    bill49.setText(1150 + "");
+                                    bill50.setText(1200 + "");
+                                    bill51.setText(1400 + "");
 
 
-                                    bill52.setText(10 + "");
-                                    bill53.setText(12 + "");
-                                    bill54.setText(14 + "");
-                                    bill55.setText(16 + "");
-                                    bill73.setText(18 + "");
-                                    bill74.setText(20 + "");
-
-
-                                    bill60.setText(10 + "");
-                                    bill61.setText(15 + "");
-                                    bill62.setText(20 + "");
-                                    bill63.setText(25 + "");
-                                    bill64.setText(30 + "");
-                                    bill65.setText(35 + "");
-
-                                    bill66.setText(8 + "");
-                                    bill67.setText(10 + "");
-                                    bill68.setText(15 + "");
-
-                                    bill69.setText(1 + "");
-                                    bill72.setText(2 + "");
-                                    bill70.setText(3 + "");
+                                    bill52.setText(248 + "");
+                                    bill53.setText(249 + "");
+                                    bill54.setText(250 + "");
+                                    bill55.setText(260 + "");
+                                    bill73.setText(270 + "");
+                                    bill74.setText(275 + "");
 
 
 
+                                    bill60.setText(115 + "");
+                                    bill61.setText(117 + "");
+                                    bill62.setText(120 + "");
+                                    bill63.setText(125 + "");
+                                    bill64.setText(126 + "");
+                                    bill65.setText(130 + "");
+
+                                    bill66.setText(40 + "");
+                                    bill67.setText(65 + "");
+                                    bill68.setText(75 + "");
+
+                                    //bill69.setText(1 + "");
+                                    // bill72.setText(2 + "");
+                                    // bill70.setText(3 + "");
 
 
 
-                                    bill79.setText(2 + "");
-                                    bill80.setText(5 + "");
-                                    bill81.setText(10 + "");
-                                    bill82.setText(15 + "");
+
+
+
+                                    bill79.setText(9 + "");
+                                    bill80.setText(10 + "");
+                                    bill81.setText(11 + "");
+                                    bill82.setText(12 + "");
 
                                     bill83.setText(00.00 + "");
                                     bill84.setText(00.00 + "");
-                                    bill85.setText(00.00 + "");
+                                    //bill85.setText(00.00 + "");
                                     bill86.setText(00.00 + "");
+                                    bill245.setText(00.00 + "");
+                                    bill143.setText(00.00 + "");
 
-                                    bill89.setText(00.00 + "");
+                                    //bill89.setText(00.00 + "");
 
 
 
@@ -956,7 +996,7 @@ public class Plita2Activity extends AppCompatActivity {
             // startActivity(intent);
 
             SharedPreferences.Editor e = sp.edit();
-            e.putBoolean("hasVisited_stg2", true);
+            e.putBoolean("saved_text_sept2", true);
             e.commit(); // не забудьте подтвердить изменения
         }
 
@@ -977,7 +1017,17 @@ public class Plita2Activity extends AppCompatActivity {
 
 
 
-
+        etText23 = (Button) findViewById(R.id.button97);
+        etText24 = (Button) findViewById(R.id.button98);
+        etText25 = (Button) findViewById(R.id.button99);
+        etText26 = (Button) findViewById(R.id.button100);
+        etText27 = (Button) findViewById(R.id.button101);
+        etText28 = (Button) findViewById(R.id.button102);
+        etText29 = (Button) findViewById(R.id.button103);
+        etText30 = (Button) findViewById(R.id.button104);
+        etText31 = (Button) findViewById(R.id.button105);
+        etText32 = (Button) findViewById(R.id.button11);
+        etText33 = (Button) findViewById(R.id.button12);
 
 
         etText40 = (Button) findViewById(R.id.button61);
@@ -1021,8 +1071,8 @@ public class Plita2Activity extends AppCompatActivity {
         etText73 = (Button) findViewById(R.id.button45);
         etText74 = (Button) findViewById(R.id.button46);
 
-        etText77 = (Button) findViewById(R.id.button36);
-        etText78 = (Button) findViewById(R.id.button37);
+        //etText77 = (Button) findViewById(R.id.button36);
+       // etText78 = (Button) findViewById(R.id.button37);
 
         etText79 = (Button) findViewById(R.id.button26);
         etText80 = (Button) findViewById(R.id.button33);
@@ -1031,10 +1081,15 @@ public class Plita2Activity extends AppCompatActivity {
 
         etText83 = (TextView) findViewById(R.id.textView14);
         etText84 = (TextView) findViewById(R.id.textView20);
-        etText85 = (TextView) findViewById(R.id.textView43);
+       // etText85 = (TextView) findViewById(R.id.textView43);
         etText86 = (TextView) findViewById(R.id.textView24);
+        etText245 = (TextView) findViewById(R.id.textView245);
+        etText143 = (TextView) findViewById(R.id.textView143);
 
-        etText89 = (TextView) findViewById(R.id.textView28);
+       // etText89 = (TextView) findViewById(R.id.textView28);
+
+
+
 
 
         loadText();
@@ -1048,6 +1103,24 @@ public class Plita2Activity extends AppCompatActivity {
         loadText9();
         loadText10();
         loadText11();
+
+
+
+
+
+
+
+        loadText23();
+        loadText24();
+        loadText25();
+        loadText26();
+        loadText27();
+        loadText28();
+        loadText29();
+        loadText30();
+        loadText31();
+        loadText32();
+        loadText33();
 
         loadText40();
         loadText41();
@@ -1081,8 +1154,7 @@ public class Plita2Activity extends AppCompatActivity {
         loadText67();
         loadText68();
 
-        loadText69();
-        loadText70();
+
 
 
 
@@ -1096,10 +1168,12 @@ public class Plita2Activity extends AppCompatActivity {
 
         loadText83();
         loadText84();
-        loadText85();
+        //loadText85();
         loadText86();
+        loadText245();
+        loadText143();
 
-        loadText89();
+       // loadText89();
 
 
 
@@ -1562,7 +1636,496 @@ public class Plita2Activity extends AppCompatActivity {
 
 
 
+        //region секция 3
+        button123 = (Button) findViewById(R.id.button97);
+        final_text23 = (TextView) findViewById(R.id.button97);
+        button123.setOnLongClickListener(new View.OnLongClickListener() {
+                                             //region button123
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
 
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text23.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        //endregion
+
+        button124 = (Button) findViewById(R.id.button98);
+        final_text24 = (TextView) findViewById(R.id.button98);
+        button124.setOnLongClickListener(new View.OnLongClickListener() {
+                                             //region button124
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text24.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        //endregion
+
+        button125 = (Button) findViewById(R.id.button99);
+        final_text25 = (TextView) findViewById(R.id.button99);
+        button125.setOnLongClickListener(new View.OnLongClickListener() {
+                                             //region button114
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text25.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        //endregion
+
+        button126 = (Button) findViewById(R.id.button100);
+        final_text26 = (TextView) findViewById(R.id.button100);
+        button126.setOnLongClickListener(new View.OnLongClickListener() {
+                                             //region button126
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text26.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        //endregion
+
+        button127 = (Button) findViewById(R.id.button101);
+        final_text27 = (TextView) findViewById(R.id.button101);
+        button127.setOnLongClickListener(new View.OnLongClickListener() {
+                                             //region button127
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text27.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        //endregion
+
+        button128 = (Button) findViewById(R.id.button102);
+        final_text28 = (TextView) findViewById(R.id.button102);
+        button128.setOnLongClickListener(new View.OnLongClickListener() {
+                                             //region button128
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text28.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        //endregion
+
+        button129 = (Button) findViewById(R.id.button103);
+        final_text29 = (TextView) findViewById(R.id.button103);
+        button129.setOnLongClickListener(new View.OnLongClickListener() {
+                                             //region button129
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text29.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        //endregion
+
+        button130 = (Button) findViewById(R.id.button104);
+        final_text30 = (TextView) findViewById(R.id.button104);
+        button130.setOnLongClickListener(new View.OnLongClickListener() {
+                                             //region button130
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text30.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        //endregion
+
+        button131 = (Button) findViewById(R.id.button105);
+        final_text31 = (TextView) findViewById(R.id.button105);
+        button131.setOnLongClickListener(new View.OnLongClickListener() {
+                                             //region button131
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text31.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        //endregion
+
+        button132 = (Button) findViewById(R.id.button11);
+        final_text32 = (TextView) findViewById(R.id.button11);
+        button132.setOnLongClickListener(new View.OnLongClickListener() {
+                                             //region button132
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text32.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        //endregion
+
+        button133 = (Button) findViewById(R.id.button12);
+        final_text33 = (TextView) findViewById(R.id.button12);
+        button133.setOnLongClickListener(new View.OnLongClickListener() {
+                                             //region button133
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text33.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+
+
+        //endregion
+
+
+
+
+//endregion
 
 
 
@@ -2113,20 +2676,34 @@ public class Plita2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt5, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
-                                                 //final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text52.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
                                                                      }
                                                                  });
-
                                                  AlertDialog alertDialog = mDialogBuilder.create();
                                                  alertDialog.show();
                                                  return false;
@@ -2143,20 +2720,34 @@ public class Plita2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt5, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
-                                                 //final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text53.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
                                                                      }
                                                                  });
-
                                                  AlertDialog alertDialog = mDialogBuilder.create();
                                                  alertDialog.show();
                                                  return false;
@@ -2173,20 +2764,34 @@ public class Plita2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt5, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
-                                                 //final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text54.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
                                                                      }
                                                                  });
-
                                                  AlertDialog alertDialog = mDialogBuilder.create();
                                                  alertDialog.show();
                                                  return false;
@@ -2203,20 +2808,34 @@ public class Plita2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt5, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
-                                                 //final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text55.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
                                                                      }
                                                                  });
-
                                                  AlertDialog alertDialog = mDialogBuilder.create();
                                                  alertDialog.show();
                                                  return false;
@@ -2247,7 +2866,7 @@ public class Plita2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt6, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt4, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2258,9 +2877,23 @@ public class Plita2Activity extends AppCompatActivity {
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text60.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
                                                                      }
                                                                  });
-
                                                  AlertDialog alertDialog = mDialogBuilder.create();
                                                  alertDialog.show();
                                                  return false;
@@ -2277,7 +2910,7 @@ public class Plita2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt6, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt4, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2288,9 +2921,23 @@ public class Plita2Activity extends AppCompatActivity {
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text61.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
                                                                      }
                                                                  });
-
                                                  AlertDialog alertDialog = mDialogBuilder.create();
                                                  alertDialog.show();
                                                  return false;
@@ -2307,7 +2954,7 @@ public class Plita2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt6, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt4, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2318,9 +2965,23 @@ public class Plita2Activity extends AppCompatActivity {
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text62.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
                                                                      }
                                                                  });
-
                                                  AlertDialog alertDialog = mDialogBuilder.create();
                                                  alertDialog.show();
                                                  return false;
@@ -2337,7 +2998,7 @@ public class Plita2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt6, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt4, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2348,9 +3009,23 @@ public class Plita2Activity extends AppCompatActivity {
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text63.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
                                                                      }
                                                                  });
-
                                                  AlertDialog alertDialog = mDialogBuilder.create();
                                                  alertDialog.show();
                                                  return false;
@@ -2371,7 +3046,7 @@ public class Plita2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt6, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt4, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2382,9 +3057,23 @@ public class Plita2Activity extends AppCompatActivity {
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text64.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
                                                                      }
                                                                  });
-
                                                  AlertDialog alertDialog = mDialogBuilder.create();
                                                  alertDialog.show();
                                                  return false;
@@ -2401,7 +3090,7 @@ public class Plita2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt6, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt4, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2412,9 +3101,23 @@ public class Plita2Activity extends AppCompatActivity {
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text65.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
                                                                      }
                                                                  });
-
                                                  AlertDialog alertDialog = mDialogBuilder.create();
                                                  alertDialog.show();
                                                  return false;
@@ -2560,94 +3263,7 @@ public class Plita2Activity extends AppCompatActivity {
         //endregion
 
         //region секция 10
-        button169 = (Button) findViewById(R.id.button41);
-        final_text69 = (TextView) findViewById(R.id.button41);
-        button169.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button123
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt6, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
 
-                                                 //final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                     }
-                                                                 });
-
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        //endregion
-
-        button170 = (Button) findViewById(R.id.button42);
-        final_text70 = (TextView) findViewById(R.id.button42);
-        button170.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button124
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt6, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 //final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                     }
-                                                                 });
-
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-        //endregion
-
-
-        button172 = (Button) findViewById(R.id.button44);
-        final_text72 = (TextView) findViewById(R.id.button44);
-        button172.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button114
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt6, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 //final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                     }
-                                                                 });
-
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
 
         //endregion
 
@@ -2661,20 +3277,34 @@ public class Plita2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt5, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
-                                                 //final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text73.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
                                                                      }
                                                                  });
-
                                                  AlertDialog alertDialog = mDialogBuilder.create();
                                                  alertDialog.show();
                                                  return false;
@@ -2691,20 +3321,34 @@ public class Plita2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt5, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
-                                                 //final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-}
-                                                                 });
 
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text74.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
                                                  AlertDialog alertDialog = mDialogBuilder.create();
                                                  alertDialog.show();
                                                  return false;
@@ -2733,29 +3377,15 @@ public class Plita2Activity extends AppCompatActivity {
 
         imageView1 = (ImageView) findViewById(R.id.imageView24);
         imageView1.setOnClickListener(new View.OnClickListener() {
-                                             //region button124
-                                             @Override
-                                             public void onClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt7, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
+                                          //region button124
+                                          @Override
+                                          public void onClick(View arg0) {
+                                              Toast toast = Toast.makeText(getApplicationContext(),
+                                                      "Оптимальный слой 10 - 12 мм", Toast.LENGTH_LONG);
 
-                                                 //final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                     }
-                                                                 });
-
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return;
-                                             }
-                                         }
+                                              toast.show();
+                                          }
+                                      }
         );
         //endregion
 
@@ -2923,7 +3553,7 @@ public class Plita2Activity extends AppCompatActivity {
                                                                              dialog.cancel();
                                                                          }else
                                                                          {
-                                                                             final_text15.setText(userInput.getText());
+                                                                             final_text82.setText(userInput.getText());
                                                                          }}
                                                                  })
                                                          .setNegativeButton("Отмена",
@@ -2986,12 +3616,13 @@ public class Plita2Activity extends AppCompatActivity {
         //endregion
 
         //region секция btn34-btn51
-        btn34 = (Button) findViewById(R.id.button52);
+       /* btn34 = (Button) findViewById(R.id.button52);
         btn35 = (Button) findViewById(R.id.button53);
         btn36 = (Button) findViewById(R.id.button54);
         btn37 = (Button) findViewById(R.id.button55);
         btn38 = (Button) findViewById(R.id.button59);
         btn39 = (Button) findViewById(R.id.button60);
+        */
 
         btn40 = (Button) findViewById(R.id.button61);
         btn41 = (Button) findViewById(R.id.button62);
@@ -3014,6 +3645,9 @@ public class Plita2Activity extends AppCompatActivity {
         btn54 = (Button) findViewById(R.id.button17);
         btn55 = (Button) findViewById(R.id.button18);
 
+        Button btn83 = (Button) findViewById(R.id.button45);
+        Button btn84 = (Button) findViewById(R.id.button46);
+
 
         btn60 = (Button) findViewById(R.id.button27);
         btn61 = (Button) findViewById(R.id.button28);
@@ -3026,16 +3660,16 @@ public class Plita2Activity extends AppCompatActivity {
         btn67 = (Button) findViewById(R.id.button20);
         btn68 = (Button) findViewById(R.id.button25);
 
-        btn69 = (Button) findViewById(R.id.button41);
-        btn70 = (Button) findViewById(R.id.button42);
+        //btn69 = (Button) findViewById(R.id.button41);
+       // btn70 = (Button) findViewById(R.id.button42);
         btn71 = (Button) findViewById(R.id.button43);
-        btn72 = (Button) findViewById(R.id.button44);
+       // btn72 = (Button) findViewById(R.id.button44);
 
-        btn73 = (Button) findViewById(R.id.button45);
-        btn74 = (Button) findViewById(R.id.button46);
+       // btn73 = (Button) findViewById(R.id.button450);
+        btn74 = (Button) findViewById(R.id.button460);
+        //btn75 = (Button) findViewById(R.id.button461);
 
-        btn77 = (Button) findViewById(R.id.button36);
-        btn78 = (Button) findViewById(R.id.button37);
+
 
         btn79 = (Button) findViewById(R.id.button26);
         btn80 = (Button) findViewById(R.id.button33);
@@ -3048,14 +3682,14 @@ public class Plita2Activity extends AppCompatActivity {
 
         //region секция wir_1-wir_10
         wir_1 = (TextView) findViewById(R.id.textViewWir);
-       // wir_2 = (TextView) findViewById(R.id.textViewWir2);
+        // wir_2 = (TextView) findViewById(R.id.textViewWir2);
         wir_3 = (TextView) findViewById(R.id.textViewWir3);
-        wir_4 = (TextView) findViewById(R.id.textViewWir4);
+        //wir_4 = (TextView) findViewById(R.id.textViewWir4);
         wir_5 = (TextView) findViewById(R.id.textViewWir5);
         wir_6 = (TextView) findViewById(R.id.textViewWir6);
 
         wir_7 = (TextView) findViewById(R.id.textViewWir7);
-        wir_8 = (TextView) findViewById(R.id.textViewWir8);
+       // wir_8 = (TextView) findViewById(R.id.textViewWir8);
         wir_9 = (TextView) findViewById(R.id.textViewWir9);
         wir_10 = (TextView) findViewById(R.id.textViewWir10);
         wir_11 = (TextView) findViewById(R.id.textViewWir11);
@@ -3072,7 +3706,7 @@ public class Plita2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                long mills = 15L;
+                long mills = 50L;
                 Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibrator.vibrate(mills);
 
@@ -3098,7 +3732,17 @@ public class Plita2Activity extends AppCompatActivity {
 
 
 
-
+                    final TextView bill23 = (TextView) findViewById(R.id.button97);
+                    final TextView bill24 = (TextView) findViewById(R.id.button98);
+                    final TextView bill25 = (TextView) findViewById(R.id.button99);
+                    final TextView bill26 = (TextView) findViewById(R.id.button100);
+                    final TextView bill27 = (TextView) findViewById(R.id.button101);
+                    final TextView bill28 = (TextView) findViewById(R.id.button102);
+                    final TextView bill29 = (TextView) findViewById(R.id.button103);
+                    final TextView bill30 = (TextView) findViewById(R.id.button104);
+                    final TextView bill31 = (TextView) findViewById(R.id.button105);
+                    final TextView bill32 = (TextView) findViewById(R.id.button11);
+                    final TextView bill33 = (TextView) findViewById(R.id.button12);
 
 
 
@@ -3122,10 +3766,10 @@ public class Plita2Activity extends AppCompatActivity {
                     final TextView bill54 = (TextView) findViewById(R.id.button17);
                     final TextView bill55 = (TextView) findViewById(R.id.button18);
 
-                    final TextView bill56 = (TextView) findViewById(R.id.button21);
-                    final TextView bill57 = (TextView) findViewById(R.id.button22);
-                    final TextView bill58 = (TextView) findViewById(R.id.button23);
-                    final TextView bill59 = (TextView) findViewById(R.id.button24);
+                    //final TextView bill56 = (TextView) findViewById(R.id.button21);
+                    //final TextView bill57 = (TextView) findViewById(R.id.button22);
+                    // final TextView bill58 = (TextView) findViewById(R.id.button23);
+                    // final TextView bill59 = (TextView) findViewById(R.id.button24);
 
                     final TextView bill60 = (TextView) findViewById(R.id.button27);
                     final TextView bill61 = (TextView) findViewById(R.id.button28);
@@ -3138,10 +3782,10 @@ public class Plita2Activity extends AppCompatActivity {
                     final TextView bill67 = (TextView) findViewById(R.id.button20);
                     final TextView bill68 = (TextView) findViewById(R.id.button25);
 
-                    final TextView bill69 = (TextView) findViewById(R.id.button41);
-                    final TextView bill70 = (TextView) findViewById(R.id.button42);
-                    final TextView bill71 = (TextView) findViewById(R.id.button43);
-                    final TextView bill72 = (TextView) findViewById(R.id.button44);
+                    // final TextView bill69 = (TextView) findViewById(R.id.button41);
+                    // final TextView bill70 = (TextView) findViewById(R.id.button42);
+                    // final TextView bill71 = (TextView) findViewById(R.id.button43);
+                    //  final TextView bill72 = (TextView) findViewById(R.id.button44);
 
                     final TextView bill73 = (TextView) findViewById(R.id.button45);
                     final TextView bill74 = (TextView) findViewById(R.id.button46);
@@ -3153,18 +3797,20 @@ public class Plita2Activity extends AppCompatActivity {
 
                     final TextView bill83 = (TextView) findViewById(R.id.textView14);
                     final TextView bill84 = (TextView) findViewById(R.id.textView20);
-                    final TextView bill85 = (TextView) findViewById(R.id.textView43);
+                    //final TextView bill85 = (TextView) findViewById(R.id.textView43);
                     final TextView bill86 = (TextView) findViewById(R.id.textView24);
-                    final TextView bill87 = (TextView) findViewById(R.id.textView39);
-                    final TextView bill88 = (TextView) findViewById(R.id.textView37);
-                    final TextView bill89 = (TextView) findViewById(R.id.textView28);
+                    final TextView bill245 = (TextView) findViewById(R.id.textView245);
+                    final TextView bill143 = (TextView) findViewById(R.id.textView143);
+                    // final TextView bill87 = (TextView) findViewById(R.id.textView39);
+                    // final TextView bill88 = (TextView) findViewById(R.id.textView37);
+                    //final TextView bill89 = (TextView) findViewById(R.id.textView28);
 
                     etText83 = (TextView) findViewById(R.id.textView14);
                     etText84 = (TextView) findViewById(R.id.textView20);
-                    etText85 = (TextView) findViewById(R.id.textView43);
+                    // etText85 = (TextView) findViewById(R.id.textView43);
                     etText86 = (TextView) findViewById(R.id.textView24);
 
-                    etText89 = (TextView) findViewById(R.id.textView28);
+                    //  etText89 = (TextView) findViewById(R.id.textView28);
 
                     //final TextView bill75 = (TextView) findViewById(R.id.button36);
                     //final TextView bill76 = (TextView) findViewById(R.id.button37);
@@ -3177,80 +3823,87 @@ public class Plita2Activity extends AppCompatActivity {
 
                     //a
                     bill1.setText(0 + "");
-                    bill2.setText(1 + "");
-                    bill3.setText(1.5 + "");
-                    bill4.setText(2 + "");
-                    bill5.setText(2.5 + "");
+                    bill2.setText(0.5 + "");
+                    bill3.setText(0.8 + "");
+                    bill4.setText(1 + "");
+                    bill5.setText(2 + "");
                     bill6.setText(3 + "");
-                    bill7.setText(4 + "");
-                    bill8.setText(5 + "");
-                    bill9.setText(6 + "");
-                    bill10.setText(10 + "");
-                    bill11.setText(15 + "");
+                    bill7.setText(5 + "");
+                    bill8.setText(10 + "");
+                    bill9.setText(15 + "");
+                    bill10.setText(20 + "");
+                    bill11.setText(30 + "");
 
 
                     //b
-                    //bill23.setText(0 + "");
+                    bill23.setText(0 + "");
+                    bill24.setText(0.5 + "");
+                    bill25.setText(0.8 + "");
+                    bill26.setText(1 + "");
+                    bill27.setText(2 + "");
+                    bill28.setText(3 + "");
+                    bill29.setText(5 + "");
+                    bill30.setText(10 + "");
+                    bill31.setText(15 + "");
+                    bill32.setText(20 + "");
+                    bill33.setText(30 + "");
 
-                    //bill33.setText(13 + "");
 
 
-
-                    bill40.setText(8 + "");
-                    bill41.setText(10 + "");
-                    bill42.setText(15 + "");
-                    bill43.setText(20 + "");
-                    bill44.setText(25 + "");
-                    bill45.setText(30 + "");
+                    bill40.setText(0 + "");
+                    bill41.setText(0.50 + "");
+                    bill42.setText(0.60 + "");
+                    bill43.setText(0.80 + "");
+                    bill44.setText(1.20 + "");
+                    bill45.setText(1.50 + "");
 
                     bill46.setText(0 + "");
-                    bill47.setText(400 + "");
-                    bill48.setText(500 + "");
-                    bill49.setText(550 + "");
-                    bill50.setText(600 + "");
-                    bill51.setText(700 + "");
+                    bill47.setText(1000 + "");
+                    bill48.setText(1100 + "");
+                    bill49.setText(1150 + "");
+                    bill50.setText(1200 + "");
+                    bill51.setText(1400 + "");
 
 
-                    bill52.setText(10 + "");
-                    bill53.setText(12 + "");
-                    bill54.setText(14 + "");
-                    bill55.setText(16 + "");
-                    bill73.setText(18 + "");
-                    bill74.setText(20 + "");
-
-
-                    bill60.setText(10 + "");
-                    bill61.setText(15 + "");
-                    bill62.setText(20 + "");
-                    bill63.setText(25 + "");
-                    bill64.setText(30 + "");
-                    bill65.setText(35 + "");
-
-                    bill66.setText(8 + "");
-                    bill67.setText(10 + "");
-                    bill68.setText(15 + "");
-
-                    bill69.setText(1 + "");
-                    bill72.setText(2 + "");
-                    bill70.setText(3 + "");
+                    bill52.setText(248 + "");
+                    bill53.setText(249 + "");
+                    bill54.setText(250 + "");
+                    bill55.setText(260 + "");
+                    bill73.setText(270 + "");
+                    bill74.setText(275 + "");
 
 
 
+                    bill60.setText(115 + "");
+                    bill61.setText(117 + "");
+                    bill62.setText(120 + "");
+                    bill63.setText(125 + "");
+                    bill64.setText(126 + "");
+                    bill65.setText(130 + "");
+
+                    bill66.setText(40 + "");
+                    bill67.setText(65 + "");
+                    bill68.setText(75 + "");
+
+                    //bill69.setText(1 + "");
+                    // bill72.setText(2 + "");
+                    // bill70.setText(3 + "");
 
 
 
-                    bill79.setText(2 + "");
-                    bill80.setText(5 + "");
-                    bill81.setText(10 + "");
-                    bill82.setText(15 + "");
+
+
+
+                    bill79.setText(9 + "");
+                    bill80.setText(10 + "");
+                    bill81.setText(11 + "");
+                    bill82.setText(12 + "");
 
                     bill83.setText(00.00 + "");
                     bill84.setText(00.00 + "");
-                    bill85.setText(00.00 + "");
+                    //bill85.setText(00.00 + "");
                     bill86.setText(00.00 + "");
-
-                    bill89.setText(00.00 + "");
-
+                    bill245.setText(0.0 + "");
 
 
 
@@ -3258,8 +3911,8 @@ public class Plita2Activity extends AppCompatActivity {
                 }else
                 {
 
-                switch (v.getId()) {
 
+                switch (v.getId()) {
 
                     //region секция 1.1 (case R.id.button10:)
                     case R.id.button10:
@@ -3268,10 +3921,13 @@ public class Plita2Activity extends AppCompatActivity {
                         float num001 = Float.parseFloat(aetText1.getText().toString());
                         float w = (float) num001;
                         textView001.setText(String.format(Locale.US, "%.2f", w) + "");
-                        //Animation anim1 = AnimationUtils.loadAnimation(
-                        //          getApplicationContext(), R.anim.sms_anim);
-                        //  final Button button1 = (Button) findViewById(R.id.button10);
-                        //   button1.startAnimation(anim1);
+
+                        Animation anim1 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button1 = (Button) findViewById(R.id.button10);
+                        button1.startAnimation(anim1);
+
+
                         break;
 
                     case R.id.button2:
@@ -3280,10 +3936,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num002 = Float.parseFloat(aetText2.getText().toString());
                         float w2 = (float) num002;
                         textView002.setText(String.format(Locale.US, "%.2f", w2) + "");
-                        // Animation anim2 = AnimationUtils.loadAnimation(
-                        //         getApplicationContext(), R.anim.sms_anim);
-                        //  final Button button2 = (Button) findViewById(R.id.button2);
-                        //  button2.startAnimation(anim2);
+                         Animation anim2 = AnimationUtils.loadAnimation(
+                                 getApplicationContext(), R.anim.sms_anim);
+                          final Button button2 = (Button) findViewById(R.id.button2);
+                          button2.startAnimation(anim2);
+
                         break;
 
                     case R.id.button:
@@ -3292,10 +3949,12 @@ public class Plita2Activity extends AppCompatActivity {
                         float num003 = Float.parseFloat(aetText3.getText().toString());
                         float w3 = (float) num003;
                         textView003.setText(String.format(Locale.US, "%.2f", w3) + "");
-                        // Animation anim3 = AnimationUtils.loadAnimation(
-                        //          getApplicationContext(), R.anim.sms_anim);
-                        //  final Button button3 = (Button) findViewById(R.id.button);
-                        //   button3.startAnimation(anim3);
+                         Animation anim3 = AnimationUtils.loadAnimation(
+                                  getApplicationContext(), R.anim.sms_anim);
+                          final Button button3 = (Button) findViewById(R.id.button);
+                           button3.startAnimation(anim3);
+
+
                         break;
 
 
@@ -3305,10 +3964,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num004 = Float.parseFloat(aetText4.getText().toString());
                         float w4 = (float) num004;
                         textView004.setText(String.format(Locale.US, "%.2f", w4) + "");
-                        //  Animation anim4 = AnimationUtils.loadAnimation(
-                        //           getApplicationContext(), R.anim.sms_anim);
-                        //   final Button button4 = (Button) findViewById(R.id.button3);
-                        //   button4.startAnimation(anim4);
+                          Animation anim4 = AnimationUtils.loadAnimation(
+                                   getApplicationContext(), R.anim.sms_anim);
+                           final Button button4 = (Button) findViewById(R.id.button3);
+                           button4.startAnimation(anim4);
+
                         break;
 
 
@@ -3318,10 +3978,12 @@ public class Plita2Activity extends AppCompatActivity {
                         float num005 = Float.parseFloat(aetText5.getText().toString());
                         float w5 = (float) num005;
                         textView005.setText(String.format(Locale.US, "%.2f", w5) + "");
-                        // Animation anim5 = AnimationUtils.loadAnimation(
-                        //          getApplicationContext(), R.anim.sms_anim);
-                        //  final Button button5 = (Button) findViewById(R.id.button5);
-                        //   button5.startAnimation(anim5);
+
+                        Animation anim5 = AnimationUtils.loadAnimation(
+                                  getApplicationContext(), R.anim.sms_anim);
+                          final Button button5 = (Button) findViewById(R.id.button5);
+                           button5.startAnimation(anim5);
+
                         break;
 
 
@@ -3331,10 +3993,10 @@ public class Plita2Activity extends AppCompatActivity {
                         float num006 = Float.parseFloat(aetText6.getText().toString());
                         float w6 = (float) num006;
                         textView006.setText(String.format(Locale.US, "%.2f", w6) + "");
-                        // Animation anim6 = AnimationUtils.loadAnimation(
-                        //         getApplicationContext(), R.anim.sms_anim);
-                        //  final Button button6 = (Button) findViewById(R.id.button6);
-                        //  button6.startAnimation(anim6);
+                         Animation anim6 = AnimationUtils.loadAnimation(
+                                 getApplicationContext(), R.anim.sms_anim);
+                          final Button button6 = (Button) findViewById(R.id.button6);
+                          button6.startAnimation(anim6);
                         break;
 
 
@@ -3344,10 +4006,10 @@ public class Plita2Activity extends AppCompatActivity {
                         float num007 = Float.parseFloat(aetText7.getText().toString());
                         float w7 = (float) num007;
                         textView007.setText(String.format(Locale.US, "%.2f", w7) + "");
-                        //Animation anim7 = AnimationUtils.loadAnimation(
-                        //         getApplicationContext(), R.anim.sms_anim);
-                        //  final Button button7 = (Button) findViewById(R.id.button7);
-                        //   button7.startAnimation(anim7);
+                        Animation anim7 = AnimationUtils.loadAnimation(
+                                 getApplicationContext(), R.anim.sms_anim);
+                          final Button button7 = (Button) findViewById(R.id.button7);
+                           button7.startAnimation(anim7);
                         break;
 
 
@@ -3357,10 +4019,10 @@ public class Plita2Activity extends AppCompatActivity {
                         float num008 = Float.parseFloat(aetText8.getText().toString());
                         float w8 = (float) num008;
                         textView008.setText(String.format(Locale.US, "%.2f", w8) + "");
-                        //   Animation anim8 = AnimationUtils.loadAnimation(
-                        //           getApplicationContext(), R.anim.sms_anim);
-                        //   final Button button8 = (Button) findViewById(R.id.button38);
-                        //   button8.startAnimation(anim8);
+                          Animation anim8 = AnimationUtils.loadAnimation(
+                                   getApplicationContext(), R.anim.sms_anim);
+                          final Button button8 = (Button) findViewById(R.id.button38);
+                           button8.startAnimation(anim8);
                         break;
 
 
@@ -3370,10 +4032,10 @@ public class Plita2Activity extends AppCompatActivity {
                         float num009 = Float.parseFloat(aetText9.getText().toString());
                         float w9 = (float) num009;
                         textView009.setText(String.format(Locale.US, "%.2f", w9) + "");
-                        // Animation anim9 = AnimationUtils.loadAnimation(
-                        //         getApplicationContext(), R.anim.sms_anim);
-                        // final Button button9 = (Button) findViewById(R.id.button40);
-                        //  button9.startAnimation(anim9);
+                         Animation anim9 = AnimationUtils.loadAnimation(
+                                 getApplicationContext(), R.anim.sms_anim);
+                         final Button button9 = (Button) findViewById(R.id.button40);
+                          button9.startAnimation(anim9);
                         break;
 
 
@@ -3383,10 +4045,10 @@ public class Plita2Activity extends AppCompatActivity {
                         float num010 = Float.parseFloat(aetText10.getText().toString());
                         float w10 = (float) num010;
                         textView010.setText(String.format(Locale.US, "%.2f", w10) + "");
-                        //  Animation anim10 = AnimationUtils.loadAnimation(
-                        //           getApplicationContext(), R.anim.sms_anim);
-                        //   final Button button10 = (Button) findViewById(R.id.button39);
-                        //   button10.startAnimation(anim10);
+                          Animation anim10 = AnimationUtils.loadAnimation(
+                                   getApplicationContext(), R.anim.sms_anim);
+                           final Button button10 = (Button) findViewById(R.id.button39);
+                           button10.startAnimation(anim10);
                         break;
 
                     case R.id.button8:
@@ -3395,21 +4057,168 @@ public class Plita2Activity extends AppCompatActivity {
                         float num011 = Float.parseFloat(aetText11.getText().toString());
                         float w11 = (float) num011;
                         textView011.setText(String.format(Locale.US, "%.2f", w11) + "");
-                        //  Animation anim11 = AnimationUtils.loadAnimation(
-                        //           getApplicationContext(), R.anim.sms_anim);
-                        //   final Button button11 = (Button) findViewById(R.id.button8);
-                        //    button11.startAnimation(anim11);
+                          Animation anim11 = AnimationUtils.loadAnimation(
+                                   getApplicationContext(), R.anim.sms_anim);
+                           final Button button11 = (Button) findViewById(R.id.button8);
+                            button11.startAnimation(anim11);
                         break;
 
                     //endregion
 
 
 
+                    //region секция 3.1
+                    case R.id.button97:
+                        TextView textView023 = (TextView) findViewById(R.id.textViewWir3);
+                        aetText23 = (Button) findViewById(R.id.button97);
+                        float num023 = Float.parseFloat(aetText23.getText().toString());
+                        float w23 = (float) num023;
+                        textView023.setText(String.format(Locale.US, "%.2f", w23) + "");
+                        Animation anim12 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button12 = (Button) findViewById(R.id.button97);
+                        button12.startAnimation(anim12);
+                        break;
 
+                    case R.id.button98:
+                        TextView textView024 = (TextView) findViewById(R.id.textViewWir3);
+                        aetText24 = (Button) findViewById(R.id.button98);
+                        float num024 = Float.parseFloat(aetText24.getText().toString());
+                        float w24 = (float) num024;
+                        textView024.setText(String.format(Locale.US, "%.2f", w24) + "");
+                        Animation anim13 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button13 = (Button) findViewById(R.id.button98);
+                        button13.startAnimation(anim13);
+                        break;
+
+                    case R.id.button99:
+                        TextView textView025 = (TextView) findViewById(R.id.textViewWir3);
+                        aetText25 = (Button) findViewById(R.id.button99);
+                        float num025 = Float.parseFloat(aetText25.getText().toString());
+                        float w25 = (float) num025;
+                        textView025.setText(String.format(Locale.US, "%.2f", w25) + "");
+                        Animation anim14 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button14 = (Button) findViewById(R.id.button99);
+                        button14.startAnimation(anim14);
+                        break;
+
+
+                    case R.id.button100:
+                        TextView textView026 = (TextView) findViewById(R.id.textViewWir3);
+                        aetText26 = (Button) findViewById(R.id.button100);
+                        float num026 = Float.parseFloat(aetText26.getText().toString());
+                        float w26 = (float) num026;
+                        textView026.setText(String.format(Locale.US, "%.2f", w26) + "");
+
+                        Animation anim15 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button15 = (Button) findViewById(R.id.button100);
+                        button15.startAnimation(anim15);
+                        break;
+
+
+                    case R.id.button101:
+                        TextView textView027 = (TextView) findViewById(R.id.textViewWir3);
+                        aetText27 = (Button) findViewById(R.id.button101);
+                        float num027 = Float.parseFloat(aetText27.getText().toString());
+                        float w27 = (float) num027;
+                        textView027.setText(String.format(Locale.US, "%.2f", w27) + "");
+
+                        Animation anim16 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button16 = (Button) findViewById(R.id.button101);
+                        button16.startAnimation(anim16);
+                        break;
+
+
+                    case R.id.button102:
+                        TextView textView028 = (TextView) findViewById(R.id.textViewWir3);
+                        aetText28 = (Button) findViewById(R.id.button102);
+                        float num028 = Float.parseFloat(aetText28.getText().toString());
+                        float w28 = (float) num028;
+                        textView028.setText(String.format(Locale.US, "%.2f", w28) + "");
+
+                        Animation anim17 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button17 = (Button) findViewById(R.id.button102);
+                        button17.startAnimation(anim17);
+                        break;
+
+
+                    case R.id.button103:
+                        TextView textView029 = (TextView) findViewById(R.id.textViewWir3);
+                        aetText29 = (Button) findViewById(R.id.button103);
+                        float num029 = Float.parseFloat(aetText29.getText().toString());
+                        float w29 = (float) num029;
+                        textView029.setText(String.format(Locale.US, "%.2f", w29) + "");
+
+                        Animation anim18 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button18 = (Button) findViewById(R.id.button103);
+                        button18.startAnimation(anim18);
+                        break;
+
+
+                    case R.id.button104:
+                        TextView textView030 = (TextView) findViewById(R.id.textViewWir3);
+                        aetText30 = (Button) findViewById(R.id.button104);
+                        float num030 = Float.parseFloat(aetText30.getText().toString());
+                        float w30 = (float) num030;
+                        textView030.setText(String.format(Locale.US, "%.2f", w30) + "");
+                        Animation anim19 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button19 = (Button) findViewById(R.id.button104);
+                        button19.startAnimation(anim19);
+                        break;
+
+
+                    case R.id.button105:
+                        TextView textView031 = (TextView) findViewById(R.id.textViewWir3);
+                        aetText31 = (Button) findViewById(R.id.button105);
+                        float num031 = Float.parseFloat(aetText31.getText().toString());
+                        float w31 = (float) num031;
+                        textView031.setText(String.format(Locale.US, "%.2f", w31) + "");
+                        Animation anim20 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button20 = (Button) findViewById(R.id.button105);
+                        button20.startAnimation(anim20);
+                        break;
+
+
+                    case R.id.button11:
+                        TextView textView032 = (TextView) findViewById(R.id.textViewWir3);
+                        aetText32 = (Button) findViewById(R.id.button11);
+                        float num032 = Float.parseFloat(aetText32.getText().toString());
+                        float w32 = (float) num032;
+                        textView032.setText(String.format(Locale.US, "%.2f", w32) + "");
+
+                        Animation anim21 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button21 = (Button) findViewById(R.id.button11);
+                        button21.startAnimation(anim21);
+                        break;
+
+                    case R.id.button12:
+                        TextView textView033 = (TextView) findViewById(R.id.textViewWir3);
+                        aetText33 = (Button) findViewById(R.id.button12);
+                        float num033 = Float.parseFloat(aetText33.getText().toString());
+                        float w33 = (float) num033;
+                        textView033.setText(String.format(Locale.US, "%.2f", w33) + "");
+
+                        Animation anim22 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button22 = (Button) findViewById(R.id.button12);
+                        button22.startAnimation(anim22);
+                        break;
+
+                    //endregion
 
 
                     //region секция 4.1
-                    case R.id.button52:
+
+                   /* case R.id.button52:
                         TextView textView034 = (TextView) findViewById(R.id.textViewWir4);
                         aetText34 = (Button) findViewById(R.id.button52);
                         float num034 = Float.parseFloat(aetText34.getText().toString());
@@ -3459,6 +4268,7 @@ public class Plita2Activity extends AppCompatActivity {
                         float w39 = (float) num039;
                         textView039.setText(String.format(Locale.US, "%.2f", w39) + "");
                         break;
+                        */
 
 
 
@@ -3472,6 +4282,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num040 = Float.parseFloat(aetText40.getText().toString());
                         float w40 = (float) num040;
                         textView040.setText(String.format(Locale.US, "%.2f", w40) + "");
+
+                        Animation anim23 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button23 = (Button) findViewById(R.id.button61);
+                        button23.startAnimation(anim23);
                         break;
 
                     case R.id.button62:
@@ -3480,6 +4295,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num041 = Float.parseFloat(aetText41.getText().toString());
                         float w41 = (float) num041;
                         textView041.setText(String.format(Locale.US, "%.2f", w41) + "");
+
+                        Animation anim24 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button24 = (Button) findViewById(R.id.button62);
+                        button24.startAnimation(anim24);
                         break;
 
                     case R.id.button63:
@@ -3488,6 +4308,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num042 = Float.parseFloat(aetText42.getText().toString());
                         float w42 = (float) num042;
                         textView042.setText(String.format(Locale.US, "%.2f", w42) + "");
+
+                        Animation anim25 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button25 = (Button) findViewById(R.id.button63);
+                        button25.startAnimation(anim25);
                         break;
 
 
@@ -3497,6 +4322,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num043 = Float.parseFloat(aetText43.getText().toString());
                         float w43 = (float) num043;
                         textView043.setText(String.format(Locale.US, "%.2f", w43) + "");
+
+                        Animation anim26 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button26 = (Button) findViewById(R.id.button64);
+                        button26.startAnimation(anim26);
                         break;
 
 
@@ -3506,6 +4336,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num044 = Float.parseFloat(aetText44.getText().toString());
                         float w44 = (float) num044;
                         textView044.setText(String.format(Locale.US, "%.2f", w44) + "");
+
+                        Animation anim27 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button27 = (Button) findViewById(R.id.button65);
+                        button27.startAnimation(anim27);
                         break;
 
 
@@ -3515,6 +4350,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num045 = Float.parseFloat(aetText45.getText().toString());
                         float w45 = (float) num045;
                         textView045.setText(String.format(Locale.US, "%.2f", w45) + "");
+
+                        Animation anim28 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button28 = (Button) findViewById(R.id.button66);
+                        button28.startAnimation(anim28);
                         break;
 
                     //endregion
@@ -3526,6 +4366,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num046 = Float.parseFloat(aetText46.getText().toString());
                         float w46 = (float) num046;
                         textView046.setText(String.format(Locale.US, "%.2f", w46) + "");
+
+                        Animation anim29 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button29 = (Button) findViewById(R.id.button70);
+                        button29.startAnimation(anim29);
                         break;
 
                     case R.id.button71:
@@ -3534,6 +4379,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num047 = Float.parseFloat(aetText47.getText().toString());
                         float w47 = (float) num047;
                         textView047.setText(String.format(Locale.US, "%.2f", w47) + "");
+
+                        Animation anim30 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button30 = (Button) findViewById(R.id.button71);
+                        button30.startAnimation(anim30);
                         break;
 
                     case R.id.button72:
@@ -3542,6 +4392,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num048 = Float.parseFloat(aetText48.getText().toString());
                         float w48 = (float) num048;
                         textView048.setText(String.format(Locale.US, "%.2f", w48) + "");
+
+                        Animation anim31 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button31 = (Button) findViewById(R.id.button72);
+                        button31.startAnimation(anim31);
                         break;
 
 
@@ -3551,6 +4406,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num049 = Float.parseFloat(aetText49.getText().toString());
                         float w49 = (float) num049;
                         textView049.setText(String.format(Locale.US, "%.2f", w49) + "");
+
+                        Animation anim32 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button32 = (Button) findViewById(R.id.button73);
+                        button32.startAnimation(anim32);
                         break;
 
 
@@ -3560,6 +4420,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num050 = Float.parseFloat(aetText50.getText().toString());
                         float w50 = (float) num050;
                         textView050.setText(String.format(Locale.US, "%.2f", w50) + "");
+
+                        Animation anim33 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button33 = (Button) findViewById(R.id.button74);
+                        button33.startAnimation(anim33);
                         break;
 
 
@@ -3569,6 +4434,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num051 = Float.parseFloat(aetText51.getText().toString());
                         float w51 = (float) num051;
                         textView051.setText(String.format(Locale.US, "%.2f", w51) + "");
+
+                        Animation anim34 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button34 = (Button) findViewById(R.id.button75);
+                        button34.startAnimation(anim34);
                         break;
 
                     //endregion
@@ -3580,6 +4450,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num052 = Float.parseFloat(aetText52.getText().toString());
                         float w52 = (float) num052;
                         textView052.setText(String.format(Locale.US, "%.0f", w52) + "");
+
+                        Animation anim35 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button35 = (Button) findViewById(R.id.button15);
+                        button35.startAnimation(anim35);
                         break;
 
                     case R.id.button16:
@@ -3588,6 +4463,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num053 = Float.parseFloat(aetText53.getText().toString());
                         float w53 = (float) num053;
                         textView053.setText(String.format(Locale.US, "%.0f", w53) + "");
+
+                        Animation anim36 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button36 = (Button) findViewById(R.id.button16);
+                        button36.startAnimation(anim36);
                         break;
 
                     case R.id.button17:
@@ -3596,6 +4476,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num054 = Float.parseFloat(aetText54.getText().toString());
                         float w54 = (float) num054;
                         textView054.setText(String.format(Locale.US, "%.0f", w54) + "");
+
+                        Animation anim37 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button37 = (Button) findViewById(R.id.button17);
+                        button37.startAnimation(anim37);
                         break;
 
 
@@ -3605,12 +4490,45 @@ public class Plita2Activity extends AppCompatActivity {
                         float num055 = Float.parseFloat(aetText55.getText().toString());
                         float w55 = (float) num055;
                         textView055.setText(String.format(Locale.US, "%.0f", w55) + "");
+
+                        Animation anim38 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button38 = (Button) findViewById(R.id.button18);
+                        button38.startAnimation(anim38);
+                        break;
+
+                    case R.id.button45:
+                        TextView textView1073 = (TextView) findViewById(R.id.textViewWir7);
+                        Button aetText156 = (Button) findViewById(R.id.button45);
+                        float num1073 = Float.parseFloat(aetText156.getText().toString());
+                        float w173 = (float) num1073;
+                        textView1073.setText(String.format(Locale.US, "%.0f", w173) + "");
+
+                        Animation anim73 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button73 = (Button) findViewById(R.id.button45);
+                        button73.startAnimation(anim73);
+                        break;
+
+                    case R.id.button46:
+                        TextView textView1074 = (TextView) findViewById(R.id.textViewWir7);
+                        Button aetText157 = (Button) findViewById(R.id.button45);
+                        aetText157 = (Button) findViewById(R.id.button46);
+                        float num1074 = Float.parseFloat(aetText157.getText().toString());
+                        float w174 = (float) num1074;
+                        textView1074.setText(String.format(Locale.US, "%.0f", w174) + "");
+
+                        Animation anim74 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button74 = (Button) findViewById(R.id.button46);
+                        button74.startAnimation(anim74);
                         break;
 
 
                     //endregion
 
                     //region секция 8.1
+                   /*
                     case R.id.button21:
                         TextView textView056 = (TextView) findViewById(R.id.textViewWir8);
                         aetText56 = (Button) findViewById(R.id.button21);
@@ -3643,6 +4561,7 @@ public class Plita2Activity extends AppCompatActivity {
                         float w59 = (float) num059;
                         textView059.setText(String.format(Locale.US, "%.0f", w59) + "");
                         break;
+                        */
 
 
                     //endregion
@@ -3654,6 +4573,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num060 = Float.parseFloat(aetText60.getText().toString());
                         float w60 = (float) num060;
                         textView060.setText(String.format(Locale.US, "%.0f", w60) + "");
+
+                        Animation anim39 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button39 = (Button) findViewById(R.id.button27);
+                        button39.startAnimation(anim39);
                         break;
 
                     case R.id.button28:
@@ -3662,6 +4586,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num061 = Float.parseFloat(aetText61.getText().toString());
                         float w61 = (float) num061;
                         textView061.setText(String.format(Locale.US, "%.0f", w61) + "");
+
+                        Animation anim40 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button40 = (Button) findViewById(R.id.button28);
+                        button40.startAnimation(anim40);
                         break;
 
                     case R.id.button29:
@@ -3670,6 +4599,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num062 = Float.parseFloat(aetText62.getText().toString());
                         float w62 = (float) num062;
                         textView062.setText(String.format(Locale.US, "%.0f", w62) + "");
+
+                        Animation anim41 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button41 = (Button) findViewById(R.id.button29);
+                        button41.startAnimation(anim41);
                         break;
 
 
@@ -3679,6 +4613,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num063 = Float.parseFloat(aetText63.getText().toString());
                         float w63 = (float) num063;
                         textView063.setText(String.format(Locale.US, "%.0f", w63) + "");
+
+                        Animation anim42 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button42 = (Button) findViewById(R.id.button30);
+                        button42.startAnimation(anim42);
                         break;
 
 
@@ -3688,6 +4627,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num064 = Float.parseFloat(aetText64.getText().toString());
                         float w64 = (float) num064;
                         textView064.setText(String.format(Locale.US, "%.0f", w64) + "");
+
+                        Animation anim43 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button43 = (Button) findViewById(R.id.button31);
+                        button43.startAnimation(anim43);
                         break;
 
 
@@ -3697,6 +4641,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num065 = Float.parseFloat(aetText65.getText().toString());
                         float w65 = (float) num065;
                         textView065.setText(String.format(Locale.US, "%.0f", w65) + "");
+
+                        Animation anim44 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button44 = (Button) findViewById(R.id.button32);
+                        button44.startAnimation(anim44);
                         break;
 
                     //endregion
@@ -3708,6 +4657,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num066 = Float.parseFloat(aetText66.getText().toString());
                         float w66 = (float) num066;
                         textView066.setText(String.format(Locale.US, "%.2f", w66) + "");
+
+                        Animation anim45 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button45 = (Button) findViewById(R.id.button19);
+                        button45.startAnimation(anim45);
                         break;
 
                     case R.id.button20:
@@ -3716,6 +4670,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num067 = Float.parseFloat(aetText67.getText().toString());
                         float w67 = (float) num067;
                         textView067.setText(String.format(Locale.US, "%.2f", w67) + "");
+
+                        Animation anim46 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button46 = (Button) findViewById(R.id.button20);
+                        button46.startAnimation(anim46);
                         break;
 
                     case R.id.button25:
@@ -3724,6 +4683,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float num068 = Float.parseFloat(aetText68.getText().toString());
                         float w68 = (float) num068;
                         textView068.setText(String.format(Locale.US, "%.2f", w68) + "");
+
+                        Animation anim47 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button47 = (Button) findViewById(R.id.button25);
+                        button47.startAnimation(anim47);
                         break;
 
 
@@ -3733,57 +4697,123 @@ public class Plita2Activity extends AppCompatActivity {
                     //region секция 11.1
                     case R.id.button41:
                         TextView textView069 = (TextView) findViewById(R.id.textViewWir11);
+                        TextView textView0690 = (TextView) findViewById(R.id.textView9);
                         aetText69 = (Button) findViewById(R.id.button41);
                         float num069 = Float.parseFloat(aetText69.getText().toString());
                         float w69 = (float) num069;
                         textView069.setText(String.format(Locale.US, "%.0f", w69) + "");
-                        imageView.setImageResource(R.drawable.arm1);
+                        textView069.setText(String.format(Locale.US, "%.0f", w69) + "");
+                        textView0690.setText("На ребро в один ряд");
+                        imageView.setImageResource(R.drawable.odin_narebro);
+
+                        Animation anim48 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button48 = (Button) findViewById(R.id.button41);
+                        button48.startAnimation(anim48);
                         break;
 
                     case R.id.button42:
                         TextView textView070 = (TextView) findViewById(R.id.textViewWir11);
+                        TextView textView0700 = (TextView) findViewById(R.id.textView9);
                         aetText70 = (Button) findViewById(R.id.button42);
                         float num070 = Float.parseFloat(aetText70.getText().toString());
                         float w70 = (float) num070;
                         textView070.setText(String.format(Locale.US, "%.0f", w70) + "");
-                        imageView.setImageResource(R.drawable.arm3);
+                        textView0700.setText("На ребро в два ряда");
+                        imageView.setImageResource(R.drawable.vdvanarebro);
+
+                        Animation anim49 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button49 = (Button) findViewById(R.id.button42);
+                        button49.startAnimation(anim49);
                         break;
 
                     case R.id.button43:
                         TextView textView071 = (TextView) findViewById(R.id.textViewWir11);
+                        TextView textView0710 = (TextView) findViewById(R.id.textView9);
                         aetText71 = (Button) findViewById(R.id.button43);
                         float num071 = Float.parseFloat(aetText71.getText().toString());
                         float w71 = (float) num071;
                         textView071.setText(String.format(Locale.US, "%.0f", w71) + "");
-                        imageView.setImageResource(R.drawable.rad6);
+                        textView0710.setText("В пол кирпича");
+                        imageView.setImageResource(R.drawable.pol_kirp);
+
+                        Animation anim50 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button50 = (Button) findViewById(R.id.button43);
+                        button50.startAnimation(anim50);
                         break;
 
                     case R.id.button44:
                         TextView textView072 = (TextView) findViewById(R.id.textViewWir11);
+                        TextView textView0720 = (TextView) findViewById(R.id.textView9);
                         aetText72 = (Button) findViewById(R.id.button44);
                         float num072 = Float.parseFloat(aetText72.getText().toString());
                         float w72 = (float) num072;
                         textView072.setText(String.format(Locale.US, "%.0f", w72) + "");
-                        imageView.setImageResource(R.drawable.arm2);
+                        textView0720.setText("В полтора кирпича");
+                        imageView.setImageResource(R.drawable.poltora);
+
+                        Animation anim51 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button51 = (Button) findViewById(R.id.button44);
+                        button51.startAnimation(anim51);
                         break;
 
-                    case R.id.button45:
-                        TextView textView073 = (TextView) findViewById(R.id.textViewWir7);
-                        aetText73 = (Button) findViewById(R.id.button45);
+
+
+
+
+
+                    case R.id.button450:
+                        TextView textView073 = (TextView) findViewById(R.id.textViewWir11);
+                        TextView textView0730 = (TextView) findViewById(R.id.textView9);
+                        aetText73 = (Button) findViewById(R.id.button450);
                         float num073 = Float.parseFloat(aetText73.getText().toString());
                         float w73 = (float) num073;
                         textView073.setText(String.format(Locale.US, "%.0f", w73) + "");
+                        textView0730.setText("В полтора (сплошной)");
+                        imageView.setImageResource(R.drawable.poltora_sploshna);
+
+                        Animation anim52 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button52 = (Button) findViewById(R.id.button450);
+                        button52.startAnimation(anim52);
                         break;
 
-                    case R.id.button46:
-                        TextView textView074 = (TextView) findViewById(R.id.textViewWir7);
-                        aetText74 = (Button) findViewById(R.id.button46);
+                    case R.id.button460:
+                        TextView textView074 = (TextView) findViewById(R.id.textViewWir11);
+                        TextView textView0740 = (TextView) findViewById(R.id.textView9);
+                        aetText74 = (Button) findViewById(R.id.button460);
                         float num074 = Float.parseFloat(aetText74.getText().toString());
                         float w74 = (float) num074;
                         textView074.setText(String.format(Locale.US, "%.0f", w74) + "");
+                        textView0740.setText("В кирпич");
+                        imageView.setImageResource(R.drawable.vkirpish);
+
+                        Animation anim53 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button53 = (Button) findViewById(R.id.button460);
+                        button53.startAnimation(anim53);
                         break;
 
-                    case R.id.button36:
+                    case R.id.button461:
+                        TextView textView0751 = (TextView) findViewById(R.id.textViewWir11);
+                        TextView textView0752 = (TextView) findViewById(R.id.textView9);
+                        Button aetText75 = (Button) findViewById(R.id.button461);
+                        float num0751 = Float.parseFloat(aetText75.getText().toString());
+                        float w75 = (float) num0751;
+                        textView0751.setText(String.format(Locale.US, "%.0f", w75) + "");
+                        textView0752.setText("В два кирпича");
+                        imageView.setImageResource(R.drawable.vdvakirpisha);
+
+                        Animation anim54 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button54 = (Button) findViewById(R.id.button461);
+                        button54.startAnimation(anim54);
+                        break;
+
+                    /*case R.id.button36:
                         TextView textView077 = (TextView) findViewById(R.id.textViewWir11);
                         aetText77 = (Button) findViewById(R.id.button36);
                         float num077 = Float.parseFloat(aetText77.getText().toString());
@@ -3799,7 +4829,7 @@ public class Plita2Activity extends AppCompatActivity {
                         float w78 = (float) num078;
                         textView078.setText(String.format(Locale.US, "%.0f", w78) + "");
                         imageView.setImageResource(R.drawable.rad10);
-                        break;
+                        break;*/
 
 
 
@@ -3813,6 +4843,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float w79 = (float) num079;
                         textView079.setText(String.format(Locale.US, "%.0f", w79) + "");
 
+                        Animation anim55 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button55 = (Button) findViewById(R.id.button26);
+                        button55.startAnimation(anim55);
+
                         break;
 
                     case R.id.button33:
@@ -3822,6 +4857,10 @@ public class Plita2Activity extends AppCompatActivity {
                         float w80 = (float) num080;
                         textView080.setText(String.format(Locale.US, "%.0f", w80) + "");
 
+                        Animation anim56 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button56 = (Button) findViewById(R.id.button33);
+                        button56.startAnimation(anim56);
                         break;
 
                     case R.id.button34:
@@ -3831,6 +4870,10 @@ public class Plita2Activity extends AppCompatActivity {
                         float w81 = (float) num081;
                         textView081.setText(String.format(Locale.US, "%.0f", w81) + "");
 
+                        Animation anim57 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button57 = (Button) findViewById(R.id.button34);
+                        button57.startAnimation(anim57);
                         break;
 
                     case R.id.button35:
@@ -3840,6 +4883,11 @@ public class Plita2Activity extends AppCompatActivity {
                         float w82 = (float) num082;
                         textView082.setText(String.format(Locale.US, "%.0f", w82) + "");
                         //imageView.setImageResource(R.drawable.rad8);
+
+                        Animation anim58 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button58 = (Button) findViewById(R.id.button35);
+                        button58.startAnimation(anim58);
                         break;
 
 
@@ -3872,6 +4920,17 @@ public class Plita2Activity extends AppCompatActivity {
 
 
 
+        btn23.setOnClickListener(btnClk);
+        btn24.setOnClickListener(btnClk);
+        btn25.setOnClickListener(btnClk);
+        btn26.setOnClickListener(btnClk);
+        btn27.setOnClickListener(btnClk);
+        btn28.setOnClickListener(btnClk);
+        btn29.setOnClickListener(btnClk);
+        btn30.setOnClickListener(btnClk);
+        btn31.setOnClickListener(btnClk);
+        btn32.setOnClickListener(btnClk);
+        btn33.setOnClickListener(btnClk);
 
 
 
@@ -3908,17 +4967,16 @@ public class Plita2Activity extends AppCompatActivity {
         btn67.setOnClickListener(btnClk);
         btn68.setOnClickListener(btnClk);
 
-        btn69.setOnClickListener(btnClk);
-        btn70.setOnClickListener(btnClk);
 
-        btn72.setOnClickListener(btnClk);
+        btn71.setOnClickListener(btnClk);
+
+        
 
 
-        btn73.setOnClickListener(btnClk);
+
         btn74.setOnClickListener(btnClk);
 
-        //btn75.setOnClickListener(btnClk);
-       // btn76.setOnClickListener(btnClk);
+
 
 
 
@@ -3927,11 +4985,14 @@ public class Plita2Activity extends AppCompatActivity {
         btn80.setOnClickListener(btnClk);
         btn81.setOnClickListener(btnClk);
         btn82.setOnClickListener(btnClk);
+        
+        btn83.setOnClickListener(btnClk);
+        btn84.setOnClickListener(btnClk);
 
 
 
-       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-     //   setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+       // setSupportActionBar(toolbar);
 
 
 
@@ -3941,6 +5002,15 @@ public class Plita2Activity extends AppCompatActivity {
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                long mills = 42L;
+                Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                vibrator.vibrate(mills);
+
+                Animation anim1 = AnimationUtils.loadAnimation(
+                        getApplicationContext(), R.anim.sms_anim2);
+                final FloatingActionButton button1111 = (FloatingActionButton) findViewById(R.id.fab);
+                button1111.startAnimation(anim1);
 
                 TextView aetText1;
                 TextView aetText2;
@@ -3964,11 +5034,13 @@ public class Plita2Activity extends AppCompatActivity {
                 // A
                 aetText1 = (TextView) findViewById(R.id.textViewWir);
 
+                // B
+                aetText3 = (TextView) findViewById(R.id.textViewWir3);
 
-                // толщина плиты перекрытия
+                // площадь оконных или дверных проемов
                 aetText5 = (TextView) findViewById(R.id.textViewWir5);
 
-                // цена бетона
+                // цена кирпича
                 aetText6 = (TextView) findViewById(R.id.textViewWir6);
 
                 // диаметр арматуры
@@ -3980,14 +5052,14 @@ public class Plita2Activity extends AppCompatActivity {
                 // стоимость арматуры
                 aetText10 = (TextView) findViewById(R.id.textViewWir10);
 
-                // количество слоев арматуры
+                // тип кладки
                 aetText11 = (TextView) findViewById(R.id.textViewWir11);
 
-                // % - нахлеста арматуры
+                // толщина слоя раствора
                 aetText12 = (TextView) findViewById(R.id.textViewWir12);
 
                 float num001 = Float.parseFloat(aetText1.getText().toString());
-                //float num003 = Float.parseFloat(aetText3.getText().toString());
+                float num003 = Float.parseFloat(aetText3.getText().toString());
                 float num005 = Float.parseFloat(aetText5.getText().toString());
                 float num006 = Float.parseFloat(aetText6.getText().toString());
                 float num007 = Float.parseFloat(aetText7.getText().toString());
@@ -3997,159 +5069,122 @@ public class Plita2Activity extends AppCompatActivity {
                 float num012 = Float.parseFloat(aetText12.getText().toString());
 
 
-                //обьем бетона
-                float w = (float) ((float) (((num001*num001)*3.14) *(num005 * 0.01)));
-                TextView textView142 = (TextView) findViewById(R.id.textView14);
-                textView142.setText(String.format(Locale.US, "%.2f", w) + "");
+                //количество необходимого кирпича
+
+                float s3 = (num001*num003);
+                /*if (Float.parseFloat(aetText5.getText().toString()) > s3)
+                { Toast toast = Toast.makeText(getApplicationContext(),
+                        "Ошибка!: Проемы не могут быть больше площади стены", Toast.LENGTH_LONG);
+
+                    toast.show();}
+                else {*/
 
 
-                // цена бетона
-                float t = (float) w*(num006);
-                TextView textView144 = (TextView) findViewById(R.id.textView20);
-                textView144.setText(String.format(Locale.US, "%.2f", t) + "");
 
-                float f = 0;
+                if (Float.parseFloat(aetText11.getText().toString()) == 1)
+                {
+                    float x1 = num007;
+                    float x2 = num010;
 
-                if (Float.parseFloat(aetText9.getText().toString()) == 10)
-                {f = (float) 22;
+                    float a_kirp =  (1000/(x1+(num012)));
+                    float b_kirp =  (1000/(x2+(num012)));
+                    float s1m = (a_kirp)*(b_kirp);
+                    float S = (float) (2*3.14)*num001*num003;
 
-                } else if (Float.parseFloat(aetText9.getText().toString()) == 15)
-                {f = (float) 15.33;
+                    float w = (((S)) *(s1m));
+                    float rabota = ((S) *(s1m))*num005;
+                    float V = (float) (3.14*(num003*num003)*num001);
 
-                }else if (Float.parseFloat(aetText9.getText().toString()) == 20)
-                {f = (float) 12;
 
-                }else if (Float.parseFloat(aetText9.getText().toString()) == 25)
-                {f = (float) 10;
+                    //s1m - кирпичин на м2;
+                    TextView textView142 = (TextView) findViewById(R.id.textView14);
+                    textView142.setText(String.format(Locale.US, "%.1f", w) + "");
 
-                }else if (Float.parseFloat(aetText9.getText().toString()) == 30)
-                {f = (float) 8.67;
+                    TextView textView1421 = (TextView) findViewById(R.id.textView245);
+                    textView1421.setText(String.format(Locale.US, "%.1f", rabota) + "");
 
-                }else if (Float.parseFloat(aetText9.getText().toString()) == 35)
-                {f = (float) 7.71;
+                    TextView textView1422 = (TextView) findViewById(R.id.textView143);
+                    textView1422.setText(String.format(Locale.US, "%.1f", V) + "");
+
+                    // цена кирпича
+                    float t = (float) (w*(num006)*0.001);
+                    TextView textView144 = (TextView) findViewById(R.id.textView20);
+                    textView144.setText(String.format(Locale.US, "%.2f", t) + "");
+
+                    // объем раствора
+                    float k1 = (num007+num012);
+
+                    //j1- количество вертикальных полос в метре (3.84) если 250
+                    float j1 = (float) ((1)/(k1*0.001));
+
+                    //Vv1 - обем раствора в этих полосах
+                    float Vv1 = (float) (((num012*0.001)*1*(num009*0.001)*j1));
+
+                    float k2 = (num010+num012);
+                    float j2 = (float) ((1)/(k2*0.001));
+                    float Vv2 = (float) (((num012*0.001)*1*(num009*0.001)*j2));
+
+                    float Vv = (float) ((Vv1+Vv2)*num001*num003);
+
+                    TextView textViewV = (TextView) findViewById(R.id.textView24);
+                    textViewV.setText(String.format(Locale.US, "%.3f", Vv) + "");
                 }
 
-                float num100 = f;
 
-                if (Float.parseFloat(aetText7.getText().toString()) == 10)
-
+                else if (Float.parseFloat(aetText11.getText().toString()) == 2)
                 {
-                    // пагонаж
-                    float m1 = (float) ((((3.14 * (num001*num001))*num100))*num011);
-                    //вес
-                    float e1 = (float) (m1*0.617);
+                    float x1 = num007;
+                    float x2 = num010;
 
-                    float m = (m1+(m1*num012/100));
-                    float e = (e1+(e1*num012/100));
+                    float a_kirp =  (1000/(x1+(num012)));
+                    float b_kirp =  (1000/(x2+(num012)));
+                    float s1m = (a_kirp)*(b_kirp);
+                    float S = (float) (2*3.14)*num001*num003;
 
-                    TextView textView145 = (TextView) findViewById(R.id.textView24);
-                    TextView textView148 = (TextView) findViewById(R.id.textView43);
-                    textView145.setText(String.format(Locale.US, "%.2f", e) + "");
-                    textView148.setText(String.format(Locale.US, "%.2f", m) + "");}
+                    float w = ((S) *(s1m))*2;
+                    float rabota = ((S) *(s1m))*2*num005;
+                    float V = (float) (3.14*(num003*num003)*num001);
 
-                else if (Float.parseFloat(aetText7.getText().toString()) == 12)
-                {
+                    TextView textView142 = (TextView) findViewById(R.id.textView14);
+                    textView142.setText(String.format(Locale.US, "%.1f", w) + "");
 
-                    // пагонаж
-                    float m1 = (float) ((((3.14 * (num001*num001))*num100))*num011);
-                    //вес
-                    float e1 = (float) (m1*0.888);
+                    TextView textView1421 = (TextView) findViewById(R.id.textView245);
+                    textView1421.setText(String.format(Locale.US, "%.1f", rabota) + "");
 
-                    float m = (m1+(m1*num012/100));
-                    float e = (e1+(e1*num012/100));
+                    TextView textView1422 = (TextView) findViewById(R.id.textView143);
+                    textView1422.setText(String.format(Locale.US, "%.1f", V) + "");
 
-                    TextView textView145 = (TextView) findViewById(R.id.textView24);
-                    TextView textView148 = (TextView) findViewById(R.id.textView43);
-                    textView145.setText(String.format(Locale.US, "%.2f", e) + "");
-                    textView148.setText(String.format(Locale.US, "%.2f", m) + "");}
+                    // цена кирпича
+                    float t = (float) (w*(num006)*0.001);
+                    TextView textView144 = (TextView) findViewById(R.id.textView20);
+                    textView144.setText(String.format(Locale.US, "%.2f", t) + "");
 
-                else if (Float.parseFloat(aetText7.getText().toString()) == 14)
-                {
+                    // объем раствора
+                    float k1 = (num007+num012);
 
-                    // пагонаж
-                    float m1 = (float) ((((3.14 * (num001*num001))*num100))*num011);
-                    //вес
-                    float e1 = (float) (m1*1.210);
+                    //j1- количество вертикальных полос в метре (3.84) если 250
+                    float j1 = (float) ((1)/(k1*0.001));
 
-                    float m = (m1+(m1*num012/100));
-                    float e = (e1+(e1*num012/100));
+                    //Vv1 - обем раствора в этих полосах
+                    float Vv1 = (float) (((num012*0.001)*1*(num009*0.001)*j1));
 
-                    TextView textView145 = (TextView) findViewById(R.id.textView24);
-                    TextView textView148 = (TextView) findViewById(R.id.textView43);
-                    textView145.setText(String.format(Locale.US, "%.2f", e) + "");
-                    textView148.setText(String.format(Locale.US, "%.2f", m) + "");}
+                    float k2 = (num010+num012);
+                    float j2 = (float) ((1)/(k2*0.001));
+                    float Vv2 = (float) (((num012*0.001)*1*(num009*0.001)*j2));
 
-                else if (Float.parseFloat(aetText7.getText().toString()) == 16)
-                {
+                    float Vv = (float) ((Vv1+Vv2)*num001*num003*2);
 
-                    // пагонаж
-                    float m1 = (float) ((((3.14 * (num001*num001))*num100))*num011);
-                    //вес
-                    float e1 = (float) (m1*1.580);
-
-                    float m = (m1+(m1*num012/100));
-                    float e = (e1+(e1*num012/100));
-
-                    TextView textView145 = (TextView) findViewById(R.id.textView24);
-                    TextView textView148 = (TextView) findViewById(R.id.textView43);
-                    textView145.setText(String.format(Locale.US, "%.2f", e) + "");
-                    textView148.setText(String.format(Locale.US, "%.2f", m) + "");}
-
-                else if (Float.parseFloat(aetText7.getText().toString()) == 18)
-                {
-
-                    // пагонаж
-                    float m1 = (float) ((((3.14 * (num001*num001))*num100))*num011);
-                    //вес
-                    float e1 = (float) (m1*2.000);
-
-                    float m = (m1+(m1*num012/100));
-                    float e = (e1+(e1*num012/100));
-
-                    TextView textView145 = (TextView) findViewById(R.id.textView24);
-                    TextView textView148 = (TextView) findViewById(R.id.textView43);
-                    textView145.setText(String.format(Locale.US, "%.2f", e) + "");
-                    textView148.setText(String.format(Locale.US, "%.2f", m) + "");}
-
-                else if (Float.parseFloat(aetText7.getText().toString()) == 20)
-                {
-                    // пагонаж
-                    float m1 = (float) ((((3.14 * (num001*num001))*num100))*num011);
-                    //вес
-                    float e1 = (float) (m1*2.470);
-
-                    float m = (m1+(m1*num012/100));
-                    float e = (e1+(e1*num012/100));
-
-                    TextView textView145 = (TextView) findViewById(R.id.textView24);
-                    TextView textView148 = (TextView) findViewById(R.id.textView43);
-                    textView145.setText(String.format(Locale.US, "%.2f", e) + "");
-                    textView148.setText(String.format(Locale.US, "%.2f", m) + "");
-                }
-
-                // цена арматуры
-
-                TextView text1;
-                text1 = (TextView) findViewById(R.id.textView24);
-                float num01 = Float.parseFloat(text1.getText().toString());
-                float s = (float) (num01)*(num010);
-
-                TextView textView147 = (TextView) findViewById(R.id.textView28);
-                textView147.setText(String.format(Locale.US, "%.2f", s) + "");
-
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Подсчитано", Toast.LENGTH_SHORT);
-
-                toast.show();
+                    TextView textViewV = (TextView) findViewById(R.id.textView24);
+                    textViewV.setText(String.format(Locale.US, "%.3f", Vv) + "");
+                }}
 
 
-                return;
 
 
-                    //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
-                        //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
-                       // .setAction("Action", null).show();
-            }
+                //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
+                //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
+                // .setAction("Action", null).show();
+
         });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -4159,25 +5194,29 @@ public class Plita2Activity extends AppCompatActivity {
 
                 final TextView bill83 = (TextView) findViewById(R.id.textView14);
                 final TextView bill84 = (TextView) findViewById(R.id.textView20);
-                final TextView bill85 = (TextView) findViewById(R.id.textView43);
+               // final TextView bill85 = (TextView) findViewById(R.id.textView43);
                 final TextView bill86 = (TextView) findViewById(R.id.textView24);
-                final TextView bill87 = (TextView) findViewById(R.id.textView39);
-                final TextView bill88 = (TextView) findViewById(R.id.textView37);
-                final TextView bill89 = (TextView) findViewById(R.id.textView28);
+                final TextView bill245 = (TextView) findViewById(R.id.textView245);
+                final TextView bill143 = (TextView) findViewById(R.id.textView143);
+                //final TextView bill87 = (TextView) findViewById(R.id.textView39);
+               // final TextView bill88 = (TextView) findViewById(R.id.textView37);
+               // final TextView bill89 = (TextView) findViewById(R.id.textView28);
 
                 etText83 = (TextView) findViewById(R.id.textView14);
                 etText84 = (TextView) findViewById(R.id.textView20);
-                etText85 = (TextView) findViewById(R.id.textView43);
+              //  etText85 = (TextView) findViewById(R.id.textView43);
                 etText86 = (TextView) findViewById(R.id.textView24);
 
-                etText89 = (TextView) findViewById(R.id.textView28);
+             //   etText89 = (TextView) findViewById(R.id.textView28);
 
                 bill83.setText(00.00 + "");
                 bill84.setText(00.00 + "");
-                bill85.setText(00.00 + "");
+            //    bill85.setText(00.00 + "");
                 bill86.setText(00.00 + "");
+                bill245.setText(00.00 + "");
+                bill143.setText(00.00 + "");
 
-                bill89.setText(00.00 + "");
+               // bill89.setText(00.00 + "");
 
                 Toast toast = Toast.makeText(getApplicationContext(),
                         "Сброс", Toast.LENGTH_SHORT);
@@ -4188,9 +5227,9 @@ public class Plita2Activity extends AppCompatActivity {
             }
 
 
-                //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
-                //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
-                // .setAction("Action", null).show();
+            //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
+            //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
+            // .setAction("Action", null).show();
 
         });
 
@@ -4340,7 +5379,135 @@ public class Plita2Activity extends AppCompatActivity {
 
 
 
+    void saveText23() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT23, etText23.getText().toString());
+        ed.commit();
+        // Toast.makeText(this, "Text saved", Toast.LENGTH_SHORT).show();
+    }
 
+    void loadText23() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT23, "");
+        etText23.setText(savedText);
+        // Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
+    }
+
+    void saveText24() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT24, etText24.getText().toString());
+        ed.commit();
+        // Toast.makeText(this, "Text saved", Toast.LENGTH_SHORT).show();
+    }
+
+    void loadText24() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT24, "");
+        etText24.setText(savedText);
+        // Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
+    }
+
+    void saveText25() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT25, etText25.getText().toString());
+        ed.commit();
+    }
+    void loadText25() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT25, "");
+        etText25.setText(savedText);
+    }
+    void saveText26() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT26, etText26.getText().toString());
+        ed.commit();
+    }
+    void loadText26() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT26, "");
+        etText26.setText(savedText);
+    }
+    void saveText27() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT27, etText27.getText().toString());
+        ed.commit();
+    }
+    void loadText27() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT27, "");
+        etText27.setText(savedText);
+    }
+    void saveText28() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT28, etText28.getText().toString());
+        ed.commit();
+    }
+    void loadText28() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT28, "");
+        etText28.setText(savedText);
+    }
+    void saveText29() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT29, etText29.getText().toString());
+        ed.commit();
+    }
+    void loadText29() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT29, "");
+        etText29.setText(savedText);
+    }
+    void saveText30() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT30, etText30.getText().toString());
+        ed.commit();
+    }
+    void loadText30() {
+        sPref = getPreferences(MODE_PRIVATE);
+        String savedText = sPref.getString(SAVED_TEXT30, "");
+        etText30.setText(savedText);
+    }
+    void saveText31() {
+        sPref = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref.edit();
+        ed.putString(SAVED_TEXT31, etText31.getText().toString());
+        ed.commit();
+    }
+    void loadText31() {
+        sPref = getPreferences(MODE_PRIVATE);
+        String savedText = sPref.getString(SAVED_TEXT31, "");
+        etText31.setText(savedText);
+    }
+    void saveText32() {
+        sPref = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref.edit();
+        ed.putString(SAVED_TEXT32, etText32.getText().toString());
+        ed.commit();
+    }
+    void loadText32() {
+        sPref = getPreferences(MODE_PRIVATE);
+        String savedText = sPref.getString(SAVED_TEXT32, "");
+        etText32.setText(savedText);
+    }
+    void saveText33() {
+        sPref = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref.edit();
+        ed.putString(SAVED_TEXT33, etText33.getText().toString());
+        ed.commit();
+    }
+    void loadText33() {
+        sPref = getPreferences(MODE_PRIVATE);
+        String savedText = sPref.getString(SAVED_TEXT33, "");
+        etText33.setText(savedText);
+    }
 
     void saveText40() {
         sPref = getPreferences(MODE_PRIVATE);
@@ -4620,22 +5787,7 @@ public class Plita2Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT69, etText69.getText().toString());
         ed.commit();
     }
-    void loadText69() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT69, "");
-        etText69.setText(savedText);
-    }
-    void saveText70() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT70, etText70.getText().toString());
-        ed.commit();
-    }
-    void loadText70() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT70, "");
-        etText70.setText(savedText);
-    }
+
 
 
 
@@ -4720,7 +5872,7 @@ public class Plita2Activity extends AppCompatActivity {
         String savedText = sPref.getString(SAVED_TEXT83, "");
         etText83.setText(savedText);
     }
- void saveText84() {
+    void saveText84() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT84, etText84.getText().toString());
@@ -4731,18 +5883,8 @@ public class Plita2Activity extends AppCompatActivity {
         String savedText = sPref.getString(SAVED_TEXT84, "");
         etText84.setText(savedText);
     }
- void saveText85() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT85, etText85.getText().toString());
-        ed.commit();
-    }
-    void loadText85() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT85, "");
-        etText85.setText(savedText);
-    }
- void saveText86() {
+
+    void saveText86() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT86, etText86.getText().toString());
@@ -4754,18 +5896,33 @@ public class Plita2Activity extends AppCompatActivity {
         etText86.setText(savedText);
     }
 
-
- void saveText89() {
+    void saveText245() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT89, etText89.getText().toString());
+        ed.putString(SAVED_TEXT245, etText245.getText().toString());
         ed.commit();
     }
-    void loadText89() {
+    void loadText245() {
         sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT89, "");
-        etText89.setText(savedText);
+        String savedText = sPref.getString(SAVED_TEXT245, "");
+        etText245.setText(savedText);
     }
+
+
+    void saveText143() {
+        sPref = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref.edit();
+        ed.putString(SAVED_TEXT143, etText143.getText().toString());
+        ed.commit();
+    }
+    void loadText143() {
+        sPref = getPreferences(MODE_PRIVATE);
+        String savedText = sPref.getString(SAVED_TEXT143, "");
+        etText143.setText(savedText);
+    }
+
+
+
 
 
 
@@ -4783,7 +5940,29 @@ public class Plita2Activity extends AppCompatActivity {
         saveText9();
         saveText10();
         saveText11();
+        //saveText12();
+        //saveText13();
+        //saveText14();
+        //saveText15();
+        //saveText16();
+        //saveText17();
+        // saveText18();
+        //  saveText19();
+        //  saveText20();
+        //  saveText21();
+        //  saveText22();
 
+        saveText23();
+        saveText24();
+        saveText25();
+        saveText26();
+        saveText27();
+        saveText28();
+        saveText29();
+        saveText30();
+        saveText31();
+        saveText32();
+        saveText33();
 
         saveText40();
         saveText41();
@@ -4816,8 +5995,7 @@ public class Plita2Activity extends AppCompatActivity {
         saveText67();
         saveText68();
 
-        saveText69();
-        saveText70();
+
 
 
 
@@ -4831,13 +6009,20 @@ public class Plita2Activity extends AppCompatActivity {
 
         saveText83();
         saveText84();
-        saveText85();
+        //saveText85();
         saveText86();
+        saveText245();
+        saveText143();
 
-        saveText89();
+        //saveText89();
 
     }
 
+    public void onClickBloki2(View view) {
+        Intent a = new Intent(this,BlokiActivity.class);
+       a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+       startActivity(a);
+    }
     @Override
     public void onBackPressed() {
 
@@ -4860,13 +6045,6 @@ public class Plita2Activity extends AppCompatActivity {
         }
     }
     //do something on back.
-
-    public void onClick222(View view) {
-        Intent a = new Intent(this,Plita1Activity.class);
-        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(a);
-    }
-
     public void onClick_Ca(View view) {
         long mills = 15L;
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
@@ -4895,17 +6073,7 @@ public class Plita2Activity extends AppCompatActivity {
         }
     }
 
-    public void onClick_sep(View view) {
-
-        long mills = 15L;
-        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        vibrator.vibrate(mills);
-
-        Intent a = new Intent(this, Septik_krug_kirpish_Activity.class);
-        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(a);
-    }
- public void onClick_dim(View view) {
+    public void onClick_dim(View view) {
 
         long mills = 15L;
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
@@ -4915,7 +6083,16 @@ public class Plita2Activity extends AppCompatActivity {
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
     }
+public void onClick_kri(View view) {
 
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
+        Intent a = new Intent(this, Plita2Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+    }
 
     private void requestNewInterstitial() {
 
@@ -4929,10 +6106,6 @@ public class Plita2Activity extends AppCompatActivity {
     private void beginPlayingGame() {
         // Play for a while, then display the New Game Button
     }
-
-
-
-
-
-
 }
+
+

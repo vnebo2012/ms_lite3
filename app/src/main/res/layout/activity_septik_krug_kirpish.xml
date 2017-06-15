@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Plita2Activity">
+    tools:context=".Septik_krug_kirpish_Activity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -42,19 +42,19 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="Плита"
+                    android:text="Септик из кирпича"
                     android:textColor="@android:color/white"
                     android:textSize="18dp"
                     android:textStyle="bold|italic" />
 
                 <ImageButton
-                    android:id="@+id/sep"
+                    android:id="@+id/krishka"
                     android:layout_width="46dp"
                     android:layout_height="46dp"
                     android:background="@color/colorPrimary"
-                    android:onClick="onClick_sep"
+                    android:onClick="onClick_kri"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/sep_krug_kir" />
+                    android:src="@drawable/plita2" />
 
                 <ImageButton
                     android:id="@+id/calk"
@@ -71,7 +71,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_plita2" />
+    <include layout="@layout/content_septik_krug_kirpish" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:onClick="onEmailClick"
-        android:src="@mipmap/ic_dor" />
+        android:src="@mipmap/ic_dor"
+        android:onClick="onEmailClick" />
 
 </android.support.design.widget.CoordinatorLayout>
