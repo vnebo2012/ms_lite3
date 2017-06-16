@@ -17,7 +17,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -79,13 +79,19 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
        // mAdView = (AdView) findViewById(R.id.adView);
         //AdRequest adRequest = new AdRequest.Builder().build();
        // mAdView.loadAd(adRequest);
-        Button button = (Button) findViewById(R.id.button21);
-        Button button2 = (Button) findViewById(R.id.button210);
-        Button button3 = (Button) findViewById(R.id.button400);
-        Button button4 = (Button) findViewById(R.id.button2412);
-        Button button5 = (Button) findViewById(R.id.button4010);
-        Button button6 = (Button) findViewById(R.id.button407);
-        Button button7 = (Button) findViewById(R.id.button4071);
+        //Button button = (Button) findViewById(R.id.button21);
+        //Button button2 = (Button) findViewById(R.id.button210);
+        //Button button3 = (Button) findViewById(R.id.button400);
+        ImageButton button4 = (ImageButton) findViewById(R.id.button2412);
+        ImageButton button = (ImageButton) findViewById(R.id.button2413);
+        ImageButton button2 = (ImageButton) findViewById(R.id.button2414);
+        ImageButton button5 = (ImageButton) findViewById(R.id.button4010);
+        ImageButton button3 = (ImageButton) findViewById(R.id.button400);
+        ImageButton button6 = (ImageButton) findViewById(R.id.button407);
+        ImageButton button7 = (ImageButton) findViewById(R.id.button4071);
+        //Button button5 = (Button) findViewById(R.id.button4010);
+        //Button button6 = (Button) findViewById(R.id.button407);
+        //Button button7 = (Button) findViewById(R.id.button4071);
         TextView textView = (TextView) findViewById(R.id.textView);
 
 
