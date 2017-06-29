@@ -15,10 +15,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
         android:layout_alignParentTop="true"
-        android:orientation="horizontal">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginLeft="9dp"
                     android:layout_marginRight="9dp"
-                    android:layout_marginTop="9dp"
+                    android:layout_marginTop="18dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -46,6 +46,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -58,8 +59,8 @@
 
                             <ImageButton
                                 android:id="@+id/button2412"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/plita_ico"
@@ -74,8 +75,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Плита"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="11sp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -87,8 +88,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/armo_ico"
@@ -103,8 +104,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Армопояс"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="11sp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
 
                         </LinearLayout>
 
@@ -117,8 +118,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton2"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/kirpi_ico"
@@ -133,14 +134,15 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Кирпич"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="11sp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -153,8 +155,8 @@
 
                             <ImageButton
                                 android:id="@+id/button2413"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/plitka_ico"
@@ -169,8 +171,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Плитка"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="11sp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -182,8 +184,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton11"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/kriwa_ico"
@@ -198,8 +200,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Крыша"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="11sp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
 
                         </LinearLayout>
 
@@ -212,8 +214,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton29"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/bloki_ico"
@@ -228,14 +230,15 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Блоки"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="11sp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -248,8 +251,8 @@
 
                             <ImageButton
                                 android:id="@+id/button24124"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/penop_ico"
@@ -264,8 +267,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Пенопласт"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="11sp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -277,8 +280,8 @@
 
                             <ImageButton
                                 android:id="@+id/button4010"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/kraska_ico"
@@ -293,8 +296,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Покраска"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="11sp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
 
                         </LinearLayout>
 
@@ -307,8 +310,8 @@
 
                             <ImageButton
                                 android:id="@+id/button407"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/gipsokart_ico"
@@ -323,7 +326,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Гипсокартон"
-                                android:textColor="@color/colorBlack"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="11sp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -331,6 +334,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -343,8 +347,8 @@
 
                             <ImageButton
                                 android:id="@+id/button400"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/wpaklo_ico"
@@ -359,8 +363,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Шпаклевка"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="11sp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -372,8 +376,8 @@
 
                             <ImageButton
                                 android:id="@+id/button4071"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/sept_ico"
@@ -388,8 +392,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Септик"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="11sp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
 
                         </LinearLayout>
 
@@ -402,8 +406,8 @@
 
                             <ImageButton
                                 android:id="@+id/button2414"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/styagka_ico"
@@ -418,14 +422,15 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Стяжка"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="11sp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -437,9 +442,40 @@
 
 
                             <ImageButton
+                                android:id="@+id/imageButton3"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/radiators_ico"
+
+                                android:onClick="onClickRadiators"
+                                android:text="Плита перекрытия"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/textView561"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Радиатор"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageButton
                                 android:id="@+id/button24121"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/elektro_ico"
@@ -453,9 +489,36 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Электромонтаж"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="11sp" />
+                                android:text="Электро"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textView562"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Электро"
+                                android:textColor="@color/colorWite"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                     </LinearLayout>
