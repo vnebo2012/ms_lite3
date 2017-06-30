@@ -121,7 +121,16 @@
 
         <activity
             android:name=".Ob_Septik_Activity"
-            android:label="@string/title_activity_st222452"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Demontag_steni_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Demontag_potolki_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Demontag_pola_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
 
     </application>

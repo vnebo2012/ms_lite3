@@ -504,20 +504,25 @@
                             android:orientation="vertical">
 
 
-                            <LinearLayout
-                                android:layout_width="65dp"
-                                android:layout_height="65dp"
+                            <ImageButton
+                                android:id="@+id/button3000"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
-                                android:orientation="horizontal"></LinearLayout>
+                                android:background="@drawable/demontag_ico"
+                                android:onClick="onClick_Demontag_Steni"
+                                android:text="Плита перекрытия"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="18sp" />
 
                             <TextView
                                 android:id="@+id/textView562"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Электро"
-                                android:textColor="@color/colorWite"
+                                android:text="Демонтаж"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="12sp" />
                         </LinearLayout>
 

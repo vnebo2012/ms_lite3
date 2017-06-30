@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/colorWite"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Elektro_Activity"
-    tools:showIn="@layout/activity_elektro">
+    tools:context=".Demontag_potolki_Activity"
+    tools:showIn="@layout/activity_demontag_pola">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,6 +15,371 @@
         android:layout_below="@+id/linearLayout"
         android:orientation="vertical"
         android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/job"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Стоимость всех виполненых работ:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView142"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/verx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Демонтаж ламината:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView201"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/niz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView300"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Демонтаж паркета:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView301"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/freza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView400"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Демонтаж ковролина:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView222"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="0.32"
+                        android:autoText="false"
+                        android:text="Деревяный пол:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView242"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoText="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:text="Керамическая плитка:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:autoText="false"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView188"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:text="Цементно-пищаная стяжка:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView208"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:autoText="false"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:text="Демонтаж линолеума:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoText="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView229"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:text="Плинтуса, порожки:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView401"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="0.0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
 
         <ScrollView
             android:id="@+id/scrollView2"
@@ -28,376 +393,24 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/linearLayout2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@color/colorPrimaryDark"
-                    android:baselineAligned="false"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:id="@+id/job"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView12"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:text="Стоимость всех виполненых работ:"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-
-                            <TextView
-                                android:id="@+id/textView142"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/verx"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView200"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:text="Выключатели (цена/ за работу):"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView201"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/niz"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView300"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:text="Розетки (цена/ за работу):"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView301"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/freza"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView400"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:text="Подрезетники (цена/ за работу):"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-
-                            <TextView
-                                android:id="@+id/textView4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView222"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="3dp"
-                                android:layout_weight="0.32"
-                                android:autoText="false"
-                                android:text="Комутационные коробки (за работу):"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView242"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:autoText="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView18"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:autoText="false"
-                                android:text="Точки без коробок (бра) цена за раб.:"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView20"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:autoText="false"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView188"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:autoText="false"
-                                android:text="Монтаж щитовых (цена/ за раб.):"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView208"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:autoText="false"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView22"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="3dp"
-                                android:layout_weight="1"
-                                android:autoText="false"
-                                android:text="Укладка гофры (цена/ за работу):"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:autoText="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView229"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="3dp"
-                                android:layout_weight="1"
-                                android:autoText="false"
-                                android:text="Дополнительные работы (цена):"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView401"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/colorBlueGrey50"
                     android:baselineAligned="true"
                     android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView22922"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:text="*цена за работу / за м2"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        android:textStyle="italic" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -412,9 +425,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Выключатели, шт:"
+                            android:text="Ламинат, м2:"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir"
@@ -423,7 +436,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="10"
+                            android:text="0"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -437,10 +450,6 @@
                             android:textColor="@color/colorTextMy"
                             android:textSize="16dp" />
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal"></LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -612,9 +621,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Монтаж выключателя, цена:"
+                            android:text="Демонтаж ламината, *цена:"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir2"
@@ -799,9 +808,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Розетки, шт.:"
+                            android:text="Паркет, м2.:"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir3"
@@ -810,7 +819,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="10"
+                            android:text="0"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -986,9 +995,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Монтаж розетки, цена:"
+                            android:text="Демонтаж паркета, *цена:"
                             android:textColor="@color/colorWite"
-                            android:textSize="14sp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir4"
@@ -1119,9 +1128,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Подрезетник, шт.:"
+                            android:text="Ковролин, м2.:"
                             android:textColor="@color/colorWite"
-                            android:textSize="14sp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir5"
@@ -1130,7 +1139,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="10"
+                            android:text="0"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1252,9 +1261,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Монтаж подрезетника, цена.:"
+                            android:text="Демонтаж ковролина, *цена:"
                             android:textColor="@color/colorWite"
-                            android:textSize="16sp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir11"
@@ -1384,9 +1393,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Комутационные коробки, шт.:"
+                            android:text="Деревяный пол , м2.:"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir6"
@@ -1396,7 +1405,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="10"
+                            android:text="0"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1495,9 +1504,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Монтаж комутатационной коробки, цена:"
+                            android:text="Демонтаж деревяного пола, *цена:"
                             android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir7"
@@ -1607,9 +1616,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Точка без коробки (бра, светильники), шт.:"
+                            android:text="Керамическая плитка, м2:"
                             android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir8"
@@ -1619,7 +1628,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="6"
+                            android:text="0"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1719,9 +1728,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Стоимость монтажа одной точки, цена:"
+                            android:text="Демонтаж керамической плитки, *цена:"
                             android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
+                            android:textSize="13dp" />
 
 
                         <TextView
@@ -1831,9 +1840,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Количество щотовых, шт.:"
+                            android:text="Цементно-пищаная стяжка, м2.:"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir18"
@@ -1842,7 +1851,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="3"
+                            android:text="0"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -1931,9 +1940,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Стоимость монтажа щита, цена:"
+                            android:text="Демонтаж стяжки, *цена:"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir13"
@@ -2030,9 +2039,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Гофра, м:"
+                            android:text="Линолиум, м2:"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir14"
@@ -2041,7 +2050,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
-                            android:text="100"
+                            android:text="0"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -2129,9 +2138,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Укладки гофры, цена за 1м.п.:"
+                            android:text="Демонтаж линолеума, *цена:"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir15"
@@ -2262,9 +2271,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Дополнительные работы, усл./едениц:"
+                            android:text="Плинтуса, порожки, метров пог.:"
                             android:textColor="@color/colorWite"
-                            android:textSize="14sp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:id="@+id/textViewWir16"
@@ -2404,9 +2413,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Стоимость дополнительных работ, цена:"
+                            android:text="Демонтаж плинтусов, порожков, цена за м.п.:"
                             android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:id="@+id/textViewWir17"
