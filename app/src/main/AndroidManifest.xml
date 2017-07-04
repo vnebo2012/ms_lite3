@@ -132,6 +132,9 @@
         <activity
             android:name=".Demontag_pola_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Obrewotka_Veranda_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
     </application>
 
