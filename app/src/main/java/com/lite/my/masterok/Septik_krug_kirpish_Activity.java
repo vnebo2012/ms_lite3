@@ -5111,20 +5111,15 @@ public class Septik_krug_kirpish_Activity extends AppCompatActivity {
                     TextView textView144 = (TextView) findViewById(R.id.textView20);
                     textView144.setText(String.format(Locale.US, "%.2f", t) + "");
 
-                    // объем раствора
-                    float k1 = (num007+num012);
+                    // объем раствора к1 - длина поверхности кирпича (250 + 65)
+                    float k1 = (float) ((num007*0.001)+(2*num010*0.001));
 
-                    //j1- количество вертикальных полос в метре (3.84) если 250
-                    float j1 = (float) ((1)/(k1*0.001));
+                    //j1- обьем раствора для одного кирпича
+                    float j1 = (float) (k1*(num009*0.001)*(num012*0.001));
 
-                    //Vv1 - обем раствора в этих полосах
-                    float Vv1 = (float) (((num012*0.001)*1*(num009*0.001)*j1));
+                    //обьем для всех кирпичей
 
-                    float k2 = (num010+num012);
-                    float j2 = (float) ((1)/(k2*0.001));
-                    float Vv2 = (float) (((num012*0.001)*1*(num009*0.001)*j2));
-
-                    float Vv = (float) ((Vv1+Vv2)*num001*num003);
+                    float Vv = j1*w;
 
                     TextView textViewV = (TextView) findViewById(R.id.textView24);
                     textViewV.setText(String.format(Locale.US, "%.3f", Vv) + "");
@@ -5159,20 +5154,15 @@ public class Septik_krug_kirpish_Activity extends AppCompatActivity {
                     TextView textView144 = (TextView) findViewById(R.id.textView20);
                     textView144.setText(String.format(Locale.US, "%.2f", t) + "");
 
-                    // объем раствора
-                    float k1 = (num007+num012);
+                    // объем раствора к1 - длина поверхности кирпича (250 + 65)
+                    float k1 = (float) ((num007*0.001)+(2*num010*0.001));
 
-                    //j1- количество вертикальных полос в метре (3.84) если 250
-                    float j1 = (float) ((1)/(k1*0.001));
+                    //j1- обьем раствора для одного кирпича
+                    float j1 = (float) (k1*(num009*0.001)*(num012*0.001));
 
-                    //Vv1 - обем раствора в этих полосах
-                    float Vv1 = (float) (((num012*0.001)*1*(num009*0.001)*j1));
+                    //обьем для всех кирпичей
 
-                    float k2 = (num010+num012);
-                    float j2 = (float) ((1)/(k2*0.001));
-                    float Vv2 = (float) (((num012*0.001)*1*(num009*0.001)*j2));
-
-                    float Vv = (float) ((Vv1+Vv2)*num001*num003*2);
+                    float Vv = j1*w*2;
 
                     TextView textViewV = (TextView) findViewById(R.id.textView24);
                     textViewV.setText(String.format(Locale.US, "%.3f", Vv) + "");

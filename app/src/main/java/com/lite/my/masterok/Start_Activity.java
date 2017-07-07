@@ -1,7 +1,10 @@
 package com.lite.my.masterok;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,6 +17,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,6 +29,13 @@ import android.widget.Toast;
 public class Start_Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
   // private AdView mAdView;
+
+
+    final Context context2 = this;
+    boolean flag = true;
+    Context context;
+
+    final String MY_SETTINGS = "saved_text_stg100011";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +84,49 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
 
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        SharedPreferences sp = getSharedPreferences(MY_SETTINGS,
+                Context.MODE_PRIVATE);
+        // проверяем, первый ли раз открывается программа
+        boolean hasVisited = sp.getBoolean("hasVisited_stg100011", false);
+
+        if (!hasVisited) {
+
+            LayoutInflater li = LayoutInflater.from(context2);
+            View promptsView = li.inflate(R.layout.activity_hellp2, null);
+            AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+            mDialogBuilder.setView(promptsView);
+
+
+
+
+
+
+            mDialogBuilder
+                    .setCancelable(false)
+                    .setPositiveButton("Ok",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog,int id) {
+
+                                }
+                            });
+            AlertDialog alertDialog = mDialogBuilder.create();
+            alertDialog.show();
+
+
+            long mills = 15L;
+            Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+            vibrator.vibrate(mills);
+
+            // выводим нужную активность
+            // напр.
+            //Intent intent = new Intent(this, Main2Activity.class);
+            // startActivity(intent);
+
+            SharedPreferences.Editor e = sp.edit();
+            e.putBoolean("hasVisited_stg100011", true);
+            e.commit(); // не забудьте подтвердить изменения
+        }
 
 
 

@@ -2,28 +2,38 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".HellpActivity"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+tools:context=".HellpActivity"
     android:background="@color/colorBlueGrey50">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:orientation="vertical">
 
 
-
         <LinearLayout
             android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView82657"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:text="Инструкция:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
 
 
             <TextView
@@ -94,7 +104,7 @@
             android:id="@+id/linearLayout31"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:orientation="vertical">
 
             <TextView
@@ -179,7 +189,7 @@
             android:id="@+id/linearLayout3167"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:orientation="vertical">
 
             <TextView
@@ -199,7 +209,6 @@
                 android:text="для обнуления результатов"
                 android:textColor="@color/colorBlack"
                 android:textSize="16dp" />
-
 
 
         </LinearLayout>
@@ -222,9 +231,6 @@
 
 
         </LinearLayout>
-
-
-
 
 
     </LinearLayout>
