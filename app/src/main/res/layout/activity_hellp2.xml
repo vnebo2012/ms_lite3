@@ -2,10 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-tools:context=".HellpActivity"
-    android:background="@color/colorBlueGrey50">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".HellpActivity"
+    android:background="@color/colorPrimary">
 
 
     <LinearLayout
@@ -13,47 +13,39 @@ tools:context=".HellpActivity"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:orientation="vertical">
 
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="10dp"
             android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView82657"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="5dp"
-                android:text="Инструкция:"
-                android:textColor="@color/colorPrimary"
-                android:textSize="16sp"
-                android:textStyle="bold|italic" />
-
 
             <TextView
                 android:id="@+id/textView82"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="1) Удерживайте кнопку"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
+                android:text="Удерживайте кнопку"
+                android:textColor="#ffffff" />
 
             <TextView
                 android:id="@+id/textView522"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="для изменения ее значения"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
-
+                android:text="для изменения значения"
+                android:textColor="#ffffff" />
 
         </LinearLayout>
 
@@ -73,7 +65,7 @@ tools:context=".HellpActivity"
                 android:layout_margin="5dp"
                 android:background="@drawable/radius"
                 android:text="0.8"
-                android:textColor="#ff7700"
+                android:textColor="@color/colorPrimary43"
                 android:textSize="30dp"
                 android:textStyle="italic" />
 
@@ -93,7 +85,7 @@ tools:context=".HellpActivity"
                 android:layout_margin="5dp"
                 android:background="@drawable/radius"
                 android:text="1.25"
-                android:textColor="#ff7700"
+                android:textColor="@color/colorPrimary43"
                 android:textSize="30dp"
                 android:textStyle="italic" />
 
@@ -104,35 +96,24 @@ tools:context=".HellpActivity"
             android:id="@+id/linearLayout31"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="10dp"
             android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView82187"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="2) При потере даных"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
 
             <TextView
                 android:id="@+id/textView821"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="нажмите любую кнопку"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
+                android:text="Нажмите любую кнопку"
+                android:textColor="#ffffff" />
 
             <TextView
                 android:id="@+id/textView5221"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="для их востановления"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
+                android:text="для востановления значения"
+                android:textColor="#ffffff" />
 
         </LinearLayout>
 
@@ -198,8 +179,7 @@ tools:context=".HellpActivity"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="3) Удерживайте кнопку"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
+                android:textColor="@color/colorWite" />
 
             <TextView
                 android:id="@+id/textView82154"
@@ -207,8 +187,7 @@ tools:context=".HellpActivity"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="для обнуления результатов"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
+                android:textColor="@color/colorWite" />
 
 
         </LinearLayout>
@@ -224,14 +203,19 @@ tools:context=".HellpActivity"
                 android:id="@+id/fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:layout_margin="@dimen/fab_margin"
-                android:onClick="onEmailClick"
                 android:src="@mipmap/ic_dor" />
 
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
 
     </LinearLayout>
 

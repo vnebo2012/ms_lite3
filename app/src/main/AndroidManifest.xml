@@ -102,9 +102,8 @@
             android:name=".Gipsokarton_P_213_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-        android:name=".Gipsokarton_lite_Activity"
-        android:theme="@style/AppTheme.NoActionBar" />
-
+            android:name=".Gipsokarton_lite_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Dvuskat_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -114,15 +113,12 @@
         <activity
             android:name=".Septik_krug_kirpish_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Radiators_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Ob_Septik_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Demontag_steni_Activity"
             android:theme="@style/AppTheme.NoActionBar" />

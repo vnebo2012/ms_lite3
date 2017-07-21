@@ -5,53 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".HellpActivity"
-    android:background="@color/colorBlueGrey50">
+    android:background="@color/colorPrimary">
 
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical">
-
-
+        android:layout_alignParentStart="true">
 
         <LinearLayout
-            android:id="@+id/linearLayout3"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:id="@+id/textView82"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="1) Удерживайте кнопку"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
-
-            <TextView
-                android:id="@+id/textView522"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="для изменения ее значения"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
-
+            android:layout_margin="20dp"
+            android:id="@+id/linearLayout">
 
         </LinearLayout>
 
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_margin="10dp"
+            android:id="@+id/linearLayout3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Удерживайте кнопку"
+                android:id="@+id/textView82"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="для изменения значения"
+                android:id="@+id/textView522"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/button14"
@@ -63,14 +65,14 @@
                 android:layout_margin="5dp"
                 android:background="@drawable/radius"
                 android:text="0.8"
-                android:textColor="#ff7700"
+                android:textColor="@color/colorPrimary43"
                 android:textSize="30dp"
                 android:textStyle="italic" />
 
             <ImageView
-                android:id="@+id/imageView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/imageView4"
                 android:src="@android:drawable/ic_media_play" />
 
             <Button
@@ -83,54 +85,45 @@
                 android:layout_margin="5dp"
                 android:background="@drawable/radius"
                 android:text="1.25"
-                android:textColor="#ff7700"
+                android:textColor="@color/colorPrimary43"
                 android:textSize="30dp"
                 android:textStyle="italic" />
 
 
+
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout31"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:orientation="vertical">
+            android:id="@+id/linearLayout31">
 
             <TextView
-                android:id="@+id/textView82187"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="2) При потере даных"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
-
-            <TextView
+                android:text="Нажмите любую кнопку"
                 android:id="@+id/textView821"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="нажмите любую кнопку"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
+                android:textColor="#ffffff" />
 
             <TextView
-                android:id="@+id/textView5221"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="для востановления значения"
+                android:id="@+id/textView5221"
                 android:layout_gravity="center_horizontal"
-                android:text="для их востановления"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
+                android:textColor="#ffffff" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:gravity="center">
+
 
 
             <Button
@@ -173,13 +166,16 @@
                 android:textStyle="italic" />
 
 
+
+
+
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linearLayout3167"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:orientation="vertical">
 
             <TextView
@@ -188,8 +184,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="3) Удерживайте кнопку"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
+                android:textColor="@color/colorWite" />
 
             <TextView
                 android:id="@+id/textView82154"
@@ -197,9 +192,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="для обнуления результатов"
-                android:textColor="@color/colorBlack"
-                android:textSize="16dp" />
-
+                android:textColor="@color/colorWite" />
 
 
         </LinearLayout>
@@ -215,17 +208,19 @@
                 android:id="@+id/fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:layout_margin="@dimen/fab_margin"
-                android:onClick="onEmailClick"
                 android:src="@mipmap/ic_dor" />
 
 
         </LinearLayout>
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-
+        </LinearLayout>
 
     </LinearLayout>
 

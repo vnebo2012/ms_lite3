@@ -30,6 +30,8 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Locale;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Demontag_steni_Activity extends AppCompatActivity {
 
@@ -1033,6 +1035,11 @@ public class Demontag_steni_Activity extends AppCompatActivity {
     InterstitialAd mInterstitialAd;
     ImageButton mNewGameButton;
 
+    private static int SPLASH_TIME_OUT = 1000;
+    static Context context4;
+    Timer t = new Timer();
+    static Intent intent;
+
 
 
 
@@ -1051,50 +1058,37 @@ public class Demontag_steni_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_demontag_steni);
 
 
-        mNewGameButton = (ImageButton) findViewById(R.id.dom);
+        //mNewGameButton = (ImageButton) findViewById(R.id.dom);
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/5029587751");
-
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
             public void onAdClosed() {
-                //requestNewInterstitial();
-                // beginPlayingGame();
-
-                Intent a = new Intent(Demontag_steni_Activity.this, Start_Activity.class);
-                a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(a);
-
+                t.cancel();
             }
         });
-
         requestNewInterstitial();
-
-        mNewGameButton.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-
-                ConnectivityManager icheck = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-
-                boolean mob = icheck.getActiveNetworkInfo() != null;
-                if(mob) {
-
-                    if (mInterstitialAd.isLoaded()) {
-                        mInterstitialAd.show();
-
-                    } else {
-                        beginPlayingGame();
+        t.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        t.cancel();
+                        ConnectivityManager icheck = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                        boolean mob = icheck.getActiveNetworkInfo() != null;
+                        if(mob) {
+                            if (mInterstitialAd.isLoaded()) {
+                                mInterstitialAd.show();
+                            } else {
+                                beginPlayingGame();
+                            }
+                        } else {
+                        }
                     }
-
-                } else {
-                    Intent a = new Intent(Demontag_steni_Activity.this, Start_Activity.class);
-                    a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    startActivity(a);
-                }
-
-
+                });
             }
-        });
+        }, SPLASH_TIME_OUT, SPLASH_TIME_OUT);
 
 
         //ImageView imageView2 = (ImageView) findViewById(R.id.imageView3);
@@ -10360,23 +10354,10 @@ public class Demontag_steni_Activity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-        ConnectivityManager icheck = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-
-        boolean mob = icheck.getActiveNetworkInfo() != null;
-        if(mob) {
-
-            if (mInterstitialAd.isLoaded()) {
-                mInterstitialAd.show();
-
-            } else {
-                beginPlayingGame();
-            }
-
-        } else {
-            Intent a = new Intent(this, Start_Activity.class);
-            a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(a);
-        }
+        t.cancel();
+        Intent a = new Intent(this, Start_Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
     }
     //do something on back.
     public void onClick_Ca(View view) {
