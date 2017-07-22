@@ -681,7 +681,7 @@ public class Plita2Activity extends AppCompatActivity {
     ImageButton mNewGameButton;
 
 
-    private static int SPLASH_TIME_OUT = 1000;
+    private static int SPLASH_TIME_OUT = 5000;
     static Context context4;
     Timer t = new Timer();
     static Intent intent;

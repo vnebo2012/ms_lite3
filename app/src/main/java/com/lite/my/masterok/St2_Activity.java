@@ -1004,7 +1004,7 @@ public class St2_Activity extends AppCompatActivity {
     InterstitialAd mInterstitialAd;
     ImageButton mNewGameButton;
 
-    private static int SPLASH_TIME_OUT = 1000;
+    private static int SPLASH_TIME_OUT = 5000;
     static Context context4;
     Timer t = new Timer();
     static Intent intent;

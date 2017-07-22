@@ -1127,7 +1127,7 @@ public class Penoplast_Activity extends AppCompatActivity {
     InterstitialAd mInterstitialAd;
     ImageButton mNewGameButton;
 
-    private static int SPLASH_TIME_OUT = 1000;
+    private static int SPLASH_TIME_OUT = 5000;
     static Context context4;
     Timer t = new Timer();
     static Intent intent;
@@ -9030,7 +9030,7 @@ public class Penoplast_Activity extends AppCompatActivity {
 
                     case R.id.button248:
                         TextView textView248 = (TextView) findViewById(R.id.textViewWir17);
-                        aetText248 = (Button) findViewById(R.id.button240);
+                        aetText248 = (Button) findViewById(R.id.button248);
                         float num248 = Float.parseFloat(aetText248.getText().toString());
                         float w248 = (float) num248;
                         textView248.setText(String.format(Locale.US, "%.2f", w248) + "");
