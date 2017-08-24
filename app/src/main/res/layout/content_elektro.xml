@@ -70,7 +70,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="5dp"
                                 android:layout_weight="1"
-                                android:text="Стоимость всех виполненых работ:"
+                                android:text="Стоимость всех выполненых работ:"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp"
@@ -1831,7 +1831,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Количество щотовых, шт.:"
+                            android:text="Количество щитовых, шт.:"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -2129,9 +2129,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Укладки гофры, цена за 1м.п.:"
+                            android:text="Стоимость укладки гофры, цена за 1м.п.:"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir15"

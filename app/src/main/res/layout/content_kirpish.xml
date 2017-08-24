@@ -559,7 +559,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Стоимоть кирпича, за 1000 шт.:"
+                            android:text="Стоимость кирпича, за 1000 шт.:"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 

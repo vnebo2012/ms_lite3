@@ -1059,7 +1059,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
 
         //mNewGameButton = (ImageButton) findViewById(R.id.dom);
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/5029587751");
+        mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/7088298282");
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
             public void onAdClosed() {
@@ -8195,7 +8195,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText230 = (Button) findViewById(R.id.button230);
                         float num230 = Float.parseFloat(aetText230.getText().toString());
                         float w230 = (float) num230;
-                        textView230.setText(String.format(Locale.US, "%.0f", w230) + "");
+                        textView230.setText(String.format(Locale.US, "%.2f", w230) + "");
                         Animation anim230 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button230 = (Button) findViewById(R.id.button230);
@@ -8207,7 +8207,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText231 = (Button) findViewById(R.id.button231);
                         float num231 = Float.parseFloat(aetText231.getText().toString());
                         float w231 = (float) num231;
-                        textView231.setText(String.format(Locale.US, "%.0f", w231) + "");
+                        textView231.setText(String.format(Locale.US, "%.2f", w231) + "");
                         Animation anim231 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button231 = (Button) findViewById(R.id.button231);
@@ -8221,7 +8221,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText232 = (Button) findViewById(R.id.button232);
                         float num232 = Float.parseFloat(aetText232.getText().toString());
                         float w232 = (float) num232;
-                        textView232.setText(String.format(Locale.US, "%.0f", w232) + "");
+                        textView232.setText(String.format(Locale.US, "%.2f", w232) + "");
                         Animation anim232 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button232 = (Button) findViewById(R.id.button232);
@@ -8234,7 +8234,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
                         aetText233 = (Button) findViewById(R.id.button233);
                         float num233 = Float.parseFloat(aetText233.getText().toString());
                         float w233 = (float) num233;
-                        textView233.setText(String.format(Locale.US, "%.0f", w233) + "");
+                        textView233.setText(String.format(Locale.US, "%.2f", w233) + "");
                         Animation anim233 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button233 = (Button) findViewById(R.id.button233);
@@ -8418,7 +8418,7 @@ public class Pol_Freza_stena_Activity extends AppCompatActivity {
 
                     case R.id.button248:
                         TextView textView248 = (TextView) findViewById(R.id.textViewWir17);
-                        aetText248 = (Button) findViewById(R.id.button240);
+                        aetText248 = (Button) findViewById(R.id.button248);
                         float num248 = Float.parseFloat(aetText248.getText().toString());
                         float w248 = (float) num248;
                         textView248.setText(String.format(Locale.US, "%.0f", w248) + "");

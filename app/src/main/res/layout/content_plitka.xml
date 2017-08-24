@@ -879,7 +879,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Ширина фрези, мм:"
+                            android:text="Ширина фрезы, мм:"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 

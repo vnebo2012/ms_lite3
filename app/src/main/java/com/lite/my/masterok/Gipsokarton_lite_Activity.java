@@ -1051,7 +1051,7 @@ public class Gipsokarton_lite_Activity extends AppCompatActivity {
 
         //mNewGameButton = (ImageButton) findViewById(R.id.dom);
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/5029587751");
+        mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/7088298282");
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
             public void onAdClosed() {

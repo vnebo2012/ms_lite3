@@ -1105,7 +1105,7 @@ public class Dvuskat_Activity extends AppCompatActivity {
 
         //mNewGameButton = (ImageButton) findViewById(R.id.dom);
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/5029587751");
+        mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/7088298282");
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
             public void onAdClosed() {
@@ -7440,7 +7440,7 @@ public class Dvuskat_Activity extends AppCompatActivity {
                         aetText43 = (Button) findViewById(R.id.button64);
                         float num043 = Float.parseFloat(aetText43.getText().toString());
                         float w43 = (float) num043;
-                        textView043.setText(String.format(Locale.US, "%.0f", w43) + "");
+                        textView043.setText(String.format(Locale.US, "%.2f", w43) + "");
 
                         Animation anim26 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7454,7 +7454,7 @@ public class Dvuskat_Activity extends AppCompatActivity {
                         aetText44 = (Button) findViewById(R.id.button65);
                         float num044 = Float.parseFloat(aetText44.getText().toString());
                         float w44 = (float) num044;
-                        textView044.setText(String.format(Locale.US, "%.0f", w44) + "");
+                        textView044.setText(String.format(Locale.US, "%.2f", w44) + "");
 
                         Animation anim27 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7468,7 +7468,7 @@ public class Dvuskat_Activity extends AppCompatActivity {
                         aetText45 = (Button) findViewById(R.id.button66);
                         float num045 = Float.parseFloat(aetText45.getText().toString());
                         float w45 = (float) num045;
-                        textView045.setText(String.format(Locale.US, "%.0f", w45) + "");
+                        textView045.setText(String.format(Locale.US, "%.2f", w45) + "");
 
                         Animation anim28 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -8533,7 +8533,7 @@ public class Dvuskat_Activity extends AppCompatActivity {
 
                     case R.id.button248:
                         TextView textView248 = (TextView) findViewById(R.id.textViewWir17);
-                        aetText248 = (Button) findViewById(R.id.button240);
+                        aetText248 = (Button) findViewById(R.id.button248);
                         float num248 = Float.parseFloat(aetText248.getText().toString());
                         float w248 = (float) num248;
                         textView248.setText(String.format(Locale.US, "%.2f", w248) + "");
