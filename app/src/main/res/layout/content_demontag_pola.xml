@@ -59,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Стоимость всех выполненых работ:"
+                        android:text="@string/stoimost_rabot"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -97,7 +97,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Демонтаж ламината:"
+                        android:text="@string/demont_lami"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -134,7 +134,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Демонтаж паркета:"
+                        android:text="@string/dem_park"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -171,7 +171,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Демонтаж ковролина:"
+                        android:text="@string/dem_kovr"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -209,7 +209,7 @@
                         android:layout_marginRight="3dp"
                         android:layout_weight="0.32"
                         android:autoText="false"
-                        android:text="Деревяный пол:"
+                        android:text="@string/der_pol"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/background_light"
                         android:textSize="15dp"
@@ -244,7 +244,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
                         android:autoText="false"
-                        android:text="Керамическая плитка:"
+                        android:text="@string/keram_plitka"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -283,7 +283,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
                         android:autoText="false"
-                        android:text="Цементно-пещаная стяжка:"
+                        android:text="@string/cem_stagka"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -321,7 +321,7 @@
                         android:layout_marginRight="3dp"
                         android:layout_weight="1"
                         android:autoText="false"
-                        android:text="Демонтаж линолеума:"
+                        android:text="@string/dem_lenol"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/background_light"
                         android:textSize="15dp"
@@ -355,7 +355,7 @@
                         android:layout_marginRight="3dp"
                         android:layout_weight="1"
                         android:autoText="false"
-                        android:text="Плинтуса, порожки:"
+                        android:text="@string/dem_plintusa"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/background_light"
                         android:textSize="15dp"
@@ -406,7 +406,7 @@
                         android:layout_marginLeft="3dp"
                         android:layout_weight="1"
                         android:autoText="false"
-                        android:text="*цена за работу / за м2"
+                        android:text="@string/cena_rabot_m2"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@color/colorPrimary"
                         android:textSize="12dp"
@@ -425,7 +425,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Ламинат, м2:"
+                            android:text="@string/lamin_m2"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -621,7 +621,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Демонтаж ламината, *цена:"
+                            android:text="@string/dem_lam_cen"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -808,7 +808,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Паркет, м2.:"
+                            android:text="@string/parket_m2"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -995,7 +995,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Демонтаж паркета, *цена:"
+                            android:text="@string/dem_parketa_cena"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -1128,7 +1128,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Ковролин, м2.:"
+                            android:text="@string/kovrolin_m2"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -1261,7 +1261,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Демонтаж ковролина, *цена:"
+                            android:text="@string/dem_kov"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -1393,7 +1393,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Деревяный пол , м2.:"
+                            android:text="@string/der_pol2"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -1504,7 +1504,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Демонтаж деревяного пола, *цена:"
+                            android:text="@string/dem_pola_cena"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -1616,7 +1616,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Керамическая плитка, м2:"
+                            android:text="@string/ker_plitka_m2"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -1728,7 +1728,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Демонтаж керамической плитки, *цена:"
+                            android:text="@string/dep_ker"
                             android:textColor="@color/colorWite"
                             android:textSize="13dp" />
 
@@ -1840,7 +1840,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цементно-пещаная стяжка, м2.:"
+                            android:text="@string/cem_sty_m2"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -1940,7 +1940,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Демонтаж стяжки, *цена:"
+                            android:text="@string/dem_st"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -2039,7 +2039,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Линолиум, м2:"
+                            android:text="@string/linom_2"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -2138,7 +2138,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Демонтаж линолеума, *цена:"
+                            android:text="@string/dem_leny"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -2271,7 +2271,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Плинтуса, порожки, метров пог.:"
+                            android:text="@string/plint_porogki"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -2413,9 +2413,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Демонтаж плинтусов, порожков, цена за м.п.:"
+                            android:text="@string/dem_por"
                             android:textColor="@color/colorWite"
-                            android:textSize="12dp" />
+                            android:textSize="11dp" />
 
                         <TextView
                             android:id="@+id/textViewWir17"

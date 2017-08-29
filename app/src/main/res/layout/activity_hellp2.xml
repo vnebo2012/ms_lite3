@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Удерживайте кнопку"
+                android:text="@string/uderg"
                 android:textColor="#ffffff" />
 
             <TextView
@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="для изменения значения"
+                android:text="@string/dla_is"
                 android:textColor="#ffffff" />
 
         </LinearLayout>
@@ -104,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Нажмите любую кнопку"
+                android:text="@string/nagmite"
                 android:textColor="#ffffff" />
 
             <TextView
@@ -112,7 +112,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="для востановления значения"
+                android:text="@string/dla_ism"
                 android:textColor="#ffffff" />
 
         </LinearLayout>
@@ -178,7 +178,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="3) Удерживайте кнопку"
+                android:text="@string/ud_knop"
                 android:textColor="@color/colorWite" />
 
             <TextView
@@ -186,7 +186,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="для обнуления результатов"
+                android:text="@string/obnul"
                 android:textColor="@color/colorWite" />
 
 

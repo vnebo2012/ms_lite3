@@ -5,11 +5,11 @@
         <item
             android:id="@+id/menu8"
 
-            android:title="Краска (кг)"/>
+            android:title="@string/kraska_s" />
 
         <item
             android:id="@+id/menu9"
-            android:title="Краска (л)"/>
+            android:title="@string/kraska_a_b" />
 
 
 

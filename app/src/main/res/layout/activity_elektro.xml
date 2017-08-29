@@ -33,7 +33,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="Электромонтаж"
+                    android:text="@string/elektro"
                     android:textColor="@android:color/white"
                     android:textSize="18dp"
                     android:textStyle="bold|italic" />

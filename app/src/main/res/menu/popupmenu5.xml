@@ -5,11 +5,11 @@
         <item
             android:id="@+id/menu6"
 
-            android:title="Прямоугольная плита"/>
+            android:title="@string/plita_pram" />
 
         <item
             android:id="@+id/menu7"
-            android:title="Круглая плита"/>
+            android:title="@string/krug_plita" />
 
 
 

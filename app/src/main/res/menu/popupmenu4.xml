@@ -5,11 +5,11 @@
         <item
             android:id="@+id/menu2"
 
-            android:title="Шпаклевка, S"/>
+            android:title="@string/wpak_s" />
 
         <item
             android:id="@+id/menu3"
-            android:title="Шпаклевка, A+B"/>
+            android:title="@string/wpak_a_b" />
 
 
 

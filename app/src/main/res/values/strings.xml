@@ -8,13 +8,7 @@
     <string name="action_info">О кнопках</string>
     <string name="ress">Сброс результата</string>
     <string name="vixod">Выход</string>
-    <string name="title_activity_fun2">Тип 2</string>
-    <string name="title_activity_fun3">Тип 3</string>
-    <string name="title_activity_fun4">Тип 4</string>
-    <string name="title_activity_fun5">Тип 5</string>
-    <string name="title_activity_fun6">Тип 6</string>
-    <string name="title_activity_fun7">Тип 7</string>
-    <string name="title_activity_fun8">Тип Периметр</string>
+
     <string name="activity_web_beton">Поиск бетона ...</string>
     <string name="armatura">Арматуру запрещено соединять в местах максимального напряжения стержней
         и зонах приложения (концентрированного) нагрузки на них.</string>
@@ -28,14 +22,7 @@
     <string name="my_fundamenti">Форма фундамента</string>
     <string name="web_armatura">Поиск арматуры ...</string>
     <string name="web_plus">Сообщение</string>
-    <string name="title_activity_pris_8">Пристройка - периметр</string>
-    <string name="title_activity_pris_1">Пристройка 1</string>
-    <string name="title_activity_pris_2">Пристройка 2</string>
-    <string name="title_activity_pris_3">Пристройка 3</string>
-    <string name="title_activity_pris_4">Пристройка 4</string>
-    <string name="title_activity_pris_5">Пристройка 5</string>
-    <string name="title_activity_kolona2">Восьмигранник</string>
-    <string name="title_activity_kolona1">Цилиндр</string>
+
     <string name="Beton">Бетон (м3):</string>
     <string name="cena">Цена (бетон):</string>
     <string name="cenaarmatury">Стоимость арматуры:</string>
@@ -84,18 +71,12 @@
     <string name="eto_standart">Это стандартный размер</string>
     <string name="eto_fiks">Это фиксированое значение</string>
     <string name="obnulit_danie">Обнулить данные?</string>
-    <string name="moget_plata">Может взиматься плата за интернет трафик</string>
-    <string name="za_internet">за интернет трафик</string>
-    <string name="fire">ok</string>
-    <string name="cancel">no</string>
-    <string name="soglasen">Согласен</string>
-    <string name="otmena">Отмена</string>
+
     <string name="title_activity_kolona3">Прямоугольная колона</string>
     <string name="tema_pisma">Тема письма:</string>
     <string name="soobwenie">Сообщение:</string>
     <string name="vibirite_kartinku">  Приложить картинку, фото  </string>
-    <string name="est_idea">У меня есть идея</string>
-    <string name="xochu_predlogit">Хочу предложить новую форму фундамента...</string>
+
     <string name="betonir_start">БЕТОНИР</string>
     <string name="armatura_m_kg">Арматура: A (м/кг):</string>
     <string name="B_m_kg">Арм.:B (м/кг):</string>
@@ -104,16 +85,14 @@
     <string name="arm">Арматура</string>
 
     <string name="pro">Версия Pro</string>
-    <string name="armr2">Вносить свои значения</string>
-    <string name="armr1">для кнопок</string>
-    <string name="armr3">доступно в версии</string>
+
     <string name="kirpish">Кирпич (расчет)</string>
     <string name="kirp_bar">Мастерок</string>
     <string name="my_tb_title23">Расчет блоков</string>
     <string name="app_name2">Инструкция</string>
     <string name="title_activity_plitka">PlitkaActivity</string>
     <string name="my_tb_title2322">Расчет плитки</string>
-    <string name="banner_ad_unit_id">ca-app-pub-4882550262749386/3338680954</string>
+
     <string name="title_activity_armo">Армопояс</string>
     <string name="title_activity_plitka2">Плитка на пол</string>
     <string name="my_tb_title23223">Плитка на пол</string>
@@ -130,26 +109,15 @@
     <string name="my_tb_title_samo_s2">Шпаклевка, S</string>
     <string name="title_activity_st222">Шпаклевка, A+B</string>
     <string name="my_tb_title_samo_a_b222">Шпаклевка, A+B</string>
-    <string name="title_activity_navigation">NavigationActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
     <string name="my_tb_title_samo_a_b223">Наливной пол, A+B</string>
     <string name="title_activity_st2212">Плита Прямоугольник</string>
     <string name="title_activity_st22245">Плита Круг</string>
     <string name="my_tb_title78">Плита Прямоугольная</string>
     <string name="my_tb_title69">Плита Круглая</string>
     <string name="title_activity_menu">MenuActivity</string>
-    <string name="rbHtml">мой текст</string>
-    <string name="rbText">rbText</string>
-    <string name="btCopy">btCopy</string>
-    <string name="btPaste">btPaste</string>
-    <string name="tvIntentHtml">tvIntentHtml</string>
-    <string name="tvIntentText">tvIntentText</string>
-    <string name="tvIntentClipdataHtml">tvIntentClipdataHtml</string>
-    <string name="tvIntentClipdataText">tvIntentClipdataText</string>
-    <string name="tvHtml">U278975036654</string>
-    <string name="title_activity_st222452">Електромонтаж</string>
+
+    <string name="title_activity_st222452">Электромонтаж</string>
     <string name="my_tb_title_elektro">Электромонтаж</string>
     <string name="my_tb_title_samo_s278">Покраска</string>
     <string name="title_activity_kr_s">Покраска</string>
@@ -168,24 +136,187 @@
     <string name="title_activity_kr_s29">Пенопласт</string>
     <string name="ukr">ukr1</string>
     <string name="title_activity_sovet_penoplast">Утепление</string>
-    <string name="large_text">
-        "Пару нюансов при утеплении дома.\n\n"
 
-        "1. Количество утеплителя.
-В разных случаях, количество утеплителя, необходимого для выполнения его функций тоже различается. К примеру, одному фасаду может быть достаточно 5 см (газобетонная стена с толщиной 30 см), а на другой понадобится более 10 см (стена в полкирпича). В основном все зависит от материала и толщины стен. В подавляющем большинстве случаев, в нашей стране с учетом всех факторов, самая приемлемая толщина приходится на 10 см.\n"
-        "2. Внутреннее утепление.
-Многие думают, чтобы было тепло внутри, утеплять надо внутри. При всем этом сокращение внутреннего пространства из-за этого — фактор вторичный. Если утепление дома производить не снаружи, то на стенах с внешней стороны из-за значительного замерзания может образовываться конденсат, который, несомненно, будет углубляться внутрь дома. Исходя из этого, приложите все усилия, чтобы воспользоваться именно наружным утеплением.\n"
-        "3. Правильный крепеж.
-Отсутствие дюбелей, некачественный и дешевый клей, армированные сетки на сухой пенопласт и т.д. — это то, что заставит вас заплатить гораздо больше, в то время как вы думаете, что экономите. Каждый утеплитель имеет строго определенные компоненты для монтажа, используйте именно их.\n"
-        "4. Незабываем о подвальном помещении.
-Многие ошибочно думают, что утепление дома и подвал вовсе не взаимосвязанные друг с другом вещи, а напрасно. Большая доля тепловых потерь приходится, в том числе и на подвал, поэтому обязательно утепляйте и его.\n"
-        "5. Укладка.
-Плиты утеплителя должны быть уложены максимально прочно, ровно и плотно. У вас не должно быть не единого зазора, который в свою очередь может нарушить всю вентиляцию в целом. Проявите ювелирную аккуратность и усердность на данном этапе, чтобы в будущем избежать плохих последствий.\n"
-        "6. Основа.
-Грунтовка — важнейший этап, предшествующий процессу укладки утеплителя. Создайте идеально ровную поверхность, без какого либо мусора и прочих дефектов.\n"
-        "7. Исполнитель — дело важное.
-Доверяйте строительство провереным людям, фирмам или компаниям.
-        Стройте своими руками )).
-    </string>
     <string name="title_activity_sovet_penoplast2_">Пенопласт</string>
+    <string name="kirp1">Кирпич</string>
+    <string name="plita1">Плита</string>
+    <string name="armopojas1">Армопояс</string>
+    <string name="plitka">Плитка</string>
+    <string name="kriwa1">Крыша</string>
+    <string name="bloki1">Блоки</string>
+    <string name="pinoplast1">Пенопласт</string>
+    <string name="pokraska1">Покраска</string>
+    <string name="gipsokarton1">Гипсокартон</string>
+    <string name="pinoplast2">Пенопласт</string>
+    <string name="septik1">Септик</string>
+    <string name="styagka1">Стяжка</string>
+    <string name="radiatori1">Радиаторы</string>
+    <string name="radiatori2">Радиаторы</string>
+    <string name="elektro">Электро</string>
+    <string name="demontag1">Демонтаж</string>
+    <string name="dem_pol1">Демонтаж, пол</string>
+    <string name="dem_potolki">Демонтаж, потолки</string>
+    <string name="dem_steni">Демонтаж, стены</string>
+    <string name="dvuskat1">Двускатная крыша</string>
+    <string name="gipsokarton_standart1">Гипсокартон, стандарт</string>
+    <string name="gip_lite">Гипсокартон, эконом</string>
+    <string name="kras_kg">Краска, кг</string>
+    <string name="kras_litri">Краска, л</string>
+    <string name="ras_sept">Расчет объема септика</string>
+    <string name="dvuskat_pristroyka">Двускат, пристройка</string>
+    <string name="plit_na_pol">Плитка на пол</string>
+    <string name="naliv_pol_a_b">Наливной пол, А_В</string>
+    <string name="nal_pol_s">Наливной пол,  S</string>
+    <string name="sep_kirp_krug">Круглый септик из кирпича</string>
+    <string name="shpakl_a_b">Шпаклевка, A_B</string>
+    <string name="shp_s">Шпаклевка, S</string>
+    <string name="cement_stagka1_A_B">Цементная стяжка, A_B</string>
+    <string name="cem_st_s">Цементная стяжка, S</string>
+    <string name="bloki_m3_wt">Блоки, м3/шт</string>
+    <string name="cena_bloki1">Цена блоков</string>
+    <string name="kol_rastvora">Количество раствора, м3</string>
+    <string name="ili_kley">или клей (25 кг):</string>
+    <string name="visota_steni_A_m">Высота стены А, м:</string>
+    <string name="dlina_steni_B_m">Длина стены В, м:</string>
+    <string name="s_poyamov">Площадь проемов (дверей, окон), м2:</string>
+    <string name="stoim_blokov">Стоимоть блоков (за куб):</string>
+    <string name="tip_kladki">Тип кладки (стена, вид сбоку):</string>
+    <string name="vdol1">1- вдоль</string>
+    <string name="na_rebro">2- на ребро</string>
+    <string name="poperek">3- поперек</string>
+    <string name="tolw_rstvora">Толщина слоя раствора, мм:</string>
+    <string name="dlina_bloka">Длина блока, мм</string>
+    <string name="wir_bloka">Ширина блока, мм</string>
+    <string name="vis_bloka">Высота блока, мм</string>
+    <string name="utoshnit_razmer">Уточнить размеры:</string>
+    <string name="stoimost_rabot">Стоимость всех выполненых работ:</string>
+    <string name="demont_lami">Демонтаж ламината:</string>
+    <string name="dem_park">Демонтаж паркета:</string>
+    <string name="dem_kovr">Демонтаж ковролина:</string>
+    <string name="der_pol">Деревяный пол:</string>
+    <string name="keram_plitka">Керамическая плитка:</string>
+    <string name="cem_stagka">Цементно-пещаная стяжка:</string>
+    <string name="dem_lenol">Демонтаж линолеума:</string>
+    <string name="dem_plintusa">Плинтуса, порожки:</string>
+    <string name="cena_rabot_m2">*цена за работу / за м2</string>
+    <string name="lamin_m2">Ламинат, м2:</string>
+    <string name="dem_lam_cen">Демонтаж ламината, *цена:</string>
+    <string name="parket_m2">Паркет, м2.:</string>
+    <string name="dem_parketa_cena">Демонтаж паркета, *цена:</string>
+    <string name="kovrolin_m2">Ковролин, м2.:</string>
+    <string name="dem_kov">Демонтаж ковролина, *цена:</string>
+    <string name="der_pol2">Деревяный пол , м2.:</string>
+    <string name="dem_pola_cena">Демонтаж деревяного пола, *цена:</string>
+    <string name="ker_plitka_m2">Керамическая плитка, м2:</string>
+    <string name="dep_ker">Демонтаж керамической плитки, *цена:</string>
+    <string name="cem_sty_m2">Цементно-пещаная стяжка, м2.:</string>
+    <string name="dem_st">Демонтаж стяжки, *цена:</string>
+    <string name="linom_2">Линолиум, м2:</string>
+    <string name="dem_leny">Демонтаж линолеума, *цена:</string>
+    <string name="plint_porogki">Плинтуса, порожки, метров пог.:</string>
+    <string name="dem_por">Демонтаж плинтусов, порожков, цена за м.п.:</string>
+    <string name="wpakl">Шпаклевка</string>
+    <string name="insrukcia">Инструкция</string>
+    <string name="we_app">Еще приложения</string>
+    <string name="podelica">Поделится</string>
+    <string name="nap_nam">Написать нам</string>
+    <string name="bez_rek">Версия без рекламы</string>
+    <string name="plit_napol2">Плитка на пол</string>
+    <string name="plitka_pol_stena">Плитка пол + стена</string>
+    <string name="plitka_maxi">Пол + стена в два тона + фреза</string>
+    <string name="kri_dvuskat">Двускатная крыша</string>
+    <string name="kri_plus_veranda">Обрешетка (двускат + веранда)</string>
+    <string name="cem_pes_s">Цемент + песок, S</string>
+    <string name="cem_pes_a_b">Цемент + песок, A-B</string>
+    <string name="smes_s">Самовыравнивающаяся смесь, S</string>
+    <string name="smes_a_b">Самовыравнивающаяся смесь, A-B</string>
+    <string name="wpak_s">Шпаклевка, S</string>
+    <string name="wpak_a_b">Шпаклевка, A+B</string>
+    <string name="plita_pram">Прямоугольная плита</string>
+    <string name="krug_plita">Круглая плита</string>
+    <string name="kraska_s">Краска (кг)</string>
+    <string name="kraska_a_b">Краска (л)</string>
+    <string name="standart1">Стандарт</string>
+    <string name="lite2">Эко</string>
+    <string name="obem1">Расчет объема</string>
+    <string name="krugli_is">Круглый, из кирпича</string>
+    <string name="steni3">Стены</string>
+    <string name="potolok2">Потолок</string>
+    <string name="pol3">Пол</string>
+    <string name="ud_knop">Удерживайте кнопку</string>
+    <string name="dla_is">для изменения значения</string>
+    <string name="nagmite">Нажмите любую кнопку</string>
+    <string name="dla_ism">для востановления значения</string>
+    <string name="uderg">Удерживайте кнопку</string>
+    <string name="obnul">для обнуления результатов</string>
+    <string name="ud_oboev">Удаление старых обоев:</string>
+    <string name="izvest_mel">Известь, мел:</string>
+    <string name="ud_kraska">Водоэмульсионная краска:</string>
+    <string name="ud_polester">Удаление полиэстровых плиток:</string>
+    <string name="ud_wtuk">Демонтаж штукатурки:</string>
+    <string name="ud_gipkar">Гипсокартон:</string>
+    <string name="ud_armstrong">Потолок Армстронг:</string>
+    <string name="ud_mdf">Вагонка (дерево, МДФ, ПВХ):</string>
+    <string name="ud_ob">Обои на потолку, м2:</string>
+    <string name="ud_ob_cena">Удаление обоев, *цена:</string>
+    <string name="ud_is_mel">Известь, мел, м2.:</string>
+    <string name="ud_is_cena">Удаление извести, мела, *цена:</string>
+    <string name="ud_kraska_emu">Водоэмульсионная краска, м2.:</string>
+    <string name="ud_kr_cen">Удаление водоэмульсионной краски, *цена:</string>
+    <string name="ug_plit_kley">Полиэстровые плитки на клею , м2.:</string>
+    <string name="ud_plit_cena">Демонтаж полиэстровых плиток на клею, *цена:</string>
+    <string name="ud_wtuk_m2">Штукатурка, м2:</string>
+    <string name="cm_wt_cen">Демонтаж штукатурки, *цена:</string>
+    <string name="gip_m2">Гипсокартон, м2.:</string>
+    <string name="dem_gip3">Демонтаж гипсокартона, *цена:</string>
+    <string name="pot_arm_m2">Потолок Армстронг, м2:</string>
+    <string name="arm_cena2">Удаление Армстронга, *цена:</string>
+    <string name="der_md">Вагонка (дерево, ПВХ, МДФ), м2:</string>
+    <string name="vag_cena">Демонтаж вагонки, *цена:</string>
+    <string name="ud_kir">Крирпичные перегородки (12 см):</string>
+    <string name="gip_per">Гипсокартонные перегородки:</string>
+    <string name="steni25">Кирпичные стены (25 см):</string>
+    <string name="dem_vag">Демонтаж вагонки:</string>
+    <string name="ud_pobelki">Удаление побелки:</string>
+    <string name="ud_obo">Удаление обоев:</string>
+    <string name="ud_plitki">Керамическая плитка на стене, м2:</string>
+    <string name="ud_pli_cena">Демонтаж керамической плитки, *цена:</string>
+    <string name="per_12">Кирпирпичные перегородки (12см), м2.:</string>
+    <string name="ud_12_c">Демонтаж кирпичных перегородок (12см), *цена:</string>
+    <string name="per_gip_m2">Перегородоки из гипсокартона , м2.:</string>
+    <string name="dem_per">Демонтаж перегородок из гипсокартона, *цена:</string>
+    <string name="kir_25">Кирпичная стена (25 см), м2:</string>
+    <string name="st25_cena">Демонтаж кирпичных стен (25см), *цена:</string>
+    <string name="ud_pvx_m2">Вагонка (дерево, ПВХ, МДФ), м2.:</string>
+    <string name="dem_vag_cena">Демонтаж вагонки, *цена:</string>
+    <string name="dem_pob_m2">Побелка, покраска, м2:</string>
+    <string name="ud_po_cena">Удаление побелки, покраски, *цена:</string>
+    <string name="ud_ob_m2">Обои, м2:</string>
+    <string name="ud_ob_cena2">Удаление обоев со стен, *цена:</string>
+    <string name="vikl">Выключатели (цена/ за работу):</string>
+    <string name="rozet">Розетки (цена/ за работу):</string>
+    <string name="podreze">Подрезетники (цена/ за работу):</string>
+    <string name="kom_kor">Комутационные коробки (за работу):</string>
+    <string name="bez_kor_bra">Точки без коробок (бра) цена за раб.:</string>
+    <string name="mon_wit">Монтаж щитовых (цена/ за раб.):</string>
+    <string name="mon_gofri">Укладка гофры (цена/ за работу):</string>
+    <string name="dop_rab">Дополнительные работы (цена):</string>
+    <string name="vik_wt">Выключатели, шт:</string>
+    <string name="vik_cena">Монтаж выключателя, цена:</string>
+    <string name="rozetki2">Розетки, шт.:</string>
+    <string name="roz_mon">Монтаж розетки, цена:</string>
+    <string name="podrez2">Подрезетник, шт.:</string>
+    <string name="podr">Монтаж подрезетника, цена.:</string>
+    <string name="korobki">Комутационные коробки, шт.:</string>
+    <string name="kom_cena">Монтаж комутатационной коробки, цена:</string>
+    <string name="swet_wt">Точка без коробки (бра, светильники), шт.:</string>
+    <string name="cen_tosh">Стоимость монтажа одной точки, цена:</string>
+    <string name="wit2">Количество щитовых, шт.:</string>
+    <string name="cen_wit3">Стоимость монтажа щита, цена:</string>
+    <string name="gofra">Гофра, м:</string>
+    <string name="cen_rofry">Стоимость укладки гофры, цена за 1м.п.:</string>
+    <string name="dop_raboty">Дополнительные работы, усл./едениц:</string>
+    <string name="cen_dop_rab">Стоимость дополнительных работ, цена:</string>
+    <string name="kol_wit">Количество щитовых, шт.:</string>
+
 </resources>

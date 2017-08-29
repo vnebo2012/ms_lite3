@@ -5,11 +5,11 @@
         <item
             android:id="@+id/menu17"
 
-            android:title="Двускатная крыша"/>
+            android:title="@string/kri_dvuskat" />
 
         <item
             android:id="@+id/menu18"
-            android:title="Обрешетка (двускат + веранда)"/>
+            android:title="@string/kri_plus_veranda" />
 
 
 

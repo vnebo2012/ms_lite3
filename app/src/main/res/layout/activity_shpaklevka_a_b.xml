@@ -33,7 +33,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="Шпаклевка A_B"
+                    android:text="@string/shpakl_a_b"
                     android:textColor="@android:color/white"
                     android:textSize="18dp"
                     android:textStyle="bold|italic" />

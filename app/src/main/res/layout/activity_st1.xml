@@ -33,7 +33,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="Стяжка (цемент) A_B"
+                    android:text="@string/cement_stagka1_A_B"
                     android:textColor="@android:color/white"
                     android:textSize="18dp"
                     android:textStyle="bold|italic" />

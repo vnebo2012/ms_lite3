@@ -32,19 +32,19 @@
             android:id="@+id/linearLayout3">
 
             <TextView
+                android:id="@+id/textView82"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Удерживайте кнопку"
-                android:id="@+id/textView82"
                 android:layout_gravity="center_horizontal"
+                android:text="@string/ud_knop"
                 android:textColor="#ffffff" />
 
             <TextView
+                android:id="@+id/textView522"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="для изменения значения"
-                android:id="@+id/textView522"
                 android:layout_gravity="center_horizontal"
+                android:text="@string/dla_is"
                 android:textColor="#ffffff" />
 
         </LinearLayout>
@@ -101,19 +101,19 @@
             android:id="@+id/linearLayout31">
 
             <TextView
+                android:id="@+id/textView821"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Нажмите любую кнопку"
-                android:id="@+id/textView821"
                 android:layout_gravity="center_horizontal"
+                android:text="@string/nagmite"
                 android:textColor="#ffffff" />
 
             <TextView
+                android:id="@+id/textView5221"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="для востановления значения"
-                android:id="@+id/textView5221"
                 android:layout_gravity="center_horizontal"
+                android:text="@string/dla_ism"
                 android:textColor="#ffffff" />
 
         </LinearLayout>
@@ -183,7 +183,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="3) Удерживайте кнопку"
+                android:text="@string/uderg"
                 android:textColor="@color/colorWite" />
 
             <TextView
@@ -191,7 +191,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="для обнуления результатов"
+                android:text="@string/obnul"
                 android:textColor="@color/colorWite" />
 
 

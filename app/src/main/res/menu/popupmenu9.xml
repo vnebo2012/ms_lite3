@@ -5,16 +5,16 @@
         <item
             android:id="@+id/menu14"
 
-            android:title="Стены"/>
+            android:title="@string/steni3" />
 
         <item
             android:id="@+id/menu15"
-            android:title="Потолок"/>
+            android:title="@string/potolok2" />
 
 
         <item
             android:id="@+id/menu16"
-            android:title="Пол"/>
+            android:title="@string/pol3" />
 
 
 

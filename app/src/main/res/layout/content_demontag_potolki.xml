@@ -14,7 +14,10 @@
         android:layout_height="match_parent"
 
         android:orientation="vertical"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:id="@+id/linearLayout2"
@@ -59,7 +62,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Стоимость всех выполненых работ:"
+                        android:text="@string/stoimost_rabot"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -97,7 +100,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Удаление старых обоев:"
+                        android:text="@string/ud_oboev"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -134,7 +137,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Известь, мел:"
+                        android:text="@string/izvest_mel"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -171,7 +174,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Водоэмульсионная краска:"
+                        android:text="@string/ud_kraska"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -209,7 +212,7 @@
                         android:layout_marginRight="3dp"
                         android:layout_weight="0.32"
                         android:autoText="false"
-                        android:text="Удаление полиэстровых плиток:"
+                        android:text="@string/ud_polester"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/background_light"
                         android:textSize="15dp"
@@ -244,7 +247,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
                         android:autoText="false"
-                        android:text="Демонтаж штукатурки:"
+                        android:text="@string/ud_wtuk"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -283,7 +286,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
                         android:autoText="false"
-                        android:text="Гипсокартон:"
+                        android:text="@string/ud_gipkar"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -321,7 +324,7 @@
                         android:layout_marginRight="3dp"
                         android:layout_weight="1"
                         android:autoText="false"
-                        android:text="Потолок Армстронг:"
+                        android:text="@string/ud_armstrong"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/background_light"
                         android:textSize="15dp"
@@ -355,7 +358,7 @@
                         android:layout_marginRight="3dp"
                         android:layout_weight="1"
                         android:autoText="false"
-                        android:text="Вагонка (дерево, МДФ, ПВХ):"
+                        android:text="@string/ud_mdf"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/background_light"
                         android:textSize="15dp"
@@ -406,7 +409,7 @@
                         android:layout_marginLeft="3dp"
                         android:layout_weight="1"
                         android:autoText="false"
-                        android:text="*цена за работу / за м2"
+                        android:text="@string/cena_rabot_m2"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@color/colorPrimary"
                         android:textSize="12dp"
@@ -425,7 +428,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Обои на потолку, м2:"
+                            android:text="@string/ud_ob"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -621,7 +624,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Удаление обоев, *цена:"
+                            android:text="@string/ud_ob_cena"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -808,7 +811,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Известь, мел, м2.:"
+                            android:text="@string/ud_is_mel"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -995,7 +998,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Удаление извести, мела, *цена:"
+                            android:text="@string/ud_is_cena"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -1128,7 +1131,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Водоэмульсионная краска, м2.:"
+                            android:text="@string/ud_kraska_emu"
                             android:textColor="@color/colorWite"
                             android:textSize="14sp" />
 
@@ -1261,7 +1264,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Удаление водоэмульсионной краски, *цена:"
+                            android:text="@string/ud_kr_cen"
                             android:textColor="@color/colorWite"
                             android:textSize="12dp" />
 
@@ -1393,7 +1396,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Полиэстровые плитки на клею , м2.:"
+                            android:text="@string/ug_plit_kley"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -1504,7 +1507,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Демонтаж полиэстровых плиток на клею, *цена:"
+                            android:text="@string/ud_plit_cena"
                             android:textColor="@color/colorWite"
                             android:textSize="12dp" />
 
@@ -1616,7 +1619,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Штукатурка, м2:"
+                            android:text="@string/ud_wtuk_m2"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -1728,7 +1731,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Демонтаж штукатурки, *цена:"
+                            android:text="@string/cm_wt_cen"
                             android:textColor="@color/colorWite"
                             android:textSize="12dp" />
 
@@ -1840,7 +1843,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Гипсокартон, м2.:"
+                            android:text="@string/gip_m2"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -1940,7 +1943,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Демонтаж гипсокартона, *цена:"
+                            android:text="@string/dem_gip3"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -2039,7 +2042,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Потолок Армстронг, м2:"
+                            android:text="@string/pot_arm_m2"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -2138,7 +2141,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Удаление Армстронга, *цена:"
+                            android:text="@string/arm_cena2"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -2271,7 +2274,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Вагонка (дерево, ПВХ, МДФ), м2:"
+                            android:text="@string/der_md"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -2413,7 +2416,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Демонтаж вагонки, *цена:"
+                            android:text="@string/vag_cena"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 

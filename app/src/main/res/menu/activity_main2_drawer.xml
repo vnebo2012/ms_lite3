@@ -5,32 +5,29 @@
     <item
         android:id="@+id/infi"
         android:icon="@drawable/ic_info"
-        android:title="Инструкция" />
+        android:title="@string/insrukcia" />
 
 i
-            <item
-                android:id="@+id/market"
-                android:title="Еще приложения"
-                android:icon="@mipmap/ic_app"
-                />
+    <item
+        android:id="@+id/market"
+        android:icon="@mipmap/ic_app"
+        android:title="@string/we_app" />
 
 
-
-
-            <item
-                android:id="@+id/podelica"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Поделится" />
+    <item
+        android:id="@+id/podelica"
+        android:icon="@drawable/ic_menu_share"
+        android:title="@string/podelica" />
 
     <item
         android:id="@+id/napisat"
         android:icon="@mipmap/ic_pismo"
-        android:title="Написать нам" />
+        android:title="@string/nap_nam" />
 
     <item
         android:id="@+id/pro"
         android:icon="@drawable/ic_pro"
-        android:title="Версия без рекламы" />
+        android:title="@string/bez_rek" />
 
 
 

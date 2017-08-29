@@ -4784,13 +4784,13 @@ public class BlokiActivity extends AppCompatActivity {
                     //region секция 11.1
                     case R.id.button41:
                         TextView textView069 = (TextView) findViewById(R.id.textViewWir11);
-                        TextView textView0690 = (TextView) findViewById(R.id.textView9);
+                       // TextView textView0690 = (TextView) findViewById(R.id.textView9);
                         aetText69 = (Button) findViewById(R.id.button41);
                         float num069 = Float.parseFloat(aetText69.getText().toString());
                         float w69 = (float) num069;
                         textView069.setText(String.format(Locale.US, "%.0f", w69) + "");
                         textView069.setText(String.format(Locale.US, "%.0f", w69) + "");
-                        textView0690.setText("Вдоль");
+                       // textView0690.setText("Вдоль");
                         imageView.setImageResource(R.drawable.vdol);
 
                         Animation anim48 = AnimationUtils.loadAnimation(
@@ -4801,12 +4801,12 @@ public class BlokiActivity extends AppCompatActivity {
 
                     case R.id.button42:
                         TextView textView070 = (TextView) findViewById(R.id.textViewWir11);
-                        TextView textView0700 = (TextView) findViewById(R.id.textView9);
+                      //  TextView textView0700 = (TextView) findViewById(R.id.textView9);
                         aetText70 = (Button) findViewById(R.id.button42);
                         float num070 = Float.parseFloat(aetText70.getText().toString());
                         float w70 = (float) num070;
                         textView070.setText(String.format(Locale.US, "%.0f", w70) + "");
-                        textView0700.setText("На ребро");
+                     //   textView0700.setText("На ребро");
                         imageView.setImageResource(R.drawable.narebrob);
 
                         Animation anim49 = AnimationUtils.loadAnimation(
@@ -4817,12 +4817,12 @@ public class BlokiActivity extends AppCompatActivity {
 
                     case R.id.button43:
                         TextView textView071 = (TextView) findViewById(R.id.textViewWir11);
-                        TextView textView0710 = (TextView) findViewById(R.id.textView9);
+                       // TextView textView0710 = (TextView) findViewById(R.id.textView9);
                         aetText71 = (Button) findViewById(R.id.button43);
                         float num071 = Float.parseFloat(aetText71.getText().toString());
                         float w71 = (float) num071;
                         textView071.setText(String.format(Locale.US, "%.0f", w71) + "");
-                        textView0710.setText("Поперек");
+                      //  textView0710.setText("Поперек");
                         imageView.setImageResource(R.drawable.poperekb);
 
                         Animation anim50 = AnimationUtils.loadAnimation(

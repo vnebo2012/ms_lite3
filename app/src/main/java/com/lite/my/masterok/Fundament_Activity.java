@@ -704,7 +704,7 @@ public class Fundament_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fun8);
+        setContentView(R.layout.activity_armopojas);
 
 
         //mNewGameButton = (ImageButton) findViewById(R.id.dom);

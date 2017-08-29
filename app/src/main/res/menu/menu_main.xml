@@ -7,7 +7,7 @@
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:title="Инструкция"
+        android:title="@string/insrukcia"
         app:showAsAction="never" />
 
 

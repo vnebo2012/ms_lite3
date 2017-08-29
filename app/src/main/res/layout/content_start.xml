@@ -74,9 +74,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Плита"
+                                android:text="@string/plita1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -103,9 +103,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Армопояс"
+                                android:text="@string/armopojas1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
 
                         </LinearLayout>
 
@@ -133,9 +133,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Кирпич"
+                                android:text="@string/kirp1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -170,9 +170,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Плитка"
+                                android:text="@string/plitka"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -199,9 +199,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Крыша"
+                                android:text="@string/kriwa1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
 
                         </LinearLayout>
 
@@ -229,9 +229,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Блоки"
+                                android:text="@string/bloki1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -266,9 +266,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Пенопласт"
+                                android:text="@string/pinoplast1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -295,9 +295,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Покраска"
+                                android:text="@string/pokraska1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
 
                         </LinearLayout>
 
@@ -325,9 +325,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Гипсокартон"
+                                android:text="@string/gipsokarton1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="11sp" />
+                                android:textSize="10dp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -362,9 +362,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Шпаклевка"
+                                android:text="@string/wpakl"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -391,9 +391,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Септик"
+                                android:text="@string/septik1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
 
                         </LinearLayout>
 
@@ -421,9 +421,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Стяжка"
+                                android:text="@string/styagka1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -459,9 +459,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Радиатор"
+                                android:text="@string/radiatori1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -489,9 +489,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Электро"
+                                android:text="@string/elektro"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
                         </LinearLayout>
 
 
@@ -521,9 +521,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Демонтаж"
+                                android:text="@string/demontag1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12sp" />
+                                android:textSize="10dp" />
                         </LinearLayout>
 
                     </LinearLayout>

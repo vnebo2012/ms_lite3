@@ -1,0 +1,361 @@
+<resources>
+    <string name="app_name">Мастерок</string>
+
+    <string name="title_activity_navi_fun">Тип фундаменту</string>
+    <string name="title_activity_fun1">Тип 1</string>
+    <string name="action_nastroi">На главну</string>
+    <string name="action_email">Тип фундаменту</string>
+    <string name="action_info">Про кнопки</string>
+    <string name="ress">Скидання результату</string>
+    <string name="vixod">Вихід</string>
+
+    <string name="activity_web_beton">Пошук бетону ...</string>
+    <string name="armatura">Арматуру заборонено зєднуваті в місцях максимального напруження стержнів
+        і зонах максимального навантаження на них.</string>
+    <string name="activity_web_armatura">Про бетон</string>
+    <string name="title_activity_perimetr">Тип - периметр</string>
+    <string name="one">Пошук</string>
+    <string name="three">Данних покі що немає</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="my_tb_title">Розрахунок цегли</string>
+    <string name="web_beton">Пошук бетону ...</string>
+    <string name="my_fundamenti">Форма фундаменту</string>
+    <string name="web_armatura">Пошук арматури ...</string>
+    <string name="web_plus">Повідомлення</string>
+
+    <string name="Beton">Бетон (м3):</string>
+    <string name="cena">Ціна (бетон):</string>
+    <string name="cenaarmatury">Вартість арматури:</string>
+    <string name="razmer_a">Розмір A:</string>
+    <string name="razmer_b">Розмір B:</string>
+    <string name="wirina_fundamenta">Ширина фундаменту:</string>
+    <string name="glubina_fundamenta">Глибина фундаменту:</string>
+    <string name="cena_betona_za_m3">Вартість бетону (за куб):</string>
+    <string name="ryadi_armaturi_a">Кількість рядів арматури (А):</string>
+    <string name="naxlest">Нахлест арматури(%):</string>
+    <string name="diametr_prodolnoy_arm">A - диаметр повздовжньої арматури:</string>
+    <string name="diametr_arm_prosto">Диаметр арматури:</string>
+    <string name="diametr_obvyazki">B - диаметр арматури обвязки:</string>
+    <string name="wag_obvyazki">C - крок обвязки:</string>
+    <string name="cena_armaturi_za_kg">Вартисть арматури (за кг):</string>
+    <string name="cena_armaturi_vsya">Вартисть арматури:</string>
+
+    <string name="Perimetr_fundamenta">Периметр армопояса P:</string>
+    <string name="visota_koloni">Висота колони:</string>
+    <string name="diametr_koloni">Диаметр колони D:</string>
+    <string name="storona_a_koloni">Довжина сторони А:</string>
+    <string name="storona_b_koloni">Довжина сторони B:</string>
+    <string name="tolshina_pliti">Товщина плити перекриття:</string>
+    <string name="sloi_armaturi">Кількість шарів арматури:</string>
+    <string name="wag_ukladki">n - крок вкладання арматури:</string>
+    <string name="radius_r">Радіус R:</string>
+    <string name="fundament_menu">Фундамент</string>
+    <string name="dastroyka_menu">Добудова</string>
+    <string name="plita_menu">Плита</string>
+    <string name="kolonna_menu">Колона</string>
+    <string name="razmer_c">Размір C:</string>
+    <string name="dlina_fundamenta">Довжина фундаменту А:</string>
+    <string name="arm1">Арматуру</string>
+    <string name="arm2">заборонено</string>
+    <string name="arm3">зєднувати</string>
+    <string name="arm4">в місцях максимального</string>
+    <string name="arm5">навантаження.</string>
+    <string name="Information">Інформація</string>
+    <string name="Poisk">Пошук матеріалів</string>
+    <string name="Instruktion">Instruction</string>
+    <string name="vvedite_znachenie">Введіть значення для кнопки</string>
+    <string name="pervoe_vnesenie_dannix">Початкове внесення даних</string>
+    <string name="nagmite_ok">(натисніть: Ок)</string>
+    <string name="vvedite_cenu">Введіть свою ціну</string>
+    <string name="vvedite_wag">Введіть свій крок</string>
+    <string name="eto_standart">Це стандартний размір</string>
+    <string name="eto_fiks">Це фиксоване значення</string>
+    <string name="obnulit_danie">Обнулити дані?</string>
+
+    <string name="title_activity_kolona3">Прямокутна колона</string>
+    <string name="tema_pisma">Тема листа:</string>
+    <string name="soobwenie">Повідомлення:</string>
+    <string name="vibirite_kartinku">  Прикласти картинку, фото  </string>
+
+    <string name="betonir_start">БЕТОНИР</string>
+    <string name="armatura_m_kg">Арматура: A (м/кг):</string>
+    <string name="B_m_kg">Арм.:B (м/кг):</string>
+    <string name="arm_m_kg_bes">Арматура (м/кг):</string>
+    <string name="bet">Бетон</string>
+    <string name="arm">Арматура</string>
+
+    <string name="pro">Версія Pro</string>
+
+    <string name="kirpish">Цегла (розрахунок)</string>
+    <string name="kirp_bar">Мастерок</string>
+    <string name="my_tb_title23">Розрахунок блоків</string>
+    <string name="app_name2">Instruction</string>
+    <string name="title_activity_plitka">PlitkaActivity</string>
+    <string name="my_tb_title2322">Розрахунок плитки</string>
+
+    <string name="title_activity_armo">Армопояс</string>
+    <string name="title_activity_plitka2">Плитка на підлогу</string>
+    <string name="my_tb_title23223">Плитка на підлогу</string>
+    <string name="my_tb_title77">Армопояс</string>
+    <string name="title_activity_plitka3">Плитка підлогу + стіна</string>
+    <string name="title_activity_start2">Start2Activity</string>
+    <string name="title_activity_st1">Стяжка</string>
+    <string name="my_tb_title232231">Стяжка</string>
+    <string name="title_activity_st2">Стяжка</string>
+    <string name="my_tb_title_samo_s">Наливна підлога, S</string>
+    <string name="my_tb_title_cement_a_b">Стяжка (цемент)</string>
+    <string name="my_tb_title_samo_a_b">Наливна підлога</string>
+    <string name="title_activity_st22">Шпаклівка, S</string>
+    <string name="my_tb_title_samo_s2">Шпаклівка, S</string>
+    <string name="title_activity_st222">Шпаклівка, A+B</string>
+    <string name="my_tb_title_samo_a_b222">Шпаклівка, A+B</string>
+
+    <string name="my_tb_title_samo_a_b223">Наливна підлога, A+B</string>
+    <string name="title_activity_st2212">Плита прямокутна</string>
+    <string name="title_activity_st22245">Плита кругла</string>
+    <string name="my_tb_title78">Плита прямокутна</string>
+    <string name="my_tb_title69">Плита кругла</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="title_activity_st222452">Електромонтаж</string>
+    <string name="my_tb_title_elektro">Електромонтаж</string>
+    <string name="my_tb_title_samo_s278">Фарбування</string>
+    <string name="title_activity_kr_s">Фарбування</string>
+    <string name="my_tb_title_kr_long">Фарбування А+В+С</string>
+    <string name="my_tb_title_kr_s">Фарбування S</string>
+    <string name="title_activity_kr_l">Фарбування А+B+C</string>
+    <string name="title_activity_kr_s2">Фарбування S</string>
+    <string name="my_tb_title_kr_s_2">Фарбування S (л)</string>
+    <string name="my_tb_title_kr_s33">Фарбування S (кг)</string>
+    <string name="my_tb_title_kr_s331">Фарбування S (л)</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Налаштування</string>
+    <string name="title_activity_kr_s29">Пінопласт</string>
+    <string name="ukr">ukr1</string>
+    <string name="title_activity_sovet_penoplast">Утеплення</string>
+
+    <string name="title_activity_sovet_penoplast2_">Пінопласт</string>
+    <string name="kirp1">Brick</string>
+    <string name="plita1">Floor slab</string>
+    <string name="armopojas1">Reinforced belt</string>
+    <string name="plitka">Tile</string>
+    <string name="kriwa1">The roof</string>
+    <string name="bloki1">Blocks</string>
+    <string name="pinoplast1">Foam</string>
+    <string name="pokraska1">Painting</string>
+    <string name="gipsokarton1">Plasterboard</string>
+    <string name="pinoplast2">Foam</string>
+    <string name="septik1">Cesspool</string>
+    <string name="styagka1">Bulk floor</string>
+    <string name="radiatori1">Radiators</string>
+    <string name="radiatori2">Radiators</string>
+    <string name="elektro">Electro</string>
+    <string name="demontag1">Dismantling</string>
+    <string name="dem_pol1">Dismantling of the floor</string>
+    <string name="dem_potolki">Dismantling of ceilings</string>
+    <string name="dem_steni">Dismantling, walls</string>
+    <string name="dvuskat1">Gable roof</string>
+    <string name="gipsokarton_standart1">Gypsum board, standard</string>
+    <string name="gip_lite">Gypsum board, economy</string>
+    <string name="kras_kg">Paint, kg</string>
+    <string name="kras_litri">Paint, l</string>
+    <string name="ras_sept">Calculation of volume</string>
+    <string name="dvuskat_pristroyka">Gable roof, extension</string>
+    <string name="plit_na_pol">Tiles on the floor</string>
+    <string name="naliv_pol_a_b">Bulk floor, A_B</string>
+    <string name="nal_pol_s">Bulk floor, S</string>
+    <string name="sep_kirp_krug">Round septic tank made of bricks</string>
+    <string name="shpakl_a_b">Putty, A_B</string>
+    <string name="shp_s">Putty, S</string>
+    <string name="cement_stagka1_A_B">Cement screed on the floor, A_B</string>
+    <string name="cem_st_s">Cement screed on the floor, S</string>
+
+    <string name="bloki_m3_wt">Blocks, m3/pc</string>
+    <string name="cena_bloki1">Cost of blocks</string>
+    <string name="kol_rastvora">Amount of cement slurry, m3</string>
+    <string name="ili_kley">or glue (25 kg):</string>
+    <string name="visota_steni_A_m">Height of the wall A, m:</string>
+    <string name="dlina_steni_B_m">Wall length B, m:</string>
+    <string name="s_poyamov">The area of openings (doors, windows), m2:</string>
+    <string name="stoim_blokov">Cost of blocks (per cube):</string>
+    <string name="tip_kladki">Masonry type (wall, side view):</string>
+    <string name="vdol1">1- along</string>
+    <string name="na_rebro">2- on the edge</string>
+    <string name="poperek">3- across</string>
+    <string name="tolw_rstvora">Thickness of the mortar layer, mm:</string>
+    <string name="dlina_bloka">Block length, mm</string>
+    <string name="wir_bloka">Block width, mm</string>
+    <string name="vis_bloka">Unit height, mm</string>
+    <string name="utoshnit_razmer">Specify dimensions:</string>
+
+    <string name="stoimost_rabot">Cost of all works performed:</string>
+    <string name="demont_lami">Dismantling of laminate:</string>
+    <string name="dem_park">Dismantling of parquet:</string>
+    <string name="dem_kovr">Dismantling the carpet:</string>
+    <string name="der_pol">Wooden floor:</string>
+    <string name="keram_plitka">Ceramic tile:</string>
+    <string name="cem_stagka">Cement-sand screed:</string>
+    <string name="dem_lenol">Dismantling of linoleum:</string>
+    <string name="dem_plintusa">Plinths, sills:</string>
+    <string name="cena_rabot_m2">* Cost of work / m2</string>
+    <string name="lamin_m2">Laminate, m2:</string>
+    <string name="dem_lam_cen">Dismantling of laminate, * cost:</string>
+    <string name="parket_m2">Parquet, m2:</string>
+    <string name="dem_parketa_cena">Dismantling of parquet, * cost:</string>
+    <string name="kovrolin_m2">Carpet covering, m2:</string>
+    <string name="dem_kov">Dismantling the carpet, * cost:</string>
+    <string name="der_pol2">Wooden floor, m2:</string>
+    <string name="dem_pola_cena">Dismantling of the wooden floor, * cost:</string>
+    <string name="ker_plitka_m2">Ceramic tiles, m2:</string>
+    <string name="dep_ker">Dismantling of ceramic tiles, * price:</string>
+    <string name="cem_sty_m2">Cement-sand screed, m2:</string>
+    <string name="dem_st">Dismantling of the screed, * price:</string>
+    <string name="linom_2">Linoleum, m2:</string>
+    <string name="dem_leny">Dismantling of linoleum, * cost:</string>
+    <string name="plint_porogki">Skirting boards (thresholds, meters):</string>
+    <string name="dem_por">Dismantling skirting boards, thresholds (cost per meter linear):</string>
+    <string name="wpakl">Putty</string>
+    <string name="insrukcia">Instructions</string>
+    <string name="we_app">More Apps</string>
+    <string name="podelica">Share</string>
+    <string name="nap_nam">Write to us</string>
+    <string name="bez_rek">Version without ads</string>
+    <string name="plit_napol2">Tiles on the floor</string>
+    <string name="plitka_pol_stena">Tile floor + wall</string>
+    <string name="plitka_maxi">Floor + wall in two tones + milling cutter</string>
+    <string name="kri_dvuskat">Gable roof</string>
+    <string name="kri_plus_veranda">Cladding (gable + completion)</string>
+    <string name="cem_pes_s">Cement + sand, S</string>
+    <string name="cem_pes_a_b">Cement + sand, A-B</string>
+    <string name="smes_s">Self-leveling compound, S</string>
+    <string name="smes_a_b">Self-leveling compound, A-B</string>
+    <string name="wpak_s">Putty, S</string>
+    <string name="wpak_a_b">Putty, A + B</string>
+    <string name="plita_pram">Rectangular plate</string>
+    <string name="krug_plita">Round plate</string>
+    <string name="kraska_s">Paint (kg)</string>
+    <string name="kraska_a_b">Paint (l)</string>
+    <string name="standart1">Standard</string>
+    <string name="lite2">Eco</string>
+    <string name="obem1">Calculation of volume</string>
+    <string name="krugli_is">Round, made of bricks</string>
+    <string name="steni3">Walls</string>
+    <string name="potolok2">Ceiling</string>
+    <string name="pol3">Floor</string>
+    <string name="ud_knop">Hold the button</string>
+    <string name="dla_is">to change the value</string>
+    <string name="nagmite">Press any button</string>
+    <string name="dla_ism">to restore the value</string>
+    <string name="uderg">Hold the button</string>
+    <string name="obnul">to zero the results</string>
+
+    <string name="ud_oboev">Removing old wallpapers:</string>
+    <string name="izvest_mel">Lime, chalk:</string>
+    <string name="ud_kraska">Water-based paint:</string>
+    <string name="ud_polester">Removal of polyester tiles:</string>
+    <string name="ud_wtuk">Dismantling of plaster:</string>
+    <string name="ud_gipkar">Drywall:</string>
+    <string name="ud_armstrong">Ceiling Armstrong:</string>
+    <string name="ud_mdf">Lining (wood, MDF, PVC):</string>
+    <string name="ud_ob">Wallpapers on the ceiling, m2:</string>
+    <string name="ud_ob_cena">Removing wallpaper, * cost:</string>
+    <string name="ud_is_mel">Известь, мел, м2.:</string>
+    <string name="ud_is_cena">Removal of lime, chalk, * cost:</string>
+    <string name="ud_kraska_emu">Water-based paint, m2:</string>
+    <string name="ud_kr_cen">Removal of water-based paint, * cost:</string>
+    <string name="ug_plit_kley">Polyester tiles for glue, m2:</string>
+    <string name="ud_plit_cena">Dismantling of polyester tiles on glue, * cost:</string>
+    <string name="ud_wtuk_m2">Cement plaster, m2:</string>
+    <string name="cm_wt_cen">Dismantling of plaster, * cost:</string>
+    <string name="gip_m2">Drywall, m2:</string>
+    <string name="dem_gip3">Dismantling of drywall, * cost:</string>
+    <string name="pot_arm_m2">Ceiling Armstrong, m2:</string>
+    <string name="arm_cena2">Removing Armstrong, * cost:</string>
+    <string name="der_md">Lining (wood, PVC, MDF), m2:</string>
+    <string name="vag_cena">Dismantling of lining, * cost:</string>
+    <string name="ud_kir">Brick partitions (12 cm):</string>
+    <string name="gip_per">Plasterboard partitions:</string>
+    <string name="steni25">Brick walls (25 cm):</string>
+    <string name="dem_vag">Dismantling of lining:</string>
+    <string name="ud_pobelki">Removal of whitewash:</string>
+
+    <string name="ud_obo">Removing wallpaper:</string>
+    <string name="ud_plitki">Ceramic tiles on the wall, m2:</string>
+    <string name="ud_pli_cena">Dismantling of ceramic tiles, * cost:</string>
+    <string name="per_12">Brick partitions (12cm), m2:</string>
+    <string name="ud_12_c">Dismantling of brick partitions (12cm), * cost:</string>
+    <string name="per_gip_m2">Partition of plasterboard, m2:</string>
+    <string name="dem_per">Dismantling of plasterboard partitions, * cost:</string>
+    <string name="kir_25">Brick wall (25 cm), m2:</string>
+    <string name="st25_cena">Dismantling of brick walls (25cm), * cost:</string>
+    <string name="ud_pvx_m2">Lining (wood, PVC, MDF), m2:</string>
+    <string name="dem_vag_cena">Dismantling of lining, * cost:</string>
+    <string name="dem_pob_m2">Whitewashing, painting, m2:</string>
+    <string name="ud_po_cena">Removal of whitewash, painting, * cost:</string>
+    <string name="ud_ob_m2">Wallpaper, m2:</string>
+    <string name="ud_ob_cena2">Removing wallpaper from the walls, * cost:</string>
+    <string name="vikl">Switches (price / performance):</string>
+    <string name="rozet">Sockets (price / per work):</string>
+    <string name="podreze">Subsets (price / per work):</string>
+    <string name="kom_kor">Switch boxes (per work):</string>
+    <string name="bez_kor_bra">Points without boxes (sconces) price per staff:</string>
+    <string name="mon_wit">Panel mounting (price / work):</string>
+    <string name="mon_gofri">Corrugation laying (price / per work):</string>
+    <string name="dop_rab">Additional works (price):</string>
+    <string name="vik_wt">Switches, pc:</string>
+    <string name="vik_cena">Installation of the switch, price:</string>
+    <string name="rozetki2">Sockets, pcs .:</string>
+    <string name="roz_mon">Installation of sockets, price:</string>
+    <string name="podrez2">Socket, pcs .:</string>
+    <string name="podr">Installation of a screeper, price .:</string>
+    <string name="korobki">Switch boxes, pcs .:</string>
+    <string name="kom_cena">Installation of the box, the price:</string>
+    <string name="swet_wt">Point without box (sconces, lamps), pcs .:</string>
+    <string name="cen_tosh">Cost of installation of one point, price:</string>
+    <string name="wit2">Quantity of panel, pcs .:</string>
+    <string name="cen_wit3">The cost of mounting the shield, the price:</string>
+    <string name="gofra">Corrugated hose, m:, м:</string>
+    <string name="cen_rofry">The cost of laying the corrugation, the price for 1 m/r:</string>
+    <string name="dop_raboty">Additional works, conditional/ units:</string>
+    <string name="cen_dop_rab">Cost of additional works, price:</string>
+    <string name="kol_wit">Quantity of panel, pcs .:</string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

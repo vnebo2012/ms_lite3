@@ -5,19 +5,19 @@
         <item
             android:id="@+id/menu6"
 
-            android:title="Цемент + песок, S"/>
+            android:title="@string/cem_pes_s" />
         <item
             android:id="@+id/menu7"
 
-            android:title="Цемент + песок, A-B"/>
-               <item
+            android:title="@string/cem_pes_a_b" />
+        <item
             android:id="@+id/menu8"
 
-            android:title="Самовыравнивающаяся смесь, S"/>
+            android:title="@string/smes_s" />
         <item
             android:id="@+id/menu9"
 
-            android:title="Самовыравнивающаяся смесь, A-B"/>
+            android:title="@string/smes_a_b" />
 
 
 

@@ -7,7 +7,7 @@
     android:background="@color/colorWite"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Fundament_Activity"
-    tools:showIn="@layout/activity_fun8">
+    tools:showIn="@layout/activity_armopojas">
 
     <LinearLayout
         android:id="@+id/linearLayout2"

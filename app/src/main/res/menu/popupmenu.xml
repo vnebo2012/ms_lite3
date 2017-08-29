@@ -5,15 +5,15 @@
         <item
             android:id="@+id/menu1"
 
-            android:title="Плитка на пол"/>
+            android:title="@string/plit_napol2" />
         <item
             android:id="@+id/menu2"
 
-            android:title="Плитка пол + стена"/>
+            android:title="@string/plitka_pol_stena" />
 
         <item
             android:id="@+id/menu3"
-            android:title="Пол + стена в два тона + фреза"/>
+            android:title="@string/plitka_maxi" />
 
 
 
