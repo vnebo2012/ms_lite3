@@ -72,7 +72,7 @@
                                 android:layout_margin="1dp"
                                 android:layout_marginRight="5dp"
                                 android:layout_weight="1"
-                                android:text="Площадь поверхности (м2):"
+                                android:text="@string/s_pover"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
                                 android:textSize="13sp"
@@ -110,7 +110,7 @@
                                 android:layout_margin="1dp"
                                 android:layout_marginRight="5dp"
                                 android:layout_weight="1"
-                                android:text="Лист ГКП, шт.:"
+                                android:text="@string/list_gkp"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
                                 android:textSize="13sp"
@@ -151,7 +151,7 @@
                                 android:layout_marginRight="3dp"
                                 android:layout_weight="0.32"
                                 android:autoText="false"
-                                android:text="Профиль ПП 60/27, ПН 28/27, пог.м:"
+                                android:text="@string/profil_pp27"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="13sp"
@@ -212,7 +212,7 @@
                                 android:layout_marginRight="3dp"
                                 android:layout_weight="0.32"
                                 android:autoText="false"
-                                android:text="Пластина - подвес, шт.:"
+                                android:text="@string/plast_podves"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="13sp"
@@ -248,7 +248,7 @@
                                 android:layout_marginRight="3dp"
                                 android:layout_weight="0.32"
                                 android:autoText="false"
-                                android:text="Дюбель для пластин (потолок), шт.:"
+                                android:text="@string/dubel"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="13sp"
@@ -285,7 +285,7 @@
                                 android:layout_marginRight="3dp"
                                 android:layout_weight="0.32"
                                 android:autoText="false"
-                                android:text="Шуруп самонарезающий LN9, шт.:"
+                                android:text="@string/ln9"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="13sp"
@@ -322,7 +322,7 @@
                                 android:layout_marginRight="3dp"
                                 android:layout_weight="0.32"
                                 android:autoText="false"
-                                android:text="Шуруп MN 30 (при 23 шт./м2), шт.:"
+                                android:text="@string/pri23"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="13sp"
@@ -358,7 +358,7 @@
                                 android:layout_marginRight="3dp"
                                 android:layout_weight="0.32"
                                 android:autoText="false"
-                                android:text="Дюбель К 6/35, шт.:"
+                                android:text="@string/k6"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="13sp"
@@ -497,7 +497,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="A - длина потолка, м:"
+                            android:text="@string/dlin_pot"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -684,7 +684,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="B - ширина потолка, м:"
+                            android:text="@string/wir_potolka"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -873,7 +873,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Расстояние между осями несущих профилей, м:"
+                            android:text="@string/meg_nes_prof"
                             android:textColor="@color/colorWite"
                             android:textSize="12sp" />
 
@@ -984,7 +984,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Растояние между пластинами (вдоль профиля), м:"
+                            android:text="@string/meg_plastyn"
                             android:textColor="@color/colorWite"
                             android:textSize="12sp" />
 
@@ -1118,7 +1118,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Количество дюбелей на м/п (тип К6/35):"
+                            android:text="@string/kol_dub_k35"
                             android:textColor="@color/colorWite"
                             android:textSize="13dp" />
 

@@ -41,10 +41,7 @@
     <string name="cena_armaturi_vsya">Стоимость арматуры:</string>
 
     <string name="Perimetr_fundamenta">Периметр армопояса P:</string>
-    <string name="visota_koloni">Высота колонны:</string>
-    <string name="diametr_koloni">Диаметр колонны D:</string>
-    <string name="storona_a_koloni">Длина стороны А:</string>
-    <string name="storona_b_koloni">Длина стороны B:</string>
+
     <string name="tolshina_pliti">Толщина плиты перекрытия:</string>
     <string name="sloi_armaturi">Количество слоев арматуры:</string>
     <string name="wag_ukladki">n - шаг укладки арматуры:</string>
@@ -318,5 +315,49 @@
     <string name="dop_raboty">Дополнительные работы, усл./едениц:</string>
     <string name="cen_dop_rab">Стоимость дополнительных работ, цена:</string>
     <string name="kol_wit">Количество щитовых, шт.:</string>
+    <string name="per_arm">Периметр армопояса Р, м</string>
+    <string name="wirin_poyasa">Ширина пояса, см</string>
+    <string name="vis_poyas">Высота пояса, см</string>
+    <string name="a_dia_prod">А - диаметр продольной арматуры, мм</string>
+    <string name="b_dia">B - диаметр арматуры обвязки, мм</string>
+    <string name="wag_obv">С - шаг обвязки, см</string>
+    <string name="s_pover">Площадь поверхности (м2):</string>
+    <string name="list_gkp">Лист ГКП, шт.:</string>
+    <string name="profil_pp27">Профиль ПП 60/27, ПН 28/27, пог.м:</string>
+    <string name="ud_prof">Удлинитель профилей 60/27 (при 0.2 шт./м2), шт.:</string>
+    <string name="soed_odn">Соединитель одноуровневый 60/27, шт.:</string>
+    <string name="podv_taga">Подвес с зажимом / анкер/ тяга подвеса, шт.:</string>
+    <string name="wur_ln_9">Шуруп самонарезающий LN9, шт.:</string>
+    <string name="wur_mn30">Шуруп MN 30 (при 23 шт./м2), шт.:</string>
+    <string name="dubel_k6">Дюбель К 6/35 (при 2 шт./1м.п.), шт.:</string>
+    <string name="dlin_pot">A - длина потолка, м:</string>
+    <string name="wir_potolka">B - ширина потолка, м:</string>
+    <string name="meg_nes_prof">Расстояние между осями несущих профилей, м:</string>
+    <string name="meg_osn_prof">Расстояние между осями основных профилей, мм:</string>
+    <string name="kol_podves">Количество подвесов на м2, шт.:</string>
+    <string name="plast_podves">Пластина - подвес, шт.:</string>
+    <string name="dubel">Дюбель для пластин (потолок), шт.:</string>
+    <string name="ln9">Шуруп самонарезающий LN9, шт.:</string>
+    <string name="pri23">Шуруп MN 30 (при 23 шт./м2), шт.:</string>
+    <string name="k6">Дюбель К 6/35, шт.:</string>
+    <string name="meg_plastyn">Растояние между пластинами (вдоль профиля), м:</string>
+    <string name="kol_dub_k35">Количество дюбелей на м/п (тип К6/35):</string>
+    <string name="kol_kirp">Количество кирпича, шт</string>
+    <string name="cena_kir">Цена кирпича:</string>
+    <string name="ob_ras">Объем раствора (м3):</string>
+    <string name="proyami">Площадь проемов (дверей, окон), м2:</string>
+    <string name="cena1000">Стоимость кирпича, за 1000 шт.:</string>
+    <string name="tip_kladki2">Тип кладки (стена, вид сверху):</string>
+    <string name="na_rebro_odin">1- на ребро в один ряд</string>
+    <string name="na_rebro_dva_rada">2- на ребро в два ряда</string>
+    <string name="v_pol_kir">3- в пол кирпича</string>
+    <string name="v_poltora">4- в полтора кирпича</string>
+    <string name="poltora_splow">5- в полтора (сплошной)</string>
+    <string name="v_kirpish">6- в кирпич</string>
+    <string name="v_dva">7- в два кирича</string>
+    <string name="sloy_rastvora">Толщина слоя раствора (мм):</string>
+    <string name="dlina_kir">Длина кирпича, мм</string>
+    <string name="wir_kirp">Ширина кирпича, мм</string>
+    <string name="vis_kirp">Высота кирпича, мм</string>
 
 </resources>

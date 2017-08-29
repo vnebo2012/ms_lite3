@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Мастерок</string>
+    <string name="app_name">Masterok</string>
 
     <string name="title_activity_navi_fun">Тип фундаменту</string>
     <string name="title_activity_fun1">Тип 1</string>
@@ -23,28 +23,25 @@
     <string name="web_armatura">Пошук арматури ...</string>
     <string name="web_plus">Повідомлення</string>
 
-    <string name="Beton">Бетон (м3):</string>
-    <string name="cena">Ціна (бетон):</string>
-    <string name="cenaarmatury">Вартість арматури:</string>
-    <string name="razmer_a">Розмір A:</string>
-    <string name="razmer_b">Розмір B:</string>
-    <string name="wirina_fundamenta">Ширина фундаменту:</string>
-    <string name="glubina_fundamenta">Глибина фундаменту:</string>
-    <string name="cena_betona_za_m3">Вартість бетону (за куб):</string>
-    <string name="ryadi_armaturi_a">Кількість рядів арматури (А):</string>
-    <string name="naxlest">Нахлест арматури(%):</string>
-    <string name="diametr_prodolnoy_arm">A - диаметр повздовжньої арматури:</string>
-    <string name="diametr_arm_prosto">Диаметр арматури:</string>
-    <string name="diametr_obvyazki">B - диаметр арматури обвязки:</string>
-    <string name="wag_obvyazki">C - крок обвязки:</string>
-    <string name="cena_armaturi_za_kg">Вартисть арматури (за кг):</string>
-    <string name="cena_armaturi_vsya">Вартисть арматури:</string>
+    <string name="Beton">Concrete (m3):</string>
+    <string name="cena">Price (concrete):</string>
+    <string name="cenaarmatury">The cost of the fittings:</string>
+    <string name="razmer_a">Size A:</string>
+    <string name="razmer_b">Size B:</string>
+    <string name="wirina_fundamenta">Width of foundation:</string>
+    <string name="glubina_fundamenta">Depth of foundation:</string>
+    <string name="cena_betona_za_m3">Cost of concrete (per cube):</string>
+    <string name="ryadi_armaturi_a">Number of rows of valves (A):</string>
+    <string name="naxlest">Armature flange (%):</string>
+    <string name="diametr_prodolnoy_arm">A - diameter of longitudinal reinforcement:</string>
+    <string name="diametr_arm_prosto">Fittings diameter:</string>
+    <string name="diametr_obvyazki">B - the diameter of the strap armature:</string>
+    <string name="wag_obvyazki">C - binding step:</string>
+    <string name="cena_armaturi_za_kg">The cost of fittings (per kg):</string>
+    <string name="cena_armaturi_vsya">The cost of fittings:</string>
 
-    <string name="Perimetr_fundamenta">Периметр армопояса P:</string>
-    <string name="visota_koloni">Висота колони:</string>
-    <string name="diametr_koloni">Диаметр колони D:</string>
-    <string name="storona_a_koloni">Довжина сторони А:</string>
-    <string name="storona_b_koloni">Довжина сторони B:</string>
+    <string name="Perimetr_fundamenta">Perimeter of the armor belts P:</string>
+
     <string name="tolshina_pliti">Товщина плити перекриття:</string>
     <string name="sloi_armaturi">Кількість шарів арматури:</string>
     <string name="wag_ukladki">n - крок вкладання арматури:</string>
@@ -77,12 +74,17 @@
     <string name="soobwenie">Повідомлення:</string>
     <string name="vibirite_kartinku">  Прикласти картинку, фото  </string>
 
+
+
     <string name="betonir_start">БЕТОНИР</string>
-    <string name="armatura_m_kg">Арматура: A (м/кг):</string>
-    <string name="B_m_kg">Арм.:B (м/кг):</string>
+
+
+
+    <string name="armatura_m_kg">Fittings: A (m / kg):</string>
+    <string name="B_m_kg">Fittings: B (m / kg):</string>
     <string name="arm_m_kg_bes">Арматура (м/кг):</string>
     <string name="bet">Бетон</string>
-    <string name="arm">Арматура</string>
+    <string name="arm">Fittings</string>
 
     <string name="pro">Версія Pro</string>
 
@@ -317,11 +319,61 @@
     <string name="cen_tosh">Cost of installation of one point, price:</string>
     <string name="wit2">Quantity of panel, pcs .:</string>
     <string name="cen_wit3">The cost of mounting the shield, the price:</string>
-    <string name="gofra">Corrugated hose, m:, м:</string>
+    <string name="gofra">Corrugated hose, m:</string>
     <string name="cen_rofry">The cost of laying the corrugation, the price for 1 m/r:</string>
     <string name="dop_raboty">Additional works, conditional/ units:</string>
     <string name="cen_dop_rab">Cost of additional works, price:</string>
     <string name="kol_wit">Quantity of panel, pcs .:</string>
+
+
+    <string name="per_arm">Perimeter of the armored leg P, m</string>
+    <string name="wirin_poyasa">Belt width, centimeters</string>
+    <string name="vis_poyas">Belt height, cm</string>
+    <string name="a_dia_prod">A - diameter of longitudinal reinforcement, mm</string>
+    <string name="b_dia">B - diameter of armature, mm</string>
+    <string name="wag_obv">C - stepping strapping, cm</string>
+
+
+    <string name="s_pover">Surface area (m2):</string>
+    <string name="list_gkp">Gypsum board sheets, pcs .:</string>
+    <string name="profil_pp27">Profile 60/27, 28/27, r./ m:</string>
+    <string name="ud_prof">Extension of profiles 60/27 (at 0.2 pcs / m2), pcs .:</string>
+    <string name="soed_odn">Connector single-level 60/27, pcs .:</string>
+    <string name="podv_taga">Suspension with clamp / anchor / pull rod, pcs .:</string>
+    <string name="wur_ln_9">Self-tapping screw LN9, pcs .:</string>
+    <string name="wur_mn30">Screw MN 30 (at 23 pcs / m2), pcs .:</string>
+    <string name="dubel_k6">Dowel K 6/35 (at 2 pcs / 1 m.), Pcs .:</string>
+    <string name="dlin_pot">A - length of the ceiling, m:</string>
+    <string name="wir_potolka">B - ceiling width, m:</string>
+    <string name="meg_nes_prof">Distance between axes of bearing profiles, m:</string>
+    <string name="meg_osn_prof">Distance between the axes of the main profiles, mm:</string>
+    <string name="kol_podves">Number of suspensions per m2, pcs .:</string>
+    <string name="plast_podves">Plate - suspension, pcs .:</string>
+    <string name="dubel">Plug for plates (ceiling), pcs .:</string>
+    <string name="ln9">Self-tapping screw LN9, pcs .:</string>
+    <string name="pri23">Screw MN 30 (at 23 pcs / m2), pcs .:</string>
+    <string name="k6">Dubel K 6/35, pcs .:</string>
+    <string name="meg_plastyn">Distance between plates (along the profile), m:</string>
+    <string name="kol_dub_k35">Number of dowels per m / p (type K6 / 35):</string>
+
+
+    <string name="kol_kirp">Number of birch trees:</string>
+    <string name="cena_kir">Price of brick:</string>
+    <string name="ob_ras">Volume of solution (m3):</string>
+    <string name="proyami">The area of openings (doors, windows), m2:</string>
+    <string name="cena1000">The cost of brick, per 1000 pcs .:</string>
+    <string name="tip_kladki2">Masonry type (wall, top view):</string>
+    <string name="na_rebro_odin">1- on an edge in one row</string>
+    <string name="na_rebro_dva_rada">2- on an edge in two rows</string>
+    <string name="v_pol_kir">3- to the floor of brick</string>
+    <string name="v_poltora">4- one and a half bricks</string>
+    <string name="poltora_splow">5- one and a half (continuous)</string>
+    <string name="v_kirpish">6- in brick</string>
+    <string name="v_dva">7- in two bricks</string>
+    <string name="sloy_rastvora">Thickness of the mortar layer (mm):</string>
+    <string name="dlina_kir">Length of brick, mm</string>
+    <string name="wir_kirp">Brick width, mm</string>
+    <string name="vis_kirp">Brick height, mm</string>
 
 </resources>
 

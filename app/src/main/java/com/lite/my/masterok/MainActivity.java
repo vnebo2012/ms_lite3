@@ -4755,13 +4755,13 @@ public class MainActivity extends AppCompatActivity {
                     //region секция 11.1
                     case R.id.button41:
                         TextView textView069 = (TextView) findViewById(R.id.textViewWir11);
-                        TextView textView0690 = (TextView) findViewById(R.id.textView9);
+                        //TextView textView0690 = (TextView) findViewById(R.id.textView9);
                         aetText69 = (Button) findViewById(R.id.button41);
                         float num069 = Float.parseFloat(aetText69.getText().toString());
                         float w69 = (float) num069;
                         textView069.setText(String.format(Locale.US, "%.0f", w69) + "");
                         textView069.setText(String.format(Locale.US, "%.0f", w69) + "");
-                        textView0690.setText("На ребро в один ряд");
+                        //textView0690.setText("На ребро в один ряд");
                         imageView.setImageResource(R.drawable.odin_narebro);
 
                         Animation anim48 = AnimationUtils.loadAnimation(
@@ -4772,12 +4772,12 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.button42:
                         TextView textView070 = (TextView) findViewById(R.id.textViewWir11);
-                        TextView textView0700 = (TextView) findViewById(R.id.textView9);
+                        //TextView textView0700 = (TextView) findViewById(R.id.textView9);
                         aetText70 = (Button) findViewById(R.id.button42);
                         float num070 = Float.parseFloat(aetText70.getText().toString());
                         float w70 = (float) num070;
                         textView070.setText(String.format(Locale.US, "%.0f", w70) + "");
-                        textView0700.setText("На ребро в два ряда");
+                       // textView0700.setText("На ребро в два ряда");
                         imageView.setImageResource(R.drawable.vdvanarebro);
 
                         Animation anim49 = AnimationUtils.loadAnimation(
@@ -4788,12 +4788,12 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.button43:
                         TextView textView071 = (TextView) findViewById(R.id.textViewWir11);
-                        TextView textView0710 = (TextView) findViewById(R.id.textView9);
+                        //TextView textView0710 = (TextView) findViewById(R.id.textView9);
                         aetText71 = (Button) findViewById(R.id.button43);
                         float num071 = Float.parseFloat(aetText71.getText().toString());
                         float w71 = (float) num071;
                         textView071.setText(String.format(Locale.US, "%.0f", w71) + "");
-                        textView0710.setText("В пол кирпича");
+                       // textView0710.setText("В пол кирпича");
                         imageView.setImageResource(R.drawable.pol_kirp);
 
                         Animation anim50 = AnimationUtils.loadAnimation(
@@ -4804,12 +4804,12 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.button44:
                         TextView textView072 = (TextView) findViewById(R.id.textViewWir11);
-                        TextView textView0720 = (TextView) findViewById(R.id.textView9);
+                        //TextView textView0720 = (TextView) findViewById(R.id.textView9);
                         aetText72 = (Button) findViewById(R.id.button44);
                         float num072 = Float.parseFloat(aetText72.getText().toString());
                         float w72 = (float) num072;
                         textView072.setText(String.format(Locale.US, "%.0f", w72) + "");
-                        textView0720.setText("В полтора кирпича");
+                        //textView0720.setText("В полтора кирпича");
                         imageView.setImageResource(R.drawable.poltora);
 
                         Animation anim51 = AnimationUtils.loadAnimation(
@@ -4825,12 +4825,12 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.button450:
                         TextView textView073 = (TextView) findViewById(R.id.textViewWir11);
-                        TextView textView0730 = (TextView) findViewById(R.id.textView9);
+                        //TextView textView0730 = (TextView) findViewById(R.id.textView9);
                         aetText73 = (Button) findViewById(R.id.button450);
                         float num073 = Float.parseFloat(aetText73.getText().toString());
                         float w73 = (float) num073;
                         textView073.setText(String.format(Locale.US, "%.0f", w73) + "");
-                        textView0730.setText("В полтора (сплошной)");
+                        //textView0730.setText("В полтора (сплошной)");
                         imageView.setImageResource(R.drawable.poltora_sploshna);
 
                         Animation anim52 = AnimationUtils.loadAnimation(
@@ -4841,12 +4841,12 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.button460:
                         TextView textView074 = (TextView) findViewById(R.id.textViewWir11);
-                        TextView textView0740 = (TextView) findViewById(R.id.textView9);
+                       // TextView textView0740 = (TextView) findViewById(R.id.textView9);
                         aetText74 = (Button) findViewById(R.id.button460);
                         float num074 = Float.parseFloat(aetText74.getText().toString());
                         float w74 = (float) num074;
                         textView074.setText(String.format(Locale.US, "%.0f", w74) + "");
-                        textView0740.setText("В кирпич");
+                       // textView0740.setText("В кирпич");
                         imageView.setImageResource(R.drawable.vkirpish);
 
                         Animation anim53 = AnimationUtils.loadAnimation(
@@ -4857,12 +4857,12 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.button461:
                         TextView textView0751 = (TextView) findViewById(R.id.textViewWir11);
-                        TextView textView0752 = (TextView) findViewById(R.id.textView9);
+                        //TextView textView0752 = (TextView) findViewById(R.id.textView9);
                         Button aetText75 = (Button) findViewById(R.id.button461);
                         float num0751 = Float.parseFloat(aetText75.getText().toString());
                         float w75 = (float) num0751;
                         textView0751.setText(String.format(Locale.US, "%.0f", w75) + "");
-                        textView0752.setText("В два кирпича");
+                       // textView0752.setText("В два кирпича");
                         imageView.setImageResource(R.drawable.vdvakirpisha);
 
                         Animation anim54 = AnimationUtils.loadAnimation(

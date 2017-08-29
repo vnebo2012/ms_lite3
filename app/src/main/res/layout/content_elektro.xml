@@ -73,7 +73,7 @@
                                 android:text="@string/stoimost_rabot"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
-                                android:textSize="15sp"
+                                android:textSize="14dp"
                                 android:textStyle="bold" />
 
 
@@ -111,7 +111,7 @@
                                 android:text="@string/vikl"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
-                                android:textSize="15sp"
+                                android:textSize="14dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -148,7 +148,7 @@
                                 android:text="@string/rozet"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
-                                android:textSize="15sp"
+                                android:textSize="14dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -185,7 +185,7 @@
                                 android:text="@string/podreze"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
-                                android:textSize="15sp"
+                                android:textSize="14dp"
                                 android:textStyle="bold" />
 
 
@@ -223,7 +223,7 @@
                                 android:text="@string/kom_kor"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
+                                android:textSize="14dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -297,7 +297,7 @@
                                 android:text="@string/mon_wit"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
-                                android:textSize="15sp"
+                                android:textSize="14dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -335,7 +335,7 @@
                                 android:text="@string/mon_gofri"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
+                                android:textSize="14dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -369,7 +369,7 @@
                                 android:text="@string/dop_rab"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
+                                android:textSize="14dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -414,7 +414,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/vik_wt"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir"
@@ -614,7 +614,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/vik_cena"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir2"
@@ -801,7 +801,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/rozetki2"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir3"
@@ -988,7 +988,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/roz_mon"
                             android:textColor="@color/colorWite"
-                            android:textSize="14sp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir4"
@@ -1121,7 +1121,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/podrez2"
                             android:textColor="@color/colorWite"
-                            android:textSize="14sp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir5"
@@ -1254,7 +1254,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/podr"
                             android:textColor="@color/colorWite"
-                            android:textSize="16sp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir11"
@@ -1386,7 +1386,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/korobki"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir6"
@@ -1497,7 +1497,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/kom_cena"
                             android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir7"
@@ -1609,7 +1609,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/swet_wt"
                             android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir8"
@@ -1721,7 +1721,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/cen_tosh"
                             android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
+                            android:textSize="13dp" />
 
 
                         <TextView
@@ -1833,7 +1833,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/kol_wit"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir18"
@@ -1933,7 +1933,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/cen_wit3"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir13"
@@ -2032,7 +2032,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/gofra"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir14"
@@ -2264,7 +2264,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/dop_raboty"
                             android:textColor="@color/colorWite"
-                            android:textSize="14sp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir16"
@@ -2406,7 +2406,7 @@
                             android:background="@color/colorPrimary"
                             android:text="@string/cen_dop_rab"
                             android:textColor="@color/colorWite"
-                            android:textSize="13sp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir17"
