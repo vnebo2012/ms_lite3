@@ -59,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Расчетный объем, м3:"
+                        android:text="@string/ras_obiem"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="17sp"
@@ -97,7 +97,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Залповый сброс, л:"
+                        android:text="@string/zalp_sbros"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="17sp"
@@ -134,7 +134,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Производительность в сутки, л:"
+                        android:text="@string/proizvoditelnost_v_sutki"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="17sp"
@@ -171,7 +171,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Количество проживаемых, чел.:"
+                        android:text="@string/kol_shelovek"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="17sp"
@@ -286,7 +286,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Количество проживаемых, чел.:"
+                            android:text="@string/kol_shelovek"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -486,7 +486,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Ванная, шт.:"
+                            android:text="@string/vanna_wt"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -673,7 +673,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Угловая ванна, шт.:"
+                            android:text="@string/ugl_vanna"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -860,7 +860,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Душ, шт.:"
+                            android:text="@string/duw"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -993,7 +993,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Стиральная машина, шт.:"
+                            android:text="@string/stiralka"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1126,7 +1126,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Посудомоечная машина, шт.:"
+                            android:text="@string/posudomoyka"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1258,7 +1258,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Унитаз, шт.:"
+                            android:text="@string/unitaz"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1369,7 +1369,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Биде, шт.:"
+                            android:text="@string/bide"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1481,7 +1481,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Раковина, шт.:"
+                            android:text="@string/rakovina"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1593,7 +1593,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Расчетный коефициент объема:"
+                            android:text="@string/ras_koef_obioma"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 

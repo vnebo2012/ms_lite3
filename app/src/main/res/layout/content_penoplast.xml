@@ -70,7 +70,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="5dp"
                                 android:layout_weight="1"
-                                android:text="Пенопласт, ц/м3:"
+                                android:text="@string/cena_penoplasta"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp"
@@ -135,7 +135,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="5dp"
                                 android:layout_weight="1"
-                                android:text="Клей (для поклейки:), ц/мешков:"
+                                android:text="@string/kley_pok_cena"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp"
@@ -198,10 +198,10 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="5dp"
                                 android:layout_weight="1"
-                                android:text="Клей (для затяжки), ц/мешков:"
+                                android:text="@string/kley2_cena"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
-                                android:textSize="15sp"
+                                android:textSize="13dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -262,7 +262,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="5dp"
                                 android:layout_weight="1"
-                                android:text="Дюбеля, ц/шт.:"
+                                android:text="@string/cena_dubela"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp"
@@ -326,7 +326,7 @@
                                 android:layout_marginRight="3dp"
                                 android:layout_weight="0.32"
                                 android:autoText="false"
-                                android:text="Сетка, ц/м2:"
+                                android:text="@string/setka_cena"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="15sp"
@@ -383,7 +383,7 @@
                                 android:layout_marginRight="5dp"
                                 android:layout_weight="1"
                                 android:autoText="false"
-                                android:text="Грунтовка, ц/ведер"
+                                android:text="@string/grunt_cena"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp"
@@ -452,10 +452,10 @@
                                 android:layout_marginRight="5dp"
                                 android:layout_weight="1"
                                 android:autoText="false"
-                                android:text="Короед, ц/ведер:"
+                                android:text="@string/koroed_cena"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
-                                android:textSize="15sp"
+                                android:textSize="13dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -521,7 +521,7 @@
                                 android:layout_marginRight="3dp"
                                 android:layout_weight="1"
                                 android:autoText="false"
-                                android:text="Стоимость всех материалов:"
+                                android:text="@string/cena_vsex_mat"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="15sp"
@@ -555,7 +555,7 @@
                                 android:layout_marginRight="3dp"
                                 android:layout_weight="1"
                                 android:autoText="false"
-                                android:text="Стоимость работ:"
+                                android:text="@string/cena_rabot"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="15sp"
@@ -601,7 +601,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Площадь стен дома, м2:"
+                            android:text="@string/s_sten_doma"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -793,7 +793,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Площадь окон, дверей, м2:"
+                            android:text="@string/s_okon_dverey"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -981,7 +981,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Пенопласт (цена за м3):"
+                            android:text="@string/cena_pen_2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1169,7 +1169,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Клей (цена за мешок):"
+                            android:text="@string/cena_kleya"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1304,7 +1304,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Толщина пенопласта, мм:"
+                            android:text="@string/tolw_pen"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1436,7 +1436,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Дюбелей на один лист, шт.:"
+                            android:text="@string/dub_na_list"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1548,7 +1548,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Дюбеля (цена за шт.):"
+                            android:text="@string/cena_dub3"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1682,7 +1682,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Расход клея для приклейки, кг/м2:"
+                            android:text="@string/rasxod_prekleyki"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1794,7 +1794,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Расход клея для затяжки, кг/м2"
+                            android:text="@string/rasxod_zatyagki"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1906,7 +1906,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Количество слоев (для затягивания):"
+                            android:text="@string/kol_sl_zatyagki"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -2018,7 +2018,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Грунтовка, цена за ведро:"
+                            android:text="@string/grunt_cena_za"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -2117,7 +2117,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Литров в ведре (грунт):"
+                            android:text="@string/lit_v_vedre"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -2217,7 +2217,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Грунтовка (количество слоев):"
+                            android:text="@string/kol_grunta_sloy"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -2317,7 +2317,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Расход грунтовки, мл/м2:"
+                            android:text="@string/ras_grunta"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -2417,7 +2417,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Сетка, цена за м2:"
+                            android:text="@string/setka_cena2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -2517,7 +2517,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Стоимость ведра Короеда:"
+                            android:text="@string/cena_kor_ved"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -2650,7 +2650,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Количество в ведре, кг:"
+                            android:text="@string/kol_v_vedre"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -2784,9 +2784,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Расход Короеда, кг/м2:"
+                            android:text="@string/ras_kor"
                             android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir14"
@@ -2884,7 +2884,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Стоимость работ, за м2:"
+                            android:text="@string/cena_rabot_22"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 

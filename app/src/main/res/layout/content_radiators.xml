@@ -48,7 +48,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Длина помещения, м:"
+                            android:text="@string/dlina_pom"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -239,7 +239,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Ширина помещения, м:"
+                            android:text="@string/wir_pom"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -426,7 +426,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Высота до потолка:"
+                            android:text="@string/vis_do_potolka"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -559,7 +559,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Сколько плащади занимают окна, %:"
+                            android:text="@string/s_okon2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -699,7 +699,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:text="Тип окон (коефициент):"
+                            android:text="@string/tip_okon"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@color/colorBlueGrey700"
                             android:textSize="16dp"
@@ -740,7 +740,7 @@
                                     android:id="@+id/textView57"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="0.85 - тройной стеклопакет"
+                                    android:text="@string/try_okon"
                                     android:textColor="@color/colorTextMy"
                                     android:textSize="12sp" />
 
@@ -748,7 +748,7 @@
                                     android:id="@+id/textView60"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="1.00 - двойной стеклопакет"
+                                    android:text="@string/dva_okon_obi"
                                     android:textColor="@color/colorTextMy"
                                     android:textSize="12sp" />
 
@@ -756,7 +756,7 @@
                                     android:id="@+id/textView601"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="1.27 - обычное(двойное) остекленение"
+                                    android:text="@string/dva_okon"
                                     android:textColor="@color/colorTextMy"
                                     android:textSize="12sp" />
 
@@ -800,17 +800,6 @@
                             android:textColor="@android:color/background_light"
                             android:textSize="16dp"
                             android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="5dp"
-                            android:background="@color/colorPrimary"
-                            android:text="двойной стеклопакет"
-                            android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
 
                     </LinearLayout>
 
@@ -886,7 +875,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:text="Изоляция стен (коефициент):"
+                        android:text="@string/iso_sten1"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@color/colorBlueGrey700"
                         android:textSize="16dp"
@@ -927,7 +916,7 @@
                                 android:id="@+id/textView571"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="0.85 - хорошая изоляция (утепление)"
+                                android:text="@string/xor_iso"
                                 android:textColor="@color/colorTextMy"
                                 android:textSize="11sp" />
 
@@ -935,7 +924,7 @@
                                 android:id="@+id/textView6010"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="1.00 - нормальная (кладка в два кирпича)"
+                                android:text="@string/norm_iso"
                                 android:textColor="@color/colorTextMy"
                                 android:textSize="11sp" />
 
@@ -943,7 +932,7 @@
                                 android:id="@+id/textView6011"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="1.27 - плохая изоляция"
+                                android:text="@string/plox_iso"
                                 android:textColor="@color/colorTextMy"
                                 android:textSize="11sp" />
 
@@ -951,7 +940,7 @@
                                 android:id="@+id/textView6021"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="1.4 - очень плохая"
+                                android:text="@string/no_iso"
                                 android:textColor="@color/colorTextMy"
                                 android:textSize="11sp" />
 
@@ -991,17 +980,6 @@
                             android:textColor="@color/colorWite"
                             android:textSize="16dp"
                             android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView17"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="3dp"
-                            android:background="@color/colorPrimary"
-                            android:text="нормальная"
-                            android:textColor="@color/colorWite"
-                            android:textSize="16dp" />
 
 
                     </LinearLayout>
@@ -1099,7 +1077,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Темпиратура снаружи помещения, г/ц"
+                            android:text="@string/temp"
                             android:textColor="@color/colorWite"
                             android:textSize="13sp" />
 
@@ -1244,7 +1222,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Число стен, выходящих наружу:"
+                            android:text="@string/steni_narugu"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1353,7 +1331,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:text="Тип помещения сверху:"
+                        android:text="@string/tip_svarxu"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@color/colorBlueGrey700"
                         android:textSize="16dp"
@@ -1379,7 +1357,7 @@
                                 android:id="@+id/textView575"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="0.8 - обогреваемое помещение"
+                                android:text="@string/ob_pom"
                                 android:textColor="@color/colorTextMy"
                                 android:textSize="12sp" />
 
@@ -1387,7 +1365,7 @@
                                 android:id="@+id/textView605"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="0.9 -теплый чердак"
+                                android:text="@string/tep_sherdak"
                                 android:textColor="@color/colorTextMy"
                                 android:textSize="12sp" />
 
@@ -1395,7 +1373,7 @@
                                 android:id="@+id/textView6015"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="1.0 - холодный чердак"
+                                android:text="@string/xol_she"
                                 android:textColor="@color/colorTextMy"
                                 android:textSize="12sp" />
 
@@ -1431,7 +1409,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Коэффициент:"
+                            android:text="@string/koef"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1530,7 +1508,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Мощность одного ребра, Вт:"
+                            android:text="@string/powr_rebra"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1657,7 +1635,7 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Площадь помещения, м2:"
+                    android:text="@string/s_pom"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="15sp"
@@ -1690,7 +1668,7 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Площадь стен, м2:"
+                    android:text="@string/s_sten"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="15sp"
@@ -1723,7 +1701,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Необходимая мощность, Вт:"
+                    android:text="@string/mawnost"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -1761,7 +1739,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Количество ребер, шт:"
+                    android:text="@string/rebra_wt"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"

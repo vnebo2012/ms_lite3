@@ -51,7 +51,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="S - площадь поверхности, м2:"
+                            android:text="@string/s_pov_m2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -240,7 +240,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Количество слоев:"
+                            android:text="@string/kol_sloy"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -341,7 +341,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Количество краски в банке (кг):"
+                            android:text="@string/kol_kras_v_ban"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -441,7 +441,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена одной банки краски:"
+                            android:text="@string/cen_od_ban"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -575,7 +575,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Расход краски (г/1м2)"
+                            android:text="@string/rasxod"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -741,7 +741,7 @@
                     android:layout_margin="1dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Площадь поверхности (м2):"
+                    android:text="@string/s_pover"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="16sp"
@@ -780,7 +780,7 @@
                     android:layout_margin="1dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Краска (банок/кг):"
+                    android:text="@string/kraska_banok"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="14sp"
@@ -851,7 +851,7 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="0.32"
                     android:autoText="false"
-                    android:text="Цена:"
+                    android:text="@string/cena2"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="16sp"

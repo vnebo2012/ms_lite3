@@ -52,7 +52,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Площадь крыши, м2:"
+                        android:text="@string/plow_kry"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -96,7 +96,7 @@
                         android:layout_marginRight="3dp"
                         android:layout_weight="1"
                         android:autoText="false"
-                        android:text="Обрешетка: верт., м-п/м3:"
+                        android:text="@string/obr_vert_m_p"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/background_light"
                         android:textSize="15dp"
@@ -152,7 +152,7 @@
                         android:layout_marginRight="3dp"
                         android:layout_weight="1"
                         android:autoText="false"
-                        android:text="гориз., м-п/м3:"
+                        android:text="@string/rey_goriz"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/background_light"
                         android:textSize="15dp"
@@ -217,7 +217,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Гвоздь для верт. обрешетки, шт./кг:"
+                        android:text="@string/gvozd_vertikal"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -282,7 +282,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Гвоздь для гориз. обрешетки, шт./кг:"
+                        android:text="@string/gvozd_goriz"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -347,7 +347,7 @@
                         android:layout_marginRight="3dp"
                         android:layout_weight="0.32"
                         android:autoText="false"
-                        android:text="Гидробарьер/ скобы, м2/ шт.:"
+                        android:text="@string/gidro_skobi"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/background_light"
                         android:textSize="15dp"
@@ -404,7 +404,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Лес (весь), м3/цена:"
+                        android:text="@string/les_ves"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -470,7 +470,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Цена кровельного материала:"
+                        android:text="@string/cena_blaxi"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -507,7 +507,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="Стоимость работ:"
+                        android:text="@string/cena_rabot"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#ffffff"
                         android:textSize="15dp"
@@ -598,7 +598,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="A - длина cтропила, м:"
+                            android:text="@string/dlina_stropila"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -798,7 +798,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="B - длина конька, м:"
+                            android:text="@string/dlina_konka"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -985,7 +985,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="C - длина участка стропила, м:"
+                            android:text="@string/dlina_ush_stropila"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1172,7 +1172,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text=" D - длина стропила, м:"
+                            android:text="@string/dlina_st2"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1305,7 +1305,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Гвоздь для вертикальной обрешетки, мм:"
+                            android:text="@string/gvozd_vertikal"
                             android:textColor="@color/colorWite"
                             android:textSize="13dp" />
 
@@ -1438,7 +1438,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Гвоздь для горизонтальной обрешетки, мм:"
+                            android:text="@string/gvozd_goriz"
                             android:textColor="@color/colorWite"
                             android:textSize="13dp" />
 
@@ -1570,7 +1570,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Шаг между вертикальной обрешеткой, мм:"
+                            android:text="@string/wag_vert_obr"
                             android:textColor="@color/colorWite"
                             android:textSize="13dp" />
 
@@ -1681,7 +1681,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Шаг между горизонтальной обрешеткой, мм:"
+                            android:text="@string/wag_gor_obr"
                             android:textColor="@color/colorWite"
                             android:textSize="13dp" />
 
@@ -1793,7 +1793,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Количество скоб на м2, шт.:"
+                            android:text="@string/kol_skob_m2"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1905,7 +1905,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Ширина рейки вертикальной обрешетки, мм:"
+                            android:text="@string/tolw_rey_vert_obr"
                             android:textColor="@color/colorWite"
                             android:textSize="13dp" />
 
@@ -2017,7 +2017,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Толщина рейки вертикальной обрешетки, мм:"
+                            android:text="@string/tolw2_rey_vert_obr"
                             android:textColor="@color/colorWite"
                             android:textSize="13dp" />
 
@@ -2117,7 +2117,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Ширина доски горизонтальной обрешетки, мм:"
+                            android:text="@string/wir_doski"
                             android:textColor="@color/colorWite"
                             android:textSize="13dp" />
 
@@ -2216,7 +2216,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Толщина доски горизонтальной обрешетки, мм:"
+                            android:text="@string/tolw_doski"
                             android:textColor="@color/colorWite"
                             android:textSize="13dp" />
 
@@ -2315,7 +2315,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена леса, за м3:"
+                            android:text="@string/cena_lasa"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -2448,7 +2448,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена кровельного материала, за м2:"
+                            android:text="@string/cena_kr_materiala"
                             android:textColor="@color/colorWite"
                             android:textSize="14dp" />
 
@@ -2590,7 +2590,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Стоимость работ, за м2 крыши:"
+                            android:text="@string/cena_rabot_kriwa1"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
