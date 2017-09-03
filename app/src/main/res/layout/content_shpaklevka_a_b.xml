@@ -51,7 +51,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="A - длина поверхности, м:"
+                            android:text="@string/dlina_pover"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -240,7 +240,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="B - ширина поверхности, м:"
+                            android:text="@string/wir_pover"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -431,7 +431,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Толщина слоя, мм:"
+                            android:text="@string/sloy_wpak"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -542,7 +542,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена шпаклевки (за мешок):"
+                            android:text="@string/cena_mew_wpak"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -678,7 +678,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Расход на 1м2 /1мм/кг:"
+                            android:text="@string/rasxo_pol"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -853,7 +853,7 @@
                     android:layout_margin="1dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Площадь поверхности (м2):"
+                    android:text="@string/s_pover"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="13sp"
@@ -891,7 +891,7 @@
                     android:layout_margin="1dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Шпаклевка (мешков 25кг):"
+                    android:text="@string/wpak_mew"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="13sp"
@@ -932,7 +932,7 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="0.32"
                     android:autoText="false"
-                    android:text="Цена:"
+                    android:text="@string/cena3"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="15sp"

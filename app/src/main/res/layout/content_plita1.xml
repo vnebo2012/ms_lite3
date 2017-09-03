@@ -24,22 +24,23 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
                 android:background="@android:color/white"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_margin="5dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
                     android:background="@android:color/white"
                     android:baselineAligned="false"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -47,7 +48,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_margin="3dp"
                         android:onClick="onClick222"
                         android:src="@drawable/plita1" />
                 </LinearLayout>
@@ -80,7 +80,7 @@
                     android:text="@string/Beton"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="16dp"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -93,7 +93,7 @@
                     android:text="00.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="16dp"
+                    android:textSize="15dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
             </LinearLayout>
@@ -118,7 +118,7 @@
                     android:text="@string/cena"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="16dp"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -132,7 +132,7 @@
                     android:text="00.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="16dp"
+                    android:textSize="15dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
             </LinearLayout>
@@ -153,10 +153,11 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="@string/arm_m_kg_bes"
+                    android:text="@string/armatura_m_kg"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="12dp" />
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView43"
@@ -167,7 +168,8 @@
                     android:text="00.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="16dp" />
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView44"
@@ -178,7 +180,8 @@
                     android:text="/"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="14dp" />
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView24"
@@ -188,7 +191,7 @@
                     android:text="00.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="16dp"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -211,7 +214,8 @@
                     android:text="@string/cena_armaturi_vsya"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="12dp" />
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView28"
@@ -221,7 +225,7 @@
                     android:text="00.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="16dp"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -267,7 +271,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Размер А, м:"
+                            android:text="@string/raz_a"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -458,7 +462,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Размер В, м:"
+                            android:text="@string/raz_b"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -645,7 +649,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Толщина плиты, см:"
+                            android:text="@string/tol_plit2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -953,7 +957,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="@string/sloi_armaturi"
+                            android:text="@string/kol_sloy2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1168,7 +1172,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Диаметр арматуры, мм:"
+                            android:text="@string/dia_arm3"
                             android:textColor="@color/colorWite"
                             android:textSize="13sp" />
 
@@ -1300,7 +1304,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="n - Шаг укладки арматуры, см:"
+                            android:text="@string/wag_arm2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 

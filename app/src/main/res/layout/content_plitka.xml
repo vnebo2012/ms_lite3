@@ -48,7 +48,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="h  - высота до потолка, м:"
+                            android:text="@string/vis_do_pot"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -239,7 +239,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="A - длина помещения, м:"
+                            android:text="@string/dlin_pom"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -426,7 +426,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="B - ширина помещения, м:"
+                            android:text="@string/wir_pom2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -613,9 +613,9 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="n - высота от пола до фрезы, м:"
+                            android:text="@string/vis_do_frezi"
                             android:textColor="@color/colorWite"
-                            android:textSize="14sp" />
+                            android:textSize="13dp" />
 
                         <TextView
                             android:id="@+id/textViewWir4"
@@ -746,7 +746,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="f - висота фрезы, мм:"
+                            android:text="@string/vis_frezi"
                             android:textColor="@color/colorWite"
                             android:textSize="14sp" />
 
@@ -879,7 +879,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Ширина фрезы, мм:"
+                            android:text="@string/wir_frez"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1019,7 +1019,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Ширина дверного проема, мм:"
+                            android:text="@string/wir_dver"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1130,7 +1130,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Высота дверного проема, мм:"
+                            android:text="@string/vis_dver"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1242,7 +1242,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Слой клея, мм:"
+                            android:text="@string/sloy_klea"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1360,7 +1360,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Запас плитки (%):"
+                            android:text="@string/zapas_plitki"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1471,7 +1471,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена клея (за мешок):"
+                            android:text="@string/cena_kleya2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1571,7 +1571,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена фрезы:"
+                            android:text="@string/cen_frezi"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1670,7 +1670,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена напольной плитки:"
+                            android:text="@string/cena_nap_plitki"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1769,7 +1769,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена верхней плитки (за м2):"
+                            android:text="@string/cena_ver_pl"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1902,7 +1902,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена нижней плитки (за м2):"
+                            android:text="@string/cen_nig_plitki"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -2035,7 +2035,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена работы (за м2):"
+                            android:text="@string/cena_rab_2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -2219,7 +2219,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Плитка на пол (м2):"
+                    android:text="@string/plit_na_pol2"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -2256,7 +2256,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Стена - верх (м2):"
+                    android:text="@string/stena_verx"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -2293,7 +2293,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Стена - низ (м2):"
+                    android:text="@string/stena_niz"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -2330,7 +2330,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Фреза  (шт./цена):"
+                    android:text="@string/freza1"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="13sp"
@@ -2393,7 +2393,7 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="0.32"
                     android:autoText="false"
-                    android:text="Мешков клея (25кг) шт.:"
+                    android:text="@string/mew_klea"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="13sp"
@@ -2428,7 +2428,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Цена плитки:"
+                    android:text="@string/cena_plitki1"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -2467,7 +2467,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Цена клея:"
+                    android:text="@string/cen_kl"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -2505,7 +2505,7 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Стоимость работ:"
+                    android:text="@string/cena_rabot"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="15sp"

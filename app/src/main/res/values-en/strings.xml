@@ -52,21 +52,21 @@
     <string name="kolonna_menu">Колона</string>
     <string name="razmer_c">Размір C:</string>
     <string name="dlina_fundamenta">Довжина фундаменту А:</string>
-    <string name="arm1">Арматуру</string>
-    <string name="arm2">заборонено</string>
-    <string name="arm3">зєднувати</string>
-    <string name="arm4">в місцях максимального</string>
-    <string name="arm5">навантаження.</string>
+    <string name="arm1">Armature</string>
+    <string name="arm2">Is forbidden</string>
+    <string name="arm3">to connect</string>
+    <string name="arm4">in places of maximum</string>
+    <string name="arm5">load.</string>
     <string name="Information">Інформація</string>
     <string name="Poisk">Пошук матеріалів</string>
     <string name="Instruktion">Instruction</string>
-    <string name="vvedite_znachenie">Введіть значення для кнопки</string>
-    <string name="pervoe_vnesenie_dannix">Початкове внесення даних</string>
+    <string name="vvedite_znachenie">Enter the value for the button</string>
+    <string name="pervoe_vnesenie_dannix">Initial data entry</string>
     <string name="nagmite_ok">(натисніть: Ок)</string>
-    <string name="vvedite_cenu">Введіть свою ціну</string>
-    <string name="vvedite_wag">Введіть свій крок</string>
-    <string name="eto_standart">Це стандартний размір</string>
-    <string name="eto_fiks">Це фиксоване значення</string>
+    <string name="vvedite_cenu">Enter your price</string>
+    <string name="vvedite_wag">Enter your step</string>
+    <string name="eto_standart">This is a standard size</string>
+    <string name="eto_fiks">This is a fixed value</string>
     <string name="obnulit_danie">Обнулити дані?</string>
 
     <string name="title_activity_kolona3">Прямокутна колона</string>
@@ -489,6 +489,68 @@
     <string name="xol_she">1.0 - cold attic</string>
     <string name="koef">Coefficient:</string>
     <string name="powr_rebra">Power of one rib, W:</string>
+
+
+    <string name="raz_a">Size A, m:</string>
+    <string name="raz_b">Size B, m:</string>
+    <string name="tol_plit2">Plate thickness, cm:</string>
+    <string name="kol_sloy2">Number of reinforcement layers:</string>
+    <string name="dia_arm3">Diameter of reinforcement, mm:</string>
+    <string name="wag_arm2">n - Pitch of reinforcement, cm:</string>
+    <string name="arm_m_kg">Armature (meters / kg):</string>
+    <string name="rad_pl">Radius R, m:</string>
+
+    <string name="plit_na_pol2">Tiles on the floor (m2):</string>
+    <string name="stena_verx">Wall - top (m2):</string>
+    <string name="stena_niz">Wall - bottom (m2):</string>
+    <string name="freza1">Decorative insert (piece / price):</string>
+    <string name="mew_klea">Glue bags (25kg) pcs .:</string>
+    <string name="cena_plitki1">Cost of tiles:</string>
+    <string name="cen_kl">Cost of glue:</string>
+    <string name="vis_do_pot">h - height to ceiling, m:</string>
+    <string name="dlin_pom">A - length of the room, m:</string>
+    <string name="wir_pom2">B - width of the room, m:</string>
+    <string name="vis_do_frezi">n - height from the floor to the decorative insert, m:</string>
+    <string name="vis_frezi">f - height of the decorative insert, mm:</string>
+    <string name="wir_frez">Width of the decorative insert, mm:</string>
+    <string name="wir_dver">The width of the doorway, mm:</string>
+    <string name="vis_dver">Height of the doorway, mm:</string>
+    <string name="sloy_klea">Adhesive layer, mm:</string>
+    <string name="zapas_plitki">Stock of tiles (%):</string>
+    <string name="cena_kleya2">Cost of glue (per bag):</string>
+    <string name="cen_frezi">Cutter cost:</string>
+    <string name="cena_nap_plitki">Cost of floor tiles:</string>
+    <string name="cena_ver_pl">The cost of the upper tile (per m2):</string>
+    <string name="cen_nig_plitki">Cost of the bottom tile (per m2):</string>
+    <string name="cena_rab_2">Cost of work (per m2):</string>
+    <string name="pli_na_stenu">Tiles on the wall (m2):</string>
+    <string name="cena_nasten_pl">Price of wall tiles (per m2):</string>
+    <string name="smes">Mixture self-leveling (bags 25kg):</string>
+    <string name="cena3">Cost:</string>
+    <string name="tolsh_st">Thickness of screed, mm:</string>
+    <string name="cena_smesi_m">The price of the mixture (per bag):</string>
+    <string name="rasxo_pol">Consumption for 1m2 - 1mm, kg:</string>
+    <string name="cement">Cement (M500, 50kg):</string>
+    <string name="vlagnost">Sand (humidity 3-7%, kg):</string>
+    <string name="voda">Water (l):</string>
+    <string name="mark_rast">Solution grade, kg / m3:</string>
+    <string name="pl_pom">S - area, m2:</string>
+    <string name="s_pom2">Surface area (m2):</string>
+    <string name="wpak_mew">Putty (bags of 25 kg):</string>
+    <string name="sloy_wpak">Thickness of the puttying layer, mm:</string>
+    <string name="cena_mew_wpak">The price of putty (per bag):</string>
+    <string name="dlina_pover">A is the length of the surface, m:</string>
+    <string name="wir_pover">B is the width of the surface, m:</string>
+
+
+    <string name="glubina_h">Depth h, m:</string>
+    <string name="cena_kir3">The cost of laying one brick:</string>
+    <string name="v_pol2">1 - in the floor of a brick</string>
+    <string name="v_kirp2">2 - in brick</string>
+
+
+    <string name="pervoe">First data entry</string>
+    <string name="ok">(click OK)</string>
 
 
 </resources>

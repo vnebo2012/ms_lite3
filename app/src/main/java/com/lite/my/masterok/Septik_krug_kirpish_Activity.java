@@ -4724,12 +4724,12 @@ public class Septik_krug_kirpish_Activity extends AppCompatActivity {
 
                     case R.id.button43:
                         TextView textView071 = (TextView) findViewById(R.id.textViewWir11);
-                        TextView textView0710 = (TextView) findViewById(R.id.textView9);
+                        //TextView textView0710 = (TextView) findViewById(R.id.textView9);
                         aetText71 = (Button) findViewById(R.id.button43);
                         float num071 = Float.parseFloat(aetText71.getText().toString());
                         float w71 = (float) num071;
                         textView071.setText(String.format(Locale.US, "%.0f", w71) + "");
-                        textView0710.setText("В пол кирпича");
+                        //textView0710.setText("В пол кирпича");
                         imageView.setImageResource(R.drawable.pol_kirp);
 
                         Animation anim50 = AnimationUtils.loadAnimation(
@@ -4777,12 +4777,12 @@ public class Septik_krug_kirpish_Activity extends AppCompatActivity {
 
                     case R.id.button460:
                         TextView textView074 = (TextView) findViewById(R.id.textViewWir11);
-                        TextView textView0740 = (TextView) findViewById(R.id.textView9);
+                        //TextView textView0740 = (TextView) findViewById(R.id.textView9);
                         aetText74 = (Button) findViewById(R.id.button460);
                         float num074 = Float.parseFloat(aetText74.getText().toString());
                         float w74 = (float) num074;
                         textView074.setText(String.format(Locale.US, "%.0f", w74) + "");
-                        textView0740.setText("В кирпич");
+                        //textView0740.setText("В кирпич");
                         imageView.setImageResource(R.drawable.vkirpish);
 
                         Animation anim53 = AnimationUtils.loadAnimation(

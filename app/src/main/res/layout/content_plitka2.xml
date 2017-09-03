@@ -51,7 +51,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="A - длина помещения, м:"
+                            android:text="@string/dlin_pom"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -238,7 +238,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="B - ширина помещения, м:"
+                            android:text="@string/wir_pom2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -426,7 +426,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Слой клея, мм:"
+                            android:text="@string/sloy_klea"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -538,7 +538,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Запас плитки (%):"
+                            android:text="@string/zapas_plitki"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -650,7 +650,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена напольной плитки:"
+                            android:text="@string/cena_nap_plitki"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -749,7 +749,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена клея (за мешок):"
+                            android:text="@string/cena_kleya2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -883,7 +883,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена работы (за м2):"
+                            android:text="@string/cena_rabot_22"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1081,7 +1081,7 @@
                     android:layout_margin="1dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Плитка (м2):"
+                    android:text="@string/plit_na_pol2"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -1122,7 +1122,7 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="0.32"
                     android:autoText="false"
-                    android:text="Мешков клея (25кг) шт.:"
+                    android:text="@string/mew_klea"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="13sp"
@@ -1159,7 +1159,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Цена плитки:"
+                    android:text="@string/cena_plitki1"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -1200,7 +1200,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Цена клея:"
+                    android:text="@string/cen_kl"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -1240,7 +1240,7 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Стоимость работ:"
+                    android:text="@string/cena_rabot"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="15sp"

@@ -48,7 +48,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Глубина h, м:"
+                            android:text="@string/glubina_h"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -239,7 +239,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Радиус R, м:"
+                            android:text="@string/rad_pl"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -426,7 +426,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Стоимость кладки одного кирпича:"
+                            android:text="@string/cena_kir3"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -559,7 +559,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Стоимоть кирпича, за 1000 шт.:"
+                            android:text="@string/cena_kir"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -688,7 +688,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:text="Тип кладки (стена, вид сверху):"
+                            android:text="@string/tip_kladki2"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@color/colorBlueGrey700"
                             android:textSize="18dp"
@@ -719,14 +719,14 @@
                                     android:id="@+id/textView57"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="1 - в пол кирпича"
+                                    android:text="@string/v_pol2"
                                     android:textColor="@color/colorTextMy" />
 
                                 <TextView
                                     android:id="@+id/textView60"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="2 - в кирпич"
+                                    android:text="@string/v_kirp2"
                                     android:textColor="@color/colorTextMy" />
 
                             </LinearLayout>
@@ -766,18 +766,6 @@
                             android:textColor="@android:color/background_light"
                             android:textSize="16sp"
                             android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginRight="7dp"
-                            android:background="@color/colorPrimary"
-                            android:text="В пол кирпича"
-                            android:textColor="@color/colorWite"
-                            android:textSize="16dp"
-                            android:textStyle="normal|bold" />
 
                     </LinearLayout>
 
@@ -851,7 +839,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Толщина слоя раствора (мм):"
+                            android:text="@string/tolw_rstvora"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -968,7 +956,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Длина кирпича, мм"
+                            android:text="@string/dlina_kir"
                             android:textColor="@color/colorWite"
                             android:textSize="16sp" />
 
@@ -1100,7 +1088,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Ширина кирпича, мм"
+                            android:text="@string/wir_kirp"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1232,7 +1220,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Высота кирпича, мм"
+                            android:text="@string/vis_kirp"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1382,7 +1370,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Объем:"
+                    android:text="@string/ras_obiem"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -1418,7 +1406,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Количество кирп.:"
+                    android:text="@string/kol_kirp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -1456,7 +1444,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Цена кирпича:"
+                    android:text="@string/cena_kir"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -1494,7 +1482,7 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Объем раствора (м3):"
+                    android:text="@string/kol_rastvora"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="15sp"
@@ -1528,7 +1516,7 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Работа, цена:"
+                    android:text="@string/cena_rabot"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="15sp"

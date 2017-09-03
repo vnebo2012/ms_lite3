@@ -51,7 +51,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="A - длина помещения, м:"
+                            android:text="@string/dlin_pom"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -238,7 +238,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="B - ширина помещения, м:"
+                            android:text="@string/wir_pom2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -426,7 +426,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Толщина стяжки, мм:"
+                            android:text="@string/tolsh_st"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -538,7 +538,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Марка раствора, кг/м3:"
+                            android:text="@string/mark_rast"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -678,7 +678,7 @@
                     android:layout_margin="1dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Площадь пола (м2):"
+                    android:text="@string/s_pom"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="16sp"
@@ -716,7 +716,7 @@
                     android:layout_margin="1dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:text="Объем раствора (м3):"
+                    android:text="@string/ob_ras"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
@@ -757,7 +757,7 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="0.32"
                     android:autoText="false"
-                    android:text="Цемент (М500, 50кг):"
+                    android:text="@string/cement"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="14sp"
@@ -794,7 +794,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Песок (влажн. 3-7%, кг):"
+                    android:text="@string/vlagnost"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
                     android:textSize="14sp"
@@ -835,7 +835,7 @@
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:autoText="false"
-                    android:text="Вода (л):"
+                    android:text="@string/voda"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
                     android:textSize="15sp"
