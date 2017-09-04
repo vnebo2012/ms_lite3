@@ -404,6 +404,8 @@
     <string name="bide">Биде, шт.:</string>
     <string name="rakovina">Раковина, шт.:</string>
     <string name="ras_koef_obioma">Расчетный коефициент объема:</string>
+
+
     <string name="obr_vert_m_p">Обрешетка: верт., м-п/м3:</string>
     <string name="gvozd_vertikal">Гвоздь для верт. обрешетки, шт./кг:</string>
     <string name="gvozd_goriz">Гвоздь для гориз. обрешетки, шт./кг:</string>
@@ -413,7 +415,9 @@
     <string name="dlina_ush_stropila">C - длина участка стропила, м:</string>
     <string name="dlina_st2">D - длина стропила, м:</string>
     <string name="wag_vert_obr">Шаг между вертикальной обрешеткой, мм:</string>
-    <string name="wag_gor_obr">Step between the vertical crate, mm:</string>
+    <string name="wag_gor_obr">Шаг между горизонтальной обрешеткой, мм:</string>
+
+
     <string name="kol_skob_m2">Количество скоб на м2, шт.:</string>
     <string name="kraska_l">Краска (банок/л):</string>
     <string name="kol_kraski_l">Количество краски в банке (л):</string>
@@ -452,7 +456,7 @@
     <string name="dlina_pom">Длина помещения, м:</string>
     <string name="wir_pom">Ширина помещения, м:</string>
     <string name="vis_do_potolka">Высота до потолка, m:</string>
-    <string name="s_okon2">Сколько плащади занимают окна, %:</string>
+    <string name="s_okon2">Сколько площади занимают окна, %:</string>
     <string name="tip_okon">Тип окон (коефициент):</string>
     <string name="try_okon">0.85 - тройной стеклопакет</string>
     <string name="dva_okon">1.27 - обычное(двойное) остекленение</string>
@@ -462,7 +466,7 @@
     <string name="norm_iso">1.00 - нормальная (кладка в два кирпича)</string>
     <string name="plox_iso">1.27 - плохая изоляция</string>
     <string name="no_iso">1.4 - очень плохая</string>
-    <string name="temp">Темпиратура снаружи помещения, г/ц</string>
+    <string name="temp">Темпиратура снаружи помещения, г/С</string>
     <string name="steni_narugu">Число стен, выходящих наружу:</string>
     <string name="tip_svarxu">Тип помещения сверху:</string>
     <string name="ob_pom">0.8 - обогреваемое помещение</string>
@@ -525,6 +529,13 @@
     <string name="v_kirp2">2 - в кирпич</string>
     <string name="pervoe">Первое внесение данных</string>
     <string name="ok">(нажмите Ок)</string>
+    <string name="stropilo_instru">St - стропило</string>
+    <string name="mur2">Mr - мауэрлат</string>
+    <string name="rigel2">Rg - ригель</string>
+    <string name="gor_re">Gor - горизонтальная,</string>
+    <string name="ver_re">Ver - вертикальная рейка</string>
+    <string name="ppn">Профиль ПП 60/27, ПН 28/27, пог.м:</string>
+    <string name="pisanie">1Кор 3:10 ...но каждый смотри, как строит..</string>
 
 
 </resources>

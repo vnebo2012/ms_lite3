@@ -692,8 +692,8 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -744,8 +744,8 @@
                     android:text="@string/s_pover"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="16sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView500"
@@ -758,7 +758,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="16sp"
+                    android:textSize="15dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -783,8 +783,8 @@
                     android:text="@string/kraska_banok"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="14sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView700"
@@ -797,7 +797,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="16sp"
+                    android:textSize="15dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -812,7 +812,7 @@
                     android:text="/"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="16sp"
+                    android:textSize="15dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -827,7 +827,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="16sp"
+                    android:textSize="15dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -854,8 +854,8 @@
                     android:text="@string/cena2"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="16sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView242"
@@ -866,7 +866,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="16sp"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
             </LinearLayout>
 

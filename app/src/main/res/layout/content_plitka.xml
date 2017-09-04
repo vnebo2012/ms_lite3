@@ -2172,14 +2172,14 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="105dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp"
-                    android:layout_margin="5dp"
+                    android:layout_width="86dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="1dp"
                     android:baselineAligned="false"
                     android:orientation="horizontal"
                     android:weightSum="1">
@@ -2222,8 +2222,8 @@
                     android:text="@string/plit_na_pol2"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView142"
@@ -2235,7 +2235,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="15sp"
+                    android:textSize="12dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -2259,8 +2259,8 @@
                     android:text="@string/stena_verx"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView201"
@@ -2272,7 +2272,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="15sp"
+                    android:textSize="12dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -2296,8 +2296,8 @@
                     android:text="@string/stena_niz"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView301"
@@ -2309,7 +2309,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="15sp"
+                    android:textSize="12dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -2333,8 +2333,8 @@
                     android:text="@string/freza1"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="13sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView401"
@@ -2346,7 +2346,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="14sp"
+                    android:textSize="12dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -2358,7 +2358,7 @@
                     android:text=" / "
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="14sp"
+                    android:textSize="12dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -2371,7 +2371,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="14sp"
+                    android:textSize="12dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
 
@@ -2396,8 +2396,8 @@
                     android:text="@string/mew_klea"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="13sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView242"
@@ -2407,7 +2407,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="14sp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -2431,8 +2431,8 @@
                     android:text="@string/cena_plitki1"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView20"
@@ -2445,7 +2445,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="15sp"
+                    android:textSize="12dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
             </LinearLayout>
@@ -2470,8 +2470,8 @@
                     android:text="@string/cen_kl"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView208"
@@ -2484,7 +2484,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="15sp"
+                    android:textSize="12dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
             </LinearLayout>
@@ -2508,8 +2508,8 @@
                     android:text="@string/cena_rabot"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView24"
@@ -2519,7 +2519,7 @@
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="15sp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
             </LinearLayout>
 

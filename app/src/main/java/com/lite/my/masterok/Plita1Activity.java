@@ -4854,10 +4854,7 @@ public class Plita1Activity extends AppCompatActivity {
                 TextView textView147 = (TextView) findViewById(R.id.textView28);
                 textView147.setText(String.format(Locale.US, "%.2f", s) + "");
 
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Подсчитано", Toast.LENGTH_SHORT);
 
-                toast.show();
 
 
                 return;

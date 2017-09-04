@@ -71,12 +71,13 @@
 
                             <TextView
                                 android:id="@+id/textView5"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/plita1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="14sp" />
+                                android:textSize="14dp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -100,12 +101,13 @@
 
                             <TextView
                                 android:id="@+id/textView15"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/armopojas1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="11dp" />
+                                android:textSize="14dp" />
 
                         </LinearLayout>
 
@@ -130,12 +132,13 @@
 
                             <TextView
                                 android:id="@+id/textView19"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/kirp1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="14sp" />
+                                android:textSize="14dp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -167,12 +170,13 @@
 
                             <TextView
                                 android:id="@+id/textView51"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/plitka"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="14sp" />
+                                android:textSize="14dp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -196,12 +200,13 @@
 
                             <TextView
                                 android:id="@+id/textView154"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/kriwa1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="14sp" />
+                                android:textSize="14dp" />
 
                         </LinearLayout>
 
@@ -226,12 +231,13 @@
 
                             <TextView
                                 android:id="@+id/textView198"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/bloki1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="14sp" />
+                                android:textSize="14dp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -263,12 +269,13 @@
 
                             <TextView
                                 android:id="@+id/textView522"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/pinoplast1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="14sp" />
+                                android:textSize="14dp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -292,12 +299,13 @@
 
                             <TextView
                                 android:id="@+id/textView152"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/pokraska1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="14sp" />
+                                android:textSize="14dp" />
 
                         </LinearLayout>
 
@@ -322,12 +330,13 @@
 
                             <TextView
                                 android:id="@+id/textView192"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/gipsokarton1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="11dp" />
+                                android:textSize="14dp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -359,12 +368,13 @@
 
                             <TextView
                                 android:id="@+id/textView511"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/wpakl"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12dp" />
+                                android:textSize="14dp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -388,12 +398,13 @@
 
                             <TextView
                                 android:id="@+id/textView155"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/septik1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="14sp" />
+                                android:textSize="14dp" />
 
                         </LinearLayout>
 
@@ -418,12 +429,13 @@
 
                             <TextView
                                 android:id="@+id/textView191"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/styagka1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="14sp" />
+                                android:textSize="14dp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -456,12 +468,13 @@
 
                             <TextView
                                 android:id="@+id/textView561"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/radiatori1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="14sp" />
+                                android:textSize="14dp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -486,12 +499,13 @@
 
                             <TextView
                                 android:id="@+id/textView56"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/elektro"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="14sp" />
+                                android:textSize="14dp" />
                         </LinearLayout>
 
 
@@ -518,12 +532,13 @@
 
                             <TextView
                                 android:id="@+id/textView562"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="@string/demontag1"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="12dp" />
+                                android:textSize="14dp" />
                         </LinearLayout>
 
                     </LinearLayout>

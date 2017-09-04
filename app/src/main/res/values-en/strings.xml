@@ -430,11 +430,14 @@
     <string name="dlina_ush_stropila">C - length of rafter section, m:</string>
     <string name="dlina_st2">D - length of rafters, m:</string>
     <string name="wag_vert_obr">Step between the vertical crate, mm:</string>
-    <string name="wag_gor_obr">Step between the vertical crate, mm:</string>
-    <string name="kol_skob_m2">Number of staples per m2, pcs .:</string>
+    <string name="wag_gor_obr">Step between the horizontal crate, mm:</string>
+    <string name="kol_skob_m2">The consumption of staples per m2, pcs .:</string>
+
+
+
     <string name="kraska_l">Paint (cans/ l):</string>
     <string name="kol_kraski_l">Quantity of paint in the can (l):</string>
-    <string name="ras_kr2">Consumption of paint (ml/ 1m2)</string>
+    <string name="ras_kr2">Consumption of paint (ml/ 1m2):</string>
     <string name="cena_penoplasta">Polyfoam, cost/ m3:</string>
     <string name="kley_pok_cena">Glue (for gluing :), cost/ bags:</string>
     <string name="kley2_cena">Adhesive (for tightening), cost/ sacks:</string>
@@ -503,7 +506,7 @@
     <string name="plit_na_pol2">Tiles on the floor (m2):</string>
     <string name="stena_verx">Wall - top (m2):</string>
     <string name="stena_niz">Wall - bottom (m2):</string>
-    <string name="freza1">Decorative insert (piece / price):</string>
+    <string name="freza1">Decorative insert (PC. /price):</string>
     <string name="mew_klea">Glue bags (25kg) pcs .:</string>
     <string name="cena_plitki1">Cost of tiles:</string>
     <string name="cen_kl">Cost of glue:</string>
@@ -551,6 +554,15 @@
 
     <string name="pervoe">First data entry</string>
     <string name="ok">(click OK)</string>
+
+
+    <string name="stropilo_instru">St - rafter</string>
+    <string name="mur2">Mr - Mauerlat</string>
+    <string name="rigel2">Rg - bolt</string>
+    <string name="gor_re">Gor - horizontal,</string>
+    <string name="ver_re">Ver - is a vertical rack</string>
+    <string name="ppn">Profile 60/27, 28/27, running meters:</string>
+    <string name="pisanie">1Cor 3:10 ... but everyone look how it builds ..</string>
 
 
 </resources>

@@ -1307,13 +1307,13 @@
         android:id="@+id/linearLayout2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_gravity="center_horizontal"
         android:background="@color/colorPrimaryDark"
         android:baselineAligned="false"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -1373,8 +1373,8 @@
                     android:text="@string/ras_obiem"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView143"
@@ -1386,7 +1386,7 @@
                     android:text="00.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="17sp"
+                    android:textSize="15dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
             </LinearLayout>
@@ -1409,8 +1409,8 @@
                     android:text="@string/kol_kirp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView14"
@@ -1422,7 +1422,7 @@
                     android:text="00.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="17sp"
+                    android:textSize="15dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
             </LinearLayout>
@@ -1447,8 +1447,8 @@
                     android:text="@string/cena_kir"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView20"
@@ -1461,7 +1461,7 @@
                     android:text="00.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#ffffff"
-                    android:textSize="17sp"
+                    android:textSize="15dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
             </LinearLayout>
@@ -1485,8 +1485,8 @@
                     android:text="@string/kol_rastvora"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView24"
@@ -1496,7 +1496,7 @@
                     android:text="00.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="17sp"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -1519,8 +1519,8 @@
                     android:text="@string/cena_rabot"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="15sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView245"
@@ -1530,7 +1530,7 @@
                     android:text="00.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/background_light"
-                    android:textSize="17sp"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
             </LinearLayout>
 

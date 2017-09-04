@@ -75,8 +75,8 @@
                                 android:text="@string/s_pover"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
-                                android:textSize="13sp"
-                                android:textStyle="bold|italic" />
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/textView142"
@@ -88,7 +88,7 @@
                                 android:text="0.0"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
-                                android:textSize="14sp"
+                                android:textSize="13dp"
                                 android:textStyle="bold"
                                 android:theme="@style/AppTheme" />
 
@@ -113,8 +113,8 @@
                                 android:text="@string/list_gkp"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
-                                android:textSize="13sp"
-                                android:textStyle="bold|italic" />
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/textView143"
@@ -127,7 +127,7 @@
                                 android:text="0.0"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="#ffffff"
-                                android:textSize="14sp"
+                                android:textSize="13dp"
                                 android:textStyle="bold"
                                 android:theme="@style/AppTheme" />
 
@@ -154,8 +154,8 @@
                                 android:text="@string/profil_pp27"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="13sp"
-                                android:textStyle="bold|italic" />
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/textView900"
@@ -166,7 +166,7 @@
                                 android:text="0.0"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="14sp"
+                                android:textSize="13dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -178,7 +178,7 @@
                                 android:text="/"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="13sp"
+                                android:textSize="13dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -190,7 +190,7 @@
                                 android:text="0.0"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="14sp"
+                                android:textSize="13dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
@@ -215,8 +215,8 @@
                                 android:text="@string/plast_podves"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="13sp"
-                                android:textStyle="bold|italic" />
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/textView903"
@@ -227,7 +227,7 @@
                                 android:text="0.0"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="14sp"
+                                android:textSize="13dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
@@ -251,8 +251,8 @@
                                 android:text="@string/dubel"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="13sp"
-                                android:textStyle="bold|italic" />
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
 
 
                             <TextView
@@ -264,7 +264,7 @@
                                 android:text="0.0"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="14sp"
+                                android:textSize="13dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
@@ -288,8 +288,8 @@
                                 android:text="@string/ln9"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="13sp"
-                                android:textStyle="bold|italic" />
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/textView902"
@@ -300,7 +300,7 @@
                                 android:text="0.0"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="14sp"
+                                android:textSize="13dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
@@ -325,8 +325,8 @@
                                 android:text="@string/pri23"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="13sp"
-                                android:textStyle="bold|italic" />
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/textView904"
@@ -337,7 +337,7 @@
                                 android:text="0.0"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="14sp"
+                                android:textSize="13dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
@@ -361,8 +361,8 @@
                                 android:text="@string/k6"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="13sp"
-                                android:textStyle="bold|italic" />
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/textView703"
@@ -373,7 +373,7 @@
                                 android:text="0.0"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/background_light"
-                                android:textSize="14sp"
+                                android:textSize="13dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
