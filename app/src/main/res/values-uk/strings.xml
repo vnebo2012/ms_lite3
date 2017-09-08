@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Майстерок</string>
+    <string name="app_name">Мастерок</string>
 
     <string name="title_activity_navi_fun">Тип фундаменту</string>
     <string name="title_activity_fun1">Тип 1</string>
