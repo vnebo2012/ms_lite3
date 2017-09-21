@@ -59,8 +59,8 @@
 
                             <ImageButton
                                 android:id="@+id/button2412"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/plita_ico"
@@ -89,8 +89,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/armo_ico"
@@ -120,8 +120,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton2"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/kirpi_ico"
@@ -158,8 +158,8 @@
 
                             <ImageButton
                                 android:id="@+id/button2413"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/plitka_ico"
@@ -188,8 +188,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton11"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/kriwa_ico"
@@ -219,8 +219,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton29"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/bloki_ico"
@@ -257,8 +257,8 @@
 
                             <ImageButton
                                 android:id="@+id/button24124"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/penop_ico"
@@ -287,8 +287,8 @@
 
                             <ImageButton
                                 android:id="@+id/button4010"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/kraska_ico"
@@ -318,8 +318,8 @@
 
                             <ImageButton
                                 android:id="@+id/button407"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/gipsokart_ico"
@@ -356,8 +356,8 @@
 
                             <ImageButton
                                 android:id="@+id/button400"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/wpaklo_ico"
@@ -386,8 +386,8 @@
 
                             <ImageButton
                                 android:id="@+id/button4071"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/sept_ico"
@@ -417,8 +417,8 @@
 
                             <ImageButton
                                 android:id="@+id/button2414"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/styagka_ico"
@@ -455,8 +455,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton3"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/radiators_ico"
@@ -487,12 +487,11 @@
 
                             <ImageButton
                                 android:id="@+id/button24121"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/elektro_ico"
-                                android:onClick="onClickElektro"
                                 android:text="Плита перекрытия"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="18sp" />
@@ -509,7 +508,6 @@
                         </LinearLayout>
 
 
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -520,8 +518,8 @@
 
                             <ImageButton
                                 android:id="@+id/button3000"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/demontag_ico"
@@ -542,6 +540,102 @@
                         </LinearLayout>
 
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageButton
+                                android:id="@+id/imageButton32222"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/balon2"
+
+                                android:onClick="onClickPena"
+                                android:text="Плита перекрытия"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/textView561222"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/pena2"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textView29"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/fanarik"
+                                android:textColor="@color/colorWite"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageButton
+                                android:id="@+id/button30002222"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:alpha="0.0001"
+                                android:background="@drawable/demontag_ico"
+                                android:text="Плита перекрытия"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
 
 
                 </LinearLayout>

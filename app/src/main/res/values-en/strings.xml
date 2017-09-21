@@ -563,6 +563,22 @@
     <string name="ver_re">Ver - is a vertical rack</string>
     <string name="ppn">Profile 60/27, 28/27, running meters:</string>
     <string name="pisanie">1Cor 3:10 ... but everyone look how it builds ..</string>
+    <string name="dla_is2">to enter their!!! values</string>
+
+
+    <string name="pena_a">Mounting foam</string>
+    <string name="dlina_wva_a">Length of the assembly seam, m:</string>
+    <string name="wirina_wva_a">Width of seam, mm:</string>
+    <string name="glubina_wva_a">Depth of the seam, mm:</string>
+    <string name="cena_balona_a">Calibration factor:</string>
+    <string name="vixod_s_balona_a">Exit from one cylinder, l:</string>
+    <string name="kol_balonov_a">Necessary number of cylinders:</string>
+    <string name="obem_wva_a">Seam volume, l:</string>
+    <string name="pena2">Foam</string>
+    <string name="rashot_elektro">Electric installation</string>
+    <string name="tablici_elek">Reference tables</string>
+    <string name="fanarik">Flashlight</string>
+    <string name="fonar">Flashlight   </string>
 
 
 </resources>

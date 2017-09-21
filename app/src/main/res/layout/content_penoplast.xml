@@ -16,6 +16,551 @@
         android:orientation="vertical"
         android:weightSum="1">
 
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/job"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/cena_penoplasta"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView14200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView14201"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+
+                    <TextView
+                        android:id="@+id/textView142"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/verx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/kley_pok_cena"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView20100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:singleLine="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView20101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView201"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/niz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView300"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/kley2_cena"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView30101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView30100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView301"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/freza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView400"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/cena_dubela"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView4000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:singleLine="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView4001"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:singleLine="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView222"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="0.32"
+                        android:autoText="false"
+                        android:text="@string/setka_cena"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2421"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoText="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2422"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoText="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView242"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoText="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:text="@string/grunt_cena"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:autoText="false"
+                        android:singleLine="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView2001"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:autoText="false"
+                        android:singleLine="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:autoText="false"
+                        android:singleLine="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView188"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:text="@string/koroed_cena"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2080"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:autoText="false"
+                        android:singleLine="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+
+                    <TextView
+                        android:id="@+id/textView2081"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:autoText="false"
+                        android:singleLine="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                    <TextView
+                        android:id="@+id/textView208"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:autoText="false"
+                        android:singleLine="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:text="@string/cena_vsex_mat"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoText="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:baselineAligned="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView229"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:text="@string/cena_rabot"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView401"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0"
+                        android:singleLine="false"
+                        android:text="00.00"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:theme="@style/AppTheme" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
         <ScrollView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
@@ -26,560 +571,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-
-                <LinearLayout
-                    android:id="@+id/linearLayout2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@color/colorPrimaryDark"
-                    android:baselineAligned="false"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:id="@+id/job"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView12"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:text="@string/cena_penoplasta"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView14200"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView14201"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="0dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="/"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-
-                            <TextView
-                                android:id="@+id/textView142"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/verx"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView200"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:text="@string/kley_pok_cena"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView20100"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView20101"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="0dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="/"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView201"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/niz"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView300"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:text="@string/kley2_cena"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="13dp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView30101"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView30100"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="0dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="/"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView301"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/freza"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView400"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:text="@string/cena_dubela"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-
-                            <TextView
-                                android:id="@+id/textView4000"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView4001"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="0dp"
-                                android:singleLine="false"
-                                android:text="/"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView222"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="3dp"
-                                android:layout_weight="0.32"
-                                android:autoText="false"
-                                android:text="@string/setka_cena"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView2421"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:autoText="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView2422"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:autoText="false"
-                                android:text="/"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView242"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:autoText="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView18"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:autoText="false"
-                                android:text="@string/grunt_cena"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView2000"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:autoText="false"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView2001"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="0dp"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:autoText="false"
-                                android:singleLine="false"
-                                android:text="/"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView20"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0"
-                                android:autoText="false"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:layout_marginTop="5dp"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView188"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1"
-                                android:autoText="false"
-                                android:text="@string/koroed_cena"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="13dp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView2080"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:autoText="false"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-
-                            <TextView
-                                android:id="@+id/textView2081"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="0dp"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:autoText="false"
-                                android:singleLine="false"
-                                android:text="/"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                            <TextView
-                                android:id="@+id/textView208"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0"
-                                android:autoText="false"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView22"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="3dp"
-                                android:layout_weight="1"
-                                android:autoText="false"
-                                android:text="@string/cena_vsex_mat"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:autoText="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="0dp"
-                            android:baselineAligned="true"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/textView229"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="3dp"
-                                android:layout_weight="1"
-                                android:autoText="false"
-                                android:text="@string/cena_rabot"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/textView401"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="3dp"
-                                android:layout_weight="0"
-                                android:singleLine="false"
-                                android:text="0.0"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                android:theme="@style/AppTheme" />
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"

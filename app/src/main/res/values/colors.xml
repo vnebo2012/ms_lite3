@@ -28,4 +28,6 @@
     <color name="colorPrimary22">#681dff</color>
     <color name="colorPrimary222">#500fd2</color>
     <color name="colorBlueGrey1001">#eaeaea</color>
+    <color name="red">#ff0000</color>
+    <color name="colGr">#00ff7d</color>
 </resources>

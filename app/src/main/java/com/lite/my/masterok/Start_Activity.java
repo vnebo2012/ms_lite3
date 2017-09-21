@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.hardware.Camera;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -22,6 +23,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +36,9 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
     final Context context2 = this;
     boolean flag = true;
     Context context;
+    private Switch mSwitch;
+    private Camera camera;
+
 
     final String MY_SETTINGS = "saved_text_stg100011";
 
@@ -42,6 +47,23 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+       /* mSwitch = (Switch) findViewById(R.id.switch_light);
+        mSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (camera == null) {
+                    camera = Camera.open();
+                }
+                Camera.Parameters parameters = camera.getParameters();
+                if (!isChecked) {
+                    parameters.setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
+                } else {
+                    parameters.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
+                }
+                camera.setParameters(parameters);
+                camera.startPreview();
+            }
+        });*/
 
      ///   mAdView = (AdView) findViewById(R.id.adView);
      //   AdRequest adRequest = new AdRequest.Builder().build();
@@ -145,6 +167,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         ImageButton button7 = (ImageButton) findViewById(R.id.button4071);
         ImageButton button8 = (ImageButton) findViewById(R.id.button3000);
         ImageButton button9 = (ImageButton) findViewById(R.id.imageButton11);
+        ImageButton button10 = (ImageButton) findViewById(R.id.button24121);
         //Button button5 = (Button) findViewById(R.id.button4010);
         //Button button6 = (Button) findViewById(R.id.button407);
         //Button button7 = (Button) findViewById(R.id.button4071);
@@ -160,6 +183,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         button7.setOnClickListener(viewClickListener7);
         button8.setOnClickListener(viewClickListener8);
         button9.setOnClickListener(viewClickListener9);
+        button10.setOnClickListener(viewClickListener10);
 //        textView.setOnClickListener(viewClickListener);
 
 
@@ -360,8 +384,27 @@ public void onClickRadiators(View view) {
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(mills);
     }
-public void onClick_Demontag_Steni(View view) {
+
+    public void onClickPena(View view) {
+        Intent a = new Intent(this,Pena_A_Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+    }
+
+    public void onClick_Demontag_Steni(View view) {
         Intent a = new Intent(this,Demontag_steni_Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+    }
+
+    public void onClick_fonar(View view) {
+        Intent a = new Intent(this,FonarikActivity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
         long mills = 15L;
@@ -1077,6 +1120,74 @@ public void onClick_Demontag_Steni(View view) {
         popupMenu.show();
     }
 
+    View.OnClickListener viewClickListener10 = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            long mills = 15L;
+            Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+            vibrator.vibrate(mills);
+
+
+            showPopupMenu10(v);
+        }
+    };
+
+    private void showPopupMenu10(View v2) {
+        PopupMenu popupMenu = new PopupMenu(this, v2);
+        popupMenu.inflate(R.menu.popupmenu11); // Для Android 4.0
+        // для версии Android 3.0 нужно использовать длинный вариант
+        // popupMenu.getMenuInflater().inflate(R.menu.popupmenu,
+        // popupMenu.getMenu());
+
+        popupMenu
+                .setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        // Toast.makeText(PopupMenuDemoActivity.this,
+                        // item.toString(), Toast.LENGTH_LONG).show();
+                        // return true;
+                        switch (item.getItemId()) {
+
+                            case R.id.menu19:
+                                //пол
+                                Intent intent = new Intent(Start_Activity.this, Elektro_Activity.class);
+                                startActivity(intent);
+                                long mills = 15L;
+                                Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                                vibrator.vibrate(mills);
+                                return true;
+
+                            case R.id.menu20:
+                                //пол
+                                Intent intent2 = new Intent(Start_Activity.this, Elektro_tablica_Activity.class);
+                                startActivity(intent2);
+                                long mills2 = 15L;
+                                Vibrator vibrator2 = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                                vibrator2.vibrate(mills2);
+                                return true;
+
+
+
+
+
+                            default:
+                                return false;
+                        }
+                    }
+                });
+
+        popupMenu.setOnDismissListener(new PopupMenu.OnDismissListener() {
+
+            @Override
+            public void onDismiss(PopupMenu menu) {
+                //Toast.makeText(getApplicationContext(), "onDismiss",
+                // Toast.LENGTH_SHORT).show();
+            }
+        });
+        popupMenu.show();
+    }
+
     public void onClick2222(View view) {
         Intent a = new Intent(this,Kraska_S_Activity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -1084,10 +1195,7 @@ public void onClick_Demontag_Steni(View view) {
     }
 
 
-
-
-
-        }
+}
 
 
 

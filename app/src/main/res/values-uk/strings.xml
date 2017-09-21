@@ -444,7 +444,7 @@
     <string name="cena_dubela">Дюбеля, вартість / шт .:</string>
     <string name="setka_cena">Сітка, вартість / м2:</string>
     <string name="grunt_cena">Грунтовка, вартість / відер</string>
-    <string name="koroed_cena">Декоративна штукатурка, вартість / відер, шт:</string>
+    <string name="koroed_cena">Короїд, вартість / відер, шт:</string>
     <string name="cena_vsex_mat">Вартість всіх матеріалів:</string>
     <string name="s_sten_doma">Площа стін будинку, м2:</string>
     <string name="s_okon_dverey">Площа вікон, дверей, м2:</string>
@@ -562,5 +562,22 @@
     <string name="ver_re">Ver - вертикальна рейка</string>
     <string name="ppn">Профиль ПП 60/27, ПН 28/27, пог.м:</string>
     <string name="pisanie">1Кор 3:10 ... але нехай кожен пильнує, як будує ..</string>
+    <string name="dla_is2">для внесення своїх!!! значень</string>
+
+
+
+    <string name="pena_a">Монтажна піна</string>
+    <string name="dlina_wva_a">Довжина монтажного шва, м:</string>
+    <string name="wirina_wva_a">Ширина шва, мм:</string>
+    <string name="glubina_wva_a">Глибина шва, мм:</string>
+    <string name="cena_balona_a">Калібрувальний коефіцієнт:</string>
+    <string name="vixod_s_balona_a">Вихід з одного балона, л:</string>
+    <string name="kol_balonov_a">Необхідна кількість балонів:</string>
+    <string name="obem_wva_a">Об`єм шва, л:</string>
+    <string name="pena2">Піна</string>
+    <string name="rashot_elektro">Електромонтаж</string>
+    <string name="tablici_elek">Таблиця</string>
+    <string name="fanarik">Ліхтар</string>
+    <string name="fonar">Ліхтар  </string>
 
 </resources>

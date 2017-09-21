@@ -37,26 +37,21 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/uderg"
-                android:textColor="#ffffff"
-                android:textSize="16dp"
-                android:textStyle="bold" />
+                android:textColor="#ffffff" />
 
             <TextView
                 android:id="@+id/textView522"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="@string/dla_is2"
-                android:textColor="#ffffff"
-                android:textSize="16dp"
-                android:textStyle="bold" />
+                android:text="@string/dla_is"
+                android:textColor="#ffffff" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -98,10 +93,101 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView821"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/nagmite"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView5221"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/dla_ism"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button1312"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignEnd="@+id/linearLayout"
+                android:layout_alignRight="@+id/linearLayout"
+                android:layout_below="@+id/linearLayout"
+                android:layout_margin="5dp"
+                android:background="@drawable/radius"
+                android:textColor="@color/colorBlack"
+                android:textSize="30dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/button13123"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignEnd="@+id/linearLayout"
+                android:layout_alignRight="@+id/linearLayout"
+                android:layout_below="@+id/linearLayout"
+                android:layout_margin="5dp"
+                android:background="@drawable/radius"
+                android:textColor="@color/colorBlack"
+                android:textSize="30dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/button13121"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignEnd="@+id/linearLayout"
+                android:layout_alignRight="@+id/linearLayout"
+                android:layout_below="@+id/linearLayout"
+                android:layout_margin="5dp"
+                android:background="@drawable/radius"
+                android:textColor="@color/colorBlack"
+                android:textSize="30dp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3167"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8218756"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/ud_knop"
+                android:textColor="@color/colorWite" />
+
+            <TextView
+                android:id="@+id/textView82154"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/obnul"
+                android:textColor="@color/colorWite" />
 
 
         </LinearLayout>
@@ -111,6 +197,14 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal">
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@mipmap/ic_dor" />
 
 
         </LinearLayout>
