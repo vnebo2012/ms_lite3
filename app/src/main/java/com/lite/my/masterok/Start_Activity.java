@@ -10,7 +10,6 @@ import android.hardware.Camera;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Vibrator;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -72,7 +71,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar7);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
            public void onClick(View view) {
@@ -92,7 +91,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
                 }
 
             }
-        });
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
@@ -403,8 +402,17 @@ public void onClickRadiators(View view) {
         vibrator.vibrate(mills);
     }
 
-    public void onClick_fonar(View view) {
-        Intent a = new Intent(this,FonarikActivity.class);
+    public void onClick_Ves(View view) {
+        Intent a = new Intent(this,Ves_Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+    }
+
+    public void onClick_Lesa(View view) {
+        Intent a = new Intent(this,LesaActivity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
         long mills = 15L;

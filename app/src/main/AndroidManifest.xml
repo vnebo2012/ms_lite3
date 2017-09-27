@@ -143,6 +143,13 @@
         <activity
             android:name=".FonarikActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ves_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".LesaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
 
     </application>

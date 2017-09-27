@@ -580,4 +580,72 @@
     <string name="fanarik">Ліхтар</string>
     <string name="fonar">Ліхтар  </string>
 
+
+    <string name="ves_doma">Вага будинку</string>
+    <string name="title_ves">Навантаження будинку на грунт</string>
+
+    <string name="dlina2_doma">Довжина будинку, м:</string>
+    <string name="wir_doma2">Ширина будинку, м:</string>
+    <string name="visota_sten">Висота стін будинку, м:</string>
+    <string name="tol_sten_doma">Товщина стін будинку, см:</string>
+    <string name="s_frontonov">Площа фронтонів, м2:</string>
+    <string name="tolw_frontonov">Товщина фронтону, см:</string>
+    <string name="material_sten">Вага матеріалу стін, кг/м3:</string>
+    <string name="plosha_okon_dverey">Площа вікон, м2:</string>
+    <string name="plosha_krovli">Площа покрівлі, м2:</string>
+    <string name="tip_krovli">Вага покрівельного матеріалу, кг/м2:</string>
+    <string name="ves_strop_sis">Вага кроквяної системи, кг/м2:</string>
+
+
+    <string name="tip_operanij_na_steni">Тип операния крыши на стены:</string>
+
+
+    <string name="massa_snega">Маса снігу на покрівлі, кг/м2:</string>
+    <string name="material_sherdashnogo_perekritia">Вага матеріалу горищного перекриття, кг/м2:</string>
+    <string name="ves_megitagnogo_perekritia">Вага міжповерхового перекриття, кг / м2:</string>
+    <string name="glubina_fundamenta2">Глибина фундаменту, кг / м2:</string>
+    <string name="kol_megitag_p">Кількість межітажних перекриттів:</string>
+    <string name="ves_vesshy_vdome">Вага речей в будинку, кг / м2:</string>
+    <string name="zapas_proshnosty">Запас міцності (коефіцієнт):</string>
+    <string name="s_doma">Площа будинку, м2:</string>
+    <string name="s_podoshvi_fun">Площа підошви фундаменту, м2:</string>
+    <string name="massa_sten">Маса стін, т:</string>
+    <string name="massa_kriwi">Маса даху, т:</string>
+    <string name="massa_perek_megetag">Маса перекриттів, т:</string>
+    <string name="massa_fun">Маса фундаменту, т:</string>
+    <string name="ud_ves_na_m2">Питома вага на м2 землі, кг:</string>
+    <string name="ves_betona">Вага 1м3 бетону, кг:</string>
+    <string name="material_sten1">Каркас з легкої обшивкою - 300</string>
+    <string name="material_sten2">Колоди (дерево) - 600</string>
+    <string name="material_sten3">Газобетон D600 - 600</string>
+    <string name="material_sten4">Шлакоблок - 1200</string>
+    <string name="material_sten5">Ракушняк - 1500</string>
+    <string name="material_sten6">Цегла - 1800</string>
+    <string name="material_krovli1">Металочерепиця - 5</string>
+    <string name="material_krovli2">Шифер типу Ондулін - 3</string>
+    <string name="material_krovli3">Шифер асбестоцементний - 14</string>
+    <string name="material_krovli4">Натуральна черепиця - 40</string>
+    <string name="material_krovli5">Руберойд (євро) - 1.7</string>
+    <string name="material_krovli11">Деревяні по деревяних балках - 100-150</string>
+    <string name="material_krovli21">Деревяне по сталевих балках - 200</string>
+    <string name="material_krovli31">Залізобетон або плити - 500</string>
+
+
+    <string name="lesa_ico">Риштування</string>
+    <string name="dlina_stroenia">Довжина будівлі, м:</string>
+    <string name="wirina_stroenia">Ширина будівлі В, м:</string>
+    <string name="visota_sten_stroenia">Висота будівлі, м:</string>
+    <string name="rast_megdu_stoek">Відстань між стійками, м:</string>
+    <string name="tip_vistavlenia">Тип установки:</string>
+    <string name="visota_stoek">Висота однієї стійки, м:</string>
+    <string name="cena_orendi">Вартість оренди, за 1 стійку:</string>
+    <string name="dni_orendi">Кількість днів оренди:</string>
+    <string name="krestovin">Количество крестовин, на пару стоек:</string>
+    <string name="vsego_stoek">Всього стійок, шт:</string>
+    <string name="kol_vert_radov">Кількість вертикальних рядів:</string>
+    <string name="kol_krestovin">Количество крестовин, шт:</string>
+    <string name="cena_orendi2">Вартість оренди:</string>
+    <string name="wirina_stoyki">Ширина стійки, м:</string>
+    <string name="sposob_ust_lesov">Спосіб установки риштувань:</string>
+
 </resources>

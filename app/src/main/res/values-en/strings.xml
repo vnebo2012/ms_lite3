@@ -580,6 +580,73 @@
     <string name="fanarik">Flashlight</string>
     <string name="fonar">Flashlight   </string>
 
+    <string name="ves_doma">Weight at home</string>
+    <string name="title_ves">Load the house on the soil</string>
+
+    <string name="dlina2_doma">Length of the house, m:</string>
+    <string name="wir_doma2">The width of the house, m:</string>
+    <string name="visota_sten">Height of the walls of the house, m:</string>
+    <string name="tol_sten_doma">Wall thickness, cm:</string>
+    <string name="s_frontonov">Gable area, m2:</string>
+    <string name="tolw_frontonov">Fronton thickness, cm:</string>
+    <string name="material_sten">Weight of wall material, kg / m3:</string>
+    <string name="plosha_okon_dverey">Area of windows, m2:</string>
+    <string name="plosha_krovli">Roof area, m2:</string>
+    <string name="tip_krovli">Weight of the roofing material, kg / m2:</string>
+    <string name="ves_strop_sis">Weight of the rafter system, kg / m2:</string>
+
+
+    <string name="tip_operanij_na_steni">Тип операния крыши на стены:</string>
+
+
+    <string name="massa_snega">Snow weight on the roof, kg / m2:</string>
+    <string name="material_sherdashnogo_perekritia">Weight of attic floor material, kg / m2:</string>
+    <string name="ves_megitagnogo_perekritia">Weight of the floor covering, kg / m2:</string>
+    <string name="glubina_fundamenta2">Depth of foundation, kg / m2:</string>
+    <string name="kol_megitag_p">Number of overlapping floors:</string>
+    <string name="ves_vesshy_vdome">Weight of things in the house, kg / m2:</string>
+    <string name="zapas_proshnosty">Strength factor (coefficient):</string>
+    <string name="s_doma">House area, m2:</string>
+    <string name="s_podoshvi_fun">The area of the foundation foot, m2:</string>
+    <string name="massa_sten">Weight of walls, t:</string>
+    <string name="massa_kriwi">Roof mass, t:</string>
+    <string name="massa_perek_megetag">Weight of floors, t:</string>
+    <string name="massa_fun">Weight of foundation, t:</string>
+    <string name="ud_ves_na_m2">Specific gravity per m2 of land, kg:</string>
+    <string name="ves_betona">Weight of 1m3 of concrete, kg:</string>
+    <string name="material_sten1">Frame with light casing - 300</string>
+    <string name="material_sten2">Logs (wood) - 600</string>
+    <string name="material_sten3">Aerated concrete D600 - 600</string>
+    <string name="material_sten4">Slag-block - 1200</string>
+    <string name="material_sten5">Block of seashells - 1500</string>
+    <string name="material_sten6">Brick-1800</string>
+    <string name="material_krovli1">Metal tile - 5</string>
+    <string name="material_krovli2">Slate type Ondulin - 3</string>
+    <string name="material_krovli3">Slate asbestos-cement - 14</string>
+    <string name="material_krovli4">Natural shingles - 40</string>
+    <string name="material_krovli5">Ruberoid (Euro) - 1.7</string>
+    <string name="material_krovli11">Wooden on wooden beams - 100-150</string>
+    <string name="material_krovli21">Wooden on steel beams - 200</string>
+    <string name="material_krovli31">Reinforced concrete or slabs - 500</string>
+
+
+    <string name="lesa_ico">Scaffolding</string>
+    <string name="dlina_stroenia">Length of the building, m:</string>
+    <string name="wirina_stroenia">Width of building B, m:</string>
+    <string name="visota_sten_stroenia">Height of the building, m:</string>
+    <string name="rast_megdu_stoek">Distance between posts, m:</string>
+    <string name="tip_vistavlenia">Type of instalation:</string>
+    <string name="visota_stoek">The height of one rack, m:</string>
+    <string name="cena_orendi">Cost of rent, per 1 rack:</string>
+    <string name="dni_orendi">Number of rental days:</string>
+    <string name="krestovin">Количество крестовин, на пару стоек:</string>
+    <string name="vsego_stoek">Total racks, pcs:</string>
+    <string name="kol_vert_radov">Number of vertical rows:</string>
+    <string name="kol_krestovin">Количество крестовин, шт:</string>
+    <string name="cena_orendi2">Rent price:</string>
+    <string name="wirina_stoyki">Stand width, m:</string>
+    <string name="sposob_ust_lesov">Method for installing scaffolding:</string>
+
 
 </resources>
 

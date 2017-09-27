@@ -586,17 +586,18 @@
                             android:orientation="vertical">
 
 
-                            <LinearLayout
+                            <ImageButton
+                                android:id="@+id/imageButton3222232"
                                 android:layout_width="55dp"
                                 android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
-                                android:gravity="center"
-                                android:orientation="horizontal">
+                                android:background="@drawable/ves_doma_ico"
 
-
-
-                            </LinearLayout>
+                                android:onClick="onClick_Ves"
+                                android:text="Плита перекрытия"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="18sp" />
 
                             <TextView
                                 android:id="@+id/textView29"
@@ -604,8 +605,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:text="@string/fanarik"
-                                android:textColor="@color/colorWite"
+                                android:text="@string/ves_doma"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="14dp" />
 
                         </LinearLayout>
@@ -626,11 +627,21 @@
                                 android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
-                                android:alpha="0.0001"
-                                android:background="@drawable/demontag_ico"
+                                android:background="@drawable/lesa_ico"
+                                android:onClick="onClick_Lesa"
                                 android:text="Плита перекрытия"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/textView29677"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/lesa_ico"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp" />
 
                         </LinearLayout>
 

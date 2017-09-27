@@ -373,7 +373,7 @@
     <string name="rey_goriz">гориз., м-п/м3 (шаг 35см):</string>
     <string name="murlat">Мауэрлат (150х150), м-п /м3:</string>
     <string name="les_ves">Лес (весь), м3/цена:</string>
-    <string name="cena_blaxi">Цена кровфельного материала:</string>
+    <string name="cena_blaxi">Цена кровельного материала:</string>
     <string name="cena_rabot">Стоимость работ:</string>
     <string name="shir_doma">A - ширина дома, м:</string>
     <string name="dlina_dom">B - длина дома, м:</string>
@@ -553,6 +553,73 @@
     <string name="tablici_elek">Таблица</string>
     <string name="fanarik">Фонарик</string>
     <string name="fonar">Фонарик   </string>
+
+
+    <string name="ves_doma">Вес дома</string>
+    <string name="title_ves">Нагрузка дома на почву</string>
+    <string name="dlina2_doma">Длина дома, м:</string>
+    <string name="wir_doma2">Ширина дома, м:</string>
+    <string name="visota_sten">Высота стен дома, м:</string>
+    <string name="tol_sten_doma">Толщина стен дома, см:</string>
+    <string name="s_frontonov">Площадь фронтонов, м2:</string>
+    <string name="tolw_frontonov">Толщина фронтона, см:</string>
+    <string name="material_sten">Вес материала стен, кг/м3:</string>
+    <string name="plosha_okon_dverey">Площадь окон, м2:</string>
+    <string name="plosha_krovli">Площадь кровли, м2:</string>
+    <string name="tip_krovli">Вес кровельного материала, кг/м2:</string>
+    <string name="ves_strop_sis">Вес стропильной системы, кг/м2:</string>
+
+
+    <string name="tip_operanij_na_steni">Тип операния крыши на стены:</string>
+
+
+    <string name="massa_snega">Масса снега на кровле, кг/м2:</string>
+    <string name="material_sherdashnogo_perekritia">Вес чердачного перекрытия, кг/м2:</string>
+    <string name="ves_megitagnogo_perekritia">Вес междуитажного перекрития, кг/м2:</string>
+    <string name="glubina_fundamenta2">Глубина фундамента, см:</string>
+    <string name="kol_megitag_p">Количество межитажных перекрытий:</string>
+    <string name="ves_vesshy_vdome">Вес вещей в доме, кг:</string>
+    <string name="zapas_proshnosty">Запас прочности (коэфициент):</string>
+    <string name="s_doma">Площадь дома, м2:</string>
+    <string name="s_podoshvi_fun">Площадь подошвы фундамента, м2:</string>
+    <string name="massa_sten">Масса стен, т:</string>
+    <string name="massa_kriwi">Масса крыши, т:</string>
+    <string name="massa_perek_megetag">Масса перекрытий, т:</string>
+    <string name="massa_fun">Масса фундамента, т:</string>
+    <string name="ud_ves_na_m2">Удельный вес на м2 земли, кг:</string>
+    <string name="ves_betona">Вес 1м3 бетона, кг:</string>
+    <string name="material_sten1">Каркас с легкой обшивкой - 300</string>
+    <string name="material_sten2">Бревна (дерево) - 600</string>
+    <string name="material_sten3">Газобетон D600 - 600</string>
+    <string name="material_sten4">Шлакоблок - 1200</string>
+    <string name="material_sten5">Ракушняк - 1500</string>
+    <string name="material_sten6">Кирпич - 1800</string>
+    <string name="material_krovli1">Металочерепица - 5</string>
+    <string name="material_krovli2">Шифер типа Ондулин - 3</string>
+    <string name="material_krovli3">Slate asbestos-cement - 14</string>
+    <string name="material_krovli4">Натуральная черепица - 40</string>
+    <string name="material_krovli5">Рубероид (евро) - 1.7</string>
+    <string name="material_krovli11">Деревяное по деревяным балкам - 100-150</string>
+    <string name="material_krovli21">Деревяное по стальным балкам - 200</string>
+    <string name="material_krovli31">Железобетон или плиты - 500</string>
+
+
+    <string name="lesa_ico">Леса</string>
+    <string name="dlina_stroenia">Длина строения А, м:</string>
+    <string name="wirina_stroenia">Ширина строения В, м:</string>
+    <string name="visota_sten_stroenia">Высота строения, м:</string>
+    <string name="rast_megdu_stoek">Растояние между стойками, м:</string>
+    <string name="tip_vistavlenia">Тип установки:</string>
+    <string name="visota_stoek">Высота одной стойки, м:</string>
+    <string name="cena_orendi">Стоимость оренды, за 1 стойку:</string>
+    <string name="dni_orendi">Количество дней оренды:</string>
+    <string name="krestovin">Количество крестовин, на пару стоек:</string>
+    <string name="vsego_stoek">Всего стоек, шт:</string>
+    <string name="kol_vert_radov">Кол.вертикальных рядов:</string>
+    <string name="kol_krestovin">Кол.стоек в ярусе, шт:</string>
+    <string name="cena_orendi2">Стоимость оренды:</string>
+    <string name="wirina_stoyki">Ширина стойки, м:</string>
+    <string name="sposob_ust_lesov">Тип установки лесов:</string>
 
 
 </resources>
