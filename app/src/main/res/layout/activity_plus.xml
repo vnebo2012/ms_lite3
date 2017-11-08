@@ -4,23 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="false"
-    tools:context=".PlusActivity">
-    >
+    android:fitsSystemWindows="true"
+    tools:context=".BlokiActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/my_toolbar4"
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/my_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:background="@color/colorPrimary"
+            android:weightSum="1">
 
-            />
+
+        </android.support.v7.widget.Toolbar>
+
 
     </android.support.design.widget.AppBarLayout>
 
@@ -30,7 +31,6 @@
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginTop="56dp"
-        android:background="@color/colorPrimary"
         android:orientation="vertical"
         android:padding="3dp">
 
@@ -39,36 +39,31 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/tema_pisma"
-            android:textColor="#ffffff"
-            android:textStyle="italic" />
+            android:textColor="@color/colorPrimary43"
+            android:textStyle="bold|italic" />
 
         <EditText
             android:id="@+id/email_subject"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ffffff"
             android:hint="введите название темы"
             android:inputType="textEmailSubject"
-            android:text="Пару слов о Мастерок"
-            android:textColor="#ffffff"
-            android:textSize="18dp" />
+            android:text="Напишите Ваши пожелания/ Write your wishes"
+            android:textSize="12dp" />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="@string/soobwenie"
-            android:textColor="#ffffff"
-            android:textStyle="italic" />
+            android:textColor="@color/colorPrimary43"
+            android:textStyle="bold|italic" />
 
         <EditText
             android:id="@+id/email_text"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ffffff"
-            android:hint="введите текст"
-            android:textColor="#ffffff"
-            android:textColorHint="#c3c3c3"
+            android:hint="введите текст/ enter text"
             android:textSize="18dp" />
 
         <TextView
@@ -105,7 +100,6 @@
         android:layout_gravity="bottom|end">
 
     </LinearLayout>
-
 
 
 

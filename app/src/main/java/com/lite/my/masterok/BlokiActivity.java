@@ -6216,6 +6216,35 @@ public class BlokiActivity extends AppCompatActivity {
         startActivity(a);
     }
 
+     public void onClick_Pismo(View view) {
+
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
+         Intent a = new Intent(this,PlusActivity.class);
+         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+         startActivity(a);
+    }
+
+    public void onClick_Pod(View view) {
+
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+        final Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        String textToSend="https://play.google.com/store/apps/details?id=com.lite.my.masterok";
+        intent.putExtra(Intent.EXTRA_TEXT, textToSend);
+        try
+        {
+            startActivity(Intent.createChooser(intent, "Поделится приложением"));
+        }
+        catch (android.content.ActivityNotFoundException ex)
+        {
+            Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
+    }}
+
     private void requestNewInterstitial() {
 
         AdRequest adRequest = new AdRequest.Builder()

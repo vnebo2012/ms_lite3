@@ -76,7 +76,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/plita1"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
                         </LinearLayout>
 
@@ -106,7 +106,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/armopojas1"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
 
                         </LinearLayout>
@@ -137,7 +137,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/kirp1"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -175,7 +175,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/plitka"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
                         </LinearLayout>
 
@@ -205,7 +205,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/kriwa1"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
 
                         </LinearLayout>
@@ -236,7 +236,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/bloki1"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -274,7 +274,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/pinoplast1"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
                         </LinearLayout>
 
@@ -304,7 +304,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/pokraska1"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
 
                         </LinearLayout>
@@ -335,7 +335,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/gipsokarton1"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -373,7 +373,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/wpakl"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
                         </LinearLayout>
 
@@ -403,7 +403,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/septik1"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
 
                         </LinearLayout>
@@ -434,7 +434,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/styagka1"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -473,7 +473,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/radiatori1"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
                         </LinearLayout>
 
@@ -503,7 +503,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/elektro"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
                         </LinearLayout>
 
@@ -535,7 +535,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/demontag1"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
                         </LinearLayout>
 
@@ -574,7 +574,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/pena2"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
                         </LinearLayout>
 
@@ -592,7 +592,7 @@
                                 android:layout_height="55dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ves_doma_ico"
+                                android:background="@drawable/ves_doma"
 
                                 android:onClick="onClick_Ves"
                                 android:text="Плита перекрытия"
@@ -606,7 +606,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/ves_doma"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
 
                         </LinearLayout>
@@ -640,7 +640,7 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/lesa_ico"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
 
                         </LinearLayout>

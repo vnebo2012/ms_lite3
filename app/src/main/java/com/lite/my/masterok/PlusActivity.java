@@ -35,7 +35,7 @@ public class PlusActivity extends AppCompatActivity {
 
         // mClipboard.addPrimaryClipChangedListener(mPrimaryChangeListener);
 
-        Toolbar my_toolbar = (Toolbar) findViewById(R.id.my_toolbar4);
+        Toolbar my_toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(my_toolbar);
 
         //getSupportActionBar().setTitle(R.string.my_tb_title);
@@ -91,7 +91,7 @@ public class PlusActivity extends AppCompatActivity {
             intent.setType("plain/text");
         }
 
-        startActivity(Intent.createChooser(intent, "Отправка на Gmail"));
+        startActivity(Intent.createChooser(intent, "Отправка на Gmail/ Sending to Gmail"));
     }
 
     @Override
@@ -107,17 +107,4 @@ public class PlusActivity extends AppCompatActivity {
         }
     }
 
-
-
-
-
-    @Override
-    public void onBackPressed() {
-        //do something on back.
-
-        Intent a = new Intent(this, Start_Activity.class);
-        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(a);
-
-    }
 }

@@ -41,6 +41,24 @@
 
 
                 <ImageButton
+                    android:id="@+id/pismo"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/colorPrimary"
+                    android:onClick="onClick_Pod"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_pod" />
+
+                <ImageButton
+                    android:id="@+id/pismo22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:onClick="onClick_Pismo"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_pi2" />
+
+                <ImageButton
                     android:id="@+id/calk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
