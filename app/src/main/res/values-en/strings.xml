@@ -646,6 +646,16 @@
     <string name="cena_orendi2">Rent price:</string>
     <string name="wirina_stoyki">Stand width, m:</string>
     <string name="sposob_ust_lesov">Method for installing scaffolding:</string>
+    <string name="doski_a">Volume of sawn timber:</string>
+    <string name="obem_dosok">Volume of forest, m3:</string>
+    <string name="wtuk_na_kub">Pieces per cube:</string>
+    <string name="dlina_doski">Length А, m:</string>
+    <string name="wirina_doski">Width В, mm:</string>
+    <string name="tolwina_doski">Thickness C, mm:</string>
+    <string name="kolishestvo_dosok">Amount, шт.:</string>
+    <string name="cena_dosok">Cost, per m3:</string>
+    <string name="les">Saw-timbers</string>
+    <string name="les1">Tree</string>
 
 
 </resources>

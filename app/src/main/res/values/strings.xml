@@ -620,6 +620,16 @@
     <string name="cena_orendi2">Стоимость оренды:</string>
     <string name="wirina_stoyki">Ширина стойки, м:</string>
     <string name="sposob_ust_lesov">Тип установки лесов:</string>
+    <string name="doski_a">Объем пиломатериалов:</string>
+    <string name="obem_dosok">Объем леса, м3:</string>
+    <string name="wtuk_na_kub">Штук на куб:</string>
+    <string name="dlina_doski">Длина (доска, брус)А, м:</string>
+    <string name="wirina_doski">Ширина В, мм:</string>
+    <string name="tolwina_doski">Толщина C, мм:</string>
+    <string name="kolishestvo_dosok">Количество, шт.:</string>
+    <string name="cena_dosok">Стоимость, за м3:</string>
+    <string name="les">Пиломатериалы</string>
+    <string name="les1">Дерево</string>
 
 
 </resources>

@@ -647,5 +647,15 @@
     <string name="cena_orendi2">Вартість оренди:</string>
     <string name="wirina_stoyki">Ширина стійки, м:</string>
     <string name="sposob_ust_lesov">Спосіб установки риштувань:</string>
+    <string name="doski_a">Об"єм пиломатеріалів:</string>
+    <string name="obem_dosok">Об"єм лісу, м3:</string>
+    <string name="wtuk_na_kub">Штук на куб:</string>
+    <string name="dlina_doski">Длина (дошка, брус)А, м:</string>
+    <string name="wirina_doski">Ширина В, мм:</string>
+    <string name="tolwina_doski">Товщина C, мм:</string>
+    <string name="kolishestvo_dosok">Кількість, шт.:</string>
+    <string name="cena_dosok">Цена, за м3:</string>
+    <string name="les">Пиломатеріали</string>
+    <string name="les1">Деревина</string>
 
 </resources>

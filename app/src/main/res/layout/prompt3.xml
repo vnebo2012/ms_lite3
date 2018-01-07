@@ -22,16 +22,16 @@
         android:textColor="#ffffff" />
 
     <EditText
+        android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:backgroundTint="#ffffff"
-        android:textSize="40dp"
+        android:maxLength="5"
+        android:numeric="integer|decimal"
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:numeric="integer|decimal"
-        android:maxLength="5" />
+        android:textSize="40dp" />
 
 </LinearLayout>

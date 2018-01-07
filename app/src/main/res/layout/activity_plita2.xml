@@ -40,8 +40,8 @@
 
                 <ImageButton
                     android:id="@+id/sep"
-                    android:layout_width="46dp"
-                    android:layout_height="46dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:background="@color/colorPrimary"
                     android:onClick="onClick_sep"
                     android:scaleType="fitCenter"
@@ -49,8 +49,8 @@
 
                 <ImageButton
                     android:id="@+id/pismo"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:background="@color/colorPrimary"
                     android:onClick="onClick_Pod"
                     android:scaleType="fitCenter"

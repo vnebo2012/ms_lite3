@@ -322,6 +322,16 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(mills);
     }
+
+    public void onClickLes(View view) {
+        Intent a = new Intent(this,Les_Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+    }
+
     public void onClickBloki(View view) {
         Intent a = new Intent(this,BlokiActivity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

@@ -51,8 +51,8 @@
 
                 <ImageButton
                     android:id="@+id/pismo"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:background="@color/colorPrimary"
                     android:onClick="onClick_Pod"
                     android:scaleType="fitCenter"
