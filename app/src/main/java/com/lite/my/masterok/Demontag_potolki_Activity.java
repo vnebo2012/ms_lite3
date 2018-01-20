@@ -10438,6 +10438,133 @@ public class Demontag_potolki_Activity extends AppCompatActivity {
         {
             Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
         }}
+
+    public void onEmailClick(View v) {
+        long mills = 42L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
+        //TextView r1-результат text1;
+
+        String emailSubject = getString(R.string.dem_potolki);
+        String na_email = getString(R.string.na_email);
+
+        TextView ob_wir = findViewById(R.id.textViewWir);
+        TextView ob_wir2 = findViewById(R.id.textViewWir2);
+        TextView ob_wir3 = findViewById(R.id.textViewWir3);
+        TextView ob_wir4 = findViewById(R.id.textViewWir4);
+        TextView ob_wir5 = findViewById(R.id.textViewWir5);
+        TextView ob_wir11 = findViewById(R.id.textViewWir11);
+        TextView ob_wir6 = findViewById(R.id.textViewWir6);
+        TextView ob_wir7 = findViewById(R.id.textViewWir7);
+        TextView ob_wir8 = findViewById(R.id.textViewWir8);
+        TextView ob_wir10 = findViewById(R.id.textViewWir10);
+        TextView ob_wir18 = findViewById(R.id.textViewWir18);
+        TextView ob_wir13 = findViewById(R.id.textViewWir13);
+        TextView ob_wir14 = findViewById(R.id.textViewWir14);
+        TextView ob_wir15 = findViewById(R.id.textViewWir15);
+        TextView ob_wir16 = findViewById(R.id.textViewWir16);
+        TextView ob_wir17 = findViewById(R.id.textViewWir17);
+
+        TextView rez_text1 = findViewById(R.id.textView142);
+        TextView rez_text2 = findViewById(R.id.textView201);
+        TextView rez_text3 = findViewById(R.id.textView301);
+        TextView rez_text4 = findViewById(R.id.textView4);
+        TextView rez_text5 = findViewById(R.id.textView242);
+        TextView rez_text6 = findViewById(R.id.textView20);
+        TextView rez_text7 = findViewById(R.id.textView208);
+        TextView rez_text8 = findViewById(R.id.textView24);
+        TextView rez_text9 = findViewById(R.id.textView401);
+
+        String rez1 = rez_text1.getText().toString();
+        String rez2 = rez_text2.getText().toString();
+        String rez3 = rez_text3.getText().toString();
+        String rez4 = rez_text4.getText().toString();
+        String rez5 = rez_text5.getText().toString();
+        String rez6 = rez_text6.getText().toString();
+        String rez7 = rez_text7.getText().toString();
+        String rez8 = rez_text8.getText().toString();
+        String rez9 = rez_text9.getText().toString();
+
+        String ob1 = ob_wir.getText().toString();
+        String ob2 = ob_wir2.getText().toString();
+        String ob3 = ob_wir3.getText().toString();
+        String ob4 = ob_wir4.getText().toString();
+        String ob5 = ob_wir5.getText().toString();
+        String ob6 = ob_wir11.getText().toString();
+        String ob7 = ob_wir6.getText().toString();
+        String ob8 = ob_wir7.getText().toString();
+        String ob9 = ob_wir8.getText().toString();
+        String ob10 = ob_wir10.getText().toString();
+        String ob11 = ob_wir18.getText().toString();
+        String ob12 = ob_wir13.getText().toString();
+        String ob13 = ob_wir14.getText().toString();
+        String ob14 = ob_wir15.getText().toString();
+        String ob15 = ob_wir16.getText().toString();
+        String ob16 = ob_wir17.getText().toString();
+        String stoimost_rabot = getString(R.string.stoimost_rabot);
+        String ud_oboev = getString(R.string.ud_oboev);
+        String izvest_mel = getString(R.string.izvest_mel);
+        String ud_kraska = getString(R.string.ud_kraska);
+        String ud_polester = getString(R.string.ud_polester);
+        String ud_wtuk = getString(R.string.ud_wtuk);
+        String ud_gipkar = getString(R.string.ud_gipkar);
+        String ud_armstrong = getString(R.string.ud_armstrong);
+        String ud_mdf = getString(R.string.ud_mdf);
+
+        String ud_ob = getString(R.string.ud_ob);
+        String ud_ob_cena = getString(R.string.ud_ob_cena);
+        String ud_is_mel = getString(R.string.ud_is_mel);
+        String ud_is_cena = getString(R.string.ud_is_cena);
+        String ud_kraska_emu = getString(R.string.ud_kraska_emu);
+        String ud_kr_cen = getString(R.string.ud_kr_cen);
+        String ug_plit_kley = getString(R.string.ug_plit_kley);
+        String ud_plit_cena = getString(R.string.ud_plit_cena);
+        String ud_wtuk_m2 = getString(R.string.ud_wtuk_m2);
+        String cm_wt_cen = getString(R.string.cm_wt_cen);
+        String gip_m2 = getString(R.string.gip_m2);
+        String dem_gip3 = getString(R.string.dem_gip3);
+        String pot_arm_m2 = getString(R.string.pot_arm_m2);
+        String arm_cena2 = getString(R.string.arm_cena2);
+        String der_md = getString(R.string.der_md);
+        String vag_cena = getString(R.string.vag_cena);
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_SUBJECT, emailSubject);
+        intent.putExtra(Intent.EXTRA_TEXT, new String(
+
+                (stoimost_rabot)+(rez1)+
+                        "\n"+(ud_oboev)+(rez2)+
+                        "\n"+(izvest_mel)+(rez3)+
+                        "\n"+(ud_kraska)+(rez4)+
+                        "\n"+(ud_polester)+(rez5)+
+                        "\n"+(ud_wtuk)+(rez6)+
+                        "\n"+(ud_gipkar)+(rez7)+
+                        "\n"+(ud_armstrong)+(rez8)+
+                        "\n"+(ud_mdf)+(rez9)+
+                        "\n"+(ud_ob)+(ob1)+
+                        "\n"+(ud_ob_cena)+(ob2)+
+                        "\n"+(ud_is_mel)+(ob3)+
+                        "\n"+(ud_is_cena)+(ob4)+
+                        "\n"+(ud_kraska_emu)+(ob5)+
+                        "\n"+(ud_kr_cen)+(ob6)+
+                        "\n"+(ug_plit_kley)+(ob7)+
+                        "\n"+(ud_plit_cena)+(ob8)+
+                        "\n"+(ud_wtuk_m2)+(ob9)+
+                        "\n"+(cm_wt_cen)+(ob10)+
+                        "\n"+(gip_m2)+(ob11)+
+                        "\n"+(dem_gip3)+(ob12)+
+                        "\n"+(pot_arm_m2)+(ob13)+
+                        "\n"+(arm_cena2)+(ob14)+
+                        "\n"+(der_md)+(ob15)+
+                        "\n"+(vag_cena)+(ob16)
+
+        ));
+        {
+            intent.setType("plain/text");
+        }
+        startActivity(Intent.createChooser(intent, na_email));
+    }
 }
 
 

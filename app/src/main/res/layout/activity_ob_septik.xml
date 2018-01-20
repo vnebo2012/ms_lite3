@@ -51,21 +51,13 @@
 
                 <ImageButton
                     android:id="@+id/pismo"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
                     android:background="@color/colorPrimary"
-                    android:onClick="onClick_Pod"
+                    android:onClick="onEmailClick"
                     android:scaleType="fitCenter"
                     android:src="@mipmap/ic_pod" />
-
-                <ImageButton
-                    android:id="@+id/pismo22"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimary"
-                    android:onClick="onClick_Pismo"
-                    android:scaleType="fitCenter"
-                    android:src="@mipmap/ic_pi2" />
 
                 <ImageButton
                     android:id="@+id/calk"

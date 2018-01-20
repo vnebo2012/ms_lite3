@@ -175,9 +175,9 @@
     <string name="cement_stagka1_A_B">Cement screed on the floor, A_B</string>
     <string name="cem_st_s">Cement screed on the floor, S</string>
 
-    <string name="bloki_m3_wt">Blocks, m3/pc</string>
-    <string name="cena_bloki1">Cost of blocks</string>
-    <string name="kol_rastvora">Amount of cement slurry, m3</string>
+    <string name="bloki_m3_wt">Blocks, m3/pc:</string>
+    <string name="cena_bloki1">Cost of blocks:</string>
+    <string name="kol_rastvora">Amount of cement slurry, m3:</string>
     <string name="ili_kley">or glue (25 kg):</string>
     <string name="visota_steni_A_m">Height of the wall A, m:</string>
     <string name="dlina_steni_B_m">Wall length B, m:</string>
@@ -188,9 +188,9 @@
     <string name="na_rebro">2- on the edge</string>
     <string name="poperek">3- across</string>
     <string name="tolw_rstvora">Thickness of the mortar layer, mm:</string>
-    <string name="dlina_bloka">Block length, mm</string>
-    <string name="wir_bloka">Block width, mm</string>
-    <string name="vis_bloka">Unit height, mm</string>
+    <string name="dlina_bloka">Block length, mm:</string>
+    <string name="wir_bloka">Block width, mm:</string>
+    <string name="vis_bloka">Unit height, mm:</string>
     <string name="utoshnit_razmer">Specify dimensions:</string>
 
     <string name="stoimost_rabot">Cost of all works performed:</string>
@@ -656,6 +656,8 @@
     <string name="cena_dosok">Cost, per m3:</string>
     <string name="les">Saw-timbers</string>
     <string name="les1">Tree</string>
+    <string name="s_proyomov">The area of openings, m2:</string>
+    <string name="na_email">Sending by Email!</string>
 
 
 </resources>

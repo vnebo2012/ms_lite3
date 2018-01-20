@@ -169,9 +169,9 @@
     <string name="shp_s">Шпаклевка, S</string>
     <string name="cement_stagka1_A_B">Цементная стяжка, A_B</string>
     <string name="cem_st_s">Цементная стяжка, S</string>
-    <string name="bloki_m3_wt">Блоки, м3/шт</string>
-    <string name="cena_bloki1">Цена блоков</string>
-    <string name="kol_rastvora">Количество раствора, м3</string>
+    <string name="bloki_m3_wt">Блоки, м3/шт:</string>
+    <string name="cena_bloki1">Стоимость блоков:</string>
+    <string name="kol_rastvora">Количество раствора, м3:</string>
     <string name="ili_kley">или клей (25 кг):</string>
     <string name="visota_steni_A_m">Высота стены А, м:</string>
     <string name="dlina_steni_B_m">Длина стены В, м:</string>
@@ -182,9 +182,9 @@
     <string name="na_rebro">2- на ребро</string>
     <string name="poperek">3- поперек</string>
     <string name="tolw_rstvora">Толщина слоя раствора, мм:</string>
-    <string name="dlina_bloka">Длина блока, мм</string>
-    <string name="wir_bloka">Ширина блока, мм</string>
-    <string name="vis_bloka">Высота блока, мм</string>
+    <string name="dlina_bloka">Длина блока, мм:</string>
+    <string name="wir_bloka">Ширина блока, мм:</string>
+    <string name="vis_bloka">Высота блока, мм:</string>
     <string name="utoshnit_razmer">Уточнить размеры:</string>
     <string name="stoimost_rabot">Стоимость всех выполненых работ:</string>
     <string name="demont_lami">Демонтаж ламината:</string>
@@ -630,6 +630,8 @@
     <string name="cena_dosok">Стоимость, за м3:</string>
     <string name="les">Пиломатериалы</string>
     <string name="les1">Дерево</string>
+    <string name="s_proyomov">Площадь проемов, м2:</string>
+    <string name="na_email">Отправка по Email !</string>
 
 
 </resources>

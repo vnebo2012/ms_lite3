@@ -170,9 +170,9 @@
     <string name="cement_stagka1_A_B">Цементна стяжка, A_B</string>
     <string name="cem_st_s">Цементна стяжка, S</string>
 
-    <string name="bloki_m3_wt">Блоки, м3/шт</string>
-    <string name="cena_bloki1">Ціна блоків</string>
-    <string name="kol_rastvora">Кількість рощину, м3</string>
+    <string name="bloki_m3_wt">Блоки, м3/шт:</string>
+    <string name="cena_bloki1">Вартість блоків:</string>
+    <string name="kol_rastvora">Кількість рощину, м3:</string>
     <string name="ili_kley">або клею (25 кг):</string>
     <string name="visota_steni_A_m">Висота стіни А, м:</string>
     <string name="dlina_steni_B_m">Довжина стіни В, м:</string>
@@ -183,9 +183,9 @@
     <string name="na_rebro">2- на ребро</string>
     <string name="poperek">3- поперек</string>
     <string name="tolw_rstvora">Товщина шару рощину, мм:</string>
-    <string name="dlina_bloka">Довжина блока, мм</string>
-    <string name="wir_bloka">Ширина блока, мм</string>
-    <string name="vis_bloka">Висота блока, мм</string>
+    <string name="dlina_bloka">Довжина блока, мм:</string>
+    <string name="wir_bloka">Ширина блока, мм:</string>
+    <string name="vis_bloka">Висота блока, мм:</string>
     <string name="utoshnit_razmer">Уточнити розміри:</string>
 
     <string name="stoimost_rabot">Вартість всіх виконаних робіт:</string>
@@ -657,5 +657,7 @@
     <string name="cena_dosok">Цена, за м3:</string>
     <string name="les">Пиломатеріали</string>
     <string name="les1">Деревина</string>
+    <string name="s_proyomov">Площа пройомів, м2:</string>
+    <string name="na_email">Відправка по Email!</string>
 
 </resources>

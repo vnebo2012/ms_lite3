@@ -36,6 +36,24 @@ import java.util.TimerTask;
 public class BlokiActivity extends AppCompatActivity {
 
 
+    EditText edittextEmailAddress;
+    EditText edittextEmailSubject;
+
+    TextView edittextEmailText1;
+    TextView edittextEmailText2;
+    TextView edittextEmailText3;
+    TextView edittextEmailText4;
+    TextView edittextEmailText5;
+    TextView edittextEmailText6;
+    TextView edittextEmailText7;
+    TextView edittextEmailText8;
+    TextView edittextEmailText9;
+    TextView edittextEmailText10;
+    TextView edittextEmailText11;
+    TextView edittextEmailText12;
+    TextView edittextEmailText13;
+
+    TextView textImagePath;
     Button etText;
     Button etText2;
     Button etText3;
@@ -705,6 +723,8 @@ public class BlokiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bloki);
+
+
 
         //mNewGameButton = (ImageButton) findViewById(R.id.dom);
         mInterstitialAd = new InterstitialAd(this);
@@ -6227,23 +6247,7 @@ public class BlokiActivity extends AppCompatActivity {
          startActivity(a);
     }
 
-    public void onClick_Pod(View view) {
 
-        long mills = 15L;
-        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        vibrator.vibrate(mills);
-        final Intent intent = new Intent(Intent.ACTION_SEND);
-        intent.setType("text/plain");
-        String textToSend="https://play.google.com/store/apps/details?id=com.lite.my.masterok";
-        intent.putExtra(Intent.EXTRA_TEXT, textToSend);
-        try
-        {
-            startActivity(Intent.createChooser(intent, "Поделится приложением"));
-        }
-        catch (android.content.ActivityNotFoundException ex)
-        {
-            Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
-    }}
 
     private void requestNewInterstitial() {
 
@@ -6267,7 +6271,80 @@ public class BlokiActivity extends AppCompatActivity {
             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(a);
         }
+
+    public void onEmailClick(View v) {
+
+        edittextEmailText1 = findViewById(R.id.textView142);
+        edittextEmailText2 = findViewById(R.id.textView14);
+        edittextEmailText3 = findViewById(R.id.textView20);
+        edittextEmailText4 = findViewById(R.id.textView24);
+        edittextEmailText5 = findViewById(R.id.textView242);
+
+        edittextEmailText6 = findViewById(R.id.textViewWir);
+        edittextEmailText7 = findViewById(R.id.textViewWir3);
+        edittextEmailText8 = findViewById(R.id.textViewWir5);
+        edittextEmailText9 = findViewById(R.id.textViewWir6);
+        edittextEmailText10 = findViewById(R.id.textViewWir12);
+        edittextEmailText11 = findViewById(R.id.textViewWir7);
+        edittextEmailText12 = findViewById(R.id.textViewWir9);
+        edittextEmailText13 = findViewById(R.id.textViewWir10);
+
+        long mills = 42L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
+        String emailSubject = getString(R.string.bloki1);
+        String emailText1 = edittextEmailText1.getText().toString();
+        String emailText2 = edittextEmailText2.getText().toString();
+        String emailText3 = edittextEmailText3.getText().toString();
+        String emailText4 = edittextEmailText4.getText().toString();
+        String emailText5 = edittextEmailText5.getText().toString();
+        String emailText6 = edittextEmailText6.getText().toString();
+        String emailText7 = edittextEmailText7.getText().toString();
+        String emailText8 = edittextEmailText8.getText().toString();
+        String emailText9 = edittextEmailText9.getText().toString();
+        String emailText10 = edittextEmailText10.getText().toString();
+        String emailText11 = edittextEmailText11.getText().toString();
+        String emailText12 = edittextEmailText12.getText().toString();
+        String emailText13 = edittextEmailText13.getText().toString();
+
+        String bloki_m3_wt = getString(R.string.bloki_m3_wt);
+        String cena_bloki1 = getString(R.string.cena_bloki1);
+        String kol_rastvora = getString(R.string.kol_rastvora);
+        String ili_kley = getString(R.string.ili_kley);
+        String visota_steni_A_m = getString(R.string.visota_steni_A_m);
+        String dlina_steni_B_m = getString(R.string.dlina_steni_B_m);
+        String stoim_blokov = getString(R.string.stoim_blokov);
+        String tolw_rstvora = getString(R.string.tolw_rstvora);
+        String dlina_bloka = getString(R.string.dlina_bloka);
+        String wir_bloka = getString(R.string.wir_bloka);
+        String vis_bloka = getString(R.string.vis_bloka);
+        String s_proyomov = getString(R.string.s_proyomov);
+
+        String na_email = getString(R.string.na_email);
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_SUBJECT, emailSubject);
+        intent.putExtra(Intent.EXTRA_TEXT, new String(
+                (bloki_m3_wt)+(emailText1)+"/"+(emailText2)+
+                "\n"+(cena_bloki1)+(emailText3)+
+                "\n"+(kol_rastvora)+(emailText4)+
+                "\n"+(ili_kley)+(emailText5)+
+                "\n"+(visota_steni_A_m)+(emailText6)+
+                "\n"+(dlina_steni_B_m)+(emailText7)+
+                "\n"+(s_proyomov)+(emailText8)+
+                "\n"+(stoim_blokov)+(emailText9)+
+                "\n"+(tolw_rstvora)+(emailText10)+
+                "\n"+(dlina_bloka)+(emailText11)+
+                "\n"+(wir_bloka)+(emailText12)+
+                "\n"+(vis_bloka)+(emailText13)
+        ));
+       {
+            intent.setType("plain/text");
+        }
+        startActivity(Intent.createChooser(intent, na_email));
     }
+}
 
 
 
