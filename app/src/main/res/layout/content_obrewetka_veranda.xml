@@ -1336,7 +1336,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="@string/gvozd_vertikal"
+                            android:text="@string/gvozd_vertikal_obrewotki"
                             android:textColor="@color/colorWite"
                             android:textSize="13dp" />
 
@@ -1469,7 +1469,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="@string/gvozd_goriz"
+                            android:text="@string/gvozd_goriz_obr"
                             android:textColor="@color/colorWite"
                             android:textSize="13dp" />
 

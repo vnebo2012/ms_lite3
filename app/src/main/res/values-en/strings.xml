@@ -658,6 +658,9 @@
     <string name="les1">Tree</string>
     <string name="s_proyomov">The area of openings, m2:</string>
     <string name="na_email">Sending by Email!</string>
+    <string name="isxod_dani">Исходные даные</string>
+    <string name="gvozd_vertikal_obrewotki">Гвоздь для вертик. обрешетки, мм:</string>
+    <string name="gvozd_goriz_obr">Гвоздь для гориз. обрешетки, мм:</string>
 
 
 </resources>

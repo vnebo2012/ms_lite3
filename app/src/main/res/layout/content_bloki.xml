@@ -89,124 +89,123 @@
 
                                 <Button
                                     android:id="@+id/button10"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="0"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
-                                    android:textStyle="italic"
-                                    />
+                                    android:textSize="24sp"
+                                    android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button2"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="4"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="5"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button3"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="6"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button5"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="7"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button6"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="8"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button7"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="9"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button38"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="10"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button40"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="11"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button39"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="12"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button8"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="14"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
@@ -277,123 +276,123 @@
 
                                 <Button
                                     android:id="@+id/button97"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="0"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button98"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="4"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button99"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="5"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button100"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="6"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button101"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="7"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button102"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="8"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button103"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="9"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button104"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="10"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button105"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="11"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button11"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="12"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button12"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="14"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
@@ -464,68 +463,68 @@
 
                                 <Button
                                     android:id="@+id/button61"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="0"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button62"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="10"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button63"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="12"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button64"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="15"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button65"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="18"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button66"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="20"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
@@ -597,68 +596,68 @@
 
                                 <Button
                                     android:id="@+id/button70"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="0"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button71"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="1000"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button72"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="1100"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button73"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="1150"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button74"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="1200"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button75"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="1400"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
@@ -798,35 +797,35 @@
 
                                 <Button
                                     android:id="@+id/button41"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="1"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button42"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="2"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button43"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="3"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
@@ -905,46 +904,46 @@
 
                                 <Button
                                     android:id="@+id/button26"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="5"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button33"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="8"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button34"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="10"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button35"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="15"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
@@ -1026,68 +1025,68 @@
 
                                 <Button
                                     android:id="@+id/button15"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="248"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button16"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="249"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button17"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="260"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button18"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="251"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button45"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="252"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button46"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="253"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
@@ -1158,68 +1157,68 @@
 
                                 <Button
                                     android:id="@+id/button27"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="115"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button28"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="117"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button29"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="120"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button30"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="121"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button31"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="122"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button32"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="124"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
@@ -1290,35 +1289,35 @@
 
                                 <Button
                                     android:id="@+id/button19"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="40"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button20"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="45"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <Button
                                     android:id="@+id/button25"
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
                                     android:layout_margin="7dp"
                                     android:background="@drawable/radius"
                                     android:text="65"
                                     android:textColor="@color/colorPrimary43"
-                                    android:textSize="22sp"
+                                    android:textSize="24sp"
                                     android:textStyle="italic" />
 
                                 <LinearLayout
@@ -1344,7 +1343,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_gravity="center_horizontal"
-        android:background="@color/colorBlueGrey50"
+        android:background="@color/colorPrimary2"
         android:baselineAligned="false"
         android:orientation="horizontal">
 
@@ -1405,7 +1404,7 @@
                     android:layout_weight="1"
                     android:text="@string/bloki_m3_wt"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorWite"
                     android:textSize="15dp"
                     android:textStyle="bold" />
 
@@ -1418,7 +1417,7 @@
                     android:singleLine="false"
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorWite"
                     android:textSize="15dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
@@ -1431,7 +1430,7 @@
                     android:singleLine="false"
                     android:text=" / "
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorWite"
                     android:textSize="15dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
@@ -1444,7 +1443,7 @@
                     android:singleLine="false"
                     android:text="00.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorWite"
                     android:textSize="15dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
@@ -1469,7 +1468,7 @@
                     android:autoText="false"
                     android:text="@string/cena_bloki1"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorWite"
                     android:textSize="15dp"
                     android:textStyle="bold" />
 
@@ -1482,7 +1481,7 @@
                     android:singleLine="false"
                     android:text="00.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorWite"
                     android:textSize="15dp"
                     android:textStyle="bold"
                     android:theme="@style/AppTheme" />
@@ -1506,7 +1505,7 @@
                     android:autoText="false"
                     android:text="@string/kol_rastvora"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorWite"
                     android:textSize="15dp"
                     android:textStyle="bold" />
 
@@ -1517,7 +1516,7 @@
                     android:autoText="false"
                     android:text="00.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorWite"
                     android:textSize="15dp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -1540,7 +1539,7 @@
                     android:autoText="false"
                     android:text="@string/ili_kley"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorWite"
                     android:textSize="15dp"
                     android:textStyle="bold" />
 
@@ -1551,7 +1550,7 @@
                     android:autoText="false"
                     android:text="0.0"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorWite"
                     android:textSize="15dp"
                     android:textStyle="bold" />
             </LinearLayout>

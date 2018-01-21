@@ -63,7 +63,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_krovlya_dvuskat" />
+    <include layout="@layout/content_dvuskat" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
