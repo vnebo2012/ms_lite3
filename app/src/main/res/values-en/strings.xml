@@ -326,12 +326,12 @@
     <string name="kol_wit">Quantity of panel, pcs .:</string>
 
 
-    <string name="per_arm">Perimeter of the armored leg P, m</string>
-    <string name="wirin_poyasa">Belt width, centimeters</string>
-    <string name="vis_poyas">Belt height, cm</string>
-    <string name="a_dia_prod">A - diameter of longitudinal reinforcement, mm</string>
-    <string name="b_dia">B - diameter of armature, mm</string>
-    <string name="wag_obv">C - stepping strapping, cm</string>
+    <string name="per_arm">Perimeter of the armored leg P, m:</string>
+    <string name="wirin_poyasa">Belt width, centimeters:</string>
+    <string name="vis_poyas">Belt height, cm:</string>
+    <string name="a_dia_prod">A - diameter of longitudinal reinforcement, mm:</string>
+    <string name="b_dia">B - diameter of armature, mm:</string>
+    <string name="wag_obv">C - stepping strapping, cm:</string>
 
 
     <string name="s_pover">Surface area (m2):</string>

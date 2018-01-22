@@ -34,7 +34,7 @@ import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Fundament_Activity extends AppCompatActivity {
+public class Armopoyas_Activity extends AppCompatActivity {
 
 
     Button etText;
@@ -6291,6 +6291,112 @@ public class Fundament_Activity extends AppCompatActivity {
         {
             Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
         }}
+
+    public void onEmailClick(View v) {
+        long mills = 42L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
+        //TextView r1-результат text1;
+
+        String emailSubject = getString(R.string.armopojas1);
+        String na_email = getString(R.string.na_email);
+
+        TextView ob_wir = findViewById(R.id.textViewWir);
+        TextView ob_wir2 = findViewById(R.id.textViewWir4);
+        TextView ob_wir3 = findViewById(R.id.textViewWir5);
+        TextView ob_wir4 = findViewById(R.id.textViewWir6);
+        TextView ob_wir5 = findViewById(R.id.textViewWir11);
+        TextView ob_wir11 = findViewById(R.id.textViewWir12);
+        TextView ob_wir6 = findViewById(R.id.textViewWir7);
+        TextView ob_wir7 = findViewById(R.id.textViewWir8);
+        TextView ob_wir8 = findViewById(R.id.textViewWir9);
+        TextView ob_wir10 = findViewById(R.id.textViewWir10);
+
+
+        TextView rez_text1 = findViewById(R.id.textView14);
+        TextView rez_text2 = findViewById(R.id.textView20);
+        TextView rez_text3 = findViewById(R.id.textView43);
+        TextView rez_text4 = findViewById(R.id.textView24);
+        TextView rez_text5 = findViewById(R.id.textView39);
+        TextView rez_text6 = findViewById(R.id.textView37);
+        TextView rez_text7 = findViewById(R.id.textView28);
+
+
+
+
+        String rez1 = rez_text1.getText().toString();
+        String rez2 = rez_text2.getText().toString();
+        String rez3 = rez_text3.getText().toString();
+        String rez4 = rez_text4.getText().toString();
+        String rez5 = rez_text5.getText().toString();
+        String rez6 = rez_text6.getText().toString();
+        String rez7 = rez_text7.getText().toString();
+
+
+
+        String ob1 = ob_wir.getText().toString();
+        String ob2 = ob_wir2.getText().toString();
+        String ob3 = ob_wir3.getText().toString();
+        String ob4 = ob_wir4.getText().toString();
+        String ob5 = ob_wir5.getText().toString();
+        String ob6 = ob_wir11.getText().toString();
+        String ob7 = ob_wir6.getText().toString();
+        String ob8 = ob_wir7.getText().toString();
+        String ob9 = ob_wir8.getText().toString();
+        String ob10 = ob_wir10.getText().toString();
+
+
+        String r1 = getString(R.string.Beton);
+        String r2 = getString(R.string.cena);
+        String r3 = getString(R.string.armatura_m_kg);
+        String r4 = getString(R.string.B_m_kg);
+        String r5 = getString(R.string.cena_armaturi_vsya);
+
+
+        String r10 = getString(R.string.per_arm);
+        String r11 = getString(R.string.wirin_poyasa);
+        String r12 = getString(R.string.vis_poyas);
+        String r13 = getString(R.string.cena_betona_za_m3);
+        String r14 = getString(R.string.ryadi_armaturi_a);
+        String r15 = getString(R.string.naxlest);
+        String r16 = getString(R.string.a_dia_prod);
+        String r17 = getString(R.string.b_dia);
+        String r18 = getString(R.string.wag_obv);
+        String r19 = getString(R.string.cena_armaturi_za_kg);
+
+
+        String ida = getString(R.string.isxod_dani);
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_SUBJECT, emailSubject);
+        intent.putExtra(Intent.EXTRA_TEXT, new String(
+
+                (r1)+(rez1)+
+                        "\n"+(r2)+(rez2)+
+                        "\n"+(r3)+(rez3)+"/"+(rez4)+
+                        "\n"+(r4)+(rez5)+"/"+(rez6)+
+                        "\n"+(r5)+(rez7)+
+
+                        "\n"+"......."+
+                        "\n"+(ida)+
+                        "\n"+(r10)+(ob1)+
+                        "\n"+(r11)+(ob2)+
+                        "\n"+(r12)+(ob3)+
+                        "\n"+(r13)+(ob4)+
+                        "\n"+(r14)+(ob5)+
+                        "\n"+(r15)+(ob6)+
+                        "\n"+(r16)+(ob7)+
+                        "\n"+(r17)+(ob8)+
+                        "\n"+(r18)+(ob9)+
+                        "\n"+(r19)+(ob10)
+
+        ));
+        {
+            intent.setType("plain/text");
+        }
+        startActivity(Intent.createChooser(intent, na_email));
+    }
 
 
 }

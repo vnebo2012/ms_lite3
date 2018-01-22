@@ -5860,6 +5860,96 @@ public class Gipsokarton_lite_Activity extends AppCompatActivity {
         {
             Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
         }}
+
+    public void onEmailClick(View v) {
+        long mills = 42L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
+        //TextView r1-результат text1;
+
+        String emailSubject = getString(R.string.gip_lite);
+        String na_email = getString(R.string.na_email);
+
+        TextView ob_wir = findViewById(R.id.textViewWir2);
+        TextView ob_wir2 = findViewById(R.id.textViewWir3);
+        TextView ob_wir3 = findViewById(R.id.textViewWir8);
+        TextView ob_wir4 = findViewById(R.id.textViewWir15);
+        TextView ob_wir5 = findViewById(R.id.textViewWir10);
+
+
+        TextView rez_text1 = findViewById(R.id.textView142);
+        TextView rez_text2 = findViewById(R.id.textView143);
+        TextView rez_text3 = findViewById(R.id.textView900);
+        TextView rez_text4 = findViewById(R.id.textView242);
+        TextView rez_text5 = findViewById(R.id.textView903);
+        TextView rez_text6 = findViewById(R.id.textView906);
+        TextView rez_text7 = findViewById(R.id.textView902);
+        TextView rez_text8 = findViewById(R.id.textView904);
+        TextView rez_text9 = findViewById(R.id.textView703);
+
+        String rez1 = rez_text1.getText().toString();
+        String rez2 = rez_text2.getText().toString();
+        String rez3 = rez_text3.getText().toString();
+        String rez4 = rez_text4.getText().toString();
+        String rez5 = rez_text5.getText().toString();
+        String rez6 = rez_text6.getText().toString();
+        String rez7 = rez_text7.getText().toString();
+        String rez8 = rez_text8.getText().toString();
+        String rez9 = rez_text9.getText().toString();
+
+        String ob1 = ob_wir.getText().toString();
+        String ob2 = ob_wir2.getText().toString();
+        String ob3 = ob_wir3.getText().toString();
+        String ob4 = ob_wir4.getText().toString();
+        String ob5 = ob_wir5.getText().toString();
+
+
+        String r1 = getString(R.string.s_pover);
+        String r2 = getString(R.string.list_gkp);
+        String r3 = getString(R.string.profil_pp27);
+        String r4 = getString(R.string.plast_podves);
+        String r5 = getString(R.string.dubel);
+        String r6 = getString(R.string.ln9);
+        String r7 = getString(R.string.pri23);
+        String r8 = getString(R.string.k6);
+
+
+        String r10 = getString(R.string.dlin_pot);
+        String r11 = getString(R.string.wir_potolka);
+        String r12 = getString(R.string.meg_nes_prof);
+        String r13 = getString(R.string.meg_plastyn);
+        String r14 = getString(R.string.kol_dub_k35);
+        String ida = getString(R.string.isxod_dani);
+
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_SUBJECT, emailSubject);
+        intent.putExtra(Intent.EXTRA_TEXT, new String(
+
+                (r1)+(rez1)+
+                        "\n"+(r2)+(rez2)+
+                        "\n"+(r3)+(rez3)+"/"+(rez4)+
+                        "\n"+(r4)+(rez5)+
+                        "\n"+(r5)+(rez6)+
+                        "\n"+(r6)+(rez7)+
+                        "\n"+(r7)+(rez8)+
+                        "\n"+(r8)+(rez9)+
+
+                        "\n"+"......."+
+                        "\n"+(ida)+
+                        "\n"+(r10)+(ob1)+
+                        "\n"+(r11)+(ob2)+
+                        "\n"+(r12)+(ob3)+
+                        "\n"+(r13)+(ob4)+
+                        "\n"+(r14)+(ob5)
+
+        ));
+        {
+            intent.setType("plain/text");
+        }
+        startActivity(Intent.createChooser(intent, na_email));
+    }
 }
 
 

@@ -351,7 +351,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
 
 
     public void onClickFun8(View view) {
-        Intent a = new Intent(this,Fundament_Activity.class);
+        Intent a = new Intent(this,Armopoyas_Activity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
         long mills = 15L;

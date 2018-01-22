@@ -323,12 +323,12 @@
     <string name="kol_wit">Кількість щитових, шт.:</string>
 
 
-    <string name="per_arm">Периметр армопояса Р, м</string>
-    <string name="wirin_poyasa">Ширина пояса, см</string>
-    <string name="vis_poyas">Висота пояса, см</string>
-    <string name="a_dia_prod">А - діаметр повздовжньої арматури, мм</string>
-    <string name="b_dia">B - диаметр арматури обвязки, мм</string>
-    <string name="wag_obv">С - крок обвязки, см</string>
+    <string name="per_arm">Периметр армопояса Р, м:</string>
+    <string name="wirin_poyasa">Ширина пояса, см:</string>
+    <string name="vis_poyas">Висота пояса, см:</string>
+    <string name="a_dia_prod">А - діаметр повздовжньої арматури, мм:</string>
+    <string name="b_dia">B - диаметр арматури обвязки, мм:</string>
+    <string name="wag_obv">С - крок обвязки, см:</string>
     <string name="s_pover">Площа поверхні (м2):</string>
     <string name="list_gkp">Лист ГКП, шт.:</string>
     <string name="profil_pp27">Профіль ПП 60/27, ПН 28/27, пог.м:</string>

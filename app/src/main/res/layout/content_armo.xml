@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWite"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Fundament_Activity"
+    tools:context=".Armopoyas_Activity"
     tools:showIn="@layout/activity_armopojas">
 
     <LinearLayout
@@ -914,7 +914,7 @@
                             android:layout_margin="5dp"
                             android:text="@string/arm"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@color/colorBlueGrey700"
+                            android:textColor="@color/colorPrimary"
                             android:textSize="18dp"
                             android:textStyle="bold" />
 

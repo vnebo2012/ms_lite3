@@ -46,7 +46,7 @@
             android:label="@string/title_activity_plitka3"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Fundament_Activity"
+            android:name=".Armopoyas_Activity"
             android:label="@string/title_activity_armo"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
