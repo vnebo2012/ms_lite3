@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="@color/colorPrimary"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".KirpishActivity">
 
 
     <LinearLayout

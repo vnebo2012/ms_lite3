@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Start_Activity"
+            android:name=".PrivestvieActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -28,10 +28,14 @@
             android:name=".HellpActivity"
             android:label="@string/app_name2" />
         <activity
+            android:name=".Start_Activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
             android:name=".BlokiActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".KirpishActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Pol_Freza_stena_Activity"
@@ -50,11 +54,11 @@
             android:label="@string/title_activity_armo"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".St1_Activity"
+            android:name=".St_cementnaya_a_b_Activity"
             android:label="@string/title_activity_st1"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".St2_Activity"
+            android:name=".St_cementnaya_s_Activity"
             android:label="@string/title_activity_st2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

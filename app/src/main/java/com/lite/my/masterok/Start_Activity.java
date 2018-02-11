@@ -315,7 +315,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
 
 
     public void onClickKirpish(View view) {
-        Intent a = new Intent(this,MainActivity.class);
+        Intent a = new Intent(this,KirpishActivity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
         long mills = 15L;
@@ -359,7 +359,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         vibrator.vibrate(mills);
     }
     public void onClickSt1(View view) {
-        Intent a = new Intent(this,St1_Activity.class);
+        Intent a = new Intent(this,St_cementnaya_a_b_Activity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
         long mills = 15L;
@@ -595,7 +595,7 @@ public void onClickRadiators(View view) {
 
                             case R.id.menu7:
                                 //пол
-                                Intent intent = new Intent(Start_Activity.this, St1_Activity.class);
+                                Intent intent = new Intent(Start_Activity.this, St_cementnaya_a_b_Activity.class);
                                 startActivity(intent);
                                 long mills = 15L;
                                 Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
@@ -604,7 +604,7 @@ public void onClickRadiators(View view) {
 
                             case R.id.menu6:
                                 //пол
-                                Intent intent2 = new Intent(Start_Activity.this, St2_Activity.class);
+                                Intent intent2 = new Intent(Start_Activity.this, St_cementnaya_s_Activity.class);
                                 startActivity(intent2);
                                 long mills2 = 15L;
                                 Vibrator vibrator2 = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);

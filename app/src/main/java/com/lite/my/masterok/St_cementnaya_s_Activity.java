@@ -33,7 +33,7 @@ import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class St1_Activity extends AppCompatActivity {
+public class St_cementnaya_s_Activity extends AppCompatActivity {
 
 
     Button etText;
@@ -1000,6 +1000,7 @@ public class St1_Activity extends AppCompatActivity {
 
     ImageView imageView;
     ImageView imageView1;
+
     InterstitialAd mInterstitialAd;
     ImageButton mNewGameButton;
 
@@ -1011,19 +1012,18 @@ public class St1_Activity extends AppCompatActivity {
 
 
 
-
     //endregion
 
     /**
      * Called when the activity is first created.
      */
 
-    final String MY_SETTINGS = "saved_text_stl";
+    final String MY_SETTINGS = "saved_text_st2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_st1);
+        setContentView(R.layout.activity_st2);
 
         //mNewGameButton = (ImageButton) findViewById(R.id.dom);
         mInterstitialAd = new InterstitialAd(this);
@@ -1081,7 +1081,7 @@ public class St1_Activity extends AppCompatActivity {
         SharedPreferences sp = getSharedPreferences(MY_SETTINGS,
                 Context.MODE_PRIVATE);
         // проверяем, первый ли раз открывается программа
-        boolean hasVisited = sp.getBoolean("hasVisited_stl", false);
+        boolean hasVisited = sp.getBoolean("hasVisited_st2", false);
 
         if (!hasVisited) {
 
@@ -1209,17 +1209,7 @@ public class St1_Activity extends AppCompatActivity {
                                     bill86.setText(0.0 + "");
 
 
-                                    bill201.setText(0.50 + "");
-                                    bill202.setText(0.80 + "");
-                                    bill203.setText(0.90 + "");
-                                    bill204.setText(1.00 + "");
-                                    bill205.setText(1.20 + "");
-                                    bill206.setText(1.50 + "");
-                                    bill207.setText(1.70 + "");
-                                    bill208.setText(2.00 + "");
-                                    bill209.setText(2.50 + "");
-                                    bill210.setText(3.00 + "");
-                                    bill211.setText(4.00 + "");
+
 
 
                                     bill242.setText(0.0 + "");
@@ -1251,155 +1241,11 @@ public class St1_Activity extends AppCompatActivity {
             // startActivity(intent);
 
             SharedPreferences.Editor e = sp.edit();
-            e.putBoolean("hasVisited_stl", true);
+            e.putBoolean("hasVisited_st2", true);
             e.commit(); // не забудьте подтвердить изменения
         }
 
-        /*ImageButton fa = (ImageButton) findViewById(R.id.res);
-        fa.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Востановление...", Toast.LENGTH_SHORT);
-                toast.show();
 
-
-
-
-                final TextView bill23 = (TextView) findViewById(R.id.button97);
-                final TextView bill24 = (TextView) findViewById(R.id.button98);
-                final TextView bill25 = (TextView) findViewById(R.id.button99);
-                final TextView bill26 = (TextView) findViewById(R.id.button100);
-                final TextView bill27 = (TextView) findViewById(R.id.button101);
-                final TextView bill28 = (TextView) findViewById(R.id.button102);
-                final TextView bill29 = (TextView) findViewById(R.id.button103);
-                final TextView bill30 = (TextView) findViewById(R.id.button104);
-                final TextView bill31 = (TextView) findViewById(R.id.button105);
-                final TextView bill32 = (TextView) findViewById(R.id.button11);
-                final TextView bill33 = (TextView) findViewById(R.id.button12);
-
-
-
-                final TextView bill79 = (TextView) findViewById(R.id.button26);
-                final TextView bill80 = (TextView) findViewById(R.id.button33);
-                final TextView bill81 = (TextView) findViewById(R.id.button34);
-                final TextView bill82 = (TextView) findViewById(R.id.button35);
-
-
-                final TextView bill201 = (TextView) findViewById(R.id.button201);
-                final TextView bill202 = (TextView) findViewById(R.id.button202);
-                final TextView bill203 = (TextView) findViewById(R.id.button203);
-                final TextView bill204 = (TextView) findViewById(R.id.button204);
-                final TextView bill205 = (TextView) findViewById(R.id.button205);
-                final TextView bill206 = (TextView) findViewById(R.id.button206);
-                final TextView bill207 = (TextView) findViewById(R.id.button207);
-                final TextView bill208 = (TextView) findViewById(R.id.button208);
-                final TextView bill209 = (TextView) findViewById(R.id.button209);
-                final TextView bill210 = (TextView) findViewById(R.id.button210);
-                final TextView bill211 = (TextView) findViewById(R.id.button211);
-
-
-
-                final TextView bill230 = (TextView) findViewById(R.id.button230);
-                final TextView bill231 = (TextView) findViewById(R.id.button231);
-                final TextView bill232 = (TextView) findViewById(R.id.button232);
-                final TextView bill233 = (TextView) findViewById(R.id.button233);
-
-                final TextView bill234 = (TextView) findViewById(R.id.button234);
-                final TextView bill235 = (TextView) findViewById(R.id.button235);
-                final TextView bill236 = (TextView) findViewById(R.id.button236);
-
-
-
-                final TextView bill243 = (TextView) findViewById(R.id.button243);
-                final TextView bill244 = (TextView) findViewById(R.id.button244);
-                final TextView bill245 = (TextView) findViewById(R.id.button245);
-                final TextView bill246 = (TextView) findViewById(R.id.button246);
-                final TextView bill247 = (TextView) findViewById(R.id.button247);
-                final TextView bill248 = (TextView) findViewById(R.id.button248);
-
-                final TextView bill301 = (TextView) findViewById(R.id.textView201);
-                final TextView bill302 = (TextView) findViewById(R.id.textView301);
-                final TextView bill303 = (TextView) findViewById(R.id.textView401);
-                final TextView bill304 = (TextView) findViewById(R.id.textView4);
-
-                final TextView bill12 = (TextView) findViewById(R.id.textView142);
-                final TextView bill13 = (TextView) findViewById(R.id.textView143);
-                final TextView bill242 = (TextView) findViewById(R.id.textView242);
-                final TextView bill84 = (TextView) findViewById(R.id.textView20);
-                final TextView bill86 = (TextView) findViewById(R.id.textView24);
-
-
-                etText83 = (TextView) findViewById(R.id.textView14);
-                etText84 = (TextView) findViewById(R.id.textView20);
-                etText85 = (TextView) findViewById(R.id.textView143);
-                etText86 = (TextView) findViewById(R.id.textView24);
-
-                etText301 = (TextView) findViewById(R.id.textView201);
-                etText302 = (TextView) findViewById(R.id.textView301);
-                etText303 = (TextView) findViewById(R.id.textView401);
-                etText304 = (TextView) findViewById(R.id.textView4);
-
-                //  etText89 = (TextView) findViewById(R.id.textView28);
-
-                //final TextView bill75 = (TextView) findViewById(R.id.button36);
-                //final TextView bill76 = (TextView) findViewById(R.id.button37);
-
-
-
-
-
-
-                                        bill13.setText(0.0 + "");
-                                        bill23.setText(0 + "");
-                                        bill24.setText(0.5 + "");
-                                        bill25.setText(0.8 + "");
-                                        bill26.setText(1 + "");
-                                        bill27.setText(2 + "");
-                                        bill28.setText(3 + "");
-                                        bill29.setText(5 + "");
-                                        bill30.setText(10 + "");
-                                        bill31.setText(15 + "");
-                                        bill32.setText(20 + "");
-                                        bill33.setText(30 + "");
-
-
-                                        bill79.setText(30 + "");
-                                        bill80.setText(50 + "");
-                                        bill81.setText(70 + "");
-                                        bill82.setText(100 + "");
-
-                                        bill12.setText(0.0 + "");
-
-                                        bill84.setText(0.0 + "");
-                                        bill86.setText(0.0 + "");
-
-
-                                        bill201.setText(0.50 + "");
-                                        bill202.setText(0.80 + "");
-                                        bill203.setText(0.90 + "");
-                                        bill204.setText(1.00 + "");
-                                        bill205.setText(1.20 + "");
-                                        bill206.setText(1.50 + "");
-                                        bill207.setText(1.70 + "");
-                                        bill208.setText(2.00 + "");
-                                        bill209.setText(2.50 + "");
-                                        bill210.setText(3.00 + "");
-                                        bill211.setText(4.00 + "");
-
-
-                                        bill242.setText(0.0 + "");
-
-
-
-                                        // bill230.setText("1"+"/"+"2");
-                                        //bill231.setText("1"+"/"+"3");
-                                        // bill232.setText("1"+"/"+"4");
-
-
-                return false;
-            }
-        });   */
 
 
         etText23 = (Button) findViewById(R.id.button97);
@@ -1418,6 +1264,7 @@ public class St1_Activity extends AppCompatActivity {
         etText79 = (Button) findViewById(R.id.button26);
         etText80 = (Button) findViewById(R.id.button33);
         etText81 = (Button) findViewById(R.id.button34);
+        etText82 = (Button) findViewById(R.id.button35);
         etText82 = (Button) findViewById(R.id.button35);
 
 
@@ -1460,9 +1307,8 @@ public class St1_Activity extends AppCompatActivity {
         etText84 = (TextView) findViewById(R.id.textView20);
         etText86 = (TextView) findViewById(R.id.textView24);
         etText12 = (TextView) findViewById(R.id.textView142);
-        etText13 = (TextView) findViewById(R.id.textView242);
-
         etText85 = (TextView) findViewById(R.id.textView143);
+        etText13 = (TextView) findViewById(R.id.textView242);
 
 
 
@@ -1489,17 +1335,7 @@ public class St1_Activity extends AppCompatActivity {
         loadText12();
         loadText13();
 
-        loadText201();
-        loadText202();
-        loadText203();
-        loadText204();
-        loadText205();
-        loadText206();
-        loadText207();
-        loadText208();
-        loadText209();
-        loadText210();
-        loadText211();
+
 
 
        // loadText232();
@@ -2192,477 +2028,6 @@ public class St1_Activity extends AppCompatActivity {
 
 
 
-        button201 = (Button) findViewById(R.id.button201);
-        final_text201 = (TextView) findViewById(R.id.button201);
-        button201.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text201.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button202 = (Button) findViewById(R.id.button202);
-        final_text202 = (TextView) findViewById(R.id.button202);
-        button202.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text202.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button203 = (Button) findViewById(R.id.button203);
-        final_text203 = (TextView) findViewById(R.id.button203);
-        button203.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text203.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button204 = (Button) findViewById(R.id.button204);
-        final_text204 = (TextView) findViewById(R.id.button204);
-        button204.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text204.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button205 = (Button) findViewById(R.id.button205);
-        final_text205 = (TextView) findViewById(R.id.button205);
-        button205.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text205.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button206 = (Button) findViewById(R.id.button206);
-        final_text206 = (TextView) findViewById(R.id.button206);
-        button206.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text206.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button207 = (Button) findViewById(R.id.button207);
-        final_text207 = (TextView) findViewById(R.id.button207);
-        button207.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text207.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button208 = (Button) findViewById(R.id.button208);
-        final_text208 = (TextView) findViewById(R.id.button208);
-        button208.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text208.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button209 = (Button) findViewById(R.id.button209);
-        final_text209 = (TextView) findViewById(R.id.button209);
-        button209.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text209.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button210 = (Button) findViewById(R.id.button210);
-        final_text210 = (TextView) findViewById(R.id.button210);
-        button210.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text210.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button211 = (Button) findViewById(R.id.button211);
-        final_text211 = (TextView) findViewById(R.id.button211);
-        button211.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text211.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
 
 
 
@@ -2848,7 +2213,6 @@ public class St1_Activity extends AppCompatActivity {
         btn209 = (Button) findViewById(R.id.button209);
         btn210 = (Button) findViewById(R.id.button210);
         btn211 = (Button) findViewById(R.id.button211);
-
         btn212 = (Button) findViewById(R.id.button212);
         btn213 = (Button) findViewById(R.id.button213);
         btn214 = (Button) findViewById(R.id.button214);
@@ -3018,6 +2382,7 @@ public class St1_Activity extends AppCompatActivity {
 
 
 
+
                     bill13.setText(0.0 + "");
                     bill23.setText(0 + "");
                     bill24.setText(0.5 + "");
@@ -3043,20 +2408,13 @@ public class St1_Activity extends AppCompatActivity {
                     bill86.setText(0.0 + "");
 
 
-                    bill201.setText(0.50 + "");
-                    bill202.setText(0.80 + "");
-                    bill203.setText(0.90 + "");
-                    bill204.setText(1.00 + "");
-                    bill205.setText(1.20 + "");
-                    bill206.setText(1.50 + "");
-                    bill207.setText(1.70 + "");
-                    bill208.setText(2.00 + "");
-                    bill209.setText(2.50 + "");
-                    bill210.setText(3.00 + "");
-                    bill211.setText(4.00 + "");
+
 
 
                     bill242.setText(0.0 + "");
+
+
+
 
                 }else
                 {
@@ -4589,8 +3947,8 @@ public class St1_Activity extends AppCompatActivity {
                     //&&&&&&
 
                     default:
-                }
-            }}
+                }}
+            }
         };
 
         //region секция (btn1.setOnClickListener(btnClk);)
@@ -4619,17 +3977,7 @@ public class St1_Activity extends AppCompatActivity {
 
 
 
-        btn201.setOnClickListener(btnClk);
-        btn202.setOnClickListener(btnClk);
-        btn203.setOnClickListener(btnClk);
-        btn204.setOnClickListener(btnClk);
-        btn205.setOnClickListener(btnClk);
-        btn206.setOnClickListener(btnClk);
-        btn207.setOnClickListener(btnClk);
-        btn208.setOnClickListener(btnClk);
-        btn209.setOnClickListener(btnClk);
-        btn210.setOnClickListener(btnClk);
-        btn211.setOnClickListener(btnClk);
+
 
         btn230.setOnClickListener(btnClk);
         btn231.setOnClickListener(btnClk);
@@ -4700,7 +4048,7 @@ public class St1_Activity extends AppCompatActivity {
 
 
                 float num002 = Float.parseFloat(aetText2.getText().toString());
-                float num003 = Float.parseFloat(aetText3.getText().toString());
+//                float num003 = Float.parseFloat(aetText3.getText().toString());
 
                 float num008 = Float.parseFloat(aetText8.getText().toString());
 
@@ -4713,8 +4061,8 @@ public class St1_Activity extends AppCompatActivity {
                 //количество
 
 
-                                float S = (num002 * num003);
-                                float V = (float) (num002 * num003*(num008*0.001));
+                                float S = (num002);
+                                float V = (float) (num002 *(num008*0.001));
                                 float Cement = (V*num010);
                                 float C = (Cement/50);
                                 float Pesok = (Cement*3);
@@ -4827,7 +4175,7 @@ public class St1_Activity extends AppCompatActivity {
             return true;
         } else if (id == R.id.action_settings2) {
 
-            Intent a = new Intent(this,MainActivity.class);
+            Intent a = new Intent(this,KirpishActivity.class);
             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(a);
             //Do something
@@ -5081,136 +4429,7 @@ public class St1_Activity extends AppCompatActivity {
     }
 
 
-    void saveText201() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT201, etText201.getText().toString());
-        ed.commit();
-    }
-    void loadText201() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT201, "");
-        etText201.setText(savedText);
-    }
 
-    void saveText202() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT202, etText202.getText().toString());
-        ed.commit();
-    }
-    void loadText202() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT202, "");
-        etText202.setText(savedText);
-    }
-
-    void saveText203() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT203, etText203.getText().toString());
-        ed.commit();
-    }
-    void loadText203() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT203, "");
-        etText203.setText(savedText);
-    }
-
-    void saveText204() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT204, etText204.getText().toString());
-        ed.commit();
-    }
-    void loadText204() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT204, "");
-        etText204.setText(savedText);
-    }
-
-    void saveText205() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT205, etText205.getText().toString());
-        ed.commit();
-    }
-    void loadText205() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT205, "");
-        etText205.setText(savedText);
-    }
-
-    void saveText206() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT206, etText206.getText().toString());
-        ed.commit();
-    }
-    void loadText206() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT206, "");
-        etText206.setText(savedText);
-    }
-
-    void saveText207() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT207, etText207.getText().toString());
-        ed.commit();
-    }
-    void loadText207() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT207, "");
-        etText207.setText(savedText);
-    }
-
-    void saveText208() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT208, etText208.getText().toString());
-        ed.commit();
-    }
-    void loadText208() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT208, "");
-        etText208.setText(savedText);
-    }
-
-    void saveText209() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT209, etText209.getText().toString());
-        ed.commit();
-    }
-    void loadText209() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT209, "");
-        etText209.setText(savedText);
-    }
-
-    void saveText210() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT210, etText210.getText().toString());
-        ed.commit();
-    }
-    void loadText210() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT210, "");
-        etText210.setText(savedText);
-    }
-    void saveText211() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT211, etText211.getText().toString());
-        ed.commit();
-    }
-    void loadText211() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT211, "");
-        etText211.setText(savedText);
-    }
 
 
 
@@ -5247,17 +4466,7 @@ public class St1_Activity extends AppCompatActivity {
 
 
 
-        saveText201();
-        saveText202();
-        saveText203();
-        saveText204();
-        saveText205();
-        saveText206();
-        saveText207();
-        saveText208();
-        saveText209();
-        saveText210();
-        saveText211();
+
 
 
        // saveText232();
@@ -5268,7 +4477,7 @@ public class St1_Activity extends AppCompatActivity {
 
 
     public void onClick222(View view) {
-        Intent a = new Intent(this,St2_Activity.class);
+        Intent a = new Intent(this,St_cementnaya_a_b_Activity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
     }
@@ -5359,6 +4568,83 @@ public class St1_Activity extends AppCompatActivity {
         {
             Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
         }}
+
+    public void onEmailClick(View v) {
+        long mills = 42L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
+        //TextView r1-результат text1;
+
+        String emailSubject = getString(R.string.cem_st_s);
+        String na_email = getString(R.string.na_email);
+
+        TextView ob_wir = findViewById(R.id.textViewWir2);
+        TextView ob_wir2 = findViewById(R.id.textViewWir8);
+        TextView ob_wir3 = findViewById(R.id.textViewWir10);
+
+
+
+        TextView rez_text1 = findViewById(R.id.textView142);
+        TextView rez_text2 = findViewById(R.id.textView143);
+        TextView rez_text3 = findViewById(R.id.textView242);
+        TextView rez_text4 = findViewById(R.id.textView20);
+        TextView rez_text5 = findViewById(R.id.textView24);
+
+
+
+        String rez1 = rez_text1.getText().toString();
+        String rez2 = rez_text2.getText().toString();
+        String rez3 = rez_text3.getText().toString();
+        String rez4 = rez_text4.getText().toString();
+        String rez5 = rez_text5.getText().toString();
+
+
+
+        String ob1 = ob_wir.getText().toString();
+        String ob2 = ob_wir2.getText().toString();
+        String ob3 = ob_wir3.getText().toString();
+
+
+
+
+        String r1 = getString(R.string.s_pom);
+        String r2 = getString(R.string.ob_ras);
+        String r3 = getString(R.string.cement);
+        String r4 = getString(R.string.vlagnost);
+        String r5 = getString(R.string.voda);
+
+        String r6 = getString(R.string.pl_pom);
+        String r7 = getString(R.string.tolsh_st);
+        String r8 = getString(R.string.mark_rast);
+
+
+        String ida = getString(R.string.isxod_dani);
+
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_SUBJECT, emailSubject);
+        intent.putExtra(Intent.EXTRA_TEXT, new String(
+
+                (r1)+(rez1)+
+                        "\n"+(r2)+(rez2)+
+                        "\n"+(r3)+(rez3)+
+                        "\n"+(r4)+(rez4)+
+                        "\n"+(r5)+(rez5)+
+                        "\n"+"......."+
+                        "\n"+(ida)+
+                        "\n"+(r6)+(ob1)+
+                        "\n"+(r7)+(ob2)+
+                        "\n"+(r8)+(ob3)
+
+
+
+        ));
+        {
+            intent.setType("plain/text");
+        }
+        startActivity(Intent.createChooser(intent, na_email));
+    }
 }
 
 

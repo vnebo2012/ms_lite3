@@ -7,7 +7,7 @@
     android:background="@color/colorWite"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Pol_Stena_Activity"
-    tools:showIn="@layout/activity_plitka3">
+    tools:showIn="@layout/activity_plitka_pol_stena">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -426,7 +426,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="@string/wir_pom"
+                            android:text="@string/wir_pom2"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -1067,7 +1067,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="Цена напольной плитки:"
+                            android:text="@string/cena_nap_plitki"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 

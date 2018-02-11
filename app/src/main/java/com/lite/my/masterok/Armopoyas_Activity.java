@@ -5344,7 +5344,7 @@ public class Armopoyas_Activity extends AppCompatActivity {
             return true;
         } else if (id == R.id.email) {
 
-            Intent a = new Intent(this,MainActivity.class);
+            Intent a = new Intent(this,KirpishActivity.class);
             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(a);
 

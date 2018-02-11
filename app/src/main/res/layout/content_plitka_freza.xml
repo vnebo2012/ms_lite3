@@ -7,7 +7,7 @@
     android:background="@color/colorWite"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Pol_Freza_stena_Activity"
-    tools:showIn="@layout/activity_plitka">
+    tools:showIn="@layout/activity_plitka_freza">
 
     <LinearLayout
         android:layout_width="match_parent"

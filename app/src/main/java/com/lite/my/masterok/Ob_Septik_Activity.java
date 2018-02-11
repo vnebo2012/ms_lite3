@@ -7261,7 +7261,7 @@ public class Ob_Septik_Activity extends AppCompatActivity {
             return true;
         } else if (id == R.id.action_settings2) {
 
-            Intent a = new Intent(this,MainActivity.class);
+            Intent a = new Intent(this,KirpishActivity.class);
             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(a);
             //Do something
@@ -8460,6 +8460,107 @@ public class Ob_Septik_Activity extends AppCompatActivity {
         {
             Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
         }}
+
+    public void onEmailClick(View v) {
+        long mills = 42L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
+        //TextView r1-результат text1;
+
+        String emailSubject = getString(R.string.ras_sept);
+
+        String na_email = getString(R.string.na_email);
+
+
+
+
+        String r1 = getString(R.string.ras_obiem);
+        String r2 = getString(R.string.zalp_sbros);
+        String r3 = getString(R.string.proizvoditelnost_v_sutki);
+        String r4 = getString(R.string.kol_shelovek);
+
+
+        TextView rez_text1 = findViewById(R.id.textView142);
+        TextView rez_text2 = findViewById(R.id.textView201);
+        TextView rez_text3 = findViewById(R.id.textView301);
+        TextView rez_text4 = findViewById(R.id.textView4);
+
+
+        String rez1 = rez_text1.getText().toString();
+        String rez2 = rez_text2.getText().toString();
+        String rez3 = rez_text3.getText().toString();
+        String rez4 = rez_text4.getText().toString();
+
+
+
+
+        TextView ob_wir = findViewById(R.id.textViewWir);
+        TextView ob_wir2 = findViewById(R.id.textViewWir2);
+        TextView ob_wir3 = findViewById(R.id.textViewWir3);
+        TextView ob_wir4 = findViewById(R.id.textViewWir4);
+        TextView ob_wir5 = findViewById(R.id.textViewWir5);
+        TextView ob_wir6 = findViewById(R.id.textViewWir11);
+        TextView ob_wir7 = findViewById(R.id.textViewWir6);
+        TextView ob_wir8 = findViewById(R.id.textViewWir7);
+        TextView ob_wir9 = findViewById(R.id.textViewWir8);
+        TextView ob_wir10 = findViewById(R.id.textViewWir10);
+
+        String ob1 = ob_wir.getText().toString();
+        String ob2 = ob_wir2.getText().toString();
+        String ob3 = ob_wir3.getText().toString();
+        String ob4 = ob_wir4.getText().toString();
+        String ob5 = ob_wir5.getText().toString();
+        String ob6 = ob_wir6.getText().toString();
+        String ob7 = ob_wir7.getText().toString();
+        String ob8 = ob_wir8.getText().toString();
+        String ob9 = ob_wir9.getText().toString();
+        String ob10 = ob_wir10.getText().toString();
+
+        String ida = getString(R.string.isxod_dani);
+
+
+        String r5 = getString(R.string.kol_shelovek);
+        String r6 = getString(R.string.vanna_wt);
+        String r7 = getString(R.string.ugl_vanna);
+        String r8 = getString(R.string.duw);
+        String r9 = getString(R.string.stiralka);
+        String r10 = getString(R.string.posudomoyka);
+        String r11 = getString(R.string.unitaz);
+        String r12 = getString(R.string.bide);
+        String r13 = getString(R.string.rakovina);
+        String r14 = getString(R.string.ras_koef_obioma);
+
+
+
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_SUBJECT, emailSubject);
+        intent.putExtra(Intent.EXTRA_TEXT, new String(
+
+                (r1)+(rez1)+
+                        "\n"+(r2)+(rez2)+
+                        "\n"+(r3)+(rez3)+
+                        "\n"+(r4)+(rez4)+
+                        "\n"+"......."+
+                        "\n"+(ida)+
+                        "\n"+(r5)+(ob1)+
+                        "\n"+(r6)+(ob2)+
+                        "\n"+(r7)+(ob3)+
+                        "\n"+(r8)+(ob4)+
+                        "\n"+(r9)+(ob5)+
+                        "\n"+(r10)+(ob6)+
+                        "\n"+(r11)+(ob7)+
+                        "\n"+(r12)+(ob8)+
+                        "\n"+(r13)+(ob9)+
+                        "\n"+(r14)+(ob10)
+
+        ));
+        {
+            intent.setType("plain/text");
+        }
+        startActivity(Intent.createChooser(intent, na_email));
+    }
 }
 
 

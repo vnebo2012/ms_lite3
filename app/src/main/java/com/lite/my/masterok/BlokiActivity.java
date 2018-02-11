@@ -5391,7 +5391,7 @@ public class BlokiActivity extends AppCompatActivity {
             return true;
         } else if (id == R.id.action_settings2) {
 
-            Intent a = new Intent(this,MainActivity.class);
+            Intent a = new Intent(this,KirpishActivity.class);
             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(a);
             //Do something
@@ -6188,7 +6188,7 @@ public class BlokiActivity extends AppCompatActivity {
 
 
     public void onClick222(View view) {
-       Intent a = new Intent(this,MainActivity.class);
+       Intent a = new Intent(this,KirpishActivity.class);
       a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
      startActivity(a);
      }

@@ -9676,7 +9676,7 @@ public class Penoplast_Activity extends AppCompatActivity {
             return true;
         } else if (id == R.id.action_settings2) {
 
-            Intent a = new Intent(this,MainActivity.class);
+            Intent a = new Intent(this,KirpishActivity.class);
             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(a);
             //Do something
@@ -11467,6 +11467,169 @@ public class Penoplast_Activity extends AppCompatActivity {
         {
             Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
         }}
+
+    public void onEmailClick(View v) {
+        long mills = 42L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
+        //TextView r1-результат text1;
+
+        String emailSubject = getString(R.string.pinoplast1);
+        String na_email = getString(R.string.na_email);
+
+        TextView ob_wir = findViewById(R.id.textViewWir);
+        TextView ob_wir2 = findViewById(R.id.textViewWir2);
+        TextView ob_wir3 = findViewById(R.id.textViewWir3);
+        TextView ob_wir4 = findViewById(R.id.textViewWir4);
+        TextView ob_wir5 = findViewById(R.id.textViewWir11);
+        TextView ob_wir6 = findViewById(R.id.textViewWir6);
+        TextView ob_wir7 = findViewById(R.id.textViewWir5);
+        TextView ob_wir8 = findViewById(R.id.textViewWir7);
+        TextView ob_wir9 = findViewById(R.id.textViewWir8);
+        TextView ob_wir10 = findViewById(R.id.textViewWir10);
+        TextView ob_wir11 = findViewById(R.id.textViewWir20);
+        TextView ob_wir12 = findViewById(R.id.textViewWir21);
+        TextView ob_wir13 = findViewById(R.id.textViewWir18);
+        TextView ob_wir14 = findViewById(R.id.textViewWir13);
+        TextView ob_wir15 = findViewById(R.id.textViewWir22);
+        TextView ob_wir16 = findViewById(R.id.textViewWir15);
+        TextView ob_wir17 = findViewById(R.id.textViewWir16);
+        TextView ob_wir18 = findViewById(R.id.textViewWir14);
+        TextView ob_wir19 = findViewById(R.id.textViewWir17);
+
+        String r1 = getString(R.string.cena_penoplasta);
+        String r2 = getString(R.string.kley_pok_cena);
+        String r3 = getString(R.string.kley2_cena);
+        String r4 = getString(R.string.cena_dubela);
+        String r5 = getString(R.string.setka_cena);
+        String r6 = getString(R.string.grunt_cena);
+        String r7 = getString(R.string.koroed_cena);
+        String r8 = getString(R.string.cena_vsex_mat);
+        String r9 = getString(R.string.cena_rabot);
+
+        TextView rez_text1 = findViewById(R.id.textView14200);
+        TextView rez_text2 = findViewById(R.id.textView142);
+        TextView rez_text3 = findViewById(R.id.textView20100);
+        TextView rez_text4 = findViewById(R.id.textView201);
+        TextView rez_text5 = findViewById(R.id.textView30101);
+        TextView rez_text6 = findViewById(R.id.textView301);
+        TextView rez_text7 = findViewById(R.id.textView4000);
+        TextView rez_text8 = findViewById(R.id.textView4);
+        TextView rez_text9 = findViewById(R.id.textView2421);
+        TextView rez_text10 = findViewById(R.id.textView242);
+        TextView rez_text11 = findViewById(R.id.textView2000);
+        TextView rez_text12 = findViewById(R.id.textView20);
+        TextView rez_text13 = findViewById(R.id.textView2080);
+        TextView rez_text14 = findViewById(R.id.textView208);
+        TextView rez_text15 = findViewById(R.id.textView24);
+        TextView rez_text16 = findViewById(R.id.textView401);
+
+
+
+        String rez1 = rez_text1.getText().toString();
+        String rez2 = rez_text2.getText().toString();
+        String rez3 = rez_text3.getText().toString();
+        String rez4 = rez_text4.getText().toString();
+        String rez5 = rez_text5.getText().toString();
+        String rez6 = rez_text6.getText().toString();
+        String rez7 = rez_text7.getText().toString();
+        String rez8 = rez_text8.getText().toString();
+        String rez9 = rez_text9.getText().toString();
+        String rez10 = rez_text10.getText().toString();
+        String rez11 = rez_text11.getText().toString();
+        String rez12 = rez_text12.getText().toString();
+        String rez13 = rez_text13.getText().toString();
+        String rez14 = rez_text14.getText().toString();
+        String rez15 = rez_text15.getText().toString();
+        String rez16 = rez_text16.getText().toString();
+
+
+        String ob1 = ob_wir.getText().toString();
+        String ob2 = ob_wir2.getText().toString();
+        String ob3 = ob_wir3.getText().toString();
+        String ob4 = ob_wir4.getText().toString();
+        String ob5 = ob_wir5.getText().toString();
+        String ob6 = ob_wir6.getText().toString();
+        String ob7 = ob_wir7.getText().toString();
+        String ob8 = ob_wir8.getText().toString();
+        String ob9 = ob_wir9.getText().toString();
+        String ob10 = ob_wir10.getText().toString();
+        String ob11 = ob_wir11.getText().toString();
+        String ob12 = ob_wir12.getText().toString();
+        String ob13 = ob_wir13.getText().toString();
+        String ob14 = ob_wir14.getText().toString();
+        String ob15 = ob_wir15.getText().toString();
+        String ob16 = ob_wir16.getText().toString();
+        String ob17 = ob_wir17.getText().toString();
+        String ob18 = ob_wir18.getText().toString();
+        String ob19 = ob_wir19.getText().toString();
+
+
+
+        String r10 = getString(R.string.s_sten_doma);
+        String r11 = getString(R.string.s_okon_dverey);
+        String r12 = getString(R.string.cena_pen_2);
+        String r13 = getString(R.string.cena_kleya);
+        String r14 = getString(R.string.tolw_pen);
+        String r15 = getString(R.string.dub_na_list);
+        String r16 = getString(R.string.cena_dub3);
+        String r17 = getString(R.string.rasxod_prekleyki);
+        String r18 = getString(R.string.rasxod_zatyagki);
+        String r19 = getString(R.string.kol_sl_zatyagki);
+        String r20 = getString(R.string.grunt_cena_za);
+        String r21 = getString(R.string.lit_v_vedre);
+        String r22 = getString(R.string.kol_grunta_sloy);
+        String r23 = getString(R.string.ras_grunta);
+        String r24 = getString(R.string.setka_cena2);
+        String r25 = getString(R.string.cena_kor_ved);
+        String r26 = getString(R.string.kol_v_vedre);
+        String r27 = getString(R.string.ras_kor);
+        String r28 = getString(R.string.cena_rabot_22);
+
+
+        String ida = getString(R.string.isxod_dani);
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_SUBJECT, emailSubject);
+        intent.putExtra(Intent.EXTRA_TEXT, new String(
+
+                (r1)+(rez1)+"/"+(rez2)+
+                        "\n"+(r2)+(rez3)+"/"+(rez4)+
+                        "\n"+(r3)+(rez5)+"/"+(rez6)+
+                        "\n"+(r4)+(rez7)+"/"+(rez8)+
+                        "\n"+(r5)+(rez9)+"/"+(rez10)+
+                        "\n"+(r6)+(rez11)+"/"+(rez12)+
+                        "\n"+(r7)+(rez13)+"/"+(rez14)+
+                        "\n"+(r8)+(rez15)+
+                        "\n"+(r9)+(rez16)+
+                        "\n"+"......."+
+                        "\n"+(ida)+
+                        "\n"+(r10)+(ob1)+
+                        "\n"+(r11)+(ob2)+
+                        "\n"+(r12)+(ob3)+
+                        "\n"+(r13)+(ob4)+
+                        "\n"+(r14)+(ob5)+
+                        "\n"+(r15)+(ob6)+
+                        "\n"+(r16)+(ob7)+
+                        "\n"+(r17)+(ob8)+
+                        "\n"+(r18)+(ob9)+
+                        "\n"+(r19)+(ob10)+
+                        "\n"+(r20)+(ob11)+
+                        "\n"+(r21)+(ob12)+
+                        "\n"+(r22)+(ob13)+
+                        "\n"+(r23)+(ob14)+
+                        "\n"+(r24)+(ob15)+
+                        "\n"+(r25)+(ob16)+
+                        "\n"+(r26)+(ob17)+
+                        "\n"+(r27)+(ob18)+
+                        "\n"+(r28)+(ob19)
+        ));
+        {
+            intent.setType("plain/text");
+        }
+        startActivity(Intent.createChooser(intent, na_email));
+    }
 
 
 

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWite"
+    android:background="@color/colorBlueGrey50"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".St2_Activity"
-    tools:showIn="@layout/activity_st2">
+    tools:context=".St_cementnaya_a_b_Activity"
+    tools:showIn="@layout/activity_st1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,7 +51,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="3dp"
                             android:background="@color/colorPrimary"
-                            android:text="@string/pl_pom"
+                            android:text="@string/dlin_pom"
                             android:textColor="@color/colorWite"
                             android:textSize="16dp" />
 
@@ -216,6 +216,193 @@
                     </LinearLayout>
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorBlueGrey50"
+                    android:baselineAligned="false"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:baselineAligned="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView500"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/wir_pom2"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textViewWir3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/radius_kirpish"
+                            android:text="2"
+                            android:textColor="@color/colorWite"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView111"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/button201"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button202"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="4"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button203"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="5"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button204"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="6"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button205"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="7"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button206"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="8"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button207"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="9"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button208"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="10"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button209"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="11"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button210"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="12"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <Button
+                                    android:id="@+id/button211"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="7dp"
+                                    android:background="@drawable/radius"
+                                    android:text="14"
+                                    android:textColor="@color/colorPrimary43"
+                                    android:textSize="25dp"
+                                    android:textStyle="italic" />
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -360,8 +547,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="3dp"
-                            android:layout_marginRight="3dp"
+                            android:layout_margin="3dp"
                             android:background="@drawable/radius_kirpish"
                             android:text="410"
                             android:textColor="@color/colorWite"
@@ -409,36 +595,12 @@
                                     android:textSize="20sp"
                                     android:textStyle="italic" />
 
-                                <LinearLayout
-                                    android:layout_width="75dp"
-                                    android:layout_height="match_parent"
-                                    android:orientation="horizontal" />
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="1dp"
-                    android:background="@color/colorBlueGrey50"
-                    android:baselineAligned="true"
-                    android:orientation="vertical">
-
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100sp"
-                    android:background="@color/colorBlueGrey50"
-                    android:baselineAligned="true"
-                    android:orientation="vertical">
-
-
-                </LinearLayout>
 
             </LinearLayout>
         </ScrollView>
@@ -487,7 +649,7 @@
                         android:layout_gravity="center_vertical"
                         android:background="@android:color/background_light"
                         android:onClick="onClick222"
-                        android:src="@drawable/st" />
+                        android:src="@drawable/plita1" />
                 </LinearLayout>
 
             </LinearLayout>

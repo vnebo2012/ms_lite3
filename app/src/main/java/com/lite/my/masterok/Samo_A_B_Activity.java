@@ -5028,7 +5028,7 @@ public class Samo_A_B_Activity extends AppCompatActivity {
             return true;
         } else if (id == R.id.action_settings2) {
 
-            Intent a = new Intent(this,MainActivity.class);
+            Intent a = new Intent(this,KirpishActivity.class);
             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(a);
             //Do something
@@ -5649,6 +5649,76 @@ public class Samo_A_B_Activity extends AppCompatActivity {
         {
             Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
         }}
+    public void onEmailClick(View v) {
+        long mills = 42L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
+        //TextView r1-результат text1;
+
+        String emailSubject = getString(R.string.naliv_pol_a_b);
+        String na_email = getString(R.string.na_email);
+
+        TextView ob_wir = findViewById(R.id.textViewWir2);
+        TextView ob_wir2 = findViewById(R.id.textViewWir3);
+        TextView ob_wir3 = findViewById(R.id.textViewWir8);
+        TextView ob_wir4 = findViewById(R.id.textViewWir15);
+        TextView ob_wir5 = findViewById(R.id.textViewWir10);
+
+
+        TextView rez_text1 = findViewById(R.id.textView142);
+        TextView rez_text2 = findViewById(R.id.textView143);
+        TextView rez_text3 = findViewById(R.id.textView242);
+
+
+
+        String rez1 = rez_text1.getText().toString();
+        String rez2 = rez_text2.getText().toString();
+        String rez3 = rez_text3.getText().toString();
+
+
+
+        String ob1 = ob_wir.getText().toString();
+        String ob2 = ob_wir2.getText().toString();
+        String ob3 = ob_wir3.getText().toString();
+        String ob4 = ob_wir4.getText().toString();
+        String ob5 = ob_wir5.getText().toString();
+
+
+        String r1 = getString(R.string.s_pom);
+        String r2 = getString(R.string.smes);
+        String r3 = getString(R.string.cena3);
+
+        String r4 = getString(R.string.dlin_pom);
+        String r5 = getString(R.string.wir_pom2);
+        String r6 = getString(R.string.tolsh_st);
+        String r7 = getString(R.string.cena_smesi_m);
+        String r8 = getString(R.string.rasxo_pol);
+
+        String ida = getString(R.string.isxod_dani);
+
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_SUBJECT, emailSubject);
+        intent.putExtra(Intent.EXTRA_TEXT, new String(
+
+                (r1)+(rez1)+
+                        "\n"+(r2)+(rez2)+
+                        "\n"+(r3)+(rez3)+
+                        "\n"+"......."+
+                        "\n"+(ida)+
+                        "\n"+(r4)+(ob1)+
+                        "\n"+(r5)+(ob2)+
+                        "\n"+(r6)+(ob3)+
+                        "\n"+(r7)+(ob4)+
+                        "\n"+(r8)+(ob5)
+
+        ));
+        {
+            intent.setType("plain/text");
+        }
+        startActivity(Intent.createChooser(intent, na_email));
+    }
 
     }
 
