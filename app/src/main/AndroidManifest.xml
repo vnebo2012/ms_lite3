@@ -157,6 +157,10 @@
             android:name=".Les_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
 
+        <activity
+            android:name=".Balka2_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
 
     </application>
 

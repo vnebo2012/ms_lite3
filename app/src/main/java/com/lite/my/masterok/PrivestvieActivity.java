@@ -6,9 +6,6 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.TextView;
 
 public class PrivestvieActivity extends Activity {
 
@@ -17,11 +14,7 @@ public class PrivestvieActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_privet);
 
-        Animation anim1 = AnimationUtils.loadAnimation(
-                getApplicationContext(), R.anim.scale2);
-        final TextView textView1 = (TextView) findViewById(R.id.textView40);
 
-        textView1.startAnimation(anim1);
 
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

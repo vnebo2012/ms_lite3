@@ -620,6 +620,7 @@
     <string name="cena_orendi2">Стоимость оренды:</string>
     <string name="wirina_stoyki">Ширина стойки, м:</string>
     <string name="sposob_ust_lesov">Тип установки лесов:</string>
+
     <string name="doski_a">Объем пиломатериалов:</string>
     <string name="obem_dosok">Объем леса, м3:</string>
     <string name="wtuk_na_kub">Штук на куб:</string>
@@ -635,6 +636,21 @@
     <string name="isxod_dani">Исходные даные:</string>
     <string name="gvozd_vertikal_obrewotki">Гвоздь для вертик. обрешетки, мм:</string>
     <string name="gvozd_goriz_obr">Гвоздь для гориз. обрешетки, мм:</string>
+
+
+    <string name="balka1">Балка</string>
+    <string name="dlina_prolota">Величина пролета L, м:</string>
+    <string name="rast_meg_balkami">Шаг укладки балок, м:</string>
+    <string name="nagruzka_kg">Нагрузка, кгс/м:</string>
+    <string name="nagruzka_kg_m2">Нагрузка на перекрытие, кгс/м2:</string>
+    <string name="koef_sop">Cопротивление балки, кгс/см2:</string>
+    <string name="koef_sop2">(для дерева это 130 кгс/см2):</string>
+    <string name="koef_soot_storon">Cоотношение сторон балки:</string>
+    <string name="vis_brusa">Высота бруса h, см:</string>
+    <string name="wir_brusa">Ширина бруса n, см:</string>
+    <string name="brus1">Расчет балки</string>
+    <string name="kubatura_lesa">Кубатура леса</string>
+    <string name="sesh_bal">Сечение балки</string>
 
 
 </resources>

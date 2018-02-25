@@ -669,7 +669,6 @@
                                 android:layout_weight="1"
                                 android:background="@drawable/les2"
 
-                                android:onClick="onClickLes"
                                 android:text="Плита перекрытия"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="18sp" />
@@ -694,30 +693,28 @@
 
 
                             <ImageButton
-                                android:id="@+id/imageButton32222232"
-                                android:layout_width="55dp"
-                                android:layout_height="55dp"
+                                android:id="@+id/imageButton32222221"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:alpha="0"
 
-
-                                android:background="@drawable/ves_doma"
+                                android:background="@drawable/doska_abc"
                                 android:text="Плита перекрытия"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="18sp" />
 
                             <TextView
-                                android:id="@+id/textView294"
+                                android:id="@+id/textView56122222"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:alpha="0"
                                 android:gravity="center"
-                                android:text="@string/ves_doma"
+                                android:text="@string/balka1"
                                 android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
-
                         </LinearLayout>
 
 

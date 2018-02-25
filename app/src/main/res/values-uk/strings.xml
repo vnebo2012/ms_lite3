@@ -663,4 +663,18 @@
     <string name="gvozd_vertikal_obrewotki">Гвоздь для вертик. обрешетки, мм:</string>
     <string name="gvozd_goriz_obr">Гвоздь для гориз. обрешетки, мм:</string>
 
+         <string name = "balka1">Балка </string>
+         <string name = "dlina_prolota">Величина прольоту L, м:</string>
+         <string name = "rast_meg_balkami">Крок укладання балок, м:</string>
+         <string name = "nagruzka_kg">Навантаження, кгс/м:</string>
+         <string name = "nagruzka_kg_m2">Навантаження на перекриття, кгс/м2:</string>
+         <string name = "koef_sop">Опір балки, кгс/см2: </string>
+         <string name = "koef_sop2">(для дерева це 130 кгс/см2):</string>
+         <string name = "koef_soot_storon">Cпівідношення сторін балки:</string>
+         <string name = "vis_brusa">Висота бруса h, см:</string>
+         <string name = "wir_brusa">Ширина бруса n, см:</string>
+         <string name = "brus1">Розрахунок балки</string>
+         <string name = "kubatura_lesa">Кубатура лісу</string>
+         <string name = "sesh_bal">Перетин балки</string>
+
 </resources>

@@ -663,6 +663,21 @@
     <string name="gvozd_goriz_obr">Гвоздь для гориз. обрешетки, мм:</string>
 
 
+
+    <string name = "balka1">Beam</string>
+        <string name = "dlina_prolota">The size of the span L, m:</string>
+         <string name = "rast_meg_balkami">The laying of the beams, m:</string>
+         <string name = "nagruzka_kg">Load, kgs/m:</string>
+         <string name = "nagruzka_kg_m2">Load on the overlap, kgf/m2:</string>
+         <string name = "koef_sop">Beam resistance, kgf / cm2:</string>
+         <string name = "koef_sop2">(for a tree it is 130 kgf/cm2):</string>
+         <string name = "koef_soot_storon">Aspect ratio of the beam:</string>
+         <string name = "vis_brusa">Height of the beam h, cm:</string>
+         <string name = "wir_brusa">The width of the bar n, cm:</string>
+         <string name = "brus1">Calculation of the beam</string>
+         <string name = "kubatura_lesa">Forest Cubature</string>
+         <string name = "sesh_bal">Section of the beam</string>
+
 </resources>
 
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Pol_Activity">
+    tools:context=".Balka2_Activity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="@string/plit_na_pol"
+                    android:text="@string/balka1"
                     android:textColor="@android:color/white"
                     android:textSize="18dp"
                     android:textStyle="bold|italic" />
@@ -44,7 +44,7 @@
                     android:layout_height="40dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/colorPrimary"
-
+                    android:onClick="onEmailClick"
                     android:scaleType="fitCenter"
                     android:src="@mipmap/ic_pod" />
 
@@ -63,7 +63,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_plitka_pol" />
+    <include layout="@layout/content_balka2" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
