@@ -693,14 +693,14 @@
 
 
                             <ImageButton
-                                android:id="@+id/imageButton32222221"
+                                android:id="@+id/imageButton100"
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
-                                android:alpha="0"
 
-                                android:background="@drawable/doska_abc"
+                                android:background="@drawable/lumex"
+                                android:onClick="onClickLumex"
                                 android:text="Плита перекрытия"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="18sp" />
@@ -710,9 +710,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:alpha="0"
                                 android:gravity="center"
-                                android:text="@string/balka1"
+                                android:text="@string/lumex"
                                 android:textColor="@color/colorBlack"
                                 android:textSize="14dp" />
                         </LinearLayout>

@@ -651,6 +651,12 @@
     <string name="brus1">Расчет балки</string>
     <string name="kubatura_lesa">Кубатура леса</string>
     <string name="sesh_bal">Сечение балки</string>
+    <string name="banner_ad_unit_id1">ca-app-pub-4882550262749386/8854296780</string>
+
+    <string name="lumex">Люксы</string>
+    <string name="samsung">Samsung</string>
+    <string name="ostanielni">Остальные устройства</string>
+    <string name="sam">* для устройств Samsung</string>
 
 
 </resources>

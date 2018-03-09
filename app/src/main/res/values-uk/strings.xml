@@ -676,5 +676,11 @@
          <string name = "brus1">Розрахунок балки</string>
          <string name = "kubatura_lesa">Кубатура лісу</string>
          <string name = "sesh_bal">Перетин балки</string>
+    <string name="banner_ad_unit_id1">ca-app-pub-4882550262749386/8854296780</string>
+
+    <string name="lumex">Люкси</string>
+    <string name="samsung">Samsung</string>
+    <string name="ostanielni">Решта пристроїв</string>
+    <string name="sam">* для пристроїв Samsung</string>
 
 </resources>

@@ -26,10 +26,12 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.lite.my.masterok.Lumex.LumexActivity;
+
 
 public class Start_Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-  // private AdView mAdView;
+
 
 
     final Context context2 = this;
@@ -37,6 +39,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
     Context context;
     private Switch mSwitch;
     private Camera camera;
+
 
 
     final String MY_SETTINGS = "saved_text_stg100011";
@@ -64,9 +67,6 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
             }
         });*/
 
-     ///   mAdView = (AdView) findViewById(R.id.adView);
-     //   AdRequest adRequest = new AdRequest.Builder().build();
-     //   mAdView.loadAd(adRequest);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar7);
         setSupportActionBar(toolbar);
@@ -118,11 +118,6 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
             AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
             mDialogBuilder.setView(promptsView);
 
-
-
-
-
-
             mDialogBuilder
                     .setCancelable(false)
                     .setPositiveButton("Ok",
@@ -168,6 +163,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         ImageButton button9 = (ImageButton) findViewById(R.id.imageButton11);
         ImageButton button10 = (ImageButton) findViewById(R.id.button24121);
         ImageButton button11 = (ImageButton) findViewById(R.id.imageButton322222);
+        //ImageButton button12 = (ImageButton) findViewById(R.id.imageButton100);
         //Button button5 = (Button) findViewById(R.id.button4010);
         //Button button6 = (Button) findViewById(R.id.button407);
         //Button button7 = (Button) findViewById(R.id.button4071);
@@ -185,6 +181,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         button9.setOnClickListener(viewClickListener9);
         button10.setOnClickListener(viewClickListener10);
         button11.setOnClickListener(viewClickListener11);
+        //button12.setOnClickListener(viewClickListener12);
 //        textView.setOnClickListener(viewClickListener);
 
 
@@ -286,8 +283,8 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         super.onDestroy();
     }*/
 
-    public void onClickElektro(View view) {
-        Intent a = new Intent(this,Elektro_Activity.class);
+    public void onClickLumex(View view) {
+        Intent a = new Intent(this,LumexActivity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
         long mills = 15L;
@@ -1214,8 +1211,6 @@ public void onClickRadiators(View view) {
             long mills = 15L;
             Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
             vibrator.vibrate(mills);
-
-
             showPopupMenu11(v);
         }
     };
@@ -1275,6 +1270,9 @@ public void onClickRadiators(View view) {
         });
         popupMenu.show();
     }
+
+
+
 
 
 

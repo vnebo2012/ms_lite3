@@ -6,7 +6,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
 
+    <uses-feature android:name="android.hardware.sensor.light" />
 
     <application
         android:allowBackup="true"
@@ -30,7 +32,7 @@
         <activity
             android:name=".Start_Activity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".BlokiActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -137,31 +139,26 @@
         <activity
             android:name=".Pena_A_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Elektro_tablica_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".FonarikActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Ves_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".LesaActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Les_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Balka2_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
+        <activity android:name=".Lumex.LumexActivity" />
+        <activity android:name=".Lumex.SamsungActivity" />
     </application>
 
 </manifest>

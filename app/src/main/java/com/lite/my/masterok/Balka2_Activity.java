@@ -1012,6 +1012,7 @@ public class Balka2_Activity extends AppCompatActivity {
 
 
 
+
     //endregion
 
     /**
@@ -1258,6 +1259,9 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                 }
                             });
+
+
+
             AlertDialog alertDialog = mDialogBuilder.create();
             alertDialog.show();
 
@@ -1421,6 +1425,8 @@ public class Balka2_Activity extends AppCompatActivity {
                                              //region button123
                                              @Override
                                              public boolean onLongClick(View arg0) {
+
+
                                                  LayoutInflater li = LayoutInflater.from(context2);
                                                  final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
