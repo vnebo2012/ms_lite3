@@ -681,6 +681,7 @@ public class Armopoyas_Activity extends AppCompatActivity {
     ImageView imageView;
     ImageView imageView1;
 
+
     InterstitialAd mInterstitialAd;
     ImageButton mNewGameButton;
 
@@ -701,10 +702,15 @@ public class Armopoyas_Activity extends AppCompatActivity {
 
     final String MY_SETTINGS = "saved_text_fun8";
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_armopojas);
+
+
+
 
 
         //mNewGameButton = (ImageButton) findViewById(R.id.dom);

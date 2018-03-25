@@ -27,14 +27,13 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Balka2_Activity extends AppCompatActivity {
+public class Lesnica_Activity extends AppCompatActivity {
 
 
     Button etText;
@@ -194,6 +193,13 @@ public class Balka2_Activity extends AppCompatActivity {
     TextView etText303;
     TextView etText304;
 
+    TextView etText500;
+
+    TextView etText501;
+    TextView etText502;
+    TextView etText503;
+
+    TextView etText700;
 
 
     Button btnSave, btnLoad;
@@ -349,6 +355,13 @@ public class Balka2_Activity extends AppCompatActivity {
     final String SAVED_TEXT303 = "saved_text303";
     final String SAVED_TEXT304 = "saved_text304";
 
+    final String SAVED_TEXT500 = "saved_text500";
+
+    final String SAVED_TEXT501 = "saved_text501";
+    final String SAVED_TEXT502 = "saved_text502";
+    final String SAVED_TEXT503 = "saved_text503";
+
+    final String SAVED_TEXT700 = "saved_text700";
 
 
     final Context context2 = this;
@@ -375,6 +388,7 @@ public class Balka2_Activity extends AppCompatActivity {
     private TextView wir_15;
     private TextView wir_16;
     private TextView wir_17;
+    private TextView wir_81;
 
 
     //region секция private Button btn1 - btn51;
@@ -522,9 +536,9 @@ public class Balka2_Activity extends AppCompatActivity {
     private Button btn247;
     private Button btn248;
 
-
-
-
+    private Button btn501;
+    private Button btn502;
+    private Button btn503;
 
 
     //endregion
@@ -678,7 +692,11 @@ public class Balka2_Activity extends AppCompatActivity {
     private Button aetText303;
     private Button aetText304;
 
+    private Button aetText501;
+    private Button aetText502;
+    private Button aetText503;
 
+    private Button aetText700;
 
 
 //endregion
@@ -831,8 +849,9 @@ public class Balka2_Activity extends AppCompatActivity {
     Button button247;
     Button button248;
 
-
-
+    Button button501;
+    Button button502;
+    Button button503;
 
 
     //endregion
@@ -936,7 +955,6 @@ public class Balka2_Activity extends AppCompatActivity {
     private TextView final_text82;
 
 
-
     private TextView final_text83;
     private TextView final_text84;
     private TextView final_text85;
@@ -999,6 +1017,13 @@ public class Balka2_Activity extends AppCompatActivity {
     private TextView final_text303;
     private TextView final_text304;
 
+    private TextView final_text501;
+    private TextView final_text502;
+    private TextView final_text503;
+
+
+    private TextView final_text700;
+
     ImageView imageView;
     ImageView imageView1;
     InterstitialAd mInterstitialAd;
@@ -1010,24 +1035,18 @@ public class Balka2_Activity extends AppCompatActivity {
     static Intent intent;
 
 
-
-
-
-
     //endregion
 
     /**
      * Called when the activity is first created.
      */
 
-    final String MY_SETTINGS = "saved_text_sp_a_b3";
-    private AdView mAdView;
+    final String MY_SETTINGS = "saved_text_sp_kr441";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_balka2);
-
-
+        setContentView(R.layout.activity_lesnica);
 
         //mNewGameButton = (ImageButton) findViewById(R.id.dom);
         mInterstitialAd = new InterstitialAd(this);
@@ -1065,19 +1084,15 @@ public class Balka2_Activity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.textView);
 
 
-       // imageView2.setOnClickListener(viewClickListener);
+        // imageView2.setOnClickListener(viewClickListener);
 
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         imageView = (ImageView) findViewById(R.id.imageView23);
 
-        Toolbar my_toolbar = (Toolbar)findViewById(R.id.my_toolbar);
+        Toolbar my_toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(my_toolbar);
-
-
-
-
 
 
 
@@ -1085,7 +1100,7 @@ public class Balka2_Activity extends AppCompatActivity {
         SharedPreferences sp = getSharedPreferences(MY_SETTINGS,
                 Context.MODE_PRIVATE);
         // проверяем, первый ли раз открывается программа
-        boolean hasVisited = sp.getBoolean("hasVisited_sp_a_b3", false);
+        boolean hasVisited = sp.getBoolean("hasVisited_sp_kr441", false);
 
         if (!hasVisited) {
 
@@ -1093,10 +1108,6 @@ public class Balka2_Activity extends AppCompatActivity {
             View promptsView = li.inflate(R.layout.prompt2, null);
             AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
             mDialogBuilder.setView(promptsView);
-
-
-
-
 
 
             final TextView bill23 = (TextView) findViewById(R.id.button97);
@@ -1111,19 +1122,12 @@ public class Balka2_Activity extends AppCompatActivity {
             final TextView bill32 = (TextView) findViewById(R.id.button11);
             final TextView bill33 = (TextView) findViewById(R.id.button12);
 
-            final TextView bill46 = (TextView) findViewById(R.id.button70);
-            final TextView bill47 = (TextView) findViewById(R.id.button71);
-            final TextView bill48 = (TextView) findViewById(R.id.button72);
-            final TextView bill49 = (TextView) findViewById(R.id.button73);
-            final TextView bill50 = (TextView) findViewById(R.id.button74);
-            final TextView bill51 = (TextView) findViewById(R.id.button75);
-
 
 
             final TextView bill79 = (TextView) findViewById(R.id.button26);
             final TextView bill80 = (TextView) findViewById(R.id.button33);
             final TextView bill81 = (TextView) findViewById(R.id.button34);
-            final TextView bill82 = (TextView) findViewById(R.id.button35);
+            //final TextView bill82 = (TextView) findViewById(R.id.button35);
 
 
             final TextView bill201 = (TextView) findViewById(R.id.button201);
@@ -1139,7 +1143,6 @@ public class Balka2_Activity extends AppCompatActivity {
             final TextView bill211 = (TextView) findViewById(R.id.button211);
 
 
-
             final TextView bill230 = (TextView) findViewById(R.id.button230);
             final TextView bill231 = (TextView) findViewById(R.id.button231);
             final TextView bill232 = (TextView) findViewById(R.id.button232);
@@ -1150,7 +1153,6 @@ public class Balka2_Activity extends AppCompatActivity {
             final TextView bill236 = (TextView) findViewById(R.id.button236);
 
 
-
             final TextView bill243 = (TextView) findViewById(R.id.button243);
             final TextView bill244 = (TextView) findViewById(R.id.button244);
             final TextView bill245 = (TextView) findViewById(R.id.button245);
@@ -1158,113 +1160,69 @@ public class Balka2_Activity extends AppCompatActivity {
             final TextView bill247 = (TextView) findViewById(R.id.button247);
             final TextView bill248 = (TextView) findViewById(R.id.button248);
 
+
+
             final TextView bill301 = (TextView) findViewById(R.id.textView201);
             final TextView bill302 = (TextView) findViewById(R.id.textView301);
             final TextView bill303 = (TextView) findViewById(R.id.textView401);
             final TextView bill304 = (TextView) findViewById(R.id.textView4);
 
-            final TextView bill12 = (TextView) findViewById(R.id.textView142);
-            final TextView bill13 = (TextView) findViewById(R.id.textView143);
+            final TextView bill142 = (TextView) findViewById(R.id.textView142);
+            final TextView bill143 = (TextView) findViewById(R.id.textView143);
             final TextView bill242 = (TextView) findViewById(R.id.textView242);
             final TextView bill84 = (TextView) findViewById(R.id.textView20);
             final TextView bill86 = (TextView) findViewById(R.id.textView24);
 
 
+
+
             etText83 = (TextView) findViewById(R.id.textView14);
             //etText84 = (TextView) findViewById(R.id.textView20);
             etText85 = (TextView) findViewById(R.id.textView143);
-         //   etText86 = (TextView) findViewById(R.id.textView24);
+            //   etText86 = (TextView) findViewById(R.id.textView24);
 
             etText301 = (TextView) findViewById(R.id.textView201);
             etText302 = (TextView) findViewById(R.id.textView301);
             etText303 = (TextView) findViewById(R.id.textView401);
             etText304 = (TextView) findViewById(R.id.textView4);
 
-            //  etText89 = (TextView) findViewById(R.id.textView28);
-
-            //final TextView bill75 = (TextView) findViewById(R.id.button36);
-            //final TextView bill76 = (TextView) findViewById(R.id.button37);
-
-
-
 
             mDialogBuilder
                     .setCancelable(false)
                     .setPositiveButton("OK",
                             new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog,int id) {
-
-
-                                    bill13.setText(0.0 + "");
-
-                                    bill23.setText(2.5 + "");
-                                    bill24.setText(3 + "");
-                                    bill25.setText(3.5 + "");
-                                    bill26.setText(3.85 + "");
-                                    bill27.setText(4 + "");
-                                    bill28.setText(4.5 + "");
-                                    bill29.setText(4.90 + "");
-                                    bill30.setText(5 + "");
-                                    bill31.setText(5.58 + "");
-                                    bill32.setText(5.90 + "");
-                                    bill33.setText(6 + "");
-
-                                    bill201.setText(110 + "");
-                                    bill202.setText(120 + "");
-                                    bill203.setText(150 + "");
-                                    bill204.setText(200 + "");
-                                    bill205.setText(250 + "");
-                                    bill206.setText(300 + "");
-                                    bill207.setText(355 + "");
-                                    bill208.setText(400 + "");
-                                    bill209.setText(410 + "");
-                                    bill210.setText(420 + "");
-                                    bill211.setText(450 + "");
-
-                                    bill46.setText(0 + "");
-                                    bill47.setText(100 + "");
-                                    bill48.setText(110 + "");
-                                    bill49.setText(115 + "");
-                                    bill50.setText(130 + "");
-                                    bill51.setText(140 + "");
-
-
-                                    bill79.setText(0.5 + "");
-                                    bill80.setText(0.6 + "");
-                                    bill81.setText(1 + "");
-                                    bill82.setText(1.2 + "");
-
-                                    bill12.setText(0.0 + "");
-
-                               //     bill84.setText(0.0 + "");
-                              //      bill86.setText(0.0 + "");
+                                public void onClick(DialogInterface dialog, int id) {
 
 
 
+                                    bill23.setText(2500 + "");
+                                    bill24.setText(2600 + "");
+                                    bill25.setText(2700 + "");
+                                    bill26.setText(2800 + "");
+                                    bill27.setText(2900 + "");
+                                    bill28.setText(3000 + "");
+                                    bill29.setText(3100 + "");
+                                    bill30.setText(3200 + "");
+                                    bill31.setText(3300 + "");
+                                    bill32.setText(3400 + "");
+                                    bill33.setText(3500 + "");
 
+                                    bill79.setText(3500 + "");
+                                    bill80.setText(3800 + "");
+                                    bill81.setText(4000 + "");
+//                                    bill82.setText(4 + "");
 
                                     bill242.setText(0.0 + "");
+                                    bill142.setText(0.0 + "");
+                                    bill143.setText(0.0 + "");
 
-                                    bill230.setText(1.5 + "");
-                                    bill231.setText(2.0 + "");
-
-
-
-                                   // bill230.setText("1"+"/"+"2");
-                                    //bill231.setText("1"+"/"+"3");
-                                   // bill232.setText("1"+"/"+"4");
-
-
-
-
+                                    bill230.setText(165 + "");
+                                    bill231.setText(170 + "");
 
 
 
                                 }
                             });
-
-
-
             AlertDialog alertDialog = mDialogBuilder.create();
             alertDialog.show();
 
@@ -1279,10 +1237,9 @@ public class Balka2_Activity extends AppCompatActivity {
             // startActivity(intent);
 
             SharedPreferences.Editor e = sp.edit();
-            e.putBoolean("hasVisited_sp_a_b3", true);
+            e.putBoolean("hasVisited_sp_kr441", true);
             e.commit(); // не забудьте подтвердить изменения
         }
-
 
 
 
@@ -1298,19 +1255,14 @@ public class Balka2_Activity extends AppCompatActivity {
         etText32 = (Button) findViewById(R.id.button11);
         etText33 = (Button) findViewById(R.id.button12);
 
-        etText46 = (Button) findViewById(R.id.button70);
-        etText47 = (Button) findViewById(R.id.button71);
-        etText48 = (Button) findViewById(R.id.button72);
-        etText49 = (Button) findViewById(R.id.button73);
-        etText50 = (Button) findViewById(R.id.button74);
-        etText51 = (Button) findViewById(R.id.button75);
+
 
 
         etText79 = (Button) findViewById(R.id.button26);
         etText80 = (Button) findViewById(R.id.button33);
         etText81 = (Button) findViewById(R.id.button34);
-        etText82 = (Button) findViewById(R.id.button35);
-        etText82 = (Button) findViewById(R.id.button35);
+        //etText82 = (Button) findViewById(R.id.button35);
+        //etText82 = (Button) findViewById(R.id.button35);
 
 
         etText301 = (TextView) findViewById(R.id.textView201);
@@ -1349,6 +1301,8 @@ public class Balka2_Activity extends AppCompatActivity {
         etText247 = (Button) findViewById(R.id.button247);
         etText248 = (Button) findViewById(R.id.button248);
 
+
+
         etText84 = (TextView) findViewById(R.id.textView20);
         etText86 = (TextView) findViewById(R.id.textView24);
         etText12 = (TextView) findViewById(R.id.textView142);
@@ -1357,6 +1311,7 @@ public class Balka2_Activity extends AppCompatActivity {
 
 
 
+        loadText12();
         loadText23();
         loadText24();
         loadText25();
@@ -1369,55 +1324,22 @@ public class Balka2_Activity extends AppCompatActivity {
         loadText32();
         loadText33();
 
-        loadText46();
-        loadText47();
-        loadText48();
-        loadText49();
-        loadText50();
-        loadText51();
 
         loadText79();
         loadText80();
         loadText81();
-        loadText82();
+        // loadText82();
 
 
         loadText85();
 
 
         loadText13();
-        loadText12();
 
         loadText230();
         loadText231();
 
-        loadText201();
-        loadText202();
-        loadText203();
-        loadText204();
-        loadText205();
-        loadText206();
-        loadText207();
-        loadText208();
-        loadText209();
-        loadText210();
-        loadText211();
 
-
-
-
-       // loadText232();
-
-
-
-
-
-
-
-
-        //Ряды кнопок (по Алерт Диалогу)
-
-        //region секция 1 (button101 = (Button) findViewById(R.id.button10);)
 
 
 
@@ -1428,8 +1350,6 @@ public class Balka2_Activity extends AppCompatActivity {
                                              //region button123
                                              @Override
                                              public boolean onLongClick(View arg0) {
-
-
                                                  LayoutInflater li = LayoutInflater.from(context2);
                                                  final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
@@ -1445,13 +1365,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text23.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1489,13 +1408,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text24.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1533,13 +1451,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text25.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1577,13 +1494,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text26.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1621,13 +1537,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text27.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1665,13 +1580,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text28.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1709,13 +1623,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text29.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1753,13 +1666,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text30.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1797,12 +1709,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
+                                                                             dialog.cancel();
+                                                                         } else {
                                                                              final_text31.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1840,13 +1752,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text32.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1884,13 +1795,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text33.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1906,20 +1816,10 @@ public class Balka2_Activity extends AppCompatActivity {
         );
 
 
-
         //endregion
 
 
-
-
 //endregion
-
-
-
-
-
-
-
 
 
         button179 = (Button) findViewById(R.id.button26);
@@ -1943,13 +1843,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text79.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1987,13 +1886,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text80.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2031,13 +1929,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text81.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2054,55 +1951,8 @@ public class Balka2_Activity extends AppCompatActivity {
 
         //endregion
 
-        button182 = (Button) findViewById(R.id.button35);
-        final_text82 = (TextView) findViewById(R.id.button35);
-        button182.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button113
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
 
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text82.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-
-
-
-
-
-         button230 = (Button) findViewById(R.id.button230);
+        button230 = (Button) findViewById(R.id.button230);
         final_text230 = (TextView) findViewById(R.id.button230);
         button230.setOnLongClickListener(new View.OnLongClickListener() {
 
@@ -2123,13 +1973,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text230.setText(userInput.getText());
-                                                                         }}
+                                                                         }
+                                                                     }
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2144,7 +1993,7 @@ public class Balka2_Activity extends AppCompatActivity {
                                          }
         );
 
-         button231 = (Button) findViewById(R.id.button231);
+        button231 = (Button) findViewById(R.id.button231);
         final_text231 = (TextView) findViewById(R.id.button231);
         button231.setOnLongClickListener(new View.OnLongClickListener() {
 
@@ -2165,746 +2014,12 @@ public class Balka2_Activity extends AppCompatActivity {
 
                                                                          //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
                                                                          final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
+                                                                         if (userInput.getText().length() == 0) {
                                                                              dialog.cancel();
-                                                                         }else
-                                                                         {
+                                                                         } else {
                                                                              final_text231.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
+                                                                         }
                                                                      }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-        button146 = (Button) findViewById(R.id.button70);
-        final_text46 = (TextView) findViewById(R.id.button70);
-        button146.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button123
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text46.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button147 = (Button) findViewById(R.id.button71);
-        final_text47 = (TextView) findViewById(R.id.button71);
-        button147.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button124
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text47.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button148 = (Button) findViewById(R.id.button72);
-        final_text48 = (TextView) findViewById(R.id.button72);
-        button148.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button114
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text48.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button149 = (Button) findViewById(R.id.button73);
-        final_text49 = (TextView) findViewById(R.id.button73);
-        button149.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button126
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text49.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button150 = (Button) findViewById(R.id.button74);
-        final_text50 = (TextView) findViewById(R.id.button74);
-        button150.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button127
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text50.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button151 = (Button) findViewById(R.id.button75);
-        final_text51 = (TextView) findViewById(R.id.button75);
-        button151.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button128
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text51.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        button201 = (Button) findViewById(R.id.button201);
-        final_text201 = (TextView) findViewById(R.id.button201);
-        button201.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text201.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button202 = (Button) findViewById(R.id.button202);
-        final_text202 = (TextView) findViewById(R.id.button202);
-        button202.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text202.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button203 = (Button) findViewById(R.id.button203);
-        final_text203 = (TextView) findViewById(R.id.button203);
-        button203.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text203.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button204 = (Button) findViewById(R.id.button204);
-        final_text204 = (TextView) findViewById(R.id.button204);
-        button204.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text204.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button205 = (Button) findViewById(R.id.button205);
-        final_text205 = (TextView) findViewById(R.id.button205);
-        button205.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text205.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button206 = (Button) findViewById(R.id.button206);
-        final_text206 = (TextView) findViewById(R.id.button206);
-        button206.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text206.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button207 = (Button) findViewById(R.id.button207);
-        final_text207 = (TextView) findViewById(R.id.button207);
-        button207.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text207.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button208 = (Button) findViewById(R.id.button208);
-        final_text208 = (TextView) findViewById(R.id.button208);
-        button208.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text208.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button209 = (Button) findViewById(R.id.button209);
-        final_text209 = (TextView) findViewById(R.id.button209);
-        button209.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text209.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button210 = (Button) findViewById(R.id.button210);
-        final_text210 = (TextView) findViewById(R.id.button210);
-        button210.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text210.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-
-        button211 = (Button) findViewById(R.id.button211);
-        final_text211 = (TextView) findViewById(R.id.button211);
-        button211.setOnLongClickListener(new View.OnLongClickListener() {
-
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text211.setText(userInput.getText());
-                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2921,27 +2036,6 @@ public class Balka2_Activity extends AppCompatActivity {
 
 
 
-
-
-
-
-        //endregion
-
-
-
-
-        //endregion
-
-
-
-
-//endregion
-
-
-        // &&&&&&&
-
-//region секция - для копирования
-        //endregion - для копирования
 
         //region секция btn1-btn11
         btn1 = (Button) findViewById(R.id.button10);
@@ -2987,12 +2081,7 @@ public class Balka2_Activity extends AppCompatActivity {
         btn44 = (Button) findViewById(R.id.button65);
         btn45 = (Button) findViewById(R.id.button66);
 
-        btn46 = (Button) findViewById(R.id.button70);
-        btn47 = (Button) findViewById(R.id.button71);
-        btn48 = (Button) findViewById(R.id.button72);
-        btn49 = (Button) findViewById(R.id.button73);
-        btn50 = (Button) findViewById(R.id.button74);
-        btn51 = (Button) findViewById(R.id.button75);
+
         //endregion
 
         //region секция btn52-btn82
@@ -3044,7 +2133,6 @@ public class Balka2_Activity extends AppCompatActivity {
         btn209 = (Button) findViewById(R.id.button209);
         btn210 = (Button) findViewById(R.id.button210);
         btn211 = (Button) findViewById(R.id.button211);
-
         btn212 = (Button) findViewById(R.id.button212);
         btn213 = (Button) findViewById(R.id.button213);
         btn214 = (Button) findViewById(R.id.button214);
@@ -3061,8 +2149,8 @@ public class Balka2_Activity extends AppCompatActivity {
         btn225 = (Button) findViewById(R.id.button225);
         //btn226 = (Button) findViewById(R.id.button226);
         //btn227 = (Button) findViewById(R.id.button227);
-       // btn228 = (Button) findViewById(R.id.button228);
-      //  btn229 = (Button) findViewById(R.id.button229);
+        // btn228 = (Button) findViewById(R.id.button228);
+        //  btn229 = (Button) findViewById(R.id.button229);
         btn230 = (Button) findViewById(R.id.button230);
         btn231 = (Button) findViewById(R.id.button231);
         btn232 = (Button) findViewById(R.id.button232);
@@ -3084,6 +2172,8 @@ public class Balka2_Activity extends AppCompatActivity {
         btn248 = (Button) findViewById(R.id.button248);
 
 
+
+
         //endregion
 
 
@@ -3096,7 +2186,7 @@ public class Balka2_Activity extends AppCompatActivity {
         wir_6 = (TextView) findViewById(R.id.textViewWir6);
         wir_7 = (TextView) findViewById(R.id.textViewWir7);
         wir_8 = (TextView) findViewById(R.id.textViewWir8);
-       // wir_9 = (TextView) findViewById(R.id.textViewWir9);
+        // wir_9 = (TextView) findViewById(R.id.textViewWir9);
         wir_10 = (TextView) findViewById(R.id.textViewWir10);
         wir_11 = (TextView) findViewById(R.id.textViewWir11);
         wir_12 = (TextView) findViewById(R.id.textViewWir12);
@@ -3105,8 +2195,7 @@ public class Balka2_Activity extends AppCompatActivity {
         wir_15 = (TextView) findViewById(R.id.textViewWir15);
         wir_16 = (TextView) findViewById(R.id.textViewWir16);
         wir_17 = (TextView) findViewById(R.id.textViewWir17);
-
-
+        wir_81 = (TextView) findViewById(R.id.textViewWir81);
 
 
         //endregion
@@ -3141,19 +2230,12 @@ public class Balka2_Activity extends AppCompatActivity {
                     final TextView bill32 = (TextView) findViewById(R.id.button11);
                     final TextView bill33 = (TextView) findViewById(R.id.button12);
 
-                    final TextView bill46 = (TextView) findViewById(R.id.button70);
-                    final TextView bill47 = (TextView) findViewById(R.id.button71);
-                    final TextView bill48 = (TextView) findViewById(R.id.button72);
-                    final TextView bill49 = (TextView) findViewById(R.id.button73);
-                    final TextView bill50 = (TextView) findViewById(R.id.button74);
-                    final TextView bill51 = (TextView) findViewById(R.id.button75);
-
 
 
                     final TextView bill79 = (TextView) findViewById(R.id.button26);
                     final TextView bill80 = (TextView) findViewById(R.id.button33);
                     final TextView bill81 = (TextView) findViewById(R.id.button34);
-                    final TextView bill82 = (TextView) findViewById(R.id.button35);
+                    //final TextView bill82 = (TextView) findViewById(R.id.button35);
 
 
                     final TextView bill201 = (TextView) findViewById(R.id.button201);
@@ -3169,7 +2251,6 @@ public class Balka2_Activity extends AppCompatActivity {
                     final TextView bill211 = (TextView) findViewById(R.id.button211);
 
 
-
                     final TextView bill230 = (TextView) findViewById(R.id.button230);
                     final TextView bill231 = (TextView) findViewById(R.id.button231);
                     final TextView bill232 = (TextView) findViewById(R.id.button232);
@@ -3180,7 +2261,6 @@ public class Balka2_Activity extends AppCompatActivity {
                     final TextView bill236 = (TextView) findViewById(R.id.button236);
 
 
-
                     final TextView bill243 = (TextView) findViewById(R.id.button243);
                     final TextView bill244 = (TextView) findViewById(R.id.button244);
                     final TextView bill245 = (TextView) findViewById(R.id.button245);
@@ -3188,16 +2268,20 @@ public class Balka2_Activity extends AppCompatActivity {
                     final TextView bill247 = (TextView) findViewById(R.id.button247);
                     final TextView bill248 = (TextView) findViewById(R.id.button248);
 
+
+
                     final TextView bill301 = (TextView) findViewById(R.id.textView201);
                     final TextView bill302 = (TextView) findViewById(R.id.textView301);
                     final TextView bill303 = (TextView) findViewById(R.id.textView401);
                     final TextView bill304 = (TextView) findViewById(R.id.textView4);
 
-                    final TextView bill12 = (TextView) findViewById(R.id.textView142);
-                    final TextView bill13 = (TextView) findViewById(R.id.textView143);
+                    final TextView bill142 = (TextView) findViewById(R.id.textView142);
+                    final TextView bill143 = (TextView) findViewById(R.id.textView143);
                     final TextView bill242 = (TextView) findViewById(R.id.textView242);
                     final TextView bill84 = (TextView) findViewById(R.id.textView20);
                     final TextView bill86 = (TextView) findViewById(R.id.textView24);
+
+
 
 
                     etText83 = (TextView) findViewById(R.id.textView14);
@@ -3212,64 +2296,32 @@ public class Balka2_Activity extends AppCompatActivity {
 
 
 
-                                            bill13.setText(0.0 + "");
-
-                                            bill23.setText(2.5 + "");
-                                            bill24.setText(3 + "");
-                                            bill25.setText(3.5 + "");
-                                            bill26.setText(3.85 + "");
-                                            bill27.setText(4 + "");
-                                            bill28.setText(4.5 + "");
-                                            bill29.setText(4.90 + "");
-                                            bill30.setText(5 + "");
-                                            bill31.setText(5.58 + "");
-                                            bill32.setText(5.90 + "");
-                                            bill33.setText(6 + "");
-
-                                            bill201.setText(110 + "");
-                                            bill202.setText(120 + "");
-                                            bill203.setText(150 + "");
-                                            bill204.setText(200 + "");
-                                            bill205.setText(250 + "");
-                                            bill206.setText(300 + "");
-                                            bill207.setText(355 + "");
-                                            bill208.setText(400 + "");
-                                            bill209.setText(410 + "");
-                                            bill210.setText(420 + "");
-                                            bill211.setText(450 + "");
-
-                    bill46.setText(0 + "");
-                    bill47.setText(100 + "");
-                    bill48.setText(110 + "");
-                    bill49.setText(115 + "");
-                    bill50.setText(130 + "");
-                    bill51.setText(140 + "");
-
-
-                                            bill79.setText(0.5 + "");
-                                            bill80.setText(0.6 + "");
-                                            bill81.setText(1 + "");
-                                            bill82.setText(1.2 + "");
-
-                                            bill12.setText(0.0 + "");
-
-                                            //     bill84.setText(0.0 + "");
-                                            //      bill86.setText(0.0 + "");
 
 
 
+                                            bill23.setText(2500 + "");
+                                            bill24.setText(2600 + "");
+                                            bill25.setText(2700 + "");
+                                            bill26.setText(2800 + "");
+                                            bill27.setText(2900 + "");
+                                            bill28.setText(3000 + "");
+                                            bill29.setText(3100 + "");
+                                            bill30.setText(3200 + "");
+                                            bill31.setText(3300 + "");
+                                            bill32.setText(3400 + "");
+                                            bill33.setText(3500 + "");
 
+                    bill79.setText(3500 + "");
+                    bill80.setText(3800 + "");
+                    bill81.setText(4000 + "");
+                                            //bill82.setText(4 + "");
 
                                             bill242.setText(0.0 + "");
+                                            bill142.setText(0.0 + "");
+                                            bill143.setText(0.0 + "");
 
-                                            bill230.setText(1.5 + "");
-                                            bill231.setText(2.0 + "");
-
-
-
-                                            // bill230.setText("1"+"/"+"2");
-                                            //bill231.setText("1"+"/"+"3");
-                                            // bill232.setText("1"+"/"+"4");
+                                            bill230.setText(165 + "");
+                                            bill231.setText(170 + "");
 
 
 
@@ -3433,14 +2485,13 @@ public class Balka2_Activity extends AppCompatActivity {
                     //endregion
 
 
-
                     //region секция 3.1
                     case R.id.button97:
                         TextView textView023 = (TextView) findViewById(R.id.textViewWir2);
                         aetText23 = (Button) findViewById(R.id.button97);
                         float num023 = Float.parseFloat(aetText23.getText().toString());
                         float w23 = (float) num023;
-                        textView023.setText(String.format(Locale.US, "%.2f", w23) + "");
+                        textView023.setText(String.format(Locale.US, "%.0f", w23) + "");
                         Animation anim12 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button12 = (Button) findViewById(R.id.button97);
@@ -3452,7 +2503,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText24 = (Button) findViewById(R.id.button98);
                         float num024 = Float.parseFloat(aetText24.getText().toString());
                         float w24 = (float) num024;
-                        textView024.setText(String.format(Locale.US, "%.2f", w24) + "");
+                        textView024.setText(String.format(Locale.US, "%.0f", w24) + "");
                         Animation anim13 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button13 = (Button) findViewById(R.id.button98);
@@ -3464,7 +2515,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText25 = (Button) findViewById(R.id.button99);
                         float num025 = Float.parseFloat(aetText25.getText().toString());
                         float w25 = (float) num025;
-                        textView025.setText(String.format(Locale.US, "%.2f", w25) + "");
+                        textView025.setText(String.format(Locale.US, "%.0f", w25) + "");
                         Animation anim14 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button14 = (Button) findViewById(R.id.button99);
@@ -3477,7 +2528,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText26 = (Button) findViewById(R.id.button100);
                         float num026 = Float.parseFloat(aetText26.getText().toString());
                         float w26 = (float) num026;
-                        textView026.setText(String.format(Locale.US, "%.2f", w26) + "");
+                        textView026.setText(String.format(Locale.US, "%.0f", w26) + "");
 
                         Animation anim15 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -3491,7 +2542,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText27 = (Button) findViewById(R.id.button101);
                         float num027 = Float.parseFloat(aetText27.getText().toString());
                         float w27 = (float) num027;
-                        textView027.setText(String.format(Locale.US, "%.2f", w27) + "");
+                        textView027.setText(String.format(Locale.US, "%.0f", w27) + "");
 
                         Animation anim16 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -3505,7 +2556,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText28 = (Button) findViewById(R.id.button102);
                         float num028 = Float.parseFloat(aetText28.getText().toString());
                         float w28 = (float) num028;
-                        textView028.setText(String.format(Locale.US, "%.2f", w28) + "");
+                        textView028.setText(String.format(Locale.US, "%.0f", w28) + "");
 
                         Animation anim17 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -3519,7 +2570,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText29 = (Button) findViewById(R.id.button103);
                         float num029 = Float.parseFloat(aetText29.getText().toString());
                         float w29 = (float) num029;
-                        textView029.setText(String.format(Locale.US, "%.2f", w29) + "");
+                        textView029.setText(String.format(Locale.US, "%.0f", w29) + "");
 
                         Animation anim18 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -3533,7 +2584,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText30 = (Button) findViewById(R.id.button104);
                         float num030 = Float.parseFloat(aetText30.getText().toString());
                         float w30 = (float) num030;
-                        textView030.setText(String.format(Locale.US, "%.2f", w30) + "");
+                        textView030.setText(String.format(Locale.US, "%.0f", w30) + "");
                         Animation anim19 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button19 = (Button) findViewById(R.id.button104);
@@ -3546,7 +2597,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText31 = (Button) findViewById(R.id.button105);
                         float num031 = Float.parseFloat(aetText31.getText().toString());
                         float w31 = (float) num031;
-                        textView031.setText(String.format(Locale.US, "%.2f", w31) + "");
+                        textView031.setText(String.format(Locale.US, "%.0f", w31) + "");
                         Animation anim20 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button20 = (Button) findViewById(R.id.button105);
@@ -3559,7 +2610,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText32 = (Button) findViewById(R.id.button11);
                         float num032 = Float.parseFloat(aetText32.getText().toString());
                         float w32 = (float) num032;
-                        textView032.setText(String.format(Locale.US, "%.2f", w32) + "");
+                        textView032.setText(String.format(Locale.US, "%.0f", w32) + "");
 
                         Animation anim21 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -3572,7 +2623,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText33 = (Button) findViewById(R.id.button12);
                         float num033 = Float.parseFloat(aetText33.getText().toString());
                         float w33 = (float) num033;
-                        textView033.setText(String.format(Locale.US, "%.2f", w33) + "");
+                        textView033.setText(String.format(Locale.US, "%.0f", w33) + "");
 
                         Animation anim22 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -3636,8 +2687,6 @@ public class Balka2_Activity extends AppCompatActivity {
                         textView039.setText(String.format(Locale.US, "%.2f", w39) + "");
                         break;
                         */
-
-
 
 
                     //endregion
@@ -3732,7 +2781,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText46 = (Button) findViewById(R.id.button70);
                         float num046 = Float.parseFloat(aetText46.getText().toString());
                         float w46 = (float) num046;
-                        textView046.setText(String.format(Locale.US, "%.0f", w46) + "");
+                        textView046.setText(String.format(Locale.US, "%.2f", w46) + "");
 
                         Animation anim29 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -3745,7 +2794,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText47 = (Button) findViewById(R.id.button71);
                         float num047 = Float.parseFloat(aetText47.getText().toString());
                         float w47 = (float) num047;
-                        textView047.setText(String.format(Locale.US, "%.0f", w47) + "");
+                        textView047.setText(String.format(Locale.US, "%.2f", w47) + "");
 
                         Animation anim30 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -3758,7 +2807,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText48 = (Button) findViewById(R.id.button72);
                         float num048 = Float.parseFloat(aetText48.getText().toString());
                         float w48 = (float) num048;
-                        textView048.setText(String.format(Locale.US, "%.0f", w48) + "");
+                        textView048.setText(String.format(Locale.US, "%.2f", w48) + "");
 
                         Animation anim31 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -3772,7 +2821,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText49 = (Button) findViewById(R.id.button73);
                         float num049 = Float.parseFloat(aetText49.getText().toString());
                         float w49 = (float) num049;
-                        textView049.setText(String.format(Locale.US, "%.0f", w49) + "");
+                        textView049.setText(String.format(Locale.US, "%.2f", w49) + "");
 
                         Animation anim32 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -3786,7 +2835,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText50 = (Button) findViewById(R.id.button74);
                         float num050 = Float.parseFloat(aetText50.getText().toString());
                         float w50 = (float) num050;
-                        textView050.setText(String.format(Locale.US, "%.0f", w50) + "");
+                        textView050.setText(String.format(Locale.US, "%.2f", w50) + "");
 
                         Animation anim33 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -3800,7 +2849,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText51 = (Button) findViewById(R.id.button75);
                         float num051 = Float.parseFloat(aetText51.getText().toString());
                         float w51 = (float) num051;
-                        textView051.setText(String.format(Locale.US, "%.0f", w51) + "");
+                        textView051.setText(String.format(Locale.US, "%.2f", w51) + "");
 
                         Animation anim34 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -4058,7 +3107,6 @@ public class Balka2_Activity extends AppCompatActivity {
                         break;
 
 
-
                     //endregion
 
                     //region секция 11.1
@@ -4130,7 +3178,6 @@ public class Balka2_Activity extends AppCompatActivity {
                         break;*/
 
 
-
                     //endregion
 
                     //region секция button 12.1 - 26. 33. 34. 35.
@@ -4139,7 +3186,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText79 = (Button) findViewById(R.id.button26);
                         float num079 = Float.parseFloat(aetText79.getText().toString());
                         float w79 = (float) num079;
-                        textView079.setText(String.format(Locale.US, "%.2f", w79) + "");
+                        textView079.setText(String.format(Locale.US, "%.0f", w79) + "");
 
                         Animation anim55 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -4153,7 +3200,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText80 = (Button) findViewById(R.id.button33);
                         float num080 = Float.parseFloat(aetText80.getText().toString());
                         float w80 = (float) num080;
-                        textView080.setText(String.format(Locale.US, "%.2f", w80) + "");
+                        textView080.setText(String.format(Locale.US, "%.0f", w80) + "");
 
                         Animation anim56 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -4166,7 +3213,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText81 = (Button) findViewById(R.id.button34);
                         float num081 = Float.parseFloat(aetText81.getText().toString());
                         float w81 = (float) num081;
-                        textView081.setText(String.format(Locale.US, "%.2f", w81) + "");
+                        textView081.setText(String.format(Locale.US, "%.0f", w81) + "");
 
                         Animation anim57 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -4174,28 +3221,13 @@ public class Balka2_Activity extends AppCompatActivity {
                         button57.startAnimation(anim57);
                         break;
 
-                    case R.id.button35:
-                        TextView textView082 = (TextView) findViewById(R.id.textViewWir8);
-                        aetText82 = (Button) findViewById(R.id.button35);
-                        float num082 = Float.parseFloat(aetText82.getText().toString());
-                        float w82 = (float) num082;
-                        textView082.setText(String.format(Locale.US, "%.2f", w82) + "");
-                        //imageView.setImageResource(R.drawable.rad8);
-
-                        Animation anim58 = AnimationUtils.loadAnimation(
-                                getApplicationContext(), R.anim.sms_anim);
-                        final Button button58 = (Button) findViewById(R.id.button35);
-                        button58.startAnimation(anim58);
-                        break;
-
-
 
                     case R.id.button201:
                         TextView textView201 = (TextView) findViewById(R.id.textViewWir3);
                         aetText201 = (Button) findViewById(R.id.button201);
                         float num201 = Float.parseFloat(aetText201.getText().toString());
                         float w201 = (float) num201;
-                        textView201.setText(String.format(Locale.US, "%.0f", w201) + "");
+                        textView201.setText(String.format(Locale.US, "%.2f", w201) + "");
                         Animation anim201 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button201 = (Button) findViewById(R.id.button201);
@@ -4207,7 +3239,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText202 = (Button) findViewById(R.id.button202);
                         float num202 = Float.parseFloat(aetText202.getText().toString());
                         float w202 = (float) num202;
-                        textView202.setText(String.format(Locale.US, "%.0f", w202) + "");
+                        textView202.setText(String.format(Locale.US, "%.2f", w202) + "");
                         Animation anim202 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button202 = (Button) findViewById(R.id.button202);
@@ -4219,7 +3251,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText203 = (Button) findViewById(R.id.button203);
                         float num203 = Float.parseFloat(aetText203.getText().toString());
                         float w203 = (float) num203;
-                        textView203.setText(String.format(Locale.US, "%.0f", w203) + "");
+                        textView203.setText(String.format(Locale.US, "%.2f", w203) + "");
                         Animation anim203 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button203 = (Button) findViewById(R.id.button203);
@@ -4231,7 +3263,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText204 = (Button) findViewById(R.id.button204);
                         float num204 = Float.parseFloat(aetText204.getText().toString());
                         float w204 = (float) num204;
-                        textView204.setText(String.format(Locale.US, "%.0f", w204) + "");
+                        textView204.setText(String.format(Locale.US, "%.2f", w204) + "");
                         Animation anim204 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button204 = (Button) findViewById(R.id.button204);
@@ -4243,7 +3275,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText205 = (Button) findViewById(R.id.button205);
                         float num205 = Float.parseFloat(aetText205.getText().toString());
                         float w205 = (float) num205;
-                        textView205.setText(String.format(Locale.US, "%.0f", w205) + "");
+                        textView205.setText(String.format(Locale.US, "%.2f", w205) + "");
                         Animation anim205 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button205 = (Button) findViewById(R.id.button205);
@@ -4255,7 +3287,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText206 = (Button) findViewById(R.id.button206);
                         float num206 = Float.parseFloat(aetText206.getText().toString());
                         float w206 = (float) num206;
-                        textView206.setText(String.format(Locale.US, "%.0f", w206) + "");
+                        textView206.setText(String.format(Locale.US, "%.2f", w206) + "");
                         Animation anim206 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button206 = (Button) findViewById(R.id.button206);
@@ -4267,7 +3299,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText207 = (Button) findViewById(R.id.button207);
                         float num207 = Float.parseFloat(aetText207.getText().toString());
                         float w207 = (float) num207;
-                        textView207.setText(String.format(Locale.US, "%.0f", w207) + "");
+                        textView207.setText(String.format(Locale.US, "%.2f", w207) + "");
                         Animation anim207 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button207 = (Button) findViewById(R.id.button207);
@@ -4279,7 +3311,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText208 = (Button) findViewById(R.id.button208);
                         float num208 = Float.parseFloat(aetText208.getText().toString());
                         float w208 = (float) num208;
-                        textView208.setText(String.format(Locale.US, "%.0f", w208) + "");
+                        textView208.setText(String.format(Locale.US, "%.2f", w208) + "");
                         Animation anim208 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button208 = (Button) findViewById(R.id.button208);
@@ -4291,7 +3323,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText209 = (Button) findViewById(R.id.button209);
                         float num209 = Float.parseFloat(aetText209.getText().toString());
                         float w209 = (float) num209;
-                        textView209.setText(String.format(Locale.US, "%.0f", w209) + "");
+                        textView209.setText(String.format(Locale.US, "%.2f", w209) + "");
                         Animation anim209 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button209 = (Button) findViewById(R.id.button209);
@@ -4303,7 +3335,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText210 = (Button) findViewById(R.id.button210);
                         float num210 = Float.parseFloat(aetText210.getText().toString());
                         float w210 = (float) num210;
-                        textView210.setText(String.format(Locale.US, "%.0f", w210) + "");
+                        textView210.setText(String.format(Locale.US, "%.2f", w210) + "");
                         Animation anim210 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button210 = (Button) findViewById(R.id.button210);
@@ -4315,7 +3347,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText211 = (Button) findViewById(R.id.button211);
                         float num211 = Float.parseFloat(aetText211.getText().toString());
                         float w211 = (float) num211;
-                        textView211.setText(String.format(Locale.US, "%.0f", w211) + "");
+                        textView211.setText(String.format(Locale.US, "%.2f", w211) + "");
                         Animation anim211 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button211 = (Button) findViewById(R.id.button211);
@@ -4557,7 +3589,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText230 = (Button) findViewById(R.id.button230);
                         float num230 = Float.parseFloat(aetText230.getText().toString());
                         float w230 = (float) num230;
-                        textView230.setText(String.format(Locale.US, "%.2f", w230) + "");
+                        textView230.setText(String.format(Locale.US, "%.0f", w230) + "");
                         Animation anim230 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button230 = (Button) findViewById(R.id.button230);
@@ -4570,7 +3602,7 @@ public class Balka2_Activity extends AppCompatActivity {
                         aetText231 = (Button) findViewById(R.id.button231);
                         float num231 = Float.parseFloat(aetText231.getText().toString());
                         float w231 = (float) num231;
-                        textView231.setText(String.format(Locale.US, "%.2f",w231 ) + "");
+                        textView231.setText(String.format(Locale.US, "%.0f", w231) + "");
                         Animation anim231 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
                         final Button button231 = (Button) findViewById(R.id.button231);
@@ -4579,12 +3611,11 @@ public class Balka2_Activity extends AppCompatActivity {
                         break;
 
 
-
                     case R.id.button232:
                         TextView textView232 = (TextView) findViewById(R.id.textViewWir10);
                         aetText232 = (Button) findViewById(R.id.button232);
                         //float num232 = Float.parseFloat(aetText232.getText().toString());
-                       // float w232 = (float) num232;
+                        // float w232 = (float) num232;
                         textView232.setText(String.format(Locale.US, "%.2f", 0.25) + "");
                         Animation anim232 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -4796,14 +3827,44 @@ public class Balka2_Activity extends AppCompatActivity {
                         break;
 
 
+                    case R.id.button501:
+                        TextView textView501 = (TextView) findViewById(R.id.textViewWir81);
+                        aetText501 = (Button) findViewById(R.id.button501);
+                        float num501 = Float.parseFloat(aetText501.getText().toString());
+                        float w501 = (float) num501;
+                        textView501.setText(String.format(Locale.US, "%.1f", w501) + "");
+                        Animation anim501 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button501 = (Button) findViewById(R.id.button501);
+                        button501.startAnimation(anim501);
+                        break;
 
+                    case R.id.button502:
+                        TextView textView502 = (TextView) findViewById(R.id.textViewWir81);
+                        aetText502 = (Button) findViewById(R.id.button502);
+                        float num502 = Float.parseFloat(aetText502.getText().toString());
+                        float w502 = (float) num502;
+                        textView502.setText(String.format(Locale.US, "%.1f", w502) + "");
+                        Animation anim502 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button502 = (Button) findViewById(R.id.button502);
+                        button502.startAnimation(anim502);
+                        break;
 
-
-
+                    case R.id.button503:
+                        TextView textView503 = (TextView) findViewById(R.id.textViewWir81);
+                        aetText503 = (Button) findViewById(R.id.button503);
+                        float num503 = Float.parseFloat(aetText503.getText().toString());
+                        float w503 = (float) num503;
+                        textView503.setText(String.format(Locale.US, "%.1f", w503) + "");
+                        Animation anim503 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button503 = (Button) findViewById(R.id.button503);
+                        button503.startAnimation(anim503);
+                        break;
 
 
                     //endregion
-
 
 
                     //&&&&&&
@@ -4815,7 +3876,6 @@ public class Balka2_Activity extends AppCompatActivity {
 
         //region секция (btn1.setOnClickListener(btnClk);)
 //        btn1.setOnClickListener(btnClk);
-
 
 
         btn23.setOnClickListener(btnClk);
@@ -4830,39 +3890,17 @@ public class Balka2_Activity extends AppCompatActivity {
         btn32.setOnClickListener(btnClk);
         btn33.setOnClickListener(btnClk);
 
-        btn46.setOnClickListener(btnClk);
-        btn47.setOnClickListener(btnClk);
-        btn48.setOnClickListener(btnClk);
-        btn49.setOnClickListener(btnClk);
-        btn50.setOnClickListener(btnClk);
-        btn51.setOnClickListener(btnClk);
 
 
 
         btn79.setOnClickListener(btnClk);
         btn80.setOnClickListener(btnClk);
         btn81.setOnClickListener(btnClk);
-        btn82.setOnClickListener(btnClk);
-
-
-        btn201.setOnClickListener(btnClk);
-        btn202.setOnClickListener(btnClk);
-        btn203.setOnClickListener(btnClk);
-        btn204.setOnClickListener(btnClk);
-        btn205.setOnClickListener(btnClk);
-        btn206.setOnClickListener(btnClk);
-        btn207.setOnClickListener(btnClk);
-        btn208.setOnClickListener(btnClk);
-        btn209.setOnClickListener(btnClk);
-        btn210.setOnClickListener(btnClk);
-        btn211.setOnClickListener(btnClk);
-
-
+//        btn82.setOnClickListener(btnClk);
 
 
         btn230.setOnClickListener(btnClk);
         btn231.setOnClickListener(btnClk);
-        //btn232.setOnClickListener(btnClk);
 
 
 
@@ -4871,114 +3909,59 @@ public class Balka2_Activity extends AppCompatActivity {
         // setSupportActionBar(toolbar);
 
 
-
-
-
         FloatingActionButton fab2 = (FloatingActionButton) findViewById(R.id.fab);
         fab2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+                                    @Override
+                                    public void onClick(View view) {
 
-                long mills = 42L;
-                Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-                vibrator.vibrate(mills);
+                                        long mills = 42L;
+                                        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                                        vibrator.vibrate(mills);
 
-                Animation anim1 = AnimationUtils.loadAnimation(
-                        getApplicationContext(), R.anim.sms_anim2);
-                final FloatingActionButton button1111 = (FloatingActionButton) findViewById(R.id.fab);
-                button1111.startAnimation(anim1);
+                                        Animation anim1 = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.sms_anim2);
+                                        final FloatingActionButton button1111 = (FloatingActionButton) findViewById(R.id.fab);
+                                        button1111.startAnimation(anim1);
 
-                TextView aetText1;
-                TextView aetText2;
-                TextView aetText3;
-                TextView aetText4;
-                TextView aetText5;
-                TextView aetText6;
+                                        TextView aetText2;
+                                        TextView aetText8;
+                                        TextView aetText10;
 
-                TextView aetText7;
-                TextView aetText8;
-                TextView aetText9;
-                TextView aetText10;
-                TextView aetText11;
-                TextView aetText12;
-                TextView aetText13;
-                TextView aetText14;
-                TextView aetText15;
-                TextView aetText16;
-                TextView aetText17;
+                                        aetText2 = (TextView) findViewById(R.id.textViewWir2);
+                                        aetText8 = (TextView) findViewById(R.id.textViewWir8);
+                                        aetText10 = (TextView) findViewById(R.id.textViewWir10);
+
+                                        float num002 = Float.parseFloat(aetText2.getText().toString());
+                                        float num008 = Float.parseFloat(aetText8.getText().toString());
+                                        float num010 = Float.parseFloat(aetText10.getText().toString());
+                                        float S = (num002);
+
+                                        float h = num002; // h – высота проема (мм)
+                                        float l = num008; // l – длина проема (мм)
+                                        float hpg = num010; // hpg – желаимая высота шага (мм)
+                                        float s = h/hpg; // s – количество ступеней (шт.)
+
+                                        float w = (float) Math.ceil(s); // w – число ступеней (шт.)
+                                        float wis = l/w; // wis – глубина ступени (мм)
+                                        float hp2 = h/w; // hp – высота подступенника (мм)
+
+                                        TextView textView142 = (TextView) findViewById(R.id.textView142);
+                                        TextView textView143 = (TextView) findViewById(R.id.textView143);
+                                        TextView textView242 = (TextView) findViewById(R.id.textView242);
+
+                                        textView142.setText(String.format(Locale.US, "%.0f", w) + "");
+                                        textView143.setText(String.format(Locale.US, "%.0f", wis) + "");
+                                        textView242.setText(String.format(Locale.US, "%.0f", hp2) + "");
 
 
 
-                aetText2 = (TextView) findViewById(R.id.textViewWir2);
-                aetText3 = (TextView) findViewById(R.id.textViewWir3);
-                aetText8 = (TextView) findViewById(R.id.textViewWir8);
-                aetText10 = (TextView) findViewById(R.id.textViewWir10);
-                aetText15 = (TextView) findViewById(R.id.textViewWir15);
 
-                float num002 = Float.parseFloat(aetText2.getText().toString());
-                float num003 = Float.parseFloat(aetText3.getText().toString());
-                float num008 = Float.parseFloat(aetText8.getText().toString());
-                float num010 = Float.parseFloat(aetText10.getText().toString());
-                float num015 = Float.parseFloat(aetText15.getText().toString());
 
-                //q = qкв х B
-                // q – величина нагрузки на перекрытие (кгс/м)
-                //b – «грузовая полоса» или шаг наших балок перекрытия, в среднем это 0,6м.
-                //qкв – величина квадратичной нагрузки на перекрытие (кгс/м2) собирается
-                //путем сложения всех нагрузок на перекрытие:
+                                          
 
-                float qkv = (float) num003;
-                float b = (float) num008;
-                float q = qkv*b;
+                                        }
+                                    }
 
-                //System.out.println("нагрузка на перекрытие "+ q +"(кгс/м)");
-                //m = (q x L2) / 8
-                //m – величина внешнего момента
-                //q – величина нагрузки на перекрытие (кгс/м)
-                //L – величина пролета перекрытия (м)
-
-                float l = num002;
-                float m = (q * (l * l)) / 8;
-
-                //System.out.println("величина внешнего момента "+ m +"(кгс*м)");
-                //w1 – величина расчетного момента сопротивления
-                //m – величина внешнего момента
-                //r_sop – величина расчетного сопротивления (для дерева это 130 кгс/см2)
-
-                float r_sop = num015;
-                float w1 = (m * 100) / r_sop;
-
-                //System.out.println("величина расчетного момента сопротивления "+ w1 +"(см3)");
-                //w2 – величина момента сопротивления нашей балки перекрытия
-                //t – толщина балки в см (размер всегда кратный 5см)
-                //h – высота балки в см (размер всегда кратный 5см)
-                //k – соотношение висоты к ширине балки
-                //float h = (float) 14.81;
-                //float t = (float) (h/1.5);
-                //float w2 = (t * (h*h)) / 6;
-                //System.out.println("момент сопротивления нашей балки  "+ w2 +"(см3)");
-                //System.out.println("h = "+ h +"(см)");
-                //System.out.println("t = "+ t +"(см)");
-
-                float k = num010;
-                float hf = (w1*6*k);
-                double h = (Math.pow(hf,1./3));;
-                float t = (float) (h/k);
-
-                //float w2 = (float) ((t * (h*h)) / 6);
-                //System.out.println("момент сопротивления нашей балки  "+ w2 +"(см3)");
-                //System.out.println("h = "+ h +"(см)");
-                //System.out.println("t = "+ t +"(см)");
-
-                                TextView textView143 = (TextView) findViewById(R.id.textView143);
-                                TextView textView142 = (TextView) findViewById(R.id.textView142);
-                                TextView textView242 = (TextView) findViewById(R.id.textView242);
-
-                                textView143.setText(String.format(Locale.US, "%.1f", t) + "");
-                                textView242.setText(String.format(Locale.US, "%.0f", q) + "");
-                                textView142.setText(String.format(Locale.US, "%.1f", h) + "");
-                            }
-                        });
+        );
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnLongClickListener(new View.OnLongClickListener() {
@@ -4992,18 +3975,19 @@ public class Balka2_Activity extends AppCompatActivity {
                 final TextView bill86 = (TextView) findViewById(R.id.textView24);
 
 
+
                 bill82.setText(00.00 + "");
                 bill83.setText(00.00 + "");
-               // bill84.setText(00.00 + "");
+                // bill84.setText(00.00 + "");
                 bill85.setText(00.00 + "");
-             //   bill86.setText(00.00 + "");
 
+                //   bill86.setText(00.00 + "");
 
 
                 Toast toast = Toast.makeText(getApplicationContext(),
-                       "Сброс", Toast.LENGTH_SHORT);
+                        "Сброс", Toast.LENGTH_SHORT);
 
-               toast.show();
+                toast.show();
 
                 return true;
             }
@@ -5077,14 +4061,13 @@ public class Balka2_Activity extends AppCompatActivity {
 
 
     //region сохранение данных
-
-
     void saveText12() {
         sPref2 = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref2.edit();
         ed.putString(SAVED_TEXT12, etText12.getText().toString());
         ed.commit();
     }
+
     void loadText12() {
         sPref2 = getPreferences(MODE_PRIVATE);
         String savedText = sPref2.getString(SAVED_TEXT12, "");
@@ -5097,6 +4080,7 @@ public class Balka2_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT13, etText13.getText().toString());
         ed.commit();
     }
+
     void loadText13() {
         sPref2 = getPreferences(MODE_PRIVATE);
         String savedText = sPref2.getString(SAVED_TEXT13, "");
@@ -5139,168 +4123,116 @@ public class Balka2_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT25, etText25.getText().toString());
         ed.commit();
     }
+
     void loadText25() {
         sPref3 = getPreferences(MODE_PRIVATE);
         String savedText = sPref3.getString(SAVED_TEXT25, "");
         etText25.setText(savedText);
     }
+
     void saveText26() {
         sPref3 = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref3.edit();
         ed.putString(SAVED_TEXT26, etText26.getText().toString());
         ed.commit();
     }
+
     void loadText26() {
         sPref3 = getPreferences(MODE_PRIVATE);
         String savedText = sPref3.getString(SAVED_TEXT26, "");
         etText26.setText(savedText);
     }
+
     void saveText27() {
         sPref3 = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref3.edit();
         ed.putString(SAVED_TEXT27, etText27.getText().toString());
         ed.commit();
     }
+
     void loadText27() {
         sPref3 = getPreferences(MODE_PRIVATE);
         String savedText = sPref3.getString(SAVED_TEXT27, "");
         etText27.setText(savedText);
     }
+
     void saveText28() {
         sPref3 = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref3.edit();
         ed.putString(SAVED_TEXT28, etText28.getText().toString());
         ed.commit();
     }
+
     void loadText28() {
         sPref3 = getPreferences(MODE_PRIVATE);
         String savedText = sPref3.getString(SAVED_TEXT28, "");
         etText28.setText(savedText);
     }
+
     void saveText29() {
         sPref3 = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref3.edit();
         ed.putString(SAVED_TEXT29, etText29.getText().toString());
         ed.commit();
     }
+
     void loadText29() {
         sPref3 = getPreferences(MODE_PRIVATE);
         String savedText = sPref3.getString(SAVED_TEXT29, "");
         etText29.setText(savedText);
     }
+
     void saveText30() {
         sPref3 = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref3.edit();
         ed.putString(SAVED_TEXT30, etText30.getText().toString());
         ed.commit();
     }
+
     void loadText30() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT30, "");
         etText30.setText(savedText);
     }
+
     void saveText31() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT31, etText31.getText().toString());
         ed.commit();
     }
+
     void loadText31() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT31, "");
         etText31.setText(savedText);
     }
+
     void saveText32() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT32, etText32.getText().toString());
         ed.commit();
     }
+
     void loadText32() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT32, "");
         etText32.setText(savedText);
     }
+
     void saveText33() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT33, etText33.getText().toString());
         ed.commit();
     }
+
     void loadText33() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT33, "");
         etText33.setText(savedText);
     }
-
-    void saveText46() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT46, etText46.getText().toString());
-        ed.commit();
-    }
-    void loadText46() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT46, "");
-        etText46.setText(savedText);
-    }
-    void saveText47() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT47, etText47.getText().toString());
-        ed.commit();
-    }
-    void loadText47() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT47, "");
-        etText47.setText(savedText);
-    }
-    void saveText48() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT48, etText48.getText().toString());
-        ed.commit();
-    }
-    void loadText48() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT48, "");
-        etText48.setText(savedText);
-    }
-    void saveText49() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT49, etText49.getText().toString());
-        ed.commit();
-    }
-    void loadText49() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT49, "");
-        etText49.setText(savedText);
-    }
-    void saveText50() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT50, etText50.getText().toString());
-        ed.commit();
-    }
-    void loadText50() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT50, "");
-        etText50.setText(savedText);
-    }
-    void saveText51() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT51, etText51.getText().toString());
-        ed.commit();
-    }
-    void loadText51() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT51, "");
-        etText51.setText(savedText);
-    }
-
-
 
 
 
@@ -5311,43 +4243,37 @@ public class Balka2_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT79, etText79.getText().toString());
         ed.commit();
     }
+
     void loadText79() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT79, "");
         etText79.setText(savedText);
     }
+
     void saveText80() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT80, etText80.getText().toString());
         ed.commit();
     }
+
     void loadText80() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT80, "");
         etText80.setText(savedText);
     }
+
     void saveText81() {
         sPref = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT81, etText81.getText().toString());
         ed.commit();
     }
+
     void loadText81() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT81, "");
         etText81.setText(savedText);
-    }
-    void saveText82() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT82, etText82.getText().toString());
-        ed.commit();
-    }
-    void loadText82() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT82, "");
-        etText82.setText(savedText);
     }
 
 
@@ -5357,6 +4283,7 @@ public class Balka2_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT85, etText85.getText().toString());
         ed.commit();
     }
+
     void loadText85() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT85, "");
@@ -5370,6 +4297,7 @@ public class Balka2_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT230, etText230.getText().toString());
         ed.commit();
     }
+
     void loadText230() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT230, "");
@@ -5383,147 +4311,12 @@ public class Balka2_Activity extends AppCompatActivity {
         ed.putString(SAVED_TEXT231, etText231.getText().toString());
         ed.commit();
     }
+
     void loadText231() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT231, "");
         etText231.setText(savedText);
     }
-
-    void saveText201() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT201, etText201.getText().toString());
-        ed.commit();
-    }
-    void loadText201() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT201, "");
-        etText201.setText(savedText);
-    }
-
-    void saveText202() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT202, etText202.getText().toString());
-        ed.commit();
-    }
-    void loadText202() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT202, "");
-        etText202.setText(savedText);
-    }
-
-    void saveText203() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT203, etText203.getText().toString());
-        ed.commit();
-    }
-    void loadText203() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT203, "");
-        etText203.setText(savedText);
-    }
-
-    void saveText204() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT204, etText204.getText().toString());
-        ed.commit();
-    }
-    void loadText204() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT204, "");
-        etText204.setText(savedText);
-    }
-
-    void saveText205() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT205, etText205.getText().toString());
-        ed.commit();
-    }
-    void loadText205() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT205, "");
-        etText205.setText(savedText);
-    }
-
-    void saveText206() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT206, etText206.getText().toString());
-        ed.commit();
-    }
-    void loadText206() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT206, "");
-        etText206.setText(savedText);
-    }
-
-    void saveText207() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT207, etText207.getText().toString());
-        ed.commit();
-    }
-    void loadText207() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT207, "");
-        etText207.setText(savedText);
-    }
-
-    void saveText208() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT208, etText208.getText().toString());
-        ed.commit();
-    }
-    void loadText208() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT208, "");
-        etText208.setText(savedText);
-    }
-
-    void saveText209() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT209, etText209.getText().toString());
-        ed.commit();
-    }
-    void loadText209() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT209, "");
-        etText209.setText(savedText);
-    }
-
-    void saveText210() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT210, etText210.getText().toString());
-        ed.commit();
-    }
-    void loadText210() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT210, "");
-        etText210.setText(savedText);
-    }
-    void saveText211() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT211, etText211.getText().toString());
-        ed.commit();
-    }
-    void loadText211() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT211, "");
-        etText211.setText(savedText);
-    }
-
-
-
-
-
 
 
 
@@ -5547,57 +4340,34 @@ public class Balka2_Activity extends AppCompatActivity {
         saveText32();
         saveText33();
 
-        saveText46();
-        saveText47();
-        saveText48();
-        saveText49();
-        saveText50();
-        saveText51();
 
         saveText79();
         saveText80();
         saveText81();
-        saveText82();
+        //   saveText82();
 
 
         saveText85();
 
 
-        saveText13();
         saveText12();
+        saveText13();
 
         saveText230();
         saveText231();
 
-        saveText201();
-        saveText202();
-        saveText203();
-        saveText204();
-        saveText205();
-        saveText206();
-        saveText207();
-        saveText208();
-        saveText209();
-        saveText210();
-        saveText211();
-
-
-
-
-
-
-       // saveText232();
 
 
 
     }
 
 
-    public void onClick222(View view) {
-        Intent a = new Intent(this,Shpaklevka_S_Activity.class);
+    public void onClick2223(View view) {
+        Intent a = new Intent(this, Kraska_S_2_Activity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
     }
+
     @Override
     public void onBackPressed() {
 
@@ -5607,6 +4377,7 @@ public class Balka2_Activity extends AppCompatActivity {
         startActivity(a);
     }
     //do something on back.
+
     public void onClick_Ca(View view) {
         long mills = 15L;
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
@@ -5645,7 +4416,6 @@ public class Balka2_Activity extends AppCompatActivity {
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
     }
-
     private void requestNewInterstitial() {
 
         AdRequest adRequest = new AdRequest.Builder()
@@ -5685,34 +4455,34 @@ public class Balka2_Activity extends AppCompatActivity {
         {
             Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
         }}
-
-    public void onEmailClick(View v) {
+    /*public void onEmailClick(View v) {
         long mills = 42L;
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(mills);
 
         //TextView r1-результат text1;
 
-        String emailSubject = getString(R.string.balka1);
+        String emailSubject = getString(R.string.kras_kg);
         String na_email = getString(R.string.na_email);
 
         TextView ob_wir = findViewById(R.id.textViewWir2);
-        TextView ob_wir2 = findViewById(R.id.textViewWir3);
-        TextView ob_wir3 = findViewById(R.id.textViewWir8);
+        TextView ob_wir2 = findViewById(R.id.textViewWir8);
+        TextView ob_wir3 = findViewById(R.id.textViewWir81);
         TextView ob_wir4 = findViewById(R.id.textViewWir15);
         TextView ob_wir5 = findViewById(R.id.textViewWir10);
 
 
-        TextView rez_text1 = findViewById(R.id.textView142);
-        TextView rez_text2 = findViewById(R.id.textView143);
-        TextView rez_text3 = findViewById(R.id.textView242);
+        TextView rez_text1 = findViewById(R.id.textView500);
+        TextView rez_text2 = findViewById(R.id.textView700);
+        TextView rez_text3 = findViewById(R.id.textView143);
+        TextView rez_text4 = findViewById(R.id.textView242);
 
 
 
         String rez1 = rez_text1.getText().toString();
         String rez2 = rez_text2.getText().toString();
         String rez3 = rez_text3.getText().toString();
-
+        String rez4 = rez_text4.getText().toString();
 
 
         String ob1 = ob_wir.getText().toString();
@@ -5722,15 +4492,15 @@ public class Balka2_Activity extends AppCompatActivity {
         String ob5 = ob_wir5.getText().toString();
 
 
-        String r1 = getString(R.string.vis_brusa);
-        String r2 = getString(R.string.wir_brusa);
-        String r3 = getString(R.string.nagruzka_kg);
+        String r1 = getString(R.string.s_pov_m2);
+        String r2 = getString(R.string.kraska_banok);
+        String r3 = getString(R.string.cena2);
 
-        String r4 = getString(R.string.dlina_prolota);
-        String r5 = getString(R.string.rast_meg_balkami);
-        String r6 = getString(R.string.nagruzka_kg_m2);
-        String r7 = getString(R.string.koef_sop);
-        String r8 = getString(R.string.koef_soot_storon);
+        String r4 = getString(R.string.s_pov_m2);
+        String r5 = getString(R.string.kol_sloy);
+        String r6 = getString(R.string.kol_kras_v_ban);
+        String r7 = getString(R.string.cen_od_ban);
+        String r8 = getString(R.string.rasxod);
 
         String ida = getString(R.string.isxod_dani);
 
@@ -5740,13 +4510,13 @@ public class Balka2_Activity extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_TEXT, new String(
 
                 (r1)+(rez1)+
-                        "\n"+(r2)+(rez2)+
-                        "\n"+(r3)+(rez3)+
+                        "\n"+(r2)+(rez2)+"/"+(rez3)+
+                        "\n"+(r3)+(rez4)+
                         "\n"+"......."+
                         "\n"+(ida)+
                         "\n"+(r4)+(ob1)+
-                        "\n"+(r5)+(ob3)+
-                        "\n"+(r6)+(ob2)+
+                        "\n"+(r5)+(ob2)+
+                        "\n"+(r6)+(ob3)+
                         "\n"+(r7)+(ob4)+
                         "\n"+(r8)+(ob5)
 
@@ -5755,9 +4525,8 @@ public class Balka2_Activity extends AppCompatActivity {
             intent.setType("plain/text");
         }
         startActivity(Intent.createChooser(intent, na_email));
-    }
+    }*/
 }
-
 
 
 

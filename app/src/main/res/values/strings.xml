@@ -641,7 +641,7 @@
     <string name="balka1">Балка</string>
     <string name="dlina_prolota">Величина пролета L, м:</string>
     <string name="rast_meg_balkami">Шаг укладки балок, м:</string>
-    <string name="nagruzka_kg">Нагрузка, кгс/м:</string>
+    <string name="nagruzka_kg">Нагрузка q, кгс/м:</string>
     <string name="nagruzka_kg_m2">Нагрузка на перекрытие, кгс/м2:</string>
     <string name="koef_sop">Cопротивление балки, кгс/см2:</string>
     <string name="koef_sop2">(для дерева это 130 кгс/см2):</string>
@@ -651,12 +651,37 @@
     <string name="brus1">Расчет балки</string>
     <string name="kubatura_lesa">Кубатура леса</string>
     <string name="sesh_bal">Сечение балки</string>
-    <string name="banner_ad_unit_id1">ca-app-pub-4882550262749386/8854296780</string>
+    <string name="banner_ad_unit_id1">ca-app-pub-4882550262749386/3031760514</string>
 
     <string name="lumex">Люксы</string>
     <string name="samsung">Samsung</string>
     <string name="ostanielni">Остальные устройства</string>
     <string name="sam">* для устройств Samsung</string>
+
+    <string name="lesnica">Лестница</string>
+    <string name="visota_proyama">h – высота проема, мм:</string>
+    <string name="dlina_proyama">l – длина проема, мм:</string>
+    <string name="vis_podstupennika">hw – желаемая высота шага, мм:</string>
+    <string name="shi_stupen">Число ступеней:</string>
+    <string name="glub_stup">Глубина ступени, мм:</string>
+    <string name="vis_waga2">Высота шага, мм:</string>
+    <string name="lesnica_posta">Лестница (простая)</string>
+
+    <string name="title_news">Новости</string>
+    <string name="title_news1">Новости (текст)</string>
+    <string name="title_stati">Статьи</string>
+    <string name="title_we">Поделится</string>
+    <string name="title_activity_st">StActivity</string>
+    <string name="statti">Статьи</string>
+    <string name="title_pro">Pro-версия</string>
+    <string name="title_stati_ino_mat">Инновационные материалы</string>
+    <string name="title_stati_eko">Экостроительство</string>
+    <string name="title_stati_stoim_dom">Все о ремонте</string>
+    <string name="title_stati_ino_stroyka">Инновации в стоительстве</string>
+    <string name="title_stati_energo_efekt">Энергоэффективность</string>
+
+
+
 
 
 </resources>

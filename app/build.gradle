@@ -7,8 +7,8 @@ android {
         applicationId "com.lite.my.masterok"
         minSdkVersion 15
         targetSdkVersion 24
-        versionCode 94
-        versionName "4.21.2"
+        versionCode 97
+        versionName "5.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
@@ -21,6 +21,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-core:10.0.1'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -40,7 +41,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     testCompile 'junit:junit:4.12'
+    compile 'org.jsoup:jsoup:1.11.2'
 }
+
+
+
+
 
 
 

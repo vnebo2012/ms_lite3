@@ -1,14 +1,29 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.lite.my.masterok.KirpishActivity">
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/insrukcia"
-        app:showAsAction="never" />
+        android:id="@+id/infi"
+        android:icon="@drawable/ic_info"
+        android:title="@string/insrukcia" />
+
+    i
+    <item
+        android:id="@+id/market"
+        android:icon="@mipmap/ic_app"
+        android:title="@string/we_app" />
+
+
+
+
+    <item
+        android:id="@+id/napisat"
+        android:icon="@mipmap/ic_pismo"
+        android:title="@string/nap_nam" />
+
+
+
+
 
 
 </menu>

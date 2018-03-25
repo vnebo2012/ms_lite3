@@ -2,12 +2,12 @@
 <resources>
 
     // широкий бар :
-    <color name="colorPrimary2">#5e35b1</color>
+    <color name="colorPrimary2">#2729a0</color>
     // тул бар
-    <color name="colorPrimary">#4527a0</color>
+    <color name="colorPrimary">#2729a0</color>
 
     // верхний бар :
-    <color name="colorPrimaryDark">#5E35B1</color>
+    <color name="colorPrimaryDark">#2729a0</color>
     <color name="colorAccent">#FF4081</color>
 
     <color name="colorLiteGreen200">#c5e1a5</color>

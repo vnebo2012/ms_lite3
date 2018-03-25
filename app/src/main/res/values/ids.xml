@@ -3,4 +3,5 @@
     <item name="toolbar8" type="id">Армопояс</item>
     <item name="action_settings4" type="id">Пожертвовать разработчику</item>
     <item name="action_settings5" type="id">Поделится</item>
+    <item name="content" type="id">Frag</item>
 </resources>

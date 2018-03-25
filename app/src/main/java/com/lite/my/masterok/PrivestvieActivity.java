@@ -29,7 +29,7 @@ public class PrivestvieActivity extends Activity {
                 startActivity(i);
                 finish();
             }
-        }, 2*500);
+        }, 600);
     }
 
 

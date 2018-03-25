@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/na1"
+        android:icon="@drawable/ic_pro"
+        android:title="@string/title_pro" />
+
+    <item
+        android:id="@+id/na2"
+        android:icon="@drawable/ic_contacts"
+        android:title="@string/statti" />
+
+    <item
+        android:id="@+id/na3"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="@string/title_we" />
+
+</menu>

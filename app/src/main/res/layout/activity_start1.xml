@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
-
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".BlokiActivity"
-    tools:showIn="@layout/app_bar_main2">
-
-
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/navigation" />
+    tools:context=".Start_Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -68,8 +54,8 @@
 
                             <ImageButton
                                 android:id="@+id/button2412"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/plita_ico"
@@ -98,8 +84,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/armo_ico"
@@ -129,8 +115,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton2"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/kirpi_ico"
@@ -167,8 +153,8 @@
 
                             <ImageButton
                                 android:id="@+id/button2413"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/plitka_ico"
@@ -197,8 +183,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton11"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/kriwa_ico"
@@ -228,8 +214,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton29"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/bloki_ico"
@@ -266,8 +252,8 @@
 
                             <ImageButton
                                 android:id="@+id/button24124"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/penop_ico"
@@ -296,8 +282,8 @@
 
                             <ImageButton
                                 android:id="@+id/button4010"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/kraska_ico"
@@ -327,8 +313,8 @@
 
                             <ImageButton
                                 android:id="@+id/button407"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/gipsokart_ico"
@@ -365,8 +351,8 @@
 
                             <ImageButton
                                 android:id="@+id/button400"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/wpaklo_ico"
@@ -395,8 +381,8 @@
 
                             <ImageButton
                                 android:id="@+id/button4071"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/sept_ico"
@@ -426,8 +412,8 @@
 
                             <ImageButton
                                 android:id="@+id/button2414"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/styagka_ico"
@@ -464,8 +450,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton3"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/radiators_ico"
@@ -496,8 +482,8 @@
 
                             <ImageButton
                                 android:id="@+id/button24121"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/elektro_ico"
@@ -527,8 +513,8 @@
 
                             <ImageButton
                                 android:id="@+id/button3000"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/demontag_ico"
@@ -566,8 +552,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton32222"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/balon2"
@@ -598,8 +584,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton3222232"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/ves_doma"
@@ -632,8 +618,8 @@
 
                             <ImageButton
                                 android:id="@+id/button30002222"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/lesa_ico"
@@ -672,8 +658,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton322222"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/les2"
@@ -703,8 +689,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton100"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
 
@@ -736,8 +722,8 @@
 
                             <ImageButton
                                 android:id="@+id/button300022228"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/lesnica2"
@@ -759,13 +745,68 @@
                         </LinearLayout>
 
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
 
 
                 </LinearLayout>
+
+
+
             </LinearLayout>
         </ScrollView>
 
     </LinearLayout>
 
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/colorWite"
+        app:itemTextColor="@color/colorWite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -666,7 +666,7 @@
     <string name = "balka1">Beam</string>
         <string name = "dlina_prolota">The size of the span L, m:</string>
          <string name = "rast_meg_balkami">The laying of the beams, m:</string>
-         <string name = "nagruzka_kg">Load, kgs/m:</string>
+         <string name = "nagruzka_kg">Load q, kgs/m:</string>
          <string name = "nagruzka_kg_m2">Load on the overlap, kgf/m2:</string>
          <string name = "koef_sop">Beam resistance, kgf / cm2:</string>
          <string name = "koef_sop2">(for a tree it is 130 kgf/cm2):</string>
@@ -682,6 +682,30 @@
     <string name="samsung">Samsung</string>
     <string name="ostanielni">Other devices</string>
     <string name="sam">* for Samsung devices</string>
+
+    <string name="lesnica">Stairs</string>
+    <string name="visota_proyama">h - opening height, mm:</string>
+    <string name="dlina_proyama">l - is the length of the opening, mm:</string>
+    <string name="vis_podstupennika">hp - is the desired step height, mm:</string>
+    <string name="shi_stupen">Number of steps:</string>
+    <string name="glub_stup">Depth of the step, mm:</string>
+    <string name="vis_waga2">Step height, mm:</string>
+    <string name="lesnica_posta">Ladder (simple)</string>
+
+    <string name = "title_news">News</string>
+    <string name = "title_news1">News(text)</string>
+         <string name = "title_stati">Articles</string>
+         <string name = "title_we">Share</string>
+         <string name = "title_activity_st">StActivity</string>
+         <string name = "statti">Articles</string>
+    <string name="title_pro">Pro</string>
+    <string name="title_stati_ino_mat">Innovative materials</string>
+    <string name="title_stati_eko">Ecological building</string>
+    <string name="title_stati_stoim_dom">All about repair</string>
+    <string name="title_stati_ino_stroyka">Innovations in construction</string>
+    <string name="title_stati_energo_efekt">Energy Efficiency</string>
+
+
 
 </resources>
 

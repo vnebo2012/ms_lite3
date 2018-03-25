@@ -7,16 +7,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.hardware.Camera;
+import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Vibrator;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,11 +25,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lite.my.masterok.Lumex.LumexActivity;
+import com.lite.my.masterok.News.MenuNewsActivity;
 
 
-public class Start_Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
-
+public class Start_Activity extends AppCompatActivity {
 
 
     final Context context2 = this;
@@ -44,65 +41,80 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
 
     final String MY_SETTINGS = "saved_text_stg100011";
 
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+
+                case R.id.na1:
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse("market://details?id=com.my.masterok.masterokpro"));
+                    startActivity(intent);
+                    return true;
+
+                case R.id.na2:
+                    long mills11 = 45L;
+                    Vibrator vibrator11 = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                    vibrator11.vibrate(mills11);
+
+
+
+                    ConnectivityManager icheck = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                    boolean mob = icheck.getActiveNetworkInfo() != null;
+                    if(mob) {
+
+                        Intent a = new Intent(Start_Activity.this,MenuNewsActivity.class);
+                        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(a);
+
+                    } else {
+
+                        Toast toast = Toast.makeText(getApplicationContext(),
+                                "Отсутствует интернет!", Toast.LENGTH_SHORT);
+
+                        toast.show();
+
+                    }
+
+                    return true;
+                case R.id.na3:
+                    long mills13 = 45L;
+                    Vibrator vibrator13 = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                    vibrator13.vibrate(mills13);
+
+                    final Intent intent4 = new Intent(Intent.ACTION_SEND);
+                    intent4.setType("text/plain");
+                    String textToSend="https://play.google.com/store/apps/details?id=com.lite.my.masterok";
+                    intent4.putExtra(Intent.EXTRA_TEXT, textToSend);
+                    try
+                    {
+                        startActivity(Intent.createChooser(intent4, "Поделится приложением"));
+                    }
+                    catch (android.content.ActivityNotFoundException ex) {
+                        Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
+                    }
+
+                    return true;
+
+            }
+            return false;
+        }
+    };
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
-
-       /* mSwitch = (Switch) findViewById(R.id.switch_light);
-        mSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (camera == null) {
-                    camera = Camera.open();
-                }
-                Camera.Parameters parameters = camera.getParameters();
-                if (!isChecked) {
-                    parameters.setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
-                } else {
-                    parameters.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
-                }
-                camera.setParameters(parameters);
-                camera.startPreview();
-            }
-        });*/
+        setContentView(R.layout.activity_start1);
 
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar7);
-        setSupportActionBar(toolbar);
 
-        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-           public void onClick(View view) {
-                long mills = 15L;
-               Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-                vibrator.vibrate(mills);final Intent intent = new Intent(Intent.ACTION_SEND);
-               intent.setType("text/plain");
-                String textToSend="https://play.google.com/store/apps/details?id=com.lite.my.masterok";
-                intent.putExtra(Intent.EXTRA_TEXT, textToSend);
-                try
-                {
-                    startActivity(Intent.createChooser(intent, "Поделится приложением"));
-                }
-                catch (android.content.ActivityNotFoundException ex)
-                {
-                    Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
-                }
 
-            }
-        });*/
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
@@ -163,10 +175,6 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         ImageButton button9 = (ImageButton) findViewById(R.id.imageButton11);
         ImageButton button10 = (ImageButton) findViewById(R.id.button24121);
         ImageButton button11 = (ImageButton) findViewById(R.id.imageButton322222);
-        //ImageButton button12 = (ImageButton) findViewById(R.id.imageButton100);
-        //Button button5 = (Button) findViewById(R.id.button4010);
-        //Button button6 = (Button) findViewById(R.id.button407);
-        //Button button7 = (Button) findViewById(R.id.button4071);
         TextView textView = (TextView) findViewById(R.id.textView);
 
 
@@ -181,16 +189,12 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         button9.setOnClickListener(viewClickListener9);
         button10.setOnClickListener(viewClickListener10);
         button11.setOnClickListener(viewClickListener11);
-        //button12.setOnClickListener(viewClickListener12);
-//        textView.setOnClickListener(viewClickListener);
-
-
 
     }
 
 
 
-    @Override
+    /*@Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
@@ -198,11 +202,11 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         } else {
             super.onBackPressed();
         }
-    }
+    }*/
 
     @SuppressWarnings("StatementWithEmptyBody")
 
-    public boolean onNavigationItemSelected(MenuItem item) {
+    /*public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
@@ -260,7 +264,7 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
+    }*/
 
    /* @Override
     protected void onResume() {
@@ -285,6 +289,18 @@ public class Start_Activity extends AppCompatActivity implements NavigationView.
 
     public void onClickLumex(View view) {
         Intent a = new Intent(this,LumexActivity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
+    }
+
+
+
+    public void onClickLesnica(View view) {
+        Intent a = new Intent(this,Lesnica_Activity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(a);
         long mills = 15L;
@@ -439,47 +455,49 @@ public void onClickRadiators(View view) {
         vibrator.vibrate(mills);
     }
 
-
-
-
-
-
-
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
-
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
+
+        if (id == R.id.market) {
+
+            long mills = 15L;
+            Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+            vibrator.vibrate(mills);
+
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("https://play.google.com/store/apps/developer?id=Dastory+Studio"));
+            startActivity(intent);
+
+
+        } else if (id == R.id.napisat){
+
+            Intent a = new Intent(this,PlusActivity.class);
+            a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(a);
+
+
+
+        } else if (id == R.id.infi){
 
             Intent a = new Intent(this,HellpActivity.class);
             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(a);
-            return true;
 
-        } else if (id == R.id.action_settings4) {
-            return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
-
-
-
-
-
-
-
-
 
     View.OnClickListener viewClickListener = new View.OnClickListener() {
         @Override
@@ -1270,10 +1288,6 @@ public void onClickRadiators(View view) {
         });
         popupMenu.show();
     }
-
-
-
-
 
 
 

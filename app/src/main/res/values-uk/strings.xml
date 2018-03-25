@@ -666,7 +666,7 @@
          <string name = "balka1">Балка </string>
          <string name = "dlina_prolota">Величина прольоту L, м:</string>
          <string name = "rast_meg_balkami">Крок укладання балок, м:</string>
-         <string name = "nagruzka_kg">Навантаження, кгс/м:</string>
+         <string name = "nagruzka_kg">Навантаження q, кгс/м:</string>
          <string name = "nagruzka_kg_m2">Навантаження на перекриття, кгс/м2:</string>
          <string name = "koef_sop">Опір балки, кгс/см2: </string>
          <string name = "koef_sop2">(для дерева це 130 кгс/см2):</string>
@@ -682,5 +682,29 @@
     <string name="samsung">Samsung</string>
     <string name="ostanielni">Решта пристроїв</string>
     <string name="sam">* для пристроїв Samsung</string>
+
+    <string name="lesnica">Сходи</string>
+    <string name="visota_proyama">h - висота проему, мм:</string>
+    <string name="dlina_proyama">l - довжина проему, мм:</string>
+    <string name="vis_podstupennika">hp – желаимая высота подступенника, мм:</string>
+    <string name="shi_stupen">Число сходинок:</string>
+    <string name="glub_stup">Глибина східця, мм:</string>
+    <string name="vis_waga2">Висота кроку, мм:</string>
+    <string name="lesnica_posta">Сходи (прості)</string>
+
+    <string name = "title_news">Новини</string>
+         <string name = "title_news1">Новини (текст)</string>
+         <string name = "title_stati">Статті</string>
+         <string name = "title_we">Поділиться</string>
+         <string name = "title_activity_st">StActivity</string>
+         <string name = "statti">Статті</string>
+    <string name="title_pro">Pro</string>
+    <string name="title_stati_ino_mat">Інноваційні матеріали</string>
+    <string name="title_stati_eko">Екобудівництво</string>
+    <string name="title_stati_stoim_dom">Все про ремонт</string>
+    <string name="title_stati_ino_stroyka">Інновації в будівництві</string>
+    <string name="title_stati_energo_efekt">Енергоефективність</string>
+
+
 
 </resources>
