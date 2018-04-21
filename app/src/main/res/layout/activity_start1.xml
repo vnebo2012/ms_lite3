@@ -693,8 +693,8 @@
                                 android:layout_height="40dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
-
                                 android:background="@drawable/lumex"
+
                                 android:onClick="onClickLumex"
                                 android:text="Плита перекрытия"
                                 android:textColor="@android:color/background_light"

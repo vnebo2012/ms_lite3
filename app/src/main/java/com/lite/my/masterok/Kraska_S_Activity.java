@@ -4483,8 +4483,8 @@ public class Kraska_S_Activity extends AppCompatActivity {
                                             float S = (num002);
                                             float kg = (float) (S * (num010 * 0.001));
                                             //float M = (kg / 25);
-                                            float C = (kg * num015);
-                                            float Ban1 = (kg / num081);
+                                            float Ban1 = (kg/num081);
+                                            float C = (Ban1*num015);
 
                                             TextView textView143 = (TextView) findViewById(R.id.textView143);
                                             TextView textView242 = (TextView) findViewById(R.id.textView242);
@@ -4494,7 +4494,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
                                             textView143.setText(String.format(Locale.US, "%.2f", kg) + "");
                                             textView242.setText(String.format(Locale.US, "%.2f", C) + "");
                                             textView500.setText(String.format(Locale.US, "%.2f", S) + "");
-                                            textView700.setText(String.format(Locale.US, "%.1f", Ban1) + "");
+                                            textView700.setText(String.format(Locale.US, "%.2f", Ban1) + "");
 
 
                                         } else if (Float.parseFloat(aetText8.getText().toString()) == 2)
@@ -4503,8 +4503,8 @@ public class Kraska_S_Activity extends AppCompatActivity {
                                             float S = (num002);
                                             float kg = (float) (S * (num010 * 1.75) * 0.001);
                                             //float M = (kg / 25);
-                                            float C = (kg * num015);
-                                            float Ban1 = (kg / num081);
+                                            float Ban1 = (kg/num081);
+                                            float C = (Ban1*num015);
 
                                             TextView textView143 = (TextView) findViewById(R.id.textView143);
                                             TextView textView242 = (TextView) findViewById(R.id.textView242);
@@ -4514,7 +4514,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
                                             textView143.setText(String.format(Locale.US, "%.2f", kg) + "");
                                             textView242.setText(String.format(Locale.US, "%.2f", C) + "");
                                             textView500.setText(String.format(Locale.US, "%.2f", S) + "");
-                                            textView700.setText(String.format(Locale.US, "%.1f", Ban1) + "");
+                                            textView700.setText(String.format(Locale.US, "%.2f", Ban1) + "");
 
                                         } else if (Float.parseFloat(aetText8.getText().toString()) == 3)
 
@@ -4522,8 +4522,8 @@ public class Kraska_S_Activity extends AppCompatActivity {
                                             float S = (num002);
                                             float kg = (float) (S * (num010 * 2.2 * 0.001));
                                             //float M = (kg / 25);
-                                            float C = (kg * num015);
-                                            float Ban1 = (kg / num081);
+                                            float Ban1 = (kg/num081);
+                                            float C = (Ban1*num015);
 
                                             TextView textView143 = (TextView) findViewById(R.id.textView143);
                                             TextView textView242 = (TextView) findViewById(R.id.textView242);
@@ -4533,7 +4533,7 @@ public class Kraska_S_Activity extends AppCompatActivity {
                                             textView143.setText(String.format(Locale.US, "%.2f", kg) + "");
                                             textView242.setText(String.format(Locale.US, "%.2f", C) + "");
                                             textView500.setText(String.format(Locale.US, "%.2f", S) + "");
-                                            textView700.setText(String.format(Locale.US, "%.1f", Ban1) + "");
+                                            textView700.setText(String.format(Locale.US, "%.2f", Ban1) + "");
                                         }
                                     }
                                 }

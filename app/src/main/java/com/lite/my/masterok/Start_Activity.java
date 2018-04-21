@@ -49,9 +49,24 @@ public class Start_Activity extends AppCompatActivity {
             switch (item.getItemId()) {
 
                 case R.id.na1:
-                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse("market://details?id=com.my.masterok.masterokpro"));
-                    startActivity(intent);
+
+                    ConnectivityManager icheck = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                    boolean mob = icheck.getActiveNetworkInfo() != null;
+                    if(mob) {
+
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse("market://details?id=com.my.masterok.masterokpro"));
+                        startActivity(intent);
+
+                    } else {
+
+                        Toast toast = Toast.makeText(getApplicationContext(),
+                                "Отсутствует интернет!", Toast.LENGTH_SHORT);
+
+                        toast.show();
+
+                    }
+
                     return true;
 
                 case R.id.na2:
@@ -61,9 +76,9 @@ public class Start_Activity extends AppCompatActivity {
 
 
 
-                    ConnectivityManager icheck = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-                    boolean mob = icheck.getActiveNetworkInfo() != null;
-                    if(mob) {
+                    ConnectivityManager icheck2 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                    boolean mob2 = icheck2.getActiveNetworkInfo() != null;
+                    if(mob2) {
 
                         Intent a = new Intent(Start_Activity.this,MenuNewsActivity.class);
                         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -84,17 +99,32 @@ public class Start_Activity extends AppCompatActivity {
                     Vibrator vibrator13 = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                     vibrator13.vibrate(mills13);
 
-                    final Intent intent4 = new Intent(Intent.ACTION_SEND);
-                    intent4.setType("text/plain");
-                    String textToSend="https://play.google.com/store/apps/details?id=com.lite.my.masterok";
-                    intent4.putExtra(Intent.EXTRA_TEXT, textToSend);
-                    try
-                    {
-                        startActivity(Intent.createChooser(intent4, "Поделится приложением"));
+                    ConnectivityManager icheck3 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                    boolean mob3 = icheck3.getActiveNetworkInfo() != null;
+                    if(mob3) {
+
+                        final Intent intent4 = new Intent(Intent.ACTION_SEND);
+                        intent4.setType("text/plain");
+                        String textToSend="https://play.google.com/store/apps/details?id=com.lite.my.masterok";
+                        intent4.putExtra(Intent.EXTRA_TEXT, textToSend);
+                        try
+                        {
+                            startActivity(Intent.createChooser(intent4, "Поделится приложением"));
+                        }
+                        catch (android.content.ActivityNotFoundException ex) {
+                            Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
+                        }
+
+
+                    } else {
+
+                        Toast toast = Toast.makeText(getApplicationContext(),
+                                "Отсутствует интернет!", Toast.LENGTH_SHORT);
+
+                        toast.show();
+
                     }
-                    catch (android.content.ActivityNotFoundException ex) {
-                        Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
-                    }
+
 
                     return true;
 

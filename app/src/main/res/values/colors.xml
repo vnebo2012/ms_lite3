@@ -5,7 +5,8 @@
     <color name="colorPrimary2">#2729a0</color>
     // тул бар
     <color name="colorPrimary">#2729a0</color>
-
+    <color name="beliColor">#ffffff</color>
+    <color name="ShadovColor">#000000</color>
     // верхний бар :
     <color name="colorPrimaryDark">#2729a0</color>
     <color name="colorAccent">#FF4081</color>

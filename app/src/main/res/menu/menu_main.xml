@@ -14,12 +14,14 @@
         android:title="@string/we_app" />
 
 
-
-
     <item
         android:id="@+id/napisat"
         android:icon="@mipmap/ic_pismo"
         android:title="@string/nap_nam" />
+
+    <item
+        android:id="@+id/versia"
+        android:title="v 5.0.6" />
 
 
 

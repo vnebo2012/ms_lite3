@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".PrivestvieActivity"
+            android:name=".Start_Activity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,9 +28,6 @@
         <activity
             android:name=".HellpActivity"
             android:label="@string/app_name2" />
-        <activity
-            android:name=".Start_Activity"
-            android:label="@string/app_name" />
         <activity
             android:name=".BlokiActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -141,9 +138,6 @@
             android:name=".Elektro_tablica_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".FonarikActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Ves_Activity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -168,9 +162,6 @@
         <activity
             android:name=".News.StattiActivity"
             android:label="@string/title_stati" />
-        <activity
-            android:name=".News.NewsActivity"
-            android:label="@string/title_news1" />
 
         <activity android:name=".News.MenuNewsActivity"
             android:label="@string/title_stati" />
@@ -189,6 +180,8 @@
 
         <activity android:name=".News.EnergoEfektActivity"
             android:label="@string/title_stati_energo_efekt" />
+        <activity android:name=".News.FullRecipeActivity" />
+        <activity android:name=".News.ListRecipeActivity" />
 
     </application>
 
