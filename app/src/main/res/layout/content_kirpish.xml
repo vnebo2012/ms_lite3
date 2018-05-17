@@ -215,6 +215,7 @@
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -1385,7 +1386,20 @@
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
+
+
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@color/colorBlueGrey50"
+                    android:baselineAligned="true"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+
 
             </LinearLayout>
         </ScrollView>

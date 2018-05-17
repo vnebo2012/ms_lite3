@@ -704,7 +704,17 @@
     <string name="title_stati_stoim_dom">Все про ремонт</string>
     <string name="title_stati_ino_stroyka">Інновації в будівництві</string>
     <string name="title_stati_energo_efekt">Енергоефективність</string>
+    <string name="title_s_vigodno">Как экономить энергию?</string>
+    <string name="title_stati_steni">Стены</string>
 
+    <string name="armstrong">Армстронг</string>
+    <string name="v_pro">Є у версії Pro</string>
+    <string name="v_pro_xot">Хочете Pro - версію?</string>
+    <string name="v_pro_xot_ok">Так</string>
+    <string name="v_pro_xot_no">Не зараз</string>
+    <string name="no_wi_fi">No Wi-Fi !</string>
+    <string name="prodolgit">все одно продовжити</string>
+    <string name="nazad">назад</string>
 
 
 </resources>

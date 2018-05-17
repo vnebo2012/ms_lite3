@@ -22,13 +22,14 @@ public class EnergoEfektActivity extends AppCompatActivity {
 
     private String MY_LOG = "myLog";
     private List<Recipe> mListRecipe = new ArrayList<>();
-
+    private ParsAllRecipe mCatTask;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logo);
 
-        new ParsAllRecipe().execute();
+        mCatTask = new ParsAllRecipe();
+        mCatTask.execute();
     }
     class ParsAllRecipe extends AsyncTask<Void, Void, Void> {
 
@@ -41,11 +42,9 @@ public class EnergoEfektActivity extends AppCompatActivity {
 
                 Document document = Jsoup.connect(urlHome).get();
                 Elements els = document.select("div[class=news-wrapper ]");
-                //doc.select("div[class=wrapper ]");
-                String lastPage = els.select("div[class=pagination]>a").attr("href");
-
-                int count = Integer.parseInt(lastPage.replace("http://budport.com.ua/articles/category/18-vse-pro-energoeffektivnost?page=", ""));
-
+                Elements pages = els.select("div[class=pagination]>a");
+                Element page = pages.get(pages.size()-2);
+                int count = Integer.parseInt(page.text());
                 for (int i = 1; i <= count; i++){
 
                     String url = "http://budport.com.ua/articles/category/18-vse-pro-energoeffektivnost?page=" + i;
@@ -99,6 +98,15 @@ public class EnergoEfektActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        mCatTask.cancel(true);
+        Intent a = new Intent(this,MenuNewsActivity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
     }
 }
 

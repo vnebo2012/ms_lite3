@@ -679,9 +679,18 @@
     <string name="title_stati_stoim_dom">Все о ремонте</string>
     <string name="title_stati_ino_stroyka">Инновации в стоительстве</string>
     <string name="title_stati_energo_efekt">Энергоэффективность</string>
+    <string name="title_s_vigodno">Как экономить энергию?</string>
+    <string name="title_stati_steni">Стены</string>
+    <string name="banner_ad_unit_id">ca-app-pub-4882550262749386/3031760514</string>
 
-
-
+    <string name="armstrong">Армстронг</string>
+    <string name="v_pro">Доступно в версии Pro</string>
+    <string name="v_pro_xot">Хотите Pro - версию?</string>
+    <string name="v_pro_xot_ok">Да</string>
+    <string name="v_pro_xot_no">Не сейчас</string>
+    <string name="no_wi_fi">No Wi-Fi !</string>
+    <string name="prodolgit">все равно продолжить</string>
+    <string name="nazad">назад</string>
 
 
 </resources>

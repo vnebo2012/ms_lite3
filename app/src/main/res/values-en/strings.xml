@@ -704,7 +704,17 @@
     <string name="title_stati_stoim_dom">All about repair</string>
     <string name="title_stati_ino_stroyka">Innovations in construction</string>
     <string name="title_stati_energo_efekt">Energy Efficiency</string>
+    <string name="title_s_vigodno">Как экономить энергию?</string>
+    <string name="title_stati_steni">Стены</string>
 
+    <string name="armstrong">Armstrong</string>
+    <string name="v_pro">Available in Pro version</string>
+    <string name="v_pro_xot">Want a Pro version?</string>
+    <string name="v_pro_xot_ok">Yes</string>
+    <string name="v_pro_xot_no">Not now</string>
+    <string name="no_wi_fi">No Wi-Fi !</string>
+    <string name="prodolgit">still continue</string>
+    <string name="nazad">backward</string>
 
 
 </resources>

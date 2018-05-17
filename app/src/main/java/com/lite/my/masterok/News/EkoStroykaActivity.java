@@ -22,13 +22,15 @@ public class EkoStroykaActivity extends AppCompatActivity {
 
     private String MY_LOG = "myLog";
     private List<Recipe> mListRecipe = new ArrayList<>();
-
+    private ParsAllRecipe mCatTask;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logo);
 
-        new ParsAllRecipe().execute();
+        mCatTask = new ParsAllRecipe();
+        mCatTask.execute();
+        //ProgressDialog.show(EkoStroykaActivity.this, "", "Загрузка. Подождите...", true);
     }
     class ParsAllRecipe extends AsyncTask<Void, Void, Void> {
 
@@ -41,10 +43,11 @@ public class EkoStroykaActivity extends AppCompatActivity {
 
                 Document document = Jsoup.connect(urlHome).get();
                 Elements els = document.select("div[class=news-wrapper ]");
-                //doc.select("div[class=wrapper ]");
-                String lastPage = els.select("div[class=pagination]>a").attr("href");
+                Elements pages = els.select("div[class=pagination]>a");
+                Element page = pages.get(pages.size()-2);
+                int count = Integer.parseInt(page.text());
 
-                int count = Integer.parseInt(lastPage.replace("http://budport.com.ua/articles/category/20-innovacii-v-ekomaterialy-tehnologii-stroitelstvo?page=", ""));
+
 
                 for (int i = 1; i <= count; i++){
 
@@ -100,5 +103,18 @@ public class EkoStroykaActivity extends AppCompatActivity {
             }
         }
     }
+
+
+
+
+    @Override
+    public void onBackPressed() {
+
+        mCatTask.cancel(true);
+        Intent a = new Intent(this,MenuNewsActivity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+    }
+
 }
 

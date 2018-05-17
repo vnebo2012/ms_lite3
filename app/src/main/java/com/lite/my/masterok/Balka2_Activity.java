@@ -1001,13 +1001,15 @@ public class Balka2_Activity extends AppCompatActivity {
 
     ImageView imageView;
     ImageView imageView1;
-    InterstitialAd mInterstitialAd;
-    ImageButton mNewGameButton;
+    //InterstitialAd mInterstitialAd;
+    //ImageButton mNewGameButton;
 
     private static int SPLASH_TIME_OUT = 5000;
     static Context context4;
     Timer t = new Timer();
     static Intent intent;
+
+
 
 
 
@@ -1027,10 +1029,12 @@ public class Balka2_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_balka2);
 
-
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         //mNewGameButton = (ImageButton) findViewById(R.id.dom);
-        mInterstitialAd = new InterstitialAd(this);
+        /*mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/7088298282");
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
@@ -1059,7 +1063,7 @@ public class Balka2_Activity extends AppCompatActivity {
                     }
                 });
             }
-        }, SPLASH_TIME_OUT, SPLASH_TIME_OUT);
+        }, SPLASH_TIME_OUT, SPLASH_TIME_OUT);*/
 
         ImageView imageView2 = (ImageView) findViewById(R.id.imageView3);
         TextView textView = (TextView) findViewById(R.id.textView);
@@ -5646,7 +5650,7 @@ public class Balka2_Activity extends AppCompatActivity {
         startActivity(a);
     }
 
-    private void requestNewInterstitial() {
+    /*private void requestNewInterstitial() {
 
         AdRequest adRequest = new AdRequest.Builder()
 
@@ -5657,7 +5661,7 @@ public class Balka2_Activity extends AppCompatActivity {
     }
     private void beginPlayingGame() {
         // Play for a while, then display the New Game Button
-    }
+    }*/
     public void onClick_Pismo(View view) {
 
         long mills = 15L;

@@ -3,63 +3,91 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+
 
     <android.support.v7.widget.CardView
+
         android:id="@+id/cv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
 
-        <RelativeLayout
-            android:id="@+id/cRL"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="6dp">
-
-            <ImageView
-                android:id="@+id/imageRecipe"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:scaleType="centerCrop"
-                app:srcCompat="@mipmap/ic_launcher" />
+            android:gravity="center"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/IL"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imageRecipe"
-                android:layout_alignParentBottom="false"
-                android:layout_marginBottom="12dp"
-                android:layout_marginRight="24dp"
-                android:orientation="vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/linkPageRecipe"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_weight="1"
-                    android:text="TextView"
-                    android:textSize="16sp"
-                    android:visibility="invisible" />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/nameRecipe"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="6dp"
-                    android:layout_weight="1"
-                    android:gravity="bottom"
-                    android:shadowColor="@color/ShadovColor"
-                    android:shadowDx="1"
-                    android:shadowDy="1"
-                    android:shadowRadius="1"
-                    android:text="TextView"
-                    android:textColor="@android:color/background_light"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageRecipe"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_margin="2dp"
+                                app:srcCompat="@mipmap/ic_launcher"
+                                />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/nameRecipe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="111"
+                            android:textColor="@color/ShadovColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/linkPageRecipe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="1sp"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
             </LinearLayout>
-        </RelativeLayout>
+
+        </LinearLayout>
 
     </android.support.v7.widget.CardView>
+
+
 </android.support.constraint.ConstraintLayout>

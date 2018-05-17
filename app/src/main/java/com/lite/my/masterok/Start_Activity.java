@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.hardware.Camera;
 import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -36,6 +37,11 @@ public class Start_Activity extends AppCompatActivity {
     Context context;
     private Switch mSwitch;
     private Camera camera;
+    Context context5;
+    Context context6;
+    Context context7;
+
+    final String MY_SETTINGS2 = "saved_text_oc2";
 
 
 
@@ -43,6 +49,7 @@ public class Start_Activity extends AppCompatActivity {
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -74,11 +81,10 @@ public class Start_Activity extends AppCompatActivity {
                     Vibrator vibrator11 = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                     vibrator11.vibrate(mills11);
 
-
-
-                    ConnectivityManager icheck2 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-                    boolean mob2 = icheck2.getActiveNetworkInfo() != null;
-                    if(mob2) {
+                    ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                    NetworkInfo wifiInfo = cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+                    if (wifiInfo != null && wifiInfo.isConnected())
+                    {
 
                         Intent a = new Intent(Start_Activity.this,MenuNewsActivity.class);
                         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -86,11 +92,41 @@ public class Start_Activity extends AppCompatActivity {
 
                     } else {
 
-                        Toast toast = Toast.makeText(getApplicationContext(),
-                                "Отсутствует интернет!", Toast.LENGTH_SHORT);
+                        context5 = Start_Activity.this;
 
-                        toast.show();
 
+                        String title = getString(R.string.no_wi_fi);
+                        //String message = String.valueOf(R.string.v_pro_xot);
+                        String button1String = getString(R.string.prodolgit);
+                        String button2String = getString(R.string.nazad);
+
+                        AlertDialog.Builder ad;
+
+                        ad = new AlertDialog.Builder(context5);
+                        ad.setTitle(title);  // заголовок
+                        //ad.setMessage(message); // сообщение
+                        ad.setPositiveButton(button1String, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int arg1) {
+
+                                Intent a = new Intent(Start_Activity.this,MenuNewsActivity.class);
+                                a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                startActivity(a);
+                            }
+                        });
+                        ad.setNegativeButton(button2String, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int arg1) {
+
+                            }
+                        });
+                        ad.setCancelable(true);
+                        ad.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                            public void onCancel(DialogInterface dialog) {
+                                // Toast.makeText(context5, "Вы ничего не выбрали",
+                                //    Toast.LENGTH_LONG).show();
+                            }
+                        });
+
+                        ad.show();
                     }
 
                     return true;
@@ -137,7 +173,7 @@ public class Start_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start1);
+        setContentView(R.layout.activity_start);
 
 
 
@@ -324,6 +360,49 @@ public class Start_Activity extends AppCompatActivity {
         long mills = 15L;
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(mills);
+
+    }
+
+    public void onClickArmstrong (View view){
+
+
+        context7 = Start_Activity.this;
+        //String title = "Доступно в версии Pro";
+        String title = getString(R.string.v_pro);
+        String message = getString(R.string.v_pro_xot);
+        String button1String = getString(R.string.v_pro_xot_ok);
+        String button2String = getString(R.string.v_pro_xot_no);
+        //String message = "Хотите Pro - версию?";
+        //String button1String = "Да";
+        //String button2String = "Не сейчас";
+        AlertDialog.Builder ad;
+
+        ad = new AlertDialog.Builder(context7);
+        ad.setTitle(title);  // заголовок
+        ad.setMessage(message); // сообщение
+        ad.setPositiveButton(button1String, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int arg1) {
+
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.my.masterok.masterokpro"));
+                startActivity(intent);
+            }
+        });
+        ad.setNegativeButton(button2String, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int arg1) {
+
+            }
+        });
+        ad.setCancelable(true);
+        ad.setOnCancelListener(new DialogInterface.OnCancelListener() {
+            public void onCancel(DialogInterface dialog) {
+                // Toast.makeText(context5, "Вы ничего не выбрали",
+                //    Toast.LENGTH_LONG).show();
+            }
+        });
+
+        ad.show();
+
 
     }
 
@@ -1318,6 +1397,72 @@ public void onClickRadiators(View view) {
         });
         popupMenu.show();
     }
+
+    /*@Override
+    public void onBackPressed() {
+
+
+
+
+            SharedPreferences sp = getSharedPreferences(MY_SETTINGS2,
+                    Context.MODE_PRIVATE);
+            boolean hasVisited = sp.getBoolean("hasVisited_oc2", false);
+
+            if (!hasVisited) {
+
+                context6 = Start_Activity.this;
+                String title = "Вам нравится приложение?";
+                String message = "Оцените его в Google Play ))";
+                String button1String = "Да";
+                String button2String = "Нет";
+                AlertDialog.Builder ad;
+
+                ad = new AlertDialog.Builder(context6);
+                ad.setTitle(title);  // заголовок
+                ad.setMessage(message); // сообщение
+                ad.setPositiveButton(button1String, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int arg1) {
+
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.lite.my.masterok"));
+                        startActivity(intent);
+                    }
+                });
+                ad.setNegativeButton(button2String, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int arg1) {
+
+                    }
+                });
+                ad.setCancelable(true);
+                ad.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                    public void onCancel(DialogInterface dialog) {
+                        // Toast.makeText(context5, "Вы ничего не выбрали",
+                        //    Toast.LENGTH_LONG).show();
+                    }
+                });
+
+                ad.show();
+            }else {
+
+                super.onBackPressed();}
+
+
+            long mills = 15L;
+            Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+            vibrator.vibrate(mills);
+
+            // выводим нужную активность
+            // напр.
+            //Intent intent = new Intent(this, Main2Activity.class);
+            // startActivity(intent);
+
+            SharedPreferences.Editor e = sp.edit();
+            e.putBoolean("hasVisited_oc2", true);
+            e.commit(); // не забудьте подтвердить изменения
+
+            */
+
+
 
 
 

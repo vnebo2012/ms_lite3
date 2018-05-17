@@ -17,6 +17,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.lite.my.masterok.R;
+import com.lite.my.masterok.Start_Activity;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -51,8 +52,9 @@ public class MenuNewsActivity extends AppCompatActivity {
        // mAdView.loadAd(adRequest);
 
         mInterstitialAd = new InterstitialAd(this);
+        //mInterstitialAd.setAdUnitId("");
         mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/7088298282");
-        //mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/5029587751");
+
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
             public void onAdClosed() {
@@ -156,6 +158,21 @@ public class MenuNewsActivity extends AppCompatActivity {
         button5.startAnimation(anim5);
     }
 
+
+    public void onClickSteni(View view) {
+        Intent a = new Intent(this,SteniActivity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
+
+        Animation anim7 = AnimationUtils.loadAnimation(
+                getApplicationContext(), R.anim.sms_anim);
+        final TextView button7 = findViewById(R.id.textViewN7);
+        button7.startAnimation(anim7);
+    }
+
     /*public void onClickNews(View view) {
         Intent a = new Intent(this,NewsActivity.class);
         a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -180,6 +197,14 @@ public class MenuNewsActivity extends AppCompatActivity {
     }
     private void beginPlayingGame() {
         // Play for a while, then display the New Game Button
+    }
+    @Override
+    public void onBackPressed() {
+
+        t.cancel();
+        Intent a = new Intent(this, Start_Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
     }
 
 }

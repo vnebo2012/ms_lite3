@@ -13,17 +13,17 @@
         android:layout_margin="6dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="5dp">
+        tools:layout_editor_absoluteY="5dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textViewN1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_marginTop="40dp"
             android:gravity="center_horizontal"
             android:onClick="onClickNewInovation"
-            android:text="Инновационные материалы"
+            android:text="⇒ Инновационные материалы"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -31,23 +31,22 @@
             android:id="@+id/textViewN4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_marginTop="25dp"
             android:gravity="center_horizontal"
             android:onClick="onClickInoStroy"
-            android:text="Инновации в строительстве"
+            android:text="⇒ Инновации в строительстве"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
+
 
         <TextView
             android:id="@+id/textViewN5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_marginTop="25dp"
             android:gravity="center_horizontal"
             android:onClick="onClickEnergo"
-            android:text="Энергоэфективность"
+            android:text="⇒ Энергоэфективность"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -55,23 +54,33 @@
             android:id="@+id/textViewN2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_marginTop="25dp"
             android:gravity="center_horizontal"
             android:onClick="onClickEkoStroyka"
-            android:text="Экостроительство"
+            android:text="⇒ Экостроительство"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
+
 
         <TextView
             android:id="@+id/textViewN3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_marginTop="25dp"
             android:gravity="center_horizontal"
             android:onClick="onClickStroimDom"
-            android:text="Все о ремонте"
+            android:text="⇒ Все о ремонте"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewN7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:onClick="onClickSteni"
+            android:text="⇒ Стены"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 

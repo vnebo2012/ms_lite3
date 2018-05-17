@@ -27,6 +27,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Locale;
@@ -1033,7 +1034,7 @@ public class Gipsokarton_P_213_Activity extends AppCompatActivity {
     static Intent intent;
 
 
-
+    private AdView mAdView;
 
 
     //endregion
@@ -1049,37 +1050,9 @@ public class Gipsokarton_P_213_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gipsokarton_a_b);
 
-        //mNewGameButton = (ImageButton) findViewById(R.id.dom);
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/7088298282");
-        mInterstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdClosed() {
-                t.cancel();
-            }
-        });
-        requestNewInterstitial();
-        t.scheduleAtFixedRate(new TimerTask() {
-            @Override
-            public void run() {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        t.cancel();
-                        ConnectivityManager icheck = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-                        boolean mob = icheck.getActiveNetworkInfo() != null;
-                        if(mob) {
-                            if (mInterstitialAd.isLoaded()) {
-                                mInterstitialAd.show();
-                            } else {
-                                beginPlayingGame();
-                            }
-                        } else {
-                        }
-                    }
-                });
-            }
-        }, SPLASH_TIME_OUT, SPLASH_TIME_OUT);
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         ImageView imageView2 = (ImageView) findViewById(R.id.imageView3);
         TextView textView = (TextView) findViewById(R.id.textView);
@@ -5821,18 +5794,7 @@ public class Gipsokarton_P_213_Activity extends AppCompatActivity {
         startActivity(a);
     }
 
-    private void requestNewInterstitial() {
 
-        AdRequest adRequest = new AdRequest.Builder()
-
-                .addTestDevice("SEE_YOUR_LOGCAT_TO_GET_YOUR_DEVICE_ID")
-
-                .build();
-        mInterstitialAd.loadAd(adRequest);
-    }
-    private void beginPlayingGame() {
-        // Play for a while, then display the New Game Button
-    }
     public void onClick_Pismo(View view) {
 
         long mills = 15L;

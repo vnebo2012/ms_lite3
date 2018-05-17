@@ -183,6 +183,12 @@
         <activity android:name=".News.FullRecipeActivity" />
         <activity android:name=".News.ListRecipeActivity" />
 
+        <activity android:name=".News.Vigodno_li_Activity"
+            android:label="@string/title_s_vigodno"/>
+
+        <activity android:name=".News.SteniActivity"
+            android:label="@string/title_stati_steni"/>
+
     </application>
 
 </manifest>
