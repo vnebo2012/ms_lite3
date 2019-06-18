@@ -25,6 +25,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.lite.my.masterok.Chat.ChatActivity;
 import com.lite.my.masterok.Lumex.LumexActivity;
 import com.lite.my.masterok.News.MenuNewsActivity;
 
@@ -61,9 +62,40 @@ public class Start_Activity extends AppCompatActivity {
                     boolean mob = icheck.getActiveNetworkInfo() != null;
                     if(mob) {
 
-                        Intent intent = new Intent(Intent.ACTION_VIEW);
-                        intent.setData(Uri.parse("market://details?id=com.my.masterok.masterokpro"));
-                        startActivity(intent);
+                        Intent intent21 = getPackageManager().getLaunchIntentForPackage("mobi.appplus.calculator.plus");
+                        if (intent21 != null) {
+                            // We found the activity now start the activity
+                            intent21.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(intent21);
+                        } else {
+
+                            long mills = 15L;
+                            Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                            vibrator.vibrate(mills);
+                            Intent intent = getPackageManager().getLaunchIntentForPackage("com.google.android.calculator");
+                            if (intent != null) {
+                                // We found the activity now start the activity
+                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(intent);
+
+                            } else {
+
+                                Intent intent2 = getPackageManager().getLaunchIntentForPackage("mobi.appplus.calculator.plus");
+                                if (intent2 != null) {
+                                    // We found the activity now start the activity
+                                    intent2.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent2);
+                                } else {
+
+                                    // Bring user to the market or let them choose an app?
+                                    intent = new Intent(Intent.ACTION_VIEW);
+                                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    intent.setData(Uri.parse("market://details?id=" + "mobi.appplus.calculator.plus"));
+                                    startActivity(intent);
+                                }
+                            }
+
+                        }
 
                     } else {
 
@@ -139,17 +171,9 @@ public class Start_Activity extends AppCompatActivity {
                     boolean mob3 = icheck3.getActiveNetworkInfo() != null;
                     if(mob3) {
 
-                        final Intent intent4 = new Intent(Intent.ACTION_SEND);
-                        intent4.setType("text/plain");
-                        String textToSend="https://play.google.com/store/apps/details?id=com.lite.my.masterok";
-                        intent4.putExtra(Intent.EXTRA_TEXT, textToSend);
-                        try
-                        {
-                            startActivity(Intent.createChooser(intent4, "Поделится приложением"));
-                        }
-                        catch (android.content.ActivityNotFoundException ex) {
-                            Toast.makeText(getApplicationContext(), "Some error", Toast.LENGTH_SHORT).show();
-                        }
+                        Intent a = new Intent(Start_Activity.this,ChatActivity.class);
+                        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(a);
 
 
                     } else {
@@ -363,46 +387,33 @@ public class Start_Activity extends AppCompatActivity {
 
     }
 
-    public void onClickArmstrong (View view){
+    public void onClickArmstrong(View view) {
+        Intent a = new Intent(this,ArmstrongActivity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
 
+    }
 
-        context7 = Start_Activity.this;
-        //String title = "Доступно в версии Pro";
-        String title = getString(R.string.v_pro);
-        String message = getString(R.string.v_pro_xot);
-        String button1String = getString(R.string.v_pro_xot_ok);
-        String button2String = getString(R.string.v_pro_xot_no);
-        //String message = "Хотите Pro - версию?";
-        //String button1String = "Да";
-        //String button2String = "Не сейчас";
-        AlertDialog.Builder ad;
+    public void onClickGspC111(View view) {
+        Intent a = new Intent(this,GspC111Activity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
 
-        ad = new AlertDialog.Builder(context7);
-        ad.setTitle(title);  // заголовок
-        ad.setMessage(message); // сообщение
-        ad.setPositiveButton(button1String, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int arg1) {
+    }
 
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.my.masterok.masterokpro"));
-                startActivity(intent);
-            }
-        });
-        ad.setNegativeButton(button2String, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int arg1) {
-
-            }
-        });
-        ad.setCancelable(true);
-        ad.setOnCancelListener(new DialogInterface.OnCancelListener() {
-            public void onCancel(DialogInterface dialog) {
-                // Toast.makeText(context5, "Вы ничего не выбрали",
-                //    Toast.LENGTH_LONG).show();
-            }
-        });
-
-        ad.show();
-
+    public void onClickArmatura(View view) {
+        Intent a = new Intent(this,ArmaturaActivity.class);
+        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(a);
+        long mills = 15L;
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(mills);
 
     }
 
@@ -595,6 +606,28 @@ public void onClickRadiators(View view) {
             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(a);
 
+        } else if (id == R.id.you_tube){
+
+            Intent intent21 = new Intent(Intent.ACTION_VIEW);
+            intent21.setData(Uri.parse("https://www.youtube.com/user/Letivnebo/videos?view_as=subscriber"));
+            startActivity(intent21);
+
+        } else if (id == R.id.pro1){
+
+            ConnectivityManager icheck = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+            boolean mob = icheck.getActiveNetworkInfo() != null;
+            if(mob) {
+
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("market://details?id=com.my.masterok.masterokpro"));
+                startActivity(intent);
+
+            } else {
+
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Отсутствует интернет!", Toast.LENGTH_SHORT);
+
+                toast.show();}
 
 
         } else if (id == R.id.infi){

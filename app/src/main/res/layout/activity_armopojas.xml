@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context=".Armopoyas_Activity">
 
     <android.support.design.widget.AppBarLayout
@@ -27,6 +27,8 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
+
+
                 <TextView
                     android:id="@+id/textView38"
                     android:layout_width="wrap_content"
@@ -34,7 +36,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="@string/armopojas1"
+                    android:text="Армопояс"
                     android:textColor="@android:color/white"
                     android:textSize="18dp"
                     android:textStyle="bold|italic" />
@@ -48,7 +50,6 @@
                     android:onClick="onEmailClick"
                     android:scaleType="fitCenter"
                     android:src="@mipmap/ic_pod" />
-
                 <ImageButton
                     android:id="@+id/calk"
                     android:layout_width="wrap_content"

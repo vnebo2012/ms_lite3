@@ -673,7 +673,7 @@
     <string name="title_we">Поделится</string>
     <string name="title_activity_st">StActivity</string>
     <string name="statti">Статьи</string>
-    <string name="title_pro">Pro-версия</string>
+    <string name="title_pro">Без рекламы</string>
     <string name="title_stati_ino_mat">Инновационные материалы</string>
     <string name="title_stati_eko">Экостроительство</string>
     <string name="title_stati_stoim_dom">Все о ремонте</string>
@@ -683,7 +683,7 @@
     <string name="title_stati_steni">Стены</string>
     <string name="banner_ad_unit_id">ca-app-pub-4882550262749386/3031760514</string>
 
-    <string name="armstrong">Армстронг</string>
+
     <string name="v_pro">Доступно в версии Pro</string>
     <string name="v_pro_xot">Хотите Pro - версию?</string>
     <string name="v_pro_xot_ok">Да</string>
@@ -693,6 +693,66 @@
     <string name="nazad">назад</string>
 
     <string name="armat">Арматура</string>
+
+    <string name="armstrong">Армстронг</string>
+    <string name="armatura1">Арматура</string>
+
+
+    <string name="send">Отправить</string>
+    <string name="vvod">Введите сообщение</string>
+    <string name="vvedite_imya">Введите имя (ник)</string>
+    <string name="title_activity_main22">Main22Activity</string>
+    <string name="title_activity_chat_test">Чат</string>
+
+    <string name="peregorodka_gsp">Перегородка ГСП</string>
+    <string name="diametr_mm">Диаметр, мм:</string>
+    <string name="dlina_mp">Длина, метров погонных:</string>
+    <string name="stoimost_kg">Стоимость, за 1 кг:</string>
+    <string name="ves_kg2">Вес, кг:</string>
+    <string name="stoimost2">Стоимость:</string>
+    <string name="arm_gost">Арматура ГОСТ 5781-82</string>
+    <string name="arm_600_600">Армстронг 600х600</string>
+    <string name="potolok_m2">Площадь потолка, m2:</string>
+    <string name="plita_600_600">Плита 600х600, шт.:</string>
+    <string name="naprava_37">Направляющая основная, по 3.7м, шт.:</string>
+    <string name="planka_0_6">Планка поперечная по 0,6м, шт.:</string>
+    <string name="planka_1_2">Планка продольная по 1,2м, шт.:</string>
+    <string name="ugolok_3_0">Уголок пристенный по 3,0м, шт.:</string>
+    <string name="podves3">Подвес, шт.:</string>
+    <string name="dlin_p">Длина помещения, м:</string>
+    <string name="w_pom">Ширина помещения, м:</string>
+    <string name="zap_koe">Запас, коэф.:</string>
+    <string name="per_c_111">Перегородка ГСП, С 111</string>
+    <string name="list_gsp3">1.Лист ГСП(1.2х2.5), шт.:</string>
+    <string name="prof_pn">2.Профиль ПН 50x40 (75x40, 100x40), мп:</string>
+    <string name="prof_pc">3.Профиль ПС 50x50 (75x50, 100x50), мп:</string>
+    <string name="tn_25">4.Шуруп TN 25, шт.:</string>
+    <string name="fugen2">5.Шпаклевка Фуген, кг:</string>
+    <string name="armolenta">6.Лента армирующая, мп:</string>
+    <string name="dub_7_6_35">7.Дюбель К 6/35, шт.:</string>
+    <string name="lenta_uplot">8.Лента уплотнительная, мп:</string>
+    <string name="grunt3">9.Грунтовка, л:</string>
+    <string name="minvata_10_2">10.Плита минераловатная, м2:</string>
+    <string name="dlina_per3">Длина перегородки, м:</string>
+    <string name="visota_per3">Высота перегородки, м:</string>
+    <string name="k_zap3">Запас, коэф.:</string>
+
+
+
+    <string name="next1">Продолжить</string>
+    <string name="vrete1">Введите текст!</string>
+    <string name="dlinny_txt">Слишком длинный текст!</string>
+    <string name="ustroystvo_wtrobi">Устройство штробы, (м.п.):</string>
+    <string name="cen_wtrobi">Стоимость штробления (за 1 п.м.):</string>
+    <string name="sverlenie_otverstiy">Сверление отверстий (шт.):</string>
+    <string name="cen_sverlenia">Стоимость сверления (за отв.):</string>
+    <string name="wtrobleni_vsego">Штробление:</string>
+    <string name="otverstia_vsego">Сверление отверстий:</string>
+    <string name="prokladka_provoda">Прокладка провода:</string>
+    <string name="prokladka_provoda_pm">Прокладка провода, м.п.:</string>
+    <string name="prokladka_provoda_cena">Стоимость прокладки провода, за м.п.:</string>
+    <string name="calck">Калькулятор</string>
+    <string name="you_tub">You Tube</string>
 
 
 </resources>

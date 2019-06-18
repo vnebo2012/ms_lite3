@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -25,14 +24,12 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Locale;
 import java.util.Timer;
-import java.util.TimerTask;
 
 public class Elektro_Activity extends AppCompatActivity {
 
@@ -200,6 +197,22 @@ public class Elektro_Activity extends AppCompatActivity {
 
     TextView etText408;
 
+    TextView etText001;
+    TextView etText002;
+    TextView etText003;
+    TextView etText004;
+    TextView etText005;
+    TextView etText006;
+    TextView etText007;
+    TextView etText008;
+    TextView etText009;
+    TextView etText010;
+    TextView etText011;
+    TextView etText012;
+    TextView etText5002;
+    TextView etText5003;
+
+
 
 
     Button btnSave, btnLoad;
@@ -363,6 +376,21 @@ public class Elektro_Activity extends AppCompatActivity {
 
     final String SAVED_TEXT408 = "saved_text408";
 
+    final String SAVED_TEXT001 = "saved_text001";
+    final String SAVED_TEXT002 = "saved_text002";
+    final String SAVED_TEXT003 = "saved_text003";
+    final String SAVED_TEXT004 = "saved_text004";
+    final String SAVED_TEXT005 = "saved_text005";
+    final String SAVED_TEXT006 = "saved_text006";
+    final String SAVED_TEXT007 = "saved_text007";
+    final String SAVED_TEXT008 = "saved_text008";
+    final String SAVED_TEXT009 = "saved_text009";
+    final String SAVED_TEXT010 = "saved_text010";
+    final String SAVED_TEXT011 = "saved_text011";
+    final String SAVED_TEXT012 = "saved_text012";
+    final String SAVED_TEXT5002 = "saved_text5002";
+    final String SAVED_TEXT5003 = "saved_text5003";
+
 
 
     final Context context2 = this;
@@ -389,6 +417,11 @@ public class Elektro_Activity extends AppCompatActivity {
     private TextView wir_15;
     private TextView wir_16;
     private TextView wir_17;
+
+    private TextView wir_27;
+    private TextView wir_28;
+    private TextView wir_29;
+    private TextView wir_30;
 
 
     //region секция private Button btn1 - btn51;
@@ -539,6 +572,19 @@ public class Elektro_Activity extends AppCompatActivity {
     private Button btn197;
     private Button btn277;
     private Button btn257;
+
+    private Button btn001;
+    private Button btn002;
+    private Button btn003;
+    private Button btn004;
+    private Button btn005;
+    private Button btn006;
+    private Button btn007;
+    private Button btn008;
+    private Button btn009;
+    private Button btn010;
+    private Button btn011;
+    private Button btn012;
 
 
 
@@ -699,6 +745,23 @@ public class Elektro_Activity extends AppCompatActivity {
     private Button aetText197;
     private Button aetText277;
     private Button aetText257;
+
+    private Button aetText001;
+    private Button aetText002;
+    private Button aetText003;
+    private Button aetText004;
+    private Button aetText005;
+    private Button aetText006;
+    private Button aetText007;
+    private Button aetText008;
+    private Button aetText009;
+    private Button aetText010;
+    private Button aetText011;
+    private Button aetText012;
+
+
+
+
     private TextView aetText18;
 
 
@@ -857,6 +920,19 @@ public class Elektro_Activity extends AppCompatActivity {
     Button button197;
     Button button277;
     Button button257;
+
+    Button button001;
+    Button button002;
+    Button button003;
+    Button button004;
+    Button button005;
+    Button button006;
+    Button button007;
+    Button button008;
+    Button button009;
+    Button button010;
+    Button button011;
+    Button button012;
 
 
 
@@ -1029,6 +1105,21 @@ public class Elektro_Activity extends AppCompatActivity {
     private TextView final_text197;
     private TextView final_text277;
     private TextView final_text257;
+
+    private TextView final_text001;
+    private TextView final_text002;
+    private TextView final_text003;
+    private TextView final_text004;
+    private TextView final_text005;
+    private TextView final_text006;
+    private TextView final_text007;
+    private TextView final_text008;
+    private TextView final_text009;
+    private TextView final_text010;
+    private TextView final_text011;
+    private TextView final_text012;
+    private TextView final_text5002;
+    private TextView final_text5003;
 
     ImageView imageView;
     ImageView imageView1;
@@ -1249,6 +1340,19 @@ public class Elektro_Activity extends AppCompatActivity {
             final TextView bill277 = (TextView) findViewById(R.id.button277);
             final TextView bill257 = (TextView) findViewById(R.id.button257);
 
+            final TextView bill001 = (TextView) findViewById(R.id.button001);
+            final TextView bill002 = (TextView) findViewById(R.id.button002);
+            final TextView bill003 = (TextView) findViewById(R.id.button003);
+            final TextView bill004 = (TextView) findViewById(R.id.button004);
+            final TextView bill005 = (TextView) findViewById(R.id.button005);
+            final TextView bill006 = (TextView) findViewById(R.id.button006);
+            final TextView bill007 = (TextView) findViewById(R.id.button007);
+            final TextView bill008 = (TextView) findViewById(R.id.button008);
+            final TextView bill009 = (TextView) findViewById(R.id.button009);
+            final TextView bill010 = (TextView) findViewById(R.id.button010);
+            final TextView bill011 = (TextView) findViewById(R.id.button011);
+            final TextView bill012 = (TextView) findViewById(R.id.button012);
+
 
             final TextView bill301 = (TextView) findViewById(R.id.textView201);
             final TextView bill302 = (TextView) findViewById(R.id.textView301);
@@ -1256,6 +1360,8 @@ public class Elektro_Activity extends AppCompatActivity {
             final TextView bill304 = (TextView) findViewById(R.id.textView4);
 
             final TextView bill408 = (TextView) findViewById(R.id.textView208);
+            final TextView bill5002 = (TextView) findViewById(R.id.textView5002);
+            final TextView bill5003 = (TextView) findViewById(R.id.textView5003);
 
 
             etText83 = (TextView) findViewById(R.id.textView14);
@@ -1434,8 +1540,27 @@ public class Elektro_Activity extends AppCompatActivity {
                                     bill197.setText(100 + "");
                                     bill277.setText(150 + "");
                                     bill257.setText(200 + "");
+                                    ///////////////////////////
+                                    bill001.setText(1 + "");
+                                    bill002.setText(10 + "");
+                                    bill003.setText(15 + "");
+
+                                    bill004.setText(5 + "");
+                                    bill005.setText(25 + "");
+                                    bill006.setText(55 + "");
+
+                                    bill007.setText(10 + "");
+                                    bill008.setText(20 + "");
+                                    bill009.setText(60 + "");
+
+                                    bill010.setText(5 + "");
+                                    bill011.setText(20 + "");
+                                    bill012.setText(50 + "");
+                                    ///////////////////////////
 
                                     bill408.setText(00.00 + "");
+                                    bill5002.setText(00.00 + "");
+                                    bill5003.setText(00.00 + "");
 
 
 
@@ -1616,7 +1741,24 @@ public class Elektro_Activity extends AppCompatActivity {
         etText277 = (Button) findViewById(R.id.button277);
         etText257 = (Button) findViewById(R.id.button257);
 
+        etText001 = (Button) findViewById(R.id.button001);
+        etText002 = (Button) findViewById(R.id.button002);
+        etText003 = (Button) findViewById(R.id.button003);
+        etText004 = (Button) findViewById(R.id.button004);
+        etText005 = (Button) findViewById(R.id.button005);
+        etText006 = (Button) findViewById(R.id.button006);
+        etText007 = (Button) findViewById(R.id.button007);
+        etText008 = (Button) findViewById(R.id.button008);
+        etText009 = (Button) findViewById(R.id.button009);
+
+        etText010 = (Button) findViewById(R.id.button010);
+        etText011 = (Button) findViewById(R.id.button011);
+        etText012 = (Button) findViewById(R.id.button012);
+
         etText408 = (TextView) findViewById(R.id.textView208);
+
+        etText5002 = (TextView) findViewById(R.id.textView5002);
+        etText5003 = (TextView) findViewById(R.id.textView5003);
 
 
 
@@ -1767,6 +1909,22 @@ public class Elektro_Activity extends AppCompatActivity {
         loadText277();
         loadText257();
         loadText408();
+
+        loadText001();
+        loadText002();
+        loadText003();
+        loadText004();
+        loadText005();
+        loadText006();
+        loadText007();
+        loadText008();
+        loadText009();
+
+        loadText010();
+        loadText011();
+        loadText012();
+        loadText5002();
+        loadText5003();
 
 
 
@@ -2224,6 +2382,507 @@ public class Elektro_Activity extends AppCompatActivity {
                                              }
                                          }
         );
+
+        //endregion
+
+
+        button001 = (Button) findViewById(R.id.button001);
+        final_text001 = (TextView) findViewById(R.id.button001);
+        button001.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text001.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+        button002 = (Button) findViewById(R.id.button002);
+        final_text002 = (TextView) findViewById(R.id.button002);
+        button002.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text002.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+        button003 = (Button) findViewById(R.id.button003);
+        final_text003 = (TextView) findViewById(R.id.button003);
+        button003.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text003.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+        button004 = (Button) findViewById(R.id.button004);
+        final_text004 = (TextView) findViewById(R.id.button004);
+        button004.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text004.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+        button005 = (Button) findViewById(R.id.button005);
+        final_text005 = (TextView) findViewById(R.id.button005);
+        button005.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text005.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+        button006 = (Button) findViewById(R.id.button006);
+        final_text006 = (TextView) findViewById(R.id.button006);
+        button006.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text006.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+        button007 = (Button) findViewById(R.id.button007);
+        final_text007 = (TextView) findViewById(R.id.button007);
+        button007.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text007.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+        button008 = (Button) findViewById(R.id.button008);
+        final_text008 = (TextView) findViewById(R.id.button008);
+        button008.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text008.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+        button009 = (Button) findViewById(R.id.button009);
+        final_text009 = (TextView) findViewById(R.id.button009);
+        button009.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text009.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+
+        button010 = (Button) findViewById(R.id.button010);
+        final_text010 = (TextView) findViewById(R.id.button010);
+        button010.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text010.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        button011 = (Button) findViewById(R.id.button011);
+        final_text011 = (TextView) findViewById(R.id.button011);
+        button011.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text011.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
+        button012 = (Button) findViewById(R.id.button012);
+        final_text012 = (TextView) findViewById(R.id.button012);
+        button012.setOnLongClickListener(new View.OnLongClickListener() {
+
+                                             @Override
+                                             public boolean onLongClick(View arg0) {
+                                                 LayoutInflater li = LayoutInflater.from(context2);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
+                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                                 mDialogBuilder.setView(promptsView);
+
+                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+
+                                                 mDialogBuilder
+                                                         .setCancelable(false)
+                                                         .setPositiveButton("OK",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text012.setText(userInput.getText());
+                                                                         }}
+                                                                 })
+                                                         .setNegativeButton("Отмена",
+                                                                 new DialogInterface.OnClickListener() {
+                                                                     public void onClick(DialogInterface dialog, int id) {
+                                                                         dialog.cancel();
+                                                                     }
+                                                                 });
+                                                 AlertDialog alertDialog = mDialogBuilder.create();
+                                                 alertDialog.show();
+                                                 return false;
+                                             }
+                                         }
+        );
+
 
         //endregion
 
@@ -6493,6 +7152,19 @@ public class Elektro_Activity extends AppCompatActivity {
         btn277 = (Button) findViewById(R.id.button277);
         btn257 = (Button) findViewById(R.id.button257);
 
+        btn001 = (Button) findViewById(R.id.button001);
+        btn002 = (Button) findViewById(R.id.button002);
+        btn003 = (Button) findViewById(R.id.button003);
+        btn004 = (Button) findViewById(R.id.button004);
+        btn005 = (Button) findViewById(R.id.button005);
+        btn006 = (Button) findViewById(R.id.button006);
+        btn007 = (Button) findViewById(R.id.button007);
+        btn008 = (Button) findViewById(R.id.button008);
+        btn009 = (Button) findViewById(R.id.button009);
+        btn010 = (Button) findViewById(R.id.button010);
+        btn011 = (Button) findViewById(R.id.button011);
+        btn012 = (Button) findViewById(R.id.button012);
+
 
         //endregion
 
@@ -6515,6 +7187,11 @@ public class Elektro_Activity extends AppCompatActivity {
         wir_15 = (TextView) findViewById(R.id.textViewWir15);
         wir_16 = (TextView) findViewById(R.id.textViewWir16);
         wir_17 = (TextView) findViewById(R.id.textViewWir17);
+
+        wir_27 = (TextView) findViewById(R.id.textViewWir27);
+        wir_28 = (TextView) findViewById(R.id.textViewWir28);
+        wir_29 = (TextView) findViewById(R.id.textViewWir29);
+        wir_30 = (TextView) findViewById(R.id.textViewWir30);
 
 
 
@@ -6539,6 +7216,7 @@ public class Elektro_Activity extends AppCompatActivity {
                             "Заполнение пустых ячеек", Toast.LENGTH_LONG);
 
                     toast.show();
+
 
                     final TextView bill1 = (TextView) findViewById(R.id.button10);
                     final TextView bill2 = (TextView) findViewById(R.id.button2);
@@ -6690,6 +7368,19 @@ public class Elektro_Activity extends AppCompatActivity {
                     final TextView bill277 = (TextView) findViewById(R.id.button277);
                     final TextView bill257 = (TextView) findViewById(R.id.button257);
 
+                    final TextView bill001 = (TextView) findViewById(R.id.button001);
+                    final TextView bill002 = (TextView) findViewById(R.id.button002);
+                    final TextView bill003 = (TextView) findViewById(R.id.button003);
+                    final TextView bill004 = (TextView) findViewById(R.id.button004);
+                    final TextView bill005 = (TextView) findViewById(R.id.button005);
+                    final TextView bill006 = (TextView) findViewById(R.id.button006);
+                    final TextView bill007 = (TextView) findViewById(R.id.button007);
+                    final TextView bill008 = (TextView) findViewById(R.id.button008);
+                    final TextView bill009 = (TextView) findViewById(R.id.button009);
+                    final TextView bill010 = (TextView) findViewById(R.id.button010);
+                    final TextView bill011 = (TextView) findViewById(R.id.button011);
+                    final TextView bill012 = (TextView) findViewById(R.id.button012);
+
 
                     final TextView bill301 = (TextView) findViewById(R.id.textView201);
                     final TextView bill302 = (TextView) findViewById(R.id.textView301);
@@ -6697,6 +7388,8 @@ public class Elektro_Activity extends AppCompatActivity {
                     final TextView bill304 = (TextView) findViewById(R.id.textView4);
 
                     final TextView bill408 = (TextView) findViewById(R.id.textView208);
+                    final TextView bill5002 = (TextView) findViewById(R.id.textView5002);
+                    final TextView bill5003 = (TextView) findViewById(R.id.textView5003);
 
 
                     etText83 = (TextView) findViewById(R.id.textView14);
@@ -6709,68 +7402,62 @@ public class Elektro_Activity extends AppCompatActivity {
                     etText303 = (TextView) findViewById(R.id.textView401);
                     etText304 = (TextView) findViewById(R.id.textView4);
 
-                    //  etText89 = (TextView) findViewById(R.id.textView28);
-
-                    //final TextView bill75 = (TextView) findViewById(R.id.button36);
-                    //final TextView bill76 = (TextView) findViewById(R.id.button37);
 
 
 
+                                            //a
+                                            bill1.setText(0 + "");
+                                            bill2.setText(2 + "");
+                                            bill3.setText(5 + "");
+                                            bill4.setText(10 + "");
+                                            bill5.setText(20 + "");
+                                            bill6.setText(30 + "");
+                                            bill7.setText(50 + "");
+                                            bill8.setText(100 + "");
+                                            bill9.setText(150 + "");
+                                            bill10.setText(200 + "");
+                                            bill11.setText(300 + "");
+
+                                            bill12.setText(0.0 + "");
+                                            bill13.setText(0.0 + "");
 
 
-                    //a
-                    bill1.setText(0 + "");
-                    bill2.setText(2 + "");
-                    bill3.setText(5 + "");
-                    bill4.setText(10 + "");
-                    bill5.setText(20 + "");
-                    bill6.setText(30 + "");
-                    bill7.setText(50 + "");
-                    bill8.setText(100 + "");
-                    bill9.setText(150 + "");
-                    bill10.setText(200 + "");
-                    bill11.setText(300 + "");
-
-                    bill12.setText(0.0 + "");
-                    bill13.setText(0.0 + "");
-
-
-                    //b
-                    bill23.setText(0 + "");
-                    bill24.setText(10 + "");
-                    bill25.setText(20 + "");
-                    bill26.setText(50 + "");
-                    bill27.setText(80 + "");
-                    bill28.setText(100 + "");
-                    bill29.setText(150 + "");
-                    bill30.setText(200 + "");
-                    bill31.setText(250 + "");
-                    bill32.setText(300 + "");
-                    bill33.setText(350 + "");
+                                            //b
+                                            bill23.setText(0 + "");
+                                            bill24.setText(10 + "");
+                                            bill25.setText(20 + "");
+                                            bill26.setText(50 + "");
+                                            bill27.setText(80 + "");
+                                            bill28.setText(100 + "");
+                                            bill29.setText(150 + "");
+                                            bill30.setText(200 + "");
+                                            bill31.setText(250 + "");
+                                            bill32.setText(300 + "");
+                                            bill33.setText(350 + "");
 
 
 
-                    bill40.setText(0 + "");
-                    bill41.setText(10 + "");
-                    bill42.setText(12 + "");
-                    bill43.setText(15 + "");
-                    bill44.setText(18 + "");
-                    bill45.setText(20 + "");
+                                            bill40.setText(0 + "");
+                                            bill41.setText(10 + "");
+                                            bill42.setText(12 + "");
+                                            bill43.setText(15 + "");
+                                            bill44.setText(18 + "");
+                                            bill45.setText(20 + "");
 
-                    bill46.setText(0 + "");
-                    bill47.setText(100 + "");
-                    bill48.setText(110 + "");
-                    bill49.setText(115 + "");
-                    bill50.setText(120 + "");
-                    bill51.setText(140 + "");
+                                            bill46.setText(0 + "");
+                                            bill47.setText(100 + "");
+                                            bill48.setText(110 + "");
+                                            bill49.setText(115 + "");
+                                            bill50.setText(120 + "");
+                                            bill51.setText(140 + "");
 
 
-                    bill52.setText(10 + "");
-                    bill53.setText(25 + "");
-                    bill54.setText(30 + "");
-                    bill55.setText(40 + "");
-                    bill73.setText(45 + "");
-                    bill74.setText(60 + "");
+                                            bill52.setText(10 + "");
+                                            bill53.setText(25 + "");
+                                            bill54.setText(30 + "");
+                                            bill55.setText(40 + "");
+                                            bill73.setText(45 + "");
+                                            bill74.setText(60 + "");
 
 
 
@@ -6781,113 +7468,285 @@ public class Elektro_Activity extends AppCompatActivity {
                                     bill64.setText(310 + "");
                                     bill65.setText(320 + "");*/
 
-                    bill66.setText(50 + "");
-                    bill67.setText(80 + "");
-                    bill68.setText(100 + "");
+                                            bill66.setText(50 + "");
+                                            bill67.setText(80 + "");
+                                            bill68.setText(100 + "");
 
-                    //bill69.setText(1 + "");
-                    // bill72.setText(2 + "");
-                    // bill70.setText(3 + "");
-
-
+                                            //bill69.setText(1 + "");
+                                            // bill72.setText(2 + "");
+                                            // bill70.setText(3 + "");
 
 
 
 
-                    bill79.setText(2 + "");
-                    bill80.setText(5 + "");
-                    bill81.setText(10 + "");
-                    bill82.setText(50 + "");
+
+
+                                            bill79.setText(2 + "");
+                                            bill80.setText(5 + "");
+                                            bill81.setText(10 + "");
+                                            bill82.setText(50 + "");
 
 //                                    bill83.setText(00.00 + "");
-                    bill84.setText(00.00 + "");
-                    //bill85.setText(00.00 + "");
-                    bill86.setText(00.00 + "");
+                                            bill84.setText(00.00 + "");
+                                            //bill85.setText(00.00 + "");
+                                            bill86.setText(00.00 + "");
 
-                    bill201.setText(0 + "");
-                    bill202.setText(1 + "");
-                    bill203.setText(5 + "");
-                    bill204.setText(10 + "");
-                    bill205.setText(20 + "");
-                    bill206.setText(50 + "");
-                    bill207.setText(70 + "");
-                    bill208.setText(80 + "");
-                    bill209.setText(100 + "");
-                    bill210.setText(150 + "");
-                    bill211.setText(200 + "");
+                                            bill201.setText(0 + "");
+                                            bill202.setText(1 + "");
+                                            bill203.setText(5 + "");
+                                            bill204.setText(10 + "");
+                                            bill205.setText(20 + "");
+                                            bill206.setText(50 + "");
+                                            bill207.setText(70 + "");
+                                            bill208.setText(80 + "");
+                                            bill209.setText(100 + "");
+                                            bill210.setText(150 + "");
+                                            bill211.setText(200 + "");
 
-                    bill212.setText(40 + "");
-                    bill213.setText(80 + "");
-                    bill214.setText(90 + "");
-                    bill215.setText(100 + "");
-                    bill216.setText(110 + "");
-                    bill217.setText(120 + "");
+                                            bill212.setText(40 + "");
+                                            bill213.setText(80 + "");
+                                            bill214.setText(90 + "");
+                                            bill215.setText(100 + "");
+                                            bill216.setText(110 + "");
+                                            bill217.setText(120 + "");
 
-                    bill218.setText(10 + "");
-                    bill219.setText(20 + "");
-                    bill220.setText(50+ "");
-                    bill221.setText(100 + "");
+                                            bill218.setText(10 + "");
+                                            bill219.setText(20 + "");
+                                            bill220.setText(50+ "");
+                                            bill221.setText(100 + "");
 
-                    bill222.setText(90 + "");
-                    bill223.setText(100 + "");
-                    bill224.setText(150 + "");
-                    bill225.setText(200 + "");
+                                            bill222.setText(90 + "");
+                                            bill223.setText(100 + "");
+                                            bill224.setText(150 + "");
+                                            bill225.setText(200 + "");
 
-                    //bill226.setText(1.5 + "");
-                    //bill227.setText(2.0 + "");
-                    //  bill228.setText(4.0 + "");
-                    //  bill229.setText(5.0 + "");
+                                            //bill226.setText(1.5 + "");
+                                            //bill227.setText(2.0 + "");
+                                            //  bill228.setText(4.0 + "");
+                                            //  bill229.setText(5.0 + "");
 
-                    bill230.setText(15 + "");
-                    bill231.setText(30 + "");
-                    bill232.setText(60 + "");
-                    bill233.setText(80 + "");
+                                            bill230.setText(15 + "");
+                                            bill231.setText(30 + "");
+                                            bill232.setText(60 + "");
+                                            bill233.setText(80 + "");
 
-                    bill234.setText(100 + "");
-                    bill235.setText(110 + "");
-                    bill236.setText(150 + "");
+                                            bill234.setText(100 + "");
+                                            bill235.setText(110 + "");
+                                            bill236.setText(150 + "");
 
-                    bill237.setText(80 + "");
-                    bill238.setText(90 + "");
-                    bill239.setText(100 + "");
-                    bill240.setText(110 + "");
-                    bill241.setText(150 + "");
-                    bill242.setText(160 + "");
+                                            bill237.setText(80 + "");
+                                            bill238.setText(90 + "");
+                                            bill239.setText(100 + "");
+                                            bill240.setText(110 + "");
+                                            bill241.setText(150 + "");
+                                            bill242.setText(160 + "");
 
-                    bill243.setText(50 + "");
-                    bill244.setText(80 + "");
-                    bill245.setText(90 + "");
-                    bill246.setText(150 + "");
-                    bill247.setText(200 + "");
-                    bill248.setText(250 + "");
+                                            bill243.setText(50 + "");
+                                            bill244.setText(80 + "");
+                                            bill245.setText(90 + "");
+                                            bill246.setText(150 + "");
+                                            bill247.setText(200 + "");
+                                            bill248.setText(250 + "");
 
-                    bill301.setText(0.0 + "");
-                    bill302.setText(0.0 + "");
-                    bill303.setText(0.0 + "");
-                    bill304.setText(0.0 + "");
+                                            bill301.setText(0.0 + "");
+                                            bill302.setText(0.0 + "");
+                                            bill303.setText(0.0 + "");
+                                            bill304.setText(0.0 + "");
 
-                    bill197.setText(100 + "");
-                    bill277.setText(150 + "");
-                    bill257.setText(200 + "");
+                                            bill197.setText(100 + "");
+                                            bill277.setText(150 + "");
+                                            bill257.setText(200 + "");
+                                            ///////////////////////////
+                                            bill001.setText(1 + "");
+                                            bill002.setText(10 + "");
+                                            bill003.setText(15 + "");
 
-                    bill408.setText(00.00 + "");
+                                            bill004.setText(5 + "");
+                                            bill005.setText(25 + "");
+                                            bill006.setText(55 + "");
+
+                                            bill007.setText(10 + "");
+                                            bill008.setText(20 + "");
+                                            bill009.setText(60 + "");
+
+                                            bill010.setText(5 + "");
+                                            bill011.setText(20 + "");
+                                            bill012.setText(50 + "");
+                                            ///////////////////////////
+
+                                            bill408.setText(00.00 + "");
+                                            bill5002.setText(00.00 + "");
+                                            bill5003.setText(00.00 + "");
 
 
 
 
-                }else
+                                        }else
                 {
 
                 switch (v.getId()) {
 
+
+                    //region секция 1.1.2
+                    case R.id.button001:
+                        TextView textView0001 = (TextView) findViewById(R.id.textViewWir27);
+                        aetText001 = (Button) findViewById(R.id.button001);
+                        float num0001 = Float.parseFloat(aetText001.getText().toString());
+                        float w = (float) num0001;
+                        textView0001.setText(String.format(Locale.US, "%.0f", w) + "");
+                        Animation anim0001 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button0001 = (Button) findViewById(R.id.button001);
+                        button0001.startAnimation(anim0001);
+                        break;
+
+                    case R.id.button002:
+                        TextView textView0002 = (TextView) findViewById(R.id.textViewWir27);
+                        aetText002 = (Button) findViewById(R.id.button002);
+                        float num0002 = Float.parseFloat(aetText002.getText().toString());
+                        float w0002 = (float) num0002;
+                        textView0002.setText(String.format(Locale.US, "%.0f", w0002) + "");
+                        Animation anim0002 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button0002 = (Button) findViewById(R.id.button002);
+                        button0002.startAnimation(anim0002);
+                        break;
+
+                    case R.id.button003:
+                        TextView textView0003 = (TextView) findViewById(R.id.textViewWir27);
+                        aetText003 = (Button) findViewById(R.id.button003);
+                        float num0003 = Float.parseFloat(aetText003.getText().toString());
+                        float w0003 = (float) num0003;
+                        textView0003.setText(String.format(Locale.US, "%.0f", w0003) + "");
+                        Animation anim0003 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button0003 = (Button) findViewById(R.id.button003);
+                        button0003.startAnimation(anim0003);
+                        break;
+                       ///////////////////////////////
+                    case R.id.button004:
+                        TextView textView0004 = (TextView) findViewById(R.id.textViewWir28);
+                        aetText004 = (Button) findViewById(R.id.button004);
+                        float num0004 = Float.parseFloat(aetText004.getText().toString());
+                        float w0004 = (float) num0004;
+                        textView0004.setText(String.format(Locale.US, "%.0f", w0004) + "");
+                        Animation anim0004 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button0004 = (Button) findViewById(R.id.button004);
+                        button0004.startAnimation(anim0004);
+                        break;
+
+                    case R.id.button005:
+                        TextView textView0005 = (TextView) findViewById(R.id.textViewWir28);
+                        aetText005 = (Button) findViewById(R.id.button005);
+                        float num0005 = Float.parseFloat(aetText005.getText().toString());
+                        float w0005 = (float) num0005;
+                        textView0005.setText(String.format(Locale.US, "%.0f", w0005) + "");
+                        Animation anim0005 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button0005 = (Button) findViewById(R.id.button005);
+                        button0005.startAnimation(anim0005);
+                        break;
+
+                    case R.id.button006:
+                        TextView textView0006 = (TextView) findViewById(R.id.textViewWir28);
+                        aetText006 = (Button) findViewById(R.id.button006);
+                        float num0006 = Float.parseFloat(aetText006.getText().toString());
+                        float w0006 = (float) num0006;
+                        textView0006.setText(String.format(Locale.US, "%.0f", w0006) + "");
+                        Animation anim0006 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button0006 = (Button) findViewById(R.id.button006);
+                        button0006.startAnimation(anim0006);
+                        break;
+
+///////////////////////////////
+                    case R.id.button007:
+                        TextView textView0007 = (TextView) findViewById(R.id.textViewWir29);
+                        aetText007 = (Button) findViewById(R.id.button007);
+                        float num0007 = Float.parseFloat(aetText007.getText().toString());
+                        float w0007 = (float) num0007;
+                        textView0007.setText(String.format(Locale.US, "%.0f", w0007) + "");
+                        Animation anim0007 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button0007 = (Button) findViewById(R.id.button007);
+                        button0007.startAnimation(anim0007);
+                        break;
+
+                    case R.id.button008:
+                        TextView textView0008 = (TextView) findViewById(R.id.textViewWir29);
+                        aetText008 = (Button) findViewById(R.id.button008);
+                        float num0008 = Float.parseFloat(aetText008.getText().toString());
+                        float w0008 = (float) num0008;
+                        textView0008.setText(String.format(Locale.US, "%.0f", w0008) + "");
+                        Animation anim0008 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button0008 = (Button) findViewById(R.id.button008);
+                        button0008.startAnimation(anim0008);
+                        break;
+
+                    case R.id.button009:
+                        TextView textView0009 = (TextView) findViewById(R.id.textViewWir29);
+                        aetText009 = (Button) findViewById(R.id.button009);
+                        float num0009 = Float.parseFloat(aetText009.getText().toString());
+                        float w0009 = (float) num0009;
+                        textView0009.setText(String.format(Locale.US, "%.0f", w0009) + "");
+                        Animation anim0009 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button0009 = (Button) findViewById(R.id.button009);
+                        button0009.startAnimation(anim0009);
+                        break;
+
+                    ///////////////////////////////
+                    case R.id.button010:
+                        TextView textView0010 = (TextView) findViewById(R.id.textViewWir30);
+                        aetText010 = (Button) findViewById(R.id.button010);
+                        float num0010 = Float.parseFloat(aetText010.getText().toString());
+                        float w0010 = (float) num0010;
+                        textView0010.setText(String.format(Locale.US, "%.0f", w0010) + "");
+                        Animation anim0010 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button0010 = (Button) findViewById(R.id.button010);
+                        button0010.startAnimation(anim0010);
+                        break;
+
+                    case R.id.button011:
+                        TextView textView0011 = (TextView) findViewById(R.id.textViewWir30);
+                        aetText011 = (Button) findViewById(R.id.button011);
+                        float num0011 = Float.parseFloat(aetText011.getText().toString());
+                        float w0011 = (float) num0011;
+                        textView0011.setText(String.format(Locale.US, "%.0f", w0011) + "");
+                        Animation anim0011 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button0011 = (Button) findViewById(R.id.button011);
+                        button0011.startAnimation(anim0011);
+                        break;
+
+                    case R.id.button012:
+                        TextView textView0012 = (TextView) findViewById(R.id.textViewWir30);
+                        aetText012 = (Button) findViewById(R.id.button012);
+                        float num0012 = Float.parseFloat(aetText012.getText().toString());
+                        float w0012 = (float) num0012;
+                        textView0012.setText(String.format(Locale.US, "%.0f", w0012) + "");
+                        Animation anim0012 = AnimationUtils.loadAnimation(
+                                getApplicationContext(), R.anim.sms_anim);
+                        final Button button0012 = (Button) findViewById(R.id.button012);
+                        button0012.startAnimation(anim0012);
+                        break;
+
+
+
+
+
+                    //endregion
 
                     //region секция 1.1 (case R.id.button10:)
                     case R.id.button10:
                         TextView textView001 = (TextView) findViewById(R.id.textViewWir);
                         aetText1 = (Button) findViewById(R.id.button10);
                         float num001 = Float.parseFloat(aetText1.getText().toString());
-                        float w = (float) num001;
-                        textView001.setText(String.format(Locale.US, "%.0f", w) + "");
+                        float w1000 = (float) num001;
+                        textView001.setText(String.format(Locale.US, "%.0f", w1000) + "");
 
                         Animation anim1 = AnimationUtils.loadAnimation(
                                 getApplicationContext(), R.anim.sms_anim);
@@ -7031,6 +7890,8 @@ public class Elektro_Activity extends AppCompatActivity {
                         break;
 
                     //endregion
+
+
 
 
 
@@ -8582,6 +9443,19 @@ public class Elektro_Activity extends AppCompatActivity {
         btn277.setOnClickListener(btnClk);
         btn257.setOnClickListener(btnClk);
 
+        btn001.setOnClickListener(btnClk);
+        btn002.setOnClickListener(btnClk);
+        btn003.setOnClickListener(btnClk);
+        btn004.setOnClickListener(btnClk);
+        btn005.setOnClickListener(btnClk);
+        btn006.setOnClickListener(btnClk);
+        btn007.setOnClickListener(btnClk);
+        btn008.setOnClickListener(btnClk);
+        btn009.setOnClickListener(btnClk);
+        btn010.setOnClickListener(btnClk);
+        btn011.setOnClickListener(btnClk);
+        btn012.setOnClickListener(btnClk);
+
 
 
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -8665,6 +9539,14 @@ public class Elektro_Activity extends AppCompatActivity {
                 aetText16 = (TextView) findViewById(R.id.textViewWir16);
                 aetText17 = (TextView) findViewById(R.id.textViewWir17);
                 aetText18 = (TextView) findViewById(R.id.textViewWir18);
+                TextView aetText27;
+                TextView aetText28;
+                TextView aetText29;
+                TextView aetText30;
+                aetText27 = (TextView) findViewById(R.id.textViewWir27);
+                aetText28 = (TextView) findViewById(R.id.textViewWir28);
+                aetText29 = (TextView) findViewById(R.id.textViewWir29);
+                aetText30 = (TextView) findViewById(R.id.textViewWir30);
 
                 float num001 = Float.parseFloat(aetText1.getText().toString());
                 float num002 = Float.parseFloat(aetText2.getText().toString());
@@ -8685,10 +9567,17 @@ public class Elektro_Activity extends AppCompatActivity {
                 float num017 = Float.parseFloat(aetText17.getText().toString());
                 float num018 = Float.parseFloat(aetText18.getText().toString());
 
+                float num027 = Float.parseFloat(aetText27.getText().toString());
+                float num028 = Float.parseFloat(aetText28.getText().toString());
+                float num029 = Float.parseFloat(aetText29.getText().toString());
+                float num030 = Float.parseFloat(aetText30.getText().toString());
+
 
                 //количество необходимого кирпича
 
 
+                                float Otverstyja = (num027*num028);
+                                float Ukladka_provoda = (num029*num030);
                                 float Viklushateli = (num001*num002);
                                 float Rozetki = (num003*num004);
                                 float Podrezetnik = (num005*num011);
@@ -8697,7 +9586,7 @@ public class Elektro_Activity extends AppCompatActivity {
                                 float Shiti = (num018*num013);
                                 float Gofra = (num014*num015);
                                 float X = (num016*num017);
-                                float Vsego = (Viklushateli+Rozetki+Podrezetnik+Komut_korobki+Bez_korobki+Shiti+Gofra+X);
+                                float Vsego = (Viklushateli+Rozetki+Podrezetnik+Komut_korobki+Bez_korobki+Shiti+Gofra+X+Otverstyja+Ukladka_provoda);
 
 
                                 TextView textView142 = (TextView) findViewById(R.id.textView142);
@@ -8711,6 +9600,9 @@ public class Elektro_Activity extends AppCompatActivity {
                                 //TextView textView2017 = (TextView) findViewById(R.id.textView201);
                                 TextView textView208 = (TextView) findViewById(R.id.textView208);
 
+                                TextView textView5002 = (TextView) findViewById(R.id.textView5002);
+                                TextView textView5003 = (TextView) findViewById(R.id.textView5003);
+
 
                                 textView142.setText(String.format(Locale.US, "%.2f", Vsego) + "");
                                 textView1420.setText(String.format(Locale.US, "%.2f", Rozetki) + "");
@@ -8722,6 +9614,9 @@ public class Elektro_Activity extends AppCompatActivity {
                                 textView14216.setText(String.format(Locale.US, "%.2f", Gofra) + "");
                                // textView2017.setText(String.format(Locale.US, "%.2f", rabota) + "");
                                 textView208.setText(String.format(Locale.US, "%.2f", Shiti) + "");
+
+                                textView5002.setText(String.format(Locale.US, "%.2f", Otverstyja) + "");
+                                textView5003.setText(String.format(Locale.US, "%.2f", Ukladka_provoda) + "");
 
 
                                 //Snackbar.make(view, "Подсчитано", Snackbar.LENGTH_SHORT)
@@ -8744,6 +9639,8 @@ public class Elektro_Activity extends AppCompatActivity {
                 final TextView bill89 = (TextView) findViewById(R.id.textView401);
                 final TextView bill90 = (TextView) findViewById(R.id.textView4);
                 final TextView bill208 = (TextView) findViewById(R.id.textView208);
+                final TextView bill5002 = (TextView) findViewById(R.id.textView5002);
+                final TextView bill5003 = (TextView) findViewById(R.id.textView5003);
 
 
                 bill83.setText(00.00 + "");
@@ -8755,6 +9652,9 @@ public class Elektro_Activity extends AppCompatActivity {
                 bill89.setText(00.00 + "");
                 bill90.setText(00.00 + "");
                 bill208.setText(00.00 + "");
+
+                bill5002.setText(00.00 + "");
+                bill5003.setText(00.00 + "");
 
                Toast toast = Toast.makeText(getApplicationContext(),
                         "Сброс", Toast.LENGTH_SHORT);
@@ -10154,6 +11054,173 @@ public class Elektro_Activity extends AppCompatActivity {
         etText408.setText(savedText);
     }
 
+    void saveText001() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT001, etText001.getText().toString());
+        ed.commit();
+    }
+    void loadText001() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT001, "");
+        etText001.setText(savedText);
+    }
+
+    void saveText002() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT002, etText002.getText().toString());
+        ed.commit();
+    }
+    void loadText002() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT002, "");
+        etText002.setText(savedText);
+    }
+
+    void saveText003() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT003, etText003.getText().toString());
+        ed.commit();
+    }
+    void loadText003() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT003, "");
+        etText003.setText(savedText);
+    }
+    void saveText004() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT004, etText004.getText().toString());
+        ed.commit();
+    }
+    void loadText004() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT004, "");
+        etText004.setText(savedText);
+    }
+
+    void saveText005() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT005, etText005.getText().toString());
+        ed.commit();
+    }
+    void loadText005() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT005, "");
+        etText005.setText(savedText);
+    }
+
+    void saveText006() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT006, etText006.getText().toString());
+        ed.commit();
+    }
+    void loadText006() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT006, "");
+        etText006.setText(savedText);
+    }
+
+    void saveText007() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT007, etText007.getText().toString());
+        ed.commit();
+    }
+    void loadText007() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT007, "");
+        etText007.setText(savedText);
+    }
+
+    void saveText008() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT008, etText008.getText().toString());
+        ed.commit();
+    }
+    void loadText008() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT008, "");
+        etText008.setText(savedText);
+    }
+
+    void saveText009() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT009, etText009.getText().toString());
+        ed.commit();
+    }
+    void loadText009() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT009, "");
+        etText009.setText(savedText);
+    }
+
+    void saveText010() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT010, etText010.getText().toString());
+        ed.commit();
+    }
+    void loadText010() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT010, "");
+        etText010.setText(savedText);
+    }
+
+    void saveText011() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT011, etText011.getText().toString());
+        ed.commit();
+    }
+    void loadText011() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT011, "");
+        etText011.setText(savedText);
+    }
+
+    void saveText012() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT012, etText012.getText().toString());
+        ed.commit();
+    }
+    void loadText012() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT012, "");
+        etText012.setText(savedText);
+    }
+
+    void saveText5002() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT5002, etText5002.getText().toString());
+        ed.commit();
+    }
+    void loadText5002() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT5002, "");
+        etText5002.setText(savedText);
+    }
+
+    void saveText5003() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref3.edit();
+        ed.putString(SAVED_TEXT5003, etText5003.getText().toString());
+        ed.commit();
+    }
+    void loadText5003() {
+        sPref3 = getPreferences(MODE_PRIVATE);
+        String savedText = sPref3.getString(SAVED_TEXT5003, "");
+        etText5003.setText(savedText);
+    }
+
 
 
 
@@ -10317,6 +11384,23 @@ public class Elektro_Activity extends AppCompatActivity {
 
         saveText408();
 
+        saveText001();
+        saveText002();
+        saveText003();
+        saveText004();
+        saveText005();
+        saveText006();
+        saveText007();
+        saveText008();
+        saveText009();
+        saveText010();
+        saveText011();
+        saveText012();
+        saveText5002();
+        saveText5003();
+
+
+
     }
 
 
@@ -10428,6 +11512,11 @@ public class Elektro_Activity extends AppCompatActivity {
         TextView ob_wir16 = findViewById(R.id.textViewWir16);
         TextView ob_wir17 = findViewById(R.id.textViewWir17);
 
+        TextView ob_wir27 = findViewById(R.id.textViewWir27);
+        TextView ob_wir28 = findViewById(R.id.textViewWir28);
+        TextView ob_wir29 = findViewById(R.id.textViewWir29);
+        TextView ob_wir30 = findViewById(R.id.textViewWir30);
+
         TextView rez_text1 = findViewById(R.id.textView142);
         TextView rez_text2 = findViewById(R.id.textView201);
         TextView rez_text3 = findViewById(R.id.textView301);
@@ -10437,6 +11526,9 @@ public class Elektro_Activity extends AppCompatActivity {
         TextView rez_text7 = findViewById(R.id.textView208);
         TextView rez_text8 = findViewById(R.id.textView24);
         TextView rez_text9 = findViewById(R.id.textView401);
+
+        TextView rez_text10 = findViewById(R.id.textView5002);
+        TextView rez_text11 = findViewById(R.id.textView5003);
 
 
 
@@ -10449,6 +11541,9 @@ public class Elektro_Activity extends AppCompatActivity {
         String rez7 = rez_text7.getText().toString();
         String rez8 = rez_text8.getText().toString();
         String rez9 = rez_text9.getText().toString();
+
+        String rez10 = rez_text10.getText().toString();
+        String rez11 = rez_text11.getText().toString();
 
 
         String ob1 = ob_wir.getText().toString();
@@ -10468,6 +11563,11 @@ public class Elektro_Activity extends AppCompatActivity {
         String ob15 = ob_wir16.getText().toString();
         String ob16 = ob_wir17.getText().toString();
 
+        String ob17 = ob_wir27.getText().toString();
+        String ob18 = ob_wir28.getText().toString();
+        String ob19 = ob_wir29.getText().toString();
+        String ob20 = ob_wir30.getText().toString();
+
         String r1 = getString(R.string.stoimost_rabot);
         String r2 = getString(R.string.vikl);
         String r3 = getString(R.string.rozet);
@@ -10476,7 +11576,9 @@ public class Elektro_Activity extends AppCompatActivity {
         String r6 = getString(R.string.bez_kor_bra);
         String r7 = getString(R.string.mon_wit);
         String r8 = getString(R.string.mon_gofri);
-        String r9 = getString(R.string.dop_rab);
+        String r9 = getString(R.string.wtrobleni_vsego);
+        String r91 = getString(R.string.otverstia_vsego);
+        String r92 = getString(R.string.prokladka_provoda);
 
         String r10 = getString(R.string.vik_wt);
         String r11 = getString(R.string.vik_cena);
@@ -10492,8 +11594,13 @@ public class Elektro_Activity extends AppCompatActivity {
         String r21 = getString(R.string.cen_wit3);
         String r22 = getString(R.string.gofra);
         String r23 = getString(R.string.cen_rofry);
-        String r24 = getString(R.string.dop_raboty);
-        String r25 = getString(R.string.cen_dop_rab);
+        String r24 = getString(R.string.ustroystvo_wtrobi);
+        String r25 = getString(R.string.cen_wtrobi);
+
+        String r26 = getString(R.string.sverlenie_otverstiy);
+        String r27 = getString(R.string.cen_sverlenia);
+        String r28 = getString(R.string.prokladka_provoda_pm);
+        String r29 = getString(R.string.prokladka_provoda_cena);
 
 
         String ida = getString(R.string.isxod_dani);
@@ -10511,6 +11618,8 @@ public class Elektro_Activity extends AppCompatActivity {
                         "\n"+(r7)+(rez7)+
                         "\n"+(r8)+(rez8)+
                         "\n"+(r9)+(rez9)+
+                        "\n"+(r91)+(rez10)+
+                        "\n"+(r92)+(rez11)+
                         "\n"+"......."+
                         "\n"+(ida)+
                         "\n"+(r10)+(ob1)+
@@ -10528,7 +11637,11 @@ public class Elektro_Activity extends AppCompatActivity {
                         "\n"+(r22)+(ob13)+
                         "\n"+(r23)+(ob14)+
                         "\n"+(r24)+(ob15)+
-                        "\n"+(r25)+(ob16)
+                        "\n"+(r25)+(ob16)+
+                        "\n"+(r26)+(ob17)+
+                        "\n"+(r27)+(ob18)+
+                        "\n"+(r28)+(ob19)+
+                        "\n"+(r29)+(ob20)
         ));
         {
             intent.setType("plain/text");

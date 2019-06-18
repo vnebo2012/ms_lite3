@@ -2,6 +2,8 @@
 <resources>
 
     // широкий бар :
+    <color name="colorNewDising">#ffffff</color>
+    <color name="colorNewDisingText">#279bf9</color>
     <color name="colorPrimary2">#2729a0</color>
     // тул бар
     <color name="colorPrimary">#2729a0</color>
@@ -16,10 +18,12 @@
     <color name="colorBlueGrey100">#cfd8dc</color>
     <color name="colorBlueGrey400">#83a7b9</color>
     <color name="colorBlueGrey50">#ffffff</color>
-    <color name="colorBlueGrey700">#124e7e</color>
+
+    <color name="colorBlueGrey700">#484949</color>
+
     <color name="colorBlack">#000000</color>
     <color name="colorTextMy">#2c4381</color>
-    <color name="colorPrimary43">#ff7700</color>
+    <color name="colorPrimary43">#279bf9</color>
     <color name="colorPrimary41">#a7a7a7</color>
     <color name="colorPrimary47">#797979</color>
     <color name="colorPrimary69">#5860ff</color>

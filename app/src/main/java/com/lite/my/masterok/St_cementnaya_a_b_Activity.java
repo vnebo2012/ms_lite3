@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -25,14 +24,12 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Locale;
 import java.util.Timer;
-import java.util.TimerTask;
 
 public class St_cementnaya_a_b_Activity extends AppCompatActivity {
 
@@ -4691,7 +4688,7 @@ public class St_cementnaya_a_b_Activity extends AppCompatActivity {
                                 float Cement = (V*num010);
                                 float C = (Cement/50);
                                 float Pesok = (Cement*3);
-                                float Voda = (float) (Cement*0.5);
+                                float Voda = (float) (Cement*0.58);
 
 
                                 TextView textView142 = (TextView) findViewById(R.id.textView142);

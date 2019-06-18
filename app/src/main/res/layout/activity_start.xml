@@ -13,6 +13,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:background="@color/beliColor"
         android:orientation="horizontal">
 
         <ScrollView
@@ -41,7 +42,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="3dp"
+                        android:layout_marginBottom="1dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -54,8 +55,8 @@
 
                             <ImageButton
                                 android:id="@+id/button2412"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/plita_ico"
@@ -71,8 +72,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/plita1"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -84,8 +85,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/armo_ico"
@@ -101,8 +102,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/armopojas1"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
 
                         </LinearLayout>
 
@@ -115,8 +116,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton2"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/kirpi_ico"
@@ -132,15 +133,15 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/kirp1"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="3dp"
+                        android:layout_marginBottom="1dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -153,8 +154,8 @@
 
                             <ImageButton
                                 android:id="@+id/button2413"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/plitka_ico"
@@ -170,8 +171,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/plitka"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -183,8 +184,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton11"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/kriwa_ico"
@@ -200,8 +201,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/kriwa1"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
 
                         </LinearLayout>
 
@@ -214,8 +215,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton29"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/bloki_ico"
@@ -231,15 +232,15 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/bloki1"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="3dp"
+                        android:layout_marginBottom="1dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -252,8 +253,8 @@
 
                             <ImageButton
                                 android:id="@+id/button24124"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/penop_ico"
@@ -269,8 +270,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/pinoplast1"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -282,8 +283,8 @@
 
                             <ImageButton
                                 android:id="@+id/button4010"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/kraska_ico"
@@ -299,8 +300,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/pokraska1"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
 
                         </LinearLayout>
 
@@ -313,8 +314,8 @@
 
                             <ImageButton
                                 android:id="@+id/button407"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/gipsokart_ico"
@@ -330,15 +331,15 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/gipsokarton1"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="3dp"
+                        android:layout_marginBottom="1dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -351,8 +352,8 @@
 
                             <ImageButton
                                 android:id="@+id/button400"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/wpaklo_ico"
@@ -368,8 +369,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/wpakl"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -381,8 +382,8 @@
 
                             <ImageButton
                                 android:id="@+id/button4071"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/sept_ico"
@@ -398,8 +399,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/septik1"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
 
                         </LinearLayout>
 
@@ -412,8 +413,8 @@
 
                             <ImageButton
                                 android:id="@+id/button2414"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/styagka_ico"
@@ -429,15 +430,15 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/styagka1"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="3dp"
+                        android:layout_marginBottom="1dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -450,8 +451,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton3"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
 
@@ -468,8 +469,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/radiatori1"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -482,8 +483,8 @@
 
                             <ImageButton
                                 android:id="@+id/button24121"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/elektro_ico"
@@ -498,8 +499,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/elektro"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
 
@@ -513,8 +514,8 @@
 
                             <ImageButton
                                 android:id="@+id/button3000"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/demontag_ico"
@@ -530,8 +531,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/demontag1"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -539,7 +540,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="3dp"
+                        android:layout_marginBottom="1dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -552,8 +553,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton32222"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
 
@@ -570,8 +571,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/pena2"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -584,8 +585,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton3222232"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
 
@@ -602,8 +603,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/ves_doma"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
 
                         </LinearLayout>
 
@@ -618,8 +619,8 @@
 
                             <ImageButton
                                 android:id="@+id/button30002222"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/lesa_ico"
@@ -635,8 +636,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/lesa_ico"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
 
                         </LinearLayout>
 
@@ -645,7 +646,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="3dp"
+                        android:layout_marginBottom="1dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -658,8 +659,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton322222"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
 
@@ -675,8 +676,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/les1"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -689,8 +690,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton100"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
 
@@ -707,8 +708,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/lumex"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
 
@@ -722,8 +723,8 @@
 
                             <ImageButton
                                 android:id="@+id/button300022228"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/lesnica2"
@@ -739,16 +740,17 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/lesnica"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
 
                         </LinearLayout>
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="3dp"
+                        android:layout_marginBottom="1dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -761,8 +763,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton3222221"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/armsrtong"
@@ -777,7 +779,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/armstrong"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -790,12 +793,12 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton1001"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/amat"
-                                android:onClick="onClickArmstrong"
+                                android:onClick="onClickArmatura"
                                 android:text="Плита перекрытия"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="18sp" />
@@ -807,7 +810,8 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="@string/armat"
-                                android:textSize="14dp" />
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
                         </LinearLayout>
 
 
@@ -821,13 +825,13 @@
 
                             <ImageButton
                                 android:id="@+id/button3000222281"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
                                 android:layout_margin="3dp"
                                 android:layout_weight="1"
-                                android:alpha="0"
 
-                                android:background="@drawable/lesnica2"
+                                android:background="@drawable/gsp"
+                                android:onClick="onClickGspC111"
                                 android:text="Плита перекрытия"
                                 android:textColor="@android:color/background_light"
                                 android:textSize="18sp" />
@@ -837,42 +841,20 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:alpha="0"
                                 android:gravity="center"
-                                android:text="@string/lesnica"
-                                android:textColor="@color/colorBlack"
-                                android:textSize="14dp" />
+                                android:text="@string/peregorodka_gsp"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
 
                         </LinearLayout>
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="3dp"
+                        android:layout_marginBottom="1dp"
                         android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-
-
-                        </LinearLayout>
 
 
                         <LinearLayout
@@ -883,15 +865,12 @@
                             android:orientation="vertical">
 
 
-
                         </LinearLayout>
 
                     </LinearLayout>
 
 
-
                 </LinearLayout>
-
 
 
             </LinearLayout>
@@ -903,9 +882,9 @@
         android:id="@+id/navigation"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
-        app:itemBackground="@color/colorPrimary"
-        app:itemIconTint="@color/colorWite"
-        app:itemTextColor="@color/colorWite"
+        app:itemBackground="@color/colorWite"
+        app:itemIconTint="@color/colorPrimary"
+        app:itemTextColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

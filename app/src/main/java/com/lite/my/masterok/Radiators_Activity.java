@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -25,14 +24,12 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Locale;
 import java.util.Timer;
-import java.util.TimerTask;
 
 public class Radiators_Activity extends AppCompatActivity {
 
@@ -4419,7 +4416,7 @@ public class Radiators_Activity extends AppCompatActivity {
                 float S_komnati = num001*num003;
                 float S_sten = (num001+num001+num003+num003)*num005;
 
-                float P_na_m2 = 100*(num051*num011*num012*num007*num091*num010*num061);
+                float P_na_m2 = 110*(num051*num011*num012*num007*num091*num010*num061);
                 float P_na_pomewkannya = P_na_m2*S_komnati;
                 float Skiki_reber = P_na_pomewkannya/num100;
 

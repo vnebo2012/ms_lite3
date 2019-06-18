@@ -718,6 +718,60 @@
 
     <string name="armat">Steel framework</string>
 
+    <string name="send">Send</string>
+         <string name="vvod">Enter the message</string>
+         <string name="vvedite_imya">Enter the name (nickname)</string>
+         <string name="title_activity_main22">Main22Activity</string>
+         <string name="title_activity_chat_test">Chat</string>
+         <string name="peregorodka_gsp">GSP Partition</string>
+
+    <string name="diametr_mm">Diameter, mm:</string>
+    <string name = "dlina_mp">Length, meters of linear:</string>
+        <string name ="stoimost_kg">Cost, per 1 kg:</string>
+        <string name ="ves_kg2">Weight, kg:</string>
+        <string name ="stoimost2">Cost: </string>
+        <string name ="arm_gost">Armature GOST 5781-82</string>
+        <string name ="arm_600_600">Armstrong 600x600</string>
+        <string name ="potolok_m2">Ceiling area, m2:</string>
+        <string name ="plita_600_600">Plate 600x600, pieces:</string>
+        <string name ="naprava_37">Main guide, by 3.7m, items:</string>
+        <string name ="planka_0_6">Plank transverse by 0,6 m, pieces:</string>
+        <string name ="planka_1_2">Plank longitudinal by 1.2 m, items:</string>
+        <string name ="ugolok_3_0">Corner wall at 3.0 m, pieces:</string>
+        <string name ="podves3">Pendant, pcs:</string>
+        <string name ="dlin_p">Length of the room, m:</string>
+        <string name ="w_pom">Width of the room, m:</string>
+        <string name ="zap_koe">Stock, the coefficient:</string>
+        <string name ="per_c_111">Partition GSP, With 111</string>
+        <string name ="list_gsp3">1.SHG sheet (1.2x2.5), items:</string>
+        <string name ="prof_pn">2.Profile of the PN 50x40 (75x40, 100x40), mp:</string>
+        <string name ="prof_pc">3.The profile of the PS 50x50 (75x50, 100x50), mp:</string>
+        <string name ="tn_25">4.Shruup TN 25, items:</string>
+        <string name ="fugen2">5.Putty Fugen, kg:</string>
+        <string name ="armolenta">6.Tape reinforcing, mp:</string>
+        <string name ="dub_7_6_35">7.Double To 6/35, items:</string>
+        <string name ="lenta_uplot"> 8. Sealing tape, mp:</string>
+        <string name ="grunt3">9.Gruntovka, l:</string>
+        <string name ="minvata_10_2">10.Mineral wool board, m2:</string>
+        <string name ="dlina_per3">Length of the partition, m:</string>
+        <string name ="visota_per3">Height of the partition, m:</string>
+        <string name ="k_zap3">Stock, the coefficient: </string>
+    <string name="next1">next</string>
+    <string name="vrete1">Enter text!</string>
+    <string name="dlinny_txt">The text is too long!</string>
+
+    <string name="ustroystvo_wtrobi">Stroke device, (mp):</string>
+    <string name="cen_wtrobi">The cost of stoning (for 1 meter):</string>
+    <string name="sverlenie_otverstiy">Drilling holes (pcs):</string>
+    <string name="cen_sverlenia">Drilling cost (for the answer):</string>
+    <string name="wtrobleni_vsego">Ditching:</string>
+    <string name="otverstia_vsego">Drilling holes:</string>
+    <string name="prokladka_provoda">Wire Layout:</string>
+    <string name="prokladka_provoda_pm">Wire laying, mp:</string>
+    <string name="prokladka_provoda_cena">Cost of laying the wire, per m:</string>
+    <string name="calck">calculator</string>
+    <string name="you_tub">You Tube</string>
+
 
 </resources>
 
