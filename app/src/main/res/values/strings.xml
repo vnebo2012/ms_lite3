@@ -738,7 +738,6 @@
     <string name="k_zap3">Запас, коэф.:</string>
 
 
-
     <string name="next1">Продолжить</string>
     <string name="vrete1">Введите текст!</string>
     <string name="dlinny_txt">Слишком длинный текст!</string>
@@ -753,6 +752,7 @@
     <string name="prokladka_provoda_cena">Стоимость прокладки провода, за м.п.:</string>
     <string name="calck">Калькулятор</string>
     <string name="you_tub">You Tube</string>
+    <string name="Poisk3">Поиск</string>
 
 
 </resources>

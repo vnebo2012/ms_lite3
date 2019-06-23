@@ -4879,8 +4879,8 @@ public class Armopoyas_Activity extends AppCompatActivity {
 
 
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar8);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar8);
+        //setSupportActionBar(toolbar);
 
         FloatingActionButton fab2 = (FloatingActionButton) findViewById(R.id.fab);
         fab2.setOnClickListener(new View.OnClickListener() {

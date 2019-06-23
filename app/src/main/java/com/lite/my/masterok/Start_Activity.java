@@ -109,57 +109,14 @@ public class Start_Activity extends AppCompatActivity {
                     return true;
 
                 case R.id.na2:
-                    long mills11 = 45L;
-                    Vibrator vibrator11 = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-                    vibrator11.vibrate(mills11);
 
-                    ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-                    NetworkInfo wifiInfo = cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
-                    if (wifiInfo != null && wifiInfo.isConnected())
-                    {
+                    Intent a = new Intent(Start_Activity.this,PoiskActivity.class);
+                    a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(a);
 
-                        Intent a = new Intent(Start_Activity.this,MenuNewsActivity.class);
-                        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(a);
-
-                    } else {
-
-                        context5 = Start_Activity.this;
-
-
-                        String title = getString(R.string.no_wi_fi);
-                        //String message = String.valueOf(R.string.v_pro_xot);
-                        String button1String = getString(R.string.prodolgit);
-                        String button2String = getString(R.string.nazad);
-
-                        AlertDialog.Builder ad;
-
-                        ad = new AlertDialog.Builder(context5);
-                        ad.setTitle(title);  // заголовок
-                        //ad.setMessage(message); // сообщение
-                        ad.setPositiveButton(button1String, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int arg1) {
-
-                                Intent a = new Intent(Start_Activity.this,MenuNewsActivity.class);
-                                a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                startActivity(a);
-                            }
-                        });
-                        ad.setNegativeButton(button2String, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int arg1) {
-
-                            }
-                        });
-                        ad.setCancelable(true);
-                        ad.setOnCancelListener(new DialogInterface.OnCancelListener() {
-                            public void onCancel(DialogInterface dialog) {
-                                // Toast.makeText(context5, "Вы ничего не выбрали",
-                                //    Toast.LENGTH_LONG).show();
-                            }
-                        });
-
-                        ad.show();
-                    }
+                    long mills4 = 45L;
+                    Vibrator vibrator44 = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                    vibrator44.vibrate(mills4);
 
                     return true;
                 case R.id.na3:
@@ -167,7 +124,25 @@ public class Start_Activity extends AppCompatActivity {
                     Vibrator vibrator13 = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                     vibrator13.vibrate(mills13);
 
-                    ConnectivityManager icheck3 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                    long mills = 15L;
+                    Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                    vibrator.vibrate(mills);
+                    final Intent intent = new Intent(Intent.ACTION_SEND);
+                    intent.setType("text/plain");
+                    String textToSend="https://play.google.com/store/apps/details?id=com.lite.my.masterok";
+                    intent.putExtra(Intent.EXTRA_TEXT, textToSend);
+                    try
+                    {
+                        startActivity(Intent.createChooser(intent, "Поделится приложением"));
+                    }
+                    catch (android.content.ActivityNotFoundException ex)
+                    {
+                        Toast.makeText(getApplicationContext(), "error", Toast.LENGTH_SHORT).show();
+
+
+                    }
+
+                   /* ConnectivityManager icheck3 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
                     boolean mob3 = icheck3.getActiveNetworkInfo() != null;
                     if(mob3) {
 
@@ -183,7 +158,7 @@ public class Start_Activity extends AppCompatActivity {
 
                         toast.show();
 
-                    }
+                    }*/
 
 
                     return true;
@@ -600,9 +575,9 @@ public void onClickRadiators(View view) {
             startActivity(intent);
 
 
-        } else if (id == R.id.napisat){
+        } else if (id == R.id.news){
 
-            Intent a = new Intent(this,PlusActivity.class);
+            Intent a = new Intent(this,MenuNewsActivity.class);
             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(a);
 
@@ -628,9 +603,28 @@ public void onClickRadiators(View view) {
                         "Отсутствует интернет!", Toast.LENGTH_SHORT);
 
                 toast.show();}
+        } else if (id == R.id.chat){
+
+            ConnectivityManager icheck3 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+            boolean mob3 = icheck3.getActiveNetworkInfo() != null;
+            if(mob3) {
+
+                Intent a = new Intent(Start_Activity.this,ChatActivity.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(a);
 
 
-        } else if (id == R.id.infi){
+            } else {
+
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Отсутствует интернет!", Toast.LENGTH_SHORT);
+
+                toast.show();
+
+
+
+
+        }} else if (id == R.id.infi){
 
             Intent a = new Intent(this,HellpActivity.class);
             a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

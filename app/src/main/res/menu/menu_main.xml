@@ -14,10 +14,7 @@
         android:title="@string/we_app" />
 
 
-    <item
-        android:id="@+id/napisat"
-        android:icon="@mipmap/ic_pismo"
-        android:title="@string/nap_nam" />
+
 
     <item
         android:id="@+id/pro1"
@@ -30,8 +27,17 @@
         android:title="@string/you_tub" />
 
     <item
+        android:id="@+id/news"
+        android:icon="@mipmap/ic_pismo"
+        android:title="@string/statti" />
+
+    <item
         android:id="@+id/versia"
-        android:title="v 6.0.8" />
+        android:title="v 6.2/230619" />
+
+    <item
+        android:id="@+id/chat"
+        android:title="@string/nap_nam" />
 
 
 

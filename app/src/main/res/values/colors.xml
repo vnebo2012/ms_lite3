@@ -2,7 +2,7 @@
 <resources>
 
     // широкий бар :
-    <color name="colorNewDising">#ffffff</color>
+    <color name="colorNewDising">#3F51B5</color>
     <color name="colorNewDisingText">#279bf9</color>
     <color name="colorPrimary2">#2729a0</color>
     // тул бар

@@ -31,11 +31,9 @@
         <activity
             android:name=".BlokiActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Chat.ChatActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".KirpishActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -167,52 +165,44 @@
         <activity
             android:name=".News.StattiActivity"
             android:label="@string/title_stati" />
-
-        <activity android:name=".News.MenuNewsActivity"
+        <activity
+            android:name=".News.MenuNewsActivity"
             android:label="@string/title_stati" />
-
-        <activity android:name=".News.NewInoMaterialActivity"
+        <activity
+            android:name=".News.NewInoMaterialActivity"
             android:label="@string/title_stati_ino_mat" />
-
-        <activity android:name=".News.EkoStroykaActivity"
+        <activity
+            android:name=".News.EkoStroykaActivity"
             android:label="@string/title_stati_eko" />
-
-        <activity android:name=".News.StroimDomActivity"
+        <activity
+            android:name=".News.StroimDomActivity"
             android:label="@string/title_stati_stoim_dom" />
-
-        <activity android:name=".News.InoStroykaActivity"
+        <activity
+            android:name=".News.InoStroykaActivity"
             android:label="@string/title_stati_ino_stroyka" />
-
-        <activity android:name=".News.EnergoEfektActivity"
+        <activity
+            android:name=".News.EnergoEfektActivity"
             android:label="@string/title_stati_energo_efekt" />
         <activity android:name=".News.FullRecipeActivity" />
         <activity android:name=".News.ListRecipeActivity" />
-
-        <activity android:name=".News.Vigodno_li_Activity"
-            android:label="@string/title_s_vigodno"/>
-
-        <activity android:name=".News.SteniActivity"
-            android:label="@string/title_stati_steni"/>
-
-        <activity android:name=".Register" />
-        <activity android:name=".Users" />
-        <activity android:name=".Chat" />
-        <activity android:name=".Login"/>
-
+        <activity
+            android:name=".News.Vigodno_li_Activity"
+            android:label="@string/title_s_vigodno" />
+        <activity
+            android:name=".News.SteniActivity"
+            android:label="@string/title_stati_steni" />
 
         <activity
             android:name=".ArmstrongActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
         <activity
             android:name=".GspC111Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".ArmaturaActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
+        <activity android:name=".PoiskActivity"></activity>
     </application>
 
 </manifest>
